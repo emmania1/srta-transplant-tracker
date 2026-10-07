@@ -16,6 +16,7 @@ Writes, per run (dated with the download date):
     data/raw/optn/YYYY-MM-DD_optn_metrics_don_weekly_deceased.csv          (Donor Details: weekly donors)
     data/raw/optn/YYYY-MM-DD_optn_metrics_don_table_deceased.csv           (Donor Details: YTD discard/utilization)
     data/raw/optn/YYYY-MM-DD_optn_metrics_don_table_meta.json              ("through <date>" for that table)
+    data/raw/optn/YYYY-MM-DD_optn_metrics_tx_weekly_deceased_all_regionNN.csv  (all organs, OPTN regions 1-11)
 which scripts/ingest_optn.py then parses. Exits non-zero if any organ fails,
 leaving earlier files in place, so the page keeps the last good data.
 """
@@ -37,6 +38,7 @@ APP = "https://insights.unos.org/OPTN-metrics/"
 # dashboard option label -> our organ key ("all" = OPTN's All Organs total)
 ORGANS = {"Heart": "heart", "Liver": "liver", "Lung": "lung", "Kidney": "kidney", "All Organs": "all"}
 DONOR = "Deceased Donors"
+REGIONS = [str(r) for r in range(1, 12)]
 EXPECTED_HEADER = ["yr", "week", "full_wk", "n", "cum_n"]
 
 DON_HEADER = ["yr", "total", "pct_chg", "disc", "util"]
@@ -51,7 +53,7 @@ FETCH_JS = """async ([inputs, link, want]) => {
     if (!a.href.includes('/download/')) continue;
     const r = await fetch(a.href, {cache: 'no-store'});
     const disp = r.headers.get('content-disposition') || '';
-    if (r.ok && disp.includes(want)) {
+    if (r.ok && disp.includes('filename="' + want)) {
       const buf = new Uint8Array(await r.arrayBuffer());
       let s = ''; for (const b of buf) s += String.fromCharCode(b);
       return {disp, b64: btoa(s)};
@@ -75,7 +77,7 @@ def main():
 
         for label, key in ORGANS.items():
             res = page.evaluate(FETCH_JS, [{"don_ty": DONOR, "tx_wl_organ": label}, "tx_download",
-                                           f"{DONOR}_{label}_TX_dat.zip"])
+                                           f"National_{DONOR}_{label}_TX_dat.zip"])
             if "error" in res:
                 failures.append(f"{label}: {res['error']}")
                 continue
@@ -93,7 +95,7 @@ def main():
         page.get_by_text("Donor Details", exact=True).click()
         page.wait_for_function("document.getElementById('don_download').href.includes('/download/')", timeout=60_000)
         res = page.evaluate(FETCH_JS, [{"don_ty": DONOR, "don_organ": "All Organs"}, "don_download",
-                                       f"{DONOR}_All Organs_Don_dat.zip"])
+                                       f"National_{DONOR}_All Organs_Don_dat.zip"])
         if "error" in res:
             failures.append(f"Donors: {res['error']}")
         else:
@@ -114,6 +116,21 @@ def main():
                 (RAW / f"{today}_optn_metrics_don_table_meta.json").write_text(
                     json.dumps({"ytd_through": m.group(1), "heading": m.group(0)}) + "\n")
                 print(f"Donors: {len(weekly.splitlines()) - 1} weekly rows; table YTD through {m.group(1)}")
+
+        # Weekly deceased-donor transplants (all organs) by OPTN region 1-11
+        page.get_by_text("Transplant Details", exact=True).click()
+        for region in REGIONS:
+            res = page.evaluate(FETCH_JS, [{"region": region, "don_ty": DONOR, "tx_wl_organ": "All Organs"},
+                                           "tx_download", f"{region}_{DONOR}_All Organs_TX_dat.zip"])
+            if "error" in res:
+                failures.append(f"Region {region}: {res['error']}")
+                continue
+            text = zipfile.ZipFile(io.BytesIO(base64.b64decode(res["b64"]))).read("TX_Weekly.csv").decode("utf-8-sig")
+            if next(csv.reader(io.StringIO(text))) != EXPECTED_HEADER:
+                failures.append(f"Region {region}: unexpected TX_Weekly.csv header")
+                continue
+            (RAW / f"{today}_optn_metrics_tx_weekly_deceased_all_region{int(region):02d}.csv").write_text(text)
+        print(f"Regions: {len(REGIONS) - sum(f.startswith('Region') for f in failures)}/{len(REGIONS)} fetched")
         browser.close()
 
     if failures:

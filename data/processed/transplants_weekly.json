@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants by organ",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-07T21:48:22+00:00",
+  "ingested_at": "2026-10-07T22:11:52+00:00",
   "organs": {
     "all": [
       {
@@ -6857,13 +6857,16 @@
       "2026-W40"
     ]
   },
-  "raw_file": "2026-10-07_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_lung.csv",
-  "data_as_of": "2026-10-07",
+  "raw_file": "2026-10-08_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_lung.csv",
+  "data_as_of": "2026-10-08",
   "parser": "optn_metrics_tx_weekly",
   "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
   "donor_type": "Deceased Donors",
   "region": "National",
-  "note": "'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.)",
+  "note": "'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.). The dashboard's 'Kidney' includes kidney-pancreas transplants: 2025 = 21,856 vs 21,052 kidney-alone + 804 kidney-pancreas in OPTN national data.",
+  "organ_definitions": {
+    "kidney": "Includes kidney-pancreas transplants (OPTN metrics dashboard definition)"
+  },
   "status": "ok",
   "unrecognised_files": [],
   "undated_files": []

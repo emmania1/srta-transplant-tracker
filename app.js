@@ -5,9 +5,10 @@ const CADENCE = {
   news: "Weekly (Sun) via GitHub Action; 90-day window",
   transplants_weekly: "Weekly (Sun) via GitHub Action",
   donors_weekly: "Weekly (Sun) via GitHub Action",
-  donor_mix: "When a new OPTN export is dropped in",
-  distance: "When a new OPTN export is dropped in",
-  location: "When a new OPTN export is dropped in",
+  donor_mix: "Monthly (OPTN refresh); checked every Sunday",
+  distance: "Monthly (OPTN refresh); checked every Sunday",
+  regions_weekly: "Weekly (Sun) via GitHub Action",
+  location: "Monthly snapshot (OPTN refresh); checked every Sunday",
 };
 
 const $ = (id) => document.getElementById(id);
@@ -70,7 +71,8 @@ function renderHeader(summary, price) {
   $("page-updated").textContent = summary.generated_at ? `Last updated ${fmtDate(summary.generated_at)}` : "";
   $("digest-updated").textContent = summary.generated_at ? `Digest generated ${fmtDate(summary.generated_at)}` : "";
   const ul = $("this-week-list");
-  ul.innerHTML = (summary.bullets || []).map((b) => `<li>${esc(b)}</li>`).join("") || "<li>Digest not generated yet.</li>";
+  ul.innerHTML = ((summary.bullets || []).map((b) => `<li>${esc(b)}</li>`).join("") || "<li>Digest not generated yet.</li>")
+    + (summary.news_line ? `<li class="muted-li">${esc(summary.news_line)}</li>` : "");
 }
 
 // ---------- volumes ----------
@@ -198,46 +200,145 @@ function renderDonorLine(summary, dw) {
 
 // ---------- donor mix / distance / location (normalized schemas, see README) ----------
 function updatedLabel(d) {
-  return d.status === "ok" ? `OPTN pull ${fmtDate(d.data_as_of)}` : "Awaiting first OPTN file";
+  if (d.status !== "ok") return "Awaiting first OPTN file";
+  return `OPTN monthly data through ${fmtDate(d.period_end)} · as of ${fmtDate(d.data_as_of)}`;
 }
+function ptsChange(v) {
+  // neutral styling: a share shift isn't good or bad by itself
+  if (v == null) return "n/a";
+  return `${v > 0 ? "▲" : v < 0 ? "▼" : "—"} ${Math.abs(v).toFixed(1)} pts`;
+}
+const pctTxt = (v) => (v == null ? "n/a" : `${v.toFixed(1)}%`);
+const SERIES = ["--s1", "--s2", "--s3", "--s4", "--s5"];
 
+let mixChart = null;
 function renderDonorMix(d) {
   $("mix-updated").textContent = updatedLabel(d);
-  if (d.status !== "ok") { $("mix-body").innerHTML = awaiting("DBD vs. DCD donor counts and DCD share by organ", "an OPTN national-data export"); return; }
-  const donors = d.donors || [];
-  let html = `<div class="scroll-x"><table><thead><tr><th>Period</th><th>DBD donors</th><th>DCD donors</th><th>DCD share</th></tr></thead><tbody>${
-    donors.slice().reverse().map((r) => `<tr><td>${esc(r.period)}</td><td>${fmtInt(r.dbd)}</td><td>${fmtInt(r.dcd)}</td><td>${(100 * r.dcd / (r.dbd + r.dcd)).toFixed(1)}%</td></tr>`).join("")
-  }</tbody></table></div>`;
-  const share = d.dcd_share_by_organ || {};
-  const organs = ORGANS.filter((o) => (share[o] || []).length);
-  if (organs.length) {
-    html += `<h3 class="note">DCD share of transplants by organ (latest period)</h3><div class="scroll-x"><table><thead><tr><th>Organ</th><th>Period</th><th>DCD</th><th>Total</th><th>DCD share</th></tr></thead><tbody>${
-      organs.map((o) => { const r = share[o][share[o].length - 1]; return `<tr><td>${cap(o)}</td><td>${esc(r.period)}</td><td>${fmtInt(r.dcd)}</td><td>${fmtInt(r.total)}</td><td>${(100 * r.dcd / r.total).toFixed(1)}%</td></tr>`; }).join("")
-    }</tbody></table></div>`;
-  }
-  $("mix-body").innerHTML = html;
-}
-
-function renderDistance(d, summary) {
-  $("dist-updated").textContent = updatedLabel(d);
-  if (d.status !== "ok") { $("dist-body").innerHTML = awaiting("Distance-band shares by organ", "an OPTN distance export"); return; }
-  const bands = d.band_order || [];
-  const rows = ORGANS.filter((o) => (d.organs || {})[o]?.length).map((o) => {
-    const p = d.organs[o][d.organs[o].length - 1];
-    const tot = bands.reduce((s, b) => s + (p.bands[b] || 0), 0);
-    const ch = ((summary.distance || {}).organs || {})[o] || {};
-    return `<tr><td>${cap(o)}</td><td>${esc(p.period)}</td>${bands.map((b) => `<td>${tot ? (100 * (p.bands[b] || 0) / tot).toFixed(1) + "%" : "n/a"}</td>`).join("")}<td>${ch.change_pts == null ? "n/a" : (ch.change_pts > 0 ? `<span class="up">▲ ${ch.change_pts} pts</span>` : ch.change_pts < 0 ? `<span class="down">▼ ${Math.abs(ch.change_pts)} pts</span>` : "— 0 pts")}</td></tr>`;
+  if (d.status !== "ok") { $("mix-body").innerHTML = awaiting("DBD vs. DCD donor counts and DCD share by organ", "the OPTN national data"); return; }
+  const cy = String(d.current_year), py = String(d.prior_year);
+  const rows = [["All deceased donors", d.donors], ...ORGANS.map((o) => [`${cap(o)} transplants`, d.transplants_by_organ[o]])];
+  const tbl = rows.map(([name, v]) => {
+    const c = v[cy], p = v[py];
+    const ch = c.dcd_share_pct != null && p.dcd_share_pct != null ? Math.round(10 * (c.dcd_share_pct - p.dcd_share_pct)) / 10 : null;
+    return `<tr><td>${name}</td><td>${fmtInt(c.dcd)} / ${fmtInt(c.total)}</td><td><strong>${pctTxt(c.dcd_share_pct)}</strong></td><td>${pctTxt(p.dcd_share_pct)}</td><td>${ptsChange(ch)}</td></tr>`;
   }).join("");
-  $("dist-body").innerHTML = `<div class="scroll-x"><table><thead><tr><th>Organ</th><th>Period</th>${bands.map((b) => `<th>${esc(b)} NM</th>`).join("")}<th>Long-band share vs LY</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  $("mix-body").innerHTML = `
+    <div class="scroll-x"><table>
+      <thead><tr><th></th><th>DCD / total, ${esc(d.current_label)}</th><th>DCD share, ${esc(d.current_label)}</th><th>DCD share, ${esc(d.prior_label)}</th><th>Change</th></tr></thead>
+      <tbody>${tbl}</tbody></table></div>
+    <h3 class="sub-head">DCD share by year</h3>
+    <div class="chart-wrap short"><canvas id="mix-chart" aria-label="DCD share by year"></canvas></div>
+    <p class="note">${d.current_year} is year to date (through ${fmtDate(d.period_end)}). Kidney here is kidney alone; kidney-pancreas is a separate OPTN category.</p>`;
+  const years = d.years.map(String);
+  const datasets = rows.map(([name, v], i) => ({
+    label: name.replace(" transplants", ""),
+    data: years.map((y) => v[y]?.dcd_share_pct ?? null),
+    borderColor: css(SERIES[i]), backgroundColor: css(SERIES[i]),
+    borderWidth: i === 0 ? 2.5 : 1.75, pointRadius: years.map((y) => (y === cy ? 4 : 2)),
+    pointStyle: years.map((y) => (y === cy ? "rectRot" : "circle")), tension: 0,
+  }));
+  if (mixChart) mixChart.destroy();
+  mixChart = new Chart($("mix-chart"), {
+    type: "line",
+    data: { labels: years.map((y) => (y === cy ? `${y} YTD` : y)), datasets },
+    options: {
+      maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 12, boxHeight: 2 } },
+        tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${pctTxt(c.parsed.y)}` } },
+      },
+      scales: {
+        x: { ticks: { color: css("--muted") }, grid: { display: false } },
+        y: { ticks: { color: css("--muted"), callback: (v) => v + "%" }, grid: { color: css("--grid") } },
+      },
+    },
+  });
 }
 
+let distChart = null;
+function renderDistance(d) {
+  $("dist-updated").textContent = updatedLabel(d);
+  if (d.status !== "ok") { $("dist-body").innerHTML = awaiting("Distance-band shares by organ", "the OPTN national data"); return; }
+  const cy = String(d.current_year), py = String(d.prior_year);
+  const bands = d.band_order;
+  const tbl = ORGANS.map((o) => {
+    const c = d.organs[o][cy], p = d.organs[o][py];
+    const ch = c.long_share_pct != null && p.long_share_pct != null ? Math.round(10 * (c.long_share_pct - p.long_share_pct)) / 10 : null;
+    const cells = (x) => bands.map((b) => `<td>${pctTxt(x.shares_pct[b])}</td>`).join("");
+    return `<tr><td rowspan="2"><strong>${cap(o)}</strong></td><td>${esc(d.current_label)}</td>${cells(c)}<td rowspan="2"><strong>${pctTxt(c.long_share_pct)}</strong> vs ${pctTxt(p.long_share_pct)}<br>${ptsChange(ch)}</td></tr>
+            <tr class="prior"><td>${esc(d.prior_label)}</td>${cells(p)}</tr>`;
+  }).join("");
+  $("dist-body").innerHTML = `
+    <div class="chart-wrap tall"><canvas id="dist-chart" aria-label="Distance band shares by organ"></canvas></div>
+    <details class="table-view" open><summary>Table</summary><div class="scroll-x"><table class="dist-table">
+      <thead><tr><th>Organ</th><th>Period</th>${bands.map((b) => `<th>${esc(b)} NM</th>`).join("")}<th>251+ NM share</th></tr></thead>
+      <tbody>${tbl}</tbody></table></div></details>
+    <p class="note">Shares exclude transplants with an unknown distance (none in these periods). Kidney is kidney alone.</p>`;
+  const labels = ORGANS.flatMap((o) => [`${cap(o)} · ${d.prior_label}`, `${cap(o)} · ${d.current_label}`]);
+  const bandColors = ["--band-1", "--band-2", "--band-3", "--band-4", "--band-5"];
+  const datasets = bands.map((b, i) => ({
+    label: `${b} NM`,
+    data: ORGANS.flatMap((o) => [d.organs[o][py].shares_pct[b], d.organs[o][cy].shares_pct[b]]),
+    backgroundColor: css(bandColors[i]), borderColor: css("--panel"), borderWidth: 1, borderSkipped: false,
+  }));
+  if (distChart) distChart.destroy();
+  distChart = new Chart($("dist-chart"), {
+    type: "bar",
+    data: { labels, datasets },
+    options: {
+      indexAxis: "y", maintainAspectRatio: false,
+      plugins: {
+        legend: { position: "top", align: "start", labels: { color: css("--text-2"), boxWidth: 12 } },
+        tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${pctTxt(c.parsed.x)}` } },
+      },
+      scales: {
+        x: { stacked: true, max: 100, ticks: { color: css("--muted"), callback: (v) => v + "%" }, grid: { color: css("--grid") } },
+        y: { stacked: true, ticks: { color: css("--text-2"), font: { size: 11 } }, grid: { display: false } },
+      },
+    },
+  });
+}
+
+function renderRegions(summary, rw) {
+  $("reg-updated").textContent = rw.status === "ok" ? `OPTN pull ${fmtDate(rw.data_as_of)}` : "Awaiting first OPTN file";
+  const reg = (summary.regions || {}).regions;
+  if (rw.status !== "ok" || !reg) { $("reg-body").innerHTML = awaiting("Weekly transplants by OPTN region", "the OPTN metrics region download"); return; }
+  const states = rw.region_states || {};
+  const rows = Object.entries(reg).filter(([, m]) => m).sort((a, b) => (b[1].trailing_4wk?.total ?? 0) - (a[1].trailing_4wk?.total ?? 0));
+  const lw = rows[0]?.[1]?.latest_week;
+  $("reg-body").innerHTML = `<div class="scroll-x"><table>
+    <thead><tr><th>Region</th><th>Last 4 wks</th><th>Same wks LY</th><th>YoY</th><th>YTD YoY</th><th>Wk ending ${fmtDate(lw?.week_end)}</th></tr></thead>
+    <tbody>${rows.map(([r, m]) => `<tr>
+      <td><strong>Region ${esc(r)}</strong><div class="cell-sub">${esc((states[r] || []).join(", "))}</div></td>
+      <td>${fmtInt(m.trailing_4wk?.total)}</td><td>${fmtInt(m.trailing_4wk?.prior_year_total)}</td>
+      <td>${yoy(m.trailing_4wk?.yoy_pct)}</td><td>${yoy(m.ytd?.yoy_pct)}</td>
+      <td>${fmtInt(m.latest_week?.count)} (${yoy(m.latest_week?.yoy_pct)})</td></tr>`).join("")}</tbody></table></div>
+    <p class="note">Region membership from OPTN's region pages (${esc(rw.region_states_source || "")}).</p>`;
+}
+
+const STATE_ROWS = 15;
 function renderLocation(d) {
   $("loc-updated").textContent = updatedLabel(d);
-  if (d.status !== "ok") { $("loc-body").innerHTML = awaiting("Transplants by transplant-center state or OPTN region", "an OPTN state/regional export"); return; }
-  const rows = (d.rows || []).slice().sort((a, b) => b.latest - a.latest);
-  $("loc-body").innerHTML = `<p class="note">${esc(d.latest_period)} vs ${esc(d.prior_period)}, by ${esc(d.level || "area")}.</p><div class="scroll-x"><table><thead><tr><th>${cap(d.level || "Area")}</th><th>Latest</th><th>Prior year</th><th>YoY</th></tr></thead><tbody>${
-    rows.map((r) => `<tr><td>${esc(r.area)}</td><td>${fmtInt(r.latest)}</td><td>${fmtInt(r.prior)}</td><td>${yoy(r.prior ? Math.round(1000 * (r.latest / r.prior - 1)) / 10 : null)}</td></tr>`).join("")
-  }</tbody></table></div>`;
+  if (d.status !== "ok") { $("loc-body").innerHTML = awaiting("Transplants by transplant-center state", "the OPTN national data"); return; }
+  $("loc-note").innerHTML = `Deceased-donor transplants, all organs, by state of transplant center: ${esc(d.current_label)} vs. ${esc(d.prior_label)}. `
+    + (d.yoy_available ? esc(d.yoy_note)
+      : `<strong>Shares only for now.</strong> OPTN's state data is annual, so a % change would compare part of a year with a full year. A snapshot is saved every month; ${esc(d.yoy_note.replace(/^True YoY/, "a true year-over-year column"))}`);
+  let shown = STATE_ROWS;
+  const draw = () => {
+    const rows = d.rows.slice(0, shown);
+    $("loc-body").innerHTML = `<div class="scroll-x"><table>
+      <thead><tr><th>State</th><th>${esc(d.current_label)}</th><th>Share</th><th>${esc(d.prior_label)}</th><th>Share</th><th>Share change</th>${d.yoy_available ? "<th>YoY (same period)</th>" : ""}</tr></thead>
+      <tbody>${rows.map((r) => `<tr><td>${esc(r.state)}</td><td>${fmtInt(r.ytd)}</td><td><strong>${pctTxt(r.share_pct)}</strong></td><td>${fmtInt(r.prior_full_year)}</td><td>${pctTxt(r.prior_share_pct)}</td>
+        <td>${ptsChange(r.share_pct != null && r.prior_share_pct != null ? Math.round(10 * (r.share_pct - r.prior_share_pct)) / 10 : null)}</td>
+        ${d.yoy_available ? `<td>${yoy(r.yoy_pct)}</td>` : ""}</tr>`).join("")}
+      <tr class="total"><td>U.S. total</td><td>${fmtInt(d.national_ytd)}</td><td>100%</td><td>${fmtInt(d.national_prior_full_year)}</td><td>100%</td><td></td>${d.yoy_available ? "<td></td>" : ""}</tr>
+      </tbody></table></div>
+      ${d.rows.length > shown ? `<button class="more" id="loc-more">Show all ${d.rows.length} states</button>` : ""}
+      <p class="note">${d.snapshots.length} monthly snapshot${d.snapshots.length === 1 ? "" : "s"} saved (first through ${fmtDate(d.snapshots[0].period_end)}).</p>`;
+    const more = $("loc-more");
+    if (more) more.onclick = () => { shown = d.rows.length; draw(); };
+  };
+  draw();
 }
 
 // ---------- news ----------
@@ -279,7 +380,8 @@ function renderSources(files) {
     ["Deceased donors recovered + discard rate", files.donors_weekly, "donors_weekly"],
     ["Donor mix (DBD / DCD)", files.donor_mix, "donor_mix"],
     ["Distance bands", files.distance, "distance"],
-    ["Transplants by state / region", files.location, "location"],
+    ["Weekly transplants by OPTN region", files.regions_weekly, "regions_weekly"],
+    ["Transplants by state (monthly snapshots)", files.location, "location"],
     ["News & company mentions", files.news, "news"],
   ];
   $("sources-body").innerHTML = rows.map(([name, f, key]) => {
@@ -289,13 +391,14 @@ function renderSources(files) {
 }
 
 (async function main() {
-  const [summary, tw, dw, mix, dist, loc, news, price] = await Promise.all([
+  const [summary, tw, dw, mix, dist, loc, rw, news, price] = await Promise.all([
     load("data/weekly_summary.json"),
     load("data/processed/transplants_weekly.json"),
     load("data/processed/donors_weekly.json"),
     load("data/processed/donor_mix.json"),
     load("data/processed/distance.json"),
     load("data/processed/location.json"),
+    load("data/processed/regions_weekly.json"),
     load("data/processed/news.json"),
     load("data/processed/price.json"),
   ]);
@@ -303,8 +406,9 @@ function renderSources(files) {
   renderVolumes(summary, tw);
   renderDonorLine(summary, dw);
   renderDonorMix(mix);
-  renderDistance(dist, summary);
+  renderDistance(dist);
+  renderRegions(summary, rw);
   renderLocation(loc);
   renderNews(news);
-  renderSources({ price, transplants_weekly: tw, donors_weekly: dw, donor_mix: mix, distance: dist, location: loc, news });
+  renderSources({ price, transplants_weekly: tw, donors_weekly: dw, donor_mix: mix, distance: dist, regions_weekly: rw, location: loc, news });
 })();

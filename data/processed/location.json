@@ -1,10 +1,414 @@
 {
-  "title": "Transplants by transplant-center state / OPTN region",
-  "source": "OPTN national data reports (optn.transplant.hrsa.gov/data/view-data-reports/national-data)",
-  "tag": "Manual",
-  "ingested_at": "2026-10-07T21:48:22+00:00",
-  "status": "awaiting_data",
-  "note": "No parsed OPTN export yet. Drop a dated file in data/raw/optn/.",
+  "title": "Deceased-donor transplants by transplant-center state (monthly snapshots)",
+  "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
+  "tag": "Live",
+  "ingested_at": "2026-10-07T22:11:52+00:00",
+  "period_end": "2026-08-31",
+  "data_as_of": "2026-10-06",
+  "current_year": 2026,
+  "prior_year": 2025,
+  "current_label": "2026 YTD (Jan 1\u2013Aug 31)",
+  "prior_label": "2025 full year",
+  "comparison_note": "Mix comparison: shares of the current year to date vs. the prior full year. OPTN national reports are annual-only, so this is not a same-period volume comparison.",
+  "level": "state",
+  "national_ytd": 28165,
+  "national_prior_full_year": 41826,
+  "rows": [
+    {
+      "state": "California",
+      "ytd": 3004,
+      "prior_full_year": 4462,
+      "share_pct": 10.7,
+      "prior_share_pct": 10.7
+    },
+    {
+      "state": "Texas",
+      "ytd": 2590,
+      "prior_full_year": 3829,
+      "share_pct": 9.2,
+      "prior_share_pct": 9.2
+    },
+    {
+      "state": "Florida",
+      "ytd": 2034,
+      "prior_full_year": 3059,
+      "share_pct": 7.2,
+      "prior_share_pct": 7.3
+    },
+    {
+      "state": "New York",
+      "ytd": 1943,
+      "prior_full_year": 2987,
+      "share_pct": 6.9,
+      "prior_share_pct": 7.1
+    },
+    {
+      "state": "Ohio",
+      "ytd": 1450,
+      "prior_full_year": 2191,
+      "share_pct": 5.1,
+      "prior_share_pct": 5.2
+    },
+    {
+      "state": "Pennsylvania",
+      "ytd": 1312,
+      "prior_full_year": 1884,
+      "share_pct": 4.7,
+      "prior_share_pct": 4.5
+    },
+    {
+      "state": "Illinois",
+      "ytd": 1248,
+      "prior_full_year": 1918,
+      "share_pct": 4.4,
+      "prior_share_pct": 4.6
+    },
+    {
+      "state": "Georgia",
+      "ytd": 1067,
+      "prior_full_year": 1393,
+      "share_pct": 3.8,
+      "prior_share_pct": 3.3
+    },
+    {
+      "state": "North Carolina",
+      "ytd": 959,
+      "prior_full_year": 1454,
+      "share_pct": 3.4,
+      "prior_share_pct": 3.5
+    },
+    {
+      "state": "Tennessee",
+      "ytd": 942,
+      "prior_full_year": 1393,
+      "share_pct": 3.3,
+      "prior_share_pct": 3.3
+    },
+    {
+      "state": "Massachusetts",
+      "ytd": 858,
+      "prior_full_year": 1400,
+      "share_pct": 3.0,
+      "prior_share_pct": 3.3
+    },
+    {
+      "state": "Arizona",
+      "ytd": 798,
+      "prior_full_year": 1192,
+      "share_pct": 2.8,
+      "prior_share_pct": 2.8
+    },
+    {
+      "state": "Michigan",
+      "ytd": 780,
+      "prior_full_year": 1073,
+      "share_pct": 2.8,
+      "prior_share_pct": 2.6
+    },
+    {
+      "state": "Virginia",
+      "ytd": 734,
+      "prior_full_year": 1183,
+      "share_pct": 2.6,
+      "prior_share_pct": 2.8
+    },
+    {
+      "state": "Missouri",
+      "ytd": 637,
+      "prior_full_year": 918,
+      "share_pct": 2.3,
+      "prior_share_pct": 2.2
+    },
+    {
+      "state": "Minnesota",
+      "ytd": 614,
+      "prior_full_year": 888,
+      "share_pct": 2.2,
+      "prior_share_pct": 2.1
+    },
+    {
+      "state": "South Carolina",
+      "ytd": 583,
+      "prior_full_year": 871,
+      "share_pct": 2.1,
+      "prior_share_pct": 2.1
+    },
+    {
+      "state": "Wisconsin",
+      "ytd": 566,
+      "prior_full_year": 763,
+      "share_pct": 2.0,
+      "prior_share_pct": 1.8
+    },
+    {
+      "state": "New Jersey",
+      "ytd": 553,
+      "prior_full_year": 849,
+      "share_pct": 2.0,
+      "prior_share_pct": 2.0
+    },
+    {
+      "state": "Washington",
+      "ytd": 516,
+      "prior_full_year": 822,
+      "share_pct": 1.8,
+      "prior_share_pct": 2.0
+    },
+    {
+      "state": "Utah",
+      "ytd": 482,
+      "prior_full_year": 733,
+      "share_pct": 1.7,
+      "prior_share_pct": 1.8
+    },
+    {
+      "state": "Colorado",
+      "ytd": 419,
+      "prior_full_year": 651,
+      "share_pct": 1.5,
+      "prior_share_pct": 1.6
+    },
+    {
+      "state": "District of Columbia",
+      "ytd": 415,
+      "prior_full_year": 632,
+      "share_pct": 1.5,
+      "prior_share_pct": 1.5
+    },
+    {
+      "state": "Maryland",
+      "ytd": 402,
+      "prior_full_year": 609,
+      "share_pct": 1.4,
+      "prior_share_pct": 1.5
+    },
+    {
+      "state": "Louisiana",
+      "ytd": 399,
+      "prior_full_year": 603,
+      "share_pct": 1.4,
+      "prior_share_pct": 1.4
+    },
+    {
+      "state": "Alabama",
+      "ytd": 346,
+      "prior_full_year": 427,
+      "share_pct": 1.2,
+      "prior_share_pct": 1.0
+    },
+    {
+      "state": "Indiana",
+      "ytd": 324,
+      "prior_full_year": 516,
+      "share_pct": 1.2,
+      "prior_share_pct": 1.2
+    },
+    {
+      "state": "Nebraska",
+      "ytd": 295,
+      "prior_full_year": 356,
+      "share_pct": 1.0,
+      "prior_share_pct": 0.9
+    },
+    {
+      "state": "Oregon",
+      "ytd": 272,
+      "prior_full_year": 366,
+      "share_pct": 1.0,
+      "prior_share_pct": 0.9
+    },
+    {
+      "state": "Kentucky",
+      "ytd": 222,
+      "prior_full_year": 333,
+      "share_pct": 0.8,
+      "prior_share_pct": 0.8
+    },
+    {
+      "state": "Oklahoma",
+      "ytd": 219,
+      "prior_full_year": 308,
+      "share_pct": 0.8,
+      "prior_share_pct": 0.7
+    },
+    {
+      "state": "Connecticut",
+      "ytd": 177,
+      "prior_full_year": 267,
+      "share_pct": 0.6,
+      "prior_share_pct": 0.6
+    },
+    {
+      "state": "Kansas",
+      "ytd": 163,
+      "prior_full_year": 238,
+      "share_pct": 0.6,
+      "prior_share_pct": 0.6
+    },
+    {
+      "state": "Arkansas",
+      "ytd": 141,
+      "prior_full_year": 214,
+      "share_pct": 0.5,
+      "prior_share_pct": 0.5
+    },
+    {
+      "state": "Mississippi",
+      "ytd": 134,
+      "prior_full_year": 167,
+      "share_pct": 0.5,
+      "prior_share_pct": 0.4
+    },
+    {
+      "state": "Nevada",
+      "ytd": 104,
+      "prior_full_year": 179,
+      "share_pct": 0.4,
+      "prior_share_pct": 0.4
+    },
+    {
+      "state": "Iowa",
+      "ytd": 83,
+      "prior_full_year": 144,
+      "share_pct": 0.3,
+      "prior_share_pct": 0.3
+    },
+    {
+      "state": "West Virginia",
+      "ytd": 76,
+      "prior_full_year": 98,
+      "share_pct": 0.3,
+      "prior_share_pct": 0.2
+    },
+    {
+      "state": "Puerto Rico",
+      "ytd": 71,
+      "prior_full_year": 96,
+      "share_pct": 0.3,
+      "prior_share_pct": 0.2
+    },
+    {
+      "state": "North Dakota",
+      "ytd": 48,
+      "prior_full_year": 39,
+      "share_pct": 0.2,
+      "prior_share_pct": 0.1
+    },
+    {
+      "state": "New Mexico",
+      "ytd": 45,
+      "prior_full_year": 53,
+      "share_pct": 0.2,
+      "prior_share_pct": 0.1
+    },
+    {
+      "state": "Delaware",
+      "ytd": 36,
+      "prior_full_year": 54,
+      "share_pct": 0.1,
+      "prior_share_pct": 0.1
+    },
+    {
+      "state": "Hawaii",
+      "ytd": 31,
+      "prior_full_year": 112,
+      "share_pct": 0.1,
+      "prior_share_pct": 0.3
+    },
+    {
+      "state": "South Dakota",
+      "ytd": 29,
+      "prior_full_year": 38,
+      "share_pct": 0.1,
+      "prior_share_pct": 0.1
+    },
+    {
+      "state": "Maine",
+      "ytd": 19,
+      "prior_full_year": 20,
+      "share_pct": 0.1,
+      "prior_share_pct": 0.0
+    },
+    {
+      "state": "Rhode Island",
+      "ytd": 14,
+      "prior_full_year": 30,
+      "share_pct": 0.0,
+      "prior_share_pct": 0.1
+    },
+    {
+      "state": "New Hampshire",
+      "ytd": 11,
+      "prior_full_year": 14,
+      "share_pct": 0.0,
+      "prior_share_pct": 0.0
+    }
+  ],
+  "yoy_available": false,
+  "yoy_basis_period_end": "2025-08-31",
+  "snapshots": [
+    {
+      "period_end": "2026-08-31",
+      "data_as_of": "2026-10-06",
+      "ytd": {
+        "Alabama": 346,
+        "Arizona": 798,
+        "Arkansas": 141,
+        "California": 3004,
+        "Colorado": 419,
+        "Connecticut": 177,
+        "Delaware": 36,
+        "District of Columbia": 415,
+        "Florida": 2034,
+        "Georgia": 1067,
+        "Hawaii": 31,
+        "Illinois": 1248,
+        "Indiana": 324,
+        "Iowa": 83,
+        "Kansas": 163,
+        "Kentucky": 222,
+        "Louisiana": 399,
+        "Maine": 19,
+        "Maryland": 402,
+        "Massachusetts": 858,
+        "Michigan": 780,
+        "Minnesota": 614,
+        "Mississippi": 134,
+        "Missouri": 637,
+        "Nebraska": 295,
+        "Nevada": 104,
+        "New Hampshire": 11,
+        "New Jersey": 553,
+        "New Mexico": 45,
+        "New York": 1943,
+        "North Carolina": 959,
+        "North Dakota": 48,
+        "Ohio": 1450,
+        "Oklahoma": 219,
+        "Oregon": 272,
+        "Pennsylvania": 1312,
+        "Puerto Rico": 71,
+        "Rhode Island": 14,
+        "South Carolina": 583,
+        "South Dakota": 29,
+        "Tennessee": 942,
+        "Texas": 2590,
+        "Utah": 482,
+        "Vermont": 0,
+        "Virginia": 734,
+        "Washington": 516,
+        "West Virginia": 76,
+        "Wisconsin": 566
+      },
+      "ytd_national": 28165
+    }
+  ],
+  "yoy_note": "True YoY appears once a snapshot through 2025-08-31 exists; snapshots are saved monthly from 2026-08-31.",
+  "organ_scope": "All organs, deceased-donor transplants, by state of transplant center",
+  "raw_file": "2026-10-08_optn_national_donors_dcd_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_state_all_thru-2026-08-31.csv",
+  "snapshot_downloaded": "2026-10-08",
+  "parser": "optn_national_data",
+  "status": "ok",
   "unrecognised_files": [],
   "undated_files": []
 }

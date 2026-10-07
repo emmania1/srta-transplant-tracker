@@ -2,7 +2,7 @@
   "title": "Weekly deceased donors recovered + YTD all-organs discard rate",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-07T21:48:22+00:00",
+  "ingested_at": "2026-10-07T22:11:52+00:00",
   "donors": [
     {
       "yr": 2023,
@@ -1366,8 +1366,8 @@
   "excluded_incomplete_weeks": [
     "2026-W39"
   ],
-  "raw_file": "2026-10-07_optn_metrics_don_weekly_deceased.csv",
-  "data_as_of": "2026-10-07",
+  "raw_file": "2026-10-08_optn_metrics_don_weekly_deceased.csv",
+  "data_as_of": "2026-10-08",
   "parser": "optn_metrics_don_weekly",
   "donor_type": "Deceased Donors",
   "region": "National",
@@ -1416,8 +1416,8 @@
     }
   ],
   "ytd_through": "September 28",
-  "ytd_table_file": "2026-10-07_optn_metrics_don_table_deceased.csv",
-  "ytd_table_as_of": "2026-10-07",
+  "ytd_table_file": "2026-10-08_optn_metrics_don_table_deceased.csv",
+  "ytd_table_as_of": "2026-10-08",
   "discard_rate_definition": "OPTN metrics dashboard 'All Organs Discard Rate' for deceased donors recovered year to date",
   "status": "ok",
   "unrecognised_files": [],

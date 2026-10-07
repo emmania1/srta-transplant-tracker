@@ -46,6 +46,11 @@ jobs:
         continue-on-error: true
         run: python3 scripts/fetch_optn.py
 
+      - name: Fetch OPTN national data (saves a snapshot only when OPTN's monthly refresh lands)
+        id: optn_national
+        continue-on-error: true
+        run: python3 scripts/fetch_optn_national.py
+
       - name: Ingest OPTN files
         run: python3 scripts/ingest_optn.py
 
@@ -67,7 +72,7 @@ jobs:
           fi
 
       - name: Flag OPTN fetch failure
-        if: steps.optn.outcome == 'failure'
+        if: steps.optn.outcome == 'failure' || steps.optn_national.outcome == 'failure'
         run: |
-          echo "::error::OPTN fetch failed; page kept the previous OPTN data. See 'Fetch OPTN weekly transplants' log."
+          echo "::error::An OPTN fetch failed (weekly: ${{ steps.optn.outcome }}, national: ${{ steps.optn_national.outcome }}); the page kept the previous data."
           exit 1

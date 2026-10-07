@@ -1,0 +1,83 @@
+{
+  "_source": "OPTN region pages, 'States include:' lists, https://www.hrsa.gov/optn/about/governance/regions/region-N",
+  "_retrieved": "2026-10-08",
+  "_note": "Copied verbatim from the official pages. Re-check if OPTN adopts the proposed regional map redesign.",
+  "regions": {
+    "1": [
+      "Connecticut",
+      "Eastern Vermont",
+      "Maine",
+      "Massachusetts",
+      "New Hampshire",
+      "Rhode Island"
+    ],
+    "2": [
+      "Delaware",
+      "District of Columbia",
+      "Maryland",
+      "New Jersey",
+      "Pennsylvania",
+      "West Virginia"
+    ],
+    "3": [
+      "Alabama",
+      "Arkansas",
+      "Florida",
+      "Georgia",
+      "Louisiana",
+      "Mississippi",
+      "Puerto Rico"
+    ],
+    "4": [
+      "Oklahoma",
+      "Texas"
+    ],
+    "5": [
+      "Arizona",
+      "California",
+      "Nevada",
+      "New Mexico",
+      "Utah"
+    ],
+    "6": [
+      "Alaska",
+      "Hawaii",
+      "Idaho",
+      "Montana",
+      "Oregon",
+      "Washington"
+    ],
+    "7": [
+      "Illinois",
+      "Minnesota",
+      "North Dakota",
+      "South Dakota",
+      "Wisconsin"
+    ],
+    "8": [
+      "Colorado",
+      "Iowa",
+      "Kansas",
+      "Missouri",
+      "Nebraska",
+      "Wyoming"
+    ],
+    "9": [
+      "New York",
+      "Western Vermont"
+    ],
+    "10": [
+      "Indiana",
+      "Michigan",
+      "Ohio"
+    ],
+    "11": [
+      "Kentucky",
+      "North Carolina",
+      "South Carolina",
+      "Southern Ohio",
+      "Tennessee",
+      "Virginia"
+    ]
+  }
+}

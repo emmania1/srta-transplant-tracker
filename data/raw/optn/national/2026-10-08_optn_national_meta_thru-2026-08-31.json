@@ -1,0 +1,68 @@
+{
+  "period_end": "2026-08-31",
+  "data_as_of": "2026-10-06",
+  "downloaded": "2026-10-08",
+  "source": "https://hrsa.unos.org/data/view-data-reports/national-data",
+  "queries": {
+    "donors_dcd": {
+      "category": "1;Donor",
+      "report_id": 1,
+      "row2": "[Donation After Circulatory Death].members;Donation After Circulatory Death (DCD);5;Donation After Circulatory Death",
+      "slice0": ""
+    },
+    "tx_dcd_heart": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Donation After Circulatory Death].members;Donation After Circulatory Death (DCD);5;Donation After Circulatory Death",
+      "slice0": "Heart;Heart;8;Organ;Organ"
+    },
+    "tx_distance_heart": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Zone].members;Distance to Transplant Center;11;Zone",
+      "slice0": "Heart;Heart;8;Organ;Organ"
+    },
+    "tx_dcd_liver": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Donation After Circulatory Death].members;Donation After Circulatory Death (DCD);5;Donation After Circulatory Death",
+      "slice0": "Liver;Liver;8;Organ;Organ"
+    },
+    "tx_distance_liver": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Zone].members;Distance to Transplant Center;11;Zone",
+      "slice0": "Liver;Liver;8;Organ;Organ"
+    },
+    "tx_dcd_lung": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Donation After Circulatory Death].members;Donation After Circulatory Death (DCD);5;Donation After Circulatory Death",
+      "slice0": "Lung;Lung;8;Organ;Organ"
+    },
+    "tx_distance_lung": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Zone].members;Distance to Transplant Center;11;Zone",
+      "slice0": "Lung;Lung;8;Organ;Organ"
+    },
+    "tx_dcd_kidney": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Donation After Circulatory Death].members;Donation After Circulatory Death (DCD);5;Donation After Circulatory Death",
+      "slice0": "Kidney;Kidney;8;Organ;Organ"
+    },
+    "tx_distance_kidney": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[Zone].members;Distance to Transplant Center;11;Zone",
+      "slice0": "Kidney;Kidney;8;Organ;Organ"
+    },
+    "tx_state_all": {
+      "category": "2;Transplant",
+      "report_id": 14,
+      "row2": "[State].members;Center State;53;State",
+      "slice0": ""
+    }
+  }
+}

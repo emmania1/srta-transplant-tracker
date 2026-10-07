@@ -11,9 +11,9 @@ Parsers:
       columns "yr","week","full_wk","n","cum_n"; full_wk = "(Partial Week)" marks
       the current unfinished week. OPTN weeks are calendar-year weeks 1-52:
       week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31 (8-9 days).
-  * Donor mix / distance / location: not written yet. They will be built against
-    real OPTN national-data exports, not guessed. Until then those panels stay
-    "awaiting_data" and unrecognised files are listed.
+  * Weekly all-organ transplants by OPTN region: ..._deceased_all_regionNN.csv (same format).
+  * OPTN national data snapshots in data/raw/optn/national/ (scripts/fetch_optn_national.py),
+    parsed by scripts/ingest_national.py into donor_mix / distance / location.
 """
 import csv
 import json
@@ -24,6 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from metrics import drop_incomplete  # noqa: E402
+import ingest_national  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw" / "optn"
@@ -33,7 +34,8 @@ DATE_PREFIX = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 OPTN_METRICS = "OPTN metrics dashboard (optn.transplant.hrsa.gov/data/view-data-reports/optn-metrics)"
 OPTN_METRICS_LIVE = ("OPTN metrics dashboard, Transplant Details > Download Data "
                      "(insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py")
-OPTN_NATIONAL = "OPTN national data reports (optn.transplant.hrsa.gov/data/view-data-reports/national-data)"
+OPTN_NATIONAL = ("OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), "
+                 "fetched monthly by scripts/fetch_optn_national.py")
 
 OUTPUTS = {
     "transplants_weekly": {"source": OPTN_METRICS,
@@ -45,7 +47,9 @@ OUTPUTS = {
     "distance": {"source": OPTN_NATIONAL,
                  "title": "Deceased-donor transplants by donor-to-center distance band"},
     "location": {"source": OPTN_NATIONAL,
-                 "title": "Transplants by transplant-center state / OPTN region"},
+                 "title": "Deceased-donor transplants by transplant-center state (monthly snapshots)"},
+    "regions_weekly": {"source": OPTN_METRICS,
+                       "title": "Weekly deceased-donor transplants (all organs) by OPTN region"},
 }
 
 WEEKLY_FILE = re.compile(r"_optn_metrics_tx_weekly_deceased_(heart|liver|lung|kidney|all)\.csv$")
@@ -54,7 +58,9 @@ DON_WEEKLY_FILE = re.compile(r"_optn_metrics_don_weekly_deceased\.csv$")
 DON_TABLE_FILE = re.compile(r"_optn_metrics_don_table_deceased\.csv$")
 DON_META_FILE = re.compile(r"_optn_metrics_don_table_meta\.json$")
 DON_TABLE_HEADER = ["yr", "total", "pct_chg", "disc", "util"]
-LIVE_OUTPUTS = {"transplants_weekly", "donors_weekly"}
+REGION_FILE = re.compile(r"_optn_metrics_tx_weekly_deceased_all_region(\d{2})\.csv$")
+REGIONS_CONFIG = ROOT / "config" / "optn_regions.json"
+LIVE_OUTPUTS = {"transplants_weekly", "donors_weekly", "regions_weekly", "donor_mix", "distance", "location"}
 
 
 def parse_don_table(path, meta_path):
@@ -125,6 +131,7 @@ def main():
 
     weekly = {}  # organ -> (path, as_of); newest download wins
     don = {}     # weekly / table / meta -> (path, as_of)
+    regions = {}  # "1".."11" -> (path, as_of)
     for path, as_of in files:
         if as_of is None:
             undated.append(path.name)
@@ -137,6 +144,10 @@ def main():
             continue
         if DON_META_FILE.search(path.name):
             don.setdefault("meta", (path, as_of))
+            continue
+        rm = REGION_FILE.search(path.name)
+        if rm:
+            regions.setdefault(str(int(rm.group(1))), (path, as_of))
             continue
         m = WEEKLY_FILE.search(path.name)
         if m and header_of(path).replace('"', "").strip().split(",") == WEEKLY_HEADER:
@@ -158,7 +169,10 @@ def main():
             "parser": "optn_metrics_tx_weekly",
             "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
             "donor_type": "Deceased Donors", "region": "National",
-            "note": "'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.)",
+            "note": ("'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.). "
+                     "The dashboard's 'Kidney' includes kidney-pancreas transplants: 2025 = 21,856 vs 21,052 "
+                     "kidney-alone + 804 kidney-pancreas in OPTN national data."),
+            "organ_definitions": {"kidney": "Includes kidney-pancreas transplants (OPTN metrics dashboard definition)"},
         }
 
     if "weekly" in don:
@@ -177,13 +191,31 @@ def main():
                             "discard_rate_definition": "OPTN metrics dashboard 'All Organs Discard Rate' for deceased donors recovered year to date"})
         results["donors_weekly"] = payload
 
+    if regions:
+        cfg = json.loads(REGIONS_CONFIG.read_text())
+        series, excluded = {}, {}
+        for r, (path, as_of) in sorted(regions.items(), key=lambda kv: int(kv[0])):
+            rows, dropped = parse_weekly(path, as_of)
+            series[r] = rows
+            excluded[r] = [f"{x['yr']}-W{x['week']:02d}" for x in dropped]
+        results["regions_weekly"] = {
+            "regions": series, "excluded_incomplete_weeks": excluded,
+            "region_states": cfg["regions"], "region_states_source": cfg["_source"],
+            "raw_file": ", ".join(p.name for p, _ in regions.values()),
+            "data_as_of": min(a for _, a in regions.values()).isoformat(),
+            "parser": "optn_metrics_tx_weekly", "donor_type": "Deceased Donors", "organ": "All Organs",
+        }
+
+    results.update(ingest_national.build_all(RAW / "national"))
+
     for key, meta in OUTPUTS.items():
         base = {"title": meta["title"], "source": meta["source"], "tag": "Manual",
                 "ingested_at": now}
         if key in results:
             if key in LIVE_OUTPUTS:
-                base["source"] = OPTN_METRICS_LIVE
                 base["tag"] = "Live"
+                if base["source"] == OPTN_METRICS:
+                    base["source"] = OPTN_METRICS_LIVE
             base.update(results[key])
             base["status"] = "ok"
         else:

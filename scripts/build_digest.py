@@ -68,27 +68,38 @@ def price_block(price):
             "source": price.get("source")}
 
 
-def distance_block(dist):
-    """Share of transplants in the long-distance bands, latest period vs the
-    same period a year earlier, per organ."""
-    if dist.get("status") != "ok":
+def mix_block(mix, dist):
+    """Monthly OPTN national data: DCD share and long-distance share, current YTD vs prior
+    full year (a mix comparison; the reports are annual-only)."""
+    if mix.get("status") != "ok" or dist.get("status") != "ok":
         return None
-    long_bands = set(dist.get("long_bands") or [])
-    out = {}
-    for organ, periods in (dist.get("organs") or {}).items():
-        if not periods:
-            continue
-        def share(p):
-            tot = sum(p["bands"].values())
-            return round(100 * sum(v for k, v in p["bands"].items() if k in long_bands) / tot, 1) if tot else None
-        latest = periods[-1]
-        prior = next((p for p in periods if p.get("period") == latest.get("prior_year_period")), None)
-        cur_s = share(latest)
-        pri_s = share(prior) if prior else None
-        out[organ] = {"period": latest["period"], "long_share_pct": cur_s,
-                      "prior_year_long_share_pct": pri_s,
-                      "change_pts": round(cur_s - pri_s, 1) if cur_s is not None and pri_s is not None else None}
-    return {"long_bands": sorted(long_bands), "data_as_of": dist.get("data_as_of"), "organs": out}
+    cy, py = str(mix["current_year"]), str(mix["prior_year"])
+
+    def pair(cur, pri):
+        return {"current": cur, "prior": pri,
+                "change_pts": round(cur - pri, 1) if cur is not None and pri is not None else None}
+    return {
+        "current_label": mix["current_label"], "prior_label": mix["prior_label"],
+        "period_end": mix["period_end"], "snapshot_downloaded": mix.get("snapshot_downloaded"),
+        "comparison_note": mix["comparison_note"],
+        "dcd_share_donors": pair(mix["donors"][cy]["dcd_share_pct"], mix["donors"][py]["dcd_share_pct"]),
+        "dcd_share_by_organ": {o: pair(v[cy]["dcd_share_pct"], v[py]["dcd_share_pct"])
+                               for o, v in mix["transplants_by_organ"].items()},
+        "long_bands": dist["long_bands"],
+        "long_share_by_organ": {o: pair(v[cy]["long_share_pct"], v[py]["long_share_pct"])
+                                for o, v in dist["organs"].items()},
+    }
+
+
+def regions_block(rw):
+    if rw.get("status") != "ok":
+        return None
+    out = {r: organ_metrics(rows) for r, rows in rw["regions"].items()}
+    return {"data_as_of": rw.get("data_as_of"), "regions": out}
+
+
+def pts(v):
+    return "n/a" if v is None else f"{'+' if v > 0 else ''}{v:.1f} pts"
 
 
 def news_block(news, now):
@@ -114,8 +125,9 @@ def main():
     tw = load("transplants_weekly")
     dw = load("donors_weekly")
     price = price_block(load("price"))
-    dist = distance_block(load("distance"))
+    mix = mix_block(load("donor_mix"), load("distance"))
     loc = load("location")
+    regions = regions_block(load("regions_weekly"))
     news = news_block(load("news"), now)
 
     optn_ok = tw.get("status") == "ok"
@@ -171,20 +183,21 @@ def main():
                      f" vs {disc['prior_year_discard_rate_pct']:.1f}% a year ago")
         bullets.append(line + ".")
 
-    if dist and dist["organs"] and is_recent(dist.get("data_as_of"), now):
-        bits = [f"{o.title()} {v['long_share_pct']}% ({'+' if (v['change_pts'] or 0) >= 0 else ''}{v['change_pts']} pts YoY)"
-                for o, v in dist["organs"].items() if v["change_pts"] is not None]
-        if bits:
-            bullets.append(f"Share of transplants travelling {', '.join(dist['long_bands'])}: " + " · ".join(bits) + ".")
-    if loc.get("status") == "ok" and is_recent(loc.get("data_as_of"), now):
-        bullets.append(f"New transplant-center {loc.get('level', 'location')} data loaded ({loc.get('latest_period')}); see Distance & location.")
+    if mix and is_recent(mix.get("snapshot_downloaded"), now):
+        # new monthly OPTN national snapshot this week
+        d = mix["dcd_share_donors"]
+        lb = " · ".join(f"{o.title()} {v['current']}% ({pts(v['change_pts'])})"
+                        for o, v in mix["long_share_by_organ"].items())
+        bullets.append(f"New OPTN monthly data ({mix['current_label']} vs {mix['prior_label']}, mix comparison): "
+                       f"DCD {d['current']}% of deceased donors ({pts(d['change_pts'])}); "
+                       f"transplants travelling 251+ NM: {lb}.")
 
     if news["new_items_7d"]:
         cats = [f"{news['labels'].get(k, k)} {v}" for k, v in news["by_category"].items() if v]
         n = news["new_items_7d"]
-        bullets.append(f"{n} new news item{'s' if n != 1 else ''} this week — " + ", ".join(cats) + ".")
+        news_line = (f"{n} new news item{'s' if n != 1 else ''} this week — " + ", ".join(cats) + ".")
     else:
-        bullets.append("No new news items matched the keyword groups this week.")
+        news_line = "No new news items matched the keyword groups this week."
 
     # ---- Slack markdown, capped at MAX_LINES
     week_label = now.date().isoformat()
@@ -195,8 +208,10 @@ def main():
     room = MAX_LINES - len(lines) - 1  # "Top headlines:" line
     heads = news["top_headlines"][:max(0, min(5, room))]
     if heads:
-        lines.append("Top headlines:")
+        lines.append(f"Headlines ({news_line.rstrip('.').replace(' — ', ': ')}):")
         lines += [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {h['date']})" for h in heads]
+    else:
+        lines.append(news_line)
     if len(lines) < MAX_LINES:
         lines.append(f"Dashboard: {SITE_URL}")
     lines = lines[:MAX_LINES]
@@ -207,10 +222,13 @@ def main():
         "optn": {"status": tw.get("status"), "data_as_of": as_of, "raw_file": tw.get("raw_file"),
                  "new_data_this_week": new_optn, "organs": organs, "all_organs": total},
         "donors": donors,
-        "distance": dist,
-        "location": {"status": loc.get("status"), "data_as_of": loc.get("data_as_of")},
+        "donor_mix_and_distance": mix,
+        "regions": regions,
+        "location": {"status": loc.get("status"), "period_end": loc.get("period_end"),
+                     "yoy_available": loc.get("yoy_available"), "yoy_note": loc.get("yoy_note")},
         "news": news,
         "bullets": bullets,
+        "news_line": news_line,
         "markdown_lines": lines,
     }
     SUMMARY_JSON.write_text(json.dumps(summary, indent=2) + "\n")

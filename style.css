@@ -23,10 +23,12 @@
   --yr1: #86b6ef;
   --yr2: #a8a7a1;
   --grid: #ecebe6;
-  --band-1: #cde2fb;
-  --band-2: #86b6ef;
+  --band-1: #86b6ef;
+  --band-2: #5598e7;
   --band-3: #2a78d6;
-  --band-4: #184f95;
+  --band-4: #1c5cab;
+  --band-5: #0d366b;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -53,10 +55,12 @@
     --yr1: #256abf;
     --yr2: #6b6a64;
     --grid: #2a2a27;
-    --band-1: #104281;
-    --band-2: #1c5cab;
+    --band-1: #184f95;
+    --band-2: #256abf;
     --band-3: #3987e5;
-    --band-4: #9ec5f4;
+    --band-4: #6da7ec;
+    --band-5: #b7d3f6;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
   }
 }
 :root[data-theme="dark"] {
@@ -65,7 +69,8 @@
   --muted: #9b9a94; --accent: #3987e5; --up: #4fd08a; --up-bg: #123324; --down: #ef6b63;
   --down-bg: #3a1d1b; --live: #4fd08a; --live-bg: #123324; --manual: #e0b04f; --manual-bg: #3a2c0e;
   --linked: #b3a1f5; --linked-bg: #2a2440; --await-bg: #26261f; --yr0: #5598e7; --yr1: #256abf;
-  --yr2: #6b6a64; --grid: #2a2a27; --band-1: #104281; --band-2: #1c5cab; --band-3: #3987e5; --band-4: #9ec5f4;
+  --yr2: #6b6a64; --grid: #2a2a27; --band-1: #184f95; --band-2: #256abf; --band-3: #3987e5; --band-4: #6da7ec; --band-5: #b7d3f6;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
 }
 
 * { box-sizing: border-box; }
@@ -148,6 +153,14 @@ h2 { font-size: 1.1rem; margin: 0; }
   background: var(--accent); border-color: var(--accent); color: #fff;
 }
 .chart-wrap { position: relative; height: 300px; }
+.chart-wrap.short { height: 220px; }
+.chart-wrap.tall { height: 360px; }
+.sub-head { font-size: 0.9rem; margin: 16px 0 6px; }
+.cell-sub { font-size: 0.75rem; color: var(--muted); font-weight: 400; }
+tr.prior td { color: var(--text-2); }
+tr.total td { font-weight: 600; border-top: 2px solid var(--border); }
+.dist-table td[rowspan] { vertical-align: middle; }
+.muted-li { color: var(--text-2); }
 .table-view summary { cursor: pointer; color: var(--text-2); font-size: 0.85rem; margin-top: 8px; }
 
 table { border-collapse: collapse; width: 100%; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
@@ -178,3 +191,4 @@ footer td, footer th { text-align: left; }
   .chart-wrap { height: 240px; }
   .sec-head .updated { margin-left: 0; width: 100%; }
 }
+.up, .down, .flat { white-space: nowrap; }
