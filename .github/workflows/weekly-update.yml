@@ -51,6 +51,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Weekly update ($(date -u +%Y-%m-%d))"
-            git pull --rebase
+            # generated files: if another run pushed first, keep this (newer) run's output
+            git pull --rebase -X theirs
             git push
           fi
