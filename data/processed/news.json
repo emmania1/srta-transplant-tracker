@@ -25,7 +25,13 @@
       "label": "Technology & logistics"
     }
   ],
-  "errors": [],
+  "errors": [
+    "strata: HTTP Error 503: Service Unavailable",
+    "volumes: HTTP Error 503: Service Unavailable",
+    "opo_regulation: HTTP Error 503: Service Unavailable",
+    "competitors: HTTP Error 503: Service Unavailable",
+    "tech_logistics: HTTP Error 503: Service Unavailable"
+  ],
   "items": [
     {
       "headline": "VCU pharmacy student earns national recognition for organ donation advocacy",
