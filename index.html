@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRTA Transplant Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="page-head">
+    <div class="head-row">
+      <div>
+        <h1>SRTA Transplant Tracker</h1>
+        <p class="subtitle">Strata Critical Medical (Nasdaq: SRTA): U.S. transplant volumes, organ travel, and industry news. About 84% of SRTA revenue is tied to organ transplants.</p>
+      </div>
+      <div class="price-box" id="price-box">
+        <div class="price-label">SRTA <span class="tier-tag live">Live</span></div>
+        <div class="price-val" id="price-val">…</div>
+        <div class="price-chg" id="price-chg"></div>
+        <div class="updated" id="price-updated"></div>
+      </div>
+    </div>
+    <div class="updated" id="page-updated"></div>
+  </header>
+
+  <main>
+    <section class="this-week">
+      <div class="sec-head">
+        <h2>This week</h2>
+        <span class="updated" id="digest-updated"></span>
+      </div>
+      <ul id="this-week-list"><li>Loading…</li></ul>
+    </section>
+
+    <!-- 2. Weekly volumes -->
+    <section class="panel" id="volumes">
+      <div class="sec-head">
+        <h2>Weekly deceased-donor transplants</h2>
+        <span class="tier-tag manual">Manual</span>
+        <span class="updated" id="vol-updated"></span>
+      </div>
+      <p class="note">Complete weeks only (the current, partial week is excluded). All comparisons are year over year: each week vs. the same ISO week last year.</p>
+      <div class="cards" id="organ-cards"></div>
+      <div class="tabs" role="tablist" id="organ-tabs"></div>
+      <div class="chart-wrap" id="vol-chart-wrap"><canvas id="vol-chart" aria-label="Weekly transplants by week number"></canvas></div>
+      <details class="table-view"><summary>Show as table</summary><div id="vol-table"></div></details>
+    </section>
+
+    <!-- 3. Donor mix -->
+    <section class="panel" id="donor-mix">
+      <div class="sec-head">
+        <h2>Donor mix: DBD vs. DCD</h2>
+        <span class="tier-tag manual">Manual</span>
+        <span class="updated" id="mix-updated"></span>
+      </div>
+      <p class="note">DBD = donation after brain death. DCD = donation after circulatory death. DCD recoveries are more time-sensitive and lean on perfusion.</p>
+      <div id="mix-body"></div>
+    </section>
+
+    <!-- 4. Distance & location -->
+    <section class="panel" id="distance">
+      <div class="sec-head">
+        <h2>How far organs travel</h2>
+        <span class="tier-tag manual">Manual</span>
+        <span class="updated" id="dist-updated"></span>
+      </div>
+      <p class="note">Share of deceased-donor transplants in each OPTN distance band (nautical miles, donor hospital to transplant center). A rising share in the long bands means more flying.</p>
+      <div id="dist-body"></div>
+    </section>
+
+    <section class="panel" id="location">
+      <div class="sec-head">
+        <h2>Where transplants happen</h2>
+        <span class="tier-tag manual">Manual</span>
+        <span class="updated" id="loc-updated"></span>
+      </div>
+      <div id="loc-body"></div>
+    </section>
+
+    <section class="panel linked" id="organ-miles">
+      <div class="sec-head">
+        <h2>Organ-miles</h2>
+        <span class="tier-tag linked">Linked</span>
+      </div>
+      <p>Organ-miles are tracked in a separate tool and not copied here: <a href="https://slogatskiy.github.io/srta-organ-miles-tracker/" target="_blank" rel="noopener">SRTA organ-miles tracker ↗</a></p>
+    </section>
+
+    <!-- 5. News -->
+    <section class="panel" id="news">
+      <div class="sec-head">
+        <h2>News &amp; company mentions</h2>
+        <span class="tier-tag live">Live</span>
+        <span class="updated" id="news-updated"></span>
+      </div>
+      <div class="filters" id="news-filters"></div>
+      <ul class="news-list" id="news-list"></ul>
+      <button class="more" id="news-more" hidden>Show more</button>
+    </section>
+
+    <!-- Phase 2 placeholder: layout room only, no data -->
+    <section class="panel phase2">
+      <div class="sec-head"><h2>Coming next</h2></div>
+      <p class="note">Planned panels, not yet built: CDC overdose deaths · waitlist additions · NRP penetration &amp; company KPIs · OPO tiers &amp; decertifications · TransMedics volumes · JOBY stake value · SEC filings feed.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>About this data</h2>
+    <table class="sources">
+      <thead><tr><th>Panel</th><th>Source</th><th>Tag</th><th>Cadence</th></tr></thead>
+      <tbody id="sources-body"></tbody>
+    </table>
+    <p class="note"><strong>Live</strong> = fetched automatically by a GitHub Action. <strong>Manual</strong> = from a file downloaded and dropped into the repo. <strong>Linked</strong> = external tool we link to rather than copy. Public data only. Panels with no data show "Awaiting data" rather than a placeholder value.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

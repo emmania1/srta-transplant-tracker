@@ -1,0 +1,10 @@
+{
+  "title": "Deceased donors by type (DBD vs DCD) and DCD share by organ",
+  "source": "OPTN national data reports (optn.transplant.hrsa.gov/data/view-data-reports/national-data)",
+  "tag": "Manual",
+  "ingested_at": "2026-10-07T19:19:22+00:00",
+  "status": "awaiting_data",
+  "note": "No parsed OPTN export yet. Drop a dated file in data/raw/optn/.",
+  "unrecognised_files": [],
+  "undated_files": []
+}

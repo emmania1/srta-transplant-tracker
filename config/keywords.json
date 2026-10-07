@@ -1,0 +1,130 @@
+{
+  "_instructions": "News keyword groups. Each group becomes one Google News RSS query (terms OR-joined). Edit freely: add/remove terms or groups. 'id' is the filter-button key; 'label' is what the page shows. Multi-word terms are quoted automatically. Items found by several groups get several tags.",
+  "_filters_note": "Drop items whose source contains any blocked_sources entry, or whose headline matches any exclude_title_patterns (case-insensitive regex) \u2014 used to keep out quote pages, spam sites and sell-side rating/target/estimate headlines. Per group, require_any (optional) keeps only items whose headline+snippet contains one of the strings.",
+  "lookback_days": 90,
+  "blocked_sources": [
+    "dars.gov.et",
+    "marketbeat",
+    "stock titan",
+    "gurufocus",
+    "zacks",
+    "tipranks",
+    "benzinga",
+    "investing.com",
+    "marketscreener",
+    "seeking alpha",
+    "simply wall st",
+    "kalkine",
+    "stock traders daily",
+    "moomoo",
+    "facebook"
+  ],
+  "exclude_title_patterns": [
+    "stock price, news, quote",
+    "interactive stock chart",
+    "price target",
+    "target price",
+    "\\brating\\b",
+    "\\banalysts?\\b",
+    "\\bupgrade[sd]?\\b",
+    "\\bdowngrade[sd]?\\b",
+    "initiates coverage",
+    "estimates?\\b",
+    "stock forecast",
+    "undervalued",
+    "fair value",
+    "technical signals",
+    "\\bForm 4\\b",
+    "\\$\\d+ target"
+  ],
+  "groups": [
+    {
+      "id": "strata",
+      "label": "Strata",
+      "terms": [
+        "Strata Critical Medical",
+        "SRTA",
+        "Blade Air Mobility",
+        "Keystone Perfusion"
+      ],
+      "require_any": [
+        "strata critical",
+        "blade air",
+        "keystone perfusion",
+        "nasdaq:srta",
+        "nasdaq: srta",
+        "(srta)"
+      ]
+    },
+    {
+      "id": "volumes",
+      "label": "Transplant volumes / donation",
+      "terms": [
+        "organ transplant record",
+        "organ transplant volume",
+        "organ donation",
+        "OPTN data",
+        "UNOS",
+        "SRTR",
+        "DCD donor",
+        "normothermic regional perfusion"
+      ],
+      "require_any": [
+        "record",
+        "data",
+        "rate",
+        "increase",
+        "decline",
+        "volume",
+        "number",
+        "statistic",
+        "national",
+        "optn",
+        "unos",
+        "srtr",
+        "dcd",
+        "perfusion",
+        "nrp",
+        "transplants"
+      ]
+    },
+    {
+      "id": "opo_regulation",
+      "label": "OPO & regulation",
+      "terms": [
+        "organ procurement organization",
+        "OPO decertification",
+        "CMS OPO rule",
+        "OPTN policy",
+        "continuous distribution organ",
+        "dead donor rule"
+      ]
+    },
+    {
+      "id": "competitors",
+      "label": "Competitors & industry",
+      "terms": [
+        "TransMedics",
+        "TMDX",
+        "Paragonix",
+        "NORA organ",
+        "ProCure On-Demand",
+        "OrganOx",
+        "XVIVO",
+        "Bridge to Life organ",
+        "Statline organ",
+        "Buckeye Transplant"
+      ]
+    },
+    {
+      "id": "tech_logistics",
+      "label": "Technology & logistics",
+      "terms": [
+        "organ perfusion FDA",
+        "organ perfusion device approval",
+        "organ transport commercial flight",
+        "organ transport flight"
+      ]
+    }
+  ]
+}

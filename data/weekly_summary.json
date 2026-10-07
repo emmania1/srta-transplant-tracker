@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-10-07T19:19:22+00:00",
+  "price": {
+    "close": 4.68,
+    "date": "2026-10-07",
+    "week_ago_close": 5.11,
+    "week_ago_date": "2026-09-30",
+    "change_1w_pct": -8.4,
+    "stale": false,
+    "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
+  },
+  "optn": {
+    "status": "awaiting_data",
+    "data_as_of": null,
+    "raw_file": null,
+    "new_data_this_week": false,
+    "organs": {},
+    "all_organs": null
+  },
+  "distance": null,
+  "location": {
+    "status": "awaiting_data",
+    "data_as_of": null
+  },
+  "news": {
+    "new_items_7d": 1,
+    "by_category": {
+      "strata": 0,
+      "volumes": 1,
+      "opo_regulation": 0,
+      "competitors": 0,
+      "tech_logistics": 0
+    },
+    "labels": {
+      "strata": "Strata",
+      "volumes": "Transplant volumes / donation",
+      "opo_regulation": "OPO & regulation",
+      "competitors": "Competitors & industry",
+      "tech_logistics": "Technology & logistics"
+    },
+    "top_headlines": [
+      {
+        "headline": "VCU pharmacy student earns national recognition for organ donation advocacy",
+        "source": "VCU Health",
+        "date": "2026-10-01",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5",
+        "tags": [
+          "volumes"
+        ]
+      }
+    ],
+    "fetched_at": "2026-10-07T19:16:34+00:00"
+  },
+  "bullets": [
+    "OPTN volumes: awaiting first data file \u2014 no transplant figures loaded yet.",
+    "1 new news item this week \u2014 Transplant volumes / donation 1."
+  ],
+  "markdown_lines": [
+    "*SRTA Transplant Tracker \u2014 week of Oct 7, 2026* \u00b7 SRTA $4.68 (\u25bc 8.4% 1-wk)",
+    "\u2022 OPTN volumes: awaiting first data file \u2014 no transplant figures loaded yet.",
+    "\u2022 1 new news item this week \u2014 Transplant volumes / donation 1.",
+    "Top headlines:",
+    "  \u2013 <https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5|VCU pharmacy student earns national recognition for organ donation advocacy> (VCU Health, 2026-10-01)",
+    "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
+  ]
+}

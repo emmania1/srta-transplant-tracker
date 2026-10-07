@@ -1,0 +1,56 @@
+name: Weekly update
+
+on:
+  schedule:
+    # Sunday 23:00 UTC = 7pm ET (EDT) / 6pm ET (EST)
+    - cron: "0 23 * * 0"
+  push:
+    branches: [main]
+    paths:
+      - "data/raw/optn/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test YoY / week logic
+        run: python3 -m unittest discover -s tests
+
+      - name: Fetch SRTA price
+        run: python3 scripts/fetch_price.py
+
+      - name: Fetch news
+        run: python3 scripts/fetch_news.py
+
+      - name: Ingest OPTN files
+        run: python3 scripts/ingest_optn.py
+
+      - name: Build weekly digest
+        run: python3 scripts/build_digest.py
+
+      - name: Commit results
+        run: |
+          git config user.name "srta-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/processed data/weekly_summary.json summary/latest.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Weekly update ($(date -u +%Y-%m-%d))"
+            git pull --rebase
+            git push
+          fi

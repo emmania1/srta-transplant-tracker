@@ -1,0 +1,771 @@
+{
+  "source": "Google News RSS search (news.google.com/rss/search)",
+  "tag": "Live",
+  "fetched_at": "2026-10-07T19:16:34+00:00",
+  "lookback_days": 90,
+  "groups": [
+    {
+      "id": "strata",
+      "label": "Strata"
+    },
+    {
+      "id": "volumes",
+      "label": "Transplant volumes / donation"
+    },
+    {
+      "id": "opo_regulation",
+      "label": "OPO & regulation"
+    },
+    {
+      "id": "competitors",
+      "label": "Competitors & industry"
+    },
+    {
+      "id": "tech_logistics",
+      "label": "Technology & logistics"
+    }
+  ],
+  "errors": [],
+  "items": [
+    {
+      "headline": "VCU pharmacy student earns national recognition for organ donation advocacy",
+      "source": "VCU Health",
+      "date": "2026-10-01T21:12:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Nomination Committee of XVIVO Perfusion AB (publ)",
+      "source": "Yahoo Finance",
+      "date": "2026-09-30T14:15:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQTRmWWU3Z1RSWWFfYzJQcDNpMVNhcW90eHBVSjJGbTVQdHJZa3RWOEtmX1liRF9RRGlqb21RMDVJMXQ0V3lEODJxUUhFU0I1UFZqNGt6bGFlZzJqUGlrTzZUSVNpNU8ySlZ1WG8tTVhHOTlCR2kxLWp2RTQ5TVAwM2w2a0ZrTTZGa01NSGxSMk0yVFlfZkJHazJYQTNueU15a0E?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Heart in a box. Canadian-first technology opens new possibilities for lifesaving transplants.",
+      "source": "www.hospitalnews.com",
+      "date": "2026-09-30T14:03:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOWJzaTdBXzY0STBTQzNobzlpdTd1OGRXMFZqNkdpajZaclFZQ1BWMVhXWGx4Q25UWWF5RkVMN1RvYnNXNVY4TjBzeFNMdFNRU2hMRktiVWZuU3FJcFZmLTItdEZuY1lGX0FZVmxyUnY3TVlELXlMT1pmRlZ6Wl9LQ0hRYV9sV0hZb0RYTFVMRm5JV3NsRW04djNJVW9LWVl4ZXc5Zng1TDdNZTNQQ1BIMWVVZVV1d2R1SHdsQmJB?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?",
+      "source": "The Motley Fool",
+      "date": "2026-09-29T17:17:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZTZKU2ZTclpORi1hTG5BTm1Cd2I5Uk1XOUlKZlJWc1pJWUtvN3B2cEFOWEpybmdiTnFYRFU2bXlZZklVa0llMEU5X3NHa1FmS0Y0UTAtSXBwblg4UTRfNlJiTldDZDR5b05ybkNpRU5aS2JRSlFzeURxM2Y1NW9UZnpucmd0Tm1VU3E4TzVpdkVLcEk3a25nMnVlQWF1ZUZXaVd3dUZrVDJ1XzFnbk9uU1BNSjhZNm9Zbnd6azhWREpUWDNPeEJ1ZXFDNDNvRWlxcUxj?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida",
+      "source": "PR Newswire",
+      "date": "2026-09-29T12:39:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZHlIMlhKODJwMlpESjlVWGpabFRFTGE5Z3E1UHVWeEotUjVMeF9KRzZXRlBxRVRTdjZLYW51WEtyc2FJV3lHTHNYZERZbXZfY1NrMDV0SGRWcEV1am9KaEQ2b0ctU2hkR25vZ2QtZEtJcldtS3BnMnozUGg3UmU0UVVpMFlhLU16d2RoUnU3TEpmQU5nc3RWWlN6cTFVSFhsSHoyUm84dTBKSE91RWpIYWRDaFkyY0lLTmNvSEw5TVhRNmZoZ3ZFUFFqN2tmOUVHUEVQYkNGN3ExSEpmblpwZ0hFQWdIUQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "XVIVO Announces FDA Receipt of PMA Application for The XVIVO Heart Assist Transport System",
+      "source": "WBOC TV",
+      "date": "2026-09-28T09:20:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNTGQ2N0h4R1FlSjhCTWJpeDRwdVp1VDctTVhyS0djaGlhZnFLbVdncHVMMWE0VFBEeXJOMkdES29ZNEdDT2JuZk5zSm1BX2t0T21IcEU3WmQwdnJLM2ZuNVVmVzVVeGItTGxvdHRVcThuNzVsRTRHdlphb0cyOUdOR3ZiNDMxLTFpSm11QXVuT2tNeEMxYjN6aXNwdVNUVVBSRFlwREFPbXRROU5MenNJeFRscW5PTENvOGw1NlFoTC1kQTBnNUt2QmJPb041WTg4V180Tl9BRTBPZEFuQWFhZElLY2MtQnRFaUxPQWthU2RnNUVjQUlNbV9OVWVucVROTTVGNmMyUTRGUWxRTzdEOHk1TWwxNVlsSnJjWA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million",
+      "source": "scanx.trade",
+      "date": "2026-09-28T08:59:49+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU9DR1Zqb1hUTVp5S3JoWEMtb3VZVnJBYTJUeDJMTXF2WEhhWEdoMGxGU015cVZaWkRjZXJaZmF5bEVVZ1RZWUtSRUw1S0pfUWVhbXNYdHpENW0zV3FuQURJcTViR2ZaZlZVMnF6bTdZZXQzUnVESVZBRm9UTmYxcFc2LWNncmZHUnVfYnUyeERGcm11enRzU0JYcFhKZVpzMC1OS1p2QmdSUzVhLVRkTl9RMnU1MHR6LUxGSXp6b3o?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics offers a unique organ transplant te...",
+      "source": "Pluang",
+      "date": "2026-09-26T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOS2F3QVhLSUhjQ1U0QVprNHczUkxCNFk5Z2dWNktFQUNJSGpPTlNvc3hHVGxuSzVoNUs5cFVUOHVfZGMzX3RfTjgtT2J4MDZodlRSOV85cENTamwtWkU5VU5peUYyWDNPVy1qdWY1Wk91cjlaSHdfQUdMdnlzdGJCUGJzZzJEdHc0OEZpTno2NjgtQUNPc09DQmMxV08ydmRTWXJ4dEV5UQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Sharp drop in organ donation rates sparks campaign for consent",
+      "source": "The Christian Institute",
+      "date": "2026-09-24T14:25:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN1dmRGVlR3lUb05NTEFLelE3QkFnNGc5NWJVRTNTVVIxYnFrbkd3OUc0cWZxWGRmR0sxM05nbEhIQndwMDVXamFwSl9tNHRXaC1ZWkpzOGx5bFdBMFg1SUR3c09Nc3JyTkZXeFJJQV9rcHFXTnV5c0JvN2c5TE1SSUlBNkJvQmV1eGk5YVhHbklRM3pWRlJ3ZUxVM2dvQQ?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "London Health Sciences Centre completes Canadian first using \"heart in a box\" technology for cardiac transplantation",
+      "source": "LHSC",
+      "date": "2026-09-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbl8yV0tDNEZLNVJSeC1CVTh2Qnp2bmFMbUhpTThtb0J2ejJQZUZPSmFBNVhUVXQ2MXVIcXRGYV9nVjdrc1VUT0c3dlBQZ3RWNWpaemxNMC1vNWQyNTlHM2hLLUdoZlFDcWdBalBZYzhPbk9uTnpHd1Mzb25Rc0twS2ExZDZ0WFpSU2k3YVJhRWtuV3daV0RIWmxxOWFLTVRjY2ZNWXpuXzVfeGpFSURJNDUzTlhaZFlBcUE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "10 lives saved: the invisible work that makes Paran\u00e1 a national reference in transplants.",
+      "source": "Folha do Litoral",
+      "date": "2026-09-23T21:24:54+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbW5UZF9EX2tyMlZiVm1MYTRBNmVOTTg0Yjl1OHdGd3c5RHBkbDBqcFJHZnJGNjFLcGlfcHlkX2ZNUjd1UDIya3A2RmtXUzcyYzJkRGJQUkI3WmxLc01PeEVZdlNZXzBfOGduYjdoTzY1NWJETFpKNjBOMjc3d1NHcmR1VkFjX1g3RkNaM3Q0VWtPdnFTVm05dWRpNFc5RXZWY3VTR1JNMmFiaTNtZUgyejJsUVFKOE93cXViV2JiQ1ZFUTViajJQMzhUcGhpeVpOWXJSZTlVNjViX2x2R1JlS1RXQnlVU2w5VlE?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Mr. and Mrs. Tyrese Haliburton are something else, and champion organ donation",
+      "source": "IndyStar",
+      "date": "2026-09-22T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQU0o4VmJXUUoySDFnLVdFQlI5Nk1WRjZNSEVKOUVkWmhwYU5JQW9EWG9aN25KcjBkd2hIbll3VWlCRmxnbVpLVlJVMkh4UmpsWHV1RkNJNkRIOVp5ZUZsY3JSNF9Sb0d0ZXNjOTJQT2tqVVR3T29paExXbXJIM2F0LTFXaFNndTkwRlhPTmswUTg1eE1TTW52bk4wX2twUGx1VU5nVWhYUVgtbEFEa3FXQ2VPZjhIcVEtUF9tM1UyRzBQUXZFamQ5MEo3MTJob2V0V1hwNzAyand4bndkVm1rVGNQZXNwYW5PSEZjLXF1anBNOWdiekFEWEdCd0hfUQ?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "NHS announces first-ever urgent response following sharp decline in organ donation",
+      "source": "NHS Organ Donation",
+      "date": "2026-09-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYzJaNlVXSG1MRTg1YS12WGVvanozWWdBMEU1eTNnWnZNYUtpR0tTdW9JTlNDWnZBRUFjM2ZtZ1RtRE1YbHNjbW9lOVc4SWVsMXBUaDEtTlNkRVJ0cnlsZXEzWHktaFdLaUl5dTctSllUemhtVWFjMFg0WGdEX2M1dW5DME1nUG5VRVRxczd5ZmIwajNaQnhieDl0ZWg1RkZDU3FiV19aZFoxY0pLZi1XeVh1eGFoNnZXVmxDejZ3?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "'I'm forever grateful for my girl's donated heart'",
+      "source": "BBC",
+      "date": "2026-09-20T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJcGdsZXhnX2M1WTh0Q3RWTHVaYk5iaDlCekczMFBERmJfRHZDUWVIY3dnMUFQVzVPSV9JdWJRY1pPNjd1eS0yRHBKU1pwQWljdUI3TjdJSEtuUVU?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics' growth slows, relying more on inte...",
+      "source": "Pluang",
+      "date": "2026-09-18T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zRXdMLUxiZldLNmVkc2NMWXVpX01hT0hyTjNSSHVueE9tNFJYSjl3cU91blRjNnBTaTRoYWNXWkdxOVFNcTRBbHVEYVV3dXVaeVRMdnF0Y2E5R3FVNUtYbmlrNUhVWjdTUmZaQWIteVhwMjM3cUY5M25oZmJXS00?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Work begins on $56 million buildout for TransMedics in Somerville",
+      "source": "The Business Journals",
+      "date": "2026-09-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWDhRdEtoUzFJbzI5N0I1cGdMbElBVWNhdGQ2V2VWemF5aGEtcVB2cHNORnFZeVloUlU0eFZucVNuR01ublNuUTMtUEFyZWowWlpWb3duc3hMeUtSSHJhWjlSZGZlU3lCSkgyS2tRWTA3b1pjX3BSU1BacDUxNjdhRVN2ZU9JaUdJeHdCTzY1cVhOUHdudTgwYTlydkR6V3BLUlNVRnhkbTI?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "2 Stocks Down 28% and 34% to Buy and Hold",
+      "source": "The Motley Fool",
+      "date": "2026-09-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb25ZSllNY3Z5ZmRNSTlIcGZ4dFJjbzhSSVNIaVpydW5yUlREdTdrZlV0dVpNUlhsaERXZTJnY18zM1N6ajBNQVpMSmpjZktiTGx2eUowNUQtNlU2b09yS1d0NDE3SHZtWUhpUnlYbHJ1X3JEM0hDOVVmeF9oQUpSUGtuRVNOWWxqVnU1Tmpjc2s?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics expands logistics network: A look inside the command center managing 30% of transplants",
+      "source": "The Business Journals",
+      "date": "2026-09-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaUJWWldQdFhHMWU0NGQ1SlR6TGVFZFRWRWs2dFpwMHF3TWc5OWZJcDdDRFFjRlJuR21DckY2dnl3c0twTElJZVZQbExBcTJ3QzJEaGF2X0NkQnFLR3dXMDFOdGZyYjVyRFFQdllHbjNtdEU0SEhLSFc5bU10WFFRc24wR25LTnhoRGpLX1JWcy1rUlU?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group Jumps 6.5% Amid Sector-Wide Rally",
+      "source": "AlphaStreet",
+      "date": "2026-09-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1dpbkNwMTM0NENUV2tBQWROTmhXM0tlS29GeXNDOUItVF9IQ2RJUHB1SjJhbGgydldrMWE3TE5jY2NkVVFiUkRxQXVtb1htRG05b2w5WTZQNkN6WDB0OUNlb2JYTUkyTl9WRVpic1ZsYndRb1dXbmFFbE1vaG5FWk1saE40eFHSAYcBQVVfeXFMTXNXaW5DcDEzNDRDVFdrQUFkTk5oVzNLZUtvRnlzQzlCLVRfSENkSVBwdUoyYWxoMnZXazFhN0xOY2NjZFVRYlJEcUF1bW9YbURtOW9sOVk2UDZDelgwdDlDZW9iWE1JMk5fVkVaYnNWbGJ3UW9XV25hRWxNb2huRVpNbGhONHhR?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Slides After CFO Transition News Despite Reaffirmed 2026 Outlook",
+      "source": "Quiver Quantitative",
+      "date": "2026-09-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQnFZQ0Ryb3E0a1E3OHJjVjNBbFV4N0d6OEk5SWhlbm13b0E3NWtsZU10elJjWWphYkZwOVk2eUQ3cmJjRTlZV3NSU2VmOGM5WjE3Rmh1dzgxc2o4U2ZYdVBLWVg4eXRVZ29PUzhzNDR4bmQyd3RNOHQ2ZDA5ajQydGtRVHkwU05TNnRmQnVjTVhHMFo5Z2VSSGQxbWtHQWtTMm10ZHRtdF9haEFFREE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Names Fernando Araujo as CFO; Maintains 2026 Revenue Outlook",
+      "source": "Yahoo Finance",
+      "date": "2026-09-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPU3hpckNLNk1pek5vSVJIaV93NXZzbVQ5bEdBcWVTNU1EOVQtTF9iRFFjaUlKOE9ycUdYY0RKdnVYRVFHOGpKYk43c1QzQ3cxWFYzRDN4WGhzUl9tOHYyaWZ2MGNwaUtMVUw5S3VSb0ZwY1J2TW13QnJCWFVQdHlfdlYxMFZGN2luU21jR2R1T3oxNzc1QnI4aDFfZXdXMlE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Organ Donation Day Honors Donors, Celebrates Saved Lives",
+      "source": "\uc870\uc120\uc77c\ubcf4",
+      "date": "2026-09-09T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYWRUMUg4Z1h4bHlUTlhuUzNrR3J3cVlQcDBYSGJ3Ym04RXY2RVNRc2c5eUQwUmJPRkd2TUNrNXVBbkNZcThYWTdnOVpFcF9ydjd5RFItVUktWUNQSGNaZ1QzQ1o2SGJvQjdaY2I3aGZXc2FFVlVNOGdFOXVXTktXLUdsT3pGVnIw?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Law firm probes TransMedics officers for possib...",
+      "source": "Pluang",
+      "date": "2026-09-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTF9NemdtaWp2Y3lYZGV0MVJxT090OE45S0l5RzhRYy0zUkxyRnZ5blBrZV9GZ3E0VzB5Q0dNcDdaVUgxaXBZZkliZUEtNDZFVF9kQW80OFloaFRGdmgwaUtsNnJ4OEotQkxMVVVQSFhybWdmd19WN0ZyU3VCUk9LanN3OFNWbXhIN2tUNG80VzFEZw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Why Is TransMedics (TMDX) Up 10.2% Since Last Earnings Report?",
+      "source": "Yahoo Finance",
+      "date": "2026-09-03T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNODdrQ0pqejJTeUE3WUxuRnVsLUgzbUxPUWhXRHJFSEdYYTZBcWFXc3V6aEE4eEU2QUpIWGlGTnBLZGx3WU1WUThpXzlRUXdtZjR6cVhNUVczdWxENHlreTRPc1RsTU9RTExCSVBSaHNLbjByaTNWUEMzNGdjZDNCOGZXZWFrUlVPLXdCNkZTNEJ3RlR3?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Is TMDX Stock Worth Buying as Growth Meets Rising Margin Pressure?",
+      "source": "Yahoo Finance",
+      "date": "2026-09-03T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLTAyV25NMVJWcmhkZmNUbU1MSmxMNXByeTd0akg1WmR1WE11TVZ4VmMyQ05hbGMzWklLUkxSaVhYM0dUdjhnMzlyaTJSYjRzUGR4cmZVZnQ1aXRBQ3BoRUtjaXByaElnLUJkdXVNbXVRQVhYZXBCZ1JYT0VZeEl1VFVDRE5WY1FmSHk5YUZoWUJGU3VyQ2NPZGotaw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Rosen Law Firm Announces Investigation of Breaches of Fiduciary Duties by the Directors and Officers of TransMedics Group, Inc. - TMDX",
+      "source": "PR Newswire",
+      "date": "2026-08-31T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPYU1oR2dmZnBBZlhYYi1Welp2UkR5TWtvMDU3UEltTTZ3YjN0RkE1OTU2N0dkSklTNksyWUpOdzY5ZGtVZDZKRzNPVWRtM2w1WmVHdklKSkxmZWhpaHNpeU5PVi1zN2pPczZNUnNQMHZJYWNwSlVKMy1ZU0toS0hpMk1kZEEzTlNQRFdlWjJXa2R3a2hyMkVfTDVMUG1sU0RaNVh4VHFlT0JuNDZkcGJnLWhhaWJMTzRGQUEwR1VZOVd0VXRqME5uNC1NR3FpcUhNMjVERW5DOEE0d0RmT1RBVnVEYXVzejR3UXF0ckxSZ3BhUm5ST3pSWkFLam5BaVA4cXBLMUhEWjU1Z0g2R2Jsa0Q1c2o5Zw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Rosen Law investigates TransMedics Group for po...",
+      "source": "Pluang",
+      "date": "2026-08-31T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ0UxLVNtMTRBYU5fMERzaElKZmNveWxPdW8xWkl6aVE5QzU3czZaYnBRTG9VbjJid1pDOXE2WmtCQUtPV0F2YllmQjh1Y3l3TlBMdHk4cllBNmJrLVJYdkROYlFoMDhpT2hWb1U2Mk9zRk9ad0hsTk84LUpzbXNuUzlJTng3bGtnNjRTakdsTkVkbmkycFFDRC1vRkZCWjI1SHp2VTlyTnY?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Game-changing transplant technology",
+      "source": "www.hospitalnews.com",
+      "date": "2026-08-30T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZMWtGaFdkYk53N2p5NWlSQ296VHFaM3dDc0RiZ29VVVlUb0xycExZYzRpV2tjUWJoS1JWQzB3aHpVWmhxU2Z2QWZlNEUzazR0Q2w2SVpjNVdkVjJkX3Q1WGJMSFJvWEVtVFBZQWtHVkpoTnc?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "NICE Supports Routine NHS Funding and Access to Ex-Situ Machine Perfusion in a Major Step Forward for Liver Transplantation",
+      "source": "Yahoo Finance",
+      "date": "2026-08-20T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWGtCZWZzUmdCeW1rdDdhRDZoaWQ0UVRHOTJXcFF3S2phUUNabWI5d29lTGMzdXpnX3E4aVZNb3ZaSUg1aTVfV2ZvRllWUnZ2SjR6WmNSWnZjSFJjU1JZRVJma1hHajFqTENMdVNSRUNJM3NSM3BDOUc2TFlNSGJkMy11WG1HRjEtNEJSckZUY1lOT25pVnlza0Nn?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Opinion: Why it is significant HHS decertified an organ procurement organization",
+      "source": "Catholic World Report",
+      "date": "2026-08-18T18:36:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZDdvX3g1ZzF3YkxWVndBUnZPVnAtQWlkU1dzX2hTc29CanFwNU96WDZ2bXdVUzY4dXNjekNtN2kyRTVsTHBkZFhoa1FEUjJMRUg2cWxnUEFtVmQ2MVBHM3ZtVzdWVmFneG5WVUR4M1BkVXV6SWVwYVJwVlgzUE0wamNUQm5xX3doS1dKeS1oRHlpZkZ4NG53ckFCZHdZbW43UHlvQkVGci1zbVhDR2pYNTJUUnRHN04yeHhneURwcDUxenVpN1FkR0gzeFo?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group Investigation Initiated: Kahn Swick & Foti, LLC Investigates the Officers and Directors of TransMedics Group, Inc. - TMDX",
+      "source": "Business Wire",
+      "date": "2026-08-17T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPRTczbFRrWVpjUFppMkxPVVd4M18yc2Vtb1FoVlV4ajFwRGlYdk4tRXF2UFUtbW1Kc2NFeWtheDdwMVVnVUNnOXdTOWczc2ItYkxKYXAyLXZlNkxLTTFQbXVmTDE3SWZkTEYxVWVvQ1hud3B1VGpsRVhXNGhVWUNnUVBiZlRfaWpVeVgxQjBmLVBFY3dvd3YxdVllV25ycTdWYkQydW5LbG1hX0FCNEhLTEhIb1F2OGZKbVQ2QmhpRVBpeEYyeUkyVHJ4UUtRRGwzWDhWUWF1MVBfcHhuWE1XRlhENGV5bG9haDNJcGdtUHVYc1hnc1VwTk1CY3Y0T0pZZE9vZWZQVjVYV0FmbGVZRjJiZk5OUTlNWjhZ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Targets $2B Opportunity With Kidney Push, European Expansion",
+      "source": "Yahoo Finance",
+      "date": "2026-08-17T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPR1NZSzRRSV9vQmQtR2JCVW0xV1JKOXRhSVdIVUpUTG5GVjBfTHlIaFFsYVE0eTc4TVhyNGdPb0dEX0drRkJwY1pJc29kbXBpNENzcDNvZWRwdURoN3hDYl90U0MzZzlMVU5vNXdCZU00S25TeDBQZ1hLY1BaWFhoQzduSGV5ZHBOTTc2VUgySlFTczl5ZEFHNm1MSEdBRlJacUMxZA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Law firm investigates TransMedics officers for possible shareholder duty breaches",
+      "source": "Pluang",
+      "date": "2026-08-17T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTnFDZDl0TWQ2T3VfdHF4VFdrS3FmTUh2N21OTkRldEp2ZmJYQTIxelQtUGI4QzhUd3FsOS1KODJKSjNUcWxzU0pCTUxSVHNycXRXdV9mdm5qQ0o0ZHZoNmFqb2RXRkJjaG9uZmNTc29BR21ONzIxZ1pqa21TYlBBTzBfWnh6R09FYXBjSUxoTThieFlYZ3JZVWVkRUw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Immersion Investment Views Strata Critical Medical (SRTA) as a \u201cBabushka Doll\u201d",
+      "source": "Yahoo Finance",
+      "date": "2026-08-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcmM5b2NKZ3pjRzlHTmJTRzlNLTBaZDRta2J4dlFMa05zZGd5amlLcHVLdW1qaFFyTFpqbEc3VTZBTmNnMHQ2ZWNHSy04Z05nTUREdWJTRXBhZGtLaE4tUlRLUUhKZWlqQmhuQ001dmRFU0w3QTJuNE5kRUxMNWFGUFlhbi16eXliVjdJZlZyaHU1cHZSR0xibXZJSjBjdGFkcTItdDhNYlpFdzQ?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Landmark kidney transplants set benchmark for long-distance organ transport",
+      "source": "Med-Tech Insights",
+      "date": "2026-08-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeGFVSHdiM3duejVkN284d01MUmlNZ1NQSDhFSTJqZ2hYbnRPTV9OSGNEa2VGNzV1c24takVPdG5CcGtQWkFrMmJMdmpudGFaQ1hfWUl0RG94MjhyUGswN1hGVEFNNE1sOUgwZ195TEV3X25OVmFMQkZLYkVjRUhHd2F0Rk11Nk9wdDRQdW9rcHRKRFNja0NRQ0N2Zy14VEptN25rYWFRaVRtTGZVSU9wQzVzdzJuN1E?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TMDX: Strong growth, new kidney program, and global expansion set stage for multi-billion revenue",
+      "source": "TradingView",
+      "date": "2026-08-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNaHY1NVN0djN3eVVFXzEwMWlJY0N4ZnVuWnhCUGF2Y1dmM0dsWkV5MFNBWUswOEJkeDc4X0RnbTgwMDFLb1ZwWUlDRGNjOXotMmN2RzhwNXNaU3B1NGc3TFkzNmJZY1V4N3hpR09TaHRzY2tiVzBBUU5rOXFVTlBWTEV2Vlc1NjJwZW4xNFdaNC1ROS1Zck9jeWVpdEsyVFJjWm9LVlhYcDlUVUVMT09sR2QySmEzS3VmQ2ExdGNjeFp1a2x5WHljOXFmWTVFbEhaNWNzZ19GZWxOM0Zqa2xDeTVyWWFXYnY2NlViMVpuNFVHdEw1bTNZSk1MTUw1VXRwQkktNlRWYVNaRUh0TlE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "CMS Begins Decertification of Kentucky Organ Procurement Organization",
+      "source": "The Presidential Prayer Team",
+      "date": "2026-08-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa0g5U01wcjA0SlA3X2d2VFk4SzZ3RWMwejRmWTJaNWNJNGFaSEtBRzFZSDE5dGM1NGhLNk1DWDBEeWRpMl92eHd5UUVtb09sZnVyTExJRXJ4ZUd4dWw2Mzljc01kMV92WVcxd2dKNWo4OVVUUVB2N3daazhuekVNczRmMEFtanFWczJPR3JNWG1qQUVFQzhpZnJXOTNFenViYXRNbnc2TmFkMFltbThNalVwcnJYX1dya3RXaw?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS moves to decertify organ procurement group over patient safety failures",
+      "source": "Healthcare Dive",
+      "date": "2026-08-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX085REVRN2lTZW5Ud01rUFdJQ2phN1JyeGYzbHNIZTdLc2tsRzBHczJNaGVVdnVnOHdhc2hlWVRNS3JsTW84SW1tRnppWFRKVFFtbV9tTnZyWW12ZmZIQVpZeU5jUWtWdG4yODN0cHk4dUlZWGlRdHl6dGRxLW1ZMUNCb1VnODFoWWtwRG5RQk9kOXozSHAxR1A0ZzZRMTN0ZHZRekVuZmNPTjBZQ3NONWRhTHkwclVTUVFVT3JXRQ?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS de-certifies nonprofit organ procurement organization over safety concerns",
+      "source": "CBS News",
+      "date": "2026-08-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUWgyU2NTVVVsSDFuclJxT1N5czZZQUJWcV9yV2Vkb3AxbWF3NUd1RjRFWGVSVm11cUhlSk5CbWxnaTJNZDllLXVYR1VBdkswS0dIOV93U193VzRwSkNVZkQtbndVY3NDWWZfZzFRc3pOYjJGV25xc3M2ZnVRaTdvRE9vMUUtaE1KOUpaMzBfOWFKZ1Z0UEZsZzg3RTBOdzk1cGVMa2FxeFhCdDJJcDhBT0VtOXNENGRzc2FHUFhCbw?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS cuts ties with organ procurement organization",
+      "source": "Live Action",
+      "date": "2026-08-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTV9uNnpYazAzWVBzaWFlc3ZzWGs4U2RSZkQxM0ZrRVlKeXprTldzZ3pPbFg4ZVJyT1dxNGVaSU1wdVdXcjRJcEl1bjhVVGtHRWxWdlQ0bVlhdG1yd2N2OVJtR2xxbG41bjZuaUh4YlpyREppNXppZE5BSE9CaGtEOFhn?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS decertifies organ donation organization with office in Cincinnati",
+      "source": "WLWT",
+      "date": "2026-08-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVDRDNWs3NXFLYlZOc0NJNm90UTFZSGdwMVI5TjFscXRJME9sRlhFbmxqR1ZkRkwyWkwzWEY1ekVYOFY5cXloaUEzRDExOUc3NmpHUFVNTnF1RElXSjdfbnlROW40WXZhemVoQWt6OUUxVEIzZGFGd0pnc2ZzRGhpY21CUTRwQU14WWFseFVrWjZJMmpjNmZZUXZHVQ?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Organ transplant organization for Cincinnati, NKY loses license",
+      "source": "Cincinnati Enquirer",
+      "date": "2026-08-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQVNOaUxraVZZNW16a3I4d3JYMHFvcXFtNEo0N2FqamNIaGZ1S2lKclI0anBDNHJqX1hQY05kM1Y1bUdxdDNORURSbDNjTWhtcnhGZU5ZZmt4Mm9MOE1wMnZ2bXEtTGp3UmxIZVQzNjRWMjdMM3FBRm54bGtDcWZSYV9NSTJlTDA5bkRkZlctRzZHTnpGQ1Z0Tk5QX3lqYjVDaGhaZEpqbWNUX0VweWYydjR3TlZQVlk3cm5vZ2doUlo2NHpDQXR5aTlpMA?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "RFK Jr. Decertifies Organ Procurement Organization for Safety Failures, Attempt to Take Organs of Living Patient",
+      "source": "Breitbart",
+      "date": "2026-08-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWE5GcEFabXFudWMwZVRKRUgzRlFrMTgyaTdRam5ic29VdmV0Z1pIbDJFM1NzVXJIX3hlUjdYbDM3NnBGNklOYmZqWDdfTGVabEt2VW1iZjVoYUtudE1WRC03SHVaYmNpNU50aVBuZEZ3T0xqYldIME9uUHZQMExGa0Vad0JNbGN3V2hsV1d0U3BrT29ZY2o4a09UNlkwR0xFMTF1aEJOajJpb1hLaFhnMTdwQXNVaVF2S3VKcjlJLVNaOE9Nbjg5aEl2cmk4WFdMU1YwVGhqb2o1bFEyQ1lXeTFR0gHnAUFVX3lxTE9DRjRMZkNxMENseU5ELWQ4VlRiN2F2UmZyVzFWb1VTYkp2ZmJWZ0xGZWNxS1Y1aFItck9zSWpEd1htREFwVy1aNjVkOThpTUVYY293T0M5MkNsTmRxc2J2ZS1UNXU1NG15a2JvczVHZjNfRzBHc3dpVW01cDVJSHFQYkFZQ2hxVkFHTmVLS3B1UF8wYmhLemI0TEt1N3RMd0dpbzViYlJkZUx4djhaejd2WHNQc0JJbmVuUVhYbExwSlRMV3oxMDJSSHRKcXpKbncwNXE5ZXNhWFlYYkhBYkRXb042ZVBNWQ?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Here's Why RFK Jr. Just Decertified a Kentucky Organ Donor Procurement Organization",
+      "source": "Townhall",
+      "date": "2026-08-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaFAwQ0dtRXo3QnZCVnk0alVEVzNUYkN4X2dod2dXVEV1YzRrYXVsR095eW5SYkFRVDh4ZTBFZkh6MWxvQjAzM0h0QlNvc01sX0hhQ0NHUGtKQ0FmdXR5aENrZkFxblpSVjZnWTNUaVl5OVlDeXdHZ3lUOEpPSmNxd2pRMEF5aGM3MUxRM0FJSHNXdGxyVnVGRWJYOGphQW1t?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS Decertifies Kentucky Organ Procurement Organization to Protect Patients, Restore Trust",
+      "source": "HHS.gov",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTU4yNjBYRW9OT0FaaDJleVNfbG1GN2VhMGRBOXM2WWZoQ3UyUXlmem1SMzlZME1RaXluN3FIelVDYjJZZWdMMlk3SDlZbFZGQWNPclJIa0VGbGhGOWNZTGFiWXdaVWVmckc2NjU3MHplVFBtTkdnVlNTei05U1dVUFJjLU9zcklwRDdCMGhKT1JQdElXLWc?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS announces decertification of Kentucky-based organ procurement organization Network for Hope",
+      "source": "Fierce Healthcare",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQb29ua1dkcXJycXpoalhiWVVLRmJlbTE1ajhDY2FQOTRfWDZHcl9TS0V6RkxHWk03S2tuOWdsQzVnd2YyM2JGRllRMTVMazdZY092a2Zhbk5NZmJlYmY0aGx0MW8tYldxUTIwc2NINUp2SnRRQldSYWh5M1RlSmo1ODZHOWZzX2pieExmLTNqTzdmN1JZeTRPeUlfbUdEZ3dpOGhFbEgwN0ZRM29MeHpSTU96SERrNzlYQjE2OTFZbk5XMHpZUGdKeE0ydk4?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS decertifies organ procurement organization serving Kentucky, RFK Jr. says",
+      "source": "FOX19 | Cincinnati",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXJBMTNsQWk5bVhNVHRER2V6b19WdTlrbmpybk5keHVVU0NNTDRZeWJSTVk5X1k3TTd2LVo0c0o5RkxTTUlOVWZvOFlrb2lBSnJwMERMSVNCOXNLTEFmcGwtY2EzQnY1QThPOUpaX2tCZnJfLUhnYXZkSGdZWnkyS1ZEWFVWajgxSlVxekNTM1BvNUJTZFFEZmJteTJEOWpjM05yWDNyRkZ6d9IBvgFBVV95cUxQUUhHeWlnRVVwUHI4YllnR1pJQ3RQbGtVY1pxRjJXY3BMTzlpcG0zVlZjRVBESFcwcGY1bWRERkZjZ2Z0a0x4aWtwWHZiRm82eE9pM1JsbnFQNERJdUVDZTh4UWZjRWtVc2FyT2QxSVQ0UTJUbjVuRkFVQ3l5dkJFMklxRkpwY2o3bXhzM3YtRnZPVE5GeVdNNElEZTNfVzBhV3hiWUlVTWt6RnJiNmhCT3hlMzRJM3Z5NTh3TjFn?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "HHS decertifies KY organ procurement organization, citing safety concerns",
+      "source": "The Courier-Journal",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTE5GTU1sMWt0M3RNNEQyTTFlRjJkWTl1X3lncmNTWXNGb2xHMC1DQnFmaWNsUFZtSkdPNDFFc3h5MkVweDNWRlhxcDdhQlBUemJOaEktb0NpX3VJNDFNTEktcUlCT0RLTlRLVEJmYmtoN2FBTXlhZ1Z5aG8yRV9qel9qeWdHVENiMjNLLTRyUlBuUldPOWlZS1hKaVBTXzdsMElDa3VlYXNzam81aXNoVkxUaDBFZVZiazJsMnd4UnBtWUlCeTFz?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Kentucky organ procurement organization will be decertified, RFK Jr. says",
+      "source": "WHAS11",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOSmpzam1Jd2hIeFU4TmFJS0ZtclM4WmV3LWQ5VnBZQXEzT2xJenhsQ05CVWNTdVB2ZU85ZWRVQk9uVU53N0xYNjhqVTNJOGdzWkhaLWlTWnBLQzBYbWU2Tm1TcHFvU1ZXdTY1cXhPU05IaFFYbmdyem1tQnBORTdkdE9zUl92X3ZoTTNWWnV2MU1SQUJsWVQ0NWppUEtVTXE1R0lDbmNMY3RfSFFoY00xdk1sSEFLaWctbHJFd0NqUU5lX2ltcDhWV3R6VVdwQ01ZX2p5czRqSXhDdDFJTUwyYVh1dWNXcXNudVNiYWxiYl9WZGNZWGRucQ?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "RFK Jr. Decertifies Kentucky Organ Procurement Organization",
+      "source": "National Review",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeE00QzNuTkgtUWV4REtEcnA4am1uTllfNXRXMEtnNGV4Rld3aEViRVBlbTQzTjZacXhMUWtyNEZfZE5aVjJvVUJYaFh1Z25SemQwcnNldWxLcFlPRTlXOFMyZjJadG5HbXVVT1I5ZHhpd1MwN0doMXphZl9ldi04Q0lSN2RzYjFqdFUyV0hHNkkxcmttVVg5RUdRN2cyQdIBowFBVV95cUxNZWNzMWhpS1ZxcFFsYnFLeDJLWmkxUHZ3NHUyZjFGUVJ2a2RoQUJsSXI2VlJlbVJQeC05SkNkNlFqNUM0cnJjYlJBMk5zdnhCLTZLNlQweXMtRGJjYm1rbjdRSnVuM1hfYVBZZVY5NmFsd1pUeDR2dVBQbkNDQkNxRXU5ZzZPTnFCRHdOQlh5WDgyMklzcDdYU0E3OVp3c0ZmZVlZ?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Why TransMedics Stock Is Sinking Today",
+      "source": "The Motley Fool",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNnpaQVAzZUZaZ1FPVmdHdk5oY1FUYXJLVUpiNDBIZHd2dnN0eXFBMXhsSkJpLVlGRWxfV0JINkU1UlZwd0lSWG1WUTFqT0dLemkxMUU0S19Qc0dHZ1lUVDVyQkVDVW1MNzVlYlNfT1FfOTY0MmNUZVk1Y1ZRTWlTSHllVGZJZlM3?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Why TransMedics Group (TMDX) Stock Is Down Today",
+      "source": "Quiver Quantitative",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQc2FuaXpBTnJjWUZWOGJ4dkNtUkFPWjQ0ZTE5b19RR3YtcDJiaVpoNkVWQjNsb29EWHFIR3d3Y2V3aWJ6bzE1RnZ0UXE5Y0ZzYWlwTGVObHJmMWFqdXNrTkdjMXJmb3JQVWlzZDI4VzNjS0FQS3Vucl9USTlKVXc3NXMxVkRGNFZLQnJiWGZ3?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Investigation launched into TransMedics Group's directors for possible fiduciary breaches",
+      "source": "Pluang",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXA0akEzWUhVWW82OElKUmVyb1VIVFVBWl96bnRYRFJzSXBvVVYzdzZKeTlBcm43QlltNzdnc1RYN0JSM3EtT0d1b2FGemMxR0FzT0U1NUoya0czTS1udV9hT3V1NE02NDNna21pamdqNF8wVkxuaU9ENWk0OEhsN1k5dU9QRW42MXU4Z0NVeW9ITVNXZ1hPUUlCd2pCSnRaaDJ5YnhHeXQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Strata Critical Medical Q2 Revenue Rises 60.7% to $72.5 Million",
+      "source": "Quiver Quantitative",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVHItLXo2T1d2ZWRKOGpuWEdTTlVqS2hCWE5POHN6YTFINHdfQ1BRRWZ3WTlwWG9xRnJmNGhJZmpJaFlTZ1IteWtaYUoyam9LaW0yNEZueUNla1kwM3NHd3VVelFpX19peHVxU2NKUFozUkNrQWJGYVowNXFic2ttQ29JTjBnWnVCeHIxcFY0M2RMSTBMU1FfeksxakhyOUE?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Reports Second Quarter 2026 Financial Results",
+      "source": "PR Newswire",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTXNZQkJzOTlvTmJUSjRfU2lPakdNT094MFA0RGdmdkVPZjJVLVRNWE1RT2ViOGtEX2ZpVUFXbmFrbEZqTUNnSlA4ME9hbE9kMmNlOWNfV1FDTzN5Q19LM0JOWEtVYUhHc0J5X3UtUEdFcU1neUNyNUxuUjdQSHkxVTQ3TmlGamFNRm8xTlRNMnh1WjljRXpzeEpVbTRNREt2RFJQajU2eHRkZFpJbjdwMUZpbw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group (TMDX) Stock Looks Cheap On Earnings But Full After 171% Gain",
+      "source": "Yahoo Finance",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcnNVTEhVSDYzVEJtcnFJYUdlcUpBa0FrYlZ1UGdhdkc1VDZiMWZlQjBncHE5YkVYY010RDM4ci1Zamhfd0FCNFZHV1hUUS0xVS12S2otaVdwamRDTXo1SFk4b1htLS1ZaWpmR1JudF9SZVdTWGVxZFFEbXlnMG1yRzdSRldaQ1F6TVBuNjllSUdjSGsyeDVKLUZLRDE4RE9W?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group Inc (TMDX) (Q2 2026) Earnings Call Highlights: Record Revenue and Strategic ...",
+      "source": "Yahoo Finance",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeDFETlgxalgyb1J4eXRETi1jVzI0RTZ3dWlQR25pTUdIZ0poTWNDeFdOUmNiek1CYlp4LWcwRG95dlVWX29OVi0xVkZQQTNWS1BYNHhkMUZXdzl0dUpuNklpOVoyd0lLUjd4Vm9Fa1hMcmRXdjdKTFJCOWg2Z0ZMYnFzVXhhUDI0ZjNURU4zNmNEa3No?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRjRPNHZORFZhWEtvVFBpbWJzNnVwRU5BQ1E2blRON05WMTJqRFpBazJuUEZMMXQyM1FEY1dhenplQXBZa0VXSnk1cFdsdG5MS3Fqd2JEMG5oSnRWd0lPSnBzYnhhcUlEOFg3bTFJdUZISjlNV0pPRnJqSl9Cb1czSjVuOThJQ1B0bTljUHFrOVhyTXJFMk1MV1Jpaw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics (TMDX) Reports Q2 Earnings: What Key Metrics Have to Say",
+      "source": "Yahoo Finance",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPODZLY2RfaW0zSk81b2pzTWNyV2FOa3VxLURFSVpfalhhZTJXbUp3R1N2d0I4ZkFfcW1NVlBIeU92THFmaF8xVjdVNUxERU5leERzRTBnampXelZDeHo3VjVGQ1E5ZC1UYUFNZFIzQWQtWGtpbTd1aTZCVjF3Qmo3ZFpLZGRiWVY1Q0Z2c01tQlFWWXlrMVE5YWVtX3hxZUtpdHhV?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group (TMDX) Stock Rises on Q2 2026 Earnings",
+      "source": "Quiver Quantitative",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN0Y5N2JzSzRvbm9xZnVROGxFa0hRMW1mWnF6NF9VWGhMcW94RFl6WHcwMllfa2c4TzdNdW1XQ3RwZ2dPM2dnTEUxNjRVYVZPbzBvZGxrQkg2MWJhR1lmendaY2xoQnp5b21WVFRXajZWeGVmYmZRWWZsWWVIVHRzNVhzWDMtaUtodTE3RWUtTjB1aDd2M0dGZQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics grants stock options and restricted units to 9 new employees as hiring incentive.",
+      "source": "Pluang",
+      "date": "2026-08-03T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlJPSXBvdUdHNzJxZEpwZFNWdFNNeGttWlVIdTZEakFENHQtRGpNb1ZvRUp0RG5RcC04cE1wajBOcjJxMEMtTFAtdHpVMUdUTHZFRFFwLS1MbG5kQ1pyYjEwZXI4TWNnLVBnVzltRnUxZk10bmhkOEF3SFdCOXBSRWhEUnI5bDh6UEhpWDlOQUF6STFzX0hB?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Group (NASDAQ:TMDX): An Affordable Growth Stock With Strong Earnings Momentum",
+      "source": "ChartMill",
+      "date": "2026-07-28T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb2lFMEViZ2FCYm9XSHE3VWxrU21jVzhKSFlGUXpSNk9iS2xsZ0ZaaU0zbTNTSG5qcXdOSDJTaDYyeXZBaFhOTVpxM0xNN2RRNWhKUWlraldLcURMMEJ6OW9WazZxNTFjUFZURm5kZzdKdTY3azlVSWJKUkxVMExnSEJNWWUyamtodVB3amJPNG9WQ0RHLURJZkVjanR1RmxBUW4zbGhCLU1DM3hsWE5HWUVKZHhweFk3ZndSUkNraHg0N0h3NS0welRDa255NVRReEhV?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Did TransMedics Group, Inc. Insiders Breach their Fiduciary Duties to Shareholders?",
+      "source": "PR Newswire",
+      "date": "2026-07-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUGlZMWdQZUlTbHpkSnl1UGlxSXJNTWpPX1M3eDl6TDllaHFEWEJyNlZsSHAyTlpkRDZ5OXpnU2lDRjVHOEtfQ2RGZUtiZ3pXRWZaSENETHAwaGVaeVpRd3ZqaFZEZGdqV2FNcTFLMUtBWVlmVUR5UHUxZHVUUDc0U2dRSUc0RzRBZjdrNmRoWU9VcUR6TmxYZnVRczFjbkxRejh6ejdNdUw0MnUyNUJHaEVTQ3pLcTlseTRJc0hnTEx4eE80TktPTmxWNnV2UGg1bkE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Investigation launched into TransMedics officers for possible breach of shareholder duties",
+      "source": "Pluang",
+      "date": "2026-07-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTnFueVpDUFhxRWM4SGROVmhoalJVT0hQVl9ncjVMTzUzdS1XRC1fbXo1djV0M3IxZGt1MnlWbmlBdC1fM2RtTk5uOGlaQ3J1eUtFcUNGdFRmZWhnc2FvYkhNYjgzOXFTb05fd05rWHZxMFUxMF93czg4bHZMaGppZVFqcG1oeXBnYXZEX3JMNm9mLVNWdFJOVXFSSQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "'Death by organ donation': Doctors raise possibility of retrieving organs from MAID patients while they are still alive",
+      "source": "National Post",
+      "date": "2026-07-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzdWVEMndfcWxVbHhfTVJLQWdCYXowcG15dFRLZjE1RWZaRFdfQXpDTXp0UTJab09TZjNOUUlDYU1NR09CdGt5MURrQjg3QWtHeWpWeTNXZlZLZ0VNTDlDMXlHZkdES0YyNHJkZHM2eWZ0ZmVUaDgzQU1CYw?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "OneLegacy Partners with OrganOx to Transform Liver Transplantation, Offering Advanced Medical Solutions to Transplant Centers in Southern California",
+      "source": "Business Wire",
+      "date": "2026-07-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOQld5T0F4YXdJUS10dFBfWjh2R1c0V3lMTkVhVGQxWVRMM243NmhpODR3aHdaRDA4czhOU0d3Yk5ld21mVUxrUk5kVlFLb0xYWlhyT0JNOHdqNGRXR216YzhIUGxBVTRtbW15VjNyMFZwWXlTRnNCTVpiZHYyT1pQcE9UbHdGRUdiTEVZMldPZVZsc0w2LXgtTDBtd3ItWFpmd3FmYTk2YnNZMjlYTlB2Mnl1dVBkbUFpZmZDN2Z1Yks1V01LYmhBRkl2R0lKLVVXWGxRejFJZkxyQWo2ODdzTmZ6ZGRaOHg0V2h3eFhWYnZ1aDhOMHpnVXNKRGIxY2VNMEJRb3hQZ29QUU9zUjBXWWgzNTBoRmRKXzhyaUVaemhxcUlJRnVjMF9vRjQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Sheds Some Claims In Organ Transfer Biz Suit",
+      "source": "Law360",
+      "date": "2026-07-22T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbTFQNkxDRGJ3ZVNPbnJLd1Qwc2lKemI4VEJ0a3NsakttQ0JSQmJJUVRiUER3aXNEZnVkdVhCMVZUeTM0emUtZ05hOHlnYTBUNEpSd1k3c29BNkYzUFJMNm1EYmkxVzU3ZDIxSk9UOGsyeFFWZy1lUkJZWkp0dTRXSVZVZFRJNkxnbGVZN0ktVVZZUFd3bkxJUjAxelDSAVZBVV95cUxPQkhJLXRyS0dfWHRnUGRlVVhxaFlGaXJmOW82UkRtVE9DaTJpNTczY3lIdDRmNGdfb2R1Sk5ObE1nbXltUEx1TllyNDNQWlkyM1duVFJRQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Strata Critical Medical to Report Second Quarter 2026 Financial Results on August 4, 2026 | SRTA Stock News",
+      "source": "Quiver Quantitative",
+      "date": "2026-07-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQelVoRE5CamFZNDY2VnY4S0RPUy1wTlhsTkVUbXdyZ0t6RGZWblR4cWM2cndMQmUtcnJIVVNBQWl2THZJTUxXUTJBWUdEdXNOc2VNa19tZEw2a0pRMzluVGsxU09fZ2ZsaU1UWnZPaUtIUTJZS0Rnalk4MzVOUzNtNFlYYXZ6eUhydEpFSHFIRF9SNUdyYkhWNm50UlN4MjM2cW1WTHVwZmFvWlBwaDk3TkRkemJVUU1LcExLZnh0NA?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "UCLA Health performs first-ever lung transplant with donor organs transported using latest warm-perfusion advances",
+      "source": "UCLA",
+      "date": "2026-07-17T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRWRKWVhTbVVoVTJuTENiNnZXSEpMMW5Ta0NhVzJQUXQyWjFEZmpzdjJjWW1xU1ZwbU5RNWxlb3F4YU1uazk5X085U1M2dFlJYTVyREFyNmt2TTFyUmJTYlVvSFpzZkIxYVgxNldIQ2FNa095MDB0Vm44SmdZeDdoYVNFQ2UxMW9uNFJMc2tMQkNTS0txQ1dvbFZseExGelN1a1dsN19XYllyS2xTRGQtQjUxbmRwV09BNnRLTzVSSFAyRVlqenc?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "FAA Completes eVTOL Organ Transport Flight Test",
+      "source": "Airport Industry-News",
+      "date": "2026-07-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQ0s2aTVGeFZHbFc5d2JoTFlnSEk0UzFNaldxZnZyYXpkcVdhMWZ2R0ZhWlVhNU5feFlxZnNhY0tfX1luamIxdFpsTkFIb2RjNmoyaEJzS2JjOWxXLTdxM3ZIbnV5YjVrSzdoSUw5NE10bkZlOW1maTlDUVpjY2hENUJSc2dFaTgw?oc=5",
+      "tags": [
+        "tech_logistics"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "SpecialtyCare, Vituity, and Buckeye Transplant Solutions Announce a Best-In-Class Organ Recovery Partnership as TierOne Alliance",
+      "source": "Business Wire",
+      "date": "2026-07-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQMWI0T2Q3YkRTNTVRbWNsSkVMRFRnVEhVenM3SURiMmhFUk5POGUxLUl5dVFWLUh1bHoyYTQzdVduMmk5SmtoSXZHMmtaOEdab05Xa0lzVVJLR3R5Rk5rVlRsUjQySWYtcUNteGV0X3psbHVEc3FRVjdYZWhEaXRTV0JONkpZN3RPR295SU5EWHZTMXRvcHd4WnNDb1hZOGNRN3RZX09yemUydkVZeUxPd1p5dHo2ZWcyVVBWNmxuZEljVDdHRy1leWo1V0tLSEVtVldlSkc3V2xHTnNjcjVleF9UQ096SVY2U3hURlp5djhSYy1OOV9OdEpmQ2NvdWd1WDNPMTRxeVAySzhob2I1TQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Beta Electric Aircraft Successfully Completes Vital Organ Transport Mission",
+      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "date": "2026-07-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2wzeUo3X2JTRUFtSkdvdG9wbDlGeExWYldVSURQeHJkZDIxZUZRVUUyaG9lSHVfMXppZFpmNHRZTUYwZkdHWWVfNzE1NFJ2R3RHbmRwaFZDV3VOZnFvM3VyS2xCY3psbW1SNUJvRW1BYXAxOTBEZ1lmSXFWUVgtYXc2TjFfZERicDcwTzlhNDQ0ajRzMXRzeWlXT0NXWVB3cXdRSTk5YVU3Yk1vdTU4ZzQ3ajYzOXpmdVhVYVM4dVFiUTZ2Z21nZw?oc=5",
+      "tags": [
+        "tech_logistics"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Stock: Value or Value Trap?",
+      "source": "Nanalyze",
+      "date": "2026-07-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85YkluY1VqZFg1ZnB1SFJYcDRoaWNXM1BIRk00RWlQWEpmcWI2OUpPckdFX0ZCdGpNU1Y1elRtWFNSZ2ptVFZwSkdyV2I2YVFuYXYxY1FoY1dqLWxWdmYtWlBjV0U0a2l6cmZSZHQ3d0JpSGNLWW5PU096QQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "BETA kicks off its eIPP program with Virginia organ transport flight",
+      "source": "Aerospace America",
+      "date": "2026-07-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeGFNbmNjc0J0eXlpRTZXeU9WazdUdVVmbERjV1dVMzBWMjZhOE4xc1AzWTlMT1V3ZVB2WW40TVNLUUhNamNXY05MaW5PcTVUSDNObG9EcDZCVDBmdTZBa0pQR0lBaFhMbHQwRERuY0xYbVhuQmFHWjV5MmZOLVFxOTZRSExRaGduRk9GSXRVdWNTRVFzczhQdzI0cENRbTR1NDFIRUFB?oc=5",
+      "tags": [
+        "tech_logistics"
+      ],
+      "first_seen": "2026-10-07T19:16:34+00:00"
+    }
+  ]
+}
