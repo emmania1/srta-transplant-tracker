@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-07T19:19:46+00:00",
+  "fetched_at": "2026-10-07T19:20:35+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -106,6 +106,16 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Investors urged to act on possible TransMedics leadership breaches and seek legal relief.",
+      "source": "Pluang",
+      "date": "2026-09-26T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaHl5YjVGNVFfbXpGSmZnMllhZF9DRlNiNEVIcnYycU9oNWM4WmtJamdTc2VhY0wwcFNoYjFZeWZWSldhdE03QTZWRTJsYWN4SDNhZHJWMDNJa00zMUIwQ1EwMVd1YWNuUEd0aFNqWkJmaDl2UmszQVhJcWdkcV9Zck1KajR2UHBQRzNDZE91MFM3dw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:20:35+00:00"
     },
     {
       "headline": "Sharp drop in organ donation rates sparks campaign for consent",
@@ -296,6 +306,16 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics to present at two major healthcare investor conferences in September 2026",
+      "source": "Pluang",
+      "date": "2026-08-31T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb193NXhSRVYxMWZwMHZlRTRWdGNKUE50Zkg1RlE3cENHeVE5OWktWnA3dGVXWWg3Z1pnWFFCSnpiczRCNkpWMWJaRkNTUjdYRlpHY0tLcE9EcEF5VkluSmV2TkI2aVd6R1BCNUlzcFA3bmlOTHhTVUNWR2hpTlJmcHN6X2pNQUdDZTV3?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:20:35+00:00"
     },
     {
       "headline": "Game-changing transplant technology",
@@ -706,6 +726,16 @@
         "strata"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics to report Q2 2026 financial results on August 4",
+      "source": "scanx.trade",
+      "date": "2026-07-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORXlOV1pqN29uQ0Vxd3VNUG9uQ3ZQLVl3M0hfVjdVUEhaWE9aWDZxNkwzYnJuVmtGcGlTY0Q4QkdkaFZkZ3d3V1pydFdXOHF5TUhuWlhkdnVpUFljU092UUJhdjE1Uk9aai1aNVl4WUdIa3pFWURlWjVFYW82N2ZIRExsNXFqOTVxaHBuVS14QnBfSmw0c1lLclNkNktmbnpTVnY3aTVFRmZBaS1BY0FwUDJpT3NnYTA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-07T19:20:35+00:00"
     },
     {
       "headline": "UCLA Health performs first-ever lung transplant with donor organs transported using latest warm-perfusion advances",
