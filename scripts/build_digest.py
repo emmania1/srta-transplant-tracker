@@ -123,7 +123,8 @@ def main():
     if optn_ok:
         series = tw.get("organs", {})
         organs = {o: organ_metrics(series.get(o) or []) for o in ORGANS}
-        total = organ_metrics(total_series({o: series.get(o) or [] for o in ORGANS}))
+        total = organ_metrics(series["all"]) if series.get("all") else \
+            organ_metrics(total_series({o: series.get(o) or [] for o in ORGANS}))
     as_of = tw.get("data_as_of")
     new_optn = bool(optn_ok and is_recent(as_of, now))
 

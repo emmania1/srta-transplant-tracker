@@ -62,5 +62,16 @@ class TestMetrics(unittest.TestCase):
         self.assertEqual(t[0]["count"], 210)
 
 
+class TestOptnWeeks(unittest.TestCase):
+    def test_week_dates(self):
+        from ingest_optn import optn_week_dates
+        self.assertEqual(optn_week_dates(2026, 1), (date(2026, 1, 1), date(2026, 1, 7)))
+        self.assertEqual(optn_week_dates(2026, 39), (date(2026, 9, 24), date(2026, 9, 30)))
+        self.assertEqual(optn_week_dates(2024, 52), (date(2024, 12, 23), date(2024, 12, 31)))
+
+    def test_yr_week_keys_take_precedence(self):
+        self.assertEqual(iso_key({"yr": 2026, "week": 1, "week_start": "2026-01-01"}), (2026, 1))
+
+
 if __name__ == "__main__":
     unittest.main()

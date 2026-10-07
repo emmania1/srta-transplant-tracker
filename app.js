@@ -3,7 +3,7 @@ const ORGANS = ["heart", "liver", "lung", "kidney"];
 const CADENCE = {
   price: "Weekly (Sun) via GitHub Action",
   news: "Weekly (Sun) via GitHub Action; 90-day window",
-  transplants_weekly: "When a new OPTN export is dropped in",
+  transplants_weekly: "Weekly (Sun) via GitHub Action",
   donor_mix: "When a new OPTN export is dropped in",
   distance: "When a new OPTN export is dropped in",
   location: "When a new OPTN export is dropped in",
@@ -37,6 +37,10 @@ async function load(path) {
   } catch (e) {
     return { status: "missing", _error: String(e) };
   }
+}
+function weekKey(r) {
+  if (r.yr != null) return { year: r.yr, week: r.week }; // OPTN calendar-year weeks
+  return isoWeek(r.week_start);
 }
 function isoWeek(weekStart) {
   const d = new Date(weekStart + "T12:00:00Z");
@@ -120,15 +124,16 @@ function drawVolumes(tw) {
     document.querySelector("#volumes .table-view").hidden = true;
     return;
   }
-  const rows = currentOrgan === "all" ? totalSeries(tw.organs || {}) : (tw.organs || {})[currentOrgan] || [];
+  const organs = tw.organs || {};
+  const rows = currentOrgan === "all" ? (organs.all?.length ? organs.all : totalSeries(organs)) : organs[currentOrgan] || [];
   const byYear = {};
   rows.forEach((r) => {
-    const { year, week } = isoWeek(r.week_start);
+    const { year, week } = weekKey(r);
     (byYear[year] = byYear[year] || {})[week] = r.count;
   });
   const years = Object.keys(byYear).map(Number).sort((a, b) => b - a).slice(0, 3);
   const colors = [css("--yr0"), css("--yr1"), css("--yr2")];
-  const labels = Array.from({ length: 53 }, (_, i) => i + 1);
+  const labels = Array.from({ length: years.length && rows[0]?.yr != null ? 52 : 53 }, (_, i) => i + 1);
   const datasets = years.map((y, i) => ({
     label: String(y),
     data: labels.map((w) => byYear[y][w] ?? null),
@@ -147,7 +152,7 @@ function drawVolumes(tw) {
         tooltip: { callbacks: { title: (it) => `Week ${it[0].label}`, label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } },
       },
       scales: {
-        x: { title: { display: true, text: "ISO week", color: css("--muted") }, ticks: { color: css("--muted"), maxTicksLimit: 14 }, grid: { display: false } },
+        x: { title: { display: true, text: rows[0]?.yr != null ? "Week of year (OPTN: week 1 starts Jan 1)" : "ISO week", color: css("--muted") }, ticks: { color: css("--muted"), maxTicksLimit: 14 }, grid: { display: false } },
         y: { ticks: { color: css("--muted"), callback: (v) => fmtInt(v) }, grid: { color: css("--grid") } },
       },
     },
@@ -161,10 +166,10 @@ function drawVolumes(tw) {
 
 function renderVolumes(summary, tw) {
   $("vol-updated").textContent = tw.status === "ok"
-    ? `OPTN pull ${fmtDate(tw.data_as_of)} · ${tw.raw_file}` : "Awaiting first OPTN file";
+    ? `OPTN pull ${fmtDate(tw.data_as_of)}` : "Awaiting first OPTN file";
   renderCards(summary, tw);
   $("organ-tabs").innerHTML = [...ORGANS, "all"].map((o) =>
-    `<button role="tab" data-organ="${o}" aria-selected="${o === currentOrgan}">${o === "all" ? "All organs" : cap(o)}</button>`).join("");
+    `<button role="tab" data-organ="${o}" aria-selected="${o === currentOrgan}">${o === "all" ? "All organs (OPTN total)" : cap(o)}</button>`).join("");
   $("organ-tabs").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => selectOrgan(b.dataset.organ, tw)));
   drawVolumes(tw);
 }

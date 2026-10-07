@@ -36,6 +36,16 @@ jobs:
       - name: Fetch news
         run: python3 scripts/fetch_news.py
 
+      - name: Install Playwright (headless Chromium for the OPTN Shiny dashboard)
+        run: |
+          pip install playwright==1.59.0
+          python3 -m playwright install --with-deps chromium
+
+      - name: Fetch OPTN weekly transplants
+        id: optn
+        continue-on-error: true
+        run: python3 scripts/fetch_optn.py
+
       - name: Ingest OPTN files
         run: python3 scripts/ingest_optn.py
 
@@ -46,7 +56,7 @@ jobs:
         run: |
           git config user.name "srta-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/processed data/weekly_summary.json summary/latest.md
+          git add data/raw/optn data/processed data/weekly_summary.json summary/latest.md
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
@@ -55,3 +65,9 @@ jobs:
             git pull --rebase -X theirs
             git push
           fi
+
+      - name: Flag OPTN fetch failure
+        if: steps.optn.outcome == 'failure'
+        run: |
+          echo "::error::OPTN fetch failed; page kept the previous OPTN data. See 'Fetch OPTN weekly transplants' log."
+          exit 1

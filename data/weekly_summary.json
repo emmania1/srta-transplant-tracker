@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T19:20:38+00:00",
+  "generated_at": "2026-10-07T20:30:12+00:00",
   "price": {
     "close": 4.68,
     "date": "2026-10-07",
@@ -10,12 +10,162 @@
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
   },
   "optn": {
-    "status": "awaiting_data",
-    "data_as_of": null,
-    "raw_file": null,
-    "new_data_this_week": false,
-    "organs": {},
-    "all_organs": null
+    "status": "ok",
+    "data_as_of": "2026-10-07",
+    "raw_file": "2026-10-07_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-07_optn_metrics_tx_weekly_deceased_lung.csv",
+    "new_data_this_week": true,
+    "organs": {
+      "heart": {
+        "latest_week": {
+          "week_start": "2026-09-24",
+          "week_end": "2026-09-30",
+          "iso_week": 39,
+          "count": 83,
+          "prior_year_count": 90,
+          "yoy_pct": -7.8
+        },
+        "trailing_4wk": {
+          "weeks": [
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39"
+          ],
+          "total": 357,
+          "prior_year_total": 379,
+          "yoy_pct": -5.8
+        },
+        "ytd": {
+          "through_iso_week": 39,
+          "year": 2026,
+          "total": 3432,
+          "prior_year_total": 3461,
+          "yoy_pct": -0.8,
+          "weeks_covered": 39,
+          "prior_weeks_covered": 39
+        }
+      },
+      "liver": {
+        "latest_week": {
+          "week_start": "2026-09-24",
+          "week_end": "2026-09-30",
+          "iso_week": 39,
+          "count": 235,
+          "prior_year_count": 196,
+          "yoy_pct": 19.9
+        },
+        "trailing_4wk": {
+          "weeks": [
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39"
+          ],
+          "total": 921,
+          "prior_year_total": 862,
+          "yoy_pct": 6.8
+        },
+        "ytd": {
+          "through_iso_week": 39,
+          "year": 2026,
+          "total": 9253,
+          "prior_year_total": 8700,
+          "yoy_pct": 6.4,
+          "weeks_covered": 39,
+          "prior_weeks_covered": 39
+        }
+      },
+      "lung": {
+        "latest_week": {
+          "week_start": "2026-09-24",
+          "week_end": "2026-09-30",
+          "iso_week": 39,
+          "count": 65,
+          "prior_year_count": 61,
+          "yoy_pct": 6.6
+        },
+        "trailing_4wk": {
+          "weeks": [
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39"
+          ],
+          "total": 272,
+          "prior_year_total": 258,
+          "yoy_pct": 5.4
+        },
+        "ytd": {
+          "through_iso_week": 39,
+          "year": 2026,
+          "total": 2731,
+          "prior_year_total": 2601,
+          "yoy_pct": 5.0,
+          "weeks_covered": 39,
+          "prior_weeks_covered": 39
+        }
+      },
+      "kidney": {
+        "latest_week": {
+          "week_start": "2026-09-24",
+          "week_end": "2026-09-30",
+          "iso_week": 39,
+          "count": 390,
+          "prior_year_count": 377,
+          "yoy_pct": 3.4
+        },
+        "trailing_4wk": {
+          "weeks": [
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39"
+          ],
+          "total": 1601,
+          "prior_year_total": 1636,
+          "yoy_pct": -2.1
+        },
+        "ytd": {
+          "through_iso_week": 39,
+          "year": 2026,
+          "total": 15959,
+          "prior_year_total": 16604,
+          "yoy_pct": -3.9,
+          "weeks_covered": 39,
+          "prior_weeks_covered": 39
+        }
+      }
+    },
+    "all_organs": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 778,
+        "prior_year_count": 728,
+        "yoy_pct": 6.9
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 3166,
+        "prior_year_total": 3157,
+        "yoy_pct": 0.3
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 31527,
+        "prior_year_total": 31564,
+        "yoy_pct": -0.1,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    }
   },
   "distance": null,
   "location": {
@@ -52,12 +202,14 @@
     "fetched_at": "2026-10-07T19:20:35+00:00"
   },
   "bullets": [
-    "OPTN volumes: awaiting first data file \u2014 no transplant figures loaded yet.",
+    "Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
+    "Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
     "1 new news item this week \u2014 Transplant volumes / donation 1."
   ],
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 7, 2026* \u00b7 SRTA $4.68 (\u25bc 8.4% 1-wk)",
-    "\u2022 OPTN volumes: awaiting first data file \u2014 no transplant figures loaded yet.",
+    "*SRTA Transplant Tracker \u2014 week of Oct 7, 2026* \u00b7 SRTA $4.68 (\u25bc 8.3% 1-wk)",
+    "\u2022 Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
+    "\u2022 Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
     "\u2022 1 new news item this week \u2014 Transplant volumes / donation 1.",
     "Top headlines:",
     "  \u2013 <https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5|VCU pharmacy student earns national recognition for organ donation advocacy> (VCU Health, 2026-10-01)",

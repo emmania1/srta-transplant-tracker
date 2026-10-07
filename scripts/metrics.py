@@ -2,8 +2,8 @@
 
 Normalized weekly row: {"week_start": "YYYY-MM-DD", "week_end": "YYYY-MM-DD", "count": int}
 
-Weeks are matched year-over-year by ISO week number (of the week's midpoint,
-so it works whether OPTN weeks start Sunday or Monday). Week N of this year is
+Weeks are matched year-over-year by the row's own (yr, week) when present
+(OPTN metrics numbering), else by ISO week of the week's midpoint. Week N of this year is
 compared with week N of last year; ISO week 53 has no prior-year match.
 """
 from datetime import date, timedelta
@@ -14,6 +14,8 @@ def d(s):
 
 
 def iso_key(row):
+    if "yr" in row:  # OPTN's own calendar-year week numbering
+        return (row["yr"], row["week"])
     mid = d(row["week_start"]) + timedelta(days=3)
     y, w, _ = mid.isocalendar()
     return (y, w)

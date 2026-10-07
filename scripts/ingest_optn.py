@@ -5,24 +5,25 @@ File naming: prefix every dropped file with its download date, e.g.
     2026-10-05_optn_metrics_weekly_transplants.csv
 The date is the "as of" used to drop the current, incomplete week.
 
-STATUS: parsers are NOT written yet. Per the build brief, they will be built
-against real OPTN exports (column names, organ labels, week/period format),
-not guessed. Until a parser recognises a file, every OPTN panel stays in an
-explicit "awaiting_data" state and unrecognised files are listed so it is
-obvious what still needs handling.
-
-Each parser registers in PARSERS as (name, matches(path, header) -> bool,
-parse(path, as_of) -> dict of {processed_file_key: payload}). Output payloads
-use the normalized schemas documented in README.md.
+Parsers:
+  * OPTN metrics weekly transplants (written by scripts/fetch_optn.py):
+      YYYY-MM-DD_optn_metrics_tx_weekly_deceased_<organ>.csv
+      columns "yr","week","full_wk","n","cum_n"; full_wk = "(Partial Week)" marks
+      the current unfinished week. OPTN weeks are calendar-year weeks 1-52:
+      week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31 (8-9 days).
+  * Donor mix / distance / location: not written yet. They will be built against
+    real OPTN national-data exports, not guessed. Until then those panels stay
+    "awaiting_data" and unrecognised files are listed.
 """
+import csv
 import json
 import re
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from metrics import drop_incomplete  # noqa: E402,F401  (used by parsers)
+from metrics import drop_incomplete  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw" / "optn"
@@ -30,6 +31,8 @@ PROC = ROOT / "data" / "processed"
 DATE_PREFIX = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 
 OPTN_METRICS = "OPTN metrics dashboard (optn.transplant.hrsa.gov/data/view-data-reports/optn-metrics)"
+OPTN_METRICS_LIVE = ("OPTN metrics dashboard, Transplant Details > Download Data "
+                     "(insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py")
 OPTN_NATIONAL = "OPTN national data reports (optn.transplant.hrsa.gov/data/view-data-reports/national-data)"
 
 OUTPUTS = {
@@ -43,8 +46,32 @@ OUTPUTS = {
                  "title": "Transplants by transplant-center state / OPTN region"},
 }
 
-# Filled in once sample exports are in hand.
-PARSERS = []
+WEEKLY_FILE = re.compile(r"_optn_metrics_tx_weekly_deceased_(heart|liver|lung|kidney|all)\.csv$")
+WEEKLY_HEADER = ["yr", "week", "full_wk", "n", "cum_n"]
+
+
+def optn_week_dates(yr, week):
+    start = date(yr, 1, 1) + timedelta(days=7 * (week - 1))
+    end = date(yr, 12, 31) if week == 52 else start + timedelta(days=6)
+    return start, end
+
+
+def parse_weekly(path, as_of):
+    """Returns (rows, dropped) for one organ's TX_Weekly.csv."""
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.reader(f)
+        if next(reader) != WEEKLY_HEADER:
+            raise ValueError(f"{path.name}: unexpected header")
+        rows, flagged = [], []
+        for yr, week, full_wk, n, _cum in reader:
+            yr, week = int(yr), int(week)
+            start, end = optn_week_dates(yr, week)
+            row = {"yr": yr, "week": week, "week_start": start.isoformat(),
+                   "week_end": end.isoformat(), "count": int(n)}
+            (flagged if full_wk.strip() else rows).append(row)
+    # belt and braces: also drop anything not finished before the pull date
+    rows, late = drop_incomplete(rows, as_of)
+    return rows, flagged + late
 
 
 def raw_files():
@@ -73,26 +100,41 @@ def main():
     results = {}
     unrecognised, undated = [], []
 
+    weekly = {}  # organ -> (path, as_of); newest download wins
     for path, as_of in files:
         if as_of is None:
             undated.append(path.name)
             continue
-        head = header_of(path)
-        parser = next((p for p in PARSERS if p[1](path, head)), None)
-        if parser is None:
+        m = WEEKLY_FILE.search(path.name)
+        if m and header_of(path).replace('"', "").strip().split(",") == WEEKLY_HEADER:
+            weekly.setdefault(m.group(1), (path, as_of))
+        else:
             unrecognised.append(path.name)
-            continue
-        for key, payload in parser[2](path, as_of).items():
-            if key in results:  # newest file for each output wins
-                continue
-            payload.update({"raw_file": path.name, "data_as_of": as_of.isoformat(),
-                            "parser": parser[0]})
-            results[key] = payload
+
+    if weekly:
+        organs, excluded, files_used = {}, {}, []
+        for organ, (path, as_of) in sorted(weekly.items()):
+            rows, dropped = parse_weekly(path, as_of)
+            organs[organ] = rows
+            excluded[organ] = [f"{r['yr']}-W{r['week']:02d}" for r in dropped]
+            files_used.append(path.name)
+        as_of = min(a for _, a in weekly.values())
+        results["transplants_weekly"] = {
+            "organs": organs, "excluded_incomplete_weeks": excluded,
+            "raw_file": ", ".join(files_used), "data_as_of": as_of.isoformat(),
+            "parser": "optn_metrics_tx_weekly",
+            "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
+            "donor_type": "Deceased Donors", "region": "National",
+            "note": "'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.)",
+        }
 
     for key, meta in OUTPUTS.items():
         base = {"title": meta["title"], "source": meta["source"], "tag": "Manual",
                 "ingested_at": now}
         if key in results:
+            if key == "transplants_weekly":
+                base["source"] = OPTN_METRICS_LIVE
+                base["tag"] = "Live"
             base.update(results[key])
             base["status"] = "ok"
         else:
