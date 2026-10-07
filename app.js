@@ -4,6 +4,7 @@ const CADENCE = {
   price: "Weekly (Sun) via GitHub Action",
   news: "Weekly (Sun) via GitHub Action; 90-day window",
   transplants_weekly: "Weekly (Sun) via GitHub Action",
+  donors_weekly: "Weekly (Sun) via GitHub Action",
   donor_mix: "When a new OPTN export is dropped in",
   distance: "When a new OPTN export is dropped in",
   location: "When a new OPTN export is dropped in",
@@ -174,6 +175,27 @@ function renderVolumes(summary, tw) {
   drawVolumes(tw);
 }
 
+function renderDonorLine(summary, dw) {
+  const el = $("donor-line");
+  const d = summary.donors;
+  if (dw.status !== "ok" || !d || !d.metrics) {
+    el.innerHTML = `<span><strong>Deceased donors recovered:</strong> awaiting data</span>`;
+    return;
+  }
+  const t4 = d.metrics.trailing_4wk || {}, ytd = d.metrics.ytd || {}, w = d.metrics.latest_week || {};
+  let html = `<span><strong>Context: deceased donors recovered</strong> · last 4 wks ${fmtInt(t4.total)} vs ${fmtInt(t4.prior_year_total)} ${yoy(t4.yoy_pct)}</span>
+    <span>YTD ${yoy(ytd.yoy_pct)}</span>
+    <span>Wk ending ${fmtDate(w.week_end)}: ${fmtInt(w.count)} (${yoy(w.yoy_pct)})</span>`;
+  const disc = d.discard;
+  if (disc) {
+    // discard rate: arrow + text only, no green/red (a rising discard rate is not "good")
+    const ch = disc.change_pts;
+    const chTxt = ch == null ? "n/a" : `${ch > 0 ? "▲" : ch < 0 ? "▼" : "—"} ${Math.abs(ch).toFixed(1)} pts`;
+    html += `<span><strong>All-organs discard rate</strong> (YTD through ${esc(disc.through)}): ${disc.discard_rate_pct.toFixed(1)}% vs ${disc.prior_year_discard_rate_pct == null ? "n/a" : disc.prior_year_discard_rate_pct.toFixed(1) + "%"} LY (${chTxt})</span>`;
+  }
+  el.innerHTML = html;
+}
+
 // ---------- donor mix / distance / location (normalized schemas, see README) ----------
 function updatedLabel(d) {
   return d.status === "ok" ? `OPTN pull ${fmtDate(d.data_as_of)}` : "Awaiting first OPTN file";
@@ -254,6 +276,7 @@ function renderSources(files) {
   const rows = [
     ["SRTA share price", files.price, "price"],
     ["Weekly transplant volumes", files.transplants_weekly, "transplants_weekly"],
+    ["Deceased donors recovered + discard rate", files.donors_weekly, "donors_weekly"],
     ["Donor mix (DBD / DCD)", files.donor_mix, "donor_mix"],
     ["Distance bands", files.distance, "distance"],
     ["Transplants by state / region", files.location, "location"],
@@ -266,9 +289,10 @@ function renderSources(files) {
 }
 
 (async function main() {
-  const [summary, tw, mix, dist, loc, news, price] = await Promise.all([
+  const [summary, tw, dw, mix, dist, loc, news, price] = await Promise.all([
     load("data/weekly_summary.json"),
     load("data/processed/transplants_weekly.json"),
+    load("data/processed/donors_weekly.json"),
     load("data/processed/donor_mix.json"),
     load("data/processed/distance.json"),
     load("data/processed/location.json"),
@@ -277,9 +301,10 @@ function renderSources(files) {
   ]);
   renderHeader(summary, price);
   renderVolumes(summary, tw);
+  renderDonorLine(summary, dw);
   renderDonorMix(mix);
   renderDistance(dist, summary);
   renderLocation(loc);
   renderNews(news);
-  renderSources({ price, transplants_weekly: tw, donor_mix: mix, distance: dist, location: loc, news });
+  renderSources({ price, transplants_weekly: tw, donors_weekly: dw, donor_mix: mix, distance: dist, location: loc, news });
 })();

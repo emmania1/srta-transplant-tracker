@@ -112,6 +112,7 @@ def news_block(news, now):
 def main():
     now = datetime.now(timezone.utc)
     tw = load("transplants_weekly")
+    dw = load("donors_weekly")
     price = price_block(load("price"))
     dist = distance_block(load("distance"))
     loc = load("location")
@@ -125,6 +126,17 @@ def main():
         organs = {o: organ_metrics(series.get(o) or []) for o in ORGANS}
         total = organ_metrics(series["all"]) if series.get("all") else \
             organ_metrics(total_series({o: series.get(o) or [] for o in ORGANS}))
+    donors = None
+    if dw.get("status") == "ok":
+        tbl = dw.get("ytd_table") or []
+        cur = tbl[-1] if tbl else None
+        prior = next((r for r in tbl if cur and r["yr"] == cur["yr"] - 1), None)
+        donors = {"metrics": organ_metrics(dw.get("donors") or []),
+                  "discard": None if not cur else {
+                      "year": cur["yr"], "through": dw.get("ytd_through"),
+                      "discard_rate_pct": cur["discard_rate_pct"],
+                      "prior_year_discard_rate_pct": prior["discard_rate_pct"] if prior else None,
+                      "change_pts": round(cur["discard_rate_pct"] - prior["discard_rate_pct"], 2) if prior else None}}
     as_of = tw.get("data_as_of")
     new_optn = bool(optn_ok and is_recent(as_of, now))
 
@@ -150,6 +162,15 @@ def main():
         through = f" (through week ending {fmt_date(lw['week_end'])})" if lw else ""
         bullets.append("Year to date vs last year" + through + ": " + " · ".join(parts) + ".")
 
+    if donors and donors["metrics"]:
+        t4 = donors["metrics"].get("trailing_4wk") or {}
+        line = f"Deceased donors recovered, last 4 complete weeks vs last year: {arrow(t4.get('yoy_pct'))}"
+        disc = donors["discard"]
+        if disc and disc["change_pts"] is not None:
+            line += (f"; all-organs discard rate {disc['discard_rate_pct']:.1f}% YTD through {disc['through']}"
+                     f" vs {disc['prior_year_discard_rate_pct']:.1f}% a year ago")
+        bullets.append(line + ".")
+
     if dist and dist["organs"] and is_recent(dist.get("data_as_of"), now):
         bits = [f"{o.title()} {v['long_share_pct']}% ({'+' if (v['change_pts'] or 0) >= 0 else ''}{v['change_pts']} pts YoY)"
                 for o, v in dist["organs"].items() if v["change_pts"] is not None]
@@ -171,12 +192,13 @@ def main():
     if price:
         head += f" · SRTA ${price['close']:.2f} ({arrow(price['change_1w_pct'])} 1-wk)"
     lines = [head] + [f"• {b}" for b in bullets]
-    room = MAX_LINES - len(lines) - 2  # headline header + site link
+    room = MAX_LINES - len(lines) - 1  # "Top headlines:" line
     heads = news["top_headlines"][:max(0, min(5, room))]
     if heads:
         lines.append("Top headlines:")
         lines += [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {h['date']})" for h in heads]
-    lines.append(f"Dashboard: {SITE_URL}")
+    if len(lines) < MAX_LINES:
+        lines.append(f"Dashboard: {SITE_URL}")
     lines = lines[:MAX_LINES]
 
     summary = {
@@ -184,6 +206,7 @@ def main():
         "price": price,
         "optn": {"status": tw.get("status"), "data_as_of": as_of, "raw_file": tw.get("raw_file"),
                  "new_data_this_week": new_optn, "organs": organs, "all_organs": total},
+        "donors": donors,
         "distance": dist,
         "location": {"status": loc.get("status"), "data_as_of": loc.get("data_as_of")},
         "news": news,

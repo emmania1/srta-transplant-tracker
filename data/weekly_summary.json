@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T20:34:25+00:00",
+  "generated_at": "2026-10-07T21:41:41+00:00",
   "price": {
     "close": 4.68,
     "date": "2026-10-07",
@@ -167,6 +167,45 @@
       }
     }
   },
+  "donors": {
+    "metrics": {
+      "latest_week": {
+        "week_start": "2026-09-17",
+        "week_end": "2026-09-23",
+        "iso_week": 38,
+        "count": 293,
+        "prior_year_count": 307,
+        "yoy_pct": -4.6
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W35",
+          "2026-W36",
+          "2026-W37",
+          "2026-W38"
+        ],
+        "total": 1214,
+        "prior_year_total": 1228,
+        "yoy_pct": -1.1
+      },
+      "ytd": {
+        "through_iso_week": 38,
+        "year": 2026,
+        "total": 12188,
+        "prior_year_total": 12286,
+        "yoy_pct": -0.8,
+        "weeks_covered": 38,
+        "prior_weeks_covered": 38
+      }
+    },
+    "discard": {
+      "year": 2026,
+      "through": "September 28",
+      "discard_rate_pct": 20.44,
+      "prior_year_discard_rate_pct": 19.72,
+      "change_pts": 0.72
+    }
+  },
   "distance": null,
   "location": {
     "status": "awaiting_data",
@@ -204,12 +243,14 @@
   "bullets": [
     "Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
     "Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
+    "Deceased donors recovered, last 4 complete weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
     "1 new news item this week \u2014 Transplant volumes / donation 1."
   ],
   "markdown_lines": [
     "*SRTA Transplant Tracker \u2014 week of Oct 7, 2026* \u00b7 SRTA $4.68 (\u25bc 8.4% 1-wk)",
     "\u2022 Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
     "\u2022 Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
+    "\u2022 Deceased donors recovered, last 4 complete weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
     "\u2022 1 new news item this week \u2014 Transplant volumes / donation 1.",
     "Top headlines:",
     "  \u2013 <https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5|VCU pharmacy student earns national recognition for organ donation advocacy> (VCU Health, 2026-10-01)",

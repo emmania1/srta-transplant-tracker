@@ -134,6 +134,11 @@ h2 { font-size: 1.1rem; margin: 0; }
 .awaiting strong { color: var(--text); }
 .card.awaiting-card .kpi { color: var(--muted); font-size: 1rem; }
 
+.context-line {
+  font-size: 0.85rem; color: var(--text-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 8px 0; margin: -4px 0 12px; display: flex; flex-wrap: wrap; gap: 4px 18px; font-variant-numeric: tabular-nums;
+}
+.context-line strong { color: var(--text); }
 .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
 .tabs button, .filters button, .more {
   font: inherit; font-size: 0.82rem; padding: 5px 11px; border-radius: 999px;

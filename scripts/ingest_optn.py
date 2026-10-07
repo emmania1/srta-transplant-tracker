@@ -38,6 +38,8 @@ OPTN_NATIONAL = "OPTN national data reports (optn.transplant.hrsa.gov/data/view-
 OUTPUTS = {
     "transplants_weekly": {"source": OPTN_METRICS,
                            "title": "Weekly deceased-donor transplants by organ"},
+    "donors_weekly": {"source": OPTN_METRICS,
+                      "title": "Weekly deceased donors recovered + YTD all-organs discard rate"},
     "donor_mix": {"source": OPTN_NATIONAL,
                   "title": "Deceased donors by type (DBD vs DCD) and DCD share by organ"},
     "distance": {"source": OPTN_NATIONAL,
@@ -48,6 +50,27 @@ OUTPUTS = {
 
 WEEKLY_FILE = re.compile(r"_optn_metrics_tx_weekly_deceased_(heart|liver|lung|kidney|all)\.csv$")
 WEEKLY_HEADER = ["yr", "week", "full_wk", "n", "cum_n"]
+DON_WEEKLY_FILE = re.compile(r"_optn_metrics_don_weekly_deceased\.csv$")
+DON_TABLE_FILE = re.compile(r"_optn_metrics_don_table_deceased\.csv$")
+DON_META_FILE = re.compile(r"_optn_metrics_don_table_meta\.json$")
+DON_TABLE_HEADER = ["yr", "total", "pct_chg", "disc", "util"]
+LIVE_OUTPUTS = {"transplants_weekly", "donors_weekly"}
+
+
+def parse_don_table(path, meta_path):
+    """Don_Table.csv: deceased donors recovered year-to-date (same calendar span each year)."""
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.reader(f)
+        if next(reader) != DON_TABLE_HEADER:
+            raise ValueError(f"{path.name}: unexpected header")
+        rows = [{"yr": int(yr), "ytd_deceased_donors": int(total),
+                 "ytd_pct_chg": None if pct == "NA" else round(100 * float(pct), 2),
+                 "discard_rate_pct": round(100 * float(disc), 2),
+                 "utilization_rate_pct": round(100 * float(util), 2)}
+                for yr, total, pct, disc, util in reader]
+    rows.sort(key=lambda r: r["yr"])
+    through = json.loads(meta_path.read_text())["ytd_through"] if meta_path else None
+    return rows, through
 
 
 def optn_week_dates(yr, week):
@@ -101,9 +124,19 @@ def main():
     unrecognised, undated = [], []
 
     weekly = {}  # organ -> (path, as_of); newest download wins
+    don = {}     # weekly / table / meta -> (path, as_of)
     for path, as_of in files:
         if as_of is None:
             undated.append(path.name)
+            continue
+        if DON_WEEKLY_FILE.search(path.name):
+            don.setdefault("weekly", (path, as_of))
+            continue
+        if DON_TABLE_FILE.search(path.name):
+            don.setdefault("table", (path, as_of))
+            continue
+        if DON_META_FILE.search(path.name):
+            don.setdefault("meta", (path, as_of))
             continue
         m = WEEKLY_FILE.search(path.name)
         if m and header_of(path).replace('"', "").strip().split(",") == WEEKLY_HEADER:
@@ -128,11 +161,27 @@ def main():
             "note": "'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.)",
         }
 
+    if "weekly" in don:
+        path, as_of = don["weekly"]
+        rows, dropped = parse_weekly(path, as_of)
+        payload = {"donors": rows, "excluded_incomplete_weeks": [f"{r['yr']}-W{r['week']:02d}" for r in dropped],
+                   "raw_file": path.name, "data_as_of": as_of.isoformat(), "parser": "optn_metrics_don_weekly",
+                   "donor_type": "Deceased Donors", "region": "National", "ytd_table": None}
+        if "table" in don:
+            tpath, tas_of = don["table"]
+            meta = don.get("meta")
+            same_pull = meta and meta[1] == tas_of
+            table, through = parse_don_table(tpath, meta[0] if same_pull else None)
+            payload.update({"ytd_table": table, "ytd_through": through,
+                            "ytd_table_file": tpath.name, "ytd_table_as_of": tas_of.isoformat(),
+                            "discard_rate_definition": "OPTN metrics dashboard 'All Organs Discard Rate' for deceased donors recovered year to date"})
+        results["donors_weekly"] = payload
+
     for key, meta in OUTPUTS.items():
         base = {"title": meta["title"], "source": meta["source"], "tag": "Manual",
                 "ingested_at": now}
         if key in results:
-            if key == "transplants_weekly":
+            if key in LIVE_OUTPUTS:
                 base["source"] = OPTN_METRICS_LIVE
                 base["tag"] = "Live"
             base.update(results[key])
