@@ -1,4 +1,4 @@
-*SRTA Transplant Tracker — week of Oct 7, 2026* · SRTA $4.68 (▼ 8.3% 1-wk)
+*SRTA Transplant Tracker — week of Oct 7, 2026* · SRTA $4.68 (▼ 8.4% 1-wk)
 • Transplants, last 4 complete weeks vs same weeks last year: Heart ▼ 5.8% · Liver ▲ 6.8% · Lung ▲ 5.4% · Kidney ▼ 2.1%.
 • Year to date vs last year (through week ending Sep 30, 2026): Heart ▼ 0.8% · Liver ▲ 6.4% · Lung ▲ 5.0% · Kidney ▼ 3.9%.
 • 1 new news item this week — Transplant volumes / donation 1.

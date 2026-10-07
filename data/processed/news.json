@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-07T19:20:35+00:00",
+  "fetched_at": "2026-10-07T20:30:55+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -346,6 +346,16 @@
         "opo_regulation"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "The OPO Rule and Your Hospital's Business Model",
+      "source": "Mintz",
+      "date": "2026-08-18T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeXF6Q25xT0ZMM0NWUXA2Y3AwMUFOZHVjc2xybTNGcFgzTzQwYl9DUjZORW9pVGhjcE1Qd2pOT3FKSFJnNDk3elhuMUM4MFZycEtpQnl1RlNRTmp6cWZJQzVvSXg3OUJKRlhMQ016UVRHRXZES01sdzg0MVpEamdZN05EUDgtTTFHWTR3a3BMWEN6X0diTW9nOHY2R29CRDg5ZFBuNnJWUWxsOEE?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-10-07T20:30:55+00:00"
     },
     {
       "headline": "TransMedics Group Investigation Initiated: Kahn Swick & Foti, LLC Investigates the Officers and Directors of TransMedics Group, Inc. - TMDX",

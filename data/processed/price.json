@@ -3,12 +3,8 @@
   "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)",
   "tag": "Live",
   "status": "ok",
-  "fetched_at": "2026-10-07T19:20:35+00:00",
+  "fetched_at": "2026-10-07T20:30:55+00:00",
   "history": [
-    {
-      "date": "2026-07-07",
-      "close": 5.24
-    },
     {
       "date": "2026-07-08",
       "close": 5.16
