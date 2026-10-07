@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-07T19:19:22+00:00",
+  "generated_at": "2026-10-07T19:19:48+00:00",
   "price": {
-    "close": 4.68,
+    "close": 4.685,
     "date": "2026-10-07",
     "week_ago_close": 5.11,
     "week_ago_date": "2026-09-30",
-    "change_1w_pct": -8.4,
+    "change_1w_pct": -8.3,
     "stale": false,
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
   },
@@ -49,14 +49,14 @@
         ]
       }
     ],
-    "fetched_at": "2026-10-07T19:16:34+00:00"
+    "fetched_at": "2026-10-07T19:19:46+00:00"
   },
   "bullets": [
     "OPTN volumes: awaiting first data file \u2014 no transplant figures loaded yet.",
     "1 new news item this week \u2014 Transplant volumes / donation 1."
   ],
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 7, 2026* \u00b7 SRTA $4.68 (\u25bc 8.4% 1-wk)",
+    "*SRTA Transplant Tracker \u2014 week of Oct 7, 2026* \u00b7 SRTA $4.68 (\u25bc 8.3% 1-wk)",
     "\u2022 OPTN volumes: awaiting first data file \u2014 no transplant figures loaded yet.",
     "\u2022 1 new news item this week \u2014 Transplant volumes / donation 1.",
     "Top headlines:",

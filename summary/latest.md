@@ -1,4 +1,4 @@
-*SRTA Transplant Tracker — week of Oct 7, 2026* · SRTA $4.68 (▼ 8.4% 1-wk)
+*SRTA Transplant Tracker — week of Oct 7, 2026* · SRTA $4.68 (▼ 8.3% 1-wk)
 • OPTN volumes: awaiting first data file — no transplant figures loaded yet.
 • 1 new news item this week — Transplant volumes / donation 1.
 Top headlines:
