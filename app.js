@@ -270,11 +270,11 @@ function renderDistance(d) {
   }).join("");
   $("dist-body").innerHTML = `
     <div class="chart-wrap tall"><canvas id="dist-chart" aria-label="Distance band shares by organ"></canvas></div>
-    <details class="table-view" open><summary>Table</summary><div class="scroll-x"><table class="dist-table">
+    <details class="table-view"><summary>Show as table</summary><div class="scroll-x"><table class="dist-table">
       <thead><tr><th>Organ</th><th>Period</th>${bands.map((b) => `<th>${esc(b)} NM</th>`).join("")}<th>251+ NM share</th></tr></thead>
       <tbody>${tbl}</tbody></table></div></details>
-    <p class="note">Shares exclude transplants with an unknown distance (none in these periods). Kidney is kidney alone.</p>`;
-  const labels = ORGANS.flatMap((o) => [`${cap(o)} · ${d.prior_label}`, `${cap(o)} · ${d.current_label}`]);
+    <p class="note">${py} = full year; ${cy} YTD = ${esc(d.current_label.replace(/^\d{4} YTD /, ""))}. Shares exclude transplants with an unknown distance (none in these periods). Kidney is kidney alone.</p>`;
+  const labels = ORGANS.flatMap((o) => [`${cap(o)} ${py}`, `${cap(o)} ${cy} YTD`]);
   const bandColors = ["--band-1", "--band-2", "--band-3", "--band-4", "--band-5"];
   const datasets = bands.map((b, i) => ({
     label: `${b} NM`,
