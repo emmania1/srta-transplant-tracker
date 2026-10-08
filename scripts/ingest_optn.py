@@ -227,6 +227,7 @@ def main():
         results["regions_weekly"] = {
             "regions": series, "excluded_incomplete_weeks": excluded,
             "region_states": cfg["regions"], "region_states_source": cfg["_source"],
+            "region_names": cfg.get("names", {}),
             "raw_file": ", ".join(p.name for p, _ in regions.values()),
             "data_as_of": min(a for _, a in regions.values()).isoformat(),
             "parser": "optn_metrics_tx_weekly", "donor_type": "Deceased Donors", "organ": "All Organs",

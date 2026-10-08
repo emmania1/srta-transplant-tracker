@@ -79,5 +79,19 @@
       "Tennessee",
       "Virginia"
     ]
-  }
+  },
+  "names": {
+    "1": "New England",
+    "2": "Mid-Atlantic",
+    "3": "Southeast",
+    "4": "South Central",
+    "5": "Southwest",
+    "6": "Northwest",
+    "7": "Upper Midwest",
+    "8": "Central Plains",
+    "9": "New York",
+    "10": "Great Lakes",
+    "11": "Mid-South"
+  },
+  "_names_note": "Short geographic labels for display only (ours, not OPTN's). Membership above is OPTN's."
 }

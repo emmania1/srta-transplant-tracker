@@ -79,6 +79,8 @@ def prices_block(price):
     joby = None
     if j:
         joby = {"shares": hold["shares"], "label": hold["label"], "source": hold["source"],
+                "cap_contingent_usd": hold.get("cap_contingent_usd"), "cap_holdback_usd": hold.get("cap_holdback_usd"),
+                "cap_source": hold.get("cap_source"),
                 "source_url": hold.get("source_url"), "tag": hold["tag"],
                 "value": round(j["close"] * hold["shares"]),
                 "value_week_ago": round(j["week_ago_close"] * hold["shares"]) if j["week_ago_close"] else None,

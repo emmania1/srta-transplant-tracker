@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T21:59:47+00:00",
+  "generated_at": "2026-10-08T22:50:16+00:00",
   "price": {
     "close": 4.47,
     "date": "2026-10-08",
@@ -37,8 +37,11 @@
     },
     "joby": {
       "shares": 2420000,
-      "label": "JOBY contingent consideration (PM estimate)",
+      "label": "JOBY earn-out (PM estimate)",
       "source": "PM-provided share count (2.42M). Basis to confirm: SRTA's Q2 2026 10-Q (filed 2026-08-04) says the 5,325,585 JOBY shares received at closing were sold for $70.2M net; up to $35.0M of additional consideration is payable in cash or JOBY shares at Joby's election on performance/retention targets, plus up to $10.0M of indemnity holdbacks.",
+      "cap_contingent_usd": 35000000,
+      "cap_holdback_usd": 10000000,
+      "cap_source": "SRTA Q2 2026 10-Q (filed 2026-08-04): up to $35.0M additional consideration (cash or JOBY shares at Joby's election) + up to $10.0M indemnity holdbacks",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052256/srta-20260630.htm",
       "tag": "Manual",
       "value": 13915000,
@@ -1269,7 +1272,7 @@
         ]
       }
     ],
-    "fetched_at": "2026-10-08T21:57:05+00:00"
+    "fetched_at": "2026-10-08T22:50:11+00:00"
   },
   "issue_line": null,
   "bullets": [

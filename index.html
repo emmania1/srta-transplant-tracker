@@ -4,214 +4,311 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SRTA Transplant Tracker</title>
-  <link rel="stylesheet" href="style.css?v=2026-10-08d" />
+  <link rel="stylesheet" href="style.css?v=2026-10-09d" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
-  <header class="page-head">
-    <div class="head-row">
-      <div>
-        <h1>SRTA Transplant Tracker</h1>
-        <p class="subtitle">Strata Critical Medical (Nasdaq: SRTA): U.S. transplant volumes, organ travel, and industry news. About 84% of SRTA revenue is tied to organ transplants.</p>
-      </div>
-      <div class="price-trio">
-        <div class="price-box" id="price-box">
-          <div class="price-label">SRTA <span class="tier-tag live">Live</span></div>
-          <div class="price-val" id="price-val">…</div>
-          <div class="price-chg" id="price-chg"></div>
-          <div class="updated" id="price-updated"></div>
-        </div>
-        <div class="price-box small" id="tmdx-box">
-          <div class="price-label">TMDX <span class="tier-tag live">Live</span></div>
-          <div class="price-val" id="tmdx-val">…</div>
-          <div class="price-chg" id="tmdx-chg"></div>
-        </div>
-        <div class="price-box small" id="joby-box">
-          <div class="price-label">JOBY <span class="tier-tag live">Live</span></div>
-          <div class="price-val" id="joby-val">…</div>
-          <div class="price-chg" id="joby-chg"></div>
-          <div class="updated" id="joby-value"></div>
-        </div>
-      </div>
+  <a id="top"></a>
+  <nav class="topnav" aria-label="Sections">
+    <div class="topnav-inner">
+      <a class="brand" href="#top">SRTA Tracker</a>
+      <a href="#s1"><span class="n">1</span>Snapshot</a>
+      <a href="#s2"><span class="n">2</span>Volumes</a>
+      <a href="#s3"><span class="n">3</span>Donor mix</a>
+      <a href="#s4"><span class="n">4</span>Distance &amp; location</a>
+      <a href="#s5"><span class="n">5</span>Leading indicators</a>
+      <a href="#s6"><span class="n">6</span>Company</a>
+      <a href="#news">News</a>
+      <a href="#about">About</a>
     </div>
-    <div class="updated" id="page-updated"></div>
-  </header>
+  </nav>
 
   <main>
-    <div class="health-banner" id="health-banner" hidden role="alert"></div>
+    <!-- 1. Snapshot -->
+    <section class="section" id="s1">
+      <header class="page-head">
+        <div class="head-row">
+          <div>
+            <h1>SRTA Transplant Tracker</h1>
+            <p class="subtitle">Strata Critical Medical (Nasdaq: SRTA). About 84% of SRTA revenue is tied to organ transplants: how many happen, how far organs travel, and how donors are recovered.</p>
+            <p class="updated" id="page-updated"></p>
+          </div>
+          <div class="price-pair">
+            <div class="price-box" id="srta-box">
+              <div class="price-label">SRTA <span class="tier-tag live">Live</span></div>
+              <div class="price-val" id="srta-val">…</div>
+              <div class="price-chg" id="srta-chg"></div>
+            </div>
+            <div class="price-box" id="tmdx-box">
+              <div class="price-label">TMDX <span class="tier-tag live">Live</span></div>
+              <div class="price-val" id="tmdx-val">…</div>
+              <div class="price-chg" id="tmdx-chg"></div>
+            </div>
+            <p class="src price-src" id="src-price"></p>
+          </div>
+        </div>
+      </header>
 
-    <section class="signals" id="signals">
-      <div class="sec-head"><h2>What the data says</h2><span class="updated">Rule-based labels; thresholds in config/signals.json</span></div>
-      <div id="signals-body"></div>
+      <div class="health-banner" id="health-banner" hidden role="alert"></div>
+
+      <h2 class="sec-title"><span class="num">1</span>Snapshot</h2>
+      <p class="why">Why it matters for SRTA: the week's key signals for Strata's transplant-driven revenue, in one place.</p>
+
+      <article class="panel" id="p-signals">
+        <header class="panel-head">
+          <h3>What the data says</h3>
+          <p class="why">Why it matters for SRTA: rule-based up / flat / down labels for the drivers of Strata's revenue: transplant volumes, distance, donor type and discards.</p>
+        </header>
+        <div id="signals-body"></div>
+        <div class="this-week">
+          <h4>This week</h4>
+          <ul id="this-week-list"><li>Loading…</li></ul>
+          <h4>Top headlines</h4>
+          <ul class="top-heads" id="top-heads"></ul>
+        </div>
+        <footer class="src" id="src-signals"></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
-    <section class="this-week">
-      <div class="sec-head">
-        <h2>This week</h2>
-        <span class="updated" id="digest-updated"></span>
-      </div>
-      <ul id="this-week-list"><li>Loading…</li></ul>
-    </section>
+    <!-- 2. Volumes -->
+    <section class="section" id="s2">
+      <h2 class="sec-title"><span class="num">2</span>Volumes</h2>
+      <p class="why">Why it matters for SRTA: about 84% of Strata's revenue is tied to organ transplants, so transplant counts are the core demand signal.</p>
 
-    <!-- 2. Weekly volumes -->
-    <section class="panel" id="volumes">
-      <div class="sec-head">
-        <h2>Weekly deceased-donor transplants</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="vol-updated"></span>
-      </div>
-      <p class="note">Complete weeks only (the current, partial week is excluded). All comparisons are year over year: each OPTN week vs. the same week number last year. Recent weeks can be revised up as centers finish reporting.</p>
-      <div class="cards" id="vol-cards"></div>
-      <div class="context-line" id="donor-line"></div>
-      <div class="tabs" role="tablist" id="vol-tabs"></div>
-      <div class="chart-wrap" id="vol-chart-wrap"><canvas id="vol-chart" aria-label="Weekly transplants by week number"></canvas></div>
-      <details class="table-view"><summary>Show as table</summary><div id="vol-table"></div></details>
-    </section>
+      <article class="panel" id="p-transplants">
+        <header class="panel-head">
+          <h3>Weekly deceased-donor transplants</h3>
+          <p class="why">Why it matters for SRTA: every deceased-donor transplant is a potential flight, surgical recovery or perfusion case for Strata.</p>
+        </header>
+        <div class="cards" id="vol-cards"></div>
+        <div class="chart-controls">
+          <div class="tabs" role="tablist" id="vol-tabs"></div>
+          <div class="seg" id="vol-mode"></div>
+        </div>
+        <div class="chart-wrap" id="vol-chart-wrap"><canvas id="vol-chart" aria-label="Weekly transplants by week of year"></canvas></div>
+        <details class="table-view"><summary>Show as table</summary><div id="vol-table"></div></details>
+        <p class="note">Complete weeks only; the current, partial week is left out. Each week is compared with the same week last year. Recent weeks can be revised up as centers finish reporting.</p>
+        <footer class="src" id="src-transplants"></footer>
+      </article>
 
-    <!-- Waitlist additions -->
-    <section class="panel" id="waitlist">
-      <div class="sec-head">
-        <h2>Waitlist additions (demand indicator)</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="wl-updated"></span>
-      </div>
-      <p class="note">New registrations added to the OPTN waiting list, national, by organ. Complete weeks only; each week vs. the same week last year.</p>
-      <div class="cards" id="wl-cards"></div>
-      <div class="tabs" role="tablist" id="wl-tabs"></div>
-      <div class="chart-wrap short" id="wl-chart-wrap"><canvas id="wl-chart" aria-label="Weekly waitlist additions by week number"></canvas></div>
-      <details class="table-view"><summary>Show as table</summary><div id="wl-table"></div></details>
+      <article class="panel" id="p-donors">
+        <header class="panel-head">
+          <h3>Deceased donors recovered and discard rate</h3>
+          <p class="why">Why it matters for SRTA: more deceased donors means more recoveries for Strata's teams. The discard rate counts organs recovered but not transplanted; rising discards can mean trips that don't turn into transplants.</p>
+        </header>
+        <div id="donor-body"></div>
+        <footer class="src" id="src-donors"></footer>
+      </article>
+
+      <article class="panel" id="p-waitlist">
+        <header class="panel-head">
+          <h3>Waitlist additions</h3>
+          <p class="why">Why it matters for SRTA: new patients added to the list are future demand for organs.</p>
+        </header>
+        <div class="cards" id="wl-cards"></div>
+        <div class="chart-controls">
+          <div class="tabs" role="tablist" id="wl-tabs"></div>
+          <div class="seg" id="wl-mode"></div>
+        </div>
+        <div class="chart-wrap short" id="wl-chart-wrap"><canvas id="wl-chart" aria-label="Weekly waitlist additions by week of year"></canvas></div>
+        <details class="table-view"><summary>Show as table</summary><div id="wl-table"></div></details>
+        <footer class="src" id="src-waitlist"></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
     <!-- 3. Donor mix -->
-    <section class="panel" id="donor-mix">
-      <div class="sec-head">
-        <h2>Donor mix: DBD vs. DCD</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="mix-updated"></span>
-      </div>
-      <p class="note">DBD = donation after brain death. DCD = donation after circulatory death; DCD recoveries are more time-sensitive and lean on perfusion. <strong>Mix comparison:</strong> OPTN's national reports are annual, so the current year to date is compared with the prior full year as shares, not volumes.</p>
-      <div id="mix-body"></div>
+    <section class="section" id="s3">
+      <h2 class="sec-title"><span class="num">3</span>Donor mix</h2>
+      <p class="why">Why it matters for SRTA: the type of donor determines how much recovery and perfusion work each case needs.</p>
+
+      <article class="panel" id="p-mix">
+        <header class="panel-head">
+          <h3>DBD vs. DCD donors</h3>
+          <p class="why">Why it matters for SRTA: DCD donors need more recovery and perfusion services, which drives Strata's clinical business.</p>
+        </header>
+        <div id="mix-body"></div>
+        <footer class="src" id="src-mix"></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
     <!-- 4. Distance & location -->
-    <section class="panel" id="distance">
-      <div class="sec-head">
-        <h2>How far organs travel</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="dist-updated"></span>
-      </div>
-      <p class="note">Share of deceased-donor transplants in each OPTN distance band (nautical miles, donor hospital to transplant center). A rising share in the long bands (251+ NM) means more flying. Same mix comparison as above.</p>
-      <div id="dist-body"></div>
+    <section class="section" id="s4">
+      <h2 class="sec-title"><span class="num">4</span>Distance &amp; location</h2>
+      <p class="why">Why it matters for SRTA: how far organs travel and where transplants happen determine Strata's flight hours and routes.</p>
+
+      <article class="panel" id="p-distance">
+        <header class="panel-head">
+          <h3>How far organs travel</h3>
+          <p class="why">Why it matters for SRTA: longer trips mean more flight hours and more revenue per case.</p>
+        </header>
+        <div id="dist-body"></div>
+        <footer class="src" id="src-distance"></footer>
+      </article>
+
+      <article class="panel" id="p-regions">
+        <header class="panel-head">
+          <h3>Weekly transplants by OPTN region</h3>
+          <p class="why">Why it matters for SRTA: regional swings show where flight and recovery demand is growing or slowing, week to week.</p>
+        </header>
+        <div id="reg-body"></div>
+        <footer class="src" id="src-regions"></footer>
+      </article>
+
+      <article class="panel" id="p-states">
+        <header class="panel-head">
+          <h3>Transplants by state</h3>
+          <p class="why">Why it matters for SRTA: each state's share of U.S. transplants shows which markets matter most for Strata's coverage.</p>
+        </header>
+        <p class="note" id="loc-note"></p>
+        <div id="loc-body"></div>
+        <footer class="src" id="src-states"></footer>
+      </article>
+
+      <article class="panel" id="p-centers">
+        <header class="panel-head">
+          <h3>Top transplant centers: heart, liver and lung</h3>
+          <p class="why">Why it matters for SRTA: the busiest heart, liver and lung programs are the largest potential customers for organ flights and recovery teams.</p>
+        </header>
+        <p class="note" id="ctr-note"></p>
+        <div id="ctr-body"></div>
+        <footer class="src" id="src-centers"></footer>
+      </article>
+
+      <article class="panel" id="p-miles">
+        <header class="panel-head">
+          <h3>Organ-miles</h3>
+          <p class="why">Why it matters for SRTA: combines volume and distance into one measure of flying demand.</p>
+        </header>
+        <p>Tracked in a separate tool and not copied here: <a href="https://slogatskiy.github.io/srta-organ-miles-tracker/" target="_blank" rel="noopener">SRTA organ-miles tracker ↗</a></p>
+        <footer class="src">Source: SRTA organ-miles tracker · maintained externally · <span class="tier-tag linked">Linked</span></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
-    <section class="panel" id="regions">
-      <div class="sec-head">
-        <h2>Where transplants happen: OPTN regions, weekly</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="reg-updated"></span>
-      </div>
-      <p class="note">Deceased-donor transplants, all organs, by region of transplant center. Complete weeks only; each region vs. the same weeks last year.</p>
-      <div id="reg-body"></div>
+    <!-- 5. Leading indicators -->
+    <section class="section" id="s5">
+      <h2 class="sec-title"><span class="num">5</span>Leading indicators</h2>
+      <p class="why">Why it matters for SRTA: signals that move ahead of donor supply.</p>
+
+      <article class="panel" id="p-cdc">
+        <header class="panel-head">
+          <h3>U.S. overdose deaths, 12 months rolling</h3>
+          <p class="why">Why it matters for SRTA: a leading indicator for brain-death donors, which typically lag overdose trends.</p>
+        </header>
+        <div id="cdc-body"></div>
+        <footer class="src" id="src-cdc"></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
-    <section class="panel" id="location">
-      <div class="sec-head">
-        <h2>Where transplants happen: by state</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="loc-updated"></span>
-      </div>
-      <p class="note" id="loc-note"></p>
-      <div id="loc-body"></div>
+    <!-- 6. Company -->
+    <section class="section" id="s6">
+      <h2 class="sec-title"><span class="num">6</span>Company</h2>
+      <p class="why">Why it matters for SRTA: Strata's own results and filings, and its closest public comparable.</p>
+
+      <article class="panel" id="p-kpis">
+        <header class="panel-head">
+          <h3>SRTA quarterly KPIs</h3>
+          <p class="why">Why it matters for SRTA: reported results show whether transplant demand is turning into revenue and margin as guided.</p>
+        </header>
+        <div id="kpi-body"></div>
+        <footer class="src" id="src-kpis"></footer>
+      </article>
+
+      <article class="panel" id="p-joby">
+        <header class="panel-head">
+          <h3>JOBY earn-out (PM estimate)</h3>
+          <p class="why">Why it matters for SRTA: contingent consideration from the sale of Blade's passenger business, payable in cash or JOBY shares at Joby's election. If paid in shares, its value moves with JOBY's price.</p>
+        </header>
+        <div id="joby-body"></div>
+        <footer class="src" id="src-joby"></footer>
+      </article>
+
+      <article class="panel" id="p-sec">
+        <header class="panel-head">
+          <h3>SEC filings</h3>
+          <p class="why">Why it matters for SRTA: insider trades, large-holder filings and material-event reports in one place.</p>
+        </header>
+        <div id="insider-strip"></div>
+        <div class="filters" id="sec-filters"></div>
+        <div id="sec-body"></div>
+        <footer class="src" id="src-sec"></footer>
+      </article>
+
+      <article class="panel" id="p-rel">
+        <header class="panel-head">
+          <h3>SRTA vs. TMDX, last 3 months</h3>
+          <p class="why">Why it matters for SRTA: TransMedics is the closest public comparable in organ transport and perfusion, so the gap separates sector moves from company-specific ones.</p>
+        </header>
+        <p class="note" id="rel-note"></p>
+        <div class="chart-wrap short"><canvas id="rel-chart" aria-label="SRTA vs TMDX, indexed to 100"></canvas></div>
+        <footer class="src" id="src-rel"></footer>
+      </article>
+
+      <article class="panel" id="p-tmdx">
+        <header class="panel-head">
+          <h3>TransMedics quarterly KPIs</h3>
+          <p class="why">Why it matters for SRTA: TransMedics' case volumes are a read-through on transplant activity and on competition in organ transport.</p>
+        </header>
+        <div id="tmdx-kpi-body"></div>
+        <footer class="src" id="src-tmdx"></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
-    <section class="panel" id="centers">
-      <div class="sec-head">
-        <h2>Top 25 transplant centers: heart + liver + lung</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="ctr-updated"></span>
-      </div>
-      <p class="note" id="ctr-note"></p>
-      <div id="ctr-body"></div>
+    <!-- News -->
+    <section class="section" id="news">
+      <h2 class="sec-title">News &amp; company mentions</h2>
+      <p class="why">Why it matters for SRTA: policy, OPO and competitor news can change transplant volumes before the data shows it.</p>
+      <article class="panel" id="p-news">
+        <div class="filters" id="news-filters"></div>
+        <ul class="news-list" id="news-list"></ul>
+        <button class="more" id="news-more" hidden>Show more</button>
+        <details class="collapsed-news" id="news-collapsed" hidden><summary id="news-collapsed-sum"></summary><ul class="news-list" id="news-collapsed-list"></ul></details>
+        <footer class="src" id="src-news"></footer>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
 
-    <section class="panel linked" id="organ-miles">
-      <div class="sec-head">
-        <h2>Organ-miles</h2>
-        <span class="tier-tag linked">Linked</span>
-      </div>
-      <p>Organ-miles are tracked in a separate tool and not copied here: <a href="https://slogatskiy.github.io/srta-organ-miles-tracker/" target="_blank" rel="noopener">SRTA organ-miles tracker ↗</a></p>
-    </section>
-
-    <!-- Leading indicator -->
-    <section class="panel" id="cdc">
-      <div class="sec-head">
-        <h2>U.S. overdose deaths (leading indicator for brain-death donors)</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="cdc-updated"></span>
-      </div>
-      <div id="cdc-body"></div>
-    </section>
-
-    <!-- Company -->
-    <section class="panel" id="company-kpis">
-      <div class="sec-head">
-        <h2>SRTA company KPIs (quarterly)</h2>
-        <span class="tier-tag manual">Manual</span>
-        <span class="updated" id="kpi-updated"></span>
-      </div>
-      <div id="kpi-body"></div>
-    </section>
-
-    <section class="panel" id="tmdx">
-      <div class="sec-head">
-        <h2>SRTA vs. TMDX, last 3 months (indexed to 100)</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="rel-updated"></span>
-      </div>
-      <div class="chart-wrap short"><canvas id="rel-chart" aria-label="SRTA vs TMDX relative performance"></canvas></div>
-      <h3 class="sub-head">TransMedics KPIs (quarterly) <span class="tier-tag manual">Manual</span></h3>
-      <div id="tmdx-kpi-body"></div>
-    </section>
-
-    <section class="panel" id="sec">
-      <div class="sec-head">
-        <h2>SRTA SEC filings (last 180 days)</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="sec-updated"></span>
-      </div>
-      <div class="filters" id="sec-filters"></div>
-      <div id="sec-body"></div>
-    </section>
-
-    <!-- 5. News -->
-    <section class="panel" id="news">
-      <div class="sec-head">
-        <h2>News &amp; company mentions</h2>
-        <span class="tier-tag live">Live</span>
-        <span class="updated" id="news-updated"></span>
-      </div>
-      <div class="filters" id="news-filters"></div>
-      <ul class="news-list" id="news-list"></ul>
-      <button class="more" id="news-more" hidden>Show more</button>
-      <details class="collapsed-news" id="news-collapsed" hidden><summary id="news-collapsed-sum"></summary><ul class="news-list" id="news-collapsed-list"></ul></details>
-    </section>
-
-    <section class="panel phase2">
-      <div class="sec-head"><h2>Not built yet</h2></div>
-      <p class="note">OPO tier &amp; decertification tracker.</p>
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="sec-title">About this data</h2>
+      <article class="panel">
+        <div class="scroll-x"><table class="sources">
+          <thead><tr><th>Panel</th><th>Source</th><th>Tag</th><th>Updated</th><th>Files</th></tr></thead>
+          <tbody id="sources-body"></tbody>
+        </table></div>
+        <p class="note"><strong>Live</strong> = fetched automatically by a GitHub Action. <strong>Manual</strong> = entered by hand from a named public document. <strong>Linked</strong> = an external tool we link to rather than copy. Public sources only; no sell-side research. Panels with no data say "awaiting data" rather than show a placeholder.</p>
+        <h3 class="sub-head">How the labels and checks work</h3>
+        <ul class="about-list">
+          <li><strong>What the data says</strong> labels are mechanical: a change inside the flat band is "flat". Thresholds are in <code>config/signals.json</code>.</li>
+          <li>A red <strong>data issue</strong> banner appears when a fetch fails or data goes stale (limits in <code>config/health.json</code>); the page keeps showing the last good data.</li>
+          <li>News keywords, filters and the digest's headline ranking are in <code>config/keywords.json</code>.</li>
+          <li>Quarterly KPIs are typed in from earnings releases and filings in <code>data/manual/company_kpis.json</code> and <code>data/manual/tmdx_kpis.json</code>; every field carries its own source and date.</li>
+          <li>The JOBY share count is in <code>config/holdings.json</code>; OPTN region membership is in <code>config/optn_regions.json</code>.</li>
+          <li id="health-notices"></li>
+        </ul>
+        <h3 class="sub-head">Glossary</h3>
+        <dl class="glossary">
+          <dt>DBD</dt><dd>Donation after brain death. The donor is declared dead by neurological criteria; organs are recovered with circulation maintained.</dd>
+          <dt>DCD</dt><dd>Donation after circulatory death. Organs are recovered after the heart stops, so timing is tighter and perfusion is used more often.</dd>
+          <dt>NRP</dt><dd>Normothermic regional perfusion: restoring warm, oxygenated blood flow to the organs in the donor after circulatory death, before recovery.</dd>
+          <dt>OPO</dt><dd>Organ procurement organization: the nonprofit that manages donation and organ recovery in a defined area.</dd>
+          <dt>OPTN</dt><dd>Organ Procurement and Transplantation Network: the national U.S. system, overseen by HRSA, that runs the waiting list and publishes these data.</dd>
+          <dt>NM</dt><dd>Nautical miles (1 NM ≈ 1.15 statute miles), used by OPTN for donor-hospital-to-transplant-center distance.</dd>
+          <dt>Discard rate</dt><dd>Share of organs recovered for transplant that are not transplanted (OPTN "all organs discard rate").</dd>
+          <dt>Kidney (incl. kidney-pancreas)</dt><dd>The OPTN weekly dashboard counts combined kidney-pancreas transplants and listings under Kidney. OPTN's annual national reports count them separately, so those panels say "Kidney (alone)".</dd>
+        </dl>
+        <h3 class="sub-head">Not built yet</h3>
+        <p class="note">OPO tier &amp; decertification tracker.</p>
+      </article>
+      <a class="back" href="#top">↑ Back to top</a>
     </section>
   </main>
 
-  <footer>
-    <h2>About this data</h2>
-    <table class="sources">
-      <thead><tr><th>Panel</th><th>Source</th><th>Tag</th><th>Cadence</th></tr></thead>
-      <tbody id="sources-body"></tbody>
-    </table>
-    <p class="note" id="health-notices"></p>
-    <p class="note"><strong>Live</strong> = fetched automatically by a GitHub Action. <strong>Manual</strong> = from a file downloaded and dropped into the repo. <strong>Linked</strong> = external tool we link to rather than copy. Public data only. Panels with no data show "Awaiting data" rather than a placeholder value.</p>
-  </footer>
-
-  <script src="app.js?v=2026-10-08d"></script>
+  <script src="app.js?v=2026-10-09d"></script>
 </body>
 </html>

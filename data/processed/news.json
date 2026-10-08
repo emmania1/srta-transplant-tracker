@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-08T21:57:05+00:00",
+  "fetched_at": "2026-10-08T22:50:11+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -70,17 +70,6 @@
       "publisher_url": "https://www.marketscreener.com/news/xvivo-perfusion-nomination-committee-unchanged-ce785ad2d08cf522"
     },
     {
-      "headline": "Heart in a box. Canadian-first technology opens new possibilities for lifesaving transplants.",
-      "source": "www.hospitalnews.com",
-      "date": "2026-09-30T14:03:45+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOWJzaTdBXzY0STBTQzNobzlpdTd1OGRXMFZqNkdpajZaclFZQ1BWMVhXWGx4Q25UWWF5RkVMN1RvYnNXNVY4TjBzeFNMdFNRU2hMRktiVWZuU3FJcFZmLTItdEZuY1lGX0FZVmxyUnY3TVlELXlMT1pmRlZ6Wl9LQ0hRYV9sV0hZb0RYTFVMRm5JV3NsRW04djNJVW9LWVl4ZXc5Zng1TDdNZTNQQ1BIMWVVZVV1d2R1SHdsQmJB?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.hospitalnews.com/heart-in-a-box-canadian-first-technology-opens-new-possibilities-for-lifesaving-transplants/"
-    },
-    {
       "headline": "TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?",
       "source": "The Motley Fool",
       "date": "2026-09-29T17:17:00+00:00",
@@ -90,17 +79,6 @@
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
       "publisher_url": "https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/"
-    },
-    {
-      "headline": "Egypt death-row organ proposal sparks medical and religious debate",
-      "source": "Middle East Online",
-      "date": "2026-09-29T13:48:35+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ1FVUm1BczlndndQZV9KeV9rb3ZvT0FNODV1QjdVRXlPUkJUREd6c3Rzbm9RaEl2TDdCMDJEM3JqTjRTV3RRX2VlV0dKRzM0YmpoVFNxUWJTVnZKTmpZLTh5T3NhZDBRLWd5QnRZWVNQQ3FLOF85NG03LU5uZi1mcXBIclkzMmNKaHg0c2dYcm1RUU9IZHdWNHFkbnF0eHJNRWc?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": "https://middle-east-online.com/en/egypt-death-row-organ-proposal-sparks-medical-and-religious-debate"
     },
     {
       "headline": "South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida",
@@ -158,40 +136,6 @@
       "publisher_url": "https://pluang.com/en/news-feed/apakah-direksi-transmedics-group-melanggar-tugas-fidusia"
     },
     {
-      "headline": "Sharp drop in organ donation rates sparks campaign for consent",
-      "source": "The Christian Institute",
-      "date": "2026-09-24T14:25:01+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN1dmRGVlR3lUb05NTEFLelE3QkFnNGc5NWJVRTNTVVIxYnFrbkd3OUc0cWZxWGRmR0sxM05nbEhIQndwMDVXamFwSl9tNHRXaC1ZWkpzOGx5bFdBMFg1SUR3c09Nc3JyTkZXeFJJQV9rcHFXTnV5c0JvN2c5TE1SSUlBNkJvQmV1eGk5YVhHbklRM3pWRlJ3ZUxVM2dvQQ?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.christian.org.uk/news/sharp-drop-in-organ-donation-rates-sparks-campaign-for-consent/"
-    },
-    {
-      "headline": "London Health Sciences Centre completes Canadian first using \"heart in a box\" technology for cardiac transplantation",
-      "source": "LHSC",
-      "date": "2026-09-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbl8yV0tDNEZLNVJSeC1CVTh2Qnp2bmFMbUhpTThtb0J2ejJQZUZPSmFBNVhUVXQ2MXVIcXRGYV9nVjdrc1VUT0c3dlBQZ3RWNWpaemxNMC1vNWQyNTlHM2hLLUdoZlFDcWdBalBZYzhPbk9uTnpHd1Mzb25Rc0twS2ExZDZ0WFpSU2k3YVJhRWtuV3daV0RIWmxxOWFLTVRjY2ZNWXpuXzVfeGpFSURJNDUzTlhaZFlBcUE?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.lhsc.on.ca/news/london-health-sciences-centre-completes-canadian-first-using-heart-in-a-box-technology-for"
-    },
-    {
-      "headline": "10 lives saved: the invisible work that makes Paran\u00e1 a national reference in transplants.",
-      "source": "Folha do Litoral",
-      "date": "2026-09-23T21:24:54+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbW5UZF9EX2tyMlZiVm1MYTRBNmVOTTg0Yjl1OHdGd3c5RHBkbDBqcFJHZnJGNjFLcGlfcHlkX2ZNUjd1UDIya3A2RmtXUzcyYzJkRGJQUkI3WmxLc01PeEVZdlNZXzBfOGduYjdoTzY1NWJETFpKNjBOMjc3d1NHcmR1VkFjX1g3RkNaM3Q0VWtPdnFTVm05dWRpNFc5RXZWY3VTR1JNMmFiaTNtZUgyejJsUVFKOE93cXViV2JiQ1ZFUTViajJQMzhUcGhpeVpOWXJSZTlVNjViX2x2R1JlS1RXQnlVU2w5VlE?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://folhadolitoral.com.br/en/editorias/ciencia-e-saude/10-mil-vidas-salvas-o-trabalho-invisivel-que-faz-do-parana-referencia-nacional-em-transplantes/"
-    },
-    {
       "headline": "Analysts Offer Insights on Healthcare Companies: DBV Technologies SA \u2013 American (DBVT) and TransMedics Group (TMDX)",
       "source": "The Globe and Mail",
       "date": "2026-09-23T09:58:00+00:00",
@@ -202,17 +146,6 @@
       ],
       "first_seen": "2026-10-08T21:32:08+00:00",
       "publisher_url": "https://www.theglobeandmail.com/investing/markets/stocks/TMDX-Q/pressreleases/4750087/analysts-offer-insights-on-healthcare-companies-dbv-technologies-sa-american-dbvt-and-transmedics-group-tmdx/"
-    },
-    {
-      "headline": "NHS announces first-ever urgent response following sharp decline in organ donation",
-      "source": "NHS Organ Donation",
-      "date": "2026-09-21T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYzJaNlVXSG1MRTg1YS12WGVvanozWWdBMEU1eTNnWnZNYUtpR0tTdW9JTlNDWnZBRUFjM2ZtZ1RtRE1YbHNjbW9lOVc4SWVsMXBUaDEtTlNkRVJ0cnlsZXEzWHktaFdLaUl5dTctSllUemhtVWFjMFg0WGdEX2M1dW5DME1nUG5VRVRxczd5ZmIwajNaQnhieDl0ZWg1RkZDU3FiV19aZFoxY0pLZi1XeVh1eGFoNnZXVmxDejZ3?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.organdonation.nhs.uk/news/nhs-announces-first-ever-urgent-response-following-sharp-decline-in-organ-donation/"
     },
     {
       "headline": "TransMedics' growth slows, relying more on inte...",
@@ -235,17 +168,6 @@
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
       "publisher_url": "https://www.bizjournals.com/boston/news/2026/09/16/life-sciences-tower-work-begins-with-56-million-b.html"
-    },
-    {
-      "headline": "2 Stocks Down 28% and 34% to Buy and Hold",
-      "source": "The Motley Fool",
-      "date": "2026-09-15T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb25ZSllNY3Z5ZmRNSTlIcGZ4dFJjbzhSSVNIaVpydW5yUlREdTdrZlV0dVpNUlhsaERXZTJnY18zM1N6ajBNQVpMSmpjZktiTGx2eUowNUQtNlU2b09yS1d0NDE3SHZtWUhpUnlYbHJ1X3JEM0hDOVVmeF9oQUpSUGtuRVNOWWxqVnU1Tmpjc2s?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.fool.com/investing/2026/09/15/2-stocks-down-28-and-34-that-to-buy-and-hold/"
     },
     {
       "headline": "TransMedics expands logistics network: A look inside the command center managing 30% of transplants",
@@ -413,28 +335,6 @@
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
       "publisher_url": "https://www.hospitalnews.com/game-changing-transplant-technology/"
-    },
-    {
-      "headline": "Organ donors needed, but do your homework first",
-      "source": "Sudbury Star",
-      "date": "2026-08-23T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWjBwSHN1bE0yd01wM0NHSW9NaGFyT3FjZVhNWVlJSHJpbGhYUTZ2d1pFMkQ4QnJTVGhsSnJSWGxPeHJ5Q1J3bDVXY1ZHV0NKU3E1TEpQOGwteDZiODViamFxSGplUHRFaUc4aEJQTUtPVjJUYWhoR2h2OXlXRjF4MVB5R2FpMWZPRk0wWU5HYWFpdw?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": "https://www.thesudburystar.com/arts-life/organ-donors-needed-but-do-your-homework-first/"
-    },
-    {
-      "headline": "NICE Supports Routine NHS Funding and Access to Ex-Situ Machine Perfusion in a Major Step Forward for Liver Transplantation",
-      "source": "Yahoo Finance",
-      "date": "2026-08-20T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWGtCZWZzUmdCeW1rdDdhRDZoaWQ0UVRHOTJXcFF3S2phUUNabWI5d29lTGMzdXpnX3E4aVZNb3ZaSUg1aTVfV2ZvRllWUnZ2SjR6WmNSWnZjSFJjU1JZRVJma1hHajFqTENMdVNSRUNJM3NSM3BDOUc2TFlNSGJkMy11WG1HRjEtNEJSckZUY1lOT25pVnlza0Nn?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/nice-supports-routine-nhs-funding-065900298.html"
     },
     {
       "headline": "Opinion: Why it is significant HHS decertified an organ procurement organization",
@@ -900,17 +800,6 @@
       "publisher_url": "https://pluang.com/en/news-feed/transmedics-laporkan-pemberian-insentif-saham-untuk-karyawan"
     },
     {
-      "headline": "Tamil Nadu tops India in deceased organ donations, ranks second in organ transplants in 2025",
-      "source": "The New Indian Express",
-      "date": "2026-08-03T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNNFhZVkQ0TGNJbVRoUXcyb20zbFFJSFpadzZNaUJhOUI5VGsyYkI3NGlqYV85Ykp0VUE4WXh4MnFWVHNhc0J3Sm9DanlJbkVUcC0wX2tPS1lLUFpQZGtKeXVPLS1BVWtUTGY1WHV3TmVMb29STHlzUW5CYmlLemRrOTR4V1pkYmRLZzloVnJTTzdmU1c1OElQX2t6cXExZ3FQVm5oQ1d2cXUxSG5LbVM1TFBBck9xUUtVZDlVVm1OMzBRQlkyU2J2NE9YeklZNEkzN05JWmVmcGQ0d9IB5wFBVV95cUxPdGxhS04tdER6VUQ1c204d1E0T2JIaG1UTXJBU1ExR0FrWjdDU1VaTldHR2t0NE11bmdmMkxaSk5Ob3VMTjhZdHVhUW1VcTJpMjhKN2RoRTMwWWctRHJPODBPeWw5M1JnWkt4WkVKWjBBQkRYTjM4YS1GM0tlTWU2RGRsd2FxM1oxV0g2X2k1cXhMTkFHejZzajJRcXV0VVBiYWNyUlpaOXhDVVNLVzRHejhydks5QkhZNDk4YUxFbi16ZU9VN0hfVnpTODN2UWY2YVFVT1ladFNKREJDQUd3aGV4eWVGakE?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": "https://www.newindianexpress.com/india/2026/Aug/03/tamil-nadu-tops-india-in-deceased-organ-donations-ranks-second-in-organ-transplants-in-2025"
-    },
-    {
       "headline": "TransMedics Group (NASDAQ:TMDX): An Affordable Growth Stock With Strong Earnings Momentum",
       "source": "ChartMill",
       "date": "2026-07-28T07:00:00+00:00",
@@ -953,17 +842,6 @@
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
       "publisher_url": "https://pluang.com/en/news-feed/apakah-insider-transmedics-langgar-tugas-fidusia-pemegang-saham"
-    },
-    {
-      "headline": "'Death by organ donation': Doctors raise possibility of retrieving organs from MAID patients while they are still alive",
-      "source": "National Post",
-      "date": "2026-07-23T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzdWVEMndfcWxVbHhfTVJLQWdCYXowcG15dFRLZjE1RWZaRFdfQXpDTXp0UTJab09TZjNOUUlDYU1NR09CdGt5MURrQjg3QWtHeWpWeTNXZlZLZ0VNTDlDMXlHZkdES0YyNHJkZHM2eWZ0ZmVUaDgzQU1CYw?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://nationalpost.com/news/death-by-organ-donation-for-maid-patients"
     },
     {
       "headline": "OneLegacy Partners with OrganOx to Transform Liver Transplantation, Offering Advanced Medical Solutions to Transplant Centers in Southern California",
@@ -1064,6 +942,18 @@
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
       "publisher_url": "https://www.businesswire.com/news/home/20260714559177/en/SpecialtyCare-Vituity-and-Buckeye-Transplant-Solutions-Announce-a-Best-In-Class-Organ-Recovery-Partnership-as-TierOne-Alliance"
+    },
+    {
+      "headline": "XVIVO grows and approaches PMA application for heart",
+      "source": "Biostock",
+      "date": "2026-07-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTWtDSHptaF8waHUzNWtCdmd6NDhWVlVfcmZ0M3hPWWEtQ29aa1U2aG01Rm1BQ3lwNkZnVUNHaFhIUzNDd0c2QThseG95elpOSUV3T2xqOFp6YWxURXk5aU9EOXgyQ29UMFdTbzd4QlZIdWY1ZWFqVExzVmZoU3lEUFZVZVBhT1dPcEFNZmxn?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T22:26:09+00:00",
+      "publisher_url": null,
+      "resolve_error": "HTTP Error 429: Too Many Requests"
     },
     {
       "headline": "Beta Electric Aircraft Successfully Completes Vital Organ Transport Mission",

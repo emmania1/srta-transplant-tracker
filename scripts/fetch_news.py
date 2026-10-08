@@ -89,6 +89,10 @@ def make_filter(cfg):
     aa_cos = [x.lower() for x in aa.get("companies", [])]
     aa_tag = aa.get("tag", "analyst")
     hi = [re.compile(x, re.I) for x in (cfg.get("digest") or {}).get("exclude_patterns", [])]
+    usf = cfg.get("us_focus") or {}
+    angle = [re.compile(r"\b" + re.escape(a), re.I) for a in (cfg.get("digest") or {}).get("angle_terms", [])]
+    co_terms = [re.compile(r"\b" + re.escape(a), re.I) for a in usf.get("company_terms", [])]
+    non_us = [re.compile(x, re.I) for x in usf.get("non_us_markers", [])]
     hi_groups = {g["id"] for g in cfg["groups"] if g.get("exclude_human_interest")}
     drop = aa.get("drop") or {}
     zk_mentions = [x.lower() for x in drop.get("mentions", [])]
@@ -102,6 +106,12 @@ def make_filter(cfg):
             return False
         if item.get("publisher_url") and any(p.search(item["publisher_url"]) for p in bad_urls):
             return False
+        if usf:
+            if angle and not any(a.search(head) for a in angle):
+                return False  # no transplant-industry angle
+            names_company = any(c.search(head) for c in co_terms)
+            if not names_company and any(m.search(f"{head} {item['source']}") for m in non_us):
+                return False  # non-U.S. story without a tracked company
         item["tags"] = [t for t in item["tags"] if t != aa_tag]  # recomputed every run
         if any(p.search(head) for p in hi):  # human-interest: untag from groups that exclude it
             item["tags"] = [t for t in item["tags"] if t not in hi_groups]

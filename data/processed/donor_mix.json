@@ -2,7 +2,7 @@
   "title": "Deceased donors by type (DBD vs DCD) and DCD share by organ",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-10-08T21:59:47+00:00",
+  "ingested_at": "2026-10-08T22:25:43+00:00",
   "period_end": "2026-08-31",
   "data_as_of": "2026-10-06",
   "current_year": 2026,

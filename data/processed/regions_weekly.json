@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants (all organs) by OPTN region",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-08T21:59:47+00:00",
+  "ingested_at": "2026-10-08T22:25:43+00:00",
   "regions": {
     "1": [
       {
@@ -15156,6 +15156,19 @@
     ]
   },
   "region_states_source": "OPTN region pages, 'States include:' lists, https://www.hrsa.gov/optn/about/governance/regions/region-N",
+  "region_names": {
+    "1": "New England",
+    "2": "Mid-Atlantic",
+    "3": "Southeast",
+    "4": "South Central",
+    "5": "Southwest",
+    "6": "Northwest",
+    "7": "Upper Midwest",
+    "8": "Central Plains",
+    "9": "New York",
+    "10": "Great Lakes",
+    "11": "Mid-South"
+  },
   "raw_file": "2026-10-08_optn_metrics_tx_weekly_deceased_all_region11.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region10.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region09.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region08.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region07.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region06.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region05.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region04.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region03.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region02.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region01.csv",
   "data_as_of": "2026-10-08",
   "parser": "optn_metrics_tx_weekly",
