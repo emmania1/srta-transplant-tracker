@@ -37,6 +37,9 @@ def make_filter(cfg):
     aa_pats = [re.compile(x, re.I) for x in aa.get("patterns", [])]
     aa_cos = [x.lower() for x in aa.get("companies", [])]
     aa_tag = aa.get("tag", "analyst")
+    drop = aa.get("drop") or {}
+    zk_mentions = [x.lower() for x in drop.get("mentions", [])]
+    zk_pats = [re.compile(x, re.I) for x in drop.get("patterns", [])]
 
     def keep(item):
         src, head = item["source"].lower(), item["headline"]
@@ -47,6 +50,9 @@ def make_filter(cfg):
         item["tags"] = [t for t in item["tags"] if t != aa_tag]  # recomputed every run
         if any(p.search(head) for p in aa_pats):
             if not any(c in head.lower() for c in aa_cos):
+                return False
+            text = f"{src} {head} {item.get('_snippet', '')}".lower()
+            if any(m in text for m in zk_mentions) or any(p.search(head) for p in zk_pats):
                 return False
             item["tags"] = sorted(set(item["tags"]) | {aa_tag})
         return bool(item["tags"])
@@ -83,6 +89,7 @@ def fetch_group(group, days):
             "date": dt.isoformat(timespec="seconds"),
             "url": link,
             "tags": [group["id"]],
+            "_snippet": re.sub(r"<[^>]+>", " ", desc),  # used for filtering only; not saved
         })
     return items
 
@@ -140,6 +147,8 @@ def main():
     cutoff = now - timedelta(days=days)
     items = [i for i in items if datetime.fromisoformat(i["date"]) >= cutoff]
     items.sort(key=lambda i: i["date"], reverse=True)
+    for i in items:
+        i.pop("_snippet", None)
 
     out = {
         "source": SOURCE,

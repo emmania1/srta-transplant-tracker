@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-08T20:21:03+00:00",
+  "fetched_at": "2026-10-08T21:32:08+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -180,6 +180,17 @@
         "opo_regulation"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Analysts Offer Insights on Healthcare Companies: DBV Technologies SA \u2013 American (DBVT) and TransMedics Group (TMDX)",
+      "source": "The Globe and Mail",
+      "date": "2026-09-23T09:58:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQcXp1MXNTR0x6Q1FrenBmaWZQRXMyWnIwTm0zNGhZVkt5RW1tdzRFaEJXZURJdlN0WEtkUjE1WFVMeWlyUi1KQUk5bVkyRXFLREVVZ0pWTHFMdElhM3NGbjVSeWgyaUpNLUdrWHJ3N1BvQjZIUlBqRXZIc3dRRjdDNzZadGUtZVZSeU9mcFVZYUdsV0g0RVN6Q2hDRzZRenBXcV9ybGxxUVRaQzVOOUZPWmZOZWpTRlJraTNkMDQzX1pGTlAxVldLbzZmMTh2ZXlKOXJObUo0WUZBb3lnLW85Z1BmVGFYdUFGZmdxZDBrYUZwYkRDdFR2Q0ZtNGlfSENUTWJwZGQxRWRPTnBDYU9Mb1FEMFRXN05lUlFELWcwSTY?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T21:32:08+00:00"
     },
     {
       "headline": "Mr. and Mrs. Tyrese Haliburton are something else, and champion organ donation",
@@ -392,17 +403,6 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
-    },
-    {
-      "headline": "Strata Critical Medical, Inc. (SRTA) Upgraded to Buy: What Does It Mean for the Stock?",
-      "source": "Yahoo Finance",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNamVvTkZtQkZyb0hZcUc3TjRCQk1LeUpyUjBNVWpjTTBJVUdvMnBOQ01iX2FvLXRzRHRVY3dMc3JLOWMyR09wZ3dNVmhDWmhGZkJmMGppYkt0bmQ1TnBDRlhDcDNnaFpodnJYMl9LekJiUW84cGk0VVNwUmdLQ1JxaVg2Y0t4T0FVb3AySTkzbFJ5OU5FLXpwMUZZZy1NQQ?oc=5",
-      "tags": [
-        "analyst",
-        "strata"
-      ],
-      "first_seen": "2026-10-08T20:20:46+00:00"
     },
     {
       "headline": "NICE Supports Routine NHS Funding and Access to Ex-Situ Machine Perfusion in a Major Step Forward for Liver Transplantation",

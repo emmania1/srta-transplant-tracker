@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T20:21:03+00:00",
+  "generated_at": "2026-10-08T21:32:11+00:00",
   "price": {
     "close": 4.68,
     "date": "2026-10-07",
@@ -608,10 +608,10 @@
     "yoy_note": "True YoY appears once a snapshot through 2025-08-31 exists; snapshots are saved monthly from 2026-08-31."
   },
   "news": {
-    "new_items_7d": 2,
+    "new_items_7d": 1,
     "by_category": {
       "strata": 0,
-      "volumes": 1,
+      "volumes": 0,
       "opo_regulation": 0,
       "competitors": 1,
       "tech_logistics": 0,
@@ -627,15 +627,6 @@
     },
     "top_headlines": [
       {
-        "headline": "VCU pharmacy student earns national recognition for organ donation advocacy",
-        "source": "VCU Health",
-        "date": "2026-10-01",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5",
-        "tags": [
-          "volumes"
-        ]
-      },
-      {
         "headline": "symbol__ Stock Quote Price and Forecast",
         "source": "CNN",
         "date": "2026-10-05",
@@ -645,7 +636,7 @@
         ]
       }
     ],
-    "fetched_at": "2026-10-08T20:21:03+00:00"
+    "fetched_at": "2026-10-08T21:32:08+00:00"
   },
   "bullets": [
     "Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
@@ -653,15 +644,14 @@
     "Deceased donors recovered, last 4 complete weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
     "New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); transplants travelling 251+ NM: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts)."
   ],
-  "news_line": "2 new news items this week \u2014 Transplant volumes / donation 1, Competitors & industry 1.",
+  "news_line": "1 new news item this week \u2014 Competitors & industry 1.",
   "markdown_lines": [
     "*SRTA Transplant Tracker \u2014 week of Oct 8, 2026* \u00b7 SRTA $4.68 (\u25bc 8.4% 1-wk)",
     "\u2022 Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
     "\u2022 Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
     "\u2022 Deceased donors recovered, last 4 complete weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
     "\u2022 New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); transplants travelling 251+ NM: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts).",
-    "Headlines (2 new news items this week: Transplant volumes / donation 1, Competitors & industry 1):",
-    "  \u2013 <https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVN6bTB4a0pWTW9LSWFYUERySzhtOEo0TUxMa3d1X2p4b3hZVGdCQjB2UV9oS19sTlpzZkVmZXJRejA4a01SVEUzM2hwdWE2T3JzQkJHNlhva2pTWnJGWGx1a1Q3V3lJVkozMHFCOTlUZm5xaElPNHB6YUJZMzJwNUU1YXFNUWRSVVNMZjNYWEhfV3ZINXZEZWJkREhGV1RSYmo5WHFId0tfMGs?oc=5|VCU pharmacy student earns national recognition for organ donation advocacy> (VCU Health, 2026-10-01)",
+    "Headlines (1 new news item this week: Competitors & industry 1):",
     "  \u2013 <https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JSXBsWWZnbG51NVFOcVlFeGc2UFVVVEwyTld4QXJmSHQtUnd2cVZDYUx0a3ZSNDFoWW5ENTdBTXNCNjVzSG94bFU5SDQ2SUFm?oc=5|symbol__ Stock Quote Price and Forecast> (CNN, 2026-10-05)",
     "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
   ]

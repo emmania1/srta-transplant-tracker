@@ -50,7 +50,17 @@
       "initiated coverage",
       "\\breiterates?\\b.*\\b(buy|hold|sell|outperform|overweight|underweight|neutral|rating)\\b",
       "\\bmaintains\\b.*\\b(buy|hold|sell|outperform|overweight)\\b"
-    ]
+    ],
+    "drop": {
+      "_note": "Zacks Rank changes (quant ranking, not a broker rating), incl. Zacks content republished on Yahoo. Dropped if source/headline/snippet mentions any 'mentions' entry, or the headline matches a 'patterns' regex (Zacks' passive '(TICKER) Upgraded to Buy' template; real broker actions name the broker).",
+      "mentions": [
+        "zacks"
+      ],
+      "patterns": [
+        "\\([A-Z]{1,5}\\)\\s+(upgraded|downgraded)\\s+to\\s+(strong\\s+)?(buy|hold|sell)",
+        "(upgraded|downgraded) to (strong )?(buy|hold|sell): what does it mean"
+      ]
+    }
   },
   "groups": [
     {
