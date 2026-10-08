@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-08T21:40:59+00:00",
+  "fetched_at": "2026-10-08T21:54:20+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -523,8 +523,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://med-techinsights.com/2026/08/11/landmark-kidney-transplants-set-benchmark-for-long-distance-organ-transport/"
     },
     {
       "headline": "TMDX: Strong growth, new kidney program, and global expansion set stage for multi-billion revenue",
@@ -558,8 +557,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.presidentialprayerteam.org/2026/08/10/cms-begins-decertification-of-kentucky-organ-procurement-organization/"
     },
     {
       "headline": "HHS moves to decertify organ procurement group over patient safety failures",
@@ -582,8 +580,7 @@
         "opo_regulation"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.cbsnews.com/philadelphia/video/hhs-de-certifies-nonprofit-organ-procurement-organization-over-safety-concerns/"
     },
     {
       "headline": "HHS cuts ties with organ procurement organization",
@@ -606,8 +603,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.celinegounder.com/p/organ-procurement-donors-still-alive"
     },
     {
       "headline": "HHS decertifies organ donation organization with office in Cincinnati",
@@ -618,8 +614,7 @@
         "opo_regulation"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.wlwt.com/article/hhs-network-for-hope-cincinnati-decertify-safety-failures/73364685"
     },
     {
       "headline": "Organ transplant organization for Cincinnati, NKY loses license",
@@ -630,8 +625,7 @@
         "opo_regulation"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.cincinnati.com/story/news/health/2026/08/06/organ-transplant-organization-for-cincinnati-nky-loses-license/91197498007/"
     },
     {
       "headline": "RFK Jr. Decertifies Organ Procurement Organization for Safety Failures, Attempt to Take Organs of Living Patient",
@@ -643,8 +637,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.breitbart.com/politics/2026/08/06/rfk-jr-decertifies-organ-procurement-org-for-safety-failures-attempt-to-take-organs-of-living-patient/"
     },
     {
       "headline": "Here's Why RFK Jr. Just Decertified a Kentucky Organ Donor Procurement Organization",
@@ -656,8 +649,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://townhall.com/news/amy-curtis/2026/08/06/rfk-decertify-kentucky-organ-donor-program-n2680789"
     },
     {
       "headline": "Trump administration seeks to end problematic organ procurement program, placing a premium on life",
@@ -668,8 +660,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://justthenews.com/government/trump-administration-ends-nightmarish-organ-procurement-program"
     },
     {
       "headline": "HHS Decertifies Kentucky Organ Procurement Organization to Protect Patients, Restore Trust",
@@ -681,8 +672,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.hhs.gov/press-room/hhs-decertifies-kentucky-organ-procurement-organization.html"
     },
     {
       "headline": "HHS announces decertification of Kentucky-based organ procurement organization Network for Hope",
@@ -694,8 +684,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.fiercehealthcare.com/regulatory/hhs-announces-decertification-kentucky-based-organ-procurement-organization-network-hope"
     },
     {
       "headline": "HHS decertifies organ procurement organization serving Kentucky, RFK Jr. says",
@@ -707,8 +696,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.fox19.com/2026/08/05/hhs-decertifies-organ-procurement-organization-serving-kentucky-rfk-says/"
     },
     {
       "headline": "HHS decertifies KY organ procurement organization, citing safety concerns",
@@ -720,8 +708,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.courier-journal.com/story/news/local/2026/08/05/kentucky-organ-procurement-organization-decertified-hhs/91189515007/"
     },
     {
       "headline": "Kentucky organ procurement organization will be decertified, RFK Jr. says",
@@ -733,8 +720,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.whas11.com/article/news/kentucky/kentucky-organ-procurement-organization-network-for-hope-decertification-rfk-jr/417-293d61c0-a869-4168-8058-a5a7f25df3da"
     },
     {
       "headline": "RFK Jr. Decertifies Kentucky Organ Procurement Organization",
@@ -746,8 +732,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.nationalreview.com/corner/rfk-jr-decertifies-kentucky-organ-procurement-organization/"
     },
     {
       "headline": "Why TransMedics Stock Is Sinking Today",
@@ -758,8 +743,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.fool.com/investing/2026/08/05/why-transmedics-stock-is-sinking-today/"
     },
     {
       "headline": "Why TransMedics Group (TMDX) Stock Is Down Today",
@@ -770,8 +754,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.quiverquant.com/news/Why+TransMedics+Group+%28TMDX%29+Stock+Is+Down+Today"
     },
     {
       "headline": "Investigation launched into TransMedics Group's directors for possible fiduciary breaches",
@@ -782,8 +765,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://pluang.com/en/news-feed/rosen-law-firm-investigasi-pelanggaran-tanggung-jawab-direksi-transmedics"
     },
     {
       "headline": "HHS shutting down Kentucky organ procurement group over safety concerns",
@@ -794,8 +776,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.cnn.com/2026/08/05/health/kentucky-organ-procurement-organization-hhs"
     },
     {
       "headline": "Strata Critical Medical Q2 Revenue Rises 60.7% to $72.5 Million",
@@ -806,8 +787,7 @@
         "strata"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.quiverquant.com/news/Strata+Critical+Medical+Q2+Revenue+Rises+60.7%25+to+$72.5+Million"
     },
     {
       "headline": "TransMedics Reports Second Quarter 2026 Financial Results",
@@ -818,8 +798,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.prnewswire.com/news-releases/transmedics-reports-second-quarter-2026-financial-results-302842882.html"
     },
     {
       "headline": "TransMedics Group (TMDX) Stock Looks Cheap On Earnings But Full After 171% Gain",
@@ -830,8 +809,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-group-tmdx-stock-looks-060941318.html"
     },
     {
       "headline": "TransMedics Group Inc (TMDX) (Q2 2026) Earnings Call Highlights: Record Revenue and Strategic ...",
@@ -842,8 +820,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-inc-tmdx-q2-050711635.html"
     },
     {
       "headline": "TransMedics Group Q2 Earnings Call Highlights",
@@ -854,8 +831,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-q2-earnings-call-030355999.html"
     },
     {
       "headline": "TransMedics (TMDX) Reports Q2 Earnings: What Key Metrics Have to Say",
@@ -866,8 +842,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-reports-q2-earnings-233004670.html"
     },
     {
       "headline": "TransMedics Group (TMDX) Stock Rises on Q2 2026 Earnings",
@@ -878,8 +853,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.quiverquant.com/news/TransMedics+Group+%28TMDX%29+Stock+Rises+on+Q2+2026+Earnings"
     },
     {
       "headline": "TransMedics (TMDX) Q2 Earnings Lag Estimates",
@@ -890,8 +864,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-q2-earnings-lag-214009353.html"
     },
     {
       "headline": "TransMedics faces earnings test after bruising first quarter By Investing.com",
@@ -902,8 +875,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://ng.investing.com/news/earnings/transmedics-faces-earnings-test-after-bruising-first-quarter-93CH-2637476"
     },
     {
       "headline": "TransMedics grants stock options and restricted units to 9 new employees as hiring incentive.",
@@ -914,8 +886,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://pluang.com/en/news-feed/transmedics-laporkan-pemberian-insentif-saham-untuk-karyawan"
     },
     {
       "headline": "Tamil Nadu tops India in deceased organ donations, ranks second in organ transplants in 2025",
@@ -926,8 +897,18 @@
         "volumes"
       ],
       "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.newindianexpress.com/india/2026/Aug/03/tamil-nadu-tops-india-in-deceased-organ-donations-ranks-second-in-organ-transplants-in-2025"
+    },
+    {
+      "headline": "Kidney in a box: Advancements in transplant technology allows for quicker recovery times",
+      "source": "Global News",
+      "date": "2026-07-31T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeE5YeWp3UVExa0hWYlBvUGZWc1M5Y2dITHpCYmhaQ3Yxd1JXUXo2cEtTRHZSXzdaV2habWxJOE1Vbzh0TVY3SjdoY3lJdHAxcUk2X1A4b1RHaWlRb0t3RFE3WnRCT3NsWFVpRUU1Wk53Q3F1aDA3Mk1XWkxIcHlrSE1JTzc5Z2x3Ym1ld0hnR3djNXpxbU1TeGNEUUFNZVpTTVd2S2JSSFpzNnI5WkJNSHhjZ281YVFaSFctNjZMMFQwQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T21:54:20+00:00",
+      "publisher_url": "https://globalnews.ca/video/12005804/kidney-in-a-box-advancements-in-transplant-technology-allows-for-quicker-recovery-times"
     },
     {
       "headline": "TransMedics Group (NASDAQ:TMDX): An Affordable Growth Stock With Strong Earnings Momentum",
@@ -938,8 +919,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.chartmill.com/news/TMDX/Chartmill-51780-TransMedics-Group-NASDAQTMDX-An-Affordable-Growth-Stock-With-Strong-Earnings-Momentum"
     },
     {
       "headline": "More registered organ donors needed",
@@ -950,8 +930,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.brcnow.bundaberg.qld.gov.au/2026/07/28/more-registered-organ-donors-needed/"
     },
     {
       "headline": "Did TransMedics Group, Inc. Insiders Breach their Fiduciary Duties to Shareholders?",
@@ -962,8 +941,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.prnewswire.com/news-releases/did-transmedics-group-inc-insiders-breach-their-fiduciary-duties-to-shareholders-302834266.html"
     },
     {
       "headline": "Investigation launched into TransMedics officers for possible breach of shareholder duties",
@@ -974,8 +952,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://pluang.com/en/news-feed/apakah-insider-transmedics-langgar-tugas-fidusia-pemegang-saham"
     },
     {
       "headline": "'Death by organ donation': Doctors raise possibility of retrieving organs from MAID patients while they are still alive",
@@ -986,8 +963,7 @@
         "volumes"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://nationalpost.com/news/death-by-organ-donation-for-maid-patients"
     },
     {
       "headline": "OneLegacy Partners with OrganOx to Transform Liver Transplantation, Offering Advanced Medical Solutions to Transplant Centers in Southern California",
@@ -998,8 +974,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.businesswire.com/news/home/20260723663312/en/OneLegacy-Partners-with-OrganOx-to-Transform-Liver-Transplantation-Offering-Advanced-Medical-Solutions-to-Transplant-Centers-in-Southern-California"
     },
     {
       "headline": "TransMedics Sheds Some Claims In Organ Transfer Biz Suit",
@@ -1010,8 +985,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.law360.com/articles/2504036/transmedics-sheds-some-claims-in-organ-transfer-biz-suit"
     },
     {
       "headline": "TransMedics Investors Partially Advance Organ Delivery Suit (1)",
@@ -1022,8 +996,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://news.bloomberglaw.com/securities-law/transmedics-investors-partially-advance-organ-delivery-lawsuit"
     },
     {
       "headline": "Piper Sandler reiterates TransMedics stock rating on kidney opportunity",
@@ -1035,8 +1008,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-08T21:37:01+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.investing.com/news/analyst-ratings/piper-sandler-reiterates-transmedics-stock-rating-on-kidney-opportunity-93CH-4806312"
     },
     {
       "headline": "Strata Critical Medical to Report Second Quarter 2026 Financial Results on August 4, 2026 | SRTA Stock News",
@@ -1047,8 +1019,7 @@
         "strata"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.quiverquant.com/news/Strata+Critical+Medical+to+Report+Second+Quarter+2026+Financial+Results+on+August+4,+2026"
     },
     {
       "headline": "TransMedics to report Q2 2026 financial results on August 4",
@@ -1059,8 +1030,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:20:35+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://scanx.trade/stock-market-news/companies/transmedics-to-report-q2-2026-financial-results-on-august-4/46225403"
     },
     {
       "headline": "UCLA Health performs first-ever lung transplant with donor organs transported using latest warm-perfusion advances",
@@ -1071,8 +1041,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://newsroom.ucla.edu/releases/ucla-health-performs-first-ever-lung-transplant-with-donor-organs-transported-warm-perfusion"
     },
     {
       "headline": "FAA Completes eVTOL Organ Transport Flight Test",
@@ -1083,8 +1052,7 @@
         "tech_logistics"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://airportindustry-news.com/faa-completes-evtol-organ-transport-flight-test/"
     },
     {
       "headline": "SpecialtyCare, Vituity, and Buckeye Transplant Solutions Announce a Best-In-Class Organ Recovery Partnership as TierOne Alliance",
@@ -1095,8 +1063,7 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.businesswire.com/news/home/20260714559177/en/SpecialtyCare-Vituity-and-Buckeye-Transplant-Solutions-Announce-a-Best-In-Class-Organ-Recovery-Partnership-as-TierOne-Alliance"
     },
     {
       "headline": "Beta Electric Aircraft Successfully Completes Vital Organ Transport Mission",
@@ -1107,8 +1074,7 @@
         "tech_logistics"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": null,
-      "resolve_error": "HTTP Error 429: Too Many Requests"
+      "publisher_url": "https://www.voiceofemirates.com/en/health/2026/07/11/beta-electric-aircraft-successfully-completes-vital-organ-transport-mission/"
     }
   ]
 }

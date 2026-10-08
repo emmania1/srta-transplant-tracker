@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-10-08T21:53:17+00:00",
+  "checked_at": "2026-10-08T21:56:53+00:00",
   "ok": true,
   "issues": [],
-  "notices": [],
+  "notices": [
+    "SEC_USER_AGENT is not set (SEC requires a contact email in the User-Agent)."
+  ],
   "thresholds": {
     "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
     "weekly_optn_max_age_days": 14,
@@ -12,5 +14,12 @@
     "weekly_optn_donors_max_age_days": 21,
     "_donors_note": "OPTN's donor series runs ~1 week behind the transplant series (e.g. donors through Sep 28 vs transplants through Oct 2), so its limit is 14 + 7 days."
   },
-  "step_outcomes": {}
+  "step_outcomes": {
+    "Prices": "success",
+    "News": "success",
+    "OPTN weekly": "success",
+    "OPTN national": "success",
+    "CDC": "success",
+    "SEC EDGAR": "success"
+  }
 }

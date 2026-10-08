@@ -3,7 +3,7 @@
   "source": "CDC/NCHS VSRR Provisional Drug Overdose Death Counts (data.cdc.gov dataset xkb8-kh2a)",
   "tag": "Live",
   "status": "ok",
-  "fetched_at": "2026-10-08T21:43:41+00:00",
+  "fetched_at": "2026-10-08T21:56:52+00:00",
   "dataset_updated": "2026-09-16",
   "indicator": "Number of Drug Overdose Deaths",
   "note": "Leading indicator for brain-death (DBD) donor supply. 'Predicted' is CDC's estimate adjusted for reporting delays; 'reported' is counts received so far. Recent months are provisional.",

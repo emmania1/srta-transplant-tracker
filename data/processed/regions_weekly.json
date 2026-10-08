@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants (all organs) by OPTN region",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-08T21:48:17+00:00",
+  "ingested_at": "2026-10-08T21:56:53+00:00",
   "regions": {
     "1": [
       {

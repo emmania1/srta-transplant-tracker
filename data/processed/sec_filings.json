@@ -1094,5 +1094,6 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1779128/000114036126014530/ny20060135x1_def14a.htm",
       "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000114036126014530/0001140361-26-014530-index.htm"
     }
-  ]
+  ],
+  "config_note": "SEC_USER_AGENT is not set (SEC requires a contact email in the User-Agent)."
 }
