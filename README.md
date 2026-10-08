@@ -39,17 +39,20 @@ python3 scripts/fetch_price.py && python3 scripts/fetch_news.py && python3 scrip
 ## Rules the code enforces
 
 - **Incomplete weeks are dropped.** A week is kept only if it ended before the file's download date (from the filename prefix).
-- **Year-over-year by default.** Week N is compared with ISO week N of the prior year; trailing-4-week and YTD compare the same ISO-week spans. If any prior-year week is missing, the YoY shows `n/a` instead of a partial comparison.
+- **Year-over-year by default.** OPTN week N (week 1 starts Jan 1; week 52 runs to Dec 31) is compared with week N of the prior year; trailing-4-week and YTD compare the same week spans. If any prior-year week is missing, the YoY shows `n/a` instead of a partial comparison. OPTN's own "(Partial Week)" rows are dropped.
+- **Annual-only national data is never compared as volumes.** Donor mix, distance and state tables compare shares (current YTD vs prior full year, labelled as a mix comparison). State % change appears only once a monthly snapshot for the same period end a year earlier exists.
 - **No placeholders.** A panel with no parsed data shows "Awaiting data".
 - **No sell-side research in the repo.** No reports, models, charts or text from brokers. The news feed carries headlines only (with links), filtered by `config/keywords.json`: junk aggregators and consensus-estimate spam are always dropped; analyst rating / price-target headlines are kept only when they name SRTA or TMDX, and are tagged "Analyst actions".
 
-## Normalized processed schemas (OPTN)
+## Processed files (OPTN)
 
-Parsers write these shapes; the page and digest read only these.
+| File | Source | Shape |
+|---|---|---|
+| `transplants_weekly.json` | OPTN metrics dashboard (weekly) | `organs: {heart\|liver\|lung\|kidney\|all: [{yr, week, week_start, week_end, count}]}` |
+| `donors_weekly.json` | OPTN metrics dashboard (weekly) | `donors: [...]` (same row shape), `ytd_table: [{yr, ytd_deceased_donors, discard_rate_pct, ...}]` |
+| `regions_weekly.json` | OPTN metrics dashboard (weekly) | `regions: {"1".."11": [rows]}`, `region_states` |
+| `donor_mix.json` | OPTN national data (monthly) | `donors` / `transplants_by_organ[organ]`: `{year: {dbd, dcd, total, dcd_share_pct}}` |
+| `distance.json` | OPTN national data (monthly) | `organs[organ][year]: {bands, shares_pct, long_share_pct}` |
+| `location.json` | OPTN national data (monthly) | `rows: [{state, ytd, share_pct, prior_full_year, prior_share_pct, yoy_pct?}]`, `snapshots` |
 
-- `transplants_weekly.json`: `organs: {heart|liver|lung|kidney: [{week_start, week_end, count}]}`
-- `donor_mix.json`: `donors: [{period, dbd, dcd}]`, `dcd_share_by_organ: {organ: [{period, dcd, total}]}`
-- `distance.json`: `band_order: [...]`, `long_bands: [...]`, `organs: {organ: [{period, prior_year_period, bands: {band: count}}]}`
-- `location.json`: `level: "state"|"region"`, `latest_period`, `prior_period`, `rows: [{area, latest, prior}]`
-
-Each also carries `source`, `tag`, `status` (`ok` / `awaiting_data`), `raw_file`, `data_as_of`.
+Each carries `source`, `tag`, `status` (`ok` / `awaiting_data`), `raw_file`, `data_as_of`. Note: the metrics dashboard's "Kidney" includes kidney-pancreas; the national data's kidney is kidney alone.
