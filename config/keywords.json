@@ -1,6 +1,6 @@
 {
   "_instructions": "News keyword groups. Each group becomes one Google News RSS query (terms OR-joined). Edit freely: add/remove terms or groups. 'id' is the filter-button key; 'label' is what the page shows. Multi-word terms are quoted automatically. Items found by several groups get several tags.",
-  "_filters_note": "Drop items whose source contains any blocked_sources entry, or whose headline matches any exclude_title_patterns (case-insensitive regex) \u2014 used to keep out quote pages, spam sites and sell-side rating/target/estimate headlines. Per group, require_any (optional) keeps only items whose headline+snippet contains one of the strings.",
+  "_filters_note": "Three filters, applied to every item: (1) blocked_sources \u2014 drop if the source contains any entry (junk aggregators, quote pages, spam sites). (2) exclude_title_patterns \u2014 always drop headlines matching these case-insensitive regexes (consensus-estimate/consensus-rating spam, quote pages, valuation clickbait). (3) analyst_actions \u2014 headlines matching analyst_actions.patterns (ratings, price targets, coverage) are kept ONLY if they also mention one of analyst_actions.companies; they get an extra 'analyst' tag. Per group, require_any (optional) keeps only items whose headline+snippet contains one of the strings.",
   "lookback_days": 90,
   "blocked_sources": [
     "dars.gov.et",
@@ -9,34 +9,49 @@
     "gurufocus",
     "zacks",
     "tipranks",
-    "benzinga",
-    "investing.com",
-    "marketscreener",
     "seeking alpha",
     "simply wall st",
     "kalkine",
     "stock traders daily",
     "moomoo",
+    "ad hoc news",
     "facebook"
   ],
   "exclude_title_patterns": [
+    "consensus (estimate|rating)s?",
+    "estimates? (beat|miss|surprise)",
+    "eps (beat|miss|surprise)",
     "stock price, news, quote",
     "interactive stock chart",
-    "price target",
-    "target price",
-    "\\brating\\b",
-    "\\banalysts?\\b",
-    "\\bupgrade[sd]?\\b",
-    "\\bdowngrade[sd]?\\b",
-    "initiates coverage",
-    "estimates?\\b",
     "stock forecast",
     "undervalued",
     "fair value",
     "technical signals",
-    "\\bForm 4\\b",
-    "\\$\\d+ target"
+    "\\bForm 4\\b"
   ],
+  "analyst_actions": {
+    "tag": "analyst",
+    "label": "Analyst actions (SRTA / TMDX)",
+    "companies": [
+      "strata critical",
+      "srta",
+      "transmedics",
+      "tmdx"
+    ],
+    "patterns": [
+      "price target",
+      "target price",
+      "\\$\\d+ target",
+      "\\brating\\b",
+      "\\banalysts?\\b",
+      "\\bupgrade[sd]?\\b",
+      "\\bdowngrade[sd]?\\b",
+      "initiates coverage",
+      "initiated coverage",
+      "\\breiterates?\\b.*\\b(buy|hold|sell|outperform|overweight|underweight|neutral|rating)\\b",
+      "\\bmaintains\\b.*\\b(buy|hold|sell|outperform|overweight)\\b"
+    ]
+  },
   "groups": [
     {
       "id": "strata",

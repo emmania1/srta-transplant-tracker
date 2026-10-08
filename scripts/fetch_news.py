@@ -30,14 +30,26 @@ def build_query(terms):
 
 
 def make_filter(cfg):
+    """Returns keep(item) -> bool. Adds the analyst tag to allowed analyst-action items."""
     blocked = {b.lower() for b in cfg.get("blocked_sources", [])}
-    pats = [re.compile(x, re.I) for x in cfg.get("exclude_title_patterns", [])]
+    always_drop = [re.compile(x, re.I) for x in cfg.get("exclude_title_patterns", [])]
+    aa = cfg.get("analyst_actions") or {}
+    aa_pats = [re.compile(x, re.I) for x in aa.get("patterns", [])]
+    aa_cos = [x.lower() for x in aa.get("companies", [])]
+    aa_tag = aa.get("tag", "analyst")
 
     def keep(item):
-        src = item["source"].lower()
+        src, head = item["source"].lower(), item["headline"]
         if any(b in src for b in blocked):
             return False
-        return not any(p.search(item["headline"]) for p in pats)
+        if any(p.search(head) for p in always_drop):
+            return False
+        item["tags"] = [t for t in item["tags"] if t != aa_tag]  # recomputed every run
+        if any(p.search(head) for p in aa_pats):
+            if not any(c in head.lower() for c in aa_cos):
+                return False
+            item["tags"] = sorted(set(item["tags"]) | {aa_tag})
+        return bool(item["tags"])
     return keep
 
 
@@ -134,7 +146,9 @@ def main():
         "tag": "Live",
         "fetched_at": stamp if fresh_all or not errors else prev.get("fetched_at"),
         "lookback_days": days,
-        "groups": [{"id": g["id"], "label": g["label"]} for g in cfg["groups"]],
+        "groups": [{"id": g["id"], "label": g["label"]} for g in cfg["groups"]]
+                  + ([{"id": cfg["analyst_actions"].get("tag", "analyst"), "label": cfg["analyst_actions"]["label"]}]
+                     if cfg.get("analyst_actions") else []),
         "errors": errors,
         "items": items,
     }

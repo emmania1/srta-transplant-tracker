@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-07T22:12:03+00:00",
+  "fetched_at": "2026-10-08T20:21:03+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -23,16 +23,24 @@
     {
       "id": "tech_logistics",
       "label": "Technology & logistics"
+    },
+    {
+      "id": "analyst",
+      "label": "Analyst actions (SRTA / TMDX)"
     }
   ],
-  "errors": [
-    "strata: HTTP Error 503: Service Unavailable",
-    "volumes: HTTP Error 503: Service Unavailable",
-    "opo_regulation: HTTP Error 503: Service Unavailable",
-    "competitors: HTTP Error 503: Service Unavailable",
-    "tech_logistics: HTTP Error 503: Service Unavailable"
-  ],
+  "errors": [],
   "items": [
+    {
+      "headline": "symbol__ Stock Quote Price and Forecast",
+      "source": "CNN",
+      "date": "2026-10-05T17:38:51+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JSXBsWWZnbG51NVFOcVlFeGc2UFVVVEwyTld4QXJmSHQtUnd2cVZDYUx0a3ZSNDFoWW5ENTdBTXNCNjVzSG94bFU5SDQ2SUFm?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
     {
       "headline": "VCU pharmacy student earns national recognition for organ donation advocacy",
       "source": "VCU Health",
@@ -62,6 +70,16 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "Xvivo Perfusion nomination committee unchanged",
+      "source": "www.marketscreener.com",
+      "date": "2026-09-30T14:10:20+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm9sMmtpZWR4YW1PNkxWYUtYODhOaXBuQTZ0WEx2aEZ5ZHd3S0lFX3FQaGQ0SnVLQVNGR2N6dXU5ZUsycE1TNU5KbDZ3RkRId3pOMDlQMUxnWDk2RnlxYk1jZHBBN0tHMm9FaXVlaHR4bUdKbm5vRmhGQ09GYW9fSXEwVV9DcmoxSDRqMll1Znh4STk1dEVXcjltZXhRenJ6?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
     },
     {
       "headline": "Heart in a box. Canadian-first technology opens new possibilities for lifesaving transplants.",
@@ -244,6 +262,17 @@
       "first_seen": "2026-10-07T19:16:34+00:00"
     },
     {
+      "headline": "Weekly Recap: TMDX CFO appointment and TD Cowen $120 target",
+      "source": "TradingView",
+      "date": "2026-09-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNzlrMFNNbTZjNWRvbld6czJBSllOd1dVWDZXU0JKaXpoN3ZNelJwWWE0Szg2STFnLW5QdWFSZDFZbEQxZ3VrWlh2aGhHeS1EQWUxaUtjT2h3cENIczlUUzZBU0NaOUV4NVU1bURtYnhPSjEzdkhYc0ZDeGJ0V3Bva2IwekpKODBiTGhxZFViWnl6VElYa1dRVGgwLXRmeE5PNUdzZGxqNmZOa201dGQ3a0VRblJGSWlveVlz?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
       "headline": "TransMedics Slides After CFO Transition News Despite Reaffirmed 2026 Outlook",
       "source": "Quiver Quantitative",
       "date": "2026-09-11T07:00:00+00:00",
@@ -254,6 +283,17 @@
       "first_seen": "2026-10-07T19:16:34+00:00"
     },
     {
+      "headline": "Needham reiterates Buy on TransMedics stock, names new CFO By Investing.com",
+      "source": "Investing.com India",
+      "date": "2026-09-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbHBYMVh5VHVndWdSRERjaFhEakNIMWt0ZXRqS2xLSVNkcDhVS0V1RXh2c1V5S2YySWxhVVpLQzQ4VnhuNmR1eE1PT2NlMTNhMW1mQUFJZktjSWt5TGxXLUxDR1FOWnNvU2FUbUMyMFFHMTVFaVl0cnc3ZlZfWTliTkRESnNKNWVoZ0xKRk5XdzNJSjZfOFZ3WWhXUU9NdzIzSTYwSVlnYWtqMjFJVWVEMms3SVpsdlE0RlE?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
       "headline": "TransMedics Names Fernando Araujo as CFO; Maintains 2026 Revenue Outlook",
       "source": "Yahoo Finance",
       "date": "2026-09-10T07:00:00+00:00",
@@ -262,6 +302,16 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics Appoints Fernando Araujo as Chief Financial Officer and Reiterates 2026 Financial Outlook",
+      "source": "PR Newswire",
+      "date": "2026-09-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPTHNReURsX0w2bzVlaTVRcE1NMTZZMXNIME5naWhGcHdHQzREdXdTOUtOUG1BeVVDSzVkVTBoUS10NHAzb1FFZlpvVS0xVUVzN3A3TWw4NFNEQk1pSkVmUHdQUlRrVjZzV2o1SDlVVm9uZXltWTh3R3pYZ3NoOFlaV0hSU0RDODVxekJSNm51YnV2S0JCVDJ5VFI1U05mRDNXb0R0cDUtNlMxMkdVa2tFVXF0YThFeVQ2dmhWYkw3ajRNbkVzcTVkQ0pGcHIyRjlHVzRJVml4SFQzTmFkOGhENGE0SjIyU2pVQU5Dbzd3?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
     },
     {
       "headline": "Organ Donation Day Honors Donors, Celebrates Saved Lives",
@@ -344,6 +394,17 @@
       "first_seen": "2026-10-07T19:16:34+00:00"
     },
     {
+      "headline": "Strata Critical Medical, Inc. (SRTA) Upgraded to Buy: What Does It Mean for the Stock?",
+      "source": "Yahoo Finance",
+      "date": "2026-08-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNamVvTkZtQkZyb0hZcUc3TjRCQk1LeUpyUjBNVWpjTTBJVUdvMnBOQ01iX2FvLXRzRHRVY3dMc3JLOWMyR09wZ3dNVmhDWmhGZkJmMGppYkt0bmQ1TnBDRlhDcDNnaFpodnJYMl9LekJiUW84cGk0VVNwUmdLQ1JxaVg2Y0t4T0FVb3AySTkzbFJ5OU5FLXpwMUZZZy1NQQ?oc=5",
+      "tags": [
+        "analyst",
+        "strata"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
       "headline": "NICE Supports Routine NHS Funding and Access to Ex-Situ Machine Perfusion in a Major Step Forward for Liver Transplantation",
       "source": "Yahoo Finance",
       "date": "2026-08-20T07:00:00+00:00",
@@ -404,6 +465,16 @@
       "first_seen": "2026-10-07T19:16:34+00:00"
     },
     {
+      "headline": "Strata critical medical director Reginald Love disposes of $29,273 in stock",
+      "source": "Investing.com",
+      "date": "2026-08-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWl92RVJVMExMc0Q1bFU0VjhzTDFhSUROM2NRWUFjbXJ4WEtmYnA0bzZKYW43d0Mxc0Vyam1xNFdUQkhWd0NHZ25QY1FyTG8xZndPQUF1dEE4Q21KUzd5SUxseU9YWVU5WktnWHp6NFhJMHBLRUJQY216VnpVOXZLcUJwVE5Fc0JHT3IwX19FbURHeGM5R0podnFGWVVuME91dzhuZ2dnbW04M3JLLWwydllzYWNlNmZzRUQ4bXJNZ0ktVmdwT2NVOUIwS1ViOElRclg5bA?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
       "headline": "Immersion Investment Views Strata Critical Medical (SRTA) as a \u201cBabushka Doll\u201d",
       "source": "Yahoo Finance",
       "date": "2026-08-11T07:00:00+00:00",
@@ -432,6 +503,16 @@
         "competitors"
       ],
       "first_seen": "2026-10-07T19:16:34+00:00"
+    },
+    {
+      "headline": "TransMedics at canaccord growth conference: kidney push, margin trade-offs",
+      "source": "Investing.com",
+      "date": "2026-08-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaHE4SWxGOE9KRDVHcmJ2NUZsOVo5Rk55dW1TQzhNcndhSXpoT01WeGVYYUVMd3UzX3hWTldaMDVMdzdacHBwanZCT0V4X19qUzNMcmJfUVBqT0FBT2FYR3cyLXk3b2tZRnFjb05wWkhrU3VsUFN2LTBGYldsM2V3V2RLUGVyU1FsVDZzdGtwR2VpX1d4TXpwUkRUalFxZFFhbG9jUWNZT3B3TVp0dFd5UVpXWGh3WjM1eC1SYTJUMWpVRUl5aFE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
     },
     {
       "headline": "CMS Begins Decertification of Kentucky Organ Procurement Organization",
@@ -674,6 +755,26 @@
       "first_seen": "2026-10-07T19:16:34+00:00"
     },
     {
+      "headline": "TransMedics (TMDX) Q2 Earnings Lag Estimates",
+      "source": "Yahoo Finance",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY0luYWtZU25QbHdYUmMzbEN3RE1JdDNWSFRPcnVYYzk1Y2pWSkhTTWZrS0oxZHdMVVFTV0IzbWZDUVFsNGIwbUZDelBsNjRfSGpsN0dWUnFfOGo5bkd5NjZSTlE0T1NETm50SG96SGtMM2QxUGlkdUhXRFMtUHhFZkpoOHhid0cxbGFlNERrcVdFOTJxMnpJNENMYUlaQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
+      "headline": "TransMedics faces earnings test after bruising first quarter By Investing.com",
+      "source": "Investing.com Nigeria",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMXBUcXVfb0dxRGxDYTYwTk9YVUlrc095d19UejRKZmxxV1l0N3RyejNxTmx2c1B0UmFkMGZrTnktNllFLXoxalJ0UHBZbEZNcGNSMnZCRzgxOWZ5OGV2NDBwa3FmRFB5VEVEZ1lsMFpnX25yM1ZTSDYwSkZLX3BOREhyMFAxUVQtX3kwT3J0Rm9TNzFOR2NZcEMyRllBeTRvNnNnTzdTRjQtRlV5eE1tbmNB?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
       "headline": "TransMedics grants stock options and restricted units to 9 new employees as hiring incentive.",
       "source": "Pluang",
       "date": "2026-08-03T07:00:00+00:00",
@@ -744,6 +845,16 @@
       "first_seen": "2026-10-07T19:16:34+00:00"
     },
     {
+      "headline": "TransMedics Investors Partially Advance Organ Delivery Suit (1)",
+      "source": "Bloomberg Law News",
+      "date": "2026-07-22T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR2N0X3FNX182aEkwOF8xQUJGNEFtYVl0RGo2ckN3b2NHTS05cWdXMUdvOTk2anRrb2hfYnUwMU0wQTc0YUNQZVJ2UEp0U2RBYkVJSEdnZUVlVjJvdkxoLUpKaWRHQU00bFVVb1BmWGtqSjdmREkxbDl5SVRqeExxZGZ1ZjI4RnE1SzdvZ2YxbjB2SExLRXdMbENFc0EzTzByRWlra25xZHZVdkU?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-10-08T20:20:46+00:00"
+    },
+    {
       "headline": "Strata Critical Medical to Report Second Quarter 2026 Financial Results on August 4, 2026 | SRTA Stock News",
       "source": "Quiver Quantitative",
       "date": "2026-07-21T07:00:00+00:00",
@@ -798,26 +909,6 @@
       "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
       "date": "2026-07-11T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2wzeUo3X2JTRUFtSkdvdG9wbDlGeExWYldVSURQeHJkZDIxZUZRVUUyaG9lSHVfMXppZFpmNHRZTUYwZkdHWWVfNzE1NFJ2R3RHbmRwaFZDV3VOZnFvM3VyS2xCY3psbW1SNUJvRW1BYXAxOTBEZ1lmSXFWUVgtYXc2TjFfZERicDcwTzlhNDQ0ajRzMXRzeWlXT0NXWVB3cXdRSTk5YVU3Yk1vdTU4ZzQ3ajYzOXpmdVhVYVM4dVFiUTZ2Z21nZw?oc=5",
-      "tags": [
-        "tech_logistics"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00"
-    },
-    {
-      "headline": "TransMedics Stock: Value or Value Trap?",
-      "source": "Nanalyze",
-      "date": "2026-07-10T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85YkluY1VqZFg1ZnB1SFJYcDRoaWNXM1BIRk00RWlQWEpmcWI2OUpPckdFX0ZCdGpNU1Y1elRtWFNSZ2ptVFZwSkdyV2I2YVFuYXYxY1FoY1dqLWxWdmYtWlBjV0U0a2l6cmZSZHQ3d0JpSGNLWW5PU096QQ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00"
-    },
-    {
-      "headline": "BETA kicks off its eIPP program with Virginia organ transport flight",
-      "source": "Aerospace America",
-      "date": "2026-07-10T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeGFNbmNjc0J0eXlpRTZXeU9WazdUdVVmbERjV1dVMzBWMjZhOE4xc1AzWTlMT1V3ZVB2WW40TVNLUUhNamNXY05MaW5PcTVUSDNObG9EcDZCVDBmdTZBa0pQR0lBaFhMbHQwRERuY0xYbVhuQmFHWjV5MmZOLVFxOTZRSExRaGduRk9GSXRVdWNTRVFzczhQdzI0cENRbTR1NDFIRUFB?oc=5",
       "tags": [
         "tech_logistics"
       ],

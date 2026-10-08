@@ -41,7 +41,7 @@ python3 scripts/fetch_price.py && python3 scripts/fetch_news.py && python3 scrip
 - **Incomplete weeks are dropped.** A week is kept only if it ended before the file's download date (from the filename prefix).
 - **Year-over-year by default.** Week N is compared with ISO week N of the prior year; trailing-4-week and YTD compare the same ISO-week spans. If any prior-year week is missing, the YoY shows `n/a` instead of a partial comparison.
 - **No placeholders.** A panel with no parsed data shows "Awaiting data".
-- **No sell-side material.** News filters drop rating/target/estimate headlines and aggregator sources (see `config/keywords.json`).
+- **No sell-side research in the repo.** No reports, models, charts or text from brokers. The news feed carries headlines only (with links), filtered by `config/keywords.json`: junk aggregators and consensus-estimate spam are always dropped; analyst rating / price-target headlines are kept only when they name SRTA or TMDX, and are tagged "Analyst actions".
 
 ## Normalized processed schemas (OPTN)
 
