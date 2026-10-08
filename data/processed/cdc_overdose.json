@@ -1,0 +1,1372 @@
+{
+  "title": "U.S. drug overdose deaths, 12-month ending (provisional)",
+  "source": "CDC/NCHS VSRR Provisional Drug Overdose Death Counts (data.cdc.gov dataset xkb8-kh2a)",
+  "tag": "Live",
+  "status": "ok",
+  "fetched_at": "2026-10-08T21:43:41+00:00",
+  "dataset_updated": "2026-09-16",
+  "indicator": "Number of Drug Overdose Deaths",
+  "note": "Leading indicator for brain-death (DBD) donor supply. 'Predicted' is CDC's estimate adjusted for reporting delays; 'reported' is counts received so far. Recent months are provisional.",
+  "series": [
+    {
+      "year": 2015,
+      "month": 1,
+      "period_end": "2015-01",
+      "reported": 47523,
+      "predicted": 47856,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 2,
+      "period_end": "2015-02",
+      "reported": 47725,
+      "predicted": 48075,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 3,
+      "period_end": "2015-03",
+      "reported": 48198,
+      "predicted": 48546,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 4,
+      "period_end": "2015-04",
+      "reported": 48748,
+      "predicted": 49108,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 5,
+      "period_end": "2015-05",
+      "reported": 49293,
+      "predicted": 49656,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 6,
+      "period_end": "2015-06",
+      "reported": 49691,
+      "predicted": 50063,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 7,
+      "period_end": "2015-07",
+      "reported": 50301,
+      "predicted": 50681,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 8,
+      "period_end": "2015-08",
+      "reported": 50834,
+      "predicted": 51223,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 9,
+      "period_end": "2015-09",
+      "reported": 51575,
+      "predicted": 51982,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 10,
+      "period_end": "2015-10",
+      "reported": 52114,
+      "predicted": 52538,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 11,
+      "period_end": "2015-11",
+      "reported": 52386,
+      "predicted": 52809,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2015,
+      "month": 12,
+      "period_end": "2015-12",
+      "reported": 52623,
+      "predicted": 53053,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": null,
+      "predicted_yoy_pct": null
+    },
+    {
+      "year": 2016,
+      "month": 1,
+      "period_end": "2016-01",
+      "reported": 52902,
+      "predicted": 53319,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 11.3,
+      "predicted_yoy_pct": 11.4
+    },
+    {
+      "year": 2016,
+      "month": 2,
+      "period_end": "2016-02",
+      "reported": 53834,
+      "predicted": 54239,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 12.8,
+      "predicted_yoy_pct": 12.8
+    },
+    {
+      "year": 2016,
+      "month": 3,
+      "period_end": "2016-03",
+      "reported": 54781,
+      "predicted": 55199,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 13.7,
+      "predicted_yoy_pct": 13.7
+    },
+    {
+      "year": 2016,
+      "month": 4,
+      "period_end": "2016-04",
+      "reported": 55763,
+      "predicted": 56197,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 14.4,
+      "predicted_yoy_pct": 14.4
+    },
+    {
+      "year": 2016,
+      "month": 5,
+      "period_end": "2016-05",
+      "reported": 56465,
+      "predicted": 56927,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 14.5,
+      "predicted_yoy_pct": 14.6
+    },
+    {
+      "year": 2016,
+      "month": 6,
+      "period_end": "2016-06",
+      "reported": 57428,
+      "predicted": 57907,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 15.6,
+      "predicted_yoy_pct": 15.7
+    },
+    {
+      "year": 2016,
+      "month": 7,
+      "period_end": "2016-07",
+      "reported": 58525,
+      "predicted": 59033,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 16.3,
+      "predicted_yoy_pct": 16.5
+    },
+    {
+      "year": 2016,
+      "month": 8,
+      "period_end": "2016-08",
+      "reported": 59417,
+      "predicted": 59959,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 16.9,
+      "predicted_yoy_pct": 17.1
+    },
+    {
+      "year": 2016,
+      "month": 9,
+      "period_end": "2016-09",
+      "reported": 60147,
+      "predicted": 60707,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 16.6,
+      "predicted_yoy_pct": 16.8
+    },
+    {
+      "year": 2016,
+      "month": 10,
+      "period_end": "2016-10",
+      "reported": 61062,
+      "predicted": 61646,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 17.2,
+      "predicted_yoy_pct": 17.3
+    },
+    {
+      "year": 2016,
+      "month": 11,
+      "period_end": "2016-11",
+      "reported": 62340,
+      "predicted": 62940,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 19.0,
+      "predicted_yoy_pct": 19.2
+    },
+    {
+      "year": 2016,
+      "month": 12,
+      "period_end": "2016-12",
+      "reported": 63938,
+      "predicted": 64557,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 21.5,
+      "predicted_yoy_pct": 21.7
+    },
+    {
+      "year": 2017,
+      "month": 1,
+      "period_end": "2017-01",
+      "reported": 65571,
+      "predicted": 66194,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 23.9,
+      "predicted_yoy_pct": 24.1
+    },
+    {
+      "year": 2017,
+      "month": 2,
+      "period_end": "2017-02",
+      "reported": 66189,
+      "predicted": 66809,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 23.0,
+      "predicted_yoy_pct": 23.2
+    },
+    {
+      "year": 2017,
+      "month": 3,
+      "period_end": "2017-03",
+      "reported": 66858,
+      "predicted": 67477,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 22.0,
+      "predicted_yoy_pct": 22.2
+    },
+    {
+      "year": 2017,
+      "month": 4,
+      "period_end": "2017-04",
+      "reported": 67493,
+      "predicted": 68102,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 21.0,
+      "predicted_yoy_pct": 21.2
+    },
+    {
+      "year": 2017,
+      "month": 5,
+      "period_end": "2017-05",
+      "reported": 68370,
+      "predicted": 68966,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 21.1,
+      "predicted_yoy_pct": 21.1
+    },
+    {
+      "year": 2017,
+      "month": 6,
+      "period_end": "2017-06",
+      "reported": 69153,
+      "predicted": 69753,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 20.4,
+      "predicted_yoy_pct": 20.5
+    },
+    {
+      "year": 2017,
+      "month": 7,
+      "period_end": "2017-07",
+      "reported": 69504,
+      "predicted": 70092,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 18.8,
+      "predicted_yoy_pct": 18.7
+    },
+    {
+      "year": 2017,
+      "month": 8,
+      "period_end": "2017-08",
+      "reported": 69988,
+      "predicted": 70568,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 17.8,
+      "predicted_yoy_pct": 17.7
+    },
+    {
+      "year": 2017,
+      "month": 9,
+      "period_end": "2017-09",
+      "reported": 70599,
+      "predicted": 71168,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 17.4,
+      "predicted_yoy_pct": 17.2
+    },
+    {
+      "year": 2017,
+      "month": 10,
+      "period_end": "2017-10",
+      "reported": 70690,
+      "predicted": 71240,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 15.8,
+      "predicted_yoy_pct": 15.6
+    },
+    {
+      "year": 2017,
+      "month": 11,
+      "period_end": "2017-11",
+      "reported": 70723,
+      "predicted": 71248,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 13.4,
+      "predicted_yoy_pct": 13.2
+    },
+    {
+      "year": 2017,
+      "month": 12,
+      "period_end": "2017-12",
+      "reported": 70699,
+      "predicted": 71193,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 10.6,
+      "predicted_yoy_pct": 10.3
+    },
+    {
+      "year": 2018,
+      "month": 1,
+      "period_end": "2018-01",
+      "reported": 70122,
+      "predicted": 70608,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 6.9,
+      "predicted_yoy_pct": 6.7
+    },
+    {
+      "year": 2018,
+      "month": 2,
+      "period_end": "2018-02",
+      "reported": 69745,
+      "predicted": 70234,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 5.4,
+      "predicted_yoy_pct": 5.1
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "period_end": "2018-03",
+      "reported": 69364,
+      "predicted": 69860,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.7,
+      "predicted_yoy_pct": 3.5
+    },
+    {
+      "year": 2018,
+      "month": 4,
+      "period_end": "2018-04",
+      "reported": 69042,
+      "predicted": 69535,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 2.3,
+      "predicted_yoy_pct": 2.1
+    },
+    {
+      "year": 2018,
+      "month": 5,
+      "period_end": "2018-05",
+      "reported": 68789,
+      "predicted": 69288,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 0.6,
+      "predicted_yoy_pct": 0.5
+    },
+    {
+      "year": 2018,
+      "month": 6,
+      "period_end": "2018-06",
+      "reported": 68714,
+      "predicted": 69201,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -0.6,
+      "predicted_yoy_pct": -0.8
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "period_end": "2018-07",
+      "reported": 68728,
+      "predicted": 69213,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -1.1,
+      "predicted_yoy_pct": -1.3
+    },
+    {
+      "year": 2018,
+      "month": 8,
+      "period_end": "2018-08",
+      "reported": 68714,
+      "predicted": 69184,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -1.8,
+      "predicted_yoy_pct": -2.0
+    },
+    {
+      "year": 2018,
+      "month": 9,
+      "period_end": "2018-09",
+      "reported": 68421,
+      "predicted": 68889,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -3.1,
+      "predicted_yoy_pct": -3.2
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "period_end": "2018-10",
+      "reported": 68404,
+      "predicted": 68866,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -3.2,
+      "predicted_yoy_pct": -3.3
+    },
+    {
+      "year": 2018,
+      "month": 11,
+      "period_end": "2018-11",
+      "reported": 68102,
+      "predicted": 68581,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -3.7,
+      "predicted_yoy_pct": -3.7
+    },
+    {
+      "year": 2018,
+      "month": 12,
+      "period_end": "2018-12",
+      "reported": 67850,
+      "predicted": 68313,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -4.0,
+      "predicted_yoy_pct": -4.0
+    },
+    {
+      "year": 2019,
+      "month": 1,
+      "period_end": "2019-01",
+      "reported": 67697,
+      "predicted": 68187,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -3.5,
+      "predicted_yoy_pct": -3.4
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "period_end": "2019-02",
+      "reported": 67631,
+      "predicted": 68130,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -3.0,
+      "predicted_yoy_pct": -3.0
+    },
+    {
+      "year": 2019,
+      "month": 3,
+      "period_end": "2019-03",
+      "reported": 67727,
+      "predicted": 68235,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -2.4,
+      "predicted_yoy_pct": -2.3
+    },
+    {
+      "year": 2019,
+      "month": 4,
+      "period_end": "2019-04",
+      "reported": 67736,
+      "predicted": 68259,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -1.9,
+      "predicted_yoy_pct": -1.8
+    },
+    {
+      "year": 2019,
+      "month": 5,
+      "period_end": "2019-05",
+      "reported": 67795,
+      "predicted": 68320,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -1.4,
+      "predicted_yoy_pct": -1.4
+    },
+    {
+      "year": 2019,
+      "month": 6,
+      "period_end": "2019-06",
+      "reported": 67787,
+      "predicted": 68322,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -1.3,
+      "predicted_yoy_pct": -1.3
+    },
+    {
+      "year": 2019,
+      "month": 7,
+      "period_end": "2019-07",
+      "reported": 68023,
+      "predicted": 68562,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -1.0,
+      "predicted_yoy_pct": -0.9
+    },
+    {
+      "year": 2019,
+      "month": 8,
+      "period_end": "2019-08",
+      "reported": 68371,
+      "predicted": 68932,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -0.5,
+      "predicted_yoy_pct": -0.4
+    },
+    {
+      "year": 2019,
+      "month": 9,
+      "period_end": "2019-09",
+      "reported": 68757,
+      "predicted": 69324,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 0.5,
+      "predicted_yoy_pct": 0.6
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "period_end": "2019-10",
+      "reported": 69371,
+      "predicted": 69950,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.4,
+      "predicted_yoy_pct": 1.6
+    },
+    {
+      "year": 2019,
+      "month": 11,
+      "period_end": "2019-11",
+      "reported": 70357,
+      "predicted": 70942,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.3,
+      "predicted_yoy_pct": 3.4
+    },
+    {
+      "year": 2019,
+      "month": 12,
+      "period_end": "2019-12",
+      "reported": 71130,
+      "predicted": 71740,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 4.8,
+      "predicted_yoy_pct": 5.0
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "period_end": "2020-01",
+      "reported": 72124,
+      "predicted": 72732,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 6.5,
+      "predicted_yoy_pct": 6.7
+    },
+    {
+      "year": 2020,
+      "month": 2,
+      "period_end": "2020-02",
+      "reported": 73343,
+      "predicted": 73952,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 8.4,
+      "predicted_yoy_pct": 8.5
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "period_end": "2020-03",
+      "reported": 74679,
+      "predicted": 75273,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 10.3,
+      "predicted_yoy_pct": 10.3
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "period_end": "2020-04",
+      "reported": 77017,
+      "predicted": 77581,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 13.7,
+      "predicted_yoy_pct": 13.7
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "period_end": "2020-05",
+      "reported": 80577,
+      "predicted": 81163,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 18.9,
+      "predicted_yoy_pct": 18.8
+    },
+    {
+      "year": 2020,
+      "month": 6,
+      "period_end": "2020-06",
+      "reported": 82916,
+      "predicted": 83519,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 22.3,
+      "predicted_yoy_pct": 22.2
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "period_end": "2020-07",
+      "reported": 85236,
+      "predicted": 85861,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 25.3,
+      "predicted_yoy_pct": 25.2
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "period_end": "2020-08",
+      "reported": 87293,
+      "predicted": 87918,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 27.7,
+      "predicted_yoy_pct": 27.5
+    },
+    {
+      "year": 2020,
+      "month": 9,
+      "period_end": "2020-09",
+      "reported": 88879,
+      "predicted": 89504,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 29.3,
+      "predicted_yoy_pct": 29.1
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "period_end": "2020-10",
+      "reported": 90093,
+      "predicted": 90735,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 29.9,
+      "predicted_yoy_pct": 29.7
+    },
+    {
+      "year": 2020,
+      "month": 11,
+      "period_end": "2020-11",
+      "reported": 91200,
+      "predicted": 91847,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 29.6,
+      "predicted_yoy_pct": 29.5
+    },
+    {
+      "year": 2020,
+      "month": 12,
+      "period_end": "2020-12",
+      "reported": 92478,
+      "predicted": 93129,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 30.0,
+      "predicted_yoy_pct": 29.8
+    },
+    {
+      "year": 2021,
+      "month": 1,
+      "period_end": "2021-01",
+      "reported": 94788,
+      "predicted": 95418,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 31.4,
+      "predicted_yoy_pct": 31.2
+    },
+    {
+      "year": 2021,
+      "month": 2,
+      "period_end": "2021-02",
+      "reported": 96118,
+      "predicted": 96747,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 31.1,
+      "predicted_yoy_pct": 30.8
+    },
+    {
+      "year": 2021,
+      "month": 3,
+      "period_end": "2021-03",
+      "reported": 98211,
+      "predicted": 98876,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 31.5,
+      "predicted_yoy_pct": 31.4
+    },
+    {
+      "year": 2021,
+      "month": 4,
+      "period_end": "2021-04",
+      "reported": 99772,
+      "predicted": 100508,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 29.5,
+      "predicted_yoy_pct": 29.6
+    },
+    {
+      "year": 2021,
+      "month": 5,
+      "period_end": "2021-05",
+      "reported": 99679,
+      "predicted": 100427,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 23.7,
+      "predicted_yoy_pct": 23.7
+    },
+    {
+      "year": 2021,
+      "month": 6,
+      "period_end": "2021-06",
+      "reported": 100569,
+      "predicted": 101358,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 21.3,
+      "predicted_yoy_pct": 21.4
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "period_end": "2021-07",
+      "reported": 101477,
+      "predicted": 102288,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 19.1,
+      "predicted_yoy_pct": 19.1
+    },
+    {
+      "year": 2021,
+      "month": 8,
+      "period_end": "2021-08",
+      "reported": 102612,
+      "predicted": 103447,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 17.5,
+      "predicted_yoy_pct": 17.7
+    },
+    {
+      "year": 2021,
+      "month": 9,
+      "period_end": "2021-09",
+      "reported": 104099,
+      "predicted": 104962,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 17.1,
+      "predicted_yoy_pct": 17.3
+    },
+    {
+      "year": 2021,
+      "month": 10,
+      "period_end": "2021-10",
+      "reported": 105528,
+      "predicted": 106405,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 17.1,
+      "predicted_yoy_pct": 17.3
+    },
+    {
+      "year": 2021,
+      "month": 11,
+      "period_end": "2021-11",
+      "reported": 106554,
+      "predicted": 107460,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 16.8,
+      "predicted_yoy_pct": 17.0
+    },
+    {
+      "year": 2021,
+      "month": 12,
+      "period_end": "2021-12",
+      "reported": 107573,
+      "predicted": 108553,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 16.3,
+      "predicted_yoy_pct": 16.6
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "period_end": "2022-01",
+      "reported": 107800,
+      "predicted": 108795,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 13.7,
+      "predicted_yoy_pct": 14.0
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "period_end": "2022-02",
+      "reported": 108636,
+      "predicted": 109649,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 13.0,
+      "predicted_yoy_pct": 13.3
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "period_end": "2022-03",
+      "reported": 108604,
+      "predicted": 109622,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 10.6,
+      "predicted_yoy_pct": 10.9
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "period_end": "2022-04",
+      "reported": 107785,
+      "predicted": 108785,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 8.0,
+      "predicted_yoy_pct": 8.2
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "period_end": "2022-05",
+      "reported": 107429,
+      "predicted": 108429,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 7.8,
+      "predicted_yoy_pct": 8.0
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "period_end": "2022-06",
+      "reported": 107370,
+      "predicted": 108326,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 6.8,
+      "predicted_yoy_pct": 6.9
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "period_end": "2022-07",
+      "reported": 107583,
+      "predicted": 108538,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 6.0,
+      "predicted_yoy_pct": 6.1
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "period_end": "2022-08",
+      "reported": 107474,
+      "predicted": 108444,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 4.7,
+      "predicted_yoy_pct": 4.8
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "period_end": "2022-09",
+      "reported": 107432,
+      "predicted": 108407,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.2,
+      "predicted_yoy_pct": 3.3
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "period_end": "2022-10",
+      "reported": 107819,
+      "predicted": 108799,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 2.2,
+      "predicted_yoy_pct": 2.2
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "period_end": "2022-11",
+      "reported": 108429,
+      "predicted": 109431,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.8,
+      "predicted_yoy_pct": 1.8
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "period_end": "2022-12",
+      "reported": 109413,
+      "predicted": 110393,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.7,
+      "predicted_yoy_pct": 1.7
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "period_end": "2023-01",
+      "reported": 109745,
+      "predicted": 110751,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.8,
+      "predicted_yoy_pct": 1.8
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "period_end": "2023-02",
+      "reported": 109714,
+      "predicted": 110720,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.0,
+      "predicted_yoy_pct": 1.0
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "period_end": "2023-03",
+      "reported": 110084,
+      "predicted": 111058,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.4,
+      "predicted_yoy_pct": 1.3
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "period_end": "2023-04",
+      "reported": 110774,
+      "predicted": 111739,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 2.8,
+      "predicted_yoy_pct": 2.7
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "period_end": "2023-05",
+      "reported": 111422,
+      "predicted": 112357,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.7,
+      "predicted_yoy_pct": 3.6
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "period_end": "2023-06",
+      "reported": 111466,
+      "predicted": 112412,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.8,
+      "predicted_yoy_pct": 3.8
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "period_end": "2023-07",
+      "reported": 111382,
+      "predicted": 112360,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.5,
+      "predicted_yoy_pct": 3.5
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "period_end": "2023-08",
+      "reported": 111451,
+      "predicted": 112418,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.7,
+      "predicted_yoy_pct": 3.7
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "period_end": "2023-09",
+      "reported": 110716,
+      "predicted": 111700,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 3.1,
+      "predicted_yoy_pct": 3.0
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "period_end": "2023-10",
+      "reported": 109703,
+      "predicted": 110748,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 1.7,
+      "predicted_yoy_pct": 1.8
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "period_end": "2023-11",
+      "reported": 108529,
+      "predicted": 109576,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": 0.1,
+      "predicted_yoy_pct": 0.1
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "period_end": "2023-12",
+      "reported": 106881,
+      "predicted": 107966,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -2.3,
+      "predicted_yoy_pct": -2.2
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "period_end": "2024-01",
+      "reported": 105522,
+      "predicted": 106587,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -3.8,
+      "predicted_yoy_pct": -3.8
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "period_end": "2024-02",
+      "reported": 104361,
+      "predicted": 105405,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -4.9,
+      "predicted_yoy_pct": -4.8
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "period_end": "2024-03",
+      "reported": 102174,
+      "predicted": 103192,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -7.2,
+      "predicted_yoy_pct": -7.1
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "period_end": "2024-04",
+      "reported": 100052,
+      "predicted": 101049,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -9.7,
+      "predicted_yoy_pct": -9.6
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "period_end": "2024-05",
+      "reported": 97687,
+      "predicted": 98685,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -12.3,
+      "predicted_yoy_pct": -12.2
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "period_end": "2024-06",
+      "reported": 95741,
+      "predicted": 96726,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -14.1,
+      "predicted_yoy_pct": -14.0
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "period_end": "2024-07",
+      "reported": 93193,
+      "predicted": 94100,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -16.3,
+      "predicted_yoy_pct": -16.3
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "period_end": "2024-08",
+      "reported": 90202,
+      "predicted": 91043,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -19.1,
+      "predicted_yoy_pct": -19.0
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "period_end": "2024-09",
+      "reported": 87654,
+      "predicted": 88406,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -20.8,
+      "predicted_yoy_pct": -20.9
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "period_end": "2024-10",
+      "reported": 85178,
+      "predicted": 85835,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -22.4,
+      "predicted_yoy_pct": -22.5
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "period_end": "2024-11",
+      "reported": 82946,
+      "predicted": 83512,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -23.6,
+      "predicted_yoy_pct": -23.8
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "period_end": "2024-12",
+      "reported": 80860,
+      "predicted": 81313,
+      "footnote": "Numbers may differ from published reports using final data. See Technical Notes.",
+      "reported_yoy_pct": -24.3,
+      "predicted_yoy_pct": -24.7
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "period_end": "2025-01",
+      "reported": 79332,
+      "predicted": 79626,
+      "footnote": null,
+      "reported_yoy_pct": -24.8,
+      "predicted_yoy_pct": -25.3
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "period_end": "2025-02",
+      "reported": 77831,
+      "predicted": 78056,
+      "footnote": null,
+      "reported_yoy_pct": -25.4,
+      "predicted_yoy_pct": -25.9
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "period_end": "2025-03",
+      "reported": 77064,
+      "predicted": 77306,
+      "footnote": null,
+      "reported_yoy_pct": -24.6,
+      "predicted_yoy_pct": -25.1
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "period_end": "2025-04",
+      "reported": 75967,
+      "predicted": 76176,
+      "footnote": null,
+      "reported_yoy_pct": -24.1,
+      "predicted_yoy_pct": -24.6
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "period_end": "2025-05",
+      "reported": 74878,
+      "predicted": 75094,
+      "footnote": null,
+      "reported_yoy_pct": -23.3,
+      "predicted_yoy_pct": -23.9
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "period_end": "2025-06",
+      "reported": 73905,
+      "predicted": 74120,
+      "footnote": null,
+      "reported_yoy_pct": -22.8,
+      "predicted_yoy_pct": -23.4
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "period_end": "2025-07",
+      "reported": 72987,
+      "predicted": 73240,
+      "footnote": null,
+      "reported_yoy_pct": -21.7,
+      "predicted_yoy_pct": -22.2
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "period_end": "2025-08",
+      "reported": 72373,
+      "predicted": 72889,
+      "footnote": null,
+      "reported_yoy_pct": -19.8,
+      "predicted_yoy_pct": -19.9
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "period_end": "2025-09",
+      "reported": 71892,
+      "predicted": 72368,
+      "footnote": null,
+      "reported_yoy_pct": -18.0,
+      "predicted_yoy_pct": -18.1
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "period_end": "2025-10",
+      "reported": 71384,
+      "predicted": 71779,
+      "footnote": null,
+      "reported_yoy_pct": -16.2,
+      "predicted_yoy_pct": -16.4
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "period_end": "2025-11",
+      "reported": 71017,
+      "predicted": 71293,
+      "footnote": null,
+      "reported_yoy_pct": -14.4,
+      "predicted_yoy_pct": -14.6
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "period_end": "2025-12",
+      "reported": 70646,
+      "predicted": 70735,
+      "footnote": null,
+      "reported_yoy_pct": -12.6,
+      "predicted_yoy_pct": -13.0
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "period_end": "2026-01",
+      "reported": 69544,
+      "predicted": 69800,
+      "footnote": "Underreported due to incomplete data.",
+      "reported_yoy_pct": -12.3,
+      "predicted_yoy_pct": -12.3
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "period_end": "2026-02",
+      "reported": 68689,
+      "predicted": 69150,
+      "footnote": "Underreported due to incomplete data.",
+      "reported_yoy_pct": -11.7,
+      "predicted_yoy_pct": -11.4
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "period_end": "2026-03",
+      "reported": 67104,
+      "predicted": 67923,
+      "footnote": "Underreported due to incomplete data.",
+      "reported_yoy_pct": -12.9,
+      "predicted_yoy_pct": -12.1
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "period_end": "2026-04",
+      "reported": 65726,
+      "predicted": 66937,
+      "footnote": "Underreported due to incomplete data.",
+      "reported_yoy_pct": -13.5,
+      "predicted_yoy_pct": -12.1
+    }
+  ]
+}

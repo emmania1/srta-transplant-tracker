@@ -1,0 +1,9 @@
+{
+  "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
+  "weekly_optn_max_age_days": 14,
+  "national_optn_max_age_days": 75,
+  "cdc_max_dataset_age_days": 45,
+  "price_max_age_days": 7,
+  "weekly_optn_donors_max_age_days": 21,
+  "_donors_note": "OPTN's donor series runs ~1 week behind the transplant series (e.g. donors through Sep 28 vs transplants through Oct 2), so its limit is 14 + 7 days."
+}

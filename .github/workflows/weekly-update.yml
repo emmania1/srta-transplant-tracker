@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "data/raw/optn/**"
+      - "data/manual/**"
   workflow_dispatch: {}
 
 permissions:
@@ -30,10 +31,16 @@ jobs:
       - name: Test YoY / week logic
         run: python3 -m unittest discover -s tests
 
-      - name: Fetch SRTA price
+      # Every fetch is allowed to fail: the page keeps the last good data and
+      # scripts/health.py turns failures into a banner + a "Data issue:" digest line.
+      - name: Fetch prices (SRTA, TMDX, JOBY)
+        id: price
+        continue-on-error: true
         run: python3 scripts/fetch_price.py
 
       - name: Fetch news
+        id: news
+        continue-on-error: true
         run: python3 scripts/fetch_news.py
 
       - name: Install Playwright (headless Chromium for the OPTN Shiny dashboard)
@@ -41,7 +48,7 @@ jobs:
           pip install playwright==1.59.0
           python3 -m playwright install --with-deps chromium
 
-      - name: Fetch OPTN weekly transplants
+      - name: Fetch OPTN weekly (transplants, donors, waitlist, regions)
         id: optn
         continue-on-error: true
         run: python3 scripts/fetch_optn.py
@@ -51,8 +58,28 @@ jobs:
         continue-on-error: true
         run: python3 scripts/fetch_optn_national.py
 
+      - name: Fetch CDC overdose deaths
+        id: cdc
+        continue-on-error: true
+        run: python3 scripts/fetch_cdc.py
+
+      - name: Fetch SEC EDGAR filings
+        id: sec
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python3 scripts/fetch_sec.py
+
       - name: Ingest OPTN files
         run: python3 scripts/ingest_optn.py
+
+      - name: Health check
+        env:
+          STEP_OUTCOMES: >-
+            {"Prices": "${{ steps.price.outcome }}", "News": "${{ steps.news.outcome }}",
+             "OPTN weekly": "${{ steps.optn.outcome }}", "OPTN national": "${{ steps.optn_national.outcome }}",
+             "CDC": "${{ steps.cdc.outcome }}", "SEC EDGAR": "${{ steps.sec.outcome }}"}
+        run: python3 scripts/health.py
 
       - name: Build weekly digest
         run: python3 scripts/build_digest.py
@@ -71,8 +98,10 @@ jobs:
             git push
           fi
 
-      - name: Flag OPTN fetch failure
-        if: steps.optn.outcome == 'failure' || steps.optn_national.outcome == 'failure'
+      - name: Mark the run red if any fetch failed (data was still committed)
+        if: >-
+          steps.price.outcome == 'failure' || steps.news.outcome == 'failure' || steps.optn.outcome == 'failure' ||
+          steps.optn_national.outcome == 'failure' || steps.cdc.outcome == 'failure' || steps.sec.outcome == 'failure'
         run: |
-          echo "::error::An OPTN fetch failed (weekly: ${{ steps.optn.outcome }}, national: ${{ steps.optn_national.outcome }}); the page kept the previous data."
+          echo "::error::A fetch failed; see data/processed/health.json. The page kept the previous data."
           exit 1

@@ -1,0 +1,92 @@
+{
+  "_instructions": "Fill in from TransMedics' quarterly earnings releases (8-K Ex. 99.1) and 10-Q. Same format as company_kpis.json: copy 'template_period' into 'periods', fill value + source (document and page) + date per field. Leave null if not disclosed. Public filings only.",
+  "title": "TransMedics (TMDX) KPIs (quarterly, manual)",
+  "tag": "Manual",
+  "company": "TransMedics Group (TMDX)",
+  "fields": [
+    {
+      "key": "us_transplant_revenue",
+      "label": "U.S. transplant revenue",
+      "unit": "$M",
+      "group": "Revenue"
+    },
+    {
+      "key": "us_transplant_revenue_yoy_pct",
+      "label": "U.S. transplant revenue YoY",
+      "unit": "%",
+      "group": "Revenue"
+    },
+    {
+      "key": "total_revenue",
+      "label": "Total revenue",
+      "unit": "$M",
+      "group": "Revenue"
+    },
+    {
+      "key": "cases_heart",
+      "label": "U.S. OCS cases \u2014 heart",
+      "unit": "count",
+      "group": "Case counts"
+    },
+    {
+      "key": "cases_liver",
+      "label": "U.S. OCS cases \u2014 liver",
+      "unit": "count",
+      "group": "Case counts"
+    },
+    {
+      "key": "cases_lung",
+      "label": "U.S. OCS cases \u2014 lung",
+      "unit": "count",
+      "group": "Case counts"
+    },
+    {
+      "key": "cases_total",
+      "label": "U.S. OCS cases \u2014 total",
+      "unit": "count",
+      "group": "Case counts"
+    }
+  ],
+  "template_period": {
+    "period": null,
+    "reported": null,
+    "values": {
+      "us_transplant_revenue": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "us_transplant_revenue_yoy_pct": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "total_revenue": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "cases_heart": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "cases_liver": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "cases_lung": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "cases_total": {
+        "value": null,
+        "source": null,
+        "date": null
+      }
+    }
+  },
+  "periods": []
+}

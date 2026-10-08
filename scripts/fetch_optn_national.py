@@ -51,6 +51,19 @@ for key, label in ORGANS.items():
     QUERIES[f"tx_distance_{key}"] = ("2;Transplant", 14, ZONE, organ_slice(label))
 QUERIES["tx_state_all"] = ("2;Transplant", 14, STATE, "")
 
+# Advanced report builder (same site, same token/cookie): rows = transplant center.
+ADV_URL = "https://hrsa.unos.org/data/view-data-reports/build-advanced"
+TXC = "[TXC].members;Transplant Center;359;TXC"
+YEARS_2 = "{ [Transplant Year].[2025], [Transplant Year].[2024]};Transplant Year (2024 - 2025);2;Transplant Year"
+REGION_COL = "[Region].members;Region of Center;12;Region"
+DECEASED = "[Donor Type].[Deceased Donor];Deceased Donor;3;Donor Type"
+ADV_QUERIES = {}
+for key in ["heart", "liver", "lung"]:
+    # full years (the builder's only multi-year column is its fixed 2-year pair)
+    ADV_QUERIES[f"centers_{key}_years"] = {"col1": YEARS_2, "slice0": organ_slice(ORGANS[key])}
+    # current year to date: filter on the year, columns by region (centers sit in one region)
+    ADV_QUERIES[f"centers_{key}_ytd"] = {"col1": REGION_COL, "slice0": organ_slice(ORGANS[key]), "slice5": "CURRENT_YEAR"}
+
 
 class Session:
     def __init__(self):
@@ -72,6 +85,34 @@ class Session:
         }
         body = urllib.parse.urlencode(fields).encode()
         return self.op.open(URL, data=body, timeout=180).read().decode()
+
+
+    def advanced(self, extra):
+        fields = {"category": "2;Transplant", "CategoryId": "2", "CubeName": "Transplant",
+                  "row1": TXC, "slice6": DECEASED, "NumberStyle": "Values", "MaximumSlice": "8",
+                  "__RequestVerificationToken": self.token}
+        for k in ["slice1", "slice2", "slice3", "slice4", "slice5", "slice7", "col2", "row2", "row3", "command"]:
+            fields.setdefault(k, "")
+        fields.update(extra)
+        body = urllib.parse.urlencode(fields).encode()
+        return self.op.open(ADV_URL, data=body, timeout=240).read().decode()
+
+
+def parse_centers(page):
+    """Rows = centers; returns list of {group, row, column, value} with group 'Deceased Donor'."""
+    trs = [cells(tr) for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S)]
+    hdr_i = next(i for i, c in enumerate(trs) if len(c) >= 3 and c[0] == "" and c[1] == "" and c[2])
+    header = trs[hdr_i]
+    rows = []
+    for c in trs[hdr_i + 1:]:
+        if len(c) != len(header) or not c[0] or c == header:
+            continue
+        for col, val in zip(header[2:], c[2:]):
+            rows.append({"group": "Deceased Donor", "row": c[0], "column": col,
+                         "value": int(val.replace(",", "")) if val.strip() else 0})
+    if not rows:
+        raise RuntimeError("no center rows parsed")
+    return rows
 
 
 def cells(tr):
@@ -117,19 +158,35 @@ def main():
         metas.add((meta["period_end"], meta["data_as_of"]))
         results[key] = (meta, rows)
         print(f"{key}: {len(rows)} cells, period through {meta['period_end']}")
+    year = int(sorted(metas)[-1][0][:4])
+    for key, extra in ADV_QUERIES.items():
+        extra = {k: (f"[Transplant Year].[{year}];{year};45;Transplant Year" if v == "CURRENT_YEAR" else v)
+                 for k, v in extra.items()}
+        rows = parse_centers(s.advanced(extra))
+        results[key] = (None, rows)
+        print(f"{key}: {len(rows)} cells")
+    metas.discard(None)
     if len({m[0] for m in metas}) != 1:
         raise RuntimeError(f"queries returned different reporting periods: {metas}")
     period_end, data_as_of = sorted(metas)[-1]
 
-    if list(OUT.glob(f"*_optn_national_meta_thru-{period_end}.json")):
+    existing = list(OUT.glob(f"*_optn_national_*_thru-{period_end}.*"))
+    have = {re.search(r"_optn_national_(.+)_thru-", p.name).group(1) for p in existing}
+    missing = [k for k in results if k not in have]
+    if "meta" in have and not missing:
         print(f"Snapshot through {period_end} already saved; OPTN has not refreshed. Nothing written.")
         return 0
     for key, (_, rows) in results.items():
+        if key in have:
+            continue
         path = OUT / f"{today}_optn_national_{key}_thru-{period_end}.csv"
         with open(path, "w", newline="") as f:
             w = csv.DictWriter(f, fieldnames=["group", "row", "column", "value"])
             w.writeheader()
             w.writerows(rows)
+    if "meta" in have:
+        print(f"Added {len(missing)} new queries to the existing snapshot through {period_end}: {missing}")
+        return 0
     (OUT / f"{today}_optn_national_meta_thru-{period_end}.json").write_text(json.dumps({
         "period_end": period_end, "data_as_of": data_as_of, "downloaded": today,
         "source": URL, "queries": {k: {"category": v[0], "report_id": v[1], "row2": v[2], "slice0": v[3]}

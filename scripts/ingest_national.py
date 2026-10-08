@@ -5,6 +5,10 @@ These reports are annual: "<current year>" = Jan 1 through the snapshot's
 period end (last full month); prior years are full years. So:
   * donor mix + distance are compared as SHARES: current year-to-date vs the
     prior full year. That is a mix comparison, not a like-for-like volume one.
+  * when a snapshot from the same period end a year earlier exists, a true same-period
+    comparison is added automatically (`same_period`). OPTN's report builder has no month or
+    quarter dimension (checked 2026-10-08: only Transplant Year / Donation Year), so snapshots
+    are the only route to like-for-like.
   * state volumes get no % change until a snapshot exists for the same period
     end one year earlier (true YTD vs YTD). Until then the page shows shares.
 """
@@ -134,11 +138,7 @@ def build_location(snaps):
                         "ytd_national": st.get("All Center States", {}).get(y, 0)})
 
     # True YoY only when a snapshot exists for the same period end one year earlier
-    end = date.fromisoformat(ends[-1])
-    try:
-        ly_end = end.replace(year=end.year - 1).isoformat()
-    except ValueError:  # Feb 29
-        ly_end = end.replace(year=end.year - 1, day=28).isoformat()
+    ly_end = year_ago(ends[-1])
     ly = next((h for h in history if h["period_end"] == ly_end), None)
 
     rows = []
@@ -164,6 +164,74 @@ def build_location(snaps):
             "organ_scope": "All organs, deceased-donor transplants, by state of transplant center"}
 
 
+CENTER_ORGANS = ["heart", "liver", "lung"]
+TOP_N = 25
+
+
+def center_table(path, col_filter=None):
+    """{center: {column: value}} from an advanced-builder center query."""
+    out = {}
+    with open(path, newline="") as f:
+        for r in csv.DictReader(f):
+            if col_filter and r["column"] != col_filter:
+                continue
+            out.setdefault(r["row"], {})[r["column"]] = int(r["value"])
+    return out
+
+
+def build_centers(snap):
+    info = period_info(snap["meta"])
+    files = snap["files"]
+    if not all(f"centers_{o}_years" in files and f"centers_{o}_ytd" in files for o in CENTER_ORGANS):
+        return None
+    cy, fy, py = info["current_year"], info["prior_year"], info["prior_year"] - 1
+    centers = {}
+    for o in CENTER_ORGANS:
+        yrs = center_table(files[f"centers_{o}_years"])
+        ytd = center_table(files[f"centers_{o}_ytd"], col_filter="All Regions")
+        for c in set(yrs) | set(ytd):
+            d = centers.setdefault(c, {"organs": {}})
+            d["organs"][o] = {str(fy): yrs.get(c, {}).get(str(fy), 0), str(py): yrs.get(c, {}).get(str(py), 0),
+                              f"{cy}_ytd": ytd.get(c, {}).get("All Regions", 0)}
+    rows = []
+    for c, d in centers.items():
+        if c == "All Centers":
+            continue
+        tot = {k: sum(v[k] for v in d["organs"].values()) for k in (str(fy), str(py), f"{cy}_ytd")}
+        code, _, name = c.partition(" ")
+        rows.append({"center": name or c, "center_code": code, "organs": d["organs"],
+                     "total_" + str(fy): tot[str(fy)], "total_" + str(py): tot[str(py)],
+                     "total_ytd": tot[f"{cy}_ytd"],
+                     "yoy_pct": round(100 * (tot[str(fy)] / tot[str(py)] - 1), 1) if tot[str(py)] else None})
+    rows.sort(key=lambda r: -r["total_" + str(fy)])
+    nat = centers.get("All Centers", {"organs": {}})["organs"]
+    return {**info, "full_year": fy, "comparison_year": py, "top_n": TOP_N, "rows": rows[:TOP_N],
+            "centers_with_volume": sum(1 for r in rows if r["total_" + str(fy)] > 0),
+            "national": {o: v for o, v in nat.items()},
+            "scope": "Deceased-donor heart + liver + lung transplants by transplant center (OPTN center code + name)",
+            "yoy_note": (f"YoY = {fy} vs {py}, both full years (like-for-like). {cy} YTD is through "
+                         f"{info['period_end']} and has no YoY until a snapshot from a year earlier exists."),
+            "source_detail": "OPTN national data, Build advanced report: rows Transplant Center, Deceased Donor filter"}
+
+
+def year_ago(end_iso):
+    end = date.fromisoformat(end_iso)
+    try:
+        return end.replace(year=end.year - 1).isoformat()
+    except ValueError:  # Feb 29
+        return end.replace(year=end.year - 1, day=28).isoformat()
+
+
+def same_period(snaps, latest_end, builder):
+    """Like-for-like prior-year comparison from the snapshot saved a year earlier, if any."""
+    ly_end = year_ago(latest_end)
+    if ly_end not in snaps:
+        return {"available": False, "needs_snapshot_through": ly_end,
+                "note": f"Same-period comparison appears once a snapshot through {ly_end} exists "
+                        f"(snapshots saved monthly since {min(snaps)})."}
+    return {"available": True, "prior_period_end": ly_end, "prior": builder(snaps[ly_end])}
+
+
 def build_all(national_dir):
     snaps = snapshots(national_dir)
     if not snaps:
@@ -174,7 +242,12 @@ def build_all(national_dir):
     common = {"raw_file": ", ".join(used), "data_as_of": s["meta"]["data_as_of"],
               "snapshot_downloaded": s["meta"]["downloaded"], "parser": "optn_national_data"}
     return {
-        "donor_mix": {**build_donor_mix(s), **common},
-        "distance": {**build_distance(s), **common},
+        "donor_mix": {**build_donor_mix(s), **common,
+                      "same_period": same_period(snaps, latest_end, build_donor_mix),
+                      "snapshots_saved": sorted(snaps)},
+        "distance": {**build_distance(s), **common,
+                     "same_period": same_period(snaps, latest_end, build_distance),
+                     "snapshots_saved": sorted(snaps)},
         "location": {**build_location(snaps), **common},
+        **({"centers": {**c, **common}} if (c := build_centers(s)) else {}),
     }

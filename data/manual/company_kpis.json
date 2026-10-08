@@ -1,0 +1,213 @@
+{
+  "_instructions": "Fill in after each SRTA earnings report. Copy 'template_period' into 'periods' (newest last), set 'period' (e.g. 'Q3 2026') and 'reported' (YYYY-MM-DD), and for each field fill value + source (document and page, e.g. 'Q3 2026 8-K Ex. 99.1, p. 3') + date (YYYY-MM-DD of that document). Leave value null if not disclosed; the page shows 'awaiting data'. Units: $M = millions of USD; % as a number (12.5 = 12.5%). Public filings/releases only: no sell-side numbers.",
+  "title": "SRTA company KPIs (quarterly, manual)",
+  "tag": "Manual",
+  "company": "Strata Critical Medical (SRTA)",
+  "fields": [
+    {
+      "key": "revenue",
+      "label": "Revenue",
+      "unit": "$M",
+      "group": "Financials vs guidance"
+    },
+    {
+      "key": "revenue_guidance_low",
+      "label": "Revenue guidance \u2014 low (FY)",
+      "unit": "$M",
+      "group": "Financials vs guidance"
+    },
+    {
+      "key": "revenue_guidance_high",
+      "label": "Revenue guidance \u2014 high (FY)",
+      "unit": "$M",
+      "group": "Financials vs guidance"
+    },
+    {
+      "key": "adj_ebitda",
+      "label": "Adj. EBITDA",
+      "unit": "$M",
+      "group": "Financials vs guidance"
+    },
+    {
+      "key": "adj_ebitda_guidance_low",
+      "label": "Adj. EBITDA guidance \u2014 low (FY)",
+      "unit": "$M",
+      "group": "Financials vs guidance"
+    },
+    {
+      "key": "adj_ebitda_guidance_high",
+      "label": "Adj. EBITDA guidance \u2014 high (FY)",
+      "unit": "$M",
+      "group": "Financials vs guidance"
+    },
+    {
+      "key": "logistics_revenue",
+      "label": "Logistics revenue",
+      "unit": "$M",
+      "group": "Segments"
+    },
+    {
+      "key": "logistics_revenue_yoy_pct",
+      "label": "Logistics revenue YoY",
+      "unit": "%",
+      "group": "Segments"
+    },
+    {
+      "key": "clinical_revenue",
+      "label": "Clinical revenue",
+      "unit": "$M",
+      "group": "Segments"
+    },
+    {
+      "key": "clinical_revenue_yoy_pct",
+      "label": "Clinical revenue YoY",
+      "unit": "%",
+      "group": "Segments"
+    },
+    {
+      "key": "nrp_penetration_dcd_pct",
+      "label": "NRP penetration of DCD (if disclosed)",
+      "unit": "%",
+      "group": "Operations"
+    },
+    {
+      "key": "logistics_hubs",
+      "label": "Logistics hubs",
+      "unit": "count",
+      "group": "Operations"
+    },
+    {
+      "key": "recovery_hubs",
+      "label": "Recovery hubs",
+      "unit": "count",
+      "group": "Operations"
+    },
+    {
+      "key": "acquisitions_closed_ytd",
+      "label": "Acquisitions closed this year",
+      "unit": "count",
+      "group": "Capital allocation"
+    },
+    {
+      "key": "acquisitions_plan_per_year",
+      "label": "Acquisitions plan per year",
+      "unit": "count",
+      "group": "Capital allocation"
+    },
+    {
+      "key": "cash",
+      "label": "Cash",
+      "unit": "$M",
+      "group": "Balance sheet"
+    },
+    {
+      "key": "revolver_availability",
+      "label": "Revolver availability",
+      "unit": "$M",
+      "group": "Balance sheet"
+    },
+    {
+      "key": "earnout_obligations",
+      "label": "Earn-out obligations",
+      "unit": "$M",
+      "group": "Balance sheet"
+    }
+  ],
+  "template_period": {
+    "period": null,
+    "reported": null,
+    "values": {
+      "revenue": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "revenue_guidance_low": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "revenue_guidance_high": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "adj_ebitda": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "adj_ebitda_guidance_low": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "adj_ebitda_guidance_high": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "logistics_revenue": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "logistics_revenue_yoy_pct": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "clinical_revenue": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "clinical_revenue_yoy_pct": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "nrp_penetration_dcd_pct": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "logistics_hubs": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "recovery_hubs": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "acquisitions_closed_ytd": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "acquisitions_plan_per_year": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "cash": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "revolver_availability": {
+        "value": null,
+        "source": null,
+        "date": null
+      },
+      "earnout_obligations": {
+        "value": null,
+        "source": null,
+        "date": null
+      }
+    }
+  },
+  "periods": []
+}

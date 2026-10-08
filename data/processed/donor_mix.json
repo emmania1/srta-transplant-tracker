@@ -2,7 +2,7 @@
   "title": "Deceased donors by type (DBD vs DCD) and DCD share by organ",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-10-07T22:17:41+00:00",
+  "ingested_at": "2026-10-08T21:48:17+00:00",
   "period_end": "2026-08-31",
   "data_as_of": "2026-10-06",
   "current_year": 2026,
@@ -315,9 +315,17 @@
   "organ_definitions": {
     "kidney": "Kidney alone (kidney-pancreas is a separate OPTN organ category here)"
   },
-  "raw_file": "2026-10-08_optn_national_donors_dcd_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_state_all_thru-2026-08-31.csv",
+  "raw_file": "2026-10-08_optn_national_centers_heart_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_heart_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_liver_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_liver_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_lung_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_lung_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_donors_dcd_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_state_all_thru-2026-08-31.csv",
   "snapshot_downloaded": "2026-10-08",
   "parser": "optn_national_data",
+  "same_period": {
+    "available": false,
+    "needs_snapshot_through": "2025-08-31",
+    "note": "Same-period comparison appears once a snapshot through 2025-08-31 exists (snapshots saved monthly since 2026-08-31)."
+  },
+  "snapshots_saved": [
+    "2026-08-31"
+  ],
   "status": "ok",
   "unrecognised_files": [],
   "undated_files": []

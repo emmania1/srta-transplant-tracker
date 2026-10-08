@@ -1,13 +1,273 @@
 {
-  "generated_at": "2026-10-08T21:33:06+00:00",
+  "generated_at": "2026-10-08T21:53:17+00:00",
   "price": {
-    "close": 4.68,
-    "date": "2026-10-07",
-    "week_ago_close": 5.11,
-    "week_ago_date": "2026-09-30",
-    "change_1w_pct": -8.4,
-    "stale": false,
+    "close": 4.47,
+    "date": "2026-10-08",
+    "week_ago_close": 4.83,
+    "week_ago_date": "2026-10-01",
+    "change_1w_pct": -7.5,
+    "stale": false
+  },
+  "prices": {
+    "tickers": {
+      "SRTA": {
+        "close": 4.47,
+        "date": "2026-10-08",
+        "week_ago_close": 4.83,
+        "week_ago_date": "2026-10-01",
+        "change_1w_pct": -7.5,
+        "stale": false
+      },
+      "TMDX": {
+        "close": 79.0,
+        "date": "2026-10-08",
+        "week_ago_close": 78.64,
+        "week_ago_date": "2026-10-01",
+        "change_1w_pct": 0.5,
+        "stale": false
+      },
+      "JOBY": {
+        "close": 5.75,
+        "date": "2026-10-08",
+        "week_ago_close": 5.96,
+        "week_ago_date": "2026-10-01",
+        "change_1w_pct": -3.5,
+        "stale": false
+      }
+    },
+    "joby": {
+      "shares": 2420000,
+      "label": "JOBY contingent consideration (PM estimate)",
+      "source": "PM-provided share count (2.42M). Basis to confirm: SRTA's Q2 2026 10-Q (filed 2026-08-04) says the 5,325,585 JOBY shares received at closing were sold for $70.2M net; up to $35.0M of additional consideration is payable in cash or JOBY shares at Joby's election on performance/retention targets, plus up to $10.0M of indemnity holdbacks.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052256/srta-20260630.htm",
+      "tag": "Manual",
+      "value": 13915000,
+      "value_week_ago": 14423200,
+      "change_1w_pct": -3.5,
+      "price_date": "2026-10-08"
+    },
+    "relative_3m": {
+      "base_date": "2026-07-09",
+      "dates": [
+        "2026-07-09",
+        "2026-07-10",
+        "2026-07-13",
+        "2026-07-14",
+        "2026-07-15",
+        "2026-07-16",
+        "2026-07-17",
+        "2026-07-20",
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-03",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-13",
+        "2026-08-14",
+        "2026-08-17",
+        "2026-08-18",
+        "2026-08-19",
+        "2026-08-20",
+        "2026-08-21",
+        "2026-08-24",
+        "2026-08-25",
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05",
+        "2026-10-06",
+        "2026-10-07",
+        "2026-10-08"
+      ],
+      "SRTA": [
+        100.0,
+        99.61,
+        97.66,
+        102.92,
+        105.65,
+        101.95,
+        100.39,
+        98.64,
+        100.58,
+        99.03,
+        99.22,
+        98.25,
+        100.19,
+        99.22,
+        94.93,
+        99.22,
+        97.86,
+        108.19,
+        108.58,
+        114.04,
+        108.97,
+        112.87,
+        115.79,
+        117.54,
+        117.54,
+        116.37,
+        115.01,
+        115.01,
+        111.11,
+        114.81,
+        116.18,
+        121.64,
+        116.37,
+        120.66,
+        119.3,
+        120.27,
+        116.37,
+        110.33,
+        104.68,
+        105.07,
+        104.68,
+        103.7,
+        103.51,
+        101.75,
+        100.0,
+        101.27,
+        104.48,
+        103.12,
+        101.75,
+        104.87,
+        104.09,
+        105.26,
+        106.82,
+        104.87,
+        102.73,
+        103.9,
+        101.95,
+        99.42,
+        99.61,
+        94.15,
+        92.2,
+        93.76,
+        92.59,
+        91.23,
+        87.13
+      ],
+      "TMDX": [
+        100.0,
+        98.67,
+        104.92,
+        103.32,
+        104.42,
+        105.28,
+        102.48,
+        101.77,
+        102.91,
+        98.63,
+        98.53,
+        100.1,
+        102.9,
+        105.68,
+        108.05,
+        105.46,
+        105.98,
+        112.97,
+        111.86,
+        105.96,
+        111.11,
+        116.21,
+        122.47,
+        123.78,
+        120.54,
+        124.17,
+        122.7,
+        122.39,
+        125.63,
+        130.17,
+        125.85,
+        131.28,
+        129.66,
+        129.66,
+        127.75,
+        127.1,
+        122.5,
+        117.56,
+        113.92,
+        116.76,
+        120.49,
+        124.64,
+        122.27,
+        119.68,
+        117.8,
+        113.84,
+        118.94,
+        122.03,
+        121.29,
+        120.04,
+        119.71,
+        120.92,
+        122.0,
+        120.52,
+        116.22,
+        118.15,
+        114.6,
+        116.46,
+        115.6,
+        108.93,
+        110.53,
+        114.96,
+        111.21,
+        112.3,
+        109.43
+      ],
+      "srta_minus_tmdx_pts": -22.3
+    },
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
+  },
+  "health": {
+    "checked_at": "2026-10-08T21:53:17+00:00",
+    "ok": true,
+    "issues": [],
+    "notices": [],
+    "thresholds": {
+      "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
+      "weekly_optn_max_age_days": 14,
+      "national_optn_max_age_days": 75,
+      "cdc_max_dataset_age_days": 45,
+      "price_max_age_days": 7,
+      "weekly_optn_donors_max_age_days": 21,
+      "_donors_note": "OPTN's donor series runs ~1 week behind the transplant series (e.g. donors through Sep 28 vs transplants through Oct 2), so its limit is 14 + 7 days."
+    },
+    "step_outcomes": {}
   },
   "optn": {
     "status": "ok",
@@ -205,6 +465,349 @@
       "prior_year_discard_rate_pct": 19.72,
       "change_pts": 0.72
     }
+  },
+  "signals": {
+    "thresholds": {
+      "_note": "Thresholds for the rule-based 'What the data says' strip (page + digest). Labels are mechanical: a change inside the flat band is 'flat'. Edit freely.",
+      "volumes": {
+        "measure": "Deceased-donor transplants, last 4 complete weeks vs same weeks last year",
+        "flat_within_pct": 2.0,
+        "labels": {
+          "up": "up",
+          "flat": "flat",
+          "down": "down"
+        }
+      },
+      "distance": {
+        "measure": "Share of transplants travelling 251+ NM, change in points",
+        "flat_within_pts": 1.0,
+        "labels": {
+          "up": "longer",
+          "flat": "flat",
+          "down": "shorter"
+        }
+      },
+      "dcd_share": {
+        "measure": "DCD share of deceased donors, change in points",
+        "flat_within_pts": 1.0,
+        "labels": {
+          "up": "rising",
+          "flat": "flat",
+          "down": "falling"
+        }
+      },
+      "discard_rate": {
+        "measure": "All-organs discard rate, YTD vs same YTD last year, change in points",
+        "flat_within_pts": 0.5,
+        "labels": {
+          "up": "rising",
+          "flat": "flat",
+          "down": "falling"
+        }
+      }
+    },
+    "volumes": {
+      "heart": {
+        "value": -5.8,
+        "unit": "%",
+        "label": "down"
+      },
+      "liver": {
+        "value": 6.8,
+        "unit": "%",
+        "label": "up"
+      },
+      "lung": {
+        "value": 5.4,
+        "unit": "%",
+        "label": "up"
+      },
+      "kidney": {
+        "value": -2.1,
+        "unit": "%",
+        "label": "down"
+      }
+    },
+    "distance": {
+      "heart": {
+        "value": -0.2,
+        "unit": "pts",
+        "label": "flat"
+      },
+      "liver": {
+        "value": -1.8,
+        "unit": "pts",
+        "label": "shorter"
+      },
+      "lung": {
+        "value": -2.8,
+        "unit": "pts",
+        "label": "shorter"
+      },
+      "kidney": {
+        "value": 0.1,
+        "unit": "pts",
+        "label": "flat"
+      }
+    },
+    "dcd_share": {
+      "value": 4.0,
+      "unit": "pts",
+      "current": 53.2,
+      "label": "rising",
+      "basis": "2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year"
+    },
+    "discard_rate": {
+      "value": 0.72,
+      "unit": "pts",
+      "current": 20.44,
+      "label": "rising",
+      "basis": "YTD through September 28 vs same period last year"
+    }
+  },
+  "waitlist": {
+    "all": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 1687,
+        "prior_year_count": 1769,
+        "yoy_pct": -4.6
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 6268,
+        "prior_year_total": 6666,
+        "yoy_pct": -6.0
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 61304,
+        "prior_year_total": 60943,
+        "yoy_pct": 0.6,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    },
+    "heart": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 127,
+        "prior_year_count": 115,
+        "yoy_pct": 10.4
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 430,
+        "prior_year_total": 467,
+        "yoy_pct": -7.9
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 4463,
+        "prior_year_total": 4598,
+        "yoy_pct": -2.9,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    },
+    "kidney": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 1106,
+        "prior_year_count": 1231,
+        "yoy_pct": -10.2
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 4172,
+        "prior_year_total": 4548,
+        "yoy_pct": -8.3
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 40660,
+        "prior_year_total": 40930,
+        "yoy_pct": -0.7,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    },
+    "liver": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 356,
+        "prior_year_count": 351,
+        "yoy_pct": 1.4
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 1324,
+        "prior_year_total": 1323,
+        "yoy_pct": 0.1
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 12727,
+        "prior_year_total": 12084,
+        "yoy_pct": 5.3,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    },
+    "lung": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 84,
+        "prior_year_count": 59,
+        "yoy_pct": 42.4
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 304,
+        "prior_year_total": 284,
+        "yoy_pct": 7.0
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 3004,
+        "prior_year_total": 2883,
+        "yoy_pct": 4.2,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    }
+  },
+  "cdc_overdose": {
+    "period_end": "2026-04",
+    "predicted": 66937,
+    "reported": 65726,
+    "predicted_yoy_pct": -12.1,
+    "reported_yoy_pct": -13.5,
+    "dataset_updated": "2026-09-16"
+  },
+  "sec": {
+    "count": 44,
+    "fetched_at": "2026-10-08T21:45:16+00:00",
+    "form4_sales": [
+      {
+        "filed": "2026-08-13",
+        "owner": "Love Reginald",
+        "roles": [
+          "Director"
+        ],
+        "shares_sold": 5091.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026056841/xslF345X06/wk-form4_1786656778.xml"
+      },
+      {
+        "filed": "2026-06-10",
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "shares_sold": 31671.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042183/xslF345X06/wk-form4_1781121979.xml"
+      },
+      {
+        "filed": "2026-06-10",
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "shares_sold": 4655.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042182/xslF345X06/wk-form4_1781121963.xml"
+      },
+      {
+        "filed": "2026-06-10",
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "shares_sold": 29730.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042180/xslF345X06/wk-form4_1781121946.xml"
+      },
+      {
+        "filed": "2026-06-10",
+        "owner": "Wunsch Scott M",
+        "roles": [
+          "CEO, Logistics"
+        ],
+        "shares_sold": 5550.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042177/xslF345X06/wk-form4_1781121928.xml"
+      },
+      {
+        "filed": "2026-05-26",
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "shares_sold": 50875.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026038171/xslF345X06/wk-form4_1779828592.xml"
+      },
+      {
+        "filed": "2026-05-13",
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "shares_sold": 14306.0,
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026034586/xslF345X06/wk-form4_1778702684.xml"
+      }
+    ],
+    "schedule_13d": [
+      {
+        "filed": "2026-05-08",
+        "form": "SCHEDULE 13D/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000005/xslSCHEDULE_13D_X02/primary_doc.xml"
+      },
+      {
+        "filed": "2026-04-16",
+        "form": "SCHEDULE 13D/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000003/xslSCHEDULE_13D_X02/primary_doc.xml"
+      }
+    ],
+    "new_this_week": []
   },
   "donor_mix_and_distance": {
     "current_label": "2026 YTD (Jan 1\u2013Aug 31)",
@@ -627,32 +1230,57 @@
     },
     "top_headlines": [
       {
-        "headline": "symbol__ Stock Quote Price and Forecast",
-        "source": "CNN",
-        "date": "2026-10-05",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JSXBsWWZnbG51NVFOcVlFeGc2UFVVVEwyTld4QXJmSHQtUnd2cVZDYUx0a3ZSNDFoWW5ENTdBTXNCNjVzSG94bFU5SDQ2SUFm?oc=5",
+        "headline": "Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million",
+        "source": "scanx.trade",
+        "date": "2026-09-28",
+        "url": "https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306",
+        "google_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU9DR1Zqb1hUTVp5S3JoWEMtb3VZVnJBYTJUeDJMTXF2WEhhWEdoMGxGU015cVZaWkRjZXJaZmF5bEVVZ1RZWUtSRUw1S0pfUWVhbXNYdHpENW0zV3FuQURJcTViR2ZaZlZVMnF6bTdZZXQzUnVESVZBRm9UTmYxcFc2LWNncmZHUnVfYnUyeERGcm11enRzU0JYcFhKZVpzMC1OS1p2QmdSUzVhLVRkTl9RMnU1MHR6LUxGSXp6b3o?oc=5",
+        "tags": [
+          "strata"
+        ]
+      },
+      {
+        "headline": "UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants",
+        "source": "The Manila Times",
+        "date": "2026-10-08",
+        "url": "https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp",
+        "google_url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOS19qWU1fSmJQU0F1Uk5vdmd2UHg0MkZvbWNjTW56UGl2VHNlRW1BOGtWWXdXWkc4RTBSZDljR2lONUJQZDQ4eU1oLU5QVXJNMHdYX2Q5c1VCVVNHQmlCcWZMOTVlZ2Nsb0tNYWVtR3BQY0RSYXVqR2locFl3YUx4NzJrMXdtR01JU1ktQTRWanVabjJ4M2dWTnozVUlhSHJyc0YxRGZBVG5sazBUT0RxdV9rNWFJRzlSTVdESzB5RmdTMEF5MjdvQVo1WUdDYXdZcjBKRWpET3F0STVWNUwxQlZqVkFBRFJFOVo3ZmJSS3ZLUG1QWFJGS1k3LV9reVZ4ZDRYa1BJRksxR29LamRIZWs2aUpFSFhS0gGYAkFVX3lxTE5LX2pZTV9KYlBTQXVSTm92Z3ZQeDQyRm9tY2NNbnpQaXZUc2VFbUE4a1ZZd1daRzhFMFJkOWNHaU41QlBkNDh5TWgtTlBVck0wd1hfZDlzVUJVU0dCaUJxZkw5NWVnY2xvS01hZW1HcFBjRFJhdWpHaWhwWXdhTHg3Mmsxd21HTUlTWS1BNFZqdVpuMngzZ1ZOejNVSWFIcnJzRjFEZkFUbmxrMFRPRHF1X2s1YUlHOVJNV0RLMHlGZ1MwQXkyN29BWjVZR0Nhd1lyMEpFakRPcXRJNVY1TDFCVmpWQUFEUkU5WjdmYlJLdktQbVBYUkZLWTctX2t5VnhkNFhrUElGSzFHb0tqZEhlazZpSkVIWFI?oc=5",
+        "tags": [
+          "competitors"
+        ]
+      },
+      {
+        "headline": "Nomination Committee of XVIVO Perfusion AB (publ)",
+        "source": "Yahoo Finance",
+        "date": "2026-09-30",
+        "url": "https://finance.yahoo.com/healthcare/articles/nomination-committee-xvivo-perfusion-ab-141500952.html",
+        "google_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQTRmWWU3Z1RSWWFfYzJQcDNpMVNhcW90eHBVSjJGbTVQdHJZa3RWOEtmX1liRF9RRGlqb21RMDVJMXQ0V3lEODJxUUhFU0I1UFZqNGt6bGFlZzJqUGlrTzZUSVNpNU8ySlZ1WG8tTVhHOTlCR2kxLWp2RTQ5TVAwM2w2a0ZrTTZGa01NSGxSMk0yVFlfZkJHazJYQTNueU15a0E?oc=5",
         "tags": [
           "competitors"
         ]
       }
     ],
-    "fetched_at": "2026-10-08T21:33:05+00:00"
+    "fetched_at": "2026-10-08T21:40:59+00:00"
   },
+  "issue_line": null,
   "bullets": [
-    "Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
-    "Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
-    "Deceased donors recovered, last 4 complete weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
-    "New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); transplants travelling 251+ NM: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts)."
+    "Transplants vs last year, last 4 weeks / YTD (through week ending Sep 30, 2026): Heart \u25bc 5.8% / \u25bc 0.8% \u00b7 Liver \u25b2 6.8% / \u25b2 6.4% \u00b7 Lung \u25b2 5.4% / \u25b2 5.0% \u00b7 Kidney (incl. KP) \u25bc 2.1% / \u25bc 3.9%.",
+    "Signals: Volumes Heart down (-5.8%), Liver up (+6.8%), Lung up (+5.4%), Kidney down (-2.1%) | Distance Heart flat, Liver shorter, Lung shorter, Kidney flat | DCD share rising (+4.0 pts) | Discard rate rising (+0.7 pts).",
+    "Deceased donors recovered, last 4 weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
+    "New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); 251+ NM share: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts).",
+    "Waitlist additions, last 4 weeks vs last year: Heart \u25bc 7.9% \u00b7 Liver \u25b2 0.1% \u00b7 Lung \u25b2 7.0% \u00b7 Kidney (incl. KP) \u25bc 8.3%."
   ],
   "news_line": "1 new news item this week \u2014 Competitors & industry 1.",
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 8, 2026* \u00b7 SRTA $4.68 (\u25bc 8.4% 1-wk)",
-    "\u2022 Transplants, last 4 complete weeks vs same weeks last year: Heart \u25bc 5.8% \u00b7 Liver \u25b2 6.8% \u00b7 Lung \u25b2 5.4% \u00b7 Kidney \u25bc 2.1%.",
-    "\u2022 Year to date vs last year (through week ending Sep 30, 2026): Heart \u25bc 0.8% \u00b7 Liver \u25b2 6.4% \u00b7 Lung \u25b2 5.0% \u00b7 Kidney \u25bc 3.9%.",
-    "\u2022 Deceased donors recovered, last 4 complete weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
-    "\u2022 New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); transplants travelling 251+ NM: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts).",
+    "*SRTA Transplant Tracker \u2014 week of Oct 8, 2026* \u00b7 SRTA $4.47 (\u25bc 7.5% 1-wk)",
+    "\u2022 Transplants vs last year, last 4 weeks / YTD (through week ending Sep 30, 2026): Heart \u25bc 5.8% / \u25bc 0.8% \u00b7 Liver \u25b2 6.8% / \u25b2 6.4% \u00b7 Lung \u25b2 5.4% / \u25b2 5.0% \u00b7 Kidney (incl. KP) \u25bc 2.1% / \u25bc 3.9%.",
+    "\u2022 Signals: Volumes Heart down (-5.8%), Liver up (+6.8%), Lung up (+5.4%), Kidney down (-2.1%) | Distance Heart flat, Liver shorter, Lung shorter, Kidney flat | DCD share rising (+4.0 pts) | Discard rate rising (+0.7 pts).",
+    "\u2022 Deceased donors recovered, last 4 weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
+    "\u2022 New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); 251+ NM share: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts).",
+    "\u2022 Waitlist additions, last 4 weeks vs last year: Heart \u25bc 7.9% \u00b7 Liver \u25b2 0.1% \u00b7 Lung \u25b2 7.0% \u00b7 Kidney (incl. KP) \u25bc 8.3%.",
     "Headlines (1 new news item this week: Competitors & industry 1):",
-    "  \u2013 <https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JSXBsWWZnbG51NVFOcVlFeGc2UFVVVEwyTld4QXJmSHQtUnd2cVZDYUx0a3ZSNDFoWW5ENTdBTXNCNjVzSG94bFU5SDQ2SUFm?oc=5|symbol__ Stock Quote Price and Forecast> (CNN, 2026-10-05)",
-    "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
+    "  \u2013 <https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306|Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million> (scanx.trade, 2026-09-28)",
+    "  \u2013 <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, 2026-10-08)",
+    "  \u2013 <https://finance.yahoo.com/healthcare/articles/nomination-committee-xvivo-perfusion-ab-141500952.html|Nomination Committee of XVIVO Perfusion AB (publ)> (Yahoo Finance, 2026-09-30)"
   ]
 }

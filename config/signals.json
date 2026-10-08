@@ -1,0 +1,11 @@
+{
+  "_note": "Thresholds for the rule-based 'What the data says' strip (page + digest). Labels are mechanical: a change inside the flat band is 'flat'. Edit freely.",
+  "volumes": {"measure": "Deceased-donor transplants, last 4 complete weeks vs same weeks last year", "flat_within_pct": 2.0,
+              "labels": {"up": "up", "flat": "flat", "down": "down"}},
+  "distance": {"measure": "Share of transplants travelling 251+ NM, change in points", "flat_within_pts": 1.0,
+               "labels": {"up": "longer", "flat": "flat", "down": "shorter"}},
+  "dcd_share": {"measure": "DCD share of deceased donors, change in points", "flat_within_pts": 1.0,
+                "labels": {"up": "rising", "flat": "flat", "down": "falling"}},
+  "discard_rate": {"measure": "All-organs discard rate, YTD vs same YTD last year, change in points", "flat_within_pts": 0.5,
+                   "labels": {"up": "rising", "flat": "flat", "down": "falling"}}
+}

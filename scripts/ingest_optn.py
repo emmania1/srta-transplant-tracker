@@ -48,6 +48,10 @@ OUTPUTS = {
                  "title": "Deceased-donor transplants by donor-to-center distance band"},
     "location": {"source": OPTN_NATIONAL,
                  "title": "Deceased-donor transplants by transplant-center state (monthly snapshots)"},
+    "centers": {"source": OPTN_NATIONAL,
+                "title": "Top transplant centers: deceased-donor heart + liver + lung"},
+    "waitlist_weekly": {"source": OPTN_METRICS,
+                        "title": "Weekly waitlist additions by organ (national)"},
     "regions_weekly": {"source": OPTN_METRICS,
                        "title": "Weekly deceased-donor transplants (all organs) by OPTN region"},
 }
@@ -58,9 +62,10 @@ DON_WEEKLY_FILE = re.compile(r"_optn_metrics_don_weekly_deceased\.csv$")
 DON_TABLE_FILE = re.compile(r"_optn_metrics_don_table_deceased\.csv$")
 DON_META_FILE = re.compile(r"_optn_metrics_don_table_meta\.json$")
 DON_TABLE_HEADER = ["yr", "total", "pct_chg", "disc", "util"]
+WL_FILE = re.compile(r"_optn_metrics_wl_weekly_(heart|liver|lung|kidney|all)\.csv$")
 REGION_FILE = re.compile(r"_optn_metrics_tx_weekly_deceased_all_region(\d{2})\.csv$")
 REGIONS_CONFIG = ROOT / "config" / "optn_regions.json"
-LIVE_OUTPUTS = {"transplants_weekly", "donors_weekly", "regions_weekly", "donor_mix", "distance", "location"}
+LIVE_OUTPUTS = {"centers", "transplants_weekly", "donors_weekly", "waitlist_weekly", "regions_weekly", "donor_mix", "distance", "location"}
 
 
 def parse_don_table(path, meta_path):
@@ -132,6 +137,7 @@ def main():
     weekly = {}  # organ -> (path, as_of); newest download wins
     don = {}     # weekly / table / meta -> (path, as_of)
     regions = {}  # "1".."11" -> (path, as_of)
+    waitlist = {}  # organ -> (path, as_of)
     for path, as_of in files:
         if as_of is None:
             undated.append(path.name)
@@ -144,6 +150,10 @@ def main():
             continue
         if DON_META_FILE.search(path.name):
             don.setdefault("meta", (path, as_of))
+            continue
+        wm = WL_FILE.search(path.name)
+        if wm:
+            waitlist.setdefault(wm.group(1), (path, as_of))
             continue
         rm = REGION_FILE.search(path.name)
         if rm:
@@ -190,6 +200,22 @@ def main():
                             "ytd_table_file": tpath.name, "ytd_table_as_of": tas_of.isoformat(),
                             "discard_rate_definition": "OPTN metrics dashboard 'All Organs Discard Rate' for deceased donors recovered year to date"})
         results["donors_weekly"] = payload
+
+    if waitlist:
+        organs, excluded = {}, {}
+        for organ, (path, as_of) in sorted(waitlist.items()):
+            rows, dropped = parse_weekly(path, as_of)
+            organs[organ] = rows
+            excluded[organ] = [f"{r['yr']}-W{r['week']:02d}" for r in dropped]
+        results["waitlist_weekly"] = {
+            "organs": organs, "excluded_incomplete_weeks": excluded,
+            "raw_file": ", ".join(p.name for p, _ in waitlist.values()),
+            "data_as_of": min(a for _, a in waitlist.values()).isoformat(),
+            "parser": "optn_metrics_wl_weekly", "region": "National",
+            "organ_definitions": {"kidney": ("Includes kidney-pancreas (dashboard definition): 2025 = 54,918 vs 53,171 "
+                                             "kidney + 1,688 kidney-pancreas in OPTN national data (within 0.1%)")},
+            "note": "Waitlist additions = new registrations added to the OPTN waiting list; a demand indicator.",
+        }
 
     if regions:
         cfg = json.loads(REGIONS_CONFIG.read_text())

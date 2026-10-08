@@ -1,15 +1,5 @@
 // SRTA Transplant Tracker — renders everything from data/*.json. No numbers live in this file.
 const ORGANS = ["heart", "liver", "lung", "kidney"];
-const CADENCE = {
-  price: "Weekly (Sun) via GitHub Action",
-  news: "Weekly (Sun) via GitHub Action; 90-day window",
-  transplants_weekly: "Weekly (Sun) via GitHub Action",
-  donors_weekly: "Weekly (Sun) via GitHub Action",
-  donor_mix: "Monthly (OPTN refresh); checked every Sunday",
-  distance: "Monthly (OPTN refresh); checked every Sunday",
-  regions_weekly: "Weekly (Sun) via GitHub Action",
-  location: "Monthly snapshot (OPTN refresh); checked every Sunday",
-};
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -56,17 +46,31 @@ function isoWeek(weekStart) {
 }
 
 // ---------- header ----------
+const fmtUsd = (v, d = 2) => (v == null ? "n/a" : `$${v.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d })}`);
+const fmtUsdM = (v) => (v == null ? "n/a" : `$${(v / 1e6).toFixed(1)}M`);
+
 function renderHeader(summary, price) {
-  const p = summary.price;
-  if (!p) {
-    $("price-val").textContent = "—";
-    $("price-chg").innerHTML = `<span class="flat">Awaiting data</span>`;
-  } else {
-    $("price-val").textContent = `$${p.close.toFixed(2)}`;
-    $("price-chg").innerHTML = `${yoy(p.change_1w_pct)} <span class="updated">1 wk</span>`;
-    let u = `Close ${fmtDate(p.date)}`;
-    if (price.fetch_error) u += ` · last refresh failed ${fmtDate(price.fetch_error.at)}, showing last good value`;
+  const P = (summary.prices || {}).tickers || {};
+  const tick = price.tickers || {};
+  const box = (sym, valId, chgId) => {
+    const p = P[sym];
+    if (!p) { $(valId).textContent = "—"; $(chgId).innerHTML = `<span class="flat">Awaiting data</span>`; return; }
+    $(valId).textContent = fmtUsd(p.close);
+    $(chgId).innerHTML = `${yoy(p.change_1w_pct)} <span class="updated">1 wk</span>`;
+  };
+  box("SRTA", "price-val", "price-chg");
+  box("TMDX", "tmdx-val", "tmdx-chg");
+  box("JOBY", "joby-val", "joby-chg");
+  const s = P.SRTA;
+  if (s) {
+    let u = `Close ${fmtDate(s.date)}`;
+    const err = Object.entries(tick).filter(([, v]) => v.fetch_error).map(([k]) => k);
+    if (err.length) u += ` · refresh failed for ${err.join(", ")}; showing last good values`;
     $("price-updated").textContent = u;
+  }
+  const j = (summary.prices || {}).joby;
+  if (j) {
+    $("joby-value").innerHTML = `${esc(j.label)}: <strong>${fmtUsdM(j.value)}</strong> (${(j.shares / 1e6).toFixed(2)}M sh × price; ${yoy(j.change_1w_pct)} 1 wk) <span class="tier-tag manual" title="${esc(j.source)}">Manual sh count</span>`;
   }
   $("page-updated").textContent = summary.generated_at ? `Last updated ${fmtDate(summary.generated_at)}` : "";
   $("digest-updated").textContent = summary.generated_at ? `Digest generated ${fmtDate(summary.generated_at)}` : "";
@@ -75,35 +79,43 @@ function renderHeader(summary, price) {
     + (summary.news_line ? `<li class="muted-li">${esc(summary.news_line)}</li>` : "");
 }
 
-// ---------- volumes ----------
-let volChart = null;
-let currentOrgan = "heart";
-
-function renderCards(summary, tw) {
-  const organs = (summary.optn || {}).organs || {};
-  const ok = tw.status === "ok";
-  $("organ-cards").innerHTML = ORGANS.map((o) => {
-    const m = organs[o];
-    if (!ok || !m) {
-      return `<button class="card awaiting-card" data-organ="${o}" aria-pressed="${o === currentOrgan}">
-        <div class="organ">${cap(o)}</div><div class="kpi-label">Last 4 wks vs LY</div>
-        <div class="kpi">Awaiting data</div></button>`;
-    }
-    const t4 = m.trailing_4wk || {}, ytd = m.ytd || {}, w = m.latest_week || {};
-    return `<button class="card" data-organ="${o}" aria-pressed="${o === currentOrgan}">
-      <div class="organ">${cap(o)}</div>
-      <div class="kpi-label">Last 4 wks vs LY</div>
-      <div class="kpi">${yoy(t4.yoy_pct)}</div>
-      <div class="sub">${fmtInt(t4.total)} vs ${fmtInt(t4.prior_year_total)}</div>
-      <div class="kpi-label">YTD vs LY</div>
-      <div class="sub">${yoy(ytd.yoy_pct)} · ${fmtInt(ytd.total)}</div>
-      <div class="kpi-label">Wk ending ${fmtDate(w.week_end)}</div>
-      <div class="sub">${fmtInt(w.count)} (${yoy(w.yoy_pct)})</div>
-    </button>`;
-  }).join("");
-  $("organ-cards").querySelectorAll(".card").forEach((b) =>
-    b.addEventListener("click", () => selectOrgan(b.dataset.organ, tw)));
+function renderHealth(h) {
+  const issues = (h && h.issues) || [];
+  const banner = $("health-banner");
+  if (issues.length) {
+    banner.hidden = false;
+    banner.innerHTML = `<strong>⚠ Data issue${issues.length > 1 ? "s" : ""}</strong> (checked ${fmtDate(h.checked_at)}). The page is showing the last good data.<ul>${issues.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+  }
+  const notes = (h && h.notices) || [];
+  $("health-notices").textContent = notes.length ? `Setup notes: ${notes.join(" ")}` : "";
 }
+
+function renderSignals(summary) {
+  const sig = summary.signals;
+  if (!sig) { $("signals-body").innerHTML = awaiting("Signal strip", "OPTN data"); return; }
+  const cls = (label) => ({ up: "up", longer: "up", rising: "up", down: "down", shorter: "down", falling: "down" }[label] || "flat");
+  const arrowFor = (label) => ({ up: "▲", longer: "▲", rising: "▲", down: "▼", shorter: "▼", falling: "▼" }[label] || "—");
+  const num = (v, unit) => (v == null ? "n/a" : `${v > 0 ? "+" : ""}${v.toFixed(1)}${unit === "%" ? "%" : " pts"}`);
+  // labels, not judgments: neutral chips with arrows + text
+  const chip = (name, v) => `<span class="sig-chip"><span class="sig-name">${name}</span> <span class="sig-label">${arrowFor(v.label)} ${esc(v.label || "n/a")}</span> <span class="sig-num">${num(v.value, v.unit)}</span></span>`;
+  const t = sig.thresholds;
+  const rows = [
+    ["Volumes", "4-wk YoY", `flat = within ±${t.volumes.flat_within_pct}%`, ORGANS.map((o) => chip(o === "kidney" ? "Kidney (incl. KP)" : cap(o), sig.volumes[o])).join("")],
+    sig.distance ? ["Distance", "251+ NM share", `flat = within ±${t.distance.flat_within_pts} pt`, ORGANS.map((o) => chip(aloneLabel(o), sig.distance[o])).join("")] : null,
+    sig.dcd_share ? ["DCD share", esc(sig.dcd_share.basis), `flat = within ±${t.dcd_share.flat_within_pts} pt`, chip("All deceased donors", sig.dcd_share)] : null,
+    sig.discard_rate ? ["Discard rate", esc(sig.discard_rate.basis), `flat = within ±${t.discard_rate.flat_within_pts} pt`, chip("All organs", sig.discard_rate)] : null,
+  ].filter(Boolean);
+  $("signals-body").innerHTML = rows.map(([h, basis, rule, chips]) =>
+    `<div class="sig-row"><div class="sig-head"><strong>${h}</strong><span class="updated">${basis} · ${rule}</span></div><div class="sig-chips">${chips}</div></div>`).join("");
+}
+
+// ---------- weekly organ panels (transplants, waitlist additions) ----------
+// Kidney differs by source: the OPTN metrics dashboard's Kidney includes kidney-pancreas;
+// OPTN national data's Kidney is kidney alone. Labels say which, everywhere.
+const KIDNEY_DASH = "Kidney (incl. kidney-pancreas)";
+const KIDNEY_ALONE = "Kidney (alone)";
+const dashLabel = (o) => (o === "kidney" ? KIDNEY_DASH : o === "all" ? "All organs (OPTN total)" : cap(o));
+const aloneLabel = (o) => (o === "kidney" ? KIDNEY_ALONE : cap(o));
 
 function totalSeries(organs) {
   const maps = ORGANS.map((o) => new Map((organs[o] || []).map((r) => [r.week_start, r])));
@@ -112,69 +124,99 @@ function totalSeries(organs) {
     .map((k) => ({ week_start: k, week_end: maps[0].get(k).week_end, count: maps.reduce((s, m) => s + m.get(k).count, 0) }));
 }
 
-function selectOrgan(organ, tw) {
-  currentOrgan = organ;
-  document.querySelectorAll("#organ-cards .card").forEach((c) => c.setAttribute("aria-pressed", c.dataset.organ === organ));
-  document.querySelectorAll("#organ-tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.organ === organ));
-  drawVolumes(tw);
-}
+function weeklyPanel({ id, data, metrics, what, src }) {
+  // id prefix: elements `${id}-cards`, `${id}-tabs`, `${id}-chart-wrap`, `${id}-chart`, `${id}-table`
+  let current = "heart", chart = null;
+  const ok = data.status === "ok";
+  const cardsEl = $(`${id}-cards`), tabsEl = $(`${id}-tabs`);
 
-function drawVolumes(tw) {
-  const wrap = $("vol-chart-wrap");
-  if (tw.status !== "ok") {
-    wrap.style.height = "auto";
-    wrap.innerHTML = awaiting("Weekly transplant volumes by organ", "the first OPTN metrics export");
-    document.querySelector("#volumes .table-view").hidden = true;
-    return;
-  }
-  const organs = tw.organs || {};
-  const rows = currentOrgan === "all" ? (organs.all?.length ? organs.all : totalSeries(organs)) : organs[currentOrgan] || [];
-  const byYear = {};
-  rows.forEach((r) => {
-    const { year, week } = weekKey(r);
-    (byYear[year] = byYear[year] || {})[week] = r.count;
-  });
-  const years = Object.keys(byYear).map(Number).sort((a, b) => b - a).slice(0, 3);
-  const colors = [css("--yr0"), css("--yr1"), css("--yr2")];
-  const labels = Array.from({ length: years.length && rows[0]?.yr != null ? 52 : 53 }, (_, i) => i + 1);
-  const datasets = years.map((y, i) => ({
-    label: String(y),
-    data: labels.map((w) => byYear[y][w] ?? null),
-    borderColor: colors[i], backgroundColor: colors[i],
-    borderWidth: i === 0 ? 2.5 : 1.5, pointRadius: 0, pointHoverRadius: 4, spanGaps: false, tension: 0.2,
-  }));
-  if (volChart) volChart.destroy();
-  volChart = new Chart($("vol-chart"), {
-    type: "line",
-    data: { labels, datasets },
-    options: {
-      maintainAspectRatio: false,
-      interaction: { mode: "index", intersect: false },
-      plugins: {
-        legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 14, boxHeight: 2 } },
-        tooltip: { callbacks: { title: (it) => `Week ${it[0].label}`, label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } },
+  const cards = () => {
+    cardsEl.innerHTML = ORGANS.map((o) => {
+      const m = (metrics || {})[o];
+      if (!ok || !m) {
+        return `<button class="card awaiting-card" data-organ="${o}" aria-pressed="${o === current}">
+          <div class="organ">${dashLabel(o)}</div><div class="kpi-label">Last 4 wks vs LY</div><div class="kpi">Awaiting data</div></button>`;
+      }
+      const t4 = m.trailing_4wk || {}, ytd = m.ytd || {}, w = m.latest_week || {};
+      return `<button class="card" data-organ="${o}" aria-pressed="${o === current}">
+        <div class="organ">${dashLabel(o)}</div>
+        <div class="kpi-label">Last 4 wks vs LY</div>
+        <div class="kpi">${yoy(t4.yoy_pct)}</div>
+        <div class="sub">${fmtInt(t4.total)} vs ${fmtInt(t4.prior_year_total)}</div>
+        <div class="kpi-label">YTD vs LY</div>
+        <div class="sub">${yoy(ytd.yoy_pct)} · ${fmtInt(ytd.total)}</div>
+        <div class="kpi-label">Wk ending ${fmtDate(w.week_end)}</div>
+        <div class="sub">${fmtInt(w.count)} (${yoy(w.yoy_pct)})</div>
+      </button>`;
+    }).join("");
+    cardsEl.querySelectorAll(".card").forEach((b) => b.addEventListener("click", () => select(b.dataset.organ)));
+  };
+
+  const draw = () => {
+    const wrap = $(`${id}-chart-wrap`);
+    if (!ok) {
+      wrap.style.height = "auto";
+      wrap.innerHTML = awaiting(what, src);
+      const tv = $(`${id}-table`)?.closest(".table-view");
+      if (tv) tv.hidden = true;
+      return;
+    }
+    const organs = data.organs || {};
+    const rows = current === "all" ? (organs.all?.length ? organs.all : totalSeries(organs)) : organs[current] || [];
+    const byYear = {};
+    rows.forEach((r) => { const { year, week } = weekKey(r); (byYear[year] = byYear[year] || {})[week] = r.count; });
+    const years = Object.keys(byYear).map(Number).sort((a, b) => b - a).slice(0, 3);
+    const colors = [css("--yr0"), css("--yr1"), css("--yr2")];
+    const labels = Array.from({ length: rows[0]?.yr != null ? 52 : 53 }, (_, i) => i + 1);
+    const datasets = years.map((y, i) => ({
+      label: `${dashLabel(current)} ${y}`,
+      data: labels.map((w) => byYear[y][w] ?? null),
+      borderColor: colors[i], backgroundColor: colors[i],
+      borderWidth: i === 0 ? 2.5 : 1.5, pointRadius: 0, pointHoverRadius: 4, spanGaps: false, tension: 0.2,
+    }));
+    if (chart) chart.destroy();
+    chart = new Chart($(`${id}-chart`), {
+      type: "line", data: { labels, datasets },
+      options: {
+        maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+        plugins: {
+          legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 14, boxHeight: 2 } },
+          tooltip: { callbacks: { title: (it) => `Week ${it[0].label}`, label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } },
+        },
+        scales: {
+          x: { title: { display: true, text: "Week of year (OPTN: week 1 starts Jan 1)", color: css("--muted") }, ticks: { color: css("--muted"), maxTicksLimit: 14 }, grid: { display: false } },
+          y: { ticks: { color: css("--muted"), callback: (v) => fmtInt(v) }, grid: { color: css("--grid") } },
+        },
       },
-      scales: {
-        x: { title: { display: true, text: rows[0]?.yr != null ? "Week of year (OPTN: week 1 starts Jan 1)" : "ISO week", color: css("--muted") }, ticks: { color: css("--muted"), maxTicksLimit: 14 }, grid: { display: false } },
-        y: { ticks: { color: css("--muted"), callback: (v) => fmtInt(v) }, grid: { color: css("--grid") } },
-      },
-    },
-  });
-  // table view
-  $("vol-table").innerHTML = `<div class="scroll-x"><table><thead><tr><th>Week</th>${years.map((y) => `<th>${y}</th>`).join("")}</tr></thead><tbody>${
-    labels.filter((w) => years.some((y) => byYear[y][w] != null)).reverse()
-      .map((w) => `<tr><td>W${w}</td>${years.map((y) => `<td>${fmtInt(byYear[y][w] ?? null)}</td>`).join("")}</tr>`).join("")
-  }</tbody></table></div>`;
+    });
+    $(`${id}-table`).innerHTML = `<div class="scroll-x"><table><thead><tr><th>Week</th>${years.map((y) => `<th>${y}</th>`).join("")}</tr></thead><tbody>${
+      labels.filter((w) => years.some((y) => byYear[y][w] != null)).reverse()
+        .map((w) => `<tr><td>W${w}</td>${years.map((y) => `<td>${fmtInt(byYear[y][w] ?? null)}</td>`).join("")}</tr>`).join("")
+    }</tbody></table></div>`;
+  };
+
+  const select = (o) => {
+    current = o;
+    cardsEl.querySelectorAll(".card").forEach((c) => c.setAttribute("aria-pressed", c.dataset.organ === o));
+    tabsEl.querySelectorAll("button").forEach((b) => b.setAttribute("aria-selected", b.dataset.organ === o));
+    draw();
+  };
+
+  cards();
+  tabsEl.innerHTML = [...ORGANS, "all"].map((o) =>
+    `<button role="tab" data-organ="${o}" aria-selected="${o === current}">${dashLabel(o)}</button>`).join("");
+  tabsEl.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => select(b.dataset.organ)));
+  draw();
 }
 
 function renderVolumes(summary, tw) {
-  $("vol-updated").textContent = tw.status === "ok"
-    ? `OPTN pull ${fmtDate(tw.data_as_of)}` : "Awaiting first OPTN file";
-  renderCards(summary, tw);
-  $("organ-tabs").innerHTML = [...ORGANS, "all"].map((o) =>
-    `<button role="tab" data-organ="${o}" aria-selected="${o === currentOrgan}">${o === "all" ? "All organs (OPTN total)" : cap(o)}</button>`).join("");
-  $("organ-tabs").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => selectOrgan(b.dataset.organ, tw)));
-  drawVolumes(tw);
+  $("vol-updated").textContent = tw.status === "ok" ? `OPTN pull ${fmtDate(tw.data_as_of)}` : "Awaiting first OPTN file";
+  weeklyPanel({ id: "vol", data: tw, metrics: (summary.optn || {}).organs, what: "Weekly transplant volumes by organ", src: "the OPTN metrics download" });
+}
+
+function renderWaitlist(summary, wl) {
+  $("wl-updated").textContent = wl.status === "ok" ? `OPTN pull ${fmtDate(wl.data_as_of)}` : "Awaiting first OPTN file";
+  weeklyPanel({ id: "wl", data: wl, metrics: summary.waitlist, what: "Weekly waitlist additions by organ", src: "the OPTN metrics waitlist download" });
 }
 
 function renderDonorLine(summary, dw) {
@@ -216,7 +258,7 @@ function renderDonorMix(d) {
   $("mix-updated").textContent = updatedLabel(d);
   if (d.status !== "ok") { $("mix-body").innerHTML = awaiting("DBD vs. DCD donor counts and DCD share by organ", "the OPTN national data"); return; }
   const cy = String(d.current_year), py = String(d.prior_year);
-  const rows = [["All deceased donors", d.donors], ...ORGANS.map((o) => [`${cap(o)} transplants`, d.transplants_by_organ[o]])];
+  const rows = [["All deceased donors", d.donors], ...ORGANS.map((o) => [`${aloneLabel(o)} transplants`, d.transplants_by_organ[o]])];
   const tbl = rows.map(([name, v]) => {
     const c = v[cy], p = v[py];
     const ch = c.dcd_share_pct != null && p.dcd_share_pct != null ? Math.round(10 * (c.dcd_share_pct - p.dcd_share_pct)) / 10 : null;
@@ -228,7 +270,7 @@ function renderDonorMix(d) {
       <tbody>${tbl}</tbody></table></div>
     <h3 class="sub-head">DCD share by year</h3>
     <div class="chart-wrap short"><canvas id="mix-chart" aria-label="DCD share by year"></canvas></div>
-    <p class="note">${d.current_year} is year to date (through ${fmtDate(d.period_end)}). Kidney here is kidney alone; kidney-pancreas is a separate OPTN category.</p>`;
+    <p class="note">${d.current_year} is year to date (through ${fmtDate(d.period_end)}). ${KIDNEY_ALONE}: OPTN national data counts kidney-pancreas separately, unlike the weekly volume panel.</p>`;
   const years = d.years.map(String);
   const datasets = rows.map(([name, v], i) => ({
     label: name.replace(" transplants", ""),
@@ -265,7 +307,7 @@ function renderDistance(d) {
     const c = d.organs[o][cy], p = d.organs[o][py];
     const ch = c.long_share_pct != null && p.long_share_pct != null ? Math.round(10 * (c.long_share_pct - p.long_share_pct)) / 10 : null;
     const cells = (x) => bands.map((b) => `<td>${pctTxt(x.shares_pct[b])}</td>`).join("");
-    return `<tr><td rowspan="2"><strong>${cap(o)}</strong></td><td>${esc(d.current_label)}</td>${cells(c)}<td rowspan="2"><strong>${pctTxt(c.long_share_pct)}</strong> vs ${pctTxt(p.long_share_pct)}<br>${ptsChange(ch)}</td></tr>
+    return `<tr><td rowspan="2"><strong>${aloneLabel(o)}</strong></td><td>${esc(d.current_label)}</td>${cells(c)}<td rowspan="2"><strong>${pctTxt(c.long_share_pct)}</strong> vs ${pctTxt(p.long_share_pct)}<br>${ptsChange(ch)}</td></tr>
             <tr class="prior"><td>${esc(d.prior_label)}</td>${cells(p)}</tr>`;
   }).join("");
   $("dist-body").innerHTML = `
@@ -273,8 +315,8 @@ function renderDistance(d) {
     <details class="table-view"><summary>Show as table</summary><div class="scroll-x"><table class="dist-table">
       <thead><tr><th>Organ</th><th>Period</th>${bands.map((b) => `<th>${esc(b)} NM</th>`).join("")}<th>251+ NM share</th></tr></thead>
       <tbody>${tbl}</tbody></table></div></details>
-    <p class="note">${py} = full year; ${cy} YTD = ${esc(d.current_label.replace(/^\d{4} YTD /, ""))}. Shares exclude transplants with an unknown distance (none in these periods). Kidney is kidney alone.</p>`;
-  const labels = ORGANS.flatMap((o) => [`${cap(o)} ${py}`, `${cap(o)} ${cy} YTD`]);
+    <p class="note">${py} = full year; ${cy} YTD = ${esc(d.current_label.replace(/^\d{4} YTD /, ""))}. Shares exclude transplants with an unknown distance (none in these periods). ${KIDNEY_ALONE}: kidney-pancreas is a separate OPTN category here.</p>`;
+  const labels = ORGANS.flatMap((o) => [`${aloneLabel(o)} ${py}`, `${aloneLabel(o)} ${cy} YTD`]);
   const bandColors = ["--band-1", "--band-2", "--band-3", "--band-4", "--band-5"];
   const datasets = bands.map((b, i) => ({
     label: `${b} NM`,
@@ -343,11 +385,21 @@ function renderLocation(d) {
 
 // ---------- news ----------
 const NEWS_PAGE = 25;
+function newsItem(i, labels) {
+  const href = i.publisher_url || i.url;
+  return `<li>
+    <a href="${esc(href)}" target="_blank" rel="noopener">${esc(i.headline)}</a>
+    <div class="news-meta">${esc(i.source)} · ${fmtDate(i.date)} ${i.tags.map((t) => `<span class="chip">${esc(labels[t] || t)}</span>`).join("")}${i.publisher_url ? "" : ` <a class="gn" href="${esc(i.url)}" target="_blank" rel="noopener">via Google News</a>`}</div>
+  </li>`;
+}
 function renderNews(news) {
   $("news-updated").textContent = news.fetched_at ? `Fetched ${fmtDate(news.fetched_at)} · last ${news.lookback_days} days` : "Awaiting first fetch";
   const items = news.items || [];
   const groups = news.groups || [];
   const labels = Object.fromEntries(groups.map((g) => [g.id, g.label]));
+  const collapsedIds = new Set(groups.filter((g) => g.collapsed).map((g) => g.id));
+  // an item goes to the collapsed section only if ALL its tags are collapsed groups
+  const isCollapsed = (i) => i.tags.length && i.tags.every((t) => collapsedIds.has(t));
   let filter = "all", shown = NEWS_PAGE;
   const filters = $("news-filters");
   filters.innerHTML = [{ id: "all", label: "All" }, ...groups].map((g) => {
@@ -355,12 +407,14 @@ function renderNews(news) {
     return `<button data-f="${g.id}" aria-pressed="${g.id === "all"}">${esc(g.label)} (${n})</button>`;
   }).join("");
   const draw = () => {
-    const list = items.filter((i) => filter === "all" || i.tags.includes(filter));
-    $("news-list").innerHTML = list.length ? list.slice(0, shown).map((i) => `<li>
-      <a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.headline)}</a>
-      <div class="news-meta">${esc(i.source)} · ${fmtDate(i.date)} ${i.tags.map((t) => `<span class="chip">${esc(labels[t] || t)}</span>`).join("")}</div>
-    </li>`).join("") : `<li class="awaiting">No items in this category in the last ${news.lookback_days || 90} days.</li>`;
-    $("news-more").hidden = list.length <= shown;
+    const main = filter === "all" ? items.filter((i) => !isCollapsed(i)) : items.filter((i) => i.tags.includes(filter));
+    $("news-list").innerHTML = main.length ? main.slice(0, shown).map((i) => newsItem(i, labels)).join("")
+      : `<li class="awaiting">No items in this category in the last ${news.lookback_days || 90} days.</li>`;
+    $("news-more").hidden = main.length <= shown;
+    const col = filter === "all" ? items.filter(isCollapsed) : [];
+    $("news-collapsed").hidden = !col.length;
+    $("news-collapsed-sum").textContent = `${[...collapsedIds].map((id) => labels[id]).join(", ")}: ${col.length} more item${col.length === 1 ? "" : "s"} (collapsed so they don't crowd the feed)`;
+    $("news-collapsed-list").innerHTML = col.map((i) => newsItem(i, labels)).join("");
   };
   filters.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
     filter = b.dataset.f; shown = NEWS_PAGE;
@@ -372,43 +426,189 @@ function renderNews(news) {
   draw();
 }
 
+// ---------- centers ----------
+function renderCenters(d) {
+  $("ctr-updated").textContent = d.status === "ok" ? `OPTN data through ${fmtDate(d.period_end)} · as of ${fmtDate(d.data_as_of)}` : "Awaiting OPTN data";
+  if (d.status !== "ok") { $("ctr-body").innerHTML = awaiting("Transplant center volumes", "the OPTN national data"); return; }
+  const fy = d.full_year, py = d.comparison_year;
+  $("ctr-note").textContent = `Deceased-donor heart + liver + lung transplants by transplant center, ranked by ${fy}. ${d.yoy_note} ${d.centers_with_volume} centers had volume in ${fy}.`;
+  $("ctr-body").innerHTML = `<div class="scroll-x"><table>
+    <thead><tr><th>#</th><th>Center</th><th>${fy}</th><th>${py}</th><th>YoY (${fy} vs ${py})</th><th>Heart / Liver / Lung ${fy}</th><th>${d.current_year} YTD</th></tr></thead>
+    <tbody>${d.rows.map((r, i) => `<tr><td>${i + 1}</td><td><strong>${esc(r.center)}</strong><div class="cell-sub">${esc(r.center_code)}</div></td>
+      <td>${fmtInt(r["total_" + fy])}</td><td>${fmtInt(r["total_" + py])}</td><td>${yoy(r.yoy_pct)}</td>
+      <td>${["heart", "liver", "lung"].map((o) => fmtInt(r.organs[o]?.[String(fy)] ?? 0)).join(" / ")}</td>
+      <td>${fmtInt(r.total_ytd)}</td></tr>`).join("")}</tbody></table></div>`;
+}
+
+// ---------- CDC ----------
+let cdcChart = null;
+function renderCdc(d) {
+  if (d.status !== "ok") { $("cdc-body").innerHTML = awaiting("12-month rolling overdose deaths", "the CDC VSRR dataset"); return; }
+  $("cdc-updated").textContent = `CDC dataset updated ${fmtDate(d.dataset_updated)}${d.fetch_error ? " · last refresh failed" : ""}`;
+  const s = d.series.filter((x) => x.year >= d.series[d.series.length - 1].year - 5);
+  const last = d.series[d.series.length - 1];
+  const mlabel = (x) => new Date(Date.UTC(x.year, x.month - 1, 15)).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+  $("cdc-body").innerHTML = `
+    <div class="context-line"><span><strong>12 months ending ${mlabel(last)}:</strong> ${fmtInt(last.predicted)} predicted (${yoy(last.predicted_yoy_pct)} YoY) · ${fmtInt(last.reported)} reported (${yoy(last.reported_yoy_pct)} YoY)</span></div>
+    <div class="chart-wrap short"><canvas id="cdc-chart" aria-label="12-month rolling overdose deaths"></canvas></div>
+    <p class="note">${esc(d.note)} Lower overdose deaths mean fewer potential brain-death donors; this is context, not a forecast.</p>`;
+  if (cdcChart) cdcChart.destroy();
+  cdcChart = new Chart($("cdc-chart"), {
+    type: "line",
+    data: { labels: s.map(mlabel), datasets: [
+      { label: "Predicted (adjusted for reporting delay)", data: s.map((x) => x.predicted), borderColor: css("--s1"), backgroundColor: css("--s1"), borderWidth: 2.5, pointRadius: 0 },
+      { label: "Reported", data: s.map((x) => x.reported), borderColor: css("--yr2"), backgroundColor: css("--yr2"), borderWidth: 1.5, pointRadius: 0, borderDash: [4, 3] },
+    ] },
+    options: { maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+      plugins: { legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 14, boxHeight: 2 } },
+        tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } } },
+      scales: { x: { ticks: { color: css("--muted"), maxTicksLimit: 8 }, grid: { display: false } },
+        y: { ticks: { color: css("--muted"), callback: (v) => fmtInt(v) }, grid: { color: css("--grid") } } } },
+  });
+}
+
+// ---------- manual KPIs ----------
+function fmtKpi(v, unit) {
+  if (v == null) return `<span class="awaiting-inline">awaiting data</span>`;
+  if (unit === "$M") return `$${Number(v).toLocaleString("en-US", { maximumFractionDigits: 1 })}M`;
+  if (unit === "%") return `${Number(v).toFixed(1)}%`;
+  return fmtInt(Number(v));
+}
+function renderKpis(d, bodyId, updatedId) {
+  const periods = d.periods || [];
+  if (updatedId) $(updatedId).textContent = periods.length ? `Latest: ${periods[periods.length - 1].period}` : "Awaiting first quarter";
+  if (!d.fields) { $(bodyId).innerHTML = awaiting("KPIs", "the manual KPI file"); return; }
+  const last = periods[periods.length - 1];
+  const groups = [...new Set(d.fields.map((f) => f.group))];
+  $(bodyId).innerHTML = `${periods.length ? "" : `<p class="note">No quarters entered yet. Fill <code>${bodyId === "kpi-body" ? "data/manual/company_kpis.json" : "data/manual/tmdx_kpis.json"}</code> after each earnings report; every field needs a source and date.</p>`}
+    <div class="scroll-x"><table class="kpi-table"><thead><tr><th>Metric</th><th>${last ? esc(last.period) : "Latest quarter"}</th><th>Source</th><th>Date</th></tr></thead><tbody>
+    ${groups.map((g) => `<tr class="grp"><td colspan="4">${esc(g)}</td></tr>` + d.fields.filter((f) => f.group === g).map((f) => {
+      const v = last ? (last.values || {})[f.key] || {} : {};
+      return `<tr><td>${esc(f.label)}</td><td>${fmtKpi(v.value, f.unit)}</td><td class="src">${esc(v.source || "—")}</td><td>${v.date ? fmtDate(v.date) : "—"}</td></tr>`;
+    }).join("")).join("")}
+    </tbody></table></div>`;
+}
+
+// ---------- SRTA vs TMDX ----------
+let relChart = null;
+function renderRelative(summary) {
+  const r = (summary.prices || {}).relative_3m;
+  if (!r) { $("rel-updated").textContent = "Awaiting prices"; return; }
+  $("rel-updated").textContent = `${fmtDate(r.base_date)} = 100 · SRTA ${r.srta_minus_tmdx_pts >= 0 ? "ahead of" : "behind"} TMDX by ${Math.abs(r.srta_minus_tmdx_pts).toFixed(1)} pts`;
+  if (relChart) relChart.destroy();
+  relChart = new Chart($("rel-chart"), {
+    type: "line",
+    data: { labels: r.dates.map((d) => fmtDate(d).replace(/, \d{4}$/, "")), datasets: [
+      { label: "SRTA", data: r.SRTA, borderColor: css("--s1"), backgroundColor: css("--s1"), borderWidth: 2.5, pointRadius: 0 },
+      { label: "TMDX", data: r.TMDX, borderColor: css("--s2"), backgroundColor: css("--s2"), borderWidth: 2, pointRadius: 0 },
+    ] },
+    options: { maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+      plugins: { legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 14, boxHeight: 2 } },
+        tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${c.parsed.y.toFixed(1)}` } } },
+      scales: { x: { ticks: { color: css("--muted"), maxTicksLimit: 7 }, grid: { display: false } },
+        y: { ticks: { color: css("--muted") }, grid: { color: css("--grid") } } } },
+  });
+}
+
+// ---------- SEC ----------
+function renderSec(d) {
+  if (d.status === "not_configured" && !(d.filings || []).length) {
+    $("sec-body").innerHTML = awaiting("SRTA SEC filings", "the SEC_USER_AGENT secret is set (SEC requires a contact email)"); return;
+  }
+  if (!(d.filings || []).length) { $("sec-body").innerHTML = awaiting("SRTA SEC filings", "the SEC EDGAR fetch"); return; }
+  $("sec-updated").textContent = `Fetched ${fmtDate(d.fetched_at)}${d.fetch_error ? " · last refresh failed" : ""}${d.config_note ? " · not refreshing: " + d.config_note : ""}`;
+  const kind = (f) => (f.form.startsWith("4") ? "Form 4" : /13[DG]/.test(f.form) ? "13D / 13G" : f.form.replace("/A", ""));
+  const kinds = [...new Set(d.filings.map(kind))];
+  let filter = "all";
+  const draw = () => {
+    const rows = d.filings.filter((f) => filter === "all" || kind(f) === filter);
+    $("sec-body").innerHTML = `<div class="scroll-x"><table><thead><tr><th>Filed</th><th>Form</th><th>Description</th><th></th></tr></thead><tbody>${
+      rows.map((f) => {
+        const f4 = f.form4;
+        let desc = esc(f.description);
+        if (f.items) desc += ` <span class="cell-sub">Items ${esc(f.items)}</span>`;
+        if (f4) desc = `${esc(f4.owner)}${f4.roles.length ? ` (${esc(f4.roles.join(", "))})` : ""}: ${f4.transactions.map((t) => `${esc(t.code)} ${fmtInt(t.shares)}`).join(", ") || "no non-derivative transactions"}`
+          + (f4.open_market_sale ? ` <span class="flag">open-market sale ${fmtInt(f4.shares_sold)} sh</span>` : "");
+        if (/13D/.test(f.form)) desc += ` <span class="flag">13D</span>`;
+        return `<tr><td>${fmtDate(f.filed)}</td><td>${esc(f.form)}</td><td class="desc">${desc}</td><td><a href="${esc(f.url)}" target="_blank" rel="noopener">Filing ↗</a></td></tr>`;
+      }).join("")}</tbody></table></div>
+      <p class="note">Form 4 codes: S = open-market sale, P = purchase, A = grant/award, F = shares withheld for taxes, M = option exercise.</p>`;
+  };
+  $("sec-filters").innerHTML = ["all", ...kinds].map((k) => `<button data-k="${esc(k)}" aria-pressed="${k === "all"}">${k === "all" ? "All" : esc(k)} (${k === "all" ? d.filings.length : d.filings.filter((f) => kind(f) === k).length})</button>`).join("");
+  $("sec-filters").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+    filter = b.dataset.k; $("sec-filters").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); draw();
+  }));
+  draw();
+}
+
 // ---------- footer ----------
-function renderSources(files) {
+const CADENCE2 = {
+  price: "Weekly (Sun) via GitHub Action",
+  transplants_weekly: "Weekly (Sun) via GitHub Action",
+  donors_weekly: "Weekly (Sun) via GitHub Action",
+  waitlist_weekly: "Weekly (Sun) via GitHub Action",
+  regions_weekly: "Weekly (Sun) via GitHub Action",
+  donor_mix: "Monthly (OPTN refresh); checked every Sunday",
+  distance: "Monthly (OPTN refresh); checked every Sunday",
+  location: "Monthly snapshot (OPTN refresh); checked every Sunday",
+  centers: "Monthly (OPTN refresh); checked every Sunday",
+  cdc: "Monthly (CDC refresh); checked every Sunday",
+  sec: "Weekly (Sun) via GitHub Action",
+  news: "Weekly (Sun) via GitHub Action; 90-day window",
+  kpis: "Quarterly, after earnings (hand-entered)",
+};
+function renderSources(files, summary) {
+  const j = (summary.prices || {}).joby;
   const rows = [
-    ["SRTA share price", files.price, "price"],
-    ["Weekly transplant volumes", files.transplants_weekly, "transplants_weekly"],
+    ["SRTA, TMDX, JOBY share prices", files.price, "price"],
+    ["Weekly transplants by organ", files.transplants_weekly, "transplants_weekly"],
     ["Deceased donors recovered + discard rate", files.donors_weekly, "donors_weekly"],
+    ["Weekly waitlist additions by organ", files.waitlist_weekly, "waitlist_weekly"],
     ["Donor mix (DBD / DCD)", files.donor_mix, "donor_mix"],
     ["Distance bands", files.distance, "distance"],
     ["Weekly transplants by OPTN region", files.regions_weekly, "regions_weekly"],
     ["Transplants by state (monthly snapshots)", files.location, "location"],
+    ["Top transplant centers", files.centers, "centers"],
+    ["U.S. overdose deaths", files.cdc, "cdc"],
+    ["SRTA SEC filings", files.sec, "sec"],
     ["News & company mentions", files.news, "news"],
+    ["SRTA company KPIs", { source: "data/manual/company_kpis.json (SRTA earnings releases and filings; source per field)", tag: "Manual" }, "kpis"],
+    ["TransMedics KPIs", { source: "data/manual/tmdx_kpis.json (TMDX earnings releases and filings; source per field)", tag: "Manual" }, "kpis"],
   ];
+  if (j) rows.splice(1, 0, ["JOBY share count for contingent-consideration value", { source: j.source, tag: "Manual" }, "kpis"]);
   $("sources-body").innerHTML = rows.map(([name, f, key]) => {
-    const tag = f.tag || "—";
-    return `<tr><td>${name}</td><td>${esc(f.source || "n/a")}</td><td><span class="tier-tag ${tag.toLowerCase()}">${esc(tag)}</span></td><td>${CADENCE[key]}</td></tr>`;
+    const tag = (f && f.tag) || "—";
+    return `<tr><td>${name}</td><td>${esc((f && f.source) || "n/a")}</td><td><span class="tier-tag ${tag.toLowerCase()}">${esc(tag)}</span></td><td>${CADENCE2[key] || ""}</td></tr>`;
   }).join("") + `<tr><td>Organ-miles</td><td><a href="https://slogatskiy.github.io/srta-organ-miles-tracker/" target="_blank" rel="noopener">SRTA organ-miles tracker</a></td><td><span class="tier-tag linked">Linked</span></td><td>Maintained externally</td></tr>`;
 }
 
 (async function main() {
-  const [summary, tw, dw, mix, dist, loc, rw, news, price] = await Promise.all([
-    load("data/weekly_summary.json"),
-    load("data/processed/transplants_weekly.json"),
-    load("data/processed/donors_weekly.json"),
-    load("data/processed/donor_mix.json"),
-    load("data/processed/distance.json"),
-    load("data/processed/location.json"),
-    load("data/processed/regions_weekly.json"),
-    load("data/processed/news.json"),
-    load("data/processed/price.json"),
+  const names = ["transplants_weekly", "donors_weekly", "waitlist_weekly", "donor_mix", "distance", "location",
+    "regions_weekly", "centers", "news", "price", "cdc_overdose", "sec_filings", "health"];
+  const [summary, kpis, tmdxKpis, ...rest] = await Promise.all([
+    load("data/weekly_summary.json"), load("data/manual/company_kpis.json"), load("data/manual/tmdx_kpis.json"),
+    ...names.map((n) => load(`data/processed/${n}.json`)),
   ]);
-  renderHeader(summary, price);
-  renderVolumes(summary, tw);
-  renderDonorLine(summary, dw);
-  renderDonorMix(mix);
-  renderDistance(dist);
-  renderRegions(summary, rw);
-  renderLocation(loc);
-  renderNews(news);
-  renderSources({ price, transplants_weekly: tw, donors_weekly: dw, donor_mix: mix, distance: dist, regions_weekly: rw, location: loc, news });
+  const F = Object.fromEntries(names.map((n, i) => [n, rest[i]]));
+  const run = (fn) => { try { fn(); } catch (e) { console.error(e); } }; // one broken panel never blanks the page
+  run(() => renderHealth(F.health));
+  run(() => renderHeader(summary, F.price));
+  run(() => renderSignals(summary));
+  run(() => renderVolumes(summary, F.transplants_weekly));
+  run(() => renderDonorLine(summary, F.donors_weekly));
+  run(() => renderWaitlist(summary, F.waitlist_weekly));
+  run(() => renderDonorMix(F.donor_mix));
+  run(() => renderDistance(F.distance));
+  run(() => renderRegions(summary, F.regions_weekly));
+  run(() => renderLocation(F.location));
+  run(() => renderCenters(F.centers));
+  run(() => renderCdc(F.cdc_overdose));
+  run(() => renderKpis(kpis, "kpi-body", "kpi-updated"));
+  run(() => renderRelative(summary));
+  run(() => renderKpis(tmdxKpis, "tmdx-kpi-body", null));
+  run(() => renderSec(F.sec_filings));
+  run(() => renderNews(F.news));
+  run(() => renderSources({ price: F.price, transplants_weekly: F.transplants_weekly, donors_weekly: F.donors_weekly,
+    waitlist_weekly: F.waitlist_weekly, donor_mix: F.donor_mix, distance: F.distance, regions_weekly: F.regions_weekly,
+    location: F.location, centers: F.centers, cdc: F.cdc_overdose, sec: F.sec_filings, news: F.news }, summary));
 })();

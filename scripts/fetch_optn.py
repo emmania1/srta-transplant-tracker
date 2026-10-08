@@ -16,6 +16,7 @@ Writes, per run (dated with the download date):
     data/raw/optn/YYYY-MM-DD_optn_metrics_don_weekly_deceased.csv          (Donor Details: weekly donors)
     data/raw/optn/YYYY-MM-DD_optn_metrics_don_table_deceased.csv           (Donor Details: YTD discard/utilization)
     data/raw/optn/YYYY-MM-DD_optn_metrics_don_table_meta.json              ("through <date>" for that table)
+    data/raw/optn/YYYY-MM-DD_optn_metrics_wl_weekly_<organ>.csv            (Waitlist Details: weekly additions)
     data/raw/optn/YYYY-MM-DD_optn_metrics_tx_weekly_deceased_all_regionNN.csv  (all organs, OPTN regions 1-11)
 which scripts/ingest_optn.py then parses. Exits non-zero if any organ fails,
 leaving earlier files in place, so the page keeps the last good data.
@@ -116,6 +117,22 @@ def main():
                 (RAW / f"{today}_optn_metrics_don_table_meta.json").write_text(
                     json.dumps({"ytd_through": m.group(1), "heading": m.group(0)}) + "\n")
                 print(f"Donors: {len(weekly.splitlines()) - 1} weekly rows; table YTD through {m.group(1)}")
+
+        # Weekly waitlist additions by organ (national). Must run before the region loop.
+        page.get_by_text("Waitlist Details", exact=True).click()
+        page.wait_for_function("document.getElementById('wl_download').href.includes('/download/')", timeout=60_000)
+        for label, key in ORGANS.items():
+            res = page.evaluate(FETCH_JS, [{"region": "National", "tx_wl_organ": label}, "wl_download",
+                                           f"National_{label}_WL_dat.zip"])
+            if "error" in res:
+                failures.append(f"Waitlist {label}: {res['error']}")
+                continue
+            text = zipfile.ZipFile(io.BytesIO(base64.b64decode(res["b64"]))).read("WL_Weekly.csv").decode("utf-8-sig")
+            if next(csv.reader(io.StringIO(text))) != EXPECTED_HEADER:
+                failures.append(f"Waitlist {label}: unexpected WL_Weekly.csv header")
+                continue
+            (RAW / f"{today}_optn_metrics_wl_weekly_{key}.csv").write_text(text)
+        print(f"Waitlist: {len(ORGANS) - sum(f.startswith('Waitlist') for f in failures)}/{len(ORGANS)} organs fetched")
 
         # Weekly deceased-donor transplants (all organs) by OPTN region 1-11
         page.get_by_text("Transplant Details", exact=True).click()

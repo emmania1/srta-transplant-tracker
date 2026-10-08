@@ -1,0 +1,1098 @@
+{
+  "title": "SRTA SEC filings (last 180 days)",
+  "company": "Strata Critical Medical, Inc.",
+  "cik": "1779128",
+  "source": "SEC EDGAR submissions API (data.sec.gov/submissions/CIK0001779128.json)",
+  "tag": "Live",
+  "status": "ok",
+  "fetched_at": "2026-10-08T21:45:16+00:00",
+  "days": 180,
+  "filings": [
+    {
+      "accession": "0001628280-26-063577",
+      "form": "4",
+      "filed": "2026-09-25",
+      "report_date": "2026-09-24",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026063577/xslF345X06/wk-form4_1790367150.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026063577/0001628280-26-063577-index.htm",
+      "form4": {
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-24",
+            "code": "A",
+            "shares": 177858.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-09-24",
+            "code": "F",
+            "shares": 90797.0,
+            "price": 5.27,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-063576",
+      "form": "4",
+      "filed": "2026-09-25",
+      "report_date": "2026-09-24",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026063576/xslF345X06/wk-form4_1790367134.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026063576/0001628280-26-063576-index.htm",
+      "form4": {
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-24",
+            "code": "A",
+            "shares": 177858.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-09-24",
+            "code": "F",
+            "shares": 98356.0,
+            "price": 5.27,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-061370",
+      "form": "4",
+      "filed": "2026-09-10",
+      "report_date": "2026-09-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061370/xslF345X06/wk-form4_1789072122.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061370/0001628280-26-061370-index.htm",
+      "form4": {
+        "owner": "Verdetto Louis R.",
+        "roles": [
+          "CEO, Clinical Services"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-08",
+            "code": "F",
+            "shares": 5697.0,
+            "price": 5.31,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-061368",
+      "form": "4",
+      "filed": "2026-09-10",
+      "report_date": "2026-09-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061368/xslF345X06/wk-form4_1789072092.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061368/0001628280-26-061368-index.htm",
+      "form4": {
+        "owner": "Wunsch Scott M",
+        "roles": [
+          "CEO, Logistics"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-08",
+            "code": "F",
+            "shares": 5711.0,
+            "price": 5.31,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-061364",
+      "form": "4",
+      "filed": "2026-09-10",
+      "report_date": "2026-09-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061364/xslF345X06/wk-form4_1789072046.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061364/0001628280-26-061364-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-08",
+            "code": "F",
+            "shares": 4645.0,
+            "price": 5.31,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-061363",
+      "form": "4",
+      "filed": "2026-09-10",
+      "report_date": "2026-09-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061363/xslF345X06/wk-form4_1789072000.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061363/0001628280-26-061363-index.htm",
+      "form4": {
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-08",
+            "code": "F",
+            "shares": 29730.0,
+            "price": 5.31,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-061362",
+      "form": "4",
+      "filed": "2026-09-10",
+      "report_date": "2026-09-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061362/xslF345X06/wk-form4_1789071952.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026061362/0001628280-26-061362-index.htm",
+      "form4": {
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "transactions": [
+          {
+            "date": "2026-09-08",
+            "code": "F",
+            "shares": 31671.0,
+            "price": 5.31,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001193125-26-359634",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-08-20",
+      "report_date": null,
+      "description": "SCHEDULE 13G/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000119312526359634/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000119312526359634/0001193125-26-359634-index.htm"
+    },
+    {
+      "accession": "0001628280-26-056841",
+      "form": "4",
+      "filed": "2026-08-13",
+      "report_date": "2026-08-10",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026056841/xslF345X06/wk-form4_1786656778.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026056841/0001628280-26-056841-index.htm",
+      "form4": {
+        "owner": "Love Reginald",
+        "roles": [
+          "Director"
+        ],
+        "transactions": [
+          {
+            "date": "2026-08-10",
+            "code": "S",
+            "shares": 5091.0,
+            "price": 5.75,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 5091.0
+      }
+    },
+    {
+      "accession": "0001628280-26-052256",
+      "form": "10-Q",
+      "filed": "2026-08-04",
+      "report_date": "2026-06-30",
+      "description": "10-Q",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052256/srta-20260630.htm",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052256/0001628280-26-052256-index.htm"
+    },
+    {
+      "accession": "0001628280-26-052152",
+      "form": "8-K",
+      "filed": "2026-08-04",
+      "report_date": "2026-08-04",
+      "description": "8-K",
+      "items": "2.02,9.01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052152/srta-20260804.htm",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052152/0001628280-26-052152-index.htm"
+    },
+    {
+      "accession": "0001628280-26-051826",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051826/xslF345X06/wk-form4_1785787640.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051826/0001628280-26-051826-index.htm",
+      "form4": {
+        "owner": "Cook William L. III",
+        "roles": [
+          "Director"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 44438.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051824",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051824/xslF345X06/wk-form4_1785787630.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051824/0001628280-26-051824-index.htm",
+      "form4": {
+        "owner": "Love Reginald",
+        "roles": [
+          "Director"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 37675.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051822",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051822/xslF345X06/wk-form4_1785787621.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051822/0001628280-26-051822-index.htm",
+      "form4": {
+        "owner": "PHILIP EDWARD M",
+        "roles": [
+          "Director"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 30913.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051819",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051819/xslF345X06/wk-form4_1785787608.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051819/0001628280-26-051819-index.htm",
+      "form4": {
+        "owner": "WIESENTHAL ROBERT S",
+        "roles": [
+          "Director"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 50234.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051817",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051817/xslF345X06/wk-form4_1785787598.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051817/0001628280-26-051817-index.htm",
+      "form4": {
+        "owner": "LAUCK ANDREW",
+        "roles": [
+          "Director"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 35260.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051816",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051816/xslF345X06/wk-form4_1785787588.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051816/0001628280-26-051816-index.htm",
+      "form4": {
+        "owner": "Wunsch Scott M",
+        "roles": [
+          "CEO, Logistics"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 57172.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-31",
+            "code": "F",
+            "shares": 13992.0,
+            "price": 5.09,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051814",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051814/xslF345X06/wk-form4_1785787573.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051814/0001628280-26-051814-index.htm",
+      "form4": {
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 181071.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 179160.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-31",
+            "code": "F",
+            "shares": 199209.0,
+            "price": 5.09,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051811",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051811/xslF345X06/wk-form4_1785787559.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051811/0001628280-26-051811-index.htm",
+      "form4": {
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 208929.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 206953.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-31",
+            "code": "F",
+            "shares": 212309.0,
+            "price": 5.09,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-051809",
+      "form": "4",
+      "filed": "2026-08-03",
+      "report_date": "2026-07-30",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051809/xslF345X06/wk-form4_1785787536.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026051809/0001628280-26-051809-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 41786.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-30",
+            "code": "A",
+            "shares": 27420.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-07-31",
+            "code": "F",
+            "shares": 34015.0,
+            "price": 5.09,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001104659-26-081889",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-07-08",
+      "report_date": null,
+      "description": "SCHEDULE 13G/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000110465926081889/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000110465926081889/0001104659-26-081889-index.htm"
+    },
+    {
+      "accession": "0001628280-26-044283",
+      "form": "4/A",
+      "filed": "2026-06-18",
+      "report_date": "2026-06-08",
+      "description": "FORM 4/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044283/xslF345X06/wk-form4a_1781813433.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044283/0001628280-26-044283-index.htm",
+      "form4": {
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "F",
+            "shares": 31671.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-044281",
+      "form": "4/A",
+      "filed": "2026-06-18",
+      "report_date": "2026-06-08",
+      "description": "FORM 4/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044281/xslF345X06/wk-form4a_1781813421.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044281/0001628280-26-044281-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "F",
+            "shares": 4655.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-044280",
+      "form": "4/A",
+      "filed": "2026-06-18",
+      "report_date": "2026-06-08",
+      "description": "FORM 4/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044280/xslF345X06/wk-form4a_1781813409.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044280/0001628280-26-044280-index.htm",
+      "form4": {
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "F",
+            "shares": 29730.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-044278",
+      "form": "4/A",
+      "filed": "2026-06-18",
+      "report_date": "2026-06-08",
+      "description": "FORM 4/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044278/xslF345X06/wk-form4a_1781813395.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026044278/0001628280-26-044278-index.htm",
+      "form4": {
+        "owner": "Wunsch Scott M",
+        "roles": [
+          "CEO, Logistics"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "F",
+            "shares": 5550.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001013594-26-000667",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-06-17",
+      "report_date": null,
+      "description": "SCHEDULE 13G",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000101359426000667/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000101359426000667/0001013594-26-000667-index.htm"
+    },
+    {
+      "accession": "0001628280-26-042183",
+      "form": "4",
+      "filed": "2026-06-10",
+      "report_date": "2026-06-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042183/xslF345X06/wk-form4_1781121979.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042183/0001628280-26-042183-index.htm",
+      "form4": {
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "S",
+            "shares": 31671.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 31671.0
+      }
+    },
+    {
+      "accession": "0001628280-26-042182",
+      "form": "4",
+      "filed": "2026-06-10",
+      "report_date": "2026-06-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042182/xslF345X06/wk-form4_1781121963.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042182/0001628280-26-042182-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "S",
+            "shares": 4655.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 4655.0
+      }
+    },
+    {
+      "accession": "0001628280-26-042180",
+      "form": "4",
+      "filed": "2026-06-10",
+      "report_date": "2026-06-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042180/xslF345X06/wk-form4_1781121946.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042180/0001628280-26-042180-index.htm",
+      "form4": {
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "S",
+            "shares": 29730.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 29730.0
+      }
+    },
+    {
+      "accession": "0001628280-26-042177",
+      "form": "4",
+      "filed": "2026-06-10",
+      "report_date": "2026-06-08",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042177/xslF345X06/wk-form4_1781121928.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042177/0001628280-26-042177-index.htm",
+      "form4": {
+        "owner": "Wunsch Scott M",
+        "roles": [
+          "CEO, Logistics"
+        ],
+        "transactions": [
+          {
+            "date": "2026-06-08",
+            "code": "S",
+            "shares": 5550.0,
+            "price": 5.87,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 5550.0
+      }
+    },
+    {
+      "accession": "0001628280-26-040342",
+      "form": "8-K",
+      "filed": "2026-06-03",
+      "report_date": "2026-05-28",
+      "description": "8-K",
+      "items": "5.07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026040342/blde-20260528.htm",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026040342/0001628280-26-040342-index.htm"
+    },
+    {
+      "accession": "0001628280-26-038171",
+      "form": "4",
+      "filed": "2026-05-26",
+      "report_date": "2026-05-21",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026038171/xslF345X06/wk-form4_1779828592.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026038171/0001628280-26-038171-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-05-21",
+            "code": "S",
+            "shares": 10300.0,
+            "price": 5.79,
+            "acquired_disposed": "D"
+          },
+          {
+            "date": "2026-05-22",
+            "code": "S",
+            "shares": 40575.0,
+            "price": 5.91,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 50875.0
+      }
+    },
+    {
+      "accession": "0001628280-26-034586",
+      "form": "4",
+      "filed": "2026-05-13",
+      "report_date": "2026-05-11",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026034586/xslF345X06/wk-form4_1778702684.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026034586/0001628280-26-034586-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-05-11",
+            "code": "S",
+            "shares": 14306.0,
+            "price": 5.79,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": true,
+        "shares_sold": 14306.0
+      }
+    },
+    {
+      "accession": "0002126691-26-000005",
+      "form": "SCHEDULE 13D/A",
+      "filed": "2026-05-08",
+      "report_date": null,
+      "description": "SCHEDULE 13D/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000005/xslSCHEDULE_13D_X02/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000005/0002126691-26-000005-index.htm"
+    },
+    {
+      "accession": "0002126691-26-000004",
+      "form": "4",
+      "filed": "2026-05-08",
+      "report_date": "2026-05-07",
+      "description": "PRIMARY DOCUMENT",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000004/xslF345X06/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000004/0002126691-26-000004-index.htm",
+      "form4": {
+        "owner": "Krstic Velibor",
+        "roles": [
+          "10% owner"
+        ],
+        "transactions": [],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-031032",
+      "form": "10-Q",
+      "filed": "2026-05-06",
+      "report_date": "2026-03-31",
+      "description": "10-Q",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026031032/blde-20260331.htm",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026031032/0001628280-26-031032-index.htm"
+    },
+    {
+      "accession": "0001628280-26-030898",
+      "form": "8-K",
+      "filed": "2026-05-06",
+      "report_date": "2026-05-06",
+      "description": "8-K",
+      "items": "2.02,9.01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026030898/srta-20260506.htm",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026030898/0001628280-26-030898-index.htm"
+    },
+    {
+      "accession": "0001104659-26-052493",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-04-30",
+      "report_date": null,
+      "description": "SCHEDULE 13G/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000110465926052493/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000110465926052493/0001104659-26-052493-index.htm"
+    },
+    {
+      "accession": "0001628280-26-027661",
+      "form": "4",
+      "filed": "2026-04-27",
+      "report_date": "2026-04-23",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027661/xslF345X06/wk-form4_1777326425.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027661/0001628280-26-027661-index.htm",
+      "form4": {
+        "owner": "Wunsch Scott M",
+        "roles": [
+          "CEO, Logistics"
+        ],
+        "transactions": [
+          {
+            "date": "2026-04-23",
+            "code": "A",
+            "shares": 57172.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-04-24",
+            "code": "F",
+            "shares": 13922.0,
+            "price": 4.92,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-027658",
+      "form": "4",
+      "filed": "2026-04-27",
+      "report_date": "2026-04-23",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027658/xslF345X06/wk-form4_1777326401.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027658/0001628280-26-027658-index.htm",
+      "form4": {
+        "owner": "Cohen Amir",
+        "roles": [
+          "Chief Accounting Officer"
+        ],
+        "transactions": [
+          {
+            "date": "2026-04-23",
+            "code": "A",
+            "shares": 83505.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-04-24",
+            "code": "F",
+            "shares": 40960.0,
+            "price": 4.92,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-027656",
+      "form": "4",
+      "filed": "2026-04-27",
+      "report_date": "2026-04-23",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027656/xslF345X06/wk-form4_1777326379.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027656/0001628280-26-027656-index.htm",
+      "form4": {
+        "owner": "Tomkiel Melissa M.",
+        "roles": [
+          "Director",
+          "Co-CEO and General Counsel"
+        ],
+        "transactions": [
+          {
+            "date": "2026-04-23",
+            "code": "A",
+            "shares": 630264.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-04-24",
+            "code": "F",
+            "shares": 321750.0,
+            "price": 4.92,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0001628280-26-027654",
+      "form": "4",
+      "filed": "2026-04-27",
+      "report_date": "2026-04-23",
+      "description": "FORM 4",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027654/xslF345X06/wk-form4_1777326352.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026027654/0001628280-26-027654-index.htm",
+      "form4": {
+        "owner": "Heyburn William A.",
+        "roles": [
+          "Director",
+          "Co-CEO and CFO"
+        ],
+        "transactions": [
+          {
+            "date": "2026-04-23",
+            "code": "A",
+            "shares": 545625.0,
+            "price": 0.0,
+            "acquired_disposed": "A"
+          },
+          {
+            "date": "2026-04-24",
+            "code": "F",
+            "shares": 301731.0,
+            "price": 4.92,
+            "acquired_disposed": "D"
+          }
+        ],
+        "open_market_sale": false,
+        "shares_sold": null
+      }
+    },
+    {
+      "accession": "0002126691-26-000003",
+      "form": "SCHEDULE 13D/A",
+      "filed": "2026-04-16",
+      "report_date": null,
+      "description": "SCHEDULE 13D/A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000003/xslSCHEDULE_13D_X02/primary_doc.xml",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000003/0002126691-26-000003-index.htm"
+    },
+    {
+      "accession": "0001140361-26-014530",
+      "form": "DEF 14A",
+      "filed": "2026-04-14",
+      "report_date": "2026-05-28",
+      "description": "DEF 14A",
+      "items": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1779128/000114036126014530/ny20060135x1_def14a.htm",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1779128/000114036126014530/0001140361-26-014530-index.htm"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "_instructions": "News keyword groups. Each group becomes one Google News RSS query (terms OR-joined). Edit freely: add/remove terms or groups. 'id' is the filter-button key; 'label' is what the page shows. Multi-word terms are quoted automatically. Items found by several groups get several tags.",
-  "_filters_note": "Three filters, applied to every item: (1) blocked_sources \u2014 drop if the source contains any entry (junk aggregators, quote pages, spam sites). (2) exclude_title_patterns \u2014 always drop headlines matching these case-insensitive regexes (consensus-estimate/consensus-rating spam, quote pages, valuation clickbait). (3) analyst_actions \u2014 headlines matching analyst_actions.patterns (ratings, price targets, coverage) are kept ONLY if they also mention one of analyst_actions.companies; they get an extra 'analyst' tag. Per group, require_any (optional) keeps only items whose headline+snippet contains one of the strings.",
+  "_instructions": "News keyword groups. Each group runs one Google News RSS query per entry in 'queries' (terms OR-joined; or a single query from 'terms'). Terms with spaces are quoted automatically; a term that already contains a double quote is used verbatim, so '\"organ donors\" record' means the exact phrase plus the word record. Items found by several groups get several tags. 'id' is the filter-button key; 'label' is what the page shows. Groups with collapsed=true are shown in their own collapsed section on the page so they don't crowd the main feed. A group with exclude_human_interest=true also drops headlines matching digest.exclude_patterns.",
+  "_filters_note": "Three filters, applied to every item: (1) blocked_sources \u2014 drop if the source contains any entry (junk aggregators, quote pages, spam sites). (2) exclude_title_patterns \u2014 always drop headlines matching these case-insensitive regexes (consensus-estimate/consensus-rating spam, quote pages, valuation clickbait). (3) analyst_actions \u2014 headlines matching analyst_actions.patterns (ratings, price targets, coverage) are kept ONLY if they also mention one of analyst_actions.companies; they get an extra 'analyst' tag. Per group, require_any (optional) keeps only items whose headline+snippet contains one of the strings. (4) blocked_url_patterns \u2014 once a Google News link is resolved to the publisher URL, drop items whose URL matches (quote/forecast/estimate pages).",
   "lookback_days": 90,
   "blocked_sources": [
     "dars.gov.et",
@@ -17,6 +17,14 @@
     "ad hoc news",
     "facebook"
   ],
+  "blocked_url_patterns": [
+    "/forecast",
+    "/quote/",
+    "/quotes/",
+    "/symbols/",
+    "estimates",
+    "/stock-price"
+  ],
   "exclude_title_patterns": [
     "consensus (estimate|rating)s?",
     "estimates? (beat|miss|surprise)",
@@ -29,7 +37,10 @@
     "technical signals",
     "\\bForm 4\\b",
     "\\([A-Z.]{1,6}\\)\\s+(upgraded|downgraded)\\s+to\\s+(strong\\s+)?(buy|hold|sell)\\b",
-    "what does it mean for the stock"
+    "what does it mean for the stock",
+    "stock quote",
+    "quote,? price (and|&) forecast",
+    "\\bstock (price|quote) (today|history)\\b"
   ],
   "analyst_actions": {
     "tag": "analyst",
@@ -64,6 +75,82 @@
       ]
     }
   },
+  "digest": {
+    "_note": "How build_digest.py picks the 3-5 headlines for summary/latest.md. Category priority first, newest first within a category. Uses items published in the last primary_days; if fewer than min_items qualify, fills from the last fallback_days. An item qualifies only if its headline mentions an angle_terms entry and matches none of exclude_patterns (human-interest / awards / events).",
+    "priority": [
+      "strata",
+      "analyst",
+      "opo_regulation",
+      "volumes",
+      "tech_logistics",
+      "competitors"
+    ],
+    "primary_days": 7,
+    "fallback_days": 14,
+    "min_items": 3,
+    "max_items": 5,
+    "angle_terms": [
+      "strata",
+      "srta",
+      "blade air",
+      "keystone perfusion",
+      "transmedics",
+      "tmdx",
+      "paragonix",
+      "organox",
+      "xvivo",
+      "bridge to life",
+      "nora",
+      "procure",
+      "opo",
+      "organ procurement",
+      "unos",
+      "optn",
+      "srtr",
+      "hrsa",
+      "cms",
+      "hhs",
+      "transplant",
+      "organ donor",
+      "organ donation",
+      "donors",
+      "dcd",
+      "perfusion",
+      "nrp",
+      "decertif",
+      "waitlist",
+      "wait list"
+    ],
+    "exclude_patterns": [
+      "\\baward",
+      "\\bhonou?r(s|ed|ing)?\\b",
+      "recogni[sz]",
+      "scholarship",
+      "\\bstudent",
+      "\\blegacy\\b",
+      "memorial",
+      "\\bwalk\\b",
+      "\\b5k\\b",
+      "\\brun\\b",
+      "gala",
+      "fundrais",
+      "celebrat",
+      "\\bvigil\\b",
+      "\\bmusical\\b",
+      "\\bsaves? (lives|others)\\b",
+      "\\bgift of life\\b",
+      "\\bthank",
+      "reunite",
+      "\\bmeets?\\b.*\\b(donor|recipient)",
+      "how to (become|give)",
+      "\\bopinion\\b",
+      "\\bobituar",
+      "\\bdies\\b",
+      "\\bdied\\b",
+      "\\bgrateful\\b",
+      "\\bchampions?\\b"
+    ]
+  },
   "groups": [
     {
       "id": "strata",
@@ -86,34 +173,59 @@
     {
       "id": "volumes",
       "label": "Transplant volumes / donation",
-      "terms": [
-        "organ transplant record",
-        "organ transplant volume",
-        "organ donation",
-        "OPTN data",
-        "UNOS",
-        "SRTR",
-        "DCD donor",
-        "normothermic regional perfusion"
-      ],
       "require_any": [
-        "record",
         "data",
-        "rate",
-        "increase",
-        "decline",
-        "volume",
-        "number",
-        "statistic",
-        "national",
-        "optn",
-        "unos",
-        "srtr",
         "dcd",
-        "perfusion",
+        "decline",
+        "donors",
+        "increase",
+        "national",
         "nrp",
-        "transplants"
-      ]
+        "number",
+        "opo",
+        "optn",
+        "organ donors",
+        "perfusion",
+        "procurement",
+        "rate",
+        "record",
+        "srtr",
+        "statistic",
+        "transplants",
+        "unos",
+        "volume"
+      ],
+      "queries": [
+        [
+          "organ transplant record",
+          "organ transplant volume",
+          "organ donation",
+          "OPTN data",
+          "UNOS",
+          "SRTR",
+          "DCD donor",
+          "normothermic regional perfusion"
+        ],
+        [
+          "transplant record",
+          "transplants increase",
+          "transplants decline",
+          "record number of transplants",
+          "record year for transplants",
+          "\"organ donors\" record",
+          "\"organ donors\" data",
+          "\"organ donors\" 2026",
+          "\"organ donors\" year"
+        ],
+        [
+          "OPO record",
+          "OPO donors",
+          "\"organ procurement\" volume",
+          "\"organ procurement\" record",
+          "\"organ procurement organization\" donors"
+        ]
+      ],
+      "exclude_human_interest": true
     },
     {
       "id": "opo_regulation",
@@ -141,7 +253,8 @@
         "Bridge to Life organ",
         "Statline organ",
         "Buckeye Transplant"
-      ]
+      ],
+      "collapsed": true
     },
     {
       "id": "tech_logistics",
