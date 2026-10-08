@@ -27,7 +27,9 @@
     "undervalued",
     "fair value",
     "technical signals",
-    "\\bForm 4\\b"
+    "\\bForm 4\\b",
+    "\\([A-Z.]{1,6}\\)\\s+(upgraded|downgraded)\\s+to\\s+(strong\\s+)?(buy|hold|sell)\\b",
+    "what does it mean for the stock"
   ],
   "analyst_actions": {
     "tag": "analyst",
