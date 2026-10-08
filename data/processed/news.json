@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-08T21:54:20+00:00",
+  "fetched_at": "2026-10-08T21:57:05+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -560,6 +560,17 @@
       "publisher_url": "https://www.presidentialprayerteam.org/2026/08/10/cms-begins-decertification-of-kentucky-organ-procurement-organization/"
     },
     {
+      "headline": "Donate Life Kentucky Trust director defends organ donation after feds decertify OPO",
+      "source": "Murray Ledger and Times",
+      "date": "2026-08-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZEJWejlqVnlmTkM1T3NIVHZLb18wYWV3V21JaklVZTREV0t1X3lydzQ5bnZuV3B1OTctZUtOX2pWNHVQUE44a3VSZHJTNUt2TTdESUVfMWpoX2R2VjFmMkxucHBRRmFYOU9IS0JRZFBJaF9kUUcxUmpGc1VqX1NwZGhHdldfaWpKZS1Sc2c0T2JlS1g3QXUyRHRTSzJmQU5rOVZ1M29DWFNIWkJWUHhHc1RYd1YzUThUWmtyNEpqNTUxb2tFU0xTQnRrRHBFSzdTQ2VEMEp1cHpQd2xsNlEzR2JfczQ5ekNFWTMzTlBJWmFMZmhFeEwtdU1BeXBZVlFtUHhR?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-10-08T21:57:05+00:00",
+      "publisher_url": "https://www.murrayledger.com/news/local/donate-life-kentucky-trust-director-defends-organ-donation-after-feds-decertify-opo/article_c621454f-1a87-43c2-aaef-2843bbf4e73f.html"
+    },
+    {
       "headline": "HHS moves to decertify organ procurement group over patient safety failures",
       "source": "Healthcare Dive",
       "date": "2026-08-07T07:00:00+00:00",
@@ -898,17 +909,6 @@
       ],
       "first_seen": "2026-10-08T21:37:23+00:00",
       "publisher_url": "https://www.newindianexpress.com/india/2026/Aug/03/tamil-nadu-tops-india-in-deceased-organ-donations-ranks-second-in-organ-transplants-in-2025"
-    },
-    {
-      "headline": "Kidney in a box: Advancements in transplant technology allows for quicker recovery times",
-      "source": "Global News",
-      "date": "2026-07-31T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeE5YeWp3UVExa0hWYlBvUGZWc1M5Y2dITHpCYmhaQ3Yxd1JXUXo2cEtTRHZSXzdaV2habWxJOE1Vbzh0TVY3SjdoY3lJdHAxcUk2X1A4b1RHaWlRb0t3RFE3WnRCT3NsWFVpRUU1Wk53Q3F1aDA3Mk1XWkxIcHlrSE1JTzc5Z2x3Ym1ld0hnR3djNXpxbU1TeGNEUUFNZVpTTVd2S2JSSFpzNnI5WkJNSHhjZ281YVFaSFctNjZMMFQwQQ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-08T21:54:20+00:00",
-      "publisher_url": "https://globalnews.ca/video/12005804/kidney-in-a-box-advancements-in-transplant-technology-allows-for-quicker-recovery-times"
     },
     {
       "headline": "TransMedics Group (NASDAQ:TMDX): An Affordable Growth Stock With Strong Earnings Momentum",
