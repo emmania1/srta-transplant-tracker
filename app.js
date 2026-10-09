@@ -704,6 +704,20 @@ function renderSources(F, summary) {
     `<tr><td>${esc(name)}</td><td>${esc(src || "n/a")}</td><td><span class="tier-tag ${tag.toLowerCase()}">${tag}</span></td><td>${esc(cad)}</td><td class="files"><code>${esc(files)}</code></td></tr>`).join("");
 }
 
+// Highlight the nav link for the section currently on screen
+function trackActiveSection() {
+  const links = [...document.querySelectorAll(".topnav-inner a[href^='#']:not(.brand)")];
+  const targets = links.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  const update = () => {
+    const y = window.scrollY + 120;
+    let cur = targets[0];
+    targets.forEach((t) => { if (t.offsetTop <= y) cur = t; });
+    links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === `#${cur.id}`));
+  };
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+}
+
 (async function main() {
   const names = ["transplants_weekly", "donors_weekly", "waitlist_weekly", "donor_mix", "distance", "location",
     "regions_weekly", "centers", "news", "price", "cdc_overdose", "sec_filings", "health"];
@@ -733,4 +747,5 @@ function renderSources(F, summary) {
   run(() => renderKpis(tmdxKpis, "tmdx-kpi-body", "src-tmdx", "TransMedics earnings releases and filings"));
   run(() => renderNews(F.news));
   run(() => renderSources(F, summary));
+  run(trackActiveSection);
 })();

@@ -287,3 +287,17 @@ tr.total td { font-weight: 600; border-top: 2px solid var(--border); }
   .this-week h4 { margin: 8px 0 4px; }
   .this-week li { margin: 2px 0; font-size: 0.9rem; }
 }
+
+/* nav: short labels on phones, every link visible (2 rows), current section highlighted */
+.topnav .short { display: none; }
+.topnav a.active { color: var(--accent); font-weight: 600; }
+.topnav a.active .n { background: var(--accent); color: #fff; }
+@media (max-width: 760px) {
+  html { scroll-padding-top: 84px; }
+  .topnav-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; padding: 2px 8px; overflow: visible; }
+  .topnav a.brand { display: none; }
+  .topnav a { padding: 7px 4px; font-size: 0.78rem; justify-content: center; gap: 4px; }
+  .topnav .long { display: none; }
+  .topnav .short { display: inline; }
+  .topnav .n { width: 16px; height: 16px; font-size: 0.65rem; }
+}
