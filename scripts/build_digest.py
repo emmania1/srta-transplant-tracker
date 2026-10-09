@@ -15,6 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from metrics import organ_metrics, total_series  # noqa: E402
+from quarters import quarter_metrics  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 PROC = ROOT / "data" / "processed"
@@ -28,7 +29,10 @@ KEYWORDS = ROOT / "config" / "keywords.json"
 HOLDINGS = ROOT / "config" / "holdings.json"
 SIGNALS = ROOT / "config" / "signals.json"
 ORGAN_LABEL = {"heart": "Heart", "liver": "Liver", "lung": "Lung", "kidney": "Kidney (incl. KP)"}
-MAX_LINES = 10
+MAX_LINES = 13  # title + up to 7 labelled bullets + 'Top headlines' + 3 headlines + link
+CORE = "hll"
+CORE_LABEL = "Heart + liver + lung (Strata's core flying organs)"
+CORE_SHORT = "heart+liver+lung"
 
 
 def load(name):
@@ -243,23 +247,57 @@ def f4_who(owner, roles):
     return f"{name} ({role.replace(' and ', '/')})"
 
 
-def this_week_sentences(signals, donors, mix, waitlist, sec, optn_ok, new_optn, now):
+def arrow_pct(v):
+    return "n/a" if v is None else f"{'▲' if v > 0 else '▼' if v < 0 else '—'} {abs(v):.1f}%"
+
+
+def quarterly_block(series):
+    """Last complete calendar quarter (prorated boundary weeks) for each organ + heart+liver+lung."""
+    rows_all = [r for k in ORGANS + [CORE] for r in series.get(k) or []]
+    if not rows_all:
+        return None
+    last = max(date.fromisoformat(r["week_end"]) for r in rows_all)
+    out = {k: quarter_metrics(series[k], last) for k in [CORE] + ORGANS if series.get(k)}
+    return {"last_complete_day": last.isoformat(), "organs": out,
+            "note": ("Calendar quarters (Jan 1–Mar 31 etc.). OPTN weeks don't line up with quarter ends, so a week "
+                     "that straddles a boundary is split by days (its count spread evenly over its 7 days). "
+                     "Typical seasonal change = average of the same quarter-over-quarter change in the prior 3 years. "
+                     "Recent weeks may be revised up as centers finish reporting.")}
+
+
+def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, optn_ok, new_optn, now, through):
+    """Bullets shared by the page's "This week" box and the Slack digest.
+    Each: {label, text, through (date str or None), page (shown on the page; Signals is digest-only
+    because the page shows the signal chips)}."""
     out = []
+    band = (signals or {}).get("thresholds", {}).get("volumes", {}).get("flat_within_pct", 2)
+    lab = lambda v: "flat" if v is None else "up" if v > band else "down" if v < -band else "flat"  # noqa: E731
     if optn_ok and not new_optn:
-        out.append("No new OPTN weekly data arrived this week, so transplant figures are unchanged.")
+        out.append({"label": "Data", "text": "No new OPTN weekly data arrived this week, so transplant figures are unchanged.",
+                    "through": through.get("weekly"), "page": True})
     if signals and signals.get("volumes"):
-        s = direction_sentence([(o.title(), signals["volumes"][o]["value"], signals["volumes"][o]["label"]) for o in ORGANS],
-                               " transplants", " over the last 4 weeks vs. last year")
-        if s:
-            out.append(s)
+        core = signals["volumes"].get(CORE, {})
+        lead = (f"{CORE_LABEL} {'rose' if core['value'] > 0 else 'fell'} {abs(core['value']):.1f}% over the last 4 weeks vs. last year"
+                if core.get("value") is not None else "")
+        by = direction_sentence([(o.title(), signals["volumes"][o]["value"], signals["volumes"][o]["label"]) for o in ORGANS], "", "")
+        text = f"{lead}; by organ, {by[0].lower() + by[1:]}" if lead and by else (lead + "." if lead else by)
+        out.append({"label": "Volumes", "text": text, "through": through.get("weekly"), "page": True})
+    if quarterly and quarterly["organs"].get(CORE):
+        m = quarterly["organs"][CORE]
+        qn, pqn = m["quarter"].split()[0], m["prior_quarter"].split()[0]
+        text = (f"{qn} {CORE_SHORT} {arrow_pct(m['yoy_pct'])} YoY; {arrow_pct(m['seq_pct'])} vs {pqn} "
+                f"(typical {pqn}→{qn}: {arrow_pct(m['typical_seq_pct'])})")
+        if m["qtd"]["shown"]:
+            text += f"; {m['qtd']['quarter'].split()[0]} to date {arrow_pct(m['qtd']['yoy_pct'])} YoY"
+        out.append({"label": "Quarter", "text": text + ".", "through": fmt_date(m["end"]), "page": True})
     if donors and donors.get("metrics") and donors["metrics"].get("trailing_4wk"):
         v = donors["metrics"]["trailing_4wk"]["yoy_pct"]
-        s = f"Deceased donors recovered {'rose' if v > 0 else 'fell' if v < 0 else 'were flat at'} {abs(v):.1f}% over the same weeks"
+        t = f"Deceased donors recovered {'rose' if v > 0 else 'fell' if v < 0 else 'were flat at'} {abs(v):.1f}% over the last 4 weeks vs. last year"
         d = donors.get("discard")
         if d and d.get("prior_year_discard_rate_pct") is not None:
-            s += (f", and {d['discard_rate_pct']:.1f}% of recovered organs have been discarded so far this year "
+            t += (f", and {d['discard_rate_pct']:.1f}% of recovered organs have been discarded so far this year "
                   f"({d['prior_year_discard_rate_pct']:.1f}% a year earlier)")
-        out.append(s + ".")
+        out.append({"label": "Donors", "text": t + ".", "through": through.get("donors"), "page": True})
     if mix and signals and signals.get("distance"):
         d0 = mix["dcd_share_donors"]
         longer = [o for o in ORGANS if signals["distance"][o]["label"] == "longer"]
@@ -272,9 +310,28 @@ def this_week_sentences(signals, donors, mix, waitlist, sec, optn_ok, new_optn, 
             if len(longer) + len(shorter) < len(ORGANS):
                 dist += " and held steady for the rest"
         prior = d0["current"] - d0["change_pts"]
-        out.append(f"DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
-                   f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}; {dist}.")
-    # insider activity filed this week takes priority over the waitlist line
+        out.append({"label": "Donor mix & distance",
+                    "text": f"DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
+                            f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}; {dist}.",
+                    "through": fmt_date(mix["period_end"]), "page": True})
+    if waitlist:
+        core = ((waitlist.get(CORE) or {}).get("trailing_4wk") or {}).get("yoy_pct")
+        items = [(o.title(), ((waitlist.get(o) or {}).get("trailing_4wk") or {}).get("yoy_pct"), None) for o in ORGANS]
+        items = [(n, v, lab(v)) for n, v, _ in items]
+        by = direction_sentence(items, "", "")
+        lead = f"{CORE_SHORT.capitalize()} waitlist additions {'rose' if core > band else 'fell' if core < -band else 'were roughly flat'}" \
+               f"{'' if -band <= core <= band else ''} ({'+' if core > 0 else ''}{core:.1f}%) over the last 4 weeks vs. last year" if core is not None else ""
+        text = f"{lead}; by organ, {by[0].lower() + by[1:]}" if lead and by else by
+        out.append({"label": "Waitlist", "text": text, "through": through.get("waitlist"), "page": True})
+    if regions and regions.get("regions"):
+        names = regions.get("names", {})
+        moves = [(r, m["trailing_4wk"]["yoy_pct"]) for r, m in regions["regions"].items()
+                 if m and (m.get("trailing_4wk") or {}).get("yoy_pct") is not None]
+        moves.sort(key=lambda x: -abs(x[1]))
+        bits = [f"{names.get(r, 'Region ' + r)} (Region {r}) {arrow_pct(v)}" for r, v in moves[:3]]
+        if bits:
+            out.append({"label": "Regions", "text": "biggest moves over the last 4 weeks vs. last year: " + ", ".join(bits) + ".",
+                        "through": through.get("regions"), "page": True})
     if sec:
         wk = (now.date() - timedelta(days=7)).isoformat()
         flags = [f for f in sec["form4_sales"] if f["filed"] >= wk]
@@ -282,17 +339,29 @@ def this_week_sentences(signals, donors, mix, waitlist, sec, optn_ok, new_optn, 
         if flags or d13:
             bits = [f"{f4_who(f['owner'], f['roles'])} sold {f['shares_sold']:,.0f} shares on the open market" for f in flags]
             bits += [f"a {f['form']} large-holder filing was made" for f in d13]
-            out.append("SEC filings this week: " + "; ".join(bits) + ".")
-    if waitlist and len(out) < 4:
-        band = (signals or {}).get("thresholds", {}).get("volumes", {}).get("flat_within_pct", 2)
-        items = []
-        for o in ORGANS:
-            v = ((waitlist.get(o) or {}).get("trailing_4wk") or {}).get("yoy_pct")
-            items.append((o.title(), v, "flat" if v is None else "up" if v > band else "down" if v < -band else "flat"))
-        s = direction_sentence(items, " waitlist additions", " over the last 4 weeks")
-        if s:
-            out.append(s)
-    return out[:4]
+            out.append({"label": "SEC", "text": "; ".join(bits) + ".", "through": None, "page": True})
+    if signals and signals.get("volumes"):
+        v = signals["volumes"]
+        groups = {}
+        for o in [CORE] + ORGANS:
+            groups.setdefault(v[o]["label"] or "n/a", []).append(CORE_SHORT if o == CORE else o)
+        vol = "; ".join(f"{k} for {join_list(g)}" for k, g in groups.items())
+        parts = [f"volumes {vol}"]
+        if signals.get("distance"):
+            dg = {}
+            for o in ORGANS:
+                dg.setdefault(signals["distance"][o]["label"], []).append(o)
+            parts.append("long trips (251+ NM) " + "; ".join(f"{k} for {join_list(g)}" for k, g in dg.items()))
+        if signals.get("dcd_share"):
+            parts.append(f"DCD share {signals['dcd_share']['label']}")
+        if signals.get("discard_rate"):
+            parts.append(f"discard rate {signals['discard_rate']['label']}")
+        out.append({"label": "Signals", "text": " · ".join(cap_first(p) for p in parts) + ".", "through": None, "page": False})
+    return out
+
+
+def cap_first(t):
+    return t[:1].upper() + t[1:]
 
 
 def classify(v, band, labels):
@@ -306,7 +375,7 @@ def signals_block(organs, mix, donors):
     out = {"thresholds": cfg}
     c = cfg["volumes"]
     out["volumes"] = {o: {"value": ((organs.get(o) or {}).get("trailing_4wk") or {}).get("yoy_pct"), "unit": "%"}
-                      for o in ORGANS}
+                      for o in [CORE] + ORGANS}
     for v in out["volumes"].values():
         v["label"] = classify(v["value"], c["flat_within_pct"], c["labels"])
     if mix:
@@ -377,9 +446,11 @@ def main():
     optn_ok = tw.get("status") == "ok"
     organs = {}
     total = None
+    quarterly = None
     if optn_ok:
         series = tw.get("organs", {})
-        organs = {o: organ_metrics(series.get(o) or []) for o in ORGANS}
+        organs = {o: organ_metrics(series.get(o) or []) for o in [CORE] + ORGANS if series.get(o)}
+        quarterly = quarterly_block(series)
         total = organ_metrics(series["all"]) if series.get("all") else \
             organ_metrics(total_series({o: series.get(o) or [] for o in ORGANS}))
     donors = None
@@ -400,10 +471,25 @@ def main():
     # ---- plain-language lines (shared verbatim by the page's "This week" box and the Slack digest)
     issues = (health or {}).get("issues") or []
     issue_line = ("Data issue: " + " ".join(issues)) if issues else None
+    wl_raw = load("waitlist_weekly")
+    rw_raw = load("regions_weekly")
+    def last_end(rows):
+        return fmt_date(max(r["week_end"] for r in rows)) if rows else None
+    through = {
+        "weekly": last_end((tw.get("organs") or {}).get(CORE) or []),
+        "donors": last_end(dw.get("donors") or []),
+        "waitlist": last_end((wl_raw.get("organs") or {}).get(CORE) or []),
+        "regions": last_end([r for rows in (rw_raw.get("regions") or {}).values() for r in rows]),
+    }
+    if regions is not None:
+        regions["names"] = rw_raw.get("region_names", {})
     if not optn_ok:
-        bullets = ["OPTN volumes: awaiting the first data file, so no transplant figures are loaded yet."]
+        items = [{"label": "Volumes", "text": "awaiting the first OPTN data file, so no transplant figures are loaded yet.",
+                  "through": None, "page": True}]
     else:
-        bullets = this_week_sentences(signals, donors, mix, waitlist, sec, optn_ok, new_optn, now)
+        items = labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, optn_ok, new_optn, now, through)
+    page_items = [i for i in items if i["page"]]
+    bullets = [f"{i['label']}: {i['text']}" for i in page_items]
 
     if news["new_items_7d"]:
         cats = [f"{news['labels'].get(k, k)} {v}" for k, v in news["by_category"].items() if v]
@@ -416,13 +502,17 @@ def main():
     head = f"*SRTA Transplant Tracker — week of {fmt_date(now.date().isoformat())}*"
     if srta:
         head += f" · SRTA ${srta['close']:.2f} ({arrow(srta['change_1w_pct'])} 1-wk)"
-    lines = ([f"⚠️ {issue_line}"] if issue_line else []) + [head] + [f"• {b}" for b in bullets]
+    tmdx = prices["tickers"].get("TMDX")
+    if tmdx:
+        head += f" · TMDX ${tmdx['close']:.2f} ({arrow(tmdx['change_1w_pct'])} 1-wk)"
+    lines = ([f"⚠️ {issue_line}"] if issue_line else []) + [head] + [
+        f"• *{i['label']}:* {i['text']}" + (f" (data through {i['through']})" if i["through"] else "") for i in items]
     heads = news["top_headlines"]
     if heads:
-        lines.append("Top headlines:")
+        lines.append("*Top headlines:*")
         lines += [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {fmt_date(h['date'])})" for h in heads]
     else:
-        lines.append(f"Top headlines: {news['none_text']}.")
+        lines.append(f"*Top headlines:* {news['none_text']}.")
     lines.append(f"Dashboard: {SITE_URL}")
     if len(lines) > MAX_LINES:  # drop the dashboard link first, then the last headline(s)
         lines = [l for l in lines if not l.startswith("Dashboard:")][:MAX_LINES]
@@ -446,6 +536,9 @@ def main():
         "issue_line": issue_line,
         "bullets": bullets,
         "this_week": bullets,
+        "this_week_items": items,
+        "quarterly": quarterly,
+        "core_label": CORE_LABEL,
         "news_line": news_line,
         "markdown_lines": lines,
     }

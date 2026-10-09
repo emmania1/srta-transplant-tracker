@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T10:11:55+00:00",
+  "generated_at": "2026-10-09T11:02:21+00:00",
   "price": {
     "close": 4.47,
     "date": "2026-10-08",
@@ -257,7 +257,7 @@
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
   },
   "health": {
-    "checked_at": "2026-10-08T21:59:47+00:00",
+    "checked_at": "2026-10-09T11:02:21+00:00",
     "ok": true,
     "issues": [],
     "notices": [
@@ -272,14 +272,7 @@
       "weekly_optn_donors_max_age_days": 21,
       "_donors_note": "OPTN's donor series runs ~1 week behind the transplant series (e.g. donors through Sep 28 vs transplants through Oct 2), so its limit is 14 + 7 days."
     },
-    "step_outcomes": {
-      "Prices": "success",
-      "News": "success",
-      "OPTN weekly": "success",
-      "OPTN national": "success",
-      "CDC": "success",
-      "SEC EDGAR": "success"
-    }
+    "step_outcomes": {}
   },
   "optn": {
     "status": "ok",
@@ -287,6 +280,36 @@
     "raw_file": "2026-10-08_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_lung.csv",
     "new_data_this_week": true,
     "organs": {
+      "hll": {
+        "latest_week": {
+          "week_start": "2026-09-24",
+          "week_end": "2026-09-30",
+          "iso_week": 39,
+          "count": 383,
+          "prior_year_count": 347,
+          "yoy_pct": 10.4
+        },
+        "trailing_4wk": {
+          "weeks": [
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39"
+          ],
+          "total": 1550,
+          "prior_year_total": 1499,
+          "yoy_pct": 3.4
+        },
+        "ytd": {
+          "through_iso_week": 39,
+          "year": 2026,
+          "total": 15416,
+          "prior_year_total": 14762,
+          "yoy_pct": 4.4,
+          "weeks_covered": 39,
+          "prior_weeks_covered": 39
+        }
+      },
       "heart": {
         "latest_week": {
           "week_start": "2026-09-24",
@@ -519,6 +542,11 @@
       }
     },
     "volumes": {
+      "hll": {
+        "value": 3.4,
+        "unit": "%",
+        "label": "up"
+      },
       "heart": {
         "value": -5.8,
         "unit": "%",
@@ -724,6 +752,36 @@
         "total": 3004,
         "prior_year_total": 2883,
         "yoy_pct": 4.2,
+        "weeks_covered": 39,
+        "prior_weeks_covered": 39
+      }
+    },
+    "hll": {
+      "latest_week": {
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "iso_week": 39,
+        "count": 567,
+        "prior_year_count": 525,
+        "yoy_pct": 8.0
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W36",
+          "2026-W37",
+          "2026-W38",
+          "2026-W39"
+        ],
+        "total": 2058,
+        "prior_year_total": 2074,
+        "yoy_pct": -0.8
+      },
+      "ytd": {
+        "through_iso_week": 39,
+        "year": 2026,
+        "total": 20194,
+        "prior_year_total": 19565,
+        "yoy_pct": 3.2,
         "weeks_covered": 39,
         "prior_weeks_covered": 39
       }
@@ -1214,6 +1272,19 @@
           "prior_weeks_covered": 39
         }
       }
+    },
+    "names": {
+      "1": "New England",
+      "2": "Mid-Atlantic",
+      "3": "Southeast",
+      "4": "South Central",
+      "5": "Southwest",
+      "6": "Northwest",
+      "7": "Upper Midwest",
+      "8": "Central Plains",
+      "9": "New York",
+      "10": "Great Lakes",
+      "11": "Mid-South"
     }
   },
   "location": {
@@ -1279,25 +1350,313 @@
   },
   "issue_line": null,
   "bullets": [
-    "Heart and kidney transplants fell 5.8% and 2.1% over the last 4 weeks vs. last year; liver and lung rose 6.8% and 5.4%.",
-    "Deceased donors recovered fell 1.1% over the same weeks, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
-    "DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
-    "Heart and kidney waitlist additions fell 7.9% and 8.3% over the last 4 weeks; liver was roughly flat (+0.1%); lung rose 7.0%."
+    "Volumes: Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%.",
+    "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
+    "Donors: Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "Donor mix & distance: DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Waitlist: Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%.",
+    "Regions: biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%."
   ],
   "this_week": [
-    "Heart and kidney transplants fell 5.8% and 2.1% over the last 4 weeks vs. last year; liver and lung rose 6.8% and 5.4%.",
-    "Deceased donors recovered fell 1.1% over the same weeks, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
-    "DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
-    "Heart and kidney waitlist additions fell 7.9% and 8.3% over the last 4 weeks; liver was roughly flat (+0.1%); lung rose 7.0%."
+    "Volumes: Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%.",
+    "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
+    "Donors: Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "Donor mix & distance: DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Waitlist: Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%.",
+    "Regions: biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%."
   ],
+  "this_week_items": [
+    {
+      "label": "Volumes",
+      "text": "Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%.",
+      "through": "Sep 30, 2026",
+      "page": true
+    },
+    {
+      "label": "Quarter",
+      "text": "Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
+      "through": "Sep 30, 2026",
+      "page": true
+    },
+    {
+      "label": "Donors",
+      "text": "Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+      "through": "Sep 23, 2026",
+      "page": true
+    },
+    {
+      "label": "Donor mix & distance",
+      "text": "DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+      "through": "Aug 31, 2026",
+      "page": true
+    },
+    {
+      "label": "Waitlist",
+      "text": "Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%.",
+      "through": "Sep 30, 2026",
+      "page": true
+    },
+    {
+      "label": "Regions",
+      "text": "biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%.",
+      "through": "Sep 30, 2026",
+      "page": true
+    },
+    {
+      "label": "Signals",
+      "text": "Volumes up for heart+liver+lung, liver and lung; down for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
+      "through": null,
+      "page": false
+    }
+  ],
+  "quarterly": {
+    "last_complete_day": "2026-09-30",
+    "organs": {
+      "hll": {
+        "quarter": "Q3 2026",
+        "start": "2026-07-01",
+        "end": "2026-09-30",
+        "total": 5062.7,
+        "prior_year_total": 4813.6,
+        "prior_quarter": "Q2 2026",
+        "prior_quarter_total": 5376.1,
+        "yoy_pct": 5.2,
+        "seq_pct": -5.8,
+        "typical_seq_pct": -4.2,
+        "typical_basis": [
+          {
+            "year": 2025,
+            "seq_pct": -6.1
+          },
+          {
+            "year": 2024,
+            "seq_pct": -3.7
+          },
+          {
+            "year": 2023,
+            "seq_pct": -2.7
+          }
+        ],
+        "prorated_weeks": [
+          {
+            "week": "2026-W26",
+            "dates": "2026-06-25..2026-07-01",
+            "days_in_span": 1,
+            "days_in_week": 7,
+            "count": 397
+          }
+        ],
+        "qtd": {
+          "quarter": "Q4 2026",
+          "start": "2026-10-01",
+          "through": null,
+          "days": 0,
+          "complete_weeks": 0,
+          "total": null,
+          "prior_year_total": null,
+          "yoy_pct": null,
+          "shown": false
+        }
+      },
+      "heart": {
+        "quarter": "Q3 2026",
+        "start": "2026-07-01",
+        "end": "2026-09-30",
+        "total": 1134.9,
+        "prior_year_total": 1175.9,
+        "prior_quarter": "Q2 2026",
+        "prior_quarter_total": 1239.1,
+        "yoy_pct": -3.5,
+        "seq_pct": -8.4,
+        "typical_seq_pct": -1.4,
+        "typical_basis": [
+          {
+            "year": 2025,
+            "seq_pct": -1.2
+          },
+          {
+            "year": 2024,
+            "seq_pct": -3.0
+          },
+          {
+            "year": 2023,
+            "seq_pct": 0.1
+          }
+        ],
+        "prorated_weeks": [
+          {
+            "week": "2026-W26",
+            "dates": "2026-06-25..2026-07-01",
+            "days_in_span": 1,
+            "days_in_week": 7,
+            "count": 97
+          }
+        ],
+        "qtd": {
+          "quarter": "Q4 2026",
+          "start": "2026-10-01",
+          "through": null,
+          "days": 0,
+          "complete_weeks": 0,
+          "total": null,
+          "prior_year_total": null,
+          "yoy_pct": null,
+          "shown": false
+        }
+      },
+      "liver": {
+        "quarter": "Q3 2026",
+        "start": "2026-07-01",
+        "end": "2026-09-30",
+        "total": 3004.4,
+        "prior_year_total": 2793.6,
+        "prior_quarter": "Q2 2026",
+        "prior_quarter_total": 3187.4,
+        "yoy_pct": 7.5,
+        "seq_pct": -5.7,
+        "typical_seq_pct": -4.8,
+        "typical_basis": [
+          {
+            "year": 2025,
+            "seq_pct": -7.8
+          },
+          {
+            "year": 2024,
+            "seq_pct": -4.2
+          },
+          {
+            "year": 2023,
+            "seq_pct": -2.4
+          }
+        ],
+        "prorated_weeks": [
+          {
+            "week": "2026-W26",
+            "dates": "2026-06-25..2026-07-01",
+            "days_in_span": 1,
+            "days_in_week": 7,
+            "count": 227
+          }
+        ],
+        "qtd": {
+          "quarter": "Q4 2026",
+          "start": "2026-10-01",
+          "through": null,
+          "days": 0,
+          "complete_weeks": 0,
+          "total": null,
+          "prior_year_total": null,
+          "yoy_pct": null,
+          "shown": false
+        }
+      },
+      "lung": {
+        "quarter": "Q3 2026",
+        "start": "2026-07-01",
+        "end": "2026-09-30",
+        "total": 923.4,
+        "prior_year_total": 844.1,
+        "prior_quarter": "Q2 2026",
+        "prior_quarter_total": 949.6,
+        "yoy_pct": 9.4,
+        "seq_pct": -2.8,
+        "typical_seq_pct": -6.0,
+        "typical_basis": [
+          {
+            "year": 2025,
+            "seq_pct": -7.0
+          },
+          {
+            "year": 2024,
+            "seq_pct": -3.1
+          },
+          {
+            "year": 2023,
+            "seq_pct": -8.0
+          }
+        ],
+        "prorated_weeks": [
+          {
+            "week": "2026-W26",
+            "dates": "2026-06-25..2026-07-01",
+            "days_in_span": 1,
+            "days_in_week": 7,
+            "count": 73
+          }
+        ],
+        "qtd": {
+          "quarter": "Q4 2026",
+          "start": "2026-10-01",
+          "through": null,
+          "days": 0,
+          "complete_weeks": 0,
+          "total": null,
+          "prior_year_total": null,
+          "yoy_pct": null,
+          "shown": false
+        }
+      },
+      "kidney": {
+        "quarter": "Q3 2026",
+        "start": "2026-07-01",
+        "end": "2026-09-30",
+        "total": 5113.1,
+        "prior_year_total": 5306.4,
+        "prior_quarter": "Q2 2026",
+        "prior_quarter_total": 5487.6,
+        "yoy_pct": -3.6,
+        "seq_pct": -6.8,
+        "typical_seq_pct": -4.7,
+        "typical_basis": [
+          {
+            "year": 2025,
+            "seq_pct": -7.6
+          },
+          {
+            "year": 2024,
+            "seq_pct": -3.6
+          },
+          {
+            "year": 2023,
+            "seq_pct": -2.9
+          }
+        ],
+        "prorated_weeks": [
+          {
+            "week": "2026-W26",
+            "dates": "2026-06-25..2026-07-01",
+            "days_in_span": 1,
+            "days_in_week": 7,
+            "count": 379
+          }
+        ],
+        "qtd": {
+          "quarter": "Q4 2026",
+          "start": "2026-10-01",
+          "through": null,
+          "days": 0,
+          "complete_weeks": 0,
+          "total": null,
+          "prior_year_total": null,
+          "yoy_pct": null,
+          "shown": false
+        }
+      }
+    },
+    "note": "Calendar quarters (Jan 1\u2013Mar 31 etc.). OPTN weeks don't line up with quarter ends, so a week that straddles a boundary is split by days (its count spread evenly over its 7 days). Typical seasonal change = average of the same quarter-over-quarter change in the prior 3 years. Recent weeks may be revised up as centers finish reporting."
+  },
+  "core_label": "Heart + liver + lung (Strata's core flying organs)",
   "news_line": "1 new news item this week \u2014 Competitors & industry 1.",
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 9, 2026* \u00b7 SRTA $4.47 (\u25bc 7.5% 1-wk)",
-    "\u2022 Heart and kidney transplants fell 5.8% and 2.1% over the last 4 weeks vs. last year; liver and lung rose 6.8% and 5.4%.",
-    "\u2022 Deceased donors recovered fell 1.1% over the same weeks, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
-    "\u2022 DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
-    "\u2022 Heart and kidney waitlist additions fell 7.9% and 8.3% over the last 4 weeks; liver was roughly flat (+0.1%); lung rose 7.0%.",
-    "Top headlines:",
+    "*SRTA Transplant Tracker \u2014 week of Oct 9, 2026* \u00b7 SRTA $4.47 (\u25bc 7.5% 1-wk) \u00b7 TMDX $79.00 (\u25b2 0.5% 1-wk)",
+    "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%. (data through Sep 30, 2026)",
+    "\u2022 *Quarter:* Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%). (data through Sep 30, 2026)",
+    "\u2022 *Donors:* Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier). (data through Sep 23, 2026)",
+    "\u2022 *Donor mix & distance:* DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest. (data through Aug 31, 2026)",
+    "\u2022 *Waitlist:* Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%. (data through Sep 30, 2026)",
+    "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%. (data through Sep 30, 2026)",
+    "\u2022 *Signals:* Volumes up for heart+liver+lung, liver and lung; down for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
+    "*Top headlines:*",
     "  \u2013 <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, Oct 8, 2026)",
     "  \u2013 <https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/|TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?> (The Motley Fool, Sep 29, 2026)",
     "  \u2013 <https://www.prnewswire.com/news-releases/south-florida-donor-network-brings-advanced-organox-liver-perfusion-technology-to-south-florida-302892310.html|South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida> (PR Newswire, Sep 29, 2026)",

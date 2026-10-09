@@ -67,7 +67,12 @@ const OPTN_NATIONAL = "OPTN national data reports";
 // OPTN national data's Kidney is kidney alone. Labels say which.
 const KIDNEY_DASH = "Kidney (incl. kidney-pancreas)";
 const KIDNEY_ALONE = "Kidney (alone)";
-const dashLabel = (o) => (o === "kidney" ? KIDNEY_DASH : o === "all" ? "All organs" : cap(o));
+const CORE = "hll";
+const CORE_LABEL = "Heart + liver + lung (Strata's core flying organs)";
+const CORE_TAB = "Heart + liver + lung";
+const CARD_ORGANS = [CORE, ...ORGANS];
+const dashLabel = (o) => (o === "kidney" ? KIDNEY_DASH : o === "all" ? "All organs" : o === CORE ? CORE_LABEL : cap(o));
+const tabLabel = (o) => (o === CORE ? CORE_TAB : dashLabel(o));
 const aloneLabel = (o) => (o === "kidney" ? KIDNEY_ALONE : cap(o));
 
 // ---------- 1. Snapshot ----------
@@ -118,7 +123,7 @@ function renderSignals(summary) {
   }
   const rows = [
     ["Transplant volumes", `last 4 weeks vs. last year · flat = within ±${t.volumes.flat_within_pct}% · kidney incl. kidney-pancreas`,
-      ORGANS.map((o) => chip(cap(o), sig.volumes[o])).join("")],
+      [CORE, ...ORGANS].filter((o) => sig.volumes[o]).map((o) => chip(o === CORE ? CORE_TAB : cap(o), sig.volumes[o])).join("")],
     sig.distance ? ["Distance: 251+ NM share", `${esc(mixBasis)} · flat = within ±${t.distance.flat_within_pts} pt · kidney alone`,
       ORGANS.map((o) => chip(cap(o), sig.distance[o])).join("")] : null,
     sig.dcd_share ? ["DCD share of donors", `${esc(mixBasis)} · flat = within ±${t.dcd_share.flat_within_pts} pt`, chip("All donors", sig.dcd_share)] : null,
@@ -130,8 +135,10 @@ function renderSignals(summary) {
 
 // "This week": the same plain-English sentences and headlines as summary/latest.md (built in build_digest.py)
 function renderThisWeek(summary) {
-  const out = summary.this_week || summary.bullets || [];
-  $("this-week-list").innerHTML = out.map((s) => `<li>${esc(s)}</li>`).join("") || "<li>Awaiting data.</li>";
+  const items = (summary.this_week_items || []).filter((i) => i.page);
+  $("this-week-list").innerHTML = items.length
+    ? items.map((i) => `<li><strong>${esc(i.label)}:</strong> ${esc(i.text)}${i.through ? ` <span class="muted">(data through ${esc(i.through)})</span>` : ""}</li>`).join("")
+    : (summary.this_week || []).map((s) => `<li>${esc(s)}</li>`).join("") || "<li>Awaiting data.</li>";
   const news = summary.news || {};
   const heads = news.top_headlines || [];
   $("top-heads").innerHTML = heads.length
@@ -150,19 +157,19 @@ function totalSeries(organs) {
 }
 
 function weeklyPanel({ id, data, metrics, what, src, unit, yTitle }) {
-  let current = "heart", mode = "avg", chart = null;
+  let current = CORE, mode = "avg", chart = null;
   const ok = data.status === "ok";
   const cardsEl = $(`${id}-cards`), tabsEl = $(`${id}-tabs`), modeEl = $(`${id}-mode`);
 
   const cards = () => {
-    cardsEl.innerHTML = ORGANS.map((o) => {
+    cardsEl.innerHTML = CARD_ORGANS.map((o) => {
       const m = (metrics || {})[o];
       if (!ok || !m) {
         return `<button class="card awaiting-card" data-organ="${o}" aria-pressed="${o === current}">
           <div class="organ">${dashLabel(o)}</div><div class="kpi-label">Last 4 weeks vs. last year</div><div class="kpi">Awaiting data</div></button>`;
       }
       const t4 = m.trailing_4wk || {}, ytd = m.ytd || {}, w = m.latest_week || {};
-      return `<button class="card" data-organ="${o}" aria-pressed="${o === current}">
+      return `<button class="card${o === CORE ? " core" : ""}" data-organ="${o}" aria-pressed="${o === current}">
         <div class="organ">${dashLabel(o)}</div>
         <div class="kpi-label">Last 4 weeks vs. last year</div>
         <div class="kpi">${yoy(t4.yoy_pct)}</div>
@@ -210,7 +217,7 @@ function weeklyPanel({ id, data, metrics, what, src, unit, yTitle }) {
         maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
         plugins: {
           legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 14, boxHeight: 2 } },
-          tooltip: { callbacks: { title: (it) => `${dashLabel(current)} · week ${it[0].label}`, label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } },
+          tooltip: { callbacks: { title: (it) => `${tabLabel(current)} · week ${it[0].label}`, label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } },
         },
         scales: {
           x: { title: { display: true, text: "Week of year (week 1 starts Jan 1)", color: css("--muted") }, ticks: { color: css("--muted"), maxTicksLimit: 14 }, grid: { display: false } },
@@ -232,8 +239,8 @@ function weeklyPanel({ id, data, metrics, what, src, unit, yTitle }) {
   };
 
   cards();
-  tabsEl.innerHTML = [...ORGANS, "all"].map((o) =>
-    `<button role="tab" data-organ="${o}" aria-selected="${o === current}">${dashLabel(o)}</button>`).join("");
+  tabsEl.innerHTML = [...CARD_ORGANS, "all"].map((o) =>
+    `<button role="tab" data-organ="${o}" aria-selected="${o === current}">${tabLabel(o)}</button>`).join("");
   tabsEl.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => select(b.dataset.organ)));
   modeEl.innerHTML = `<button data-m="avg" aria-pressed="true">4-week average</button><button data-m="raw" aria-pressed="false">Weekly</button>`;
   modeEl.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
@@ -249,6 +256,31 @@ function renderVolumes(summary, tw) {
     unit: "transplants", yTitle: "Transplants per week" });
   const all = Object.values(tw.organs || {}).flat();
   srcLine("src-transplants", { name: OPTN_WEEKLY, cadence: "weekly", tag: "Live", through: all.length ? fmtDate(lastWeekEnd(all)) : null });
+}
+
+function renderQuarterly(summary) {
+  const q = summary.quarterly;
+  if (!q) { $("qtr-body").innerHTML = awaiting("Quarterly transplant totals", "the OPTN weekly download"); return; }
+  const rows = [CORE, ...ORGANS].filter((o) => q.organs[o]);
+  const m0 = q.organs[rows[0]];
+  const qn = m0.quarter.split(" ")[0], pqn = m0.prior_quarter.split(" ")[0];
+  const years = m0.typical_basis.map((b) => b.year);
+  const lyLabel = `${qn} ${Number(m0.quarter.split(" ")[1]) - 1}`;
+  const qtd = m0.qtd;
+  const fmt1 = (v) => (v == null ? "n/a" : Math.round(v).toLocaleString("en-US"));
+  $("qtr-body").innerHTML = `<div class="scroll-x"><table class="qtr-table">
+    <thead><tr><th>Organ</th><th>${esc(m0.quarter)}</th><th>${esc(lyLabel)}</th><th>YoY</th><th>${esc(m0.prior_quarter)}</th><th>vs. ${pqn}</th>
+      <th>Typical ${pqn}→${qn}<div class="cell-sub">avg ${years.length ? `${Math.min(...years)}–${Math.max(...years)}` : "n/a"}</div></th>
+      <th>${esc(qtd.quarter)} to date, YoY</th></tr></thead>
+    <tbody>${rows.map((o) => {
+      const m = q.organs[o];
+      return `<tr class="${o === CORE ? "core-row" : ""}"><td>${o === CORE ? `<strong>${esc(CORE_LABEL)}</strong>` : esc(dashLabel(o))}</td>
+        <td>${fmt1(m.total)}</td><td>${fmt1(m.prior_year_total)}</td><td>${yoy(m.yoy_pct)}</td>
+        <td>${fmt1(m.prior_quarter_total)}</td><td>${yoy(m.seq_pct)}</td><td>${yoy(m.typical_seq_pct)}</td>
+        <td>${m.qtd.shown ? yoy(m.qtd.yoy_pct) : `<span class="muted nowrap">after 4 weeks (${m.qtd.complete_weeks} so far)</span>`}</td></tr>`;
+    }).join("")}</tbody></table></div>
+    <p class="note">Calendar quarters (${esc(qn)}: ${fmtDate(m0.start)} – ${fmtDate(m0.end)}). OPTN weeks don't line up with quarter ends, so a week that straddles a boundary is split by days: ${m0.prorated_weeks.map((w) => `the week of ${fmtDate(w.dates.split("..")[0])}–${fmtDate(w.dates.split("..")[1])} counts ${w.days_in_span}/${w.days_in_week} of its transplants in ${esc(qn)}`).join("; ") || "none this quarter"}. Totals are therefore rounded to whole transplants. "Typical" is the average ${pqn}→${qn} change in ${[...years].sort().join(", ")}. Quarter-to-date YoY appears once the current quarter has 4 complete weeks. Recent weeks may be revised up as centers finish reporting.</p>`;
+  srcLine("src-qtr", { name: OPTN_WEEKLY, cadence: "weekly", tag: "Live", through: fmtDate(q.last_complete_day) });
 }
 
 function renderWaitlist(summary, wl) {
@@ -741,6 +773,7 @@ function trackActiveSection() {
   run(() => renderSignals(summary));
   run(() => renderThisWeek(summary));
   run(() => renderVolumes(summary, F.transplants_weekly));
+  run(() => renderQuarterly(summary));
   run(() => renderDonors(summary, F.donors_weekly));
   run(() => renderWaitlist(summary, F.waitlist_weekly));
   run(() => renderDonorMix(F.donor_mix));

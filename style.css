@@ -170,7 +170,10 @@ h1 { font-size: 1.55rem; margin: 0 0 4px; }
 .top-heads a:hover { text-decoration: underline; }
 
 /* ---------- cards & stats ---------- */
-.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+.cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 12px; }
+.card.core { background: var(--await-bg); }
+.qtr-table tr.core-row td { background: var(--await-bg); }
+.qtr-table th { vertical-align: bottom; }
 .card {
   border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--panel);
   cursor: pointer; text-align: left; font: inherit; color: inherit;
@@ -258,6 +261,9 @@ tr.total td { font-weight: 600; border-top: 2px solid var(--border); }
 .glossary dd { margin: 0; color: var(--text-2); }
 
 /* ---------- mobile ---------- */
+@media (min-width: 761px) and (max-width: 1040px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
 @media (max-width: 760px) {
   body { font-size: 14.5px; }
   .head-row { flex-direction: column; gap: 10px; }
@@ -308,4 +314,8 @@ tr.total td { font-weight: 600; border-top: 2px solid var(--border); }
   .secbar .long { display: none; }
   .secbar .short { display: inline; }
   .secbar a { padding: 12px 6px; }
+}
+
+@media (max-width: 760px) {
+  .cards .card.core { grid-column: 1 / -1; }
 }

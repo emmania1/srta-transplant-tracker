@@ -108,6 +108,21 @@ def parse_weekly(path, as_of):
     return rows, flagged + late
 
 
+HLL = ("heart", "liver", "lung")
+HLL_LABEL = "Heart + liver + lung (Strata's core flying organs)"
+
+
+def add_hll(organs):
+    """Add organs['hll']: heart + liver + lung summed per OPTN week, only weeks all three report.
+    Keeps yr/week so YoY matching uses OPTN's own week numbering."""
+    if not all(organs.get(o) for o in HLL):
+        return
+    maps = [{(r["yr"], r["week"]): r for r in organs[o]} for o in HLL]
+    keys = sorted(set.intersection(*(set(m) for m in maps)))
+    organs["hll"] = [{**{k: maps[0][key][k] for k in ("yr", "week", "week_start", "week_end")},
+                      "count": sum(m[key]["count"] for m in maps)} for key in keys]
+
+
 def raw_files():
     files = []
     for p in sorted(RAW.iterdir()):
@@ -172,14 +187,15 @@ def main():
             organs[organ] = rows
             excluded[organ] = [f"{r['yr']}-W{r['week']:02d}" for r in dropped]
             files_used.append(path.name)
+        add_hll(organs)
         as_of = min(a for _, a in weekly.values())
         results["transplants_weekly"] = {
             "organs": organs, "excluded_incomplete_weeks": excluded,
             "raw_file": ", ".join(files_used), "data_as_of": as_of.isoformat(),
             "parser": "optn_metrics_tx_weekly",
             "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
-            "donor_type": "Deceased Donors", "region": "National",
-            "note": ("'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.). "
+            "donor_type": "Deceased Donors", "region": "National", "hll_label": HLL_LABEL,
+            "note": ("'hll' = heart + liver + lung summed per week. 'all' = OPTN's All Organs deceased-donor total (includes pancreas, intestine, etc.). "
                      "The dashboard's 'Kidney' includes kidney-pancreas transplants: 2025 = 21,856 vs 21,052 "
                      "kidney-alone + 804 kidney-pancreas in OPTN national data."),
             "organ_definitions": {"kidney": "Includes kidney-pancreas transplants (OPTN metrics dashboard definition)"},
@@ -207,11 +223,12 @@ def main():
             rows, dropped = parse_weekly(path, as_of)
             organs[organ] = rows
             excluded[organ] = [f"{r['yr']}-W{r['week']:02d}" for r in dropped]
+        add_hll(organs)
         results["waitlist_weekly"] = {
             "organs": organs, "excluded_incomplete_weeks": excluded,
             "raw_file": ", ".join(p.name for p, _ in waitlist.values()),
             "data_as_of": min(a for _, a in waitlist.values()).isoformat(),
-            "parser": "optn_metrics_wl_weekly", "region": "National",
+            "parser": "optn_metrics_wl_weekly", "region": "National", "hll_label": HLL_LABEL,
             "organ_definitions": {"kidney": ("Includes kidney-pancreas (dashboard definition): 2025 = 54,918 vs 53,171 "
                                              "kidney + 1,688 kidney-pancreas in OPTN national data (within 0.1%)")},
             "note": "Waitlist additions = new registrations added to the OPTN waiting list; a demand indicator.",

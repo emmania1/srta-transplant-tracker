@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SRTA Transplant Tracker</title>
-  <link rel="stylesheet" href="style.css?v=2026-10-09i" />
+  <link rel="stylesheet" href="style.css?v=2026-10-09k" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -87,6 +87,15 @@
         <details class="table-view"><summary>Show as table</summary><div id="vol-table"></div></details>
         <p class="note">Complete weeks only; the current, partial week is left out. Each week is compared with the same week last year. Recent weeks can be revised up as centers finish reporting.</p>
         <footer class="src" id="src-transplants"></footer>
+      </article>
+
+      <article class="panel" id="p-quarterly">
+        <header class="panel-head">
+          <h3>Quarterly view</h3>
+          <p class="why">Why it matters for SRTA: Strata reports by quarter, so this lines transplant volumes up with the period its results will cover, and shows whether the quarter's change is normal for the season.</p>
+        </header>
+        <div id="qtr-body"></div>
+        <footer class="src" id="src-qtr"></footer>
       </article>
 
       <article class="panel" id="p-donors">
@@ -294,6 +303,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026-10-09i"></script>
+  <script src="app.js?v=2026-10-09k"></script>
 </body>
 </html>

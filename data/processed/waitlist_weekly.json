@@ -2,7 +2,7 @@
   "title": "Weekly waitlist additions by organ (national)",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-08T22:25:43+00:00",
+  "ingested_at": "2026-10-09T10:59:11+00:00",
   "organs": {
     "all": [
       {
@@ -6838,6 +6838,1373 @@
         "week_end": "2026-09-30",
         "count": 84
       }
+    ],
+    "hll": [
+      {
+        "yr": 2023,
+        "week": 1,
+        "week_start": "2023-01-01",
+        "week_end": "2023-01-07",
+        "count": 335
+      },
+      {
+        "yr": 2023,
+        "week": 2,
+        "week_start": "2023-01-08",
+        "week_end": "2023-01-14",
+        "count": 417
+      },
+      {
+        "yr": 2023,
+        "week": 3,
+        "week_start": "2023-01-15",
+        "week_end": "2023-01-21",
+        "count": 416
+      },
+      {
+        "yr": 2023,
+        "week": 4,
+        "week_start": "2023-01-22",
+        "week_end": "2023-01-28",
+        "count": 439
+      },
+      {
+        "yr": 2023,
+        "week": 5,
+        "week_start": "2023-01-29",
+        "week_end": "2023-02-04",
+        "count": 454
+      },
+      {
+        "yr": 2023,
+        "week": 6,
+        "week_start": "2023-02-05",
+        "week_end": "2023-02-11",
+        "count": 467
+      },
+      {
+        "yr": 2023,
+        "week": 7,
+        "week_start": "2023-02-12",
+        "week_end": "2023-02-18",
+        "count": 448
+      },
+      {
+        "yr": 2023,
+        "week": 8,
+        "week_start": "2023-02-19",
+        "week_end": "2023-02-25",
+        "count": 450
+      },
+      {
+        "yr": 2023,
+        "week": 9,
+        "week_start": "2023-02-26",
+        "week_end": "2023-03-04",
+        "count": 455
+      },
+      {
+        "yr": 2023,
+        "week": 10,
+        "week_start": "2023-03-05",
+        "week_end": "2023-03-11",
+        "count": 440
+      },
+      {
+        "yr": 2023,
+        "week": 11,
+        "week_start": "2023-03-12",
+        "week_end": "2023-03-18",
+        "count": 431
+      },
+      {
+        "yr": 2023,
+        "week": 12,
+        "week_start": "2023-03-19",
+        "week_end": "2023-03-25",
+        "count": 473
+      },
+      {
+        "yr": 2023,
+        "week": 13,
+        "week_start": "2023-03-26",
+        "week_end": "2023-04-01",
+        "count": 486
+      },
+      {
+        "yr": 2023,
+        "week": 14,
+        "week_start": "2023-04-02",
+        "week_end": "2023-04-08",
+        "count": 493
+      },
+      {
+        "yr": 2023,
+        "week": 15,
+        "week_start": "2023-04-09",
+        "week_end": "2023-04-15",
+        "count": 471
+      },
+      {
+        "yr": 2023,
+        "week": 16,
+        "week_start": "2023-04-16",
+        "week_end": "2023-04-22",
+        "count": 476
+      },
+      {
+        "yr": 2023,
+        "week": 17,
+        "week_start": "2023-04-23",
+        "week_end": "2023-04-29",
+        "count": 425
+      },
+      {
+        "yr": 2023,
+        "week": 18,
+        "week_start": "2023-04-30",
+        "week_end": "2023-05-06",
+        "count": 497
+      },
+      {
+        "yr": 2023,
+        "week": 19,
+        "week_start": "2023-05-07",
+        "week_end": "2023-05-13",
+        "count": 484
+      },
+      {
+        "yr": 2023,
+        "week": 20,
+        "week_start": "2023-05-14",
+        "week_end": "2023-05-20",
+        "count": 491
+      },
+      {
+        "yr": 2023,
+        "week": 21,
+        "week_start": "2023-05-21",
+        "week_end": "2023-05-27",
+        "count": 558
+      },
+      {
+        "yr": 2023,
+        "week": 22,
+        "week_start": "2023-05-28",
+        "week_end": "2023-06-03",
+        "count": 385
+      },
+      {
+        "yr": 2023,
+        "week": 23,
+        "week_start": "2023-06-04",
+        "week_end": "2023-06-10",
+        "count": 462
+      },
+      {
+        "yr": 2023,
+        "week": 24,
+        "week_start": "2023-06-11",
+        "week_end": "2023-06-17",
+        "count": 444
+      },
+      {
+        "yr": 2023,
+        "week": 25,
+        "week_start": "2023-06-18",
+        "week_end": "2023-06-24",
+        "count": 453
+      },
+      {
+        "yr": 2023,
+        "week": 26,
+        "week_start": "2023-06-25",
+        "week_end": "2023-07-01",
+        "count": 502
+      },
+      {
+        "yr": 2023,
+        "week": 27,
+        "week_start": "2023-07-02",
+        "week_end": "2023-07-08",
+        "count": 402
+      },
+      {
+        "yr": 2023,
+        "week": 28,
+        "week_start": "2023-07-09",
+        "week_end": "2023-07-15",
+        "count": 517
+      },
+      {
+        "yr": 2023,
+        "week": 29,
+        "week_start": "2023-07-16",
+        "week_end": "2023-07-22",
+        "count": 433
+      },
+      {
+        "yr": 2023,
+        "week": 30,
+        "week_start": "2023-07-23",
+        "week_end": "2023-07-29",
+        "count": 478
+      },
+      {
+        "yr": 2023,
+        "week": 31,
+        "week_start": "2023-07-30",
+        "week_end": "2023-08-05",
+        "count": 442
+      },
+      {
+        "yr": 2023,
+        "week": 32,
+        "week_start": "2023-08-06",
+        "week_end": "2023-08-12",
+        "count": 458
+      },
+      {
+        "yr": 2023,
+        "week": 33,
+        "week_start": "2023-08-13",
+        "week_end": "2023-08-19",
+        "count": 490
+      },
+      {
+        "yr": 2023,
+        "week": 34,
+        "week_start": "2023-08-20",
+        "week_end": "2023-08-26",
+        "count": 490
+      },
+      {
+        "yr": 2023,
+        "week": 35,
+        "week_start": "2023-08-27",
+        "week_end": "2023-09-02",
+        "count": 435
+      },
+      {
+        "yr": 2023,
+        "week": 36,
+        "week_start": "2023-09-03",
+        "week_end": "2023-09-09",
+        "count": 392
+      },
+      {
+        "yr": 2023,
+        "week": 37,
+        "week_start": "2023-09-10",
+        "week_end": "2023-09-16",
+        "count": 469
+      },
+      {
+        "yr": 2023,
+        "week": 38,
+        "week_start": "2023-09-17",
+        "week_end": "2023-09-23",
+        "count": 463
+      },
+      {
+        "yr": 2023,
+        "week": 39,
+        "week_start": "2023-09-24",
+        "week_end": "2023-09-30",
+        "count": 460
+      },
+      {
+        "yr": 2023,
+        "week": 40,
+        "week_start": "2023-10-01",
+        "week_end": "2023-10-07",
+        "count": 460
+      },
+      {
+        "yr": 2023,
+        "week": 41,
+        "week_start": "2023-10-08",
+        "week_end": "2023-10-14",
+        "count": 473
+      },
+      {
+        "yr": 2023,
+        "week": 42,
+        "week_start": "2023-10-15",
+        "week_end": "2023-10-21",
+        "count": 453
+      },
+      {
+        "yr": 2023,
+        "week": 43,
+        "week_start": "2023-10-22",
+        "week_end": "2023-10-28",
+        "count": 494
+      },
+      {
+        "yr": 2023,
+        "week": 44,
+        "week_start": "2023-10-29",
+        "week_end": "2023-11-04",
+        "count": 512
+      },
+      {
+        "yr": 2023,
+        "week": 45,
+        "week_start": "2023-11-05",
+        "week_end": "2023-11-11",
+        "count": 518
+      },
+      {
+        "yr": 2023,
+        "week": 46,
+        "week_start": "2023-11-12",
+        "week_end": "2023-11-18",
+        "count": 492
+      },
+      {
+        "yr": 2023,
+        "week": 47,
+        "week_start": "2023-11-19",
+        "week_end": "2023-11-25",
+        "count": 375
+      },
+      {
+        "yr": 2023,
+        "week": 48,
+        "week_start": "2023-11-26",
+        "week_end": "2023-12-02",
+        "count": 468
+      },
+      {
+        "yr": 2023,
+        "week": 49,
+        "week_start": "2023-12-03",
+        "week_end": "2023-12-09",
+        "count": 448
+      },
+      {
+        "yr": 2023,
+        "week": 50,
+        "week_start": "2023-12-10",
+        "week_end": "2023-12-16",
+        "count": 448
+      },
+      {
+        "yr": 2023,
+        "week": 51,
+        "week_start": "2023-12-17",
+        "week_end": "2023-12-23",
+        "count": 504
+      },
+      {
+        "yr": 2023,
+        "week": 52,
+        "week_start": "2023-12-24",
+        "week_end": "2023-12-31",
+        "count": 308
+      },
+      {
+        "yr": 2024,
+        "week": 1,
+        "week_start": "2024-01-01",
+        "week_end": "2024-01-07",
+        "count": 355
+      },
+      {
+        "yr": 2024,
+        "week": 2,
+        "week_start": "2024-01-08",
+        "week_end": "2024-01-14",
+        "count": 431
+      },
+      {
+        "yr": 2024,
+        "week": 3,
+        "week_start": "2024-01-15",
+        "week_end": "2024-01-21",
+        "count": 426
+      },
+      {
+        "yr": 2024,
+        "week": 4,
+        "week_start": "2024-01-22",
+        "week_end": "2024-01-28",
+        "count": 482
+      },
+      {
+        "yr": 2024,
+        "week": 5,
+        "week_start": "2024-01-29",
+        "week_end": "2024-02-04",
+        "count": 488
+      },
+      {
+        "yr": 2024,
+        "week": 6,
+        "week_start": "2024-02-05",
+        "week_end": "2024-02-11",
+        "count": 485
+      },
+      {
+        "yr": 2024,
+        "week": 7,
+        "week_start": "2024-02-12",
+        "week_end": "2024-02-18",
+        "count": 523
+      },
+      {
+        "yr": 2024,
+        "week": 8,
+        "week_start": "2024-02-19",
+        "week_end": "2024-02-25",
+        "count": 510
+      },
+      {
+        "yr": 2024,
+        "week": 9,
+        "week_start": "2024-02-26",
+        "week_end": "2024-03-03",
+        "count": 502
+      },
+      {
+        "yr": 2024,
+        "week": 10,
+        "week_start": "2024-03-04",
+        "week_end": "2024-03-10",
+        "count": 514
+      },
+      {
+        "yr": 2024,
+        "week": 11,
+        "week_start": "2024-03-11",
+        "week_end": "2024-03-17",
+        "count": 469
+      },
+      {
+        "yr": 2024,
+        "week": 12,
+        "week_start": "2024-03-18",
+        "week_end": "2024-03-24",
+        "count": 495
+      },
+      {
+        "yr": 2024,
+        "week": 13,
+        "week_start": "2024-03-25",
+        "week_end": "2024-03-31",
+        "count": 500
+      },
+      {
+        "yr": 2024,
+        "week": 14,
+        "week_start": "2024-04-01",
+        "week_end": "2024-04-07",
+        "count": 457
+      },
+      {
+        "yr": 2024,
+        "week": 15,
+        "week_start": "2024-04-08",
+        "week_end": "2024-04-14",
+        "count": 457
+      },
+      {
+        "yr": 2024,
+        "week": 16,
+        "week_start": "2024-04-15",
+        "week_end": "2024-04-21",
+        "count": 477
+      },
+      {
+        "yr": 2024,
+        "week": 17,
+        "week_start": "2024-04-22",
+        "week_end": "2024-04-28",
+        "count": 485
+      },
+      {
+        "yr": 2024,
+        "week": 18,
+        "week_start": "2024-04-29",
+        "week_end": "2024-05-05",
+        "count": 487
+      },
+      {
+        "yr": 2024,
+        "week": 19,
+        "week_start": "2024-05-06",
+        "week_end": "2024-05-12",
+        "count": 511
+      },
+      {
+        "yr": 2024,
+        "week": 20,
+        "week_start": "2024-05-13",
+        "week_end": "2024-05-19",
+        "count": 472
+      },
+      {
+        "yr": 2024,
+        "week": 21,
+        "week_start": "2024-05-20",
+        "week_end": "2024-05-26",
+        "count": 536
+      },
+      {
+        "yr": 2024,
+        "week": 22,
+        "week_start": "2024-05-27",
+        "week_end": "2024-06-02",
+        "count": 400
+      },
+      {
+        "yr": 2024,
+        "week": 23,
+        "week_start": "2024-06-03",
+        "week_end": "2024-06-09",
+        "count": 490
+      },
+      {
+        "yr": 2024,
+        "week": 24,
+        "week_start": "2024-06-10",
+        "week_end": "2024-06-16",
+        "count": 492
+      },
+      {
+        "yr": 2024,
+        "week": 25,
+        "week_start": "2024-06-17",
+        "week_end": "2024-06-23",
+        "count": 488
+      },
+      {
+        "yr": 2024,
+        "week": 26,
+        "week_start": "2024-06-24",
+        "week_end": "2024-06-30",
+        "count": 525
+      },
+      {
+        "yr": 2024,
+        "week": 27,
+        "week_start": "2024-07-01",
+        "week_end": "2024-07-07",
+        "count": 456
+      },
+      {
+        "yr": 2024,
+        "week": 28,
+        "week_start": "2024-07-08",
+        "week_end": "2024-07-14",
+        "count": 458
+      },
+      {
+        "yr": 2024,
+        "week": 29,
+        "week_start": "2024-07-15",
+        "week_end": "2024-07-21",
+        "count": 472
+      },
+      {
+        "yr": 2024,
+        "week": 30,
+        "week_start": "2024-07-22",
+        "week_end": "2024-07-28",
+        "count": 482
+      },
+      {
+        "yr": 2024,
+        "week": 31,
+        "week_start": "2024-07-29",
+        "week_end": "2024-08-04",
+        "count": 474
+      },
+      {
+        "yr": 2024,
+        "week": 32,
+        "week_start": "2024-08-05",
+        "week_end": "2024-08-11",
+        "count": 465
+      },
+      {
+        "yr": 2024,
+        "week": 33,
+        "week_start": "2024-08-12",
+        "week_end": "2024-08-18",
+        "count": 460
+      },
+      {
+        "yr": 2024,
+        "week": 34,
+        "week_start": "2024-08-19",
+        "week_end": "2024-08-25",
+        "count": 468
+      },
+      {
+        "yr": 2024,
+        "week": 35,
+        "week_start": "2024-08-26",
+        "week_end": "2024-09-01",
+        "count": 531
+      },
+      {
+        "yr": 2024,
+        "week": 36,
+        "week_start": "2024-09-02",
+        "week_end": "2024-09-08",
+        "count": 404
+      },
+      {
+        "yr": 2024,
+        "week": 37,
+        "week_start": "2024-09-09",
+        "week_end": "2024-09-15",
+        "count": 497
+      },
+      {
+        "yr": 2024,
+        "week": 38,
+        "week_start": "2024-09-16",
+        "week_end": "2024-09-22",
+        "count": 483
+      },
+      {
+        "yr": 2024,
+        "week": 39,
+        "week_start": "2024-09-23",
+        "week_end": "2024-09-29",
+        "count": 525
+      },
+      {
+        "yr": 2024,
+        "week": 40,
+        "week_start": "2024-09-30",
+        "week_end": "2024-10-06",
+        "count": 508
+      },
+      {
+        "yr": 2024,
+        "week": 41,
+        "week_start": "2024-10-07",
+        "week_end": "2024-10-13",
+        "count": 495
+      },
+      {
+        "yr": 2024,
+        "week": 42,
+        "week_start": "2024-10-14",
+        "week_end": "2024-10-20",
+        "count": 483
+      },
+      {
+        "yr": 2024,
+        "week": 43,
+        "week_start": "2024-10-21",
+        "week_end": "2024-10-27",
+        "count": 491
+      },
+      {
+        "yr": 2024,
+        "week": 44,
+        "week_start": "2024-10-28",
+        "week_end": "2024-11-03",
+        "count": 498
+      },
+      {
+        "yr": 2024,
+        "week": 45,
+        "week_start": "2024-11-04",
+        "week_end": "2024-11-10",
+        "count": 482
+      },
+      {
+        "yr": 2024,
+        "week": 46,
+        "week_start": "2024-11-11",
+        "week_end": "2024-11-17",
+        "count": 542
+      },
+      {
+        "yr": 2024,
+        "week": 47,
+        "week_start": "2024-11-18",
+        "week_end": "2024-11-24",
+        "count": 475
+      },
+      {
+        "yr": 2024,
+        "week": 48,
+        "week_start": "2024-11-25",
+        "week_end": "2024-12-01",
+        "count": 407
+      },
+      {
+        "yr": 2024,
+        "week": 49,
+        "week_start": "2024-12-02",
+        "week_end": "2024-12-08",
+        "count": 483
+      },
+      {
+        "yr": 2024,
+        "week": 50,
+        "week_start": "2024-12-09",
+        "week_end": "2024-12-15",
+        "count": 540
+      },
+      {
+        "yr": 2024,
+        "week": 51,
+        "week_start": "2024-12-16",
+        "week_end": "2024-12-22",
+        "count": 573
+      },
+      {
+        "yr": 2024,
+        "week": 52,
+        "week_start": "2024-12-23",
+        "week_end": "2024-12-31",
+        "count": 479
+      },
+      {
+        "yr": 2025,
+        "week": 1,
+        "week_start": "2025-01-01",
+        "week_end": "2025-01-07",
+        "count": 310
+      },
+      {
+        "yr": 2025,
+        "week": 2,
+        "week_start": "2025-01-08",
+        "week_end": "2025-01-14",
+        "count": 414
+      },
+      {
+        "yr": 2025,
+        "week": 3,
+        "week_start": "2025-01-15",
+        "week_end": "2025-01-21",
+        "count": 470
+      },
+      {
+        "yr": 2025,
+        "week": 4,
+        "week_start": "2025-01-22",
+        "week_end": "2025-01-28",
+        "count": 492
+      },
+      {
+        "yr": 2025,
+        "week": 5,
+        "week_start": "2025-01-29",
+        "week_end": "2025-02-04",
+        "count": 507
+      },
+      {
+        "yr": 2025,
+        "week": 6,
+        "week_start": "2025-02-05",
+        "week_end": "2025-02-11",
+        "count": 531
+      },
+      {
+        "yr": 2025,
+        "week": 7,
+        "week_start": "2025-02-12",
+        "week_end": "2025-02-18",
+        "count": 456
+      },
+      {
+        "yr": 2025,
+        "week": 8,
+        "week_start": "2025-02-19",
+        "week_end": "2025-02-25",
+        "count": 507
+      },
+      {
+        "yr": 2025,
+        "week": 9,
+        "week_start": "2025-02-26",
+        "week_end": "2025-03-04",
+        "count": 517
+      },
+      {
+        "yr": 2025,
+        "week": 10,
+        "week_start": "2025-03-05",
+        "week_end": "2025-03-11",
+        "count": 512
+      },
+      {
+        "yr": 2025,
+        "week": 11,
+        "week_start": "2025-03-12",
+        "week_end": "2025-03-18",
+        "count": 515
+      },
+      {
+        "yr": 2025,
+        "week": 12,
+        "week_start": "2025-03-19",
+        "week_end": "2025-03-25",
+        "count": 489
+      },
+      {
+        "yr": 2025,
+        "week": 13,
+        "week_start": "2025-03-26",
+        "week_end": "2025-04-01",
+        "count": 551
+      },
+      {
+        "yr": 2025,
+        "week": 14,
+        "week_start": "2025-04-02",
+        "week_end": "2025-04-08",
+        "count": 511
+      },
+      {
+        "yr": 2025,
+        "week": 15,
+        "week_start": "2025-04-09",
+        "week_end": "2025-04-15",
+        "count": 533
+      },
+      {
+        "yr": 2025,
+        "week": 16,
+        "week_start": "2025-04-16",
+        "week_end": "2025-04-22",
+        "count": 541
+      },
+      {
+        "yr": 2025,
+        "week": 17,
+        "week_start": "2025-04-23",
+        "week_end": "2025-04-29",
+        "count": 503
+      },
+      {
+        "yr": 2025,
+        "week": 18,
+        "week_start": "2025-04-30",
+        "week_end": "2025-05-06",
+        "count": 530
+      },
+      {
+        "yr": 2025,
+        "week": 19,
+        "week_start": "2025-05-07",
+        "week_end": "2025-05-13",
+        "count": 518
+      },
+      {
+        "yr": 2025,
+        "week": 20,
+        "week_start": "2025-05-14",
+        "week_end": "2025-05-20",
+        "count": 510
+      },
+      {
+        "yr": 2025,
+        "week": 21,
+        "week_start": "2025-05-21",
+        "week_end": "2025-05-27",
+        "count": 508
+      },
+      {
+        "yr": 2025,
+        "week": 22,
+        "week_start": "2025-05-28",
+        "week_end": "2025-06-03",
+        "count": 528
+      },
+      {
+        "yr": 2025,
+        "week": 23,
+        "week_start": "2025-06-04",
+        "week_end": "2025-06-10",
+        "count": 502
+      },
+      {
+        "yr": 2025,
+        "week": 24,
+        "week_start": "2025-06-11",
+        "week_end": "2025-06-17",
+        "count": 499
+      },
+      {
+        "yr": 2025,
+        "week": 25,
+        "week_start": "2025-06-18",
+        "week_end": "2025-06-24",
+        "count": 498
+      },
+      {
+        "yr": 2025,
+        "week": 26,
+        "week_start": "2025-06-25",
+        "week_end": "2025-07-01",
+        "count": 510
+      },
+      {
+        "yr": 2025,
+        "week": 27,
+        "week_start": "2025-07-02",
+        "week_end": "2025-07-08",
+        "count": 443
+      },
+      {
+        "yr": 2025,
+        "week": 28,
+        "week_start": "2025-07-09",
+        "week_end": "2025-07-15",
+        "count": 516
+      },
+      {
+        "yr": 2025,
+        "week": 29,
+        "week_start": "2025-07-16",
+        "week_end": "2025-07-22",
+        "count": 530
+      },
+      {
+        "yr": 2025,
+        "week": 30,
+        "week_start": "2025-07-23",
+        "week_end": "2025-07-29",
+        "count": 504
+      },
+      {
+        "yr": 2025,
+        "week": 31,
+        "week_start": "2025-07-30",
+        "week_end": "2025-08-05",
+        "count": 522
+      },
+      {
+        "yr": 2025,
+        "week": 32,
+        "week_start": "2025-08-06",
+        "week_end": "2025-08-12",
+        "count": 510
+      },
+      {
+        "yr": 2025,
+        "week": 33,
+        "week_start": "2025-08-13",
+        "week_end": "2025-08-19",
+        "count": 537
+      },
+      {
+        "yr": 2025,
+        "week": 34,
+        "week_start": "2025-08-20",
+        "week_end": "2025-08-26",
+        "count": 501
+      },
+      {
+        "yr": 2025,
+        "week": 35,
+        "week_start": "2025-08-27",
+        "week_end": "2025-09-02",
+        "count": 466
+      },
+      {
+        "yr": 2025,
+        "week": 36,
+        "week_start": "2025-09-03",
+        "week_end": "2025-09-09",
+        "count": 492
+      },
+      {
+        "yr": 2025,
+        "week": 37,
+        "week_start": "2025-09-10",
+        "week_end": "2025-09-16",
+        "count": 513
+      },
+      {
+        "yr": 2025,
+        "week": 38,
+        "week_start": "2025-09-17",
+        "week_end": "2025-09-23",
+        "count": 544
+      },
+      {
+        "yr": 2025,
+        "week": 39,
+        "week_start": "2025-09-24",
+        "week_end": "2025-09-30",
+        "count": 525
+      },
+      {
+        "yr": 2025,
+        "week": 40,
+        "week_start": "2025-10-01",
+        "week_end": "2025-10-07",
+        "count": 477
+      },
+      {
+        "yr": 2025,
+        "week": 41,
+        "week_start": "2025-10-08",
+        "week_end": "2025-10-14",
+        "count": 538
+      },
+      {
+        "yr": 2025,
+        "week": 42,
+        "week_start": "2025-10-15",
+        "week_end": "2025-10-21",
+        "count": 536
+      },
+      {
+        "yr": 2025,
+        "week": 43,
+        "week_start": "2025-10-22",
+        "week_end": "2025-10-28",
+        "count": 537
+      },
+      {
+        "yr": 2025,
+        "week": 44,
+        "week_start": "2025-10-29",
+        "week_end": "2025-11-04",
+        "count": 489
+      },
+      {
+        "yr": 2025,
+        "week": 45,
+        "week_start": "2025-11-05",
+        "week_end": "2025-11-11",
+        "count": 522
+      },
+      {
+        "yr": 2025,
+        "week": 46,
+        "week_start": "2025-11-12",
+        "week_end": "2025-11-18",
+        "count": 525
+      },
+      {
+        "yr": 2025,
+        "week": 47,
+        "week_start": "2025-11-19",
+        "week_end": "2025-11-25",
+        "count": 556
+      },
+      {
+        "yr": 2025,
+        "week": 48,
+        "week_start": "2025-11-26",
+        "week_end": "2025-12-02",
+        "count": 370
+      },
+      {
+        "yr": 2025,
+        "week": 49,
+        "week_start": "2025-12-03",
+        "week_end": "2025-12-09",
+        "count": 554
+      },
+      {
+        "yr": 2025,
+        "week": 50,
+        "week_start": "2025-12-10",
+        "week_end": "2025-12-16",
+        "count": 482
+      },
+      {
+        "yr": 2025,
+        "week": 51,
+        "week_start": "2025-12-17",
+        "week_end": "2025-12-23",
+        "count": 615
+      },
+      {
+        "yr": 2025,
+        "week": 52,
+        "week_start": "2025-12-24",
+        "week_end": "2025-12-31",
+        "count": 432
+      },
+      {
+        "yr": 2026,
+        "week": 1,
+        "week_start": "2026-01-01",
+        "week_end": "2026-01-07",
+        "count": 296
+      },
+      {
+        "yr": 2026,
+        "week": 2,
+        "week_start": "2026-01-08",
+        "week_end": "2026-01-14",
+        "count": 457
+      },
+      {
+        "yr": 2026,
+        "week": 3,
+        "week_start": "2026-01-15",
+        "week_end": "2026-01-21",
+        "count": 515
+      },
+      {
+        "yr": 2026,
+        "week": 4,
+        "week_start": "2026-01-22",
+        "week_end": "2026-01-28",
+        "count": 526
+      },
+      {
+        "yr": 2026,
+        "week": 5,
+        "week_start": "2026-01-29",
+        "week_end": "2026-02-04",
+        "count": 493
+      },
+      {
+        "yr": 2026,
+        "week": 6,
+        "week_start": "2026-02-05",
+        "week_end": "2026-02-11",
+        "count": 532
+      },
+      {
+        "yr": 2026,
+        "week": 7,
+        "week_start": "2026-02-12",
+        "week_end": "2026-02-18",
+        "count": 521
+      },
+      {
+        "yr": 2026,
+        "week": 8,
+        "week_start": "2026-02-19",
+        "week_end": "2026-02-25",
+        "count": 523
+      },
+      {
+        "yr": 2026,
+        "week": 9,
+        "week_start": "2026-02-26",
+        "week_end": "2026-03-04",
+        "count": 540
+      },
+      {
+        "yr": 2026,
+        "week": 10,
+        "week_start": "2026-03-05",
+        "week_end": "2026-03-11",
+        "count": 567
+      },
+      {
+        "yr": 2026,
+        "week": 11,
+        "week_start": "2026-03-12",
+        "week_end": "2026-03-18",
+        "count": 548
+      },
+      {
+        "yr": 2026,
+        "week": 12,
+        "week_start": "2026-03-19",
+        "week_end": "2026-03-25",
+        "count": 546
+      },
+      {
+        "yr": 2026,
+        "week": 13,
+        "week_start": "2026-03-26",
+        "week_end": "2026-04-01",
+        "count": 554
+      },
+      {
+        "yr": 2026,
+        "week": 14,
+        "week_start": "2026-04-02",
+        "week_end": "2026-04-08",
+        "count": 543
+      },
+      {
+        "yr": 2026,
+        "week": 15,
+        "week_start": "2026-04-09",
+        "week_end": "2026-04-15",
+        "count": 567
+      },
+      {
+        "yr": 2026,
+        "week": 16,
+        "week_start": "2026-04-16",
+        "week_end": "2026-04-22",
+        "count": 524
+      },
+      {
+        "yr": 2026,
+        "week": 17,
+        "week_start": "2026-04-23",
+        "week_end": "2026-04-29",
+        "count": 488
+      },
+      {
+        "yr": 2026,
+        "week": 18,
+        "week_start": "2026-04-30",
+        "week_end": "2026-05-06",
+        "count": 501
+      },
+      {
+        "yr": 2026,
+        "week": 19,
+        "week_start": "2026-05-07",
+        "week_end": "2026-05-13",
+        "count": 557
+      },
+      {
+        "yr": 2026,
+        "week": 20,
+        "week_start": "2026-05-14",
+        "week_end": "2026-05-20",
+        "count": 551
+      },
+      {
+        "yr": 2026,
+        "week": 21,
+        "week_start": "2026-05-21",
+        "week_end": "2026-05-27",
+        "count": 455
+      },
+      {
+        "yr": 2026,
+        "week": 22,
+        "week_start": "2026-05-28",
+        "week_end": "2026-06-03",
+        "count": 555
+      },
+      {
+        "yr": 2026,
+        "week": 23,
+        "week_start": "2026-06-04",
+        "week_end": "2026-06-10",
+        "count": 487
+      },
+      {
+        "yr": 2026,
+        "week": 24,
+        "week_start": "2026-06-11",
+        "week_end": "2026-06-17",
+        "count": 563
+      },
+      {
+        "yr": 2026,
+        "week": 25,
+        "week_start": "2026-06-18",
+        "week_end": "2026-06-24",
+        "count": 490
+      },
+      {
+        "yr": 2026,
+        "week": 26,
+        "week_start": "2026-06-25",
+        "week_end": "2026-07-01",
+        "count": 556
+      },
+      {
+        "yr": 2026,
+        "week": 27,
+        "week_start": "2026-07-02",
+        "week_end": "2026-07-08",
+        "count": 449
+      },
+      {
+        "yr": 2026,
+        "week": 28,
+        "week_start": "2026-07-09",
+        "week_end": "2026-07-15",
+        "count": 528
+      },
+      {
+        "yr": 2026,
+        "week": 29,
+        "week_start": "2026-07-16",
+        "week_end": "2026-07-22",
+        "count": 545
+      },
+      {
+        "yr": 2026,
+        "week": 30,
+        "week_start": "2026-07-23",
+        "week_end": "2026-07-29",
+        "count": 528
+      },
+      {
+        "yr": 2026,
+        "week": 31,
+        "week_start": "2026-07-30",
+        "week_end": "2026-08-05",
+        "count": 496
+      },
+      {
+        "yr": 2026,
+        "week": 32,
+        "week_start": "2026-08-06",
+        "week_end": "2026-08-12",
+        "count": 493
+      },
+      {
+        "yr": 2026,
+        "week": 33,
+        "week_start": "2026-08-13",
+        "week_end": "2026-08-19",
+        "count": 553
+      },
+      {
+        "yr": 2026,
+        "week": 34,
+        "week_start": "2026-08-20",
+        "week_end": "2026-08-26",
+        "count": 537
+      },
+      {
+        "yr": 2026,
+        "week": 35,
+        "week_start": "2026-08-27",
+        "week_end": "2026-09-02",
+        "count": 552
+      },
+      {
+        "yr": 2026,
+        "week": 36,
+        "week_start": "2026-09-03",
+        "week_end": "2026-09-09",
+        "count": 475
+      },
+      {
+        "yr": 2026,
+        "week": 37,
+        "week_start": "2026-09-10",
+        "week_end": "2026-09-16",
+        "count": 492
+      },
+      {
+        "yr": 2026,
+        "week": 38,
+        "week_start": "2026-09-17",
+        "week_end": "2026-09-23",
+        "count": 524
+      },
+      {
+        "yr": 2026,
+        "week": 39,
+        "week_start": "2026-09-24",
+        "week_end": "2026-09-30",
+        "count": 567
+      }
     ]
   },
   "excluded_incomplete_weeks": {
@@ -6861,6 +8228,7 @@
   "data_as_of": "2026-10-08",
   "parser": "optn_metrics_wl_weekly",
   "region": "National",
+  "hll_label": "Heart + liver + lung (Strata's core flying organs)",
   "organ_definitions": {
     "kidney": "Includes kidney-pancreas (dashboard definition): 2025 = 54,918 vs 53,171 kidney + 1,688 kidney-pancreas in OPTN national data (within 0.1%)"
   },
