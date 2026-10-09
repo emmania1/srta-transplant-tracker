@@ -15,7 +15,8 @@
     "stock traders daily",
     "moomoo",
     "ad hoc news",
-    "facebook"
+    "facebook",
+    "presidential prayer team"
   ],
   "blocked_url_patterns": [
     "/forecast",
@@ -40,7 +41,12 @@
     "what does it mean for the stock",
     "stock quote",
     "quote,? price (and|&) forecast",
-    "\\bstock (price|quote) (today|history)\\b"
+    "\\bstock (price|quote) (today|history)\\b",
+    "analysts offer insights on",
+    "stocks to watch",
+    "top picks",
+    "stocks to buy",
+    "\\b\\d+ (healthcare |medtech |growth )?stocks\\b"
   ],
   "analyst_actions": {
     "tag": "analyst",
@@ -75,205 +81,19 @@
       ]
     }
   },
-  "digest": {
-    "_note": "How build_digest.py picks the 3-5 headlines for summary/latest.md. Category priority first, newest first within a category. Uses items published in the last primary_days; if fewer than min_items qualify, fills from the last fallback_days. An item qualifies only if its headline mentions an angle_terms entry and matches none of exclude_patterns (human-interest / awards / events).",
-    "priority": [
-      "strata",
-      "analyst",
-      "opo_regulation",
-      "volumes",
-      "tech_logistics",
-      "competitors"
-    ],
-    "primary_days": 7,
-    "fallback_days": 14,
-    "min_items": 3,
-    "max_items": 5,
-    "angle_terms": [
-      "strata",
-      "srta",
-      "blade air",
-      "keystone perfusion",
-      "transmedics",
-      "tmdx",
-      "paragonix",
-      "organox",
-      "xvivo",
-      "bridge to life",
-      "nora",
-      "procure",
-      "opo",
-      "organ procurement",
-      "unos",
-      "optn",
-      "srtr",
-      "hrsa",
-      "cms",
-      "hhs",
-      "transplant",
-      "organ donor",
-      "organ donation",
-      "donors",
-      "dcd",
-      "perfusion",
-      "nrp",
-      "decertif",
-      "waitlist",
-      "wait list",
-      "organ transport",
-      "organ delivery",
-      "organ recovery",
-      "organ flight",
-      "organ logistics",
-      "organ preservation",
-      "organ perfusion"
-    ],
-    "exclude_patterns": [
-      "\\baward",
-      "\\bhonou?r(s|ed|ing)?\\b",
-      "recogni[sz]",
-      "scholarship",
-      "\\bstudent",
-      "\\blegacy\\b",
-      "memorial",
-      "\\bwalk\\b",
-      "\\b5k\\b",
-      "\\brun\\b",
-      "gala",
-      "fundrais",
-      "celebrat",
-      "\\bvigil\\b",
-      "\\bmusical\\b",
-      "\\bsaves? (lives|others)\\b",
-      "\\bgift of life\\b",
-      "\\bthank",
-      "reunite",
-      "\\bmeets?\\b.*\\b(donor|recipient)",
-      "how to (become|give)",
-      "\\bopinion\\b",
-      "\\bobituar",
-      "\\bdies\\b",
-      "\\bdied\\b",
-      "\\bgrateful\\b",
-      "\\bchampions?\\b"
+  "opinion": {
+    "_note": "Headlines matching these get an extra 'opinion' tag; opinion items are never picked for the digest/top headlines.",
+    "tag": "opinion",
+    "label": "Opinion",
+    "patterns": [
+      "^opinion\\b",
+      "\\bop-?ed\\b",
+      "\\|\\s*opinion\\b",
+      "^commentary\\b",
+      "^column\\b",
+      "^editorial\\b"
     ]
   },
-  "groups": [
-    {
-      "id": "strata",
-      "label": "Strata",
-      "terms": [
-        "Strata Critical Medical",
-        "SRTA",
-        "Blade Air Mobility",
-        "Keystone Perfusion"
-      ],
-      "require_any": [
-        "strata critical",
-        "blade air",
-        "keystone perfusion",
-        "nasdaq:srta",
-        "nasdaq: srta",
-        "(srta)"
-      ]
-    },
-    {
-      "id": "volumes",
-      "label": "Transplant volumes / donation",
-      "require_any": [
-        "data",
-        "dcd",
-        "decline",
-        "donors",
-        "increase",
-        "national",
-        "nrp",
-        "number",
-        "opo",
-        "optn",
-        "organ donors",
-        "perfusion",
-        "procurement",
-        "rate",
-        "record",
-        "srtr",
-        "statistic",
-        "transplants",
-        "unos",
-        "volume"
-      ],
-      "queries": [
-        [
-          "organ transplant record",
-          "organ transplant volume",
-          "organ donation",
-          "OPTN data",
-          "UNOS",
-          "SRTR",
-          "DCD donor",
-          "normothermic regional perfusion"
-        ],
-        [
-          "transplant record",
-          "transplants increase",
-          "transplants decline",
-          "record number of transplants",
-          "record year for transplants",
-          "\"organ donors\" record",
-          "\"organ donors\" data",
-          "\"organ donors\" 2026",
-          "\"organ donors\" year"
-        ],
-        [
-          "OPO record",
-          "OPO donors",
-          "\"organ procurement\" volume",
-          "\"organ procurement\" record",
-          "\"organ procurement organization\" donors"
-        ]
-      ],
-      "exclude_human_interest": true
-    },
-    {
-      "id": "opo_regulation",
-      "label": "OPO & regulation",
-      "terms": [
-        "organ procurement organization",
-        "OPO decertification",
-        "CMS OPO rule",
-        "OPTN policy",
-        "continuous distribution organ",
-        "dead donor rule"
-      ]
-    },
-    {
-      "id": "competitors",
-      "label": "Competitors & industry",
-      "terms": [
-        "TransMedics",
-        "TMDX",
-        "Paragonix",
-        "NORA organ",
-        "ProCure On-Demand",
-        "OrganOx",
-        "XVIVO",
-        "Bridge to Life organ",
-        "Statline organ",
-        "Buckeye Transplant"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "tech_logistics",
-      "label": "Technology & logistics",
-      "terms": [
-        "organ perfusion FDA",
-        "organ perfusion device approval",
-        "organ transport commercial flight",
-        "organ transport flight"
-      ]
-    }
-  ],
   "us_focus": {
     "_note": "Feed-wide rules. (a) Every item must have a U.S. transplant-industry angle: its headline must match a digest.angle_terms entry at the start of a word. (b) Non-U.S. stories are dropped unless the headline names a tracked company: an item is non-U.S. if its headline or source matches non_us_markers.",
     "company_terms": [
@@ -399,5 +219,226 @@
       "abc news \\(au\\)",
       "rnz\\b"
     ]
-  }
+  },
+  "digest": {
+    "_note": "How build_digest.py picks the 3-5 headlines for summary/latest.md. Category priority first, newest first within a category. Uses items published in the last primary_days; if fewer than min_items qualify, fills from the last fallback_days. An item qualifies only if its headline mentions an angle_terms entry and matches none of exclude_patterns (human-interest / awards / events). Opinion-tagged items, corporate housekeeping and stale results reprints are never picked; if fewer than min_items_or_none good items remain, the digest says none_text instead of padding.",
+    "priority": [
+      "strata",
+      "analyst",
+      "opo_regulation",
+      "volumes",
+      "tech_logistics",
+      "competitors"
+    ],
+    "primary_days": 7,
+    "fallback_days": 14,
+    "min_items": 3,
+    "max_items": 5,
+    "angle_terms": [
+      "strata",
+      "srta",
+      "blade air",
+      "keystone perfusion",
+      "transmedics",
+      "tmdx",
+      "paragonix",
+      "organox",
+      "xvivo",
+      "bridge to life",
+      "nora",
+      "procure",
+      "opo",
+      "organ procurement",
+      "unos",
+      "optn",
+      "srtr",
+      "hrsa",
+      "cms",
+      "hhs",
+      "transplant",
+      "organ donor",
+      "organ donation",
+      "donors",
+      "dcd",
+      "perfusion",
+      "nrp",
+      "decertif",
+      "waitlist",
+      "wait list",
+      "organ transport",
+      "organ delivery",
+      "organ recovery",
+      "organ flight",
+      "organ logistics",
+      "organ preservation",
+      "organ perfusion"
+    ],
+    "exclude_patterns": [
+      "\\baward",
+      "\\bhonou?r(s|ed|ing)?\\b",
+      "recogni[sz]",
+      "scholarship",
+      "\\bstudent",
+      "\\blegacy\\b",
+      "memorial",
+      "\\bwalk\\b",
+      "\\b5k\\b",
+      "\\brun\\b",
+      "gala",
+      "fundrais",
+      "celebrat",
+      "\\bvigil\\b",
+      "\\bmusical\\b",
+      "\\bsaves? (lives|others)\\b",
+      "\\bgift of life\\b",
+      "\\bthank",
+      "reunite",
+      "\\bmeets?\\b.*\\b(donor|recipient)",
+      "how to (become|give)",
+      "\\bopinion\\b",
+      "\\bobituar",
+      "\\bdies\\b",
+      "\\bdied\\b",
+      "\\bgrateful\\b",
+      "\\bchampions?\\b",
+      "nomination committee",
+      "\\bagm\\b",
+      "annual general meeting",
+      "notice of (the )?(annual |extraordinary )?(general )?meeting",
+      "share capital",
+      "interim report"
+    ],
+    "min_items_or_none": 2,
+    "none_text": "No major news this week",
+    "stale_results": {
+      "_note": "A results headline about SRTA is treated as a reprint (and skipped) if it is dated more than max_days after SRTA's latest results 8-K (item 2.02) in data/processed/sec_filings.json.",
+      "patterns": [
+        "\\bresults\\b",
+        "\\bearnings\\b",
+        "\\brevenue (rises|grows|up|falls|declines)",
+        "\\bq[1-4](fy)?\\d{0,2}\\b"
+      ],
+      "company_terms": [
+        "strata critical",
+        "srta"
+      ],
+      "max_days": 14
+    }
+  },
+  "groups": [
+    {
+      "id": "strata",
+      "label": "Strata",
+      "terms": [
+        "Strata Critical Medical",
+        "SRTA",
+        "Blade Air Mobility",
+        "Keystone Perfusion"
+      ],
+      "require_any": [
+        "strata critical",
+        "blade air",
+        "keystone perfusion",
+        "nasdaq:srta",
+        "nasdaq: srta",
+        "(srta)"
+      ]
+    },
+    {
+      "id": "volumes",
+      "label": "Transplant volumes / donation",
+      "require_any": [
+        "data",
+        "dcd",
+        "decline",
+        "donors",
+        "increase",
+        "national",
+        "nrp",
+        "number",
+        "opo",
+        "optn",
+        "organ donors",
+        "perfusion",
+        "procurement",
+        "rate",
+        "record",
+        "srtr",
+        "statistic",
+        "transplants",
+        "unos",
+        "volume"
+      ],
+      "queries": [
+        [
+          "organ transplant record",
+          "organ transplant volume",
+          "organ donation",
+          "OPTN data",
+          "UNOS",
+          "SRTR",
+          "DCD donor",
+          "normothermic regional perfusion"
+        ],
+        [
+          "transplant record",
+          "transplants increase",
+          "transplants decline",
+          "record number of transplants",
+          "record year for transplants",
+          "\"organ donors\" record",
+          "\"organ donors\" data",
+          "\"organ donors\" 2026",
+          "\"organ donors\" year"
+        ],
+        [
+          "OPO record",
+          "OPO donors",
+          "\"organ procurement\" volume",
+          "\"organ procurement\" record",
+          "\"organ procurement organization\" donors"
+        ]
+      ],
+      "exclude_human_interest": true
+    },
+    {
+      "id": "opo_regulation",
+      "label": "OPO & regulation",
+      "terms": [
+        "organ procurement organization",
+        "OPO decertification",
+        "CMS OPO rule",
+        "OPTN policy",
+        "continuous distribution organ",
+        "dead donor rule"
+      ]
+    },
+    {
+      "id": "competitors",
+      "label": "Competitors & industry",
+      "terms": [
+        "TransMedics",
+        "TMDX",
+        "Paragonix",
+        "NORA organ",
+        "ProCure On-Demand",
+        "OrganOx",
+        "XVIVO",
+        "Bridge to Life organ",
+        "Statline organ",
+        "Buckeye Transplant"
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "tech_logistics",
+      "label": "Technology & logistics",
+      "terms": [
+        "organ perfusion FDA",
+        "organ perfusion device approval",
+        "organ transport commercial flight",
+        "organ transport flight"
+      ]
+    }
+  ]
 }

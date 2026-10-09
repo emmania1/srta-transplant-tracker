@@ -136,11 +136,25 @@ def pts(v):
     return "n/a" if v is None else f"{'+' if v > 0 else ''}{v:.1f} pts"
 
 
-def news_block(news, now):
-    """News counts for the week + digest headline picks ranked by relevance (config/keywords.json 'digest')."""
+def latest_results_filing(sec_raw):
+    """Filing date of SRTA's most recent results 8-K (item 2.02), from sec_filings.json."""
+    dates = [f["filed"] for f in (sec_raw or {}).get("filings", [])
+             if f["form"].startswith("8-K") and "2.02" in (f.get("items") or "")]
+    return max(dates) if dates else None
+
+
+def news_block(news, now, sec_raw=None):
+    """News counts for the week + digest headline picks ranked by relevance (config/keywords.json 'digest').
+
+    Never picked: opinion-tagged items, corporate housekeeping (digest.exclude_patterns), items with no
+    industry angle, and SRTA results reprints dated more than stale_results.max_days after SRTA's latest
+    results 8-K. If fewer than min_items_or_none good items remain, there are no picks (the digest says
+    none_text instead of padding)."""
     items = news.get("items") or []
     labels = {g["id"]: g["label"] for g in news.get("groups", [])}
-    cfg = json.loads(KEYWORDS.read_text()).get("digest", {})
+    kcfg = json.loads(KEYWORDS.read_text())
+    cfg = kcfg.get("digest", {})
+    op_tag = (kcfg.get("opinion") or {}).get("tag", "opinion")
     week_ago = now - timedelta(days=7)
     new = [i for i in items if datetime.fromisoformat(i["date"]) >= week_ago]
     counts = {gid: 0 for gid in labels}
@@ -152,25 +166,133 @@ def news_block(news, now):
     # word-start match so 'opo' doesn't hit 'proposal'; plurals still match ('transplant' -> 'transplants')
     angle = [re.compile(r"\b" + re.escape(a), re.I) for a in cfg.get("angle_terms", [])]
     excl = [re.compile(x, re.I) for x in cfg.get("exclude_patterns", [])]
+    sr = cfg.get("stale_results") or {}
+    sr_pats = [re.compile(x, re.I) for x in sr.get("patterns", [])]
+    sr_cos = [re.compile(r"\b" + re.escape(x), re.I) for x in sr.get("company_terms", [])]
+    results_filed = latest_results_filing(sec_raw)
+
+    def stale_results(i):
+        h = i["headline"]
+        if not results_filed or not any(p.search(h) for p in sr_pats) or not any(c.search(h) for c in sr_cos):
+            return False
+        return (date.fromisoformat(i["date"][:10]) - date.fromisoformat(results_filed)).days > sr.get("max_days", 14)
 
     def eligible(i, days):
         h = i["headline"]
         return (datetime.fromisoformat(i["date"]) >= now - timedelta(days=days)
-                and any(a.search(h) for a in angle) and not any(p.search(h) for p in excl))
+                and op_tag not in i["tags"]
+                and any(a.search(h) for a in angle) and not any(p.search(h) for p in excl)
+                and not stale_results(i))
 
     def rank(pool):
         return sorted(pool, key=lambda i: (min(prio.get(t, 99) for t in i["tags"]),
                                            -datetime.fromisoformat(i["date"]).timestamp()))
-    max_n, min_n = cfg.get("max_items", 5), cfg.get("min_items", 3)
+    max_n, min_n = cfg.get("max_items", 3), cfg.get("min_items", 3)
     picks = rank([i for i in items if eligible(i, cfg.get("primary_days", 7))])[:max_n]
     if len(picks) < min_n:
         seen = {i["url"] for i in picks}
         more = rank([i for i in items if i["url"] not in seen and eligible(i, cfg.get("fallback_days", 14))])
         picks = rank(picks + more[:min_n - len(picks)])
+    if len(picks) < cfg.get("min_items_or_none", 2):
+        picks = []
     top = [{"headline": i["headline"], "source": i["source"], "date": i["date"][:10],
             "url": i.get("publisher_url") or i["url"], "google_url": i["url"], "tags": i["tags"]} for i in picks]
     return {"new_items_7d": len(new), "by_category": counts, "labels": labels, "top_headlines": top,
+            "none_text": cfg.get("none_text", "No major news this week") if not top else None,
             "fetched_at": news.get("fetched_at")}
+
+
+# ---- plain-English "This week" sentences (the page shows these verbatim) ----
+def join_list(xs):
+    xs = list(xs)
+    return "".join(xs) if len(xs) <= 1 else f"{xs[0]} and {xs[1]}" if len(xs) == 2 else f"{', '.join(xs[:-1])} and {xs[-1]}"
+
+
+def direction_sentence(items, noun, period):
+    """items in display order: (name, value, label up|flat|down) ->
+    'Heart and kidney transplants fell 5.8% and 2.1% over ...; liver and lung rose 6.8% and 5.4%.'"""
+    order, groups = [], {}
+    for name, v, label in items:
+        if v is None:
+            continue
+        if label not in groups:
+            groups[label] = []
+            order.append(label)
+        groups[label].append((name, v))
+    if not order:
+        return None
+    parts = []
+    for idx, k in enumerate(order):
+        g = groups[k]
+        names = join_list(n if (idx == 0 and j == 0) else n.lower() for j, (n, _) in enumerate(g))
+        n_ = noun if idx == 0 else ""
+        p_ = period if idx == 0 else ""
+        if k == "flat":
+            verb = "were" if len(g) > 1 or n_ else "was"
+            vals = ", ".join(f"{'+' if v > 0 else ''}{v:.1f}%" for _, v in g)
+            parts.append(f"{names}{n_} {verb} roughly flat{p_} ({vals})")
+        else:
+            parts.append(f"{names}{n_} {'rose' if k == 'up' else 'fell'} {join_list(f'{abs(v):.1f}%' for _, v in g)}{p_}")
+    return "; ".join(parts) + "."
+
+
+def f4_who(owner, roles):
+    last = (owner or "").replace(",", " ").split()
+    name = last[0][0] + last[0][1:].lower() if last else "Insider"
+    role = next((r for r in roles if r not in ("Director", "10% owner")), roles[0] if roles else "insider")
+    return f"{name} ({role.replace(' and ', '/')})"
+
+
+def this_week_sentences(signals, donors, mix, waitlist, sec, optn_ok, new_optn, now):
+    out = []
+    if optn_ok and not new_optn:
+        out.append("No new OPTN weekly data arrived this week, so transplant figures are unchanged.")
+    if signals and signals.get("volumes"):
+        s = direction_sentence([(o.title(), signals["volumes"][o]["value"], signals["volumes"][o]["label"]) for o in ORGANS],
+                               " transplants", " over the last 4 weeks vs. last year")
+        if s:
+            out.append(s)
+    if donors and donors.get("metrics") and donors["metrics"].get("trailing_4wk"):
+        v = donors["metrics"]["trailing_4wk"]["yoy_pct"]
+        s = f"Deceased donors recovered {'rose' if v > 0 else 'fell' if v < 0 else 'were flat at'} {abs(v):.1f}% over the same weeks"
+        d = donors.get("discard")
+        if d and d.get("prior_year_discard_rate_pct") is not None:
+            s += (f", and {d['discard_rate_pct']:.1f}% of recovered organs have been discarded so far this year "
+                  f"({d['prior_year_discard_rate_pct']:.1f}% a year earlier)")
+        out.append(s + ".")
+    if mix and signals and signals.get("distance"):
+        d0 = mix["dcd_share_donors"]
+        longer = [o for o in ORGANS if signals["distance"][o]["label"] == "longer"]
+        shorter = [o for o in ORGANS if signals["distance"][o]["label"] == "shorter"]
+        if not longer and not shorter:
+            dist = "the share of organs travelling 251+ NM held steady for every organ"
+        else:
+            bits = ([f"rose for {join_list(longer)}"] if longer else []) + ([f"fell for {join_list(shorter)}"] if shorter else [])
+            dist = "the share of organs travelling 251+ NM " + " and ".join(bits)
+            if len(longer) + len(shorter) < len(ORGANS):
+                dist += " and held steady for the rest"
+        prior = d0["current"] - d0["change_pts"]
+        out.append(f"DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
+                   f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}; {dist}.")
+    # insider activity filed this week takes priority over the waitlist line
+    if sec:
+        wk = (now.date() - timedelta(days=7)).isoformat()
+        flags = [f for f in sec["form4_sales"] if f["filed"] >= wk]
+        d13 = [f for f in sec["schedule_13d"] if f["filed"] >= wk]
+        if flags or d13:
+            bits = [f"{f4_who(f['owner'], f['roles'])} sold {f['shares_sold']:,.0f} shares on the open market" for f in flags]
+            bits += [f"a {f['form']} large-holder filing was made" for f in d13]
+            out.append("SEC filings this week: " + "; ".join(bits) + ".")
+    if waitlist and len(out) < 4:
+        band = (signals or {}).get("thresholds", {}).get("volumes", {}).get("flat_within_pct", 2)
+        items = []
+        for o in ORGANS:
+            v = ((waitlist.get(o) or {}).get("trailing_4wk") or {}).get("yoy_pct")
+            items.append((o.title(), v, "flat" if v is None else "up" if v > band else "down" if v < -band else "flat"))
+        s = direction_sentence(items, " waitlist additions", " over the last 4 weeks")
+        if s:
+            out.append(s)
+    return out[:4]
 
 
 def classify(v, band, labels):
@@ -204,22 +326,6 @@ def signals_block(organs, mix, donors):
                                "label": classify(disc["change_pts"], c["flat_within_pts"], c["labels"]),
                                "basis": f"YTD through {disc['through']} vs same period last year"}
     return out
-
-
-def signals_line(sig):
-    def num(v, unit):
-        if v is None:
-            return "n/a"
-        return f"{'+' if v > 0 else ''}{v:.1f}{'%' if unit == '%' else ' pts'}"
-    parts = ["Volumes " + ", ".join(f"{ORGAN_LABEL[o].split(' (')[0]} {v['label'] or 'n/a'} ({num(v['value'], '%')})"
-                                    for o, v in sig["volumes"].items())]
-    if sig.get("distance"):
-        parts.append("Distance " + ", ".join(f"{o.title()} {v['label']}" for o, v in sig["distance"].items()))
-    if sig.get("dcd_share"):
-        parts.append(f"DCD share {sig['dcd_share']['label']} ({num(sig['dcd_share']['value'], 'pts')})")
-    if sig.get("discard_rate"):
-        parts.append(f"Discard rate {sig['discard_rate']['label']} ({num(sig['discard_rate']['value'], 'pts')})")
-    return "Signals: " + " | ".join(parts) + "."
 
 
 def sec_block(sec, now):
@@ -261,9 +367,10 @@ def main():
     mix = mix_block(load("donor_mix"), load("distance"))
     loc = load("location")
     regions = regions_block(load("regions_weekly"))
-    news = news_block(load("news"), now)
+    sec_raw = load("sec_filings")
+    news = news_block(load("news"), now, sec_raw)
     health = load("health")
-    sec = sec_block(load("sec_filings"), now)
+    sec = sec_block(sec_raw, now)
     waitlist = wl_block(load("waitlist_weekly"))
     cdc = cdc_block(load("cdc_overdose"))
 
@@ -290,52 +397,13 @@ def main():
     new_optn = bool(optn_ok and is_recent(as_of, now))
     signals = signals_block(organs, mix, donors) if optn_ok else None
 
-    # ---- plain-language lines (shared by page "This week" box and Slack digest)
+    # ---- plain-language lines (shared verbatim by the page's "This week" box and the Slack digest)
     issues = (health or {}).get("issues") or []
     issue_line = ("Data issue: " + " ".join(issues)) if issues else None
-    bullets = []
     if not optn_ok:
-        bullets.append("OPTN volumes: awaiting first data file — no transplant figures loaded yet.")
+        bullets = ["OPTN volumes: awaiting the first data file, so no transplant figures are loaded yet."]
     else:
-        if not new_optn:
-            bullets.append(f"No new OPTN data arrived this week; volumes below are from the {fmt_date(as_of)} pull.")
-        lw = (total or {}).get("latest_week") or next(
-            (organs[o]["latest_week"] for o in ORGANS if organs.get(o)), {})
-        parts = [f"{ORGAN_LABEL[o]} {arrow(((organs.get(o) or {}).get('trailing_4wk') or {}).get('yoy_pct'))} / "
-                 f"{arrow(((organs.get(o) or {}).get('ytd') or {}).get('yoy_pct'))}" for o in ORGANS]
-        bullets.append(f"Transplants vs last year, last 4 weeks / YTD (through week ending {fmt_date(lw['week_end'])}): "
-                       + " · ".join(parts) + ".")
-        bullets.append(signals_line(signals))
-
-    if donors and donors["metrics"]:
-        t4 = donors["metrics"].get("trailing_4wk") or {}
-        line = f"Deceased donors recovered, last 4 weeks vs last year: {arrow(t4.get('yoy_pct'))}"
-        disc = donors["discard"]
-        if disc and disc["change_pts"] is not None:
-            line += (f"; all-organs discard rate {disc['discard_rate_pct']:.1f}% YTD through {disc['through']}"
-                     f" vs {disc['prior_year_discard_rate_pct']:.1f}% a year ago")
-        bullets.append(line + ".")
-
-    # optional lines, in priority order, while there is room (max 5 bullets, 4 with a data-issue line)
-    optional = []
-    if sec:
-        flags = [f for f in sec["form4_sales"] if f["filed"] >= (now.date() - timedelta(days=7)).isoformat()]
-        d13 = [f for f in sec["schedule_13d"] if f["filed"] >= (now.date() - timedelta(days=7)).isoformat()]
-        if flags or d13:
-            bits = [f"Form 4 sale: {f['owner']} ({', '.join(f['roles']) or 'insider'}) sold {f['shares_sold']:,.0f} sh, filed {f['filed']}"
-                    for f in flags] + [f"{f['form']} filed {f['filed']}" for f in d13]
-            optional.append("SEC: " + "; ".join(bits) + ".")
-    if mix and is_recent(mix.get("snapshot_downloaded"), now):
-        d = mix["dcd_share_donors"]
-        lb = " · ".join(f"{o.title()} {v['current']}% ({pts(v['change_pts'])})"
-                        for o, v in mix["long_share_by_organ"].items())
-        optional.append(f"New OPTN monthly data ({mix['current_label']} vs {mix['prior_label']}, mix comparison): "
-                        f"DCD {d['current']}% of deceased donors ({pts(d['change_pts'])}); 251+ NM share: {lb}.")
-    if waitlist:
-        optional.append("Waitlist additions, last 4 weeks vs last year: " + " · ".join(
-            f"{ORGAN_LABEL[o]} {arrow(((waitlist.get(o) or {}).get('trailing_4wk') or {}).get('yoy_pct'))}" for o in ORGANS) + ".")
-    max_bullets = 4 if issue_line else 5
-    bullets += optional[:max(0, max_bullets - len(bullets))]
+        bullets = this_week_sentences(signals, donors, mix, waitlist, sec, optn_ok, new_optn, now)
 
     if news["new_items_7d"]:
         cats = [f"{news['labels'].get(k, k)} {v}" for k, v in news["by_category"].items() if v]
@@ -349,16 +417,15 @@ def main():
     if srta:
         head += f" · SRTA ${srta['close']:.2f} ({arrow(srta['change_1w_pct'])} 1-wk)"
     lines = ([f"⚠️ {issue_line}"] if issue_line else []) + [head] + [f"• {b}" for b in bullets]
-    room = MAX_LINES - len(lines) - 1  # headlines header line
-    heads = news["top_headlines"][:max(0, min(5, room))]
+    heads = news["top_headlines"]
     if heads:
-        lines.append(f"Headlines ({news_line.rstrip('.').replace(' — ', ': ')}):")
-        lines += [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {h['date']})" for h in heads]
+        lines.append("Top headlines:")
+        lines += [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {fmt_date(h['date'])})" for h in heads]
     else:
-        lines.append(news_line)
-    if len(lines) < MAX_LINES:
-        lines.append(f"Dashboard: {SITE_URL}")
-    lines = lines[:MAX_LINES]
+        lines.append(f"Top headlines: {news['none_text']}.")
+    lines.append(f"Dashboard: {SITE_URL}")
+    if len(lines) > MAX_LINES:  # drop the dashboard link first, then the last headline(s)
+        lines = [l for l in lines if not l.startswith("Dashboard:")][:MAX_LINES]
 
     summary = {
         "generated_at": now.isoformat(timespec="seconds"),
@@ -378,6 +445,7 @@ def main():
         "news": news,
         "issue_line": issue_line,
         "bullets": bullets,
+        "this_week": bullets,
         "news_line": news_line,
         "markdown_lines": lines,
     }

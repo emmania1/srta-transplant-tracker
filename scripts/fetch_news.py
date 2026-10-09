@@ -88,6 +88,9 @@ def make_filter(cfg):
     aa_pats = [re.compile(x, re.I) for x in aa.get("patterns", [])]
     aa_cos = [x.lower() for x in aa.get("companies", [])]
     aa_tag = aa.get("tag", "analyst")
+    op = cfg.get("opinion") or {}
+    op_tag = op.get("tag", "opinion")
+    op_pats = [re.compile(x, re.I) for x in op.get("patterns", [])]
     hi = [re.compile(x, re.I) for x in (cfg.get("digest") or {}).get("exclude_patterns", [])]
     usf = cfg.get("us_focus") or {}
     angle = [re.compile(r"\b" + re.escape(a), re.I) for a in (cfg.get("digest") or {}).get("angle_terms", [])]
@@ -122,7 +125,12 @@ def make_filter(cfg):
             if any(m in text for m in zk_mentions) or any(p.search(head) for p in zk_pats):
                 return False
             item["tags"] = sorted(set(item["tags"]) | {aa_tag})
-        return bool(item["tags"])
+        item["tags"] = [t for t in item["tags"] if t != op_tag]  # recomputed every run
+        if not item["tags"]:
+            return False
+        if any(p.search(head) for p in op_pats):
+            item["tags"] = sorted(set(item["tags"]) | {op_tag})
+        return True
     return keep
 
 
@@ -234,7 +242,9 @@ def main():
         "lookback_days": days,
         "groups": [{"id": g["id"], "label": g["label"], "collapsed": bool(g.get("collapsed"))} for g in cfg["groups"]]
                   + ([{"id": cfg["analyst_actions"].get("tag", "analyst"), "label": cfg["analyst_actions"]["label"]}]
-                     if cfg.get("analyst_actions") else []),
+                     if cfg.get("analyst_actions") else [])
+                  + ([{"id": cfg["opinion"].get("tag", "opinion"), "label": cfg["opinion"]["label"]}]
+                     if cfg.get("opinion") else []),
         "errors": errors,
         "items": items,
     }

@@ -128,73 +128,16 @@ function renderSignals(summary) {
     `<div class="sig-row"><div class="sig-head"><strong>${h}</strong><span class="muted">${basis}</span></div><div class="sig-chips">${chips}</div></div>`).join("");
 }
 
-// Plain-English "This week" sentences built from the same numbers as the chips
-function joinList(xs) {
-  return xs.length <= 1 ? xs.join("") : xs.length === 2 ? `${xs[0]} and ${xs[1]}` : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`;
-}
-// items in display order: [{name, value, label: up|flat|down}] -> "Heart transplants fell 5.8% over …; liver and lung rose 6.8% and 5.4%."
-function directionSentence(items, noun, period) {
-  const order = [], groups = {};
-  items.filter((i) => i.value != null).forEach((i) => {
-    if (!groups[i.label]) { groups[i.label] = []; order.push(i.label); }
-    groups[i.label].push(i);
-  });
-  if (!order.length) return null;
-  const parts = order.map((k, idx) => {
-    const g = groups[k];
-    const names = joinList(g.map((i, j) => (idx === 0 && j === 0 ? i.name : i.name.toLowerCase())));
-    const n = idx === 0 ? noun : "";
-    const p = idx === 0 ? period : "";
-    if (k === "flat") {
-      return `${names}${n} ${g.length > 1 || n ? "were" : "was"} roughly flat${p} (${g.map((i) => `${i.value > 0 ? "+" : ""}${i.value.toFixed(1)}%`).join(", ")})`;
-    }
-    return `${names}${n} ${k === "up" ? "rose" : "fell"} ${joinList(g.map((i) => `${Math.abs(i.value).toFixed(1)}%`))}${p}`;
-  });
-  return parts.join("; ") + ".";
-}
+// "This week": the same plain-English sentences and headlines as summary/latest.md (built in build_digest.py)
 function renderThisWeek(summary) {
-  const out = [];
-  const sig = summary.signals || {};
-  const optn = summary.optn || {};
-  if (optn.status === "ok" && !optn.new_data_this_week) out.push("No new OPTN weekly data arrived this week, so transplant figures are unchanged.");
-  if (sig.volumes) {
-    const s = directionSentence(ORGANS.map((o) => ({ name: cap(o), value: sig.volumes[o].value, label: sig.volumes[o].label })),
-      " transplants", " over the last 4 weeks vs. last year");
-    if (s) out.push(s);
-  }
-  const d = summary.donors;
-  if (d && d.metrics && d.metrics.trailing_4wk) {
-    const v = d.metrics.trailing_4wk.yoy_pct;
-    let s = `Deceased donors recovered ${v > 0 ? "rose" : v < 0 ? "fell" : "were flat at"} ${Math.abs(v).toFixed(1)}% over the same weeks`;
-    if (d.discard) s += `, and ${d.discard.discard_rate_pct.toFixed(1)}% of recovered organs have been discarded so far this year (${d.discard.prior_year_discard_rate_pct.toFixed(1)}% a year earlier)`;
-    out.push(s + ".");
-  }
-  const mix = summary.donor_mix_and_distance;
-  if (mix && sig.distance) {
-    const d0 = mix.dcd_share_donors;
-    const longer = ORGANS.filter((o) => sig.distance[o].label === "longer");
-    const shorter = ORGANS.filter((o) => sig.distance[o].label === "shorter");
-    const dist = !longer.length && !shorter.length ? "the share of organs travelling 251+ NM held steady for every organ"
-      : [longer.length ? `rose for ${joinList(longer)}` : "", shorter.length ? `fell for ${joinList(shorter)}` : ""]
-        .filter(Boolean).join(" and ").replace(/^/, "the share of organs travelling 251+ NM ") + (longer.length + shorter.length < 4 ? " and held steady for the rest" : "");
-    const priorYear = mix.prior_label.replace(" full year", "");
-    out.push(`DCD donors are ${d0.current.toFixed(1)}% of deceased donors so far this year, up from ${(d0.current - d0.change_pts).toFixed(1)}% in ${priorYear}; ${dist}.`
-      .replace("up from", d0.change_pts >= 0 ? "up from" : "down from"));
-  }
-  const wl = summary.waitlist;
-  if (wl && out.length < 4) {
-    const band = (sig.thresholds || {}).volumes?.flat_within_pct ?? 2;
-    const s = directionSentence(ORGANS.map((o) => {
-      const v = wl[o]?.trailing_4wk?.yoy_pct;
-      return { name: cap(o), value: v, label: v == null ? "flat" : v > band ? "up" : v < -band ? "down" : "flat" };
-    }), " waitlist additions", " over the last 4 weeks");
-    if (s) out.push(s);
-  }
-  $("this-week-list").innerHTML = out.slice(0, 4).map((s) => `<li>${esc(s)}</li>`).join("") || "<li>Awaiting data.</li>";
-  const heads = ((summary.news || {}).top_headlines || []).slice(0, 3);
-  $("top-heads").innerHTML = heads.length ? heads.map((h) => `<li><a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.headline)}</a> <span class="muted">${esc(h.source)} · ${fmtDate(h.date)}</span></li>`).join("")
-    : `<li class="muted">No qualifying headlines in the last 14 days.</li>`;
-  const through = optn.all_organs?.latest_week?.week_end;
+  const out = summary.this_week || summary.bullets || [];
+  $("this-week-list").innerHTML = out.map((s) => `<li>${esc(s)}</li>`).join("") || "<li>Awaiting data.</li>";
+  const news = summary.news || {};
+  const heads = news.top_headlines || [];
+  $("top-heads").innerHTML = heads.length
+    ? heads.map((h) => `<li><a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.headline)}</a> <span class="muted">${esc(h.source)} · ${fmtDate(h.date)}</span></li>`).join("")
+    : `<li class="muted">${esc(news.none_text || "No major news this week")}.</li>`;
+  const through = (summary.optn || {}).all_organs?.latest_week?.week_end;
   srcLine("src-signals", { name: "OPTN, Google News", cadence: "weekly", tag: "Live", through: through ? fmtDate(through) : null });
 }
 
@@ -529,7 +472,7 @@ function renderCdc(d) {
       <div class="stat"><div class="kpi-label">Reported so far</div><div class="kpi">${fmtInt(last.reported)} <span class="kpi-unit">deaths</span></div>
         <div class="sub">${yoy(last.reported_yoy_pct)} vs. a year earlier</div></div>
     </div>
-    <div class="chart-wrap short"><canvas id="cdc-chart" aria-label="12-month rolling overdose deaths"></canvas></div>
+    <div class="chart-wrap"><canvas id="cdc-chart" aria-label="12-month rolling overdose deaths"></canvas></div>
     <p class="note">The CDC estimate adjusts for deaths not yet reported; recent months are provisional. Fewer overdose deaths can mean fewer potential brain-death donors later. Context, not a forecast.</p>`;
   if (cdcChart) cdcChart.destroy();
   cdcChart = new Chart($("cdc-chart"), {
@@ -542,7 +485,7 @@ function renderCdc(d) {
       plugins: { legend: { position: "top", align: "end", labels: { color: css("--text-2"), boxWidth: 14, boxHeight: 2 } },
         tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${fmtInt(c.parsed.y)}` } } },
       scales: { x: { title: { display: true, text: "12 months ending", color: css("--muted") }, ticks: { color: css("--muted"), maxTicksLimit: 8 }, grid: { display: false } },
-        y: { title: { display: true, text: "Deaths (12-month total)", color: css("--muted") }, ticks: { color: css("--muted"), callback: (v) => fmtInt(v) }, grid: { color: css("--grid") } } } },
+        y: { title: { display: true, text: "Deaths, 12-month total", color: css("--muted"), padding: { bottom: 4 } }, ticks: { color: css("--muted"), callback: (v) => `${Math.round(v / 1000)}k` }, grid: { color: css("--grid") } } } },
   });
   srcLine("src-cdc", { name: "CDC/NCHS provisional drug overdose death counts", cadence: "monthly", tag: "Live", through: fmtMonth(last.year, last.month) });
 }

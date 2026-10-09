@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T22:50:16+00:00",
+  "generated_at": "2026-10-09T10:11:55+00:00",
   "price": {
     "close": 4.47,
     "date": "2026-10-08",
@@ -1230,7 +1230,8 @@
       "opo_regulation": 0,
       "competitors": 1,
       "tech_logistics": 0,
-      "analyst": 0
+      "analyst": 0,
+      "opinion": 0
     },
     "labels": {
       "strata": "Strata",
@@ -1238,19 +1239,10 @@
       "opo_regulation": "OPO & regulation",
       "competitors": "Competitors & industry",
       "tech_logistics": "Technology & logistics",
-      "analyst": "Analyst actions (SRTA / TMDX)"
+      "analyst": "Analyst actions (SRTA / TMDX)",
+      "opinion": "Opinion"
     },
     "top_headlines": [
-      {
-        "headline": "Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million",
-        "source": "scanx.trade",
-        "date": "2026-09-28",
-        "url": "https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306",
-        "google_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU9DR1Zqb1hUTVp5S3JoWEMtb3VZVnJBYTJUeDJMTXF2WEhhWEdoMGxGU015cVZaWkRjZXJaZmF5bEVVZ1RZWUtSRUw1S0pfUWVhbXNYdHpENW0zV3FuQURJcTViR2ZaZlZVMnF6bTdZZXQzUnVESVZBRm9UTmYxcFc2LWNncmZHUnVfYnUyeERGcm11enRzU0JYcFhKZVpzMC1OS1p2QmdSUzVhLVRkTl9RMnU1MHR6LUxGSXp6b3o?oc=5",
-        "tags": [
-          "strata"
-        ]
-      },
       {
         "headline": "UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants",
         "source": "The Manila Times",
@@ -1262,37 +1254,53 @@
         ]
       },
       {
-        "headline": "Nomination Committee of XVIVO Perfusion AB (publ)",
-        "source": "Yahoo Finance",
-        "date": "2026-09-30",
-        "url": "https://finance.yahoo.com/healthcare/articles/nomination-committee-xvivo-perfusion-ab-141500952.html",
-        "google_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQTRmWWU3Z1RSWWFfYzJQcDNpMVNhcW90eHBVSjJGbTVQdHJZa3RWOEtmX1liRF9RRGlqb21RMDVJMXQ0V3lEODJxUUhFU0I1UFZqNGt6bGFlZzJqUGlrTzZUSVNpNU8ySlZ1WG8tTVhHOTlCR2kxLWp2RTQ5TVAwM2w2a0ZrTTZGa01NSGxSMk0yVFlfZkJHazJYQTNueU15a0E?oc=5",
+        "headline": "TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?",
+        "source": "The Motley Fool",
+        "date": "2026-09-29",
+        "url": "https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/",
+        "google_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZTZKU2ZTclpORi1hTG5BTm1Cd2I5Uk1XOUlKZlJWc1pJWUtvN3B2cEFOWEpybmdiTnFYRFU2bXlZZklVa0llMEU5X3NHa1FmS0Y0UTAtSXBwblg4UTRfNlJiTldDZDR5b05ybkNpRU5aS2JRSlFzeURxM2Y1NW9UZnpucmd0Tm1VU3E4TzVpdkVLcEk3a25nMnVlQWF1ZUZXaVd3dUZrVDJ1XzFnbk9uU1BNSjhZNm9Zbnd6azhWREpUWDNPeEJ1ZXFDNDNvRWlxcUxj?oc=5",
+        "tags": [
+          "competitors"
+        ]
+      },
+      {
+        "headline": "South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida",
+        "source": "PR Newswire",
+        "date": "2026-09-29",
+        "url": "https://www.prnewswire.com/news-releases/south-florida-donor-network-brings-advanced-organox-liver-perfusion-technology-to-south-florida-302892310.html",
+        "google_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZHlIMlhKODJwMlpESjlVWGpabFRFTGE5Z3E1UHVWeEotUjVMeF9KRzZXRlBxRVRTdjZLYW51WEtyc2FJV3lHTHNYZERZbXZfY1NrMDV0SGRWcEV1am9KaEQ2b0ctU2hkR25vZ2QtZEtJcldtS3BnMnozUGg3UmU0UVVpMFlhLU16d2RoUnU3TEpmQU5nc3RWWlN6cTFVSFhsSHoyUm84dTBKSE91RWpIYWRDaFkyY0lLTmNvSEw5TVhRNmZoZ3ZFUFFqN2tmOUVHUEVQYkNGN3ExSEpmblpwZ0hFQWdIUQ?oc=5",
         "tags": [
           "competitors"
         ]
       }
     ],
-    "fetched_at": "2026-10-08T22:50:11+00:00"
+    "none_text": null,
+    "fetched_at": "2026-10-09T10:10:02+00:00"
   },
   "issue_line": null,
   "bullets": [
-    "Transplants vs last year, last 4 weeks / YTD (through week ending Sep 30, 2026): Heart \u25bc 5.8% / \u25bc 0.8% \u00b7 Liver \u25b2 6.8% / \u25b2 6.4% \u00b7 Lung \u25b2 5.4% / \u25b2 5.0% \u00b7 Kidney (incl. KP) \u25bc 2.1% / \u25bc 3.9%.",
-    "Signals: Volumes Heart down (-5.8%), Liver up (+6.8%), Lung up (+5.4%), Kidney down (-2.1%) | Distance Heart flat, Liver shorter, Lung shorter, Kidney flat | DCD share rising (+4.0 pts) | Discard rate rising (+0.7 pts).",
-    "Deceased donors recovered, last 4 weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
-    "New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); 251+ NM share: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts).",
-    "Waitlist additions, last 4 weeks vs last year: Heart \u25bc 7.9% \u00b7 Liver \u25b2 0.1% \u00b7 Lung \u25b2 7.0% \u00b7 Kidney (incl. KP) \u25bc 8.3%."
+    "Heart and kidney transplants fell 5.8% and 2.1% over the last 4 weeks vs. last year; liver and lung rose 6.8% and 5.4%.",
+    "Deceased donors recovered fell 1.1% over the same weeks, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Heart and kidney waitlist additions fell 7.9% and 8.3% over the last 4 weeks; liver was roughly flat (+0.1%); lung rose 7.0%."
+  ],
+  "this_week": [
+    "Heart and kidney transplants fell 5.8% and 2.1% over the last 4 weeks vs. last year; liver and lung rose 6.8% and 5.4%.",
+    "Deceased donors recovered fell 1.1% over the same weeks, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Heart and kidney waitlist additions fell 7.9% and 8.3% over the last 4 weeks; liver was roughly flat (+0.1%); lung rose 7.0%."
   ],
   "news_line": "1 new news item this week \u2014 Competitors & industry 1.",
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 8, 2026* \u00b7 SRTA $4.47 (\u25bc 7.5% 1-wk)",
-    "\u2022 Transplants vs last year, last 4 weeks / YTD (through week ending Sep 30, 2026): Heart \u25bc 5.8% / \u25bc 0.8% \u00b7 Liver \u25b2 6.8% / \u25b2 6.4% \u00b7 Lung \u25b2 5.4% / \u25b2 5.0% \u00b7 Kidney (incl. KP) \u25bc 2.1% / \u25bc 3.9%.",
-    "\u2022 Signals: Volumes Heart down (-5.8%), Liver up (+6.8%), Lung up (+5.4%), Kidney down (-2.1%) | Distance Heart flat, Liver shorter, Lung shorter, Kidney flat | DCD share rising (+4.0 pts) | Discard rate rising (+0.7 pts).",
-    "\u2022 Deceased donors recovered, last 4 weeks vs last year: \u25bc 1.1%; all-organs discard rate 20.4% YTD through September 28 vs 19.7% a year ago.",
-    "\u2022 New OPTN monthly data (2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year, mix comparison): DCD 53.2% of deceased donors (+4.0 pts); 251+ NM share: Heart 57.3% (-0.2 pts) \u00b7 Liver 27.8% (-1.8 pts) \u00b7 Lung 68.4% (-2.8 pts) \u00b7 Kidney 18.7% (+0.1 pts).",
-    "\u2022 Waitlist additions, last 4 weeks vs last year: Heart \u25bc 7.9% \u00b7 Liver \u25b2 0.1% \u00b7 Lung \u25b2 7.0% \u00b7 Kidney (incl. KP) \u25bc 8.3%.",
-    "Headlines (1 new news item this week: Competitors & industry 1):",
-    "  \u2013 <https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306|Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million> (scanx.trade, 2026-09-28)",
-    "  \u2013 <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, 2026-10-08)",
-    "  \u2013 <https://finance.yahoo.com/healthcare/articles/nomination-committee-xvivo-perfusion-ab-141500952.html|Nomination Committee of XVIVO Perfusion AB (publ)> (Yahoo Finance, 2026-09-30)"
+    "*SRTA Transplant Tracker \u2014 week of Oct 9, 2026* \u00b7 SRTA $4.47 (\u25bc 7.5% 1-wk)",
+    "\u2022 Heart and kidney transplants fell 5.8% and 2.1% over the last 4 weeks vs. last year; liver and lung rose 6.8% and 5.4%.",
+    "\u2022 Deceased donors recovered fell 1.1% over the same weeks, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "\u2022 DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "\u2022 Heart and kidney waitlist additions fell 7.9% and 8.3% over the last 4 weeks; liver was roughly flat (+0.1%); lung rose 7.0%.",
+    "Top headlines:",
+    "  \u2013 <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, Oct 8, 2026)",
+    "  \u2013 <https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/|TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?> (The Motley Fool, Sep 29, 2026)",
+    "  \u2013 <https://www.prnewswire.com/news-releases/south-florida-donor-network-brings-advanced-organox-liver-perfusion-technology-to-south-florida-302892310.html|South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida> (PR Newswire, Sep 29, 2026)",
+    "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
   ]
 }
