@@ -7,7 +7,7 @@
 • *Regions:* biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) ▼ 15.1%, New England (Region 1) ▼ 15.0%, Southwest (Region 5) ▲ 10.4%. (data through Sep 30, 2026)
 • *Signals:* Volumes up for heart+liver+lung, liver and lung; down for heart and kidney · Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung · DCD share rising · Discard rate rising.
 *Top headlines:*
+  – <https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306|Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million> (scanx.trade, Sep 28, 2026)
   – <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, Oct 8, 2026)
   – <https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/|TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?> (The Motley Fool, Sep 29, 2026)
-  – <https://www.prnewswire.com/news-releases/south-florida-donor-network-brings-advanced-organox-liver-perfusion-technology-to-south-florida-302892310.html|South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida> (PR Newswire, Sep 29, 2026)
 Dashboard: https://emmania1.github.io/srta-transplant-tracker/

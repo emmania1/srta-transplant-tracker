@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SRTA Transplant Tracker</title>
-  <link rel="stylesheet" href="style.css?v=2026-10-09k" />
+  <link rel="stylesheet" href="style.css?v=2026-10-09l" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -14,11 +14,11 @@
       <a class="brand" href="#top">SRTA Tracker</a>
       <a href="#s1"><span class="n">1</span><span class="long">Snapshot</span><span class="short">Snapshot</span></a>
       <a href="#s2"><span class="n">2</span><span class="long">Volumes</span><span class="short">Volumes</span></a>
-      <a href="#s3"><span class="n">3</span><span class="long">Donor mix</span><span class="short">Donors</span></a>
-      <a href="#s4"><span class="n">4</span><span class="long">Distance &amp; location</span><span class="short">Distance</span></a>
-      <a href="#s5"><span class="n">5</span><span class="long">Leading indicators</span><span class="short">Leading</span></a>
-      <a href="#s6"><span class="n">6</span><span class="long">Company</span><span class="short">Company</span></a>
-      <a href="#news"><span class="long">News</span><span class="short">News</span></a>
+      <a href="#s3"><span class="n">3</span><span class="long">Distance &amp; location</span><span class="short">Distance</span></a>
+      <a href="#s4"><span class="n">4</span><span class="long">News</span><span class="short">News</span></a>
+      <a href="#s5"><span class="n">5</span><span class="long">Donor mix</span><span class="short">Donors</span></a>
+      <a href="#s6"><span class="n">6</span><span class="long">Leading indicators</span><span class="short">Leading</span></a>
+      <a href="#s7"><span class="n">7</span><span class="long">Company</span><span class="short">Company</span></a>
       <a href="#about"><span class="long">About</span><span class="short">About</span></a>
     </div>
   </nav>
@@ -123,23 +123,9 @@
       </article>
     </section>
 
-    <!-- 3. Donor mix -->
+    <!-- 3. Distance & location -->
     <section class="section" id="s3">
-      <h2 class="sec-title"><span class="num">3</span>Donor mix</h2>
-
-      <article class="panel" id="p-mix">
-        <header class="panel-head">
-          <h3>DBD vs. DCD donors</h3>
-          <p class="why">Why it matters for SRTA: DCD donors need more recovery and perfusion services, which drives Strata's clinical business.</p>
-        </header>
-        <div id="mix-body"></div>
-        <footer class="src" id="src-mix"></footer>
-      </article>
-    </section>
-
-    <!-- 4. Distance & location -->
-    <section class="section" id="s4">
-      <h2 class="sec-title"><span class="num">4</span>Distance &amp; location</h2>
+      <h2 class="sec-title"><span class="num">3</span>Distance &amp; location</h2>
 
       <article class="panel" id="p-distance">
         <header class="panel-head">
@@ -189,9 +175,35 @@
       </article>
     </section>
 
-    <!-- 5. Leading indicators -->
+    <!-- 4. News & company mentions -->
+    <section class="section" id="s4">
+      <h2 class="sec-title"><span class="num">4</span>News &amp; company mentions</h2>
+      <article class="panel" id="p-news">
+        <div class="filters" id="news-filters"></div>
+        <ul class="news-list" id="news-list"></ul>
+        <button class="more" id="news-more" hidden>Show more</button>
+        <details class="collapsed-news" id="news-collapsed" hidden><summary id="news-collapsed-sum"></summary><ul class="news-list" id="news-collapsed-list"></ul></details>
+        <footer class="src" id="src-news"></footer>
+      </article>
+    </section>
+
+    <!-- 5. Donor mix -->
     <section class="section" id="s5">
-      <h2 class="sec-title"><span class="num">5</span>Leading indicators</h2>
+      <h2 class="sec-title"><span class="num">5</span>Donor mix</h2>
+
+      <article class="panel" id="p-mix">
+        <header class="panel-head">
+          <h3>DBD vs. DCD donors</h3>
+          <p class="why">Why it matters for SRTA: DCD donors need more recovery and perfusion services, which drives Strata's clinical business.</p>
+        </header>
+        <div id="mix-body"></div>
+        <footer class="src" id="src-mix"></footer>
+      </article>
+    </section>
+
+    <!-- 6. Leading indicators -->
+    <section class="section" id="s6">
+      <h2 class="sec-title"><span class="num">6</span>Leading indicators</h2>
 
       <article class="panel" id="p-cdc">
         <header class="panel-head">
@@ -203,9 +215,9 @@
       </article>
     </section>
 
-    <!-- 6. Company -->
-    <section class="section" id="s6">
-      <h2 class="sec-title"><span class="num">6</span>Company</h2>
+    <!-- 7. Company -->
+    <section class="section" id="s7">
+      <h2 class="sec-title"><span class="num">7</span>Company</h2>
 
       <article class="panel" id="p-kpis">
         <header class="panel-head">
@@ -225,16 +237,6 @@
         <footer class="src" id="src-joby"></footer>
       </article>
 
-      <article class="panel" id="p-sec">
-        <header class="panel-head">
-          <h3>SEC filings</h3>
-          <p class="why">Why it matters for SRTA: insider trades, large-holder filings and material-event reports in one place.</p>
-        </header>
-        <div id="insider-strip"></div>
-        <div class="filters" id="sec-filters"></div>
-        <div id="sec-body"></div>
-        <footer class="src" id="src-sec"></footer>
-      </article>
 
       <article class="panel" id="p-rel">
         <header class="panel-head">
@@ -253,18 +255,6 @@
         </header>
         <div id="tmdx-kpi-body"></div>
         <footer class="src" id="src-tmdx"></footer>
-      </article>
-    </section>
-
-    <!-- News -->
-    <section class="section" id="news">
-      <h2 class="sec-title">News &amp; company mentions</h2>
-      <article class="panel" id="p-news">
-        <div class="filters" id="news-filters"></div>
-        <ul class="news-list" id="news-list"></ul>
-        <button class="more" id="news-more" hidden>Show more</button>
-        <details class="collapsed-news" id="news-collapsed" hidden><summary id="news-collapsed-sum"></summary><ul class="news-list" id="news-collapsed-list"></ul></details>
-        <footer class="src" id="src-news"></footer>
       </article>
     </section>
 
@@ -299,10 +289,12 @@
         </dl>
         <h3 class="sub-head">Not built yet</h3>
         <p class="note">OPO tier &amp; decertification tracker.</p>
+        <h3 class="sub-head">Paused</h3>
+        <p class="note">SRTA SEC filings feed (insider trades, 13D/13G, 8-Ks). The script is kept in <code>scripts/fetch_sec.py</code>; the on/off switch is in <code>config/features.json</code>. The quarterly KPI panels appear in Company once a quarter is entered.</p>
       </article>
     </section>
   </main>
 
-  <script src="app.js?v=2026-10-09k"></script>
+  <script src="app.js?v=2026-10-09l"></script>
 </body>
 </html>

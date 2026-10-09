@@ -1,0 +1,4 @@
+{
+  "_note": "On/off switches for optional feeds. Turning one off stops it being fetched (workflow), checked (health.py), used in the digest and shown on the page; its script stays in scripts/. To turn sec_filings back on: set true, re-add the 'Fetch SEC EDGAR filings' step to .github/workflows/weekly-update.yml, and restore the SEC panel in index.html/app.js.",
+  "sec_filings": false
+}

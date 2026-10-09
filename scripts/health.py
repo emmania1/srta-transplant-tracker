@@ -75,7 +75,8 @@ def main():
     if news.get("errors"):
         issues.append(f"News: {len(news['errors'])} keyword query(ies) failed ({', '.join(e.split(':')[0] for e in news['errors'])}).")
 
-    sec = load("sec_filings") or {}
+    features = json.loads((ROOT / "config" / "features.json").read_text())
+    sec = (load("sec_filings") or {}) if features.get("sec_filings") else {}
     if sec.get("fetch_error"):
         issues.append(f"SEC EDGAR fetch failed: {sec['fetch_error']['message'][:80]}")
     if sec.get("status") == "not_configured" or sec.get("config_note"):

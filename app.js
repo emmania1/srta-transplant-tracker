@@ -101,7 +101,7 @@ function renderHealth(h) {
   }
   const notes = (h && h.notices) || [];
   const li = $("health-notices");
-  if (notes.length) li.innerHTML = `<strong>Setup:</strong> ${esc(notes.join(" "))} Add the repository secret <code>SEC_USER_AGENT</code> with a contact email.`;
+  if (notes.length) li.innerHTML = `<strong>Setup:</strong> ${esc(notes.join(" "))}`;
   else li.remove();
 }
 
@@ -534,8 +534,11 @@ function lastCompletedQuarter(today = new Date()) {
   return q === 0 ? `Q4 ${today.getUTCFullYear() - 1}` : `Q${q} ${today.getUTCFullYear()}`;
 }
 function renderKpis(d, bodyId, srcId, name) {
-  if (!d.fields) { $(bodyId).innerHTML = awaiting("KPIs", "the quarterly KPI file"); return; }
   const periods = d.periods || [];
+  // Hidden entirely until at least one quarter has been entered in the manual file
+  const panel = $(bodyId).closest(".panel");
+  if (!d.fields || !periods.length) { panel.hidden = true; return; }
+  panel.hidden = false;
   const last = periods[periods.length - 1];
   const groups = [...new Set(d.fields.map((f) => f.group))];
   const table = `<div class="scroll-x"><table class="kpi-table"><thead><tr><th>Metric</th><th>${last ? esc(last.period) : "Latest quarter"}</th><th>Source</th><th>Date</th></tr></thead><tbody>
@@ -727,7 +730,6 @@ function renderSources(F, summary) {
     ["U.S. overdose deaths", F.cdc_overdose.source, "Live", "Monthly", "scripts/fetch_cdc.py → data/processed/cdc_overdose.json"],
     ["SRTA quarterly KPIs", "SRTA earnings releases and filings (source per field)", "Manual", "Quarterly", "data/manual/company_kpis.json"],
     ["JOBY earn-out", j ? `${j.source} Caps: ${j.cap_source}` : "PM estimate", "Manual", "Weekly (price)", "config/holdings.json"],
-    ["SEC filings", F.sec_filings.source, "Live", "Weekly", "scripts/fetch_sec.py → data/processed/sec_filings.json (needs the SEC_USER_AGENT secret)"],
     ["TransMedics quarterly KPIs", "TMDX earnings releases and filings (source per field)", "Manual", "Quarterly", "data/manual/tmdx_kpis.json"],
     ["News", F.news.source, "Live", "Weekly", "scripts/fetch_news.py → data/processed/news.json; config/keywords.json"],
     ["Signals, health check, digest", "Computed from the files above", "Live", "Weekly", "config/signals.json; config/health.json; data/weekly_summary.json; summary/latest.md"],
@@ -761,7 +763,7 @@ function trackActiveSection() {
 
 (async function main() {
   const names = ["transplants_weekly", "donors_weekly", "waitlist_weekly", "donor_mix", "distance", "location",
-    "regions_weekly", "centers", "news", "price", "cdc_overdose", "sec_filings", "health"];
+    "regions_weekly", "centers", "news", "price", "cdc_overdose", "health"];
   const [summary, kpis, tmdxKpis, ...rest] = await Promise.all([
     load("data/weekly_summary.json"), load("data/manual/company_kpis.json"), load("data/manual/tmdx_kpis.json"),
     ...names.map((n) => load(`data/processed/${n}.json`)),
@@ -784,7 +786,6 @@ function trackActiveSection() {
   run(() => renderCdc(F.cdc_overdose));
   run(() => renderKpis(kpis, "kpi-body", "src-kpis", "SRTA earnings releases and filings"));
   run(() => renderJoby(summary));
-  run(() => renderSec(F.sec_filings));
   run(() => renderRelative(summary));
   run(() => renderKpis(tmdxKpis, "tmdx-kpi-body", "src-tmdx", "TransMedics earnings releases and filings"));
   run(() => renderNews(F.news));

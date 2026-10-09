@@ -1,10 +1,8 @@
 {
-  "checked_at": "2026-10-09T11:02:21+00:00",
+  "checked_at": "2026-10-09T11:12:45+00:00",
   "ok": true,
   "issues": [],
-  "notices": [
-    "SEC_USER_AGENT is not set (SEC requires a contact email in the User-Agent)."
-  ],
+  "notices": [],
   "thresholds": {
     "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
     "weekly_optn_max_age_days": 14,

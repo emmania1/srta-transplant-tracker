@@ -436,10 +436,12 @@ def main():
     mix = mix_block(load("donor_mix"), load("distance"))
     loc = load("location")
     regions = regions_block(load("regions_weekly"))
-    sec_raw = load("sec_filings")
+    features = json.loads((ROOT / "config" / "features.json").read_text())
+    # SEC feed off -> no insider line, and the stale-results rule (which needs SRTA's latest results 8-K) is off too
+    sec_raw = load("sec_filings") if features.get("sec_filings") else None
     news = news_block(load("news"), now, sec_raw)
     health = load("health")
-    sec = sec_block(sec_raw, now)
+    sec = sec_block(sec_raw, now) if sec_raw else None
     waitlist = wl_block(load("waitlist_weekly"))
     cdc = cdc_block(load("cdc_overdose"))
 

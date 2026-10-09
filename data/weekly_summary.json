@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T11:02:21+00:00",
+  "generated_at": "2026-10-09T11:12:45+00:00",
   "price": {
     "close": 4.47,
     "date": "2026-10-08",
@@ -257,12 +257,10 @@
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
   },
   "health": {
-    "checked_at": "2026-10-09T11:02:21+00:00",
+    "checked_at": "2026-10-09T11:12:45+00:00",
     "ok": true,
     "issues": [],
-    "notices": [
-      "SEC_USER_AGENT is not set (SEC requires a contact email in the User-Agent)."
-    ],
+    "notices": [],
     "thresholds": {
       "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
       "weekly_optn_max_age_days": 14,
@@ -795,90 +793,7 @@
     "reported_yoy_pct": -13.5,
     "dataset_updated": "2026-09-16"
   },
-  "sec": {
-    "count": 44,
-    "fetched_at": "2026-10-08T21:45:16+00:00",
-    "form4_sales": [
-      {
-        "filed": "2026-08-13",
-        "owner": "Love Reginald",
-        "roles": [
-          "Director"
-        ],
-        "shares_sold": 5091.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026056841/xslF345X06/wk-form4_1786656778.xml"
-      },
-      {
-        "filed": "2026-06-10",
-        "owner": "Heyburn William A.",
-        "roles": [
-          "Director",
-          "Co-CEO and CFO"
-        ],
-        "shares_sold": 31671.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042183/xslF345X06/wk-form4_1781121979.xml"
-      },
-      {
-        "filed": "2026-06-10",
-        "owner": "Cohen Amir",
-        "roles": [
-          "Chief Accounting Officer"
-        ],
-        "shares_sold": 4655.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042182/xslF345X06/wk-form4_1781121963.xml"
-      },
-      {
-        "filed": "2026-06-10",
-        "owner": "Tomkiel Melissa M.",
-        "roles": [
-          "Director",
-          "Co-CEO and General Counsel"
-        ],
-        "shares_sold": 29730.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042180/xslF345X06/wk-form4_1781121946.xml"
-      },
-      {
-        "filed": "2026-06-10",
-        "owner": "Wunsch Scott M",
-        "roles": [
-          "CEO, Logistics"
-        ],
-        "shares_sold": 5550.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026042177/xslF345X06/wk-form4_1781121928.xml"
-      },
-      {
-        "filed": "2026-05-26",
-        "owner": "Cohen Amir",
-        "roles": [
-          "Chief Accounting Officer"
-        ],
-        "shares_sold": 50875.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026038171/xslF345X06/wk-form4_1779828592.xml"
-      },
-      {
-        "filed": "2026-05-13",
-        "owner": "Cohen Amir",
-        "roles": [
-          "Chief Accounting Officer"
-        ],
-        "shares_sold": 14306.0,
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026034586/xslF345X06/wk-form4_1778702684.xml"
-      }
-    ],
-    "schedule_13d": [
-      {
-        "filed": "2026-05-08",
-        "form": "SCHEDULE 13D/A",
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000005/xslSCHEDULE_13D_X02/primary_doc.xml"
-      },
-      {
-        "filed": "2026-04-16",
-        "form": "SCHEDULE 13D/A",
-        "url": "https://www.sec.gov/Archives/edgar/data/1779128/000212669126000003/xslSCHEDULE_13D_X02/primary_doc.xml"
-      }
-    ],
-    "new_this_week": []
-  },
+  "sec": null,
   "donor_mix_and_distance": {
     "current_label": "2026 YTD (Jan 1\u2013Aug 31)",
     "prior_label": "2025 full year",
@@ -1315,6 +1230,16 @@
     },
     "top_headlines": [
       {
+        "headline": "Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million",
+        "source": "scanx.trade",
+        "date": "2026-09-28",
+        "url": "https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306",
+        "google_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU9DR1Zqb1hUTVp5S3JoWEMtb3VZVnJBYTJUeDJMTXF2WEhhWEdoMGxGU015cVZaWkRjZXJaZmF5bEVVZ1RZWUtSRUw1S0pfUWVhbXNYdHpENW0zV3FuQURJcTViR2ZaZlZVMnF6bTdZZXQzUnVESVZBRm9UTmYxcFc2LWNncmZHUnVfYnUyeERGcm11enRzU0JYcFhKZVpzMC1OS1p2QmdSUzVhLVRkTl9RMnU1MHR6LUxGSXp6b3o?oc=5",
+        "tags": [
+          "strata"
+        ]
+      },
+      {
         "headline": "UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants",
         "source": "The Manila Times",
         "date": "2026-10-08",
@@ -1330,16 +1255,6 @@
         "date": "2026-09-29",
         "url": "https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/",
         "google_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZTZKU2ZTclpORi1hTG5BTm1Cd2I5Uk1XOUlKZlJWc1pJWUtvN3B2cEFOWEpybmdiTnFYRFU2bXlZZklVa0llMEU5X3NHa1FmS0Y0UTAtSXBwblg4UTRfNlJiTldDZDR5b05ybkNpRU5aS2JRSlFzeURxM2Y1NW9UZnpucmd0Tm1VU3E4TzVpdkVLcEk3a25nMnVlQWF1ZUZXaVd3dUZrVDJ1XzFnbk9uU1BNSjhZNm9Zbnd6azhWREpUWDNPeEJ1ZXFDNDNvRWlxcUxj?oc=5",
-        "tags": [
-          "competitors"
-        ]
-      },
-      {
-        "headline": "South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida",
-        "source": "PR Newswire",
-        "date": "2026-09-29",
-        "url": "https://www.prnewswire.com/news-releases/south-florida-donor-network-brings-advanced-organox-liver-perfusion-technology-to-south-florida-302892310.html",
-        "google_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZHlIMlhKODJwMlpESjlVWGpabFRFTGE5Z3E1UHVWeEotUjVMeF9KRzZXRlBxRVRTdjZLYW51WEtyc2FJV3lHTHNYZERZbXZfY1NrMDV0SGRWcEV1am9KaEQ2b0ctU2hkR25vZ2QtZEtJcldtS3BnMnozUGg3UmU0UVVpMFlhLU16d2RoUnU3TEpmQU5nc3RWWlN6cTFVSFhsSHoyUm84dTBKSE91RWpIYWRDaFkyY0lLTmNvSEw5TVhRNmZoZ3ZFUFFqN2tmOUVHUEVQYkNGN3ExSEpmblpwZ0hFQWdIUQ?oc=5",
         "tags": [
           "competitors"
         ]
@@ -1657,9 +1572,9 @@
     "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%. (data through Sep 30, 2026)",
     "\u2022 *Signals:* Volumes up for heart+liver+lung, liver and lung; down for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
     "*Top headlines:*",
+    "  \u2013 <https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306|Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million> (scanx.trade, Sep 28, 2026)",
     "  \u2013 <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, Oct 8, 2026)",
     "  \u2013 <https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/|TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?> (The Motley Fool, Sep 29, 2026)",
-    "  \u2013 <https://www.prnewswire.com/news-releases/south-florida-donor-network-brings-advanced-organox-liver-perfusion-technology-to-south-florida-302892310.html|South Florida Donor Network Brings Advanced OrganOx Liver Perfusion Technology to South Florida> (PR Newswire, Sep 29, 2026)",
     "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
   ]
 }
