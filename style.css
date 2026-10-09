@@ -55,7 +55,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 56px; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 12px); }
 body {
   margin: 0;
   background: var(--bg);
@@ -73,22 +73,25 @@ code { font-size: 0.85em; background: var(--await-bg); padding: 1px 4px; border-
 .flat { color: var(--text-2); white-space: nowrap; }
 
 /* ---------- sticky nav ---------- */
-.topnav {
-  position: sticky; top: 0; z-index: 10;
+/* fixed (not sticky): pinned in every browser incl. Safari; body reserves its height */
+:root { --nav-h: 45px; }
+body { padding-top: var(--nav-h); }
+.secbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: var(--nav-bg); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
 }
-.topnav-inner {
+.secbar-inner {
   max-width: 1080px; margin: 0 auto; padding: 0 16px;
   display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; white-space: nowrap;
 }
-.topnav-inner::-webkit-scrollbar { display: none; }
-.topnav a {
+.secbar-inner::-webkit-scrollbar { display: none; }
+.secbar a {
   color: var(--text-2); text-decoration: none; font-size: 0.85rem; padding: 12px 8px; display: inline-flex; align-items: center; gap: 5px;
 }
-.topnav a:hover { color: var(--text); }
-.topnav a.brand { font-weight: 700; color: var(--text); margin-right: 8px; }
-.topnav .n {
+.secbar a:hover { color: var(--text); }
+.secbar a.brand { font-weight: 700; color: var(--text); margin-right: 8px; }
+.secbar .n {
   display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%;
   background: var(--await-bg); color: var(--text-2); font-size: 0.7rem; font-weight: 700;
 }
@@ -289,15 +292,22 @@ tr.total td { font-weight: 600; border-top: 2px solid var(--border); }
 }
 
 /* nav: short labels on phones, every link visible (2 rows), current section highlighted */
-.topnav .short { display: none; }
-.topnav a.active { color: var(--accent); font-weight: 600; }
-.topnav a.active .n { background: var(--accent); color: #fff; }
+.secbar .short { display: none; }
+.secbar a.active { color: var(--accent); font-weight: 600; }
+.secbar a.active .n { background: var(--accent); color: #fff; }
 @media (max-width: 760px) {
-  html { scroll-padding-top: 84px; }
-  .topnav-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; padding: 2px 8px; overflow: visible; }
-  .topnav a.brand { display: none; }
-  .topnav a { padding: 7px 4px; font-size: 0.78rem; justify-content: center; gap: 4px; }
-  .topnav .long { display: none; }
-  .topnav .short { display: inline; }
-  .topnav .n { width: 16px; height: 16px; font-size: 0.65rem; }
+  :root { --nav-h: 69px; }
+  .secbar-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; padding: 2px 8px; overflow: visible; }
+  .secbar a.brand { display: none; }
+  .secbar a { padding: 7px 4px; font-size: 0.78rem; justify-content: center; gap: 4px; }
+  .secbar .long { display: none; }
+  .secbar .short { display: inline; }
+  .secbar .n { width: 16px; height: 16px; font-size: 0.65rem; }
+}
+
+/* medium widths: short labels so every button fits on one row */
+@media (min-width: 761px) and (max-width: 1040px) {
+  .secbar .long { display: none; }
+  .secbar .short { display: inline; }
+  .secbar a { padding: 12px 6px; }
 }

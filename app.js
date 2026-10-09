@@ -704,12 +704,21 @@ function renderSources(F, summary) {
     `<tr><td>${esc(name)}</td><td>${esc(src || "n/a")}</td><td><span class="tier-tag ${tag.toLowerCase()}">${tag}</span></td><td>${esc(cad)}</td><td class="files"><code>${esc(files)}</code></td></tr>`).join("");
 }
 
+// Keep the page offset equal to the fixed nav's real height (it wraps to 2 rows on phones)
+function syncNavHeight() {
+  const nav = document.querySelector(".secbar");
+  const set = () => document.documentElement.style.setProperty("--nav-h", `${nav.offsetHeight}px`);
+  set();
+  if (window.ResizeObserver) new ResizeObserver(set).observe(nav);
+  window.addEventListener("resize", set);
+}
+
 // Highlight the nav link for the section currently on screen
 function trackActiveSection() {
-  const links = [...document.querySelectorAll(".topnav-inner a[href^='#']:not(.brand)")];
+  const links = [...document.querySelectorAll(".secbar-inner a[href^='#']:not(.brand)")];
   const targets = links.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
   const update = () => {
-    const y = window.scrollY + 120;
+    const y = window.scrollY + document.querySelector(".secbar").offsetHeight + 80;
     let cur = targets[0];
     targets.forEach((t) => { if (t.offsetTop <= y) cur = t; });
     links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === `#${cur.id}`));
@@ -747,5 +756,6 @@ function trackActiveSection() {
   run(() => renderKpis(tmdxKpis, "tmdx-kpi-body", "src-tmdx", "TransMedics earnings releases and filings"));
   run(() => renderNews(F.news));
   run(() => renderSources(F, summary));
+  run(syncNavHeight);
   run(trackActiveSection);
 })();
