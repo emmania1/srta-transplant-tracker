@@ -135,8 +135,6 @@ h1 { font-size: 1.55rem; margin: 0 0 4px; }
 .price-src { border-top: 0; padding-top: 0; }
 .note { color: var(--text-2); font-size: 0.85rem; margin: 6px 0 12px; }
 .sub-head { font-size: 0.92rem; margin: 18px 0 6px; }
-.back { display: inline-block; margin: 2px 0 8px; font-size: 0.8rem; color: var(--muted); text-decoration: none; }
-.back:hover { color: var(--accent); }
 
 .tier-tag {
   font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
