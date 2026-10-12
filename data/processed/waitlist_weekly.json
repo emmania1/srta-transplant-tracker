@@ -2,7 +2,7 @@
   "title": "Weekly waitlist additions by organ (national)",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-09T10:59:11+00:00",
+  "ingested_at": "2026-10-12T02:11:35+00:00",
   "organs": {
     "all": [
       {
@@ -8224,8 +8224,8 @@
       "2026-W40"
     ]
   },
-  "raw_file": "2026-10-08_optn_metrics_wl_weekly_lung.csv, 2026-10-08_optn_metrics_wl_weekly_liver.csv, 2026-10-08_optn_metrics_wl_weekly_kidney.csv, 2026-10-08_optn_metrics_wl_weekly_heart.csv, 2026-10-08_optn_metrics_wl_weekly_all.csv",
-  "data_as_of": "2026-10-08",
+  "raw_file": "2026-10-12_optn_metrics_wl_weekly_lung.csv, 2026-10-12_optn_metrics_wl_weekly_liver.csv, 2026-10-12_optn_metrics_wl_weekly_kidney.csv, 2026-10-12_optn_metrics_wl_weekly_heart.csv, 2026-10-12_optn_metrics_wl_weekly_all.csv",
+  "data_as_of": "2026-10-12",
   "parser": "optn_metrics_wl_weekly",
   "region": "National",
   "hll_label": "Heart + liver + lung (Strata's core flying organs)",

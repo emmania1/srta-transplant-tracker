@@ -1,16 +1,12 @@
 {
   "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)",
   "tag": "Live",
-  "fetched_at": "2026-10-08T21:57:04+00:00",
+  "fetched_at": "2026-10-12T02:09:47+00:00",
   "tickers": {
     "SRTA": {
       "status": "ok",
-      "fetched_at": "2026-10-08T21:57:04+00:00",
+      "fetched_at": "2026-10-12T02:09:47+00:00",
       "history": [
-        {
-          "date": "2026-04-09",
-          "close": 4.05
-        },
         {
           "date": "2026-04-10",
           "close": 4.04
@@ -514,17 +510,17 @@
         {
           "date": "2026-10-08",
           "close": 4.47
+        },
+        {
+          "date": "2026-10-09",
+          "close": 4.53
         }
       ]
     },
     "TMDX": {
       "status": "ok",
-      "fetched_at": "2026-10-08T21:57:04+00:00",
+      "fetched_at": "2026-10-12T02:09:47+00:00",
       "history": [
-        {
-          "date": "2026-04-09",
-          "close": 109.2
-        },
         {
           "date": "2026-04-10",
           "close": 114.0
@@ -1028,17 +1024,17 @@
         {
           "date": "2026-10-08",
           "close": 79.0
+        },
+        {
+          "date": "2026-10-09",
+          "close": 77.87
         }
       ]
     },
     "JOBY": {
       "status": "ok",
-      "fetched_at": "2026-10-08T21:57:04+00:00",
+      "fetched_at": "2026-10-12T02:09:47+00:00",
       "history": [
-        {
-          "date": "2026-04-09",
-          "close": 8.28
-        },
         {
           "date": "2026-04-10",
           "close": 8.34
@@ -1542,6 +1538,10 @@
         {
           "date": "2026-10-08",
           "close": 5.75
+        },
+        {
+          "date": "2026-10-09",
+          "close": 5.44
         }
       ]
     }

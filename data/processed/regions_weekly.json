@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants (all organs) by OPTN region",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-09T10:59:11+00:00",
+  "ingested_at": "2026-10-12T02:11:35+00:00",
   "regions": {
     "1": [
       {
@@ -15169,8 +15169,8 @@
     "10": "Great Lakes",
     "11": "Mid-South"
   },
-  "raw_file": "2026-10-08_optn_metrics_tx_weekly_deceased_all_region11.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region10.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region09.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region08.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region07.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region06.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region05.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region04.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region03.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region02.csv, 2026-10-08_optn_metrics_tx_weekly_deceased_all_region01.csv",
-  "data_as_of": "2026-10-08",
+  "raw_file": "2026-10-12_optn_metrics_tx_weekly_deceased_all_region11.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region10.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region09.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region08.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region07.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region06.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region05.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region04.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region03.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region02.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_all_region01.csv",
+  "data_as_of": "2026-10-12",
   "parser": "optn_metrics_tx_weekly",
   "donor_type": "Deceased Donors",
   "organ": "All Organs",

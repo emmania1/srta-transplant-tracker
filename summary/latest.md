@@ -1,4 +1,4 @@
-*SRTA Transplant Tracker — week of Oct 9, 2026* · SRTA $4.47 (▼ 7.5% 1-wk) · TMDX $79.00 (▲ 0.5% 1-wk)
+*SRTA Transplant Tracker — week of Oct 12, 2026* · SRTA $4.53 (▼ 4.2% 1-wk) · TMDX $77.87 (▼ 2.4% 1-wk)
 • *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%. (data through Sep 30, 2026)
 • *Quarter:* Q3 heart+liver+lung ▲ 5.2% YoY; ▼ 5.8% vs Q2 (typical Q2→Q3: ▼ 4.2%). (data through Sep 30, 2026)
 • *Donors:* Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier). (data through Sep 23, 2026)
@@ -7,7 +7,7 @@
 • *Regions:* biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) ▼ 15.1%, New England (Region 1) ▼ 15.0%, Southwest (Region 5) ▲ 10.4%. (data through Sep 30, 2026)
 • *Signals:* Volumes up for heart+liver+lung, liver and lung; down for heart and kidney · Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung · DCD share rising · Discard rate rising.
 *Top headlines:*
-  – <https://scanx.trade/stock-market-news/companies/strata-critical-medical-q2fy26-results-revenue-rises-60-7-yoy-72-5/52129306|Strata Critical Medical Q2FY26 Results: Revenue rises 60.7% YoY to $72.5 million> (scanx.trade, Sep 28, 2026)
+  – <https://hgpi.org/en/events/hs146.html|[Registration Open] The 146th HGPI Seminar “How We Can Build a Society That Supports Choices Around Organ Donation: Exploring Decision-Making by Citizens and a Multi-Layered Approach Through Strategic Social Marketing” (November 9, 2026)> (日本医療政策機構, Oct 6, 2026)
   – <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, Oct 8, 2026)
-  – <https://www.fool.com/coverage/filings/2026/09/29/transmedics-director-david-weill-purchases-usd109-000-of-stock-should-investors-buy-too/|TransMedics Director David Weill Purchases $109,000 of Stock -- Should Investors Buy Too?> (The Motley Fool, Sep 29, 2026)
+  – <https://www.uchealth.org/newsroom/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/|UCHealth expands liver transplant access with tech> (UCHealth, Oct 7, 2026)
 Dashboard: https://emmania1.github.io/srta-transplant-tracker/
