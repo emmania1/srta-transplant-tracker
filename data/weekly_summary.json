@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-12T02:11:35+00:00",
+  "generated_at": "2026-10-19T00:58:26+00:00",
   "price": {
-    "close": 4.53,
-    "date": "2026-10-09",
-    "week_ago_close": 4.73,
-    "week_ago_date": "2026-10-02",
-    "change_1w_pct": -4.2,
+    "close": 4.54,
+    "date": "2026-10-16",
+    "week_ago_close": 4.53,
+    "week_ago_date": "2026-10-09",
+    "change_1w_pct": 0.2,
     "stale": false
   },
   "prices": {
     "tickers": {
       "SRTA": {
-        "close": 4.53,
-        "date": "2026-10-09",
-        "week_ago_close": 4.73,
-        "week_ago_date": "2026-10-02",
-        "change_1w_pct": -4.2,
+        "close": 4.54,
+        "date": "2026-10-16",
+        "week_ago_close": 4.53,
+        "week_ago_date": "2026-10-09",
+        "change_1w_pct": 0.2,
         "stale": false
       },
       "TMDX": {
-        "close": 77.87,
-        "date": "2026-10-09",
-        "week_ago_close": 79.795,
-        "week_ago_date": "2026-10-02",
-        "change_1w_pct": -2.4,
+        "close": 70.78,
+        "date": "2026-10-16",
+        "week_ago_close": 77.87,
+        "week_ago_date": "2026-10-09",
+        "change_1w_pct": -9.1,
         "stale": false
       },
       "JOBY": {
-        "close": 5.44,
-        "date": "2026-10-09",
-        "week_ago_close": 5.95,
-        "week_ago_date": "2026-10-02",
-        "change_1w_pct": -8.6,
+        "close": 4.66,
+        "date": "2026-10-16",
+        "week_ago_close": 5.44,
+        "week_ago_date": "2026-10-09",
+        "change_1w_pct": -14.3,
         "stale": false
       }
     },
@@ -44,19 +44,14 @@
       "cap_source": "SRTA Q2 2026 10-Q (filed 2026-08-04): up to $35.0M additional consideration (cash or JOBY shares at Joby's election) + up to $10.0M indemnity holdbacks",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1779128/000162828026052256/srta-20260630.htm",
       "tag": "Manual",
-      "value": 13164800,
-      "value_week_ago": 14399000,
-      "change_1w_pct": -8.6,
-      "price_date": "2026-10-09"
+      "value": 11277200,
+      "value_week_ago": 13164800,
+      "change_1w_pct": -14.3,
+      "price_date": "2026-10-16"
     },
     "relative_3m": {
-      "base_date": "2026-07-10",
+      "base_date": "2026-07-17",
       "dates": [
-        "2026-07-10",
-        "2026-07-13",
-        "2026-07-14",
-        "2026-07-15",
-        "2026-07-16",
         "2026-07-17",
         "2026-07-20",
         "2026-07-21",
@@ -116,148 +111,153 @@
         "2026-10-06",
         "2026-10-07",
         "2026-10-08",
-        "2026-10-09"
+        "2026-10-09",
+        "2026-10-12",
+        "2026-10-13",
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16"
       ],
       "SRTA": [
         100.0,
-        98.04,
-        103.33,
-        106.07,
-        102.35,
-        100.78,
-        99.02,
-        100.98,
-        99.41,
+        98.25,
+        100.19,
+        98.64,
+        98.83,
+        97.86,
+        99.81,
+        98.83,
+        94.56,
+        98.83,
+        97.48,
+        107.77,
+        108.16,
+        113.59,
+        108.54,
+        112.43,
+        115.34,
+        117.09,
+        117.09,
+        115.92,
+        114.56,
+        114.56,
+        110.68,
+        114.37,
+        115.73,
+        121.17,
+        115.92,
+        120.19,
+        118.83,
+        119.81,
+        115.92,
+        109.9,
+        104.27,
+        104.66,
+        104.27,
+        103.3,
+        103.11,
+        101.36,
         99.61,
-        98.63,
-        100.59,
-        99.61,
-        95.3,
-        99.61,
-        98.24,
-        108.61,
-        109.0,
-        114.48,
-        109.39,
-        113.31,
-        116.24,
-        118.0,
-        118.0,
-        116.83,
-        115.46,
-        115.46,
-        111.55,
-        115.26,
-        116.63,
-        122.11,
-        116.83,
-        121.14,
-        119.77,
-        120.74,
-        116.83,
-        110.76,
-        105.09,
-        105.48,
-        105.09,
-        104.11,
-        103.91,
-        102.15,
-        100.39,
-        101.66,
-        104.89,
-        103.52,
-        102.15,
-        105.28,
-        104.5,
-        105.68,
-        107.24,
-        105.28,
-        103.13,
-        104.31,
-        102.35,
-        99.8,
-        100.0,
-        94.52,
-        92.56,
-        94.13,
-        92.95,
-        91.59,
-        87.48,
-        88.65
+        100.87,
+        104.08,
+        102.72,
+        101.36,
+        104.47,
+        103.69,
+        104.85,
+        106.41,
+        104.47,
+        102.33,
+        103.5,
+        101.55,
+        99.03,
+        99.22,
+        93.79,
+        91.84,
+        93.4,
+        92.23,
+        90.87,
+        86.8,
+        87.96,
+        88.16,
+        86.41,
+        83.11,
+        84.27,
+        88.16
       ],
       "TMDX": [
         100.0,
-        106.33,
-        104.72,
-        105.83,
-        106.7,
-        103.86,
-        103.14,
-        104.3,
-        99.96,
-        99.86,
-        101.45,
-        104.28,
-        107.1,
-        109.5,
-        106.88,
-        107.41,
-        114.49,
-        113.37,
-        107.38,
-        112.61,
-        117.77,
-        124.12,
-        125.45,
-        122.17,
-        125.85,
-        124.36,
-        124.03,
-        127.32,
-        131.92,
-        127.54,
-        133.05,
-        131.41,
-        131.41,
-        129.47,
-        128.81,
-        124.15,
-        119.15,
-        115.46,
-        118.33,
-        122.11,
-        126.32,
-        123.92,
-        121.3,
-        119.39,
-        115.37,
-        120.54,
-        123.67,
-        122.93,
-        121.66,
-        121.33,
-        122.55,
-        123.64,
-        122.14,
-        117.79,
+        99.31,
+        100.42,
+        96.24,
+        96.15,
+        97.68,
+        100.41,
+        103.12,
+        105.43,
+        102.91,
+        103.42,
+        110.23,
+        109.15,
+        103.39,
+        108.42,
+        113.4,
+        119.51,
+        120.79,
+        117.63,
+        121.17,
         119.74,
-        116.14,
-        118.03,
-        117.16,
-        110.4,
-        112.02,
-        116.51,
-        112.71,
-        113.81,
-        110.91,
-        109.32
+        119.42,
+        122.59,
+        127.02,
+        122.8,
+        128.1,
+        126.52,
+        126.52,
+        124.66,
+        124.02,
+        119.53,
+        114.72,
+        111.17,
+        113.94,
+        117.57,
+        121.63,
+        119.32,
+        116.79,
+        114.95,
+        111.08,
+        116.06,
+        119.07,
+        118.36,
+        117.14,
+        116.82,
+        117.99,
+        119.05,
+        117.6,
+        113.41,
+        115.29,
+        111.83,
+        113.64,
+        112.8,
+        106.3,
+        107.86,
+        112.18,
+        108.52,
+        109.58,
+        106.79,
+        105.26,
+        105.66,
+        106.97,
+        102.08,
+        103.43,
+        95.67
       ],
-      "srta_minus_tmdx_pts": -20.7
+      "srta_minus_tmdx_pts": -7.5
     },
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
   },
   "health": {
-    "checked_at": "2026-10-12T02:11:35+00:00",
+    "checked_at": "2026-10-19T00:58:26+00:00",
     "ok": true,
     "issues": [],
     "notices": [],
@@ -280,169 +280,201 @@
   },
   "optn": {
     "status": "ok",
-    "data_as_of": "2026-10-12",
-    "raw_file": "2026-10-12_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-12_optn_metrics_tx_weekly_deceased_lung.csv",
+    "data_as_of": "2026-10-19",
+    "raw_file": "2026-10-19_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_lung.csv",
     "new_data_this_week": true,
     "organs": {
       "hll": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 383,
-          "prior_year_count": 347,
-          "yoy_pct": 10.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 406,
+          "prior_year_count": 338,
+          "yoy_pct": 20.1
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 1550,
-          "prior_year_total": 1499,
-          "yoy_pct": 3.4
+          "total": 1612,
+          "prior_year_total": 1422,
+          "yoy_pct": 13.4
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 15416,
-          "prior_year_total": 14762,
-          "yoy_pct": 4.4,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 15822,
+          "prior_year_total": 15100,
+          "yoy_pct": 4.8,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "heart": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 83,
-          "prior_year_count": 90,
-          "yoy_pct": -7.8
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 94,
+          "prior_year_count": 79,
+          "yoy_pct": 19.0
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 357,
-          "prior_year_total": 379,
-          "yoy_pct": -5.8
+          "total": 369,
+          "prior_year_total": 346,
+          "yoy_pct": 6.6
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 3432,
-          "prior_year_total": 3461,
-          "yoy_pct": -0.8,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 3526,
+          "prior_year_total": 3540,
+          "yoy_pct": -0.4,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "liver": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 235,
-          "prior_year_count": 196,
-          "yoy_pct": 19.9
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 237,
+          "prior_year_count": 200,
+          "yoy_pct": 18.5
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 921,
-          "prior_year_total": 862,
-          "yoy_pct": 6.8
+          "total": 953,
+          "prior_year_total": 832,
+          "yoy_pct": 14.5
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 9253,
-          "prior_year_total": 8700,
-          "yoy_pct": 6.4,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 9490,
+          "prior_year_total": 8900,
+          "yoy_pct": 6.6,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "lung": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 65,
-          "prior_year_count": 61,
-          "yoy_pct": 6.6
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 75,
+          "prior_year_count": 59,
+          "yoy_pct": 27.1
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 272,
-          "prior_year_total": 258,
-          "yoy_pct": 5.4
+          "total": 290,
+          "prior_year_total": 244,
+          "yoy_pct": 18.9
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 2731,
-          "prior_year_total": 2601,
-          "yoy_pct": 5.0,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 2806,
+          "prior_year_total": 2660,
+          "yoy_pct": 5.5,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "kidney": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 390,
-          "prior_year_count": 377,
-          "yoy_pct": 3.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 418,
+          "prior_year_count": 367,
+          "yoy_pct": 13.9
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 1601,
-          "prior_year_total": 1636,
-          "yoy_pct": -2.1
+          "total": 1619,
+          "prior_year_total": 1567,
+          "yoy_pct": 3.3
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 15959,
-          "prior_year_total": 16604,
-          "yoy_pct": -3.9,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 16377,
+          "prior_year_total": 16971,
+          "yoy_pct": -3.5,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       }
     },
     "all_organs": {
       "latest_week": {
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 834,
+        "prior_year_count": 709,
+        "yoy_pct": 17.6
+      },
+      "trailing_4wk": {
+        "weeks": [
+          "2026-W37",
+          "2026-W38",
+          "2026-W39",
+          "2026-W40"
+        ],
+        "total": 3251,
+        "prior_year_total": 3005,
+        "yoy_pct": 8.2
+      },
+      "ytd": {
+        "through_iso_week": 40,
+        "year": 2026,
+        "total": 32361,
+        "prior_year_total": 32273,
+        "yoy_pct": 0.3,
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
+      }
+    }
+  },
+  "donors": {
+    "metrics": {
+      "latest_week": {
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "iso_week": 39,
-        "count": 778,
-        "prior_year_count": 728,
-        "yoy_pct": 6.9
+        "count": 320,
+        "prior_year_count": 270,
+        "yoy_pct": 18.5
       },
       "trailing_4wk": {
         "weeks": [
@@ -451,58 +483,26 @@
           "2026-W38",
           "2026-W39"
         ],
-        "total": 3166,
-        "prior_year_total": 3157,
-        "yoy_pct": 0.3
+        "total": 1238,
+        "prior_year_total": 1196,
+        "yoy_pct": 3.5
       },
       "ytd": {
         "through_iso_week": 39,
         "year": 2026,
-        "total": 31527,
-        "prior_year_total": 31564,
-        "yoy_pct": -0.1,
+        "total": 12508,
+        "prior_year_total": 12556,
+        "yoy_pct": -0.4,
         "weeks_covered": 39,
         "prior_weeks_covered": 39
-      }
-    }
-  },
-  "donors": {
-    "metrics": {
-      "latest_week": {
-        "week_start": "2026-09-17",
-        "week_end": "2026-09-23",
-        "iso_week": 38,
-        "count": 293,
-        "prior_year_count": 307,
-        "yoy_pct": -4.6
-      },
-      "trailing_4wk": {
-        "weeks": [
-          "2026-W35",
-          "2026-W36",
-          "2026-W37",
-          "2026-W38"
-        ],
-        "total": 1214,
-        "prior_year_total": 1228,
-        "yoy_pct": -1.1
-      },
-      "ytd": {
-        "through_iso_week": 38,
-        "year": 2026,
-        "total": 12188,
-        "prior_year_total": 12286,
-        "yoy_pct": -0.8,
-        "weeks_covered": 38,
-        "prior_weeks_covered": 38
       }
     },
     "discard": {
       "year": 2026,
-      "through": "September 28",
-      "discard_rate_pct": 20.44,
-      "prior_year_discard_rate_pct": 19.72,
-      "change_pts": 0.72
+      "through": "October 05",
+      "discard_rate_pct": 20.46,
+      "prior_year_discard_rate_pct": 19.66,
+      "change_pts": 0.8
     }
   },
   "signals": {
@@ -547,290 +547,290 @@
     },
     "volumes": {
       "hll": {
-        "value": 3.4,
+        "value": 13.4,
         "unit": "%",
         "label": "up"
       },
       "heart": {
-        "value": -5.8,
+        "value": 6.6,
         "unit": "%",
-        "label": "down"
+        "label": "up"
       },
       "liver": {
-        "value": 6.8,
+        "value": 14.5,
         "unit": "%",
         "label": "up"
       },
       "lung": {
-        "value": 5.4,
+        "value": 18.9,
         "unit": "%",
         "label": "up"
       },
       "kidney": {
-        "value": -2.1,
+        "value": 3.3,
         "unit": "%",
-        "label": "down"
+        "label": "up"
       }
     },
     "distance": {
       "heart": {
-        "value": -0.2,
+        "value": -0.5,
         "unit": "pts",
         "label": "flat"
       },
       "liver": {
-        "value": -1.8,
+        "value": -1.7,
         "unit": "pts",
         "label": "shorter"
       },
       "lung": {
-        "value": -2.8,
+        "value": -3.6,
         "unit": "pts",
         "label": "shorter"
       },
       "kidney": {
-        "value": 0.1,
+        "value": 0.4,
         "unit": "pts",
         "label": "flat"
       }
     },
     "dcd_share": {
-      "value": 4.0,
+      "value": 4.3,
       "unit": "pts",
-      "current": 53.2,
+      "current": 53.5,
       "label": "rising",
-      "basis": "2026 YTD (Jan 1\u2013Aug 31) vs 2025 full year"
+      "basis": "2026 YTD (Jan 1\u2013Sep 30) vs 2025 full year"
     },
     "discard_rate": {
-      "value": 0.72,
+      "value": 0.8,
       "unit": "pts",
-      "current": 20.44,
+      "current": 20.46,
       "label": "rising",
-      "basis": "YTD through September 28 vs same period last year"
+      "basis": "YTD through October 05 vs same period last year"
     }
   },
   "waitlist": {
     "all": {
       "latest_week": {
-        "week_start": "2026-09-24",
-        "week_end": "2026-09-30",
-        "iso_week": 39,
-        "count": 1687,
-        "prior_year_count": 1769,
-        "yoy_pct": -4.6
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 1585,
+        "prior_year_count": 1556,
+        "yoy_pct": 1.9
       },
       "trailing_4wk": {
         "weeks": [
-          "2026-W36",
           "2026-W37",
           "2026-W38",
-          "2026-W39"
+          "2026-W39",
+          "2026-W40"
         ],
-        "total": 6268,
-        "prior_year_total": 6666,
-        "yoy_pct": -6.0
+        "total": 6526,
+        "prior_year_total": 6622,
+        "yoy_pct": -1.4
       },
       "ytd": {
-        "through_iso_week": 39,
+        "through_iso_week": 40,
         "year": 2026,
-        "total": 61304,
-        "prior_year_total": 60943,
+        "total": 62889,
+        "prior_year_total": 62499,
         "yoy_pct": 0.6,
-        "weeks_covered": 39,
-        "prior_weeks_covered": 39
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
       }
     },
     "heart": {
       "latest_week": {
-        "week_start": "2026-09-24",
-        "week_end": "2026-09-30",
-        "iso_week": 39,
-        "count": 127,
-        "prior_year_count": 115,
-        "yoy_pct": 10.4
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 121,
+        "prior_year_count": 98,
+        "yoy_pct": 23.5
       },
       "trailing_4wk": {
         "weeks": [
-          "2026-W36",
           "2026-W37",
           "2026-W38",
-          "2026-W39"
+          "2026-W39",
+          "2026-W40"
         ],
-        "total": 430,
-        "prior_year_total": 467,
-        "yoy_pct": -7.9
+        "total": 448,
+        "prior_year_total": 454,
+        "yoy_pct": -1.3
       },
       "ytd": {
-        "through_iso_week": 39,
+        "through_iso_week": 40,
         "year": 2026,
-        "total": 4463,
-        "prior_year_total": 4598,
-        "yoy_pct": -2.9,
-        "weeks_covered": 39,
-        "prior_weeks_covered": 39
+        "total": 4584,
+        "prior_year_total": 4696,
+        "yoy_pct": -2.4,
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
       }
     },
     "kidney": {
       "latest_week": {
-        "week_start": "2026-09-24",
-        "week_end": "2026-09-30",
-        "iso_week": 39,
-        "count": 1106,
-        "prior_year_count": 1231,
-        "yoy_pct": -10.2
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 1055,
+        "prior_year_count": 1071,
+        "yoy_pct": -1.5
       },
       "trailing_4wk": {
         "weeks": [
-          "2026-W36",
           "2026-W37",
           "2026-W38",
-          "2026-W39"
+          "2026-W39",
+          "2026-W40"
         ],
-        "total": 4172,
-        "prior_year_total": 4548,
-        "yoy_pct": -8.3
+        "total": 4380,
+        "prior_year_total": 4520,
+        "yoy_pct": -3.1
       },
       "ytd": {
-        "through_iso_week": 39,
+        "through_iso_week": 40,
         "year": 2026,
-        "total": 40660,
-        "prior_year_total": 40930,
+        "total": 41715,
+        "prior_year_total": 42001,
         "yoy_pct": -0.7,
-        "weeks_covered": 39,
-        "prior_weeks_covered": 39
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
       }
     },
     "liver": {
       "latest_week": {
-        "week_start": "2026-09-24",
-        "week_end": "2026-09-30",
-        "iso_week": 39,
-        "count": 356,
-        "prior_year_count": 351,
-        "yoy_pct": 1.4
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 318,
+        "prior_year_count": 295,
+        "yoy_pct": 7.8
       },
       "trailing_4wk": {
         "weeks": [
-          "2026-W36",
           "2026-W37",
           "2026-W38",
-          "2026-W39"
+          "2026-W39",
+          "2026-W40"
         ],
-        "total": 1324,
-        "prior_year_total": 1323,
-        "yoy_pct": 0.1
+        "total": 1338,
+        "prior_year_total": 1312,
+        "yoy_pct": 2.0
       },
       "ytd": {
-        "through_iso_week": 39,
+        "through_iso_week": 40,
         "year": 2026,
-        "total": 12727,
-        "prior_year_total": 12084,
-        "yoy_pct": 5.3,
-        "weeks_covered": 39,
-        "prior_weeks_covered": 39
+        "total": 13045,
+        "prior_year_total": 12379,
+        "yoy_pct": 5.4,
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
       }
     },
     "lung": {
       "latest_week": {
-        "week_start": "2026-09-24",
-        "week_end": "2026-09-30",
-        "iso_week": 39,
-        "count": 84,
-        "prior_year_count": 59,
-        "yoy_pct": 42.4
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 77,
+        "prior_year_count": 84,
+        "yoy_pct": -8.3
       },
       "trailing_4wk": {
         "weeks": [
-          "2026-W36",
           "2026-W37",
           "2026-W38",
-          "2026-W39"
+          "2026-W39",
+          "2026-W40"
         ],
-        "total": 304,
-        "prior_year_total": 284,
-        "yoy_pct": 7.0
+        "total": 313,
+        "prior_year_total": 293,
+        "yoy_pct": 6.8
       },
       "ytd": {
-        "through_iso_week": 39,
+        "through_iso_week": 40,
         "year": 2026,
-        "total": 3004,
-        "prior_year_total": 2883,
-        "yoy_pct": 4.2,
-        "weeks_covered": 39,
-        "prior_weeks_covered": 39
+        "total": 3081,
+        "prior_year_total": 2967,
+        "yoy_pct": 3.8,
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
       }
     },
     "hll": {
       "latest_week": {
-        "week_start": "2026-09-24",
-        "week_end": "2026-09-30",
-        "iso_week": 39,
-        "count": 567,
-        "prior_year_count": 525,
-        "yoy_pct": 8.0
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "iso_week": 40,
+        "count": 516,
+        "prior_year_count": 477,
+        "yoy_pct": 8.2
       },
       "trailing_4wk": {
         "weeks": [
-          "2026-W36",
           "2026-W37",
           "2026-W38",
-          "2026-W39"
+          "2026-W39",
+          "2026-W40"
         ],
-        "total": 2058,
-        "prior_year_total": 2074,
-        "yoy_pct": -0.8
+        "total": 2099,
+        "prior_year_total": 2059,
+        "yoy_pct": 1.9
       },
       "ytd": {
-        "through_iso_week": 39,
+        "through_iso_week": 40,
         "year": 2026,
-        "total": 20194,
-        "prior_year_total": 19565,
-        "yoy_pct": 3.2,
-        "weeks_covered": 39,
-        "prior_weeks_covered": 39
+        "total": 20710,
+        "prior_year_total": 20042,
+        "yoy_pct": 3.3,
+        "weeks_covered": 40,
+        "prior_weeks_covered": 40
       }
     }
   },
   "cdc_overdose": {
-    "period_end": "2026-04",
-    "predicted": 66937,
-    "reported": 65726,
-    "predicted_yoy_pct": -12.1,
-    "reported_yoy_pct": -13.5,
-    "dataset_updated": "2026-09-16"
+    "period_end": "2026-05",
+    "predicted": 66478,
+    "reported": 65351,
+    "predicted_yoy_pct": -11.5,
+    "reported_yoy_pct": -12.7,
+    "dataset_updated": "2026-10-14"
   },
   "sec": null,
   "donor_mix_and_distance": {
-    "current_label": "2026 YTD (Jan 1\u2013Aug 31)",
+    "current_label": "2026 YTD (Jan 1\u2013Sep 30)",
     "prior_label": "2025 full year",
-    "period_end": "2026-08-31",
-    "snapshot_downloaded": "2026-10-08",
+    "period_end": "2026-09-30",
+    "snapshot_downloaded": "2026-10-19",
     "comparison_note": "Mix comparison: shares of the current year to date vs. the prior full year. OPTN national reports are annual-only, so this is not a same-period volume comparison.",
     "dcd_share_donors": {
-      "current": 53.2,
+      "current": 53.5,
       "prior": 49.2,
-      "change_pts": 4.0
+      "change_pts": 4.3
     },
     "dcd_share_by_organ": {
       "heart": {
-        "current": 26.2,
+        "current": 26.4,
         "prior": 22.9,
-        "change_pts": 3.3
+        "change_pts": 3.5
       },
       "liver": {
-        "current": 46.1,
+        "current": 46.5,
         "prior": 39.3,
-        "change_pts": 6.8
+        "change_pts": 7.2
       },
       "lung": {
-        "current": 22.5,
+        "current": 23.0,
         "prior": 18.8,
-        "change_pts": 3.7
+        "change_pts": 4.2
       },
       "kidney": {
-        "current": 49.0,
+        "current": 49.1,
         "prior": 46.3,
-        "change_pts": 2.7
+        "change_pts": 2.8
       }
     },
     "long_bands": [
@@ -839,358 +839,358 @@
     ],
     "long_share_by_organ": {
       "heart": {
-        "current": 57.3,
+        "current": 57.0,
         "prior": 57.5,
-        "change_pts": -0.2
+        "change_pts": -0.5
       },
       "liver": {
-        "current": 27.8,
+        "current": 27.9,
         "prior": 29.6,
-        "change_pts": -1.8
+        "change_pts": -1.7
       },
       "lung": {
-        "current": 68.4,
+        "current": 67.6,
         "prior": 71.2,
-        "change_pts": -2.8
+        "change_pts": -3.6
       },
       "kidney": {
-        "current": 18.7,
+        "current": 19.0,
         "prior": 18.6,
-        "change_pts": 0.1
+        "change_pts": 0.4
       }
     }
   },
   "regions": {
-    "data_as_of": "2026-10-12",
+    "data_as_of": "2026-10-19",
     "regions": {
       "1": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 30,
-          "prior_year_count": 32,
-          "yoy_pct": -6.2
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 23,
+          "prior_year_count": 27,
+          "yoy_pct": -14.8
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
           "total": 119,
-          "prior_year_total": 140,
-          "yoy_pct": -15.0
+          "prior_year_total": 131,
+          "yoy_pct": -9.2
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 1204,
-          "prior_year_total": 1308,
-          "yoy_pct": -8.0,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 1227,
+          "prior_year_total": 1335,
+          "yoy_pct": -8.1,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "2": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 88,
-          "prior_year_count": 83,
-          "yoy_pct": 6.0
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 100,
+          "prior_year_count": 54,
+          "yoy_pct": 85.2
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 350,
-          "prior_year_total": 351,
-          "yoy_pct": -0.3
+          "total": 374,
+          "prior_year_total": 308,
+          "yoy_pct": 21.4
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 3324,
-          "prior_year_total": 3345,
-          "yoy_pct": -0.6,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 3424,
+          "prior_year_total": 3399,
+          "yoy_pct": 0.7,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "3": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 106,
-          "prior_year_count": 112,
-          "yoy_pct": -5.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 120,
+          "prior_year_count": 109,
+          "yoy_pct": 10.1
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 470,
-          "prior_year_total": 435,
-          "yoy_pct": 8.0
+          "total": 464,
+          "prior_year_total": 434,
+          "yoy_pct": 6.9
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 4684,
-          "prior_year_total": 4441,
-          "yoy_pct": 5.5,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 4804,
+          "prior_year_total": 4550,
+          "yoy_pct": 5.6,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "4": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 85,
-          "prior_year_count": 70,
-          "yoy_pct": 21.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 94,
+          "prior_year_count": 75,
+          "yoy_pct": 25.3
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 324,
-          "prior_year_total": 336,
-          "yoy_pct": -3.6
+          "total": 348,
+          "prior_year_total": 322,
+          "yoy_pct": 8.1
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 3151,
-          "prior_year_total": 3125,
-          "yoy_pct": 0.8,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 3245,
+          "prior_year_total": 3200,
+          "yoy_pct": 1.4,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "5": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 143,
-          "prior_year_count": 114,
-          "yoy_pct": 25.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 125,
+          "prior_year_count": 110,
+          "yoy_pct": 13.6
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 543,
-          "prior_year_total": 492,
-          "yoy_pct": 10.4
+          "total": 522,
+          "prior_year_total": 467,
+          "yoy_pct": 11.8
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 5008,
-          "prior_year_total": 5011,
-          "yoy_pct": -0.1,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 5133,
+          "prior_year_total": 5121,
+          "yoy_pct": 0.2,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "6": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 28,
-          "prior_year_count": 19,
-          "yoy_pct": 47.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 33,
+          "prior_year_count": 18,
+          "yoy_pct": 83.3
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 101,
-          "prior_year_total": 95,
-          "yoy_pct": 6.3
+          "total": 106,
+          "prior_year_total": 88,
+          "yoy_pct": 20.5
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 933,
-          "prior_year_total": 1011,
-          "yoy_pct": -7.7,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 966,
+          "prior_year_total": 1029,
+          "yoy_pct": -6.1,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "7": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 63,
-          "prior_year_count": 59,
-          "yoy_pct": 6.8
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 48,
+          "prior_year_count": 68,
+          "yoy_pct": -29.4
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 236,
-          "prior_year_total": 278,
-          "yoy_pct": -15.1
+          "total": 232,
+          "prior_year_total": 255,
+          "yoy_pct": -9.0
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 2751,
-          "prior_year_total": 2715,
-          "yoy_pct": 1.3,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 2799,
+          "prior_year_total": 2783,
+          "yoy_pct": 0.6,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "8": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 42,
-          "prior_year_count": 42,
-          "yoy_pct": 0.0
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 48,
+          "prior_year_count": 41,
+          "yoy_pct": 17.1
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 175,
-          "prior_year_total": 170,
-          "yoy_pct": 2.9
+          "total": 187,
+          "prior_year_total": 167,
+          "yoy_pct": 12.0
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 1783,
-          "prior_year_total": 1716,
-          "yoy_pct": 3.9,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 1831,
+          "prior_year_total": 1757,
+          "yoy_pct": 4.2,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "9": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 50,
-          "prior_year_count": 50,
-          "yoy_pct": 0.0
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 58,
+          "prior_year_count": 45,
+          "yoy_pct": 28.9
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 202,
-          "prior_year_total": 206,
-          "yoy_pct": -1.9
+          "total": 220,
+          "prior_year_total": 195,
+          "yoy_pct": 12.8
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 2158,
-          "prior_year_total": 2244,
-          "yoy_pct": -3.8,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 2216,
+          "prior_year_total": 2289,
+          "yoy_pct": -3.2,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "10": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 43,
-          "prior_year_count": 53,
-          "yoy_pct": -18.9
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 72,
+          "prior_year_count": 61,
+          "yoy_pct": 18.0
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 236,
-          "prior_year_total": 258,
-          "yoy_pct": -8.5
+          "total": 244,
+          "prior_year_total": 249,
+          "yoy_pct": -2.0
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 2529,
-          "prior_year_total": 2587,
-          "yoy_pct": -2.2,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 2601,
+          "prior_year_total": 2648,
+          "yoy_pct": -1.8,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       },
       "11": {
         "latest_week": {
-          "week_start": "2026-09-24",
-          "week_end": "2026-09-30",
-          "iso_week": 39,
-          "count": 100,
-          "prior_year_count": 94,
-          "yoy_pct": 6.4
+          "week_start": "2026-10-01",
+          "week_end": "2026-10-07",
+          "iso_week": 40,
+          "count": 113,
+          "prior_year_count": 101,
+          "yoy_pct": 11.9
         },
         "trailing_4wk": {
           "weeks": [
-            "2026-W36",
             "2026-W37",
             "2026-W38",
-            "2026-W39"
+            "2026-W39",
+            "2026-W40"
           ],
-          "total": 410,
-          "prior_year_total": 396,
-          "yoy_pct": 3.5
+          "total": 435,
+          "prior_year_total": 389,
+          "yoy_pct": 11.8
         },
         "ytd": {
-          "through_iso_week": 39,
+          "through_iso_week": 40,
           "year": 2026,
-          "total": 4002,
-          "prior_year_total": 4061,
-          "yoy_pct": -1.5,
-          "weeks_covered": 39,
-          "prior_weeks_covered": 39
+          "total": 4115,
+          "prior_year_total": 4162,
+          "yoy_pct": -1.1,
+          "weeks_covered": 40,
+          "prior_weeks_covered": 40
         }
       }
     },
@@ -1210,19 +1210,19 @@
   },
   "location": {
     "status": "ok",
-    "period_end": "2026-08-31",
+    "period_end": "2026-09-30",
     "yoy_available": false,
-    "yoy_note": "True YoY appears once a snapshot through 2025-08-31 exists; snapshots are saved monthly from 2026-08-31."
+    "yoy_note": "True YoY appears once a snapshot through 2025-09-30 exists; snapshots are saved monthly from 2026-08-31."
   },
   "news": {
-    "new_items_7d": 3,
+    "new_items_7d": 12,
     "by_category": {
-      "strata": 0,
-      "volumes": 1,
+      "strata": 6,
+      "volumes": 2,
       "opo_regulation": 0,
-      "competitors": 2,
+      "competitors": 4,
       "tech_logistics": 0,
-      "analyst": 0,
+      "analyst": 1,
       "opinion": 0
     },
     "labels": {
@@ -1236,61 +1236,81 @@
     },
     "top_headlines": [
       {
-        "headline": "[Registration Open] The 146th HGPI Seminar \u201cHow We Can Build a Society That Supports Choices Around Organ Donation: Exploring Decision-Making by Citizens and a Multi-Layered Approach Through Strategic Social Marketing\u201d (November 9, 2026)",
-        "source": "\u65e5\u672c\u533b\u7642\u653f\u7b56\u6a5f\u69cb",
-        "date": "2026-10-06",
-        "url": "https://hgpi.org/en/events/hs146.html",
-        "google_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5MRTI2N0JLWktTVnhUV3Z0UjRNTUVoRThYaXV0a3NENlUybl9kbkxrckZqYlNoSThONjBqdVZoVVZNQk9wVkpoci1rY3lsZw?oc=5",
+        "headline": "Form 144 Strata Critical Medical For: 18 October By Investing.com",
+        "source": "Investing.com India",
+        "date": "2026-10-18",
+        "url": "https://in.investing.com/news/stock-market-news/form-144-strata-critical-medical-for-18-october-93CH-5639057",
+        "google_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQVlNSmhwd2FyVllyTi1rWDY1elN6Qjl0TnNUQjIxTnRKbS1TUTMwbTBEd1hUekU1R0tEbjhSSWphMHpuQXBmb29sQVd0Nk1tbkhMamdKdWEzVFAxaVl4bWEzMVRpT1ZiNnVROHRtYTZOaWd6WDBMbElNYkEzeXVwMlBwNDNXaU9IR1hJNk9fYlFOYUNEQ2NqbU9Qbmsyb1NrcTJsTzNIQnZmYnJm?oc=5",
         "tags": [
-          "volumes"
+          "strata"
         ]
       },
       {
-        "headline": "UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants",
-        "source": "The Manila Times",
-        "date": "2026-10-08",
-        "url": "https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp",
-        "google_url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOS19qWU1fSmJQU0F1Uk5vdmd2UHg0MkZvbWNjTW56UGl2VHNlRW1BOGtWWXdXWkc4RTBSZDljR2lONUJQZDQ4eU1oLU5QVXJNMHdYX2Q5c1VCVVNHQmlCcWZMOTVlZ2Nsb0tNYWVtR3BQY0RSYXVqR2locFl3YUx4NzJrMXdtR01JU1ktQTRWanVabjJ4M2dWTnozVUlhSHJyc0YxRGZBVG5sazBUT0RxdV9rNWFJRzlSTVdESzB5RmdTMEF5MjdvQVo1WUdDYXdZcjBKRWpET3F0STVWNUwxQlZqVkFBRFJFOVo3ZmJSS3ZLUG1QWFJGS1k3LV9reVZ4ZDRYa1BJRksxR29LamRIZWs2aUpFSFhS0gGYAkFVX3lxTE5LX2pZTV9KYlBTQXVSTm92Z3ZQeDQyRm9tY2NNbnpQaXZUc2VFbUE4a1ZZd1daRzhFMFJkOWNHaU41QlBkNDh5TWgtTlBVck0wd1hfZDlzVUJVU0dCaUJxZkw5NWVnY2xvS01hZW1HcFBjRFJhdWpHaWhwWXdhTHg3Mmsxd21HTUlTWS1BNFZqdVpuMngzZ1ZOejNVSWFIcnJzRjFEZkFUbmxrMFRPRHF1X2s1YUlHOVJNV0RLMHlGZ1MwQXkyN29BWjVZR0Nhd1lyMEpFakRPcXRJNVY1TDFCVmpWQUFEUkU5WjdmYlJLdktQbVBYUkZLWTctX2t5VnhkNFhrUElGSzFHb0tqZEhlazZpSkVIWFI?oc=5",
+        "headline": "Third Point Urges Strata Critical Medical to Explore a Sale",
+        "source": "TOKENPOST",
+        "date": "2026-10-17",
+        "url": "https://www.tokenpost.com/news/business/33709",
+        "google_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZcjVFQmpWbFpaMkJ2RE94VkhyeVNVUmI5RkdpdzQ1dkJRNWI5SFdOVjhweHp2ck1lNEtvSGVWeWdoWUlqb2s2MTlxUVZrX3JiZlRvWmc0STI?oc=5",
         "tags": [
-          "competitors"
+          "strata"
         ]
       },
       {
-        "headline": "UCHealth expands liver transplant access with tech",
-        "source": "UCHealth",
-        "date": "2026-10-07",
-        "url": "https://www.uchealth.org/newsroom/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/",
-        "google_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQX3h5X29fREhTTUxTQkhPOFl2bURYNEt2SDg4YzItNHFrR19sSHFCSWRfVkZrY0M1YmZtVkpRNFVsY19uaWRSS3k0ZHZoZmRjTEROWU1jbzMyTjdLNGFLdm5RMTlvMERvQjB3eHU5ajUwbXlmbURJbUZtNHlKU0Q3cTJ5RlNLR1BwTzRPTlUzY2xMWG9UUUFDR0hWZVpkVENOZ0VKV3hKMXBJRUhZaDZJY3pBX2x3eEJSTnFyaEM2MGFFenliMHdIQTA4SEJUb1VoUG44STlmQWd1WGstdjhZ?oc=5",
+        "headline": "Strata Critical Medical gains as activist Third Point takes stake, pushes for sale",
+        "source": "TradingView",
+        "date": "2026-10-16",
+        "url": "https://www.tradingview.com/news/seekingalpha:387bca6f6094b:0-strata-critical-medical-gains-as-activist-third-point-takes-stake-pushes-for-sale/",
+        "google_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSVNyei00NWhvZEJGb3VWQWl6Q3hHcWJVbzFWR1c1eWE4dDNWWVZKamZ5cC1ocDBfNC1yVjlrUHdPSWtneGpDaEdBY2VYdDNSMmJaOWJLbDBUenBfRkU4Vnl6dU04emQwaHlienJIbmVkN20zb3owbGhWUlZXclFuODVjN0EzU1FQanBwSlJfSFZjcDVTOXN1cUR5R2REazNRZzBOUHZtUlNCSG9xN0xqdnRzVmFQRE9UaUNXY0VQLWxaZGlFUVBVWjVFUWF3RTNoQzFHSmRjMVNFOEtG?oc=5",
         "tags": [
-          "competitors"
+          "strata"
+        ]
+      },
+      {
+        "headline": "Daniel S. Loeb Pushes for Changes at Strata Critical Medical with 5.8% Stake",
+        "source": "TradingView",
+        "date": "2026-10-15",
+        "url": "https://www.tradingview.com/news/tradingview:8817567e93d01:0-daniel-s-loeb-pushes-for-changes-at-strata-critical-medical-with-5-8-stake/",
+        "google_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPenAwQzA2OWQtck5UbXlIaHktRm9Hb3FGV29WZk85eGJ3Tmg0T1I4VHpXOHk2M0RPdlpBS1JvaS00dzB0LTU4Wk1HQVV6VUNXOExUaGp6Q3dIbFpFQy1rNzZsUkNZWWpTcV9MOVpXRGx5cjRpaEVlc1ZXYUhZU2hfdXVKODFfeklUOWFMdVc3VkFUTmtydWxldUpDN1M0VGZBaEd4dURIdG9EQjZSeWNVMXRRakpLVDVMWEtSd3Zxd3hYWC0tUUkzSDR4Ri1SU3N5cmc?oc=5",
+        "tags": [
+          "strata"
+        ]
+      },
+      {
+        "headline": "Third Point Urges Strata Critical Medical to Explore Strategic Alternatives",
+        "source": "www.marketscreener.com",
+        "date": "2026-10-15",
+        "url": "https://www.marketscreener.com/news/third-point-urges-strata-critical-medical-to-explore-strategic-alternatives-ce785cdade8bff2d",
+        "google_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOVhWaDEyeElMOXpDS3BPMGVMTTg4eFQ3N1RxM0gzRk1KN21meVdXVkNYWjlZWGNZdERWZG5sMkZMNlp4WXpvNkFqWXpfOVpjYjNCSENBdHBtc1QtMFRHSzZpWEQzam50aUJzODVXVEZyYTliMGhjQ2YxWS1IZFFYRDJrRVlSWjJLQ2lHUUdzaVhHNjJ5eUthd0JmR08wMnIxQmJEbVh1bWJKb2lZWndfQnViNi14d3FQUzJvY2Y2QXJ5Qm1UbFFv?oc=5",
+        "tags": [
+          "strata"
         ]
       }
     ],
     "none_text": null,
-    "fetched_at": "2026-10-12T02:09:48+00:00"
+    "fetched_at": "2026-10-19T00:55:57+00:00"
   },
   "issue_line": null,
   "bullets": [
-    "Volumes: Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%.",
+    "Volumes: Heart + liver + lung (Strata's core flying organs) rose 13.4% over the last 4 weeks vs. last year; by organ, heart, liver, lung and kidney rose 6.6%, 14.5%, 18.9% and 3.3%.",
     "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
-    "Donors: Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
-    "Donor mix & distance: DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
-    "Waitlist: Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%.",
-    "Regions: biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%."
+    "Donors: Deceased donors recovered rose 3.5% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Waitlist: Heart+liver+lung waitlist additions were roughly flat (+1.9%) over the last 4 weeks vs. last year; by organ, heart and liver were roughly flat (-1.3%, +2.0%); lung rose 6.8%; kidney fell 3.1%.",
+    "Regions: biggest moves over the last 4 weeks vs. last year: Mid-Atlantic (Region 2) \u25b2 21.4%, Northwest (Region 6) \u25b2 20.5%, New York (Region 9) \u25b2 12.8%."
   ],
   "this_week": [
-    "Volumes: Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%.",
+    "Volumes: Heart + liver + lung (Strata's core flying organs) rose 13.4% over the last 4 weeks vs. last year; by organ, heart, liver, lung and kidney rose 6.6%, 14.5%, 18.9% and 3.3%.",
     "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
-    "Donors: Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
-    "Donor mix & distance: DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
-    "Waitlist: Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%.",
-    "Regions: biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%."
+    "Donors: Deceased donors recovered rose 3.5% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Waitlist: Heart+liver+lung waitlist additions were roughly flat (+1.9%) over the last 4 weeks vs. last year; by organ, heart and liver were roughly flat (-1.3%, +2.0%); lung rose 6.8%; kidney fell 3.1%.",
+    "Regions: biggest moves over the last 4 weeks vs. last year: Mid-Atlantic (Region 2) \u25b2 21.4%, Northwest (Region 6) \u25b2 20.5%, New York (Region 9) \u25b2 12.8%."
   ],
   "this_week_items": [
     {
       "label": "Volumes",
-      "text": "Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%.",
-      "through": "Sep 30, 2026",
+      "text": "Heart + liver + lung (Strata's core flying organs) rose 13.4% over the last 4 weeks vs. last year; by organ, heart, liver, lung and kidney rose 6.6%, 14.5%, 18.9% and 3.3%.",
+      "through": "Oct 7, 2026",
       "page": true
     },
     {
@@ -1301,37 +1321,37 @@
     },
     {
       "label": "Donors",
-      "text": "Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier).",
-      "through": "Sep 23, 2026",
+      "text": "Deceased donors recovered rose 3.5% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.7% a year earlier).",
+      "through": "Sep 30, 2026",
       "page": true
     },
     {
       "label": "Donor mix & distance",
-      "text": "DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
-      "through": "Aug 31, 2026",
+      "text": "DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+      "through": "Sep 30, 2026",
       "page": true
     },
     {
       "label": "Waitlist",
-      "text": "Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%.",
-      "through": "Sep 30, 2026",
+      "text": "Heart+liver+lung waitlist additions were roughly flat (+1.9%) over the last 4 weeks vs. last year; by organ, heart and liver were roughly flat (-1.3%, +2.0%); lung rose 6.8%; kidney fell 3.1%.",
+      "through": "Oct 7, 2026",
       "page": true
     },
     {
       "label": "Regions",
-      "text": "biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%.",
-      "through": "Sep 30, 2026",
+      "text": "biggest moves over the last 4 weeks vs. last year: Mid-Atlantic (Region 2) \u25b2 21.4%, Northwest (Region 6) \u25b2 20.5%, New York (Region 9) \u25b2 12.8%.",
+      "through": "Oct 7, 2026",
       "page": true
     },
     {
       "label": "Signals",
-      "text": "Volumes up for heart+liver+lung, liver and lung; down for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
+      "text": "Volumes up for heart+liver+lung, heart, liver, lung and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
       "through": null,
       "page": false
     }
   ],
   "quarterly": {
-    "last_complete_day": "2026-09-30",
+    "last_complete_day": "2026-10-07",
     "organs": {
       "hll": {
         "quarter": "Q3 2026",
@@ -1370,12 +1390,12 @@
         "qtd": {
           "quarter": "Q4 2026",
           "start": "2026-10-01",
-          "through": null,
-          "days": 0,
-          "complete_weeks": 0,
-          "total": null,
-          "prior_year_total": null,
-          "yoy_pct": null,
+          "through": "2026-10-07",
+          "days": 7,
+          "complete_weeks": 1,
+          "total": 406.0,
+          "prior_year_total": 338.0,
+          "yoy_pct": 20.1,
           "shown": false
         }
       },
@@ -1416,12 +1436,12 @@
         "qtd": {
           "quarter": "Q4 2026",
           "start": "2026-10-01",
-          "through": null,
-          "days": 0,
-          "complete_weeks": 0,
-          "total": null,
-          "prior_year_total": null,
-          "yoy_pct": null,
+          "through": "2026-10-07",
+          "days": 7,
+          "complete_weeks": 1,
+          "total": 94.0,
+          "prior_year_total": 79.0,
+          "yoy_pct": 19.0,
           "shown": false
         }
       },
@@ -1462,12 +1482,12 @@
         "qtd": {
           "quarter": "Q4 2026",
           "start": "2026-10-01",
-          "through": null,
-          "days": 0,
-          "complete_weeks": 0,
-          "total": null,
-          "prior_year_total": null,
-          "yoy_pct": null,
+          "through": "2026-10-07",
+          "days": 7,
+          "complete_weeks": 1,
+          "total": 237.0,
+          "prior_year_total": 200.0,
+          "yoy_pct": 18.5,
           "shown": false
         }
       },
@@ -1508,12 +1528,12 @@
         "qtd": {
           "quarter": "Q4 2026",
           "start": "2026-10-01",
-          "through": null,
-          "days": 0,
-          "complete_weeks": 0,
-          "total": null,
-          "prior_year_total": null,
-          "yoy_pct": null,
+          "through": "2026-10-07",
+          "days": 7,
+          "complete_weeks": 1,
+          "total": 75.0,
+          "prior_year_total": 59.0,
+          "yoy_pct": 27.1,
           "shown": false
         }
       },
@@ -1554,12 +1574,12 @@
         "qtd": {
           "quarter": "Q4 2026",
           "start": "2026-10-01",
-          "through": null,
-          "days": 0,
-          "complete_weeks": 0,
-          "total": null,
-          "prior_year_total": null,
-          "yoy_pct": null,
+          "through": "2026-10-07",
+          "days": 7,
+          "complete_weeks": 1,
+          "total": 418.0,
+          "prior_year_total": 367.0,
+          "yoy_pct": 13.9,
           "shown": false
         }
       }
@@ -1567,20 +1587,20 @@
     "note": "Calendar quarters (Jan 1\u2013Mar 31 etc.). OPTN weeks don't line up with quarter ends, so a week that straddles a boundary is split by days (its count spread evenly over its 7 days). Typical seasonal change = average of the same quarter-over-quarter change in the prior 3 years. Recent weeks may be revised up as centers finish reporting."
   },
   "core_label": "Heart + liver + lung (Strata's core flying organs)",
-  "news_line": "3 new news items this week \u2014 Transplant volumes / donation 1, Competitors & industry 2.",
+  "news_line": "12 new news items this week \u2014 Strata 6, Transplant volumes / donation 2, Competitors & industry 4, Analyst actions (SRTA / TMDX) 1.",
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 12, 2026* \u00b7 SRTA $4.53 (\u25bc 4.2% 1-wk) \u00b7 TMDX $77.87 (\u25bc 2.4% 1-wk)",
-    "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 3.4% over the last 4 weeks vs. last year; by organ, heart and kidney fell 5.8% and 2.1%; liver and lung rose 6.8% and 5.4%. (data through Sep 30, 2026)",
+    "*SRTA Transplant Tracker \u2014 week of Oct 19, 2026* \u00b7 SRTA $4.54 (\u25b2 0.2% 1-wk) \u00b7 TMDX $70.78 (\u25bc 9.1% 1-wk)",
+    "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 13.4% over the last 4 weeks vs. last year; by organ, heart, liver, lung and kidney rose 6.6%, 14.5%, 18.9% and 3.3%. (data through Oct 7, 2026)",
     "\u2022 *Quarter:* Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%). (data through Sep 30, 2026)",
-    "\u2022 *Donors:* Deceased donors recovered fell 1.1% over the last 4 weeks vs. last year, and 20.4% of recovered organs have been discarded so far this year (19.7% a year earlier). (data through Sep 23, 2026)",
-    "\u2022 *Donor mix & distance:* DCD donors are 53.2% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest. (data through Aug 31, 2026)",
-    "\u2022 *Waitlist:* Heart+liver+lung waitlist additions were roughly flat (-0.8%) over the last 4 weeks vs. last year; by organ, heart and kidney fell 7.9% and 8.3%; liver was roughly flat (+0.1%); lung rose 7.0%. (data through Sep 30, 2026)",
-    "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Upper Midwest (Region 7) \u25bc 15.1%, New England (Region 1) \u25bc 15.0%, Southwest (Region 5) \u25b2 10.4%. (data through Sep 30, 2026)",
-    "\u2022 *Signals:* Volumes up for heart+liver+lung, liver and lung; down for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
+    "\u2022 *Donors:* Deceased donors recovered rose 3.5% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.7% a year earlier). (data through Sep 30, 2026)",
+    "\u2022 *Donor mix & distance:* DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest. (data through Sep 30, 2026)",
+    "\u2022 *Waitlist:* Heart+liver+lung waitlist additions were roughly flat (+1.9%) over the last 4 weeks vs. last year; by organ, heart and liver were roughly flat (-1.3%, +2.0%); lung rose 6.8%; kidney fell 3.1%. (data through Oct 7, 2026)",
+    "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Mid-Atlantic (Region 2) \u25b2 21.4%, Northwest (Region 6) \u25b2 20.5%, New York (Region 9) \u25b2 12.8%. (data through Oct 7, 2026)",
+    "\u2022 *Signals:* Volumes up for heart+liver+lung, heart, liver, lung and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
     "*Top headlines:*",
-    "  \u2013 <https://hgpi.org/en/events/hs146.html|[Registration Open] The 146th HGPI Seminar \u201cHow We Can Build a Society That Supports Choices Around Organ Donation: Exploring Decision-Making by Citizens and a Multi-Layered Approach Through Strategic Social Marketing\u201d (November 9, 2026)> (\u65e5\u672c\u533b\u7642\u653f\u7b56\u6a5f\u69cb, Oct 6, 2026)",
-    "  \u2013 <https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/2441712/amp|UCHealth University of Colorado Hospital is using breakthrough technology to expand access to liver transplants> (The Manila Times, Oct 8, 2026)",
-    "  \u2013 <https://www.uchealth.org/newsroom/uchealth-university-of-colorado-hospital-is-using-breakthrough-technology-to-expand-access-to-liver-transplants/|UCHealth expands liver transplant access with tech> (UCHealth, Oct 7, 2026)",
-    "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
+    "  \u2013 <https://in.investing.com/news/stock-market-news/form-144-strata-critical-medical-for-18-october-93CH-5639057|Form 144 Strata Critical Medical For: 18 October By Investing.com> (Investing.com India, Oct 18, 2026)",
+    "  \u2013 <https://www.tokenpost.com/news/business/33709|Third Point Urges Strata Critical Medical to Explore a Sale> (TOKENPOST, Oct 17, 2026)",
+    "  \u2013 <https://www.tradingview.com/news/seekingalpha:387bca6f6094b:0-strata-critical-medical-gains-as-activist-third-point-takes-stake-pushes-for-sale/|Strata Critical Medical gains as activist Third Point takes stake, pushes for sale> (TradingView, Oct 16, 2026)",
+    "  \u2013 <https://www.tradingview.com/news/tradingview:8817567e93d01:0-daniel-s-loeb-pushes-for-changes-at-strata-critical-medical-with-5-8-stake/|Daniel S. Loeb Pushes for Changes at Strata Critical Medical with 5.8% Stake> (TradingView, Oct 15, 2026)"
   ]
 }

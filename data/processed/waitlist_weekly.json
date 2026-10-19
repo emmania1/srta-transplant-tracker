@@ -2,7 +2,7 @@
   "title": "Weekly waitlist additions by organ (national)",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-12T02:11:35+00:00",
+  "ingested_at": "2026-10-19T00:58:26+00:00",
   "organs": {
     "all": [
       {
@@ -367,7 +367,7 @@
         "week": 52,
         "week_start": "2023-12-24",
         "week_end": "2023-12-31",
-        "count": 906
+        "count": 905
       },
       {
         "yr": 2024,
@@ -1369,6 +1369,13 @@
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "count": 1687
+      },
+      {
+        "yr": 2026,
+        "week": 40,
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "count": 1585
       }
     ],
     "heart": [
@@ -2736,6 +2743,13 @@
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "count": 127
+      },
+      {
+        "yr": 2026,
+        "week": 40,
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "count": 121
       }
     ],
     "kidney": [
@@ -3101,7 +3115,7 @@
         "week": 52,
         "week_start": "2023-12-24",
         "week_end": "2023-12-31",
-        "count": 589
+        "count": 588
       },
       {
         "yr": 2024,
@@ -4103,6 +4117,13 @@
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "count": 1106
+      },
+      {
+        "yr": 2026,
+        "week": 40,
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "count": 1055
       }
     ],
     "liver": [
@@ -5470,6 +5491,13 @@
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "count": 356
+      },
+      {
+        "yr": 2026,
+        "week": 40,
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "count": 318
       }
     ],
     "lung": [
@@ -6837,6 +6865,13 @@
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "count": 84
+      },
+      {
+        "yr": 2026,
+        "week": 40,
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "count": 77
       }
     ],
     "hll": [
@@ -8204,28 +8239,35 @@
         "week_start": "2026-09-24",
         "week_end": "2026-09-30",
         "count": 567
+      },
+      {
+        "yr": 2026,
+        "week": 40,
+        "week_start": "2026-10-01",
+        "week_end": "2026-10-07",
+        "count": 516
       }
     ]
   },
   "excluded_incomplete_weeks": {
     "all": [
-      "2026-W40"
+      "2026-W41"
     ],
     "heart": [
-      "2026-W40"
+      "2026-W41"
     ],
     "kidney": [
-      "2026-W40"
+      "2026-W41"
     ],
     "liver": [
-      "2026-W40"
+      "2026-W41"
     ],
     "lung": [
-      "2026-W40"
+      "2026-W41"
     ]
   },
-  "raw_file": "2026-10-12_optn_metrics_wl_weekly_lung.csv, 2026-10-12_optn_metrics_wl_weekly_liver.csv, 2026-10-12_optn_metrics_wl_weekly_kidney.csv, 2026-10-12_optn_metrics_wl_weekly_heart.csv, 2026-10-12_optn_metrics_wl_weekly_all.csv",
-  "data_as_of": "2026-10-12",
+  "raw_file": "2026-10-19_optn_metrics_wl_weekly_lung.csv, 2026-10-19_optn_metrics_wl_weekly_liver.csv, 2026-10-19_optn_metrics_wl_weekly_kidney.csv, 2026-10-19_optn_metrics_wl_weekly_heart.csv, 2026-10-19_optn_metrics_wl_weekly_all.csv",
+  "data_as_of": "2026-10-19",
   "parser": "optn_metrics_wl_weekly",
   "region": "National",
   "hll_label": "Heart + liver + lung (Strata's core flying organs)",

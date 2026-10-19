@@ -2,12 +2,12 @@
   "title": "Deceased-donor transplants by donor-to-center distance band",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-10-12T02:11:35+00:00",
-  "period_end": "2026-08-31",
-  "data_as_of": "2026-10-06",
+  "ingested_at": "2026-10-19T00:58:26+00:00",
+  "period_end": "2026-09-30",
+  "data_as_of": "2026-10-12",
   "current_year": 2026,
   "prior_year": 2025,
-  "current_label": "2026 YTD (Jan 1\u2013Aug 31)",
+  "current_label": "2026 YTD (Jan 1\u2013Sep 30)",
   "prior_label": "2025 full year",
   "comparison_note": "Mix comparison: shares of the current year to date vs. the prior full year. OPTN national reports are annual-only, so this is not a same-period volume comparison.",
   "years": [
@@ -176,22 +176,22 @@
       },
       "2026": {
         "bands": {
-          "0\u2013150": 756,
-          "151\u2013200": 276,
-          "201\u2013250": 273,
-          "251\u2013500": 1290,
-          "500+": 462
+          "0\u2013150": 864,
+          "151\u2013200": 313,
+          "201\u2013250": 299,
+          "251\u2013500": 1429,
+          "500+": 527
         },
-        "total": 3057,
+        "total": 3432,
         "unknown": 0,
         "shares_pct": {
-          "0\u2013150": 24.7,
-          "151\u2013200": 9.0,
-          "201\u2013250": 8.9,
-          "251\u2013500": 42.2,
-          "500+": 15.1
+          "0\u2013150": 25.2,
+          "151\u2013200": 9.1,
+          "201\u2013250": 8.7,
+          "251\u2013500": 41.6,
+          "500+": 15.4
         },
-        "long_share_pct": 57.3,
+        "long_share_pct": 57.0,
         "bands_cover_total": true
       }
     },
@@ -338,22 +338,22 @@
       },
       "2026": {
         "bands": {
-          "0\u2013150": 4735,
-          "151\u2013200": 674,
-          "201\u2013250": 567,
-          "251\u2013500": 1852,
-          "500+": 452
+          "0\u2013150": 5284,
+          "151\u2013200": 741,
+          "201\u2013250": 642,
+          "251\u2013500": 2085,
+          "500+": 501
         },
-        "total": 8280,
+        "total": 9253,
         "unknown": 0,
         "shares_pct": {
-          "0\u2013150": 57.2,
-          "151\u2013200": 8.1,
-          "201\u2013250": 6.8,
-          "251\u2013500": 22.4,
-          "500+": 5.5
+          "0\u2013150": 57.1,
+          "151\u2013200": 8.0,
+          "201\u2013250": 6.9,
+          "251\u2013500": 22.5,
+          "500+": 5.4
         },
-        "long_share_pct": 27.8,
+        "long_share_pct": 27.9,
         "bands_cover_total": true
       }
     },
@@ -500,22 +500,22 @@
       },
       "2026": {
         "bands": {
-          "0\u2013150": 523,
-          "151\u2013200": 129,
-          "201\u2013250": 118,
-          "251\u2013500": 607,
-          "500+": 1058
+          "0\u2013150": 595,
+          "151\u2013200": 143,
+          "201\u2013250": 148,
+          "251\u2013500": 688,
+          "500+": 1157
         },
-        "total": 2435,
+        "total": 2731,
         "unknown": 0,
         "shares_pct": {
-          "0\u2013150": 21.5,
-          "151\u2013200": 5.3,
-          "201\u2013250": 4.8,
-          "251\u2013500": 24.9,
-          "500+": 43.4
+          "0\u2013150": 21.8,
+          "151\u2013200": 5.2,
+          "201\u2013250": 5.4,
+          "251\u2013500": 25.2,
+          "500+": 42.4
         },
-        "long_share_pct": 68.4,
+        "long_share_pct": 67.6,
         "bands_cover_total": true
       }
     },
@@ -662,36 +662,37 @@
       },
       "2026": {
         "bands": {
-          "0\u2013150": 7442,
-          "151\u2013200": 1983,
-          "201\u2013250": 1728,
-          "251\u2013500": 845,
-          "500+": 1725
+          "0\u2013150": 8296,
+          "151\u2013200": 2226,
+          "201\u2013250": 1933,
+          "251\u2013500": 957,
+          "500+": 1959
         },
-        "total": 13723,
+        "total": 15371,
         "unknown": 0,
         "shares_pct": {
-          "0\u2013150": 54.2,
+          "0\u2013150": 54.0,
           "151\u2013200": 14.5,
           "201\u2013250": 12.6,
           "251\u2013500": 6.2,
-          "500+": 12.6
+          "500+": 12.7
         },
-        "long_share_pct": 18.7,
+        "long_share_pct": 19.0,
         "bands_cover_total": true
       }
     }
   },
-  "raw_file": "2026-10-08_optn_national_centers_heart_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_heart_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_liver_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_liver_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_lung_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_lung_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_donors_dcd_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_state_all_thru-2026-08-31.csv",
-  "snapshot_downloaded": "2026-10-08",
+  "raw_file": "2026-10-19_optn_national_centers_heart_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_heart_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_donors_dcd_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_state_all_thru-2026-09-30.csv",
+  "snapshot_downloaded": "2026-10-19",
   "parser": "optn_national_data",
   "same_period": {
     "available": false,
-    "needs_snapshot_through": "2025-08-31",
-    "note": "Same-period comparison appears once a snapshot through 2025-08-31 exists (snapshots saved monthly since 2026-08-31)."
+    "needs_snapshot_through": "2025-09-30",
+    "note": "Same-period comparison appears once a snapshot through 2025-09-30 exists (snapshots saved monthly since 2026-08-31)."
   },
   "snapshots_saved": [
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-30"
   ],
   "status": "ok",
   "unrecognised_files": [],

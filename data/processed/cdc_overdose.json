@@ -3,8 +3,8 @@
   "source": "CDC/NCHS VSRR Provisional Drug Overdose Death Counts (data.cdc.gov dataset xkb8-kh2a)",
   "tag": "Live",
   "status": "ok",
-  "fetched_at": "2026-10-12T02:11:34+00:00",
-  "dataset_updated": "2026-09-16",
+  "fetched_at": "2026-10-19T00:58:25+00:00",
+  "dataset_updated": "2026-10-14",
   "indicator": "Number of Drug Overdose Deaths",
   "note": "Leading indicator for brain-death (DBD) donor supply. 'Predicted' is CDC's estimate adjusted for reporting delays; 'reported' is counts received so far. Recent months are provisional.",
   "series": [
@@ -1332,41 +1332,51 @@
       "year": 2026,
       "month": 1,
       "period_end": "2026-01",
-      "reported": 69544,
-      "predicted": 69800,
+      "reported": 69671,
+      "predicted": 69835,
       "footnote": "Underreported due to incomplete data.",
-      "reported_yoy_pct": -12.3,
+      "reported_yoy_pct": -12.2,
       "predicted_yoy_pct": -12.3
     },
     {
       "year": 2026,
       "month": 2,
       "period_end": "2026-02",
-      "reported": 68689,
-      "predicted": 69150,
+      "reported": 68950,
+      "predicted": 69216,
       "footnote": "Underreported due to incomplete data.",
-      "reported_yoy_pct": -11.7,
-      "predicted_yoy_pct": -11.4
+      "reported_yoy_pct": -11.4,
+      "predicted_yoy_pct": -11.3
     },
     {
       "year": 2026,
       "month": 3,
       "period_end": "2026-03",
-      "reported": 67104,
-      "predicted": 67923,
+      "reported": 67576,
+      "predicted": 68080,
       "footnote": "Underreported due to incomplete data.",
-      "reported_yoy_pct": -12.9,
-      "predicted_yoy_pct": -12.1
+      "reported_yoy_pct": -12.3,
+      "predicted_yoy_pct": -11.9
     },
     {
       "year": 2026,
       "month": 4,
       "period_end": "2026-04",
-      "reported": 65726,
-      "predicted": 66937,
+      "reported": 66466,
+      "predicted": 67209,
       "footnote": "Underreported due to incomplete data.",
-      "reported_yoy_pct": -13.5,
-      "predicted_yoy_pct": -12.1
+      "reported_yoy_pct": -12.5,
+      "predicted_yoy_pct": -11.8
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "period_end": "2026-05",
+      "reported": 65351,
+      "predicted": 66478,
+      "footnote": "Underreported due to incomplete data.",
+      "reported_yoy_pct": -12.7,
+      "predicted_yoy_pct": -11.5
     }
   ]
 }

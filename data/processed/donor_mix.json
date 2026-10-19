@@ -2,12 +2,12 @@
   "title": "Deceased donors by type (DBD vs DCD) and DCD share by organ",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-10-12T02:11:35+00:00",
-  "period_end": "2026-08-31",
-  "data_as_of": "2026-10-06",
+  "ingested_at": "2026-10-19T00:58:26+00:00",
+  "period_end": "2026-09-30",
+  "data_as_of": "2026-10-12",
   "current_year": 2026,
   "prior_year": 2025,
-  "current_label": "2026 YTD (Jan 1\u2013Aug 31)",
+  "current_label": "2026 YTD (Jan 1\u2013Sep 30)",
   "prior_label": "2025 full year",
   "comparison_note": "Mix comparison: shares of the current year to date vs. the prior full year. OPTN national reports are annual-only, so this is not a same-period volume comparison.",
   "years": [
@@ -71,11 +71,11 @@
       "dcd_share_pct": 49.2
     },
     "2026": {
-      "dbd": 5235,
-      "dcd": 5949,
-      "not_reported": 0,
-      "total": 11184,
-      "dcd_share_pct": 53.2
+      "dbd": 5813,
+      "dcd": 6693,
+      "not_reported": 2,
+      "total": 12508,
+      "dcd_share_pct": 53.5
     }
   },
   "transplants_by_organ": {
@@ -130,11 +130,11 @@
         "dcd_share_pct": 22.9
       },
       "2026": {
-        "dbd": 2256,
-        "dcd": 801,
-        "not_reported": 0,
-        "total": 3057,
-        "dcd_share_pct": 26.2
+        "dbd": 2524,
+        "dcd": 907,
+        "not_reported": 1,
+        "total": 3432,
+        "dcd_share_pct": 26.4
       }
     },
     "liver": {
@@ -188,11 +188,11 @@
         "dcd_share_pct": 39.3
       },
       "2026": {
-        "dbd": 4459,
-        "dcd": 3821,
-        "not_reported": 0,
-        "total": 8280,
-        "dcd_share_pct": 46.1
+        "dbd": 4944,
+        "dcd": 4307,
+        "not_reported": 2,
+        "total": 9253,
+        "dcd_share_pct": 46.5
       }
     },
     "lung": {
@@ -246,11 +246,11 @@
         "dcd_share_pct": 18.8
       },
       "2026": {
-        "dbd": 1888,
-        "dcd": 547,
-        "not_reported": 0,
-        "total": 2435,
-        "dcd_share_pct": 22.5
+        "dbd": 2103,
+        "dcd": 627,
+        "not_reported": 1,
+        "total": 2731,
+        "dcd_share_pct": 23.0
       }
     },
     "kidney": {
@@ -304,27 +304,28 @@
         "dcd_share_pct": 46.3
       },
       "2026": {
-        "dbd": 6993,
-        "dcd": 6730,
-        "not_reported": 0,
-        "total": 13723,
-        "dcd_share_pct": 49.0
+        "dbd": 7816,
+        "dcd": 7552,
+        "not_reported": 3,
+        "total": 15371,
+        "dcd_share_pct": 49.1
       }
     }
   },
   "organ_definitions": {
     "kidney": "Kidney alone (kidney-pancreas is a separate OPTN organ category here)"
   },
-  "raw_file": "2026-10-08_optn_national_centers_heart_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_heart_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_liver_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_liver_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_lung_years_thru-2026-08-31.csv, 2026-10-08_optn_national_centers_lung_ytd_thru-2026-08-31.csv, 2026-10-08_optn_national_donors_dcd_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_dcd_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_heart_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_kidney_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_liver_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_distance_lung_thru-2026-08-31.csv, 2026-10-08_optn_national_tx_state_all_thru-2026-08-31.csv",
-  "snapshot_downloaded": "2026-10-08",
+  "raw_file": "2026-10-19_optn_national_centers_heart_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_heart_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_donors_dcd_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_state_all_thru-2026-09-30.csv",
+  "snapshot_downloaded": "2026-10-19",
   "parser": "optn_national_data",
   "same_period": {
     "available": false,
-    "needs_snapshot_through": "2025-08-31",
-    "note": "Same-period comparison appears once a snapshot through 2025-08-31 exists (snapshots saved monthly since 2026-08-31)."
+    "needs_snapshot_through": "2025-09-30",
+    "note": "Same-period comparison appears once a snapshot through 2025-09-30 exists (snapshots saved monthly since 2026-08-31)."
   },
   "snapshots_saved": [
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-30"
   ],
   "status": "ok",
   "unrecognised_files": [],
