@@ -2,7 +2,7 @@
   "title": "Weekly deceased donors recovered + YTD all-organs discard rate",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-19T00:58:26+00:00",
+  "ingested_at": "2026-10-26T01:05:22+00:00",
   "donors": [
     {
       "yr": 2023,
@@ -1325,14 +1325,14 @@
       "week": 33,
       "week_start": "2026-08-13",
       "week_end": "2026-08-19",
-      "count": 295
+      "count": 297
     },
     {
       "yr": 2026,
       "week": 34,
       "week_start": "2026-08-20",
       "week_end": "2026-08-26",
-      "count": 299
+      "count": 297
     },
     {
       "yr": 2026,
@@ -1368,63 +1368,70 @@
       "week_start": "2026-09-24",
       "week_end": "2026-09-30",
       "count": 320
+    },
+    {
+      "yr": 2026,
+      "week": 40,
+      "week_start": "2026-10-01",
+      "week_end": "2026-10-07",
+      "count": 330
     }
   ],
   "excluded_incomplete_weeks": [
-    "2026-W40"
+    "2026-W41"
   ],
-  "raw_file": "2026-10-19_optn_metrics_don_weekly_deceased.csv",
-  "data_as_of": "2026-10-19",
+  "raw_file": "2026-10-26_optn_metrics_don_weekly_deceased.csv",
+  "data_as_of": "2026-10-26",
   "parser": "optn_metrics_don_weekly",
   "donor_type": "Deceased Donors",
   "region": "National",
   "ytd_table": [
     {
       "yr": 2021,
-      "ytd_deceased_donors": 10601,
-      "ytd_pct_chg": 11.85,
-      "discard_rate_pct": 17.16,
-      "utilization_rate_pct": 39.75
+      "ytd_deceased_donors": 10868,
+      "ytd_pct_chg": 11.64,
+      "discard_rate_pct": 17.2,
+      "utilization_rate_pct": 39.69
     },
     {
       "yr": 2022,
-      "ytd_deceased_donors": 11083,
-      "ytd_pct_chg": 4.55,
+      "ytd_deceased_donors": 11372,
+      "ytd_pct_chg": 4.64,
       "discard_rate_pct": 18.45,
-      "utilization_rate_pct": 38.74
+      "utilization_rate_pct": 38.72
     },
     {
       "yr": 2023,
-      "ytd_deceased_donors": 12361,
-      "ytd_pct_chg": 11.53,
-      "discard_rate_pct": 19.01,
-      "utilization_rate_pct": 38.51
+      "ytd_deceased_donors": 12679,
+      "ytd_pct_chg": 11.49,
+      "discard_rate_pct": 19.05,
+      "utilization_rate_pct": 38.49
     },
     {
       "yr": 2024,
-      "ytd_deceased_donors": 13032,
-      "ytd_pct_chg": 5.43,
-      "discard_rate_pct": 20.66,
-      "utilization_rate_pct": 38.02
+      "ytd_deceased_donors": 13332,
+      "ytd_pct_chg": 5.15,
+      "discard_rate_pct": 20.67,
+      "utilization_rate_pct": 37.99
     },
     {
       "yr": 2025,
-      "ytd_deceased_donors": 12754,
-      "ytd_pct_chg": -2.13,
-      "discard_rate_pct": 19.66,
-      "utilization_rate_pct": 39.65
+      "ytd_deceased_donors": 13074,
+      "ytd_pct_chg": -1.94,
+      "discard_rate_pct": 19.63,
+      "utilization_rate_pct": 39.72
     },
     {
       "yr": 2026,
-      "ytd_deceased_donors": 12737,
-      "ytd_pct_chg": -0.13,
+      "ytd_deceased_donors": 13078,
+      "ytd_pct_chg": 0.03,
       "discard_rate_pct": 20.46,
       "utilization_rate_pct": 39.78
     }
   ],
-  "ytd_through": "October 05",
-  "ytd_table_file": "2026-10-19_optn_metrics_don_table_deceased.csv",
-  "ytd_table_as_of": "2026-10-19",
+  "ytd_through": "October 12",
+  "ytd_table_file": "2026-10-26_optn_metrics_don_table_deceased.csv",
+  "ytd_table_as_of": "2026-10-26",
   "discard_rate_definition": "OPTN metrics dashboard 'All Organs Discard Rate' for deceased donors recovered year to date",
   "status": "ok",
   "unrecognised_files": [],

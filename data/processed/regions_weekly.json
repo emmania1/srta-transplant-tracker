@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants (all organs) by OPTN region",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-19T00:58:26+00:00",
+  "ingested_at": "2026-10-26T01:05:22+00:00",
   "regions": {
     "1": [
       {
@@ -1376,6 +1376,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 23
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 38
       }
     ],
     "2": [
@@ -2749,7 +2756,14 @@
         "week": 40,
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
-        "count": 100
+        "count": 99
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 86
       }
     ],
     "3": [
@@ -4124,6 +4138,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 120
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 120
       }
     ],
     "4": [
@@ -5498,6 +5519,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 94
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 62
       }
     ],
     "5": [
@@ -6872,6 +6900,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 125
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 118
       }
     ],
     "6": [
@@ -8246,6 +8281,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 33
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 34
       }
     ],
     "7": [
@@ -9620,6 +9662,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 48
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 82
       }
     ],
     "8": [
@@ -10994,6 +11043,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 48
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 63
       }
     ],
     "9": [
@@ -12368,6 +12424,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 58
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 50
       }
     ],
     "10": [
@@ -13742,6 +13805,13 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 72
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 76
       }
     ],
     "11": [
@@ -15116,42 +15186,49 @@
         "week_start": "2026-10-01",
         "week_end": "2026-10-07",
         "count": 113
+      },
+      {
+        "yr": 2026,
+        "week": 41,
+        "week_start": "2026-10-08",
+        "week_end": "2026-10-14",
+        "count": 109
       }
     ]
   },
   "excluded_incomplete_weeks": {
     "1": [
-      "2026-W41"
+      "2026-W42"
     ],
     "2": [
-      "2026-W41"
+      "2026-W42"
     ],
     "3": [
-      "2026-W41"
+      "2026-W42"
     ],
     "4": [
-      "2026-W41"
+      "2026-W42"
     ],
     "5": [
-      "2026-W41"
+      "2026-W42"
     ],
     "6": [
-      "2026-W41"
+      "2026-W42"
     ],
     "7": [
-      "2026-W41"
+      "2026-W42"
     ],
     "8": [
-      "2026-W41"
+      "2026-W42"
     ],
     "9": [
-      "2026-W41"
+      "2026-W42"
     ],
     "10": [
-      "2026-W41"
+      "2026-W42"
     ],
     "11": [
-      "2026-W41"
+      "2026-W42"
     ]
   },
   "region_states": {
@@ -15246,8 +15323,8 @@
     "10": "Great Lakes",
     "11": "Mid-South"
   },
-  "raw_file": "2026-10-19_optn_metrics_tx_weekly_deceased_all_region11.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region10.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region09.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region08.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region07.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region06.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region05.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region04.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region03.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region02.csv, 2026-10-19_optn_metrics_tx_weekly_deceased_all_region01.csv",
-  "data_as_of": "2026-10-19",
+  "raw_file": "2026-10-26_optn_metrics_tx_weekly_deceased_all_region11.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region10.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region09.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region08.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region07.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region06.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region05.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region04.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region03.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region02.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_all_region01.csv",
+  "data_as_of": "2026-10-26",
   "parser": "optn_metrics_tx_weekly",
   "donor_type": "Deceased Donors",
   "organ": "All Organs",
