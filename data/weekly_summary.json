@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:34:48+00:00",
+  "generated_at": "2026-10-27T20:52:18+00:00",
   "price": {
     "close": 4.66,
     "date": "2026-10-23",
@@ -1234,12 +1234,12 @@
     "yoy_note": "True YoY appears once a snapshot through 2025-09-30 exists; snapshots are saved monthly from 2026-08-31."
   },
   "news": {
-    "new_items_7d": 17,
+    "new_items_7d": 16,
     "by_category": {
-      "strata": 1,
-      "volumes": 4,
-      "opo_regulation": 0,
-      "competitors": 12,
+      "strata": 0,
+      "volumes": 2,
+      "opo_regulation": 1,
+      "competitors": 14,
       "tech_logistics": 0,
       "analyst": 0,
       "opinion": 0
@@ -1255,38 +1255,39 @@
     },
     "top_headlines": [
       {
-        "headline": "Blade Air Mobility passenger count rises 10 percent to over 11,000 in September",
-        "source": "Traders Union",
-        "date": "2026-10-21",
-        "url": "https://tradersunion.com/news/companies/show/3916825-blade-september-record-growth/",
-        "google_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxON2xKejVRYXA0V29HOXZ0R3J0WFNYQ3d5YlBqbnF1SHp6Z2drT2Rhb0FwSkNLN1N2SFFXalBBZ2JHb2tCMUZoYUp2YTdLVXZhQTRCTGVhQWI5MWpGRnJPV0dqbE9LUWx5eDhMZk1xQ0ZtU0w5WDRKMU52UnZYQ3RobEg0Ui0yNjUyeFNB?oc=5",
+        "headline": "Two New Organ Procurement Organization Performance Measures Earn National Endorsement",
+        "source": "PR Newswire",
+        "date": "2026-10-27",
+        "url": "https://www.prnewswire.com/news-releases/two-new-organ-procurement-organization-performance-measures-earn-national-endorsement-302920901.html",
+        "google_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNR01WejJxY2dMQTZ2WEZWc0pqVjNXSVBVSHNwZGViVHJqMzJiQ0ZiQ2VucWpTNEZiTkR4VXF1Qmxmd01zbHM1aFM0RWNJSzlheHlEdjZ6MXlvT1J4ajhqWkNTQzlaVl9OWGRjdTVjdjNqTVdiN2JiV0xuMmpaLU1DTmMta3RBMkVUTnFWc2RjZmhJdzVjTTZnakx3eE01Wlh6Ykc1djlTbFAtWWVFTEdLUlBfdm5xVTRLUjhpYTIwUndFMnRLZGNmTUtrR1BTajdSVlNjV2JQS2I?oc=5",
         "tags": [
-          "strata"
+          "opo_regulation",
+          "volumes"
         ]
       },
       {
-        "headline": "Sardinia: New multi-organ donation at the Duilio Casula Polyclinic, with a 500 percent increase in 2026.",
-        "source": "Agenzia Nova",
-        "date": "2026-10-23",
-        "url": "https://www.agenzianova.com/en/news/Sardinia%3A-New-multi-organ-donation-at-the-Duilio-Casula-Polyclinic-in-2026--a-500-percent-increase./",
-        "google_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNFBRZlhTVHVkSG1FQlBlRXN4dFZUQWxHWWg4akE0QmlzLVFaSTlCMWFoRjlaczZaMm1ibEdRTUtRWk9uMVBqRWo2X0tDRGlxNXBpX0Y0d29yaUdsd3BXbTZUTEtycFpnRm5rYS1DbHM4aHUxbW1UcTg2dmpZVnlURGhMT2kxanZvV3EwVmQtZ0VFZExGXzhNNFlhT24ySERqNzlUWUUtNG5lMVdDSERFRXNGcldOd0VUR3JHSklqRVRpRE5CVXNCUHk1Y0ZZeXdYWUs4Zw?oc=5",
+        "headline": "New Miami-area group breaks organ recovery record. How it plans to change transplantation",
+        "source": "Miami Herald",
+        "date": "2026-10-27",
+        "url": "https://www.miamiherald.com/news/health-care/article317745693.html",
+        "google_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4zVTkxUmczX20taWxQZlBBQmFNaEZtYWV2Zy00Y25uS09tRnU3Slo0OWRNN2VzUlhrbGVwYkdabHlDZWtJSWZtNzlyZzFMZVBkLWZvN2JHcUxMaWNFVkZhYno1aVgxUFRUOWw3TUdBVTc4VmpP0gF0QVVfeXFMUC1nUW1va3F4Y2w5a2tfTTNLUnl5cjN2SXZ2WDMyZmJQZ3AtNGpwaGE5a3l0TGN2UkZkYlFkX2hmOFF5aFdzUDJROFo3WGRneWlMM2JuTWwzUi1QLUJGdXlWZ2lJNTJtTkU3QkZFSEpIZnVPOVo?oc=5",
         "tags": [
           "volumes"
         ]
       },
       {
-        "headline": "Metrovacesa registra unos ingresos de 465 millones de euros en los primeros nueve meses",
-        "source": "TradingView",
-        "date": "2026-10-22",
-        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4680D2:0/",
-        "google_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9OSHZZNjJHTDRZV051T196aDAyenB6Tmozd3lZenVXbkYxeXg2b0JRd3VXY0lybHgxOTFYN3ZYYnpsMGN0NWhBZGZadjRwam96UGVHTTFIWTZVYmJtWEJrZFBieXpUOUs2TnR3UUhTUUtZejhFVERqYQ?oc=5",
+        "headline": "TransMedics selects Galileo HDX to support time-critical organ delivery missions",
+        "source": "AeroTime",
+        "date": "2026-10-27",
+        "url": "https://www.aerotime.aero/articles/transmedics-gogo-galileo-hdx-time-critical-organ-delivery-missions",
+        "google_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMmI2MzR1MWtKaEZwNnoxMXNSOU5UNnk5R3VTNnZ0VlZQLWNFdVppREFGTDhOUktlR0F1aXNDRnY2U0tVMnpZbjdDalZ4VlhTaFdGTVAzWk8zVXphM2pidG9naG4yRExMbHhNNXh2VmpmbG11NmRqcXdrcUxrcmJsb3A2V2hWUUZwNFk4dUVESWtDZmhBQ2xIUjRFLUpjZERwR2w00gGoAUFVX3lxTE9ieHVxdFdMTFJIQ1hTbUM4cG40ZzMyd3Mway1vRjJXTkh5REhLR0loWW1BalBlaEdiMnRPRHJNbTA0dGYyZXlZSEllYmFKT196Ynh6VFJlYTNUSEtGMGh4YnA5eV9SNGNQUHA1Mmkxd19BQVZUc251RlloTTFvZ1d6d1J6UnJodW1UX2Z0czNlb29kXzJvR2NjTkppeWhXSVNhbG1Kdzc0LQ?oc=5",
         "tags": [
-          "volumes"
+          "competitors"
         ]
       }
     ],
     "none_text": null,
-    "fetched_at": "2026-10-26T01:02:39+00:00"
+    "fetched_at": "2026-10-27T20:51:58+00:00"
   },
   "issue_line": null,
   "bullets": [
@@ -1586,7 +1587,7 @@
     "note": "Calendar quarters (Jan 1\u2013Mar 31 etc.). OPTN weeks don't line up with quarter ends, so a week that straddles a boundary is split by days (its count spread evenly over its 7 days). Typical seasonal change = average of the same quarter-over-quarter change in the prior 3 years. Recent weeks may be revised up as centers finish reporting."
   },
   "core_label": "Heart + liver + lung (Strata's core flying organs)",
-  "news_line": "17 new news items this week \u2014 Strata 1, Transplant volumes / donation 4, Competitors & industry 12.",
+  "news_line": "16 new news items this week \u2014 Transplant volumes / donation 2, OPO & regulation 1, Competitors & industry 14.",
   "markdown_lines": [
     "*SRTA Transplant Tracker \u2014 week of Oct 27, 2026* \u00b7 SRTA $4.66 (\u25b2 2.6% 1-wk) \u00b7 TMDX $70.74 (\u25bc 0.1% 1-wk)",
     "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%. (data through Oct 14, 2026)",
@@ -1597,9 +1598,9 @@
     "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%. (data through Oct 14, 2026)",
     "\u2022 *Signals:* Volumes up for heart+liver+lung, liver and lung; flat for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
     "*Top headlines:*",
-    "  \u2013 <https://tradersunion.com/news/companies/show/3916825-blade-september-record-growth/|Blade Air Mobility passenger count rises 10 percent to over 11,000 in September> (Traders Union, Oct 21, 2026)",
-    "  \u2013 <https://www.agenzianova.com/en/news/Sardinia%3A-New-multi-organ-donation-at-the-Duilio-Casula-Polyclinic-in-2026--a-500-percent-increase./|Sardinia: New multi-organ donation at the Duilio Casula Polyclinic, with a 500 percent increase in 2026.> (Agenzia Nova, Oct 23, 2026)",
-    "  \u2013 <https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4680D2:0/|Metrovacesa registra unos ingresos de 465 millones de euros en los primeros nueve meses> (TradingView, Oct 22, 2026)",
+    "  \u2013 <https://www.prnewswire.com/news-releases/two-new-organ-procurement-organization-performance-measures-earn-national-endorsement-302920901.html|Two New Organ Procurement Organization Performance Measures Earn National Endorsement> (PR Newswire, Oct 27, 2026)",
+    "  \u2013 <https://www.miamiherald.com/news/health-care/article317745693.html|New Miami-area group breaks organ recovery record. How it plans to change transplantation> (Miami Herald, Oct 27, 2026)",
+    "  \u2013 <https://www.aerotime.aero/articles/transmedics-gogo-galileo-hdx-time-critical-organ-delivery-missions|TransMedics selects Galileo HDX to support time-critical organ delivery missions> (AeroTime, Oct 27, 2026)",
     "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
   ]
 }

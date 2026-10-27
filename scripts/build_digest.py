@@ -174,6 +174,8 @@ def news_block(news, now, sec_raw=None):
     prio = {g: n for n, g in enumerate(cfg.get("priority", []))}
     # word-start match so 'opo' doesn't hit 'proposal'; plurals still match ('transplant' -> 'transplants')
     angle = [re.compile(r"\b" + re.escape(a), re.I) for a in cfg.get("angle_terms", [])]
+    # exact-case terms (e.g. UNOS) so ordinary words like Spanish "unos" don't count as an industry angle
+    angle += [re.compile(r"\b" + re.escape(a) + r"\b") for a in cfg.get("angle_terms_case_sensitive", [])]
     excl = [re.compile(x, re.I) for x in cfg.get("exclude_patterns", [])]
     sr = cfg.get("stale_results") or {}
     sr_pats = [re.compile(x, re.I) for x in sr.get("patterns", [])]

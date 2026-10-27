@@ -94,6 +94,8 @@ def make_filter(cfg):
     hi = [re.compile(x, re.I) for x in (cfg.get("digest") or {}).get("exclude_patterns", [])]
     usf = cfg.get("us_focus") or {}
     angle = [re.compile(r"\b" + re.escape(a), re.I) for a in (cfg.get("digest") or {}).get("angle_terms", [])]
+    # exact-case terms (e.g. UNOS) so ordinary words like Spanish "unos" don't count as an industry angle
+    angle += [re.compile(r"\b" + re.escape(a) + r"\b") for a in (cfg.get("digest") or {}).get("angle_terms_case_sensitive", [])]
     co_terms = [re.compile(r"\b" + re.escape(a), re.I) for a in usf.get("company_terms", [])]
     non_us = [re.compile(x, re.I) for x in usf.get("non_us_markers", [])]
     hi_groups = {g["id"] for g in cfg["groups"] if g.get("exclude_human_interest")}

@@ -99,7 +99,6 @@
     "company_terms": [
       "strata",
       "srta",
-      "blade air",
       "keystone perfusion",
       "transmedics",
       "tmdx",
@@ -217,11 +216,15 @@
       "national post",
       "the star\\b",
       "abc news \\(au\\)",
-      "rnz\\b"
+      "rnz\\b",
+      "sardinia",
+      "sicily",
+      "businessday",
+      "\\bng\\b"
     ]
   },
   "digest": {
-    "_note": "How build_digest.py picks the 3-5 headlines for summary/latest.md. Category priority first, newest first within a category. Uses items published in the last primary_days; if fewer than min_items qualify, fills from the last fallback_days. An item qualifies only if its headline mentions an angle_terms entry and matches none of exclude_patterns (human-interest / awards / events). Opinion-tagged items, corporate housekeeping and stale results reprints are never picked; if fewer than min_items_or_none good items remain, the digest says none_text instead of padding.",
+    "_note": "How build_digest.py picks the 3-5 headlines for summary/latest.md. Category priority first, newest first within a category. Uses items published in the last primary_days; if fewer than min_items qualify, fills from the last fallback_days. An item qualifies only if its headline mentions an angle_terms entry and matches none of exclude_patterns (human-interest / awards / events). Opinion-tagged items, corporate housekeeping and stale results reprints are never picked; if fewer than min_items_or_none good items remain, the digest says none_text instead of padding. angle_terms_case_sensitive must match exactly as written (e.g. UNOS, so the Spanish word 'unos' doesn't count).",
     "priority": [
       "strata",
       "analyst",
@@ -237,7 +240,6 @@
     "angle_terms": [
       "strata",
       "srta",
-      "blade air",
       "keystone perfusion",
       "transmedics",
       "tmdx",
@@ -249,7 +251,6 @@
       "procure",
       "opo",
       "organ procurement",
-      "unos",
       "optn",
       "srtr",
       "hrsa",
@@ -323,7 +324,10 @@
         "srta"
       ],
       "max_days": 14
-    }
+    },
+    "angle_terms_case_sensitive": [
+      "UNOS"
+    ]
   },
   "groups": [
     {
@@ -332,17 +336,16 @@
       "terms": [
         "Strata Critical Medical",
         "SRTA",
-        "Blade Air Mobility",
         "Keystone Perfusion"
       ],
       "require_any": [
         "strata critical",
-        "blade air",
         "keystone perfusion",
         "nasdaq:srta",
         "nasdaq: srta",
         "(srta)"
-      ]
+      ],
+      "_note": "Blade Air Mobility removed 2026-10-27: Blade's passenger business was sold to Joby, so its news isn't Strata news."
     },
     {
       "id": "volumes",

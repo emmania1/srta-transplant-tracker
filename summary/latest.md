@@ -7,7 +7,7 @@
 • *Regions:* biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) ▲ 31.4%, Mid-Atlantic (Region 2) ▲ 11.0%, New England (Region 1) ▼ 8.7%. (data through Oct 14, 2026)
 • *Signals:* Volumes up for heart+liver+lung, liver and lung; flat for heart and kidney · Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung · DCD share rising · Discard rate rising.
 *Top headlines:*
-  – <https://tradersunion.com/news/companies/show/3916825-blade-september-record-growth/|Blade Air Mobility passenger count rises 10 percent to over 11,000 in September> (Traders Union, Oct 21, 2026)
-  – <https://www.agenzianova.com/en/news/Sardinia%3A-New-multi-organ-donation-at-the-Duilio-Casula-Polyclinic-in-2026--a-500-percent-increase./|Sardinia: New multi-organ donation at the Duilio Casula Polyclinic, with a 500 percent increase in 2026.> (Agenzia Nova, Oct 23, 2026)
-  – <https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4680D2:0/|Metrovacesa registra unos ingresos de 465 millones de euros en los primeros nueve meses> (TradingView, Oct 22, 2026)
+  – <https://www.prnewswire.com/news-releases/two-new-organ-procurement-organization-performance-measures-earn-national-endorsement-302920901.html|Two New Organ Procurement Organization Performance Measures Earn National Endorsement> (PR Newswire, Oct 27, 2026)
+  – <https://www.miamiherald.com/news/health-care/article317745693.html|New Miami-area group breaks organ recovery record. How it plans to change transplantation> (Miami Herald, Oct 27, 2026)
+  – <https://www.aerotime.aero/articles/transmedics-gogo-galileo-hdx-time-critical-organ-delivery-missions|TransMedics selects Galileo HDX to support time-critical organ delivery missions> (AeroTime, Oct 27, 2026)
 Dashboard: https://emmania1.github.io/srta-transplant-tracker/

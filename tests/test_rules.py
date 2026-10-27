@@ -38,6 +38,12 @@ class TestNewsFilters(unittest.TestCase):
     def test_other_company_analyst_dropped(self):
         self.assertFalse(self.keep("Danske Bank cuts target price for Xvivo Perfusion"))
 
+    def test_unos_case_sensitive_and_sardinia_and_blade(self):
+        self.assertFalse(self.keep("Metrovacesa registra unos ingresos de 465 millones de euros"))
+        self.assertTrue(self.keep("UNOS reports record transplant year"))
+        self.assertFalse(self.keep("Sardinia: New multi-organ donation at the Polyclinic"))
+        self.assertFalse(self.keep("Blade Air Mobility passenger count rises 10 percent"))
+
     def test_digest_angle_word_start(self):
         angle = [re.compile(r"\b" + re.escape(a), re.I) for a in CFG["digest"]["angle_terms"]]
         self.assertFalse(any(a.search("Egypt death-row organ proposal sparks debate") for a in angle))
