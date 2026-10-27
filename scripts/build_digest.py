@@ -126,6 +126,11 @@ def mix_block(mix, dist):
         "long_bands": dist["long_bands"],
         "long_share_by_organ": {o: pair(v[cy]["long_share_pct"], v[py]["long_share_pct"])
                                 for o, v in dist["organs"].items()},
+        "est_avg_nm": {o: {"current": dist["organs"][o][cy].get("est_avg_nm"), "prior": dist["organs"][o][py].get("est_avg_nm"),
+                           "change_pct": (round(100 * (dist["organs"][o][cy]["est_avg_nm"] / dist["organs"][o][py]["est_avg_nm"] - 1), 1)
+                                          if dist["organs"][o][cy].get("est_avg_nm") and dist["organs"][o][py].get("est_avg_nm") else None)}
+                       for o in ("heart", "liver", "lung") if o in dist["organs"]},
+        "current_year": mix["current_year"], "prior_year": mix["prior_year"],
     }
 
 
@@ -298,21 +303,17 @@ def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, op
             t += (f", and {d['discard_rate_pct']:.1f}% of recovered organs have been discarded so far this year "
                   f"({d['prior_year_discard_rate_pct']:.1f}% a year earlier)")
         out.append({"label": "Donors", "text": t + ".", "through": through.get("donors"), "page": True})
-    if mix and signals and signals.get("distance"):
+    if mix:
         d0 = mix["dcd_share_donors"]
-        longer = [o for o in ORGANS if signals["distance"][o]["label"] == "longer"]
-        shorter = [o for o in ORGANS if signals["distance"][o]["label"] == "shorter"]
-        if not longer and not shorter:
-            dist = "the share of organs travelling 251+ NM held steady for every organ"
-        else:
-            bits = ([f"rose for {join_list(longer)}"] if longer else []) + ([f"fell for {join_list(shorter)}"] if shorter else [])
-            dist = "the share of organs travelling 251+ NM " + " and ".join(bits)
-            if len(longer) + len(shorter) < len(ORGANS):
-                dist += " and held steady for the rest"
         prior = d0["current"] - d0["change_pts"]
-        out.append({"label": "Donor mix & distance",
-                    "text": f"DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
-                            f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}; {dist}.",
+        text = (f"DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
+                f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}")
+        avg = [(o, v) for o, v in (mix.get("est_avg_nm") or {}).items() if v["current"] is not None]
+        avg.sort(key=lambda ov: -abs(ov[1]["change_pct"] or 0))
+        if avg:
+            parts = ", ".join(f"{o} {v['current']:.0f} NM ({minus_pct(v['change_pct'])})" for o, v in avg)
+            text += f"; est. avg distance ({mix['current_year']} YTD vs {mix['prior_year']}): {parts}"
+        out.append({"label": "Donor mix & distance", "text": text + ".",
                     "through": fmt_date(mix["period_end"]), "page": True})
     if waitlist:
         core = ((waitlist.get(CORE) or {}).get("trailing_4wk") or {}).get("yoy_pct")
@@ -358,6 +359,26 @@ def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, op
             parts.append(f"discard rate {signals['discard_rate']['label']}")
         out.append({"label": "Signals", "text": " · ".join(cap_first(p) for p in parts) + ".", "through": None, "page": False})
     return out
+
+
+def minus_pct(v):
+    """Signed % with a true minus sign, e.g. −7.0% / +1.2%."""
+    return "n/a" if v is None else f"{'+' if v > 0 else '−' if v < 0 else ''}{abs(v):.1f}%"
+
+
+def assemble_digest(top, bullets, headlines, empty_headline_line, dashboard, max_lines):
+    """Slack lines, capped at max_lines. The dashboard link is always kept: when over the cap,
+    headlines are trimmed first (oldest-ranked last), then bullets from the bottom."""
+    fixed = len(top) + 1 + 1  # top lines + "Top headlines" line + dashboard
+    room = max_lines - fixed
+    keep_bullets = bullets[:max(0, room)]
+    room -= len(keep_bullets)
+    kept_heads = headlines[:max(0, room)]
+    if kept_heads:
+        head_block = ["*Top headlines:*"] + kept_heads
+    else:
+        head_block = [empty_headline_line]
+    return top + keep_bullets + head_block + [dashboard]
 
 
 def cap_first(t):
@@ -507,17 +528,11 @@ def main():
     tmdx = prices["tickers"].get("TMDX")
     if tmdx:
         head += f" · TMDX ${tmdx['close']:.2f} ({arrow(tmdx['change_1w_pct'])} 1-wk)"
-    lines = ([f"⚠️ {issue_line}"] if issue_line else []) + [head] + [
-        f"• *{i['label']}:* {i['text']}" + (f" (data through {i['through']})" if i["through"] else "") for i in items]
-    heads = news["top_headlines"]
-    if heads:
-        lines.append("*Top headlines:*")
-        lines += [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {fmt_date(h['date'])})" for h in heads]
-    else:
-        lines.append(f"*Top headlines:* {news['none_text']}.")
-    lines.append(f"Dashboard: {SITE_URL}")
-    if len(lines) > MAX_LINES:  # drop the dashboard link first, then the last headline(s)
-        lines = [l for l in lines if not l.startswith("Dashboard:")][:MAX_LINES]
+    top_lines = ([f"⚠️ {issue_line}"] if issue_line else []) + [head]
+    bullet_lines = [f"• *{i['label']}:* {i['text']}" + (f" (data through {i['through']})" if i["through"] else "") for i in items]
+    head_lines = [f"  – <{h['url']}|{h['headline']}> ({h['source']}, {fmt_date(h['date'])})" for h in news["top_headlines"]]
+    lines = assemble_digest(top_lines, bullet_lines, head_lines, f"*Top headlines:* {news['none_text']}.",
+                            f"Dashboard: {SITE_URL}", MAX_LINES)
 
     summary = {
         "generated_at": now.isoformat(timespec="seconds"),

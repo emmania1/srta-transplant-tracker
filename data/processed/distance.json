@@ -2,7 +2,7 @@
   "title": "Deceased-donor transplants by donor-to-center distance band",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-10-26T01:05:22+00:00",
+  "ingested_at": "2026-10-27T20:34:21+00:00",
   "period_end": "2026-09-30",
   "data_as_of": "2026-10-12",
   "current_year": 2026,
@@ -52,6 +52,7 @@
           "500+": 12.4
         },
         "long_share_pct": 47.7,
+        "est_avg_nm": 277.4,
         "bands_cover_total": true
       },
       "2020": {
@@ -72,6 +73,7 @@
           "500+": 11.8
         },
         "long_share_pct": 45.0,
+        "est_avg_nm": 273.8,
         "bands_cover_total": true
       },
       "2021": {
@@ -92,6 +94,7 @@
           "500+": 12.4
         },
         "long_share_pct": 49.3,
+        "est_avg_nm": 287.2,
         "bands_cover_total": true
       },
       "2022": {
@@ -112,6 +115,7 @@
           "500+": 12.8
         },
         "long_share_pct": 50.1,
+        "est_avg_nm": 290.6,
         "bands_cover_total": true
       },
       "2023": {
@@ -132,6 +136,7 @@
           "500+": 14.7
         },
         "long_share_pct": 53.4,
+        "est_avg_nm": 305.4,
         "bands_cover_total": true
       },
       "2024": {
@@ -152,6 +157,7 @@
           "500+": 15.9
         },
         "long_share_pct": 56.6,
+        "est_avg_nm": 317.5,
         "bands_cover_total": true
       },
       "2025": {
@@ -172,6 +178,7 @@
           "500+": 16.5
         },
         "long_share_pct": 57.5,
+        "est_avg_nm": 322.4,
         "bands_cover_total": true
       },
       "2026": {
@@ -192,6 +199,7 @@
           "500+": 15.4
         },
         "long_share_pct": 57.0,
+        "est_avg_nm": 318.1,
         "bands_cover_total": true
       }
     },
@@ -214,6 +222,7 @@
           "500+": 7.3
         },
         "long_share_pct": 21.4,
+        "est_avg_nm": 179.6,
         "bands_cover_total": true
       },
       "2020": {
@@ -234,6 +243,7 @@
           "500+": 5.1
         },
         "long_share_pct": 31.4,
+        "est_avg_nm": 205.8,
         "bands_cover_total": true
       },
       "2021": {
@@ -254,6 +264,7 @@
           "500+": 4.6
         },
         "long_share_pct": 32.7,
+        "est_avg_nm": 208.4,
         "bands_cover_total": true
       },
       "2022": {
@@ -274,6 +285,7 @@
           "500+": 4.5
         },
         "long_share_pct": 32.8,
+        "est_avg_nm": 207.9,
         "bands_cover_total": true
       },
       "2023": {
@@ -294,6 +306,7 @@
           "500+": 5.6
         },
         "long_share_pct": 33.0,
+        "est_avg_nm": 211.9,
         "bands_cover_total": true
       },
       "2024": {
@@ -314,6 +327,7 @@
           "500+": 5.3
         },
         "long_share_pct": 31.4,
+        "est_avg_nm": 206.5,
         "bands_cover_total": true
       },
       "2025": {
@@ -334,6 +348,7 @@
           "500+": 5.7
         },
         "long_share_pct": 29.6,
+        "est_avg_nm": 200.8,
         "bands_cover_total": true
       },
       "2026": {
@@ -354,6 +369,7 @@
           "500+": 5.4
         },
         "long_share_pct": 27.9,
+        "est_avg_nm": 194.9,
         "bands_cover_total": true
       }
     },
@@ -376,6 +392,7 @@
           "500+": 10.3
         },
         "long_share_pct": 25.8,
+        "est_avg_nm": 223.4,
         "bands_cover_total": true
       },
       "2020": {
@@ -396,6 +413,7 @@
           "500+": 12.8
         },
         "long_share_pct": 31.0,
+        "est_avg_nm": 242.6,
         "bands_cover_total": true
       },
       "2021": {
@@ -416,6 +434,7 @@
           "500+": 14.7
         },
         "long_share_pct": 31.6,
+        "est_avg_nm": 249.6,
         "bands_cover_total": true
       },
       "2022": {
@@ -436,6 +455,7 @@
           "500+": 14.4
         },
         "long_share_pct": 33.1,
+        "est_avg_nm": 254.2,
         "bands_cover_total": true
       },
       "2023": {
@@ -456,6 +476,7 @@
           "500+": 35.0
         },
         "long_share_pct": 57.8,
+        "est_avg_nm": 380.0,
         "bands_cover_total": true
       },
       "2024": {
@@ -476,6 +497,7 @@
           "500+": 45.9
         },
         "long_share_pct": 69.5,
+        "est_avg_nm": 444.3,
         "bands_cover_total": true
       },
       "2025": {
@@ -496,6 +518,7 @@
           "500+": 49.3
         },
         "long_share_pct": 71.2,
+        "est_avg_nm": 461.2,
         "bands_cover_total": true
       },
       "2026": {
@@ -516,6 +539,7 @@
           "500+": 42.4
         },
         "long_share_pct": 67.6,
+        "est_avg_nm": 428.7,
         "bands_cover_total": true
       }
     },
@@ -538,6 +562,7 @@
           "500+": 13.1
         },
         "long_share_pct": 22.5,
+        "est_avg_nm": 198.7,
         "bands_cover_total": true
       },
       "2020": {
@@ -558,6 +583,7 @@
           "500+": 11.0
         },
         "long_share_pct": 20.7,
+        "est_avg_nm": 187.3,
         "bands_cover_total": true
       },
       "2021": {
@@ -578,6 +604,7 @@
           "500+": 9.8
         },
         "long_share_pct": 15.7,
+        "est_avg_nm": 184.7,
         "bands_cover_total": true
       },
       "2022": {
@@ -598,6 +625,7 @@
           "500+": 10.0
         },
         "long_share_pct": 15.4,
+        "est_avg_nm": 186.1,
         "bands_cover_total": true
       },
       "2023": {
@@ -618,6 +646,7 @@
           "500+": 11.6
         },
         "long_share_pct": 17.3,
+        "est_avg_nm": 197.4,
         "bands_cover_total": true
       },
       "2024": {
@@ -638,6 +667,7 @@
           "500+": 11.8
         },
         "long_share_pct": 17.8,
+        "est_avg_nm": 199.4,
         "bands_cover_total": true
       },
       "2025": {
@@ -658,6 +688,7 @@
           "500+": 12.6
         },
         "long_share_pct": 18.6,
+        "est_avg_nm": 204.3,
         "bands_cover_total": true
       },
       "2026": {
@@ -678,10 +709,19 @@
           "500+": 12.7
         },
         "long_share_pct": 19.0,
+        "est_avg_nm": 206.7,
         "bands_cover_total": true
       }
     }
   },
+  "band_midpoints_nm": {
+    "0\u2013150": 75,
+    "151\u2013200": 175,
+    "201\u2013250": 225,
+    "251\u2013500": 375,
+    "500+": 700
+  },
+  "est_avg_note": "Estimated average distance: each transplant counted at its band's midpoint (0\u2013150\u219275, 151\u2013200\u2192175, 201\u2013250\u2192225, 251\u2013500\u2192375, 500+\u2192700 NM). An estimate: OPTN publishes bands, not exact distances, and 500+ is open-ended.",
   "raw_file": "2026-10-19_optn_national_centers_heart_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_heart_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_donors_dcd_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_state_all_thru-2026-09-30.csv",
   "snapshot_downloaded": "2026-10-19",
   "parser": "optn_national_data",

@@ -377,6 +377,15 @@ function renderDistance(d) {
   }).join("");
   $("dist-body").innerHTML = `
     <p class="note">Share of deceased-donor transplants by distance from donor hospital to transplant center, ${cy} year to date vs. full-year ${py}. The label on each bar is the 251+ NM share.</p>
+    <h4 class="sub-head">Estimated average distance, ${cy} YTD vs. ${py}</h4>
+    <div class="stat-row">${["heart", "liver", "lung"].map((o) => {
+      const c = d.organs[o][cy].est_avg_nm, p = d.organs[o][py].est_avg_nm;
+      const ch = c != null && p ? Math.round(1000 * (c / p - 1)) / 10 : null;
+      return `<div class="stat"><div class="kpi-label">${cap(o)}, est. average</div><div class="kpi">${c == null ? "n/a" : Math.round(c).toLocaleString("en-US")} <span class="kpi-unit">NM</span></div>
+        <div class="sub">${p == null ? "n/a" : Math.round(p).toLocaleString("en-US")} NM in ${py} · ${yoy(ch)}</div></div>`;
+    }).join("")}</div>
+    <p class="note">${esc(d.est_avg_note || "")}</p>
+    <h4 class="sub-head">Share by distance band</h4>
     <div class="chart-wrap tall"><canvas id="dist-chart" aria-label="Distance band shares by organ"></canvas></div>
     <details class="table-view"><summary>Show all 5 distance bands as a table</summary><div class="scroll-x"><table class="dist-table">
       <thead><tr><th>Organ</th><th>Period</th>${bands.map((b) => `<th>${esc(b)} NM</th>`).join("")}<th>251+ NM</th></tr></thead>

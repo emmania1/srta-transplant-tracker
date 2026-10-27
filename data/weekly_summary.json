@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T01:05:22+00:00",
+  "generated_at": "2026-10-27T20:34:48+00:00",
   "price": {
     "close": 4.66,
     "date": "2026-10-23",
@@ -858,7 +858,26 @@
         "prior": 18.6,
         "change_pts": 0.4
       }
-    }
+    },
+    "est_avg_nm": {
+      "heart": {
+        "current": 318.1,
+        "prior": 322.4,
+        "change_pct": -1.3
+      },
+      "liver": {
+        "current": 194.9,
+        "prior": 200.8,
+        "change_pct": -2.9
+      },
+      "lung": {
+        "current": 428.7,
+        "prior": 461.2,
+        "change_pct": -7.0
+      }
+    },
+    "current_year": 2026,
+    "prior_year": 2025
   },
   "regions": {
     "data_as_of": "2026-10-26",
@@ -1215,10 +1234,10 @@
     "yoy_note": "True YoY appears once a snapshot through 2025-09-30 exists; snapshots are saved monthly from 2026-08-31."
   },
   "news": {
-    "new_items_7d": 18,
+    "new_items_7d": 17,
     "by_category": {
       "strata": 1,
-      "volumes": 5,
+      "volumes": 4,
       "opo_regulation": 0,
       "competitors": 12,
       "tech_logistics": 0,
@@ -1264,26 +1283,6 @@
         "tags": [
           "volumes"
         ]
-      },
-      {
-        "headline": "Reps advance bill to regulate organ donation, ban trafficking",
-        "source": "Businessday NG",
-        "date": "2026-10-21",
-        "url": "https://businessday.ng/news/article/reps-advance-bill-to-regulate-organ-donation-ban-organ-trafficking/",
-        "google_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcFJtZ3FTZEVOdnRpcHp1YTJ1VFlvQ3hCaFB3bm9GRnhhRkxyb0JHX2ZvNlBmS3JoYy1oNmhhcGphaEdsdmRtZlpKeWExbTg0Vkh1YzloRlpHWkRLaThaSmk5TTd0cDg3RUwxcjM0VXBXZm56TjA1c1RQUWhxR1NlWnd1NlRtd3ZpdHRiQTU0dzdIOF9vRk1wdzc3ak5NbFpaZWVqMEFR0gGrAUFVX3lxTE03TW9TTV9WanlmcHNJQ3hGSnpmNy12eU9lREJ3ZE9HSktCWGo0RHZhYXhzUjJpczVJaHZadkx0S21EaHB6SUt5dXRfTjM1T0gwNkhpOVlRLVVkd0hPOFdvZkFwOXZCVEVjdnJOTWJuTFpuWVZ3TTNsQ0xqS1NjMVRjU1o4T1pTcWtybS1PZDZiLVNFRE12Z1ZlQm43MldKNXBHeFdGdlFsOXFYSQ?oc=5",
-        "tags": [
-          "volumes"
-        ]
-      },
-      {
-        "headline": "\"Unos minutos antes,\" a painting by Jos\u00e9 Gamarra",
-        "source": "Harper's Magazine",
-        "date": "2026-10-21",
-        "url": "https://harpers.org/gallery-posts/unos-minutos-antes-a-painting-by-jose-gamarra/",
-        "google_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOGgxNW5BMkpFNWdwd09VbC1Hd3VQaWhiUDYxRmFWcVowTEcyVVVMZGp2SmVDTVZYQlM1YnhxSDZRZDVBZVRvRXJBeTJ0N2JYSjBVRHZCUmFKYnJBTGdPVEtOMnMxNlZZZV9MYU9LZlNGUGRzVjV1cXF5azVsVjBPX1FURmVISE0?oc=5",
-        "tags": [
-          "volumes"
-        ]
       }
     ],
     "none_text": null,
@@ -1294,7 +1293,7 @@
     "Volumes: Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%.",
     "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
     "Donors: Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier).",
-    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%).",
     "Waitlist: Heart+liver+lung waitlist additions rose (+2.3%) over the last 4 weeks vs. last year; by organ, heart and lung rose 3.5% and 3.2%; liver was roughly flat (+1.6%); kidney fell 3.9%.",
     "Regions: biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%."
   ],
@@ -1302,7 +1301,7 @@
     "Volumes: Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%.",
     "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
     "Donors: Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier).",
-    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%).",
     "Waitlist: Heart+liver+lung waitlist additions rose (+2.3%) over the last 4 weeks vs. last year; by organ, heart and lung rose 3.5% and 3.2%; liver was roughly flat (+1.6%); kidney fell 3.9%.",
     "Regions: biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%."
   ],
@@ -1327,7 +1326,7 @@
     },
     {
       "label": "Donor mix & distance",
-      "text": "DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest.",
+      "text": "DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%).",
       "through": "Sep 30, 2026",
       "page": true
     },
@@ -1587,13 +1586,13 @@
     "note": "Calendar quarters (Jan 1\u2013Mar 31 etc.). OPTN weeks don't line up with quarter ends, so a week that straddles a boundary is split by days (its count spread evenly over its 7 days). Typical seasonal change = average of the same quarter-over-quarter change in the prior 3 years. Recent weeks may be revised up as centers finish reporting."
   },
   "core_label": "Heart + liver + lung (Strata's core flying organs)",
-  "news_line": "18 new news items this week \u2014 Strata 1, Transplant volumes / donation 5, Competitors & industry 12.",
+  "news_line": "17 new news items this week \u2014 Strata 1, Transplant volumes / donation 4, Competitors & industry 12.",
   "markdown_lines": [
-    "*SRTA Transplant Tracker \u2014 week of Oct 26, 2026* \u00b7 SRTA $4.66 (\u25b2 2.6% 1-wk) \u00b7 TMDX $70.74 (\u25bc 0.1% 1-wk)",
+    "*SRTA Transplant Tracker \u2014 week of Oct 27, 2026* \u00b7 SRTA $4.66 (\u25b2 2.6% 1-wk) \u00b7 TMDX $70.74 (\u25bc 0.1% 1-wk)",
     "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%. (data through Oct 14, 2026)",
     "\u2022 *Quarter:* Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%). (data through Sep 30, 2026)",
     "\u2022 *Donors:* Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier). (data through Oct 7, 2026)",
-    "\u2022 *Donor mix & distance:* DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; the share of organs travelling 251+ NM fell for liver and lung and held steady for the rest. (data through Sep 30, 2026)",
+    "\u2022 *Donor mix & distance:* DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%). (data through Sep 30, 2026)",
     "\u2022 *Waitlist:* Heart+liver+lung waitlist additions rose (+2.3%) over the last 4 weeks vs. last year; by organ, heart and lung rose 3.5% and 3.2%; liver was roughly flat (+1.6%); kidney fell 3.9%. (data through Oct 14, 2026)",
     "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%. (data through Oct 14, 2026)",
     "\u2022 *Signals:* Volumes up for heart+liver+lung, liver and lung; flat for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",
@@ -1601,6 +1600,6 @@
     "  \u2013 <https://tradersunion.com/news/companies/show/3916825-blade-september-record-growth/|Blade Air Mobility passenger count rises 10 percent to over 11,000 in September> (Traders Union, Oct 21, 2026)",
     "  \u2013 <https://www.agenzianova.com/en/news/Sardinia%3A-New-multi-organ-donation-at-the-Duilio-Casula-Polyclinic-in-2026--a-500-percent-increase./|Sardinia: New multi-organ donation at the Duilio Casula Polyclinic, with a 500 percent increase in 2026.> (Agenzia Nova, Oct 23, 2026)",
     "  \u2013 <https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4680D2:0/|Metrovacesa registra unos ingresos de 465 millones de euros en los primeros nueve meses> (TradingView, Oct 22, 2026)",
-    "  \u2013 <https://businessday.ng/news/article/reps-advance-bill-to-regulate-organ-donation-ban-organ-trafficking/|Reps advance bill to regulate organ donation, ban trafficking> (Businessday NG, Oct 21, 2026)"
+    "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
   ]
 }

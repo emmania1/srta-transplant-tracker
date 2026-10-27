@@ -30,6 +30,14 @@ BANDS = [  # (OPTN label prefix, display label)
     ("500+ Nautical Miles", "500+"),
 ]
 LONG_BANDS = ["251–500", "500+"]
+# Band midpoints (NM) for the ESTIMATED average distance; 500+ is open-ended, so 700 is an assumption.
+BAND_MIDPOINTS = {"0–150": 75, "151–200": 175, "201–250": 225, "251–500": 375, "500+": 700}
+
+
+def est_avg_nm(bands):
+    """Estimated average distance (NM) = band counts weighted by band midpoints; None if no known-band transplants."""
+    known = sum(bands.values())
+    return round(sum(BAND_MIDPOINTS[b] * n for b, n in bands.items()) / known, 1) if known else None
 
 
 def snapshots(national_dir):
@@ -100,7 +108,11 @@ def build_distance(snap):
     info = period_info(snap["meta"])
     years = list(range(FIRST_YEAR, info["current_year"] + 1))
     out = {**info, "years": years, "band_order": [b[1] for b in BANDS], "long_bands": LONG_BANDS,
-           "units": "nautical miles, donor hospital to transplant center", "organs": {}}
+           "units": "nautical miles, donor hospital to transplant center", "organs": {},
+           "band_midpoints_nm": BAND_MIDPOINTS,
+           "est_avg_note": ("Estimated average distance: each transplant counted at its band's midpoint "
+                            "(0–150→75, 151–200→175, 201–250→225, 251–500→375, 500+→700 NM). "
+                            "An estimate: OPTN publishes bands, not exact distances, and 500+ is open-ended.")}
     for o in ORGANS:
         t = table(snap["files"][f"tx_distance_{o}"])
         per_year = {}
@@ -113,6 +125,7 @@ def build_distance(snap):
                 # shares over transplants with a known band; flagged if the bands don't cover the total
                 "shares_pct": {b: pct(n, known) for b, n in bands.items()},
                 "long_share_pct": pct(sum(bands[b] for b in LONG_BANDS), known),
+                "est_avg_nm": est_avg_nm(bands),
                 "bands_cover_total": known == total,
             }
         out["organs"][o] = per_year

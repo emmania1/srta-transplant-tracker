@@ -233,7 +233,7 @@
     "primary_days": 7,
     "fallback_days": 14,
     "min_items": 3,
-    "max_items": 5,
+    "max_items": 3,
     "angle_terms": [
       "strata",
       "srta",

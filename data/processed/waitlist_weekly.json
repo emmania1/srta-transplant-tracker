@@ -2,7 +2,7 @@
   "title": "Weekly waitlist additions by organ (national)",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-26T01:05:22+00:00",
+  "ingested_at": "2026-10-27T20:34:21+00:00",
   "organs": {
     "all": [
       {
