@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:52:18+00:00",
+  "generated_at": "2026-10-27T21:49:33+00:00",
   "price": {
     "close": 4.66,
     "date": "2026-10-23",
@@ -1291,22 +1291,28 @@
   },
   "issue_line": null,
   "bullets": [
+    "Flying demand: est. organ-miles roughly flat (+0.1%) YTD: volume +4.4%, but est. avg distance \u22124.2% (lung \u22127.0%, liver \u22122.9%, heart \u22121.3%).",
     "Volumes: Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%.",
     "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
-    "Donors: Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier).",
-    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%).",
+    "Donors: Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier). DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025.",
     "Waitlist: Heart+liver+lung waitlist additions rose (+2.3%) over the last 4 weeks vs. last year; by organ, heart and lung rose 3.5% and 3.2%; liver was roughly flat (+1.6%); kidney fell 3.9%.",
     "Regions: biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%."
   ],
   "this_week": [
+    "Flying demand: est. organ-miles roughly flat (+0.1%) YTD: volume +4.4%, but est. avg distance \u22124.2% (lung \u22127.0%, liver \u22122.9%, heart \u22121.3%).",
     "Volumes: Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%.",
     "Quarter: Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%).",
-    "Donors: Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier).",
-    "Donor mix & distance: DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%).",
+    "Donors: Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier). DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025.",
     "Waitlist: Heart+liver+lung waitlist additions rose (+2.3%) over the last 4 weeks vs. last year; by organ, heart and lung rose 3.5% and 3.2%; liver was roughly flat (+1.6%); kidney fell 3.9%.",
     "Regions: biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%."
   ],
   "this_week_items": [
+    {
+      "label": "Flying demand",
+      "text": "est. organ-miles roughly flat (+0.1%) YTD: volume +4.4%, but est. avg distance \u22124.2% (lung \u22127.0%, liver \u22122.9%, heart \u22121.3%).",
+      "through": "Sep 30, 2026",
+      "page": true
+    },
     {
       "label": "Volumes",
       "text": "Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%.",
@@ -1321,14 +1327,8 @@
     },
     {
       "label": "Donors",
-      "text": "Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier).",
+      "text": "Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier). DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025.",
       "through": "Oct 7, 2026",
-      "page": true
-    },
-    {
-      "label": "Donor mix & distance",
-      "text": "DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%).",
-      "through": "Sep 30, 2026",
       "page": true
     },
     {
@@ -1586,14 +1586,51 @@
     },
     "note": "Calendar quarters (Jan 1\u2013Mar 31 etc.). OPTN weeks don't line up with quarter ends, so a week that straddles a boundary is split by days (its count spread evenly over its 7 days). Typical seasonal change = average of the same quarter-over-quarter change in the prior 3 years. Recent weeks may be revised up as centers finish reporting."
   },
+  "flying_demand": {
+    "period_end": "2026-09-30",
+    "current_year": 2026,
+    "prior_year": 2025,
+    "weeks": "OPTN weeks 1\u201339",
+    "volume": {
+      "current": 15416,
+      "prior": 14762,
+      "change_pct": 4.4
+    },
+    "distance": {
+      "current": 263.7,
+      "prior": 275.2,
+      "change_pct": -4.2,
+      "basis": "2026 YTD vs full-year 2025"
+    },
+    "organ_miles_change_pct": 0.1,
+    "direction": "roughly flat",
+    "distance_by_organ": {
+      "heart": {
+        "current": 318.1,
+        "prior": 322.4,
+        "change_pct": -1.3
+      },
+      "liver": {
+        "current": 194.9,
+        "prior": 200.8,
+        "change_pct": -2.9
+      },
+      "lung": {
+        "current": 428.7,
+        "prior": 461.2,
+        "change_pct": -7.0
+      }
+    },
+    "note": "Est. organ-miles = transplants x estimated average distance. Distance is an estimate from OPTN distance bands (band midpoints), and compares the current year to date with the full prior year because OPTN's distance reports are annual; volume compares the same weeks."
+  },
   "core_label": "Heart + liver + lung (Strata's core flying organs)",
   "news_line": "16 new news items this week \u2014 Transplant volumes / donation 2, OPO & regulation 1, Competitors & industry 14.",
   "markdown_lines": [
     "*SRTA Transplant Tracker \u2014 week of Oct 27, 2026* \u00b7 SRTA $4.66 (\u25b2 2.6% 1-wk) \u00b7 TMDX $70.74 (\u25bc 0.1% 1-wk)",
+    "\u2022 *Flying demand:* est. organ-miles roughly flat (+0.1%) YTD: volume +4.4%, but est. avg distance \u22124.2% (lung \u22127.0%, liver \u22122.9%, heart \u22121.3%). (data through Sep 30, 2026)",
     "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) rose 5.8% over the last 4 weeks vs. last year; by organ, heart and kidney were roughly flat (-1.4%, -1.5%); liver and lung rose 8.3% and 7.3%. (data through Oct 14, 2026)",
     "\u2022 *Quarter:* Q3 heart+liver+lung \u25b2 5.2% YoY; \u25bc 5.8% vs Q2 (typical Q2\u2192Q3: \u25bc 4.2%). (data through Sep 30, 2026)",
-    "\u2022 *Donors:* Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier). (data through Oct 7, 2026)",
-    "\u2022 *Donor mix & distance:* DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025; est. avg distance (2026 YTD vs 2025): lung 429 NM (\u22127.0%), liver 195 NM (\u22122.9%), heart 318 NM (\u22121.3%). (data through Sep 30, 2026)",
+    "\u2022 *Donors:* Deceased donors recovered rose 13.0% over the last 4 weeks vs. last year, and 20.5% of recovered organs have been discarded so far this year (19.6% a year earlier). DCD donors are 53.5% of deceased donors so far this year, up from 49.2% in 2025. (data through Oct 7, 2026)",
     "\u2022 *Waitlist:* Heart+liver+lung waitlist additions rose (+2.3%) over the last 4 weeks vs. last year; by organ, heart and lung rose 3.5% and 3.2%; liver was roughly flat (+1.6%); kidney fell 3.9%. (data through Oct 14, 2026)",
     "\u2022 *Regions:* biggest moves over the last 4 weeks vs. last year: Northwest (Region 6) \u25b2 31.4%, Mid-Atlantic (Region 2) \u25b2 11.0%, New England (Region 1) \u25bc 8.7%. (data through Oct 14, 2026)",
     "\u2022 *Signals:* Volumes up for heart+liver+lung, liver and lung; flat for heart and kidney \u00b7 Long trips (251+ NM) flat for heart and kidney; shorter for liver and lung \u00b7 DCD share rising \u00b7 Discard rate rising.",

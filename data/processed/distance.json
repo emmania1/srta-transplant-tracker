@@ -2,7 +2,7 @@
   "title": "Deceased-donor transplants by donor-to-center distance band",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-10-27T20:34:21+00:00",
+  "ingested_at": "2026-10-27T21:49:09+00:00",
   "period_end": "2026-09-30",
   "data_as_of": "2026-10-12",
   "current_year": 2026,
@@ -722,6 +722,97 @@
     "500+": 700
   },
   "est_avg_note": "Estimated average distance: each transplant counted at its band's midpoint (0\u2013150\u219275, 151\u2013200\u2192175, 201\u2013250\u2192225, 251\u2013500\u2192375, 500+\u2192700 NM). An estimate: OPTN publishes bands, not exact distances, and 500+ is open-ended.",
+  "hll": {
+    "2019": {
+      "bands": {
+        "0\u2013150": 7941,
+        "151\u2013200": 1318,
+        "201\u2013250": 1198,
+        "251\u2013500": 2854,
+        "500+": 1327
+      },
+      "total": 14638,
+      "est_avg_nm": 211.4
+    },
+    "2020": {
+      "bands": {
+        "0\u2013150": 6784,
+        "151\u2013200": 1337,
+        "201\u2013250": 1412,
+        "251\u2013500": 3896,
+        "500+": 1183
+      },
+      "total": 14612,
+      "est_avg_nm": 229.2
+    },
+    "2021": {
+      "bands": {
+        "0\u2013150": 6689,
+        "151\u2013200": 1423,
+        "201\u2013250": 1387,
+        "251\u2013500": 4269,
+        "500+": 1241
+      },
+      "total": 15009,
+      "est_avg_nm": 235.3
+    },
+    "2022": {
+      "bands": {
+        "0\u2013150": 6909,
+        "151\u2013200": 1527,
+        "201\u2013250": 1412,
+        "251\u2013500": 4569,
+        "500+": 1311
+      },
+      "total": 15728,
+      "est_avg_nm": 237.4
+    },
+    "2023": {
+      "bands": {
+        "0\u2013150": 7260,
+        "151\u2013200": 1472,
+        "201\u2013250": 1367,
+        "251\u2013500": 5181,
+        "500+": 2292
+      },
+      "total": 17572,
+      "est_avg_nm": 265.0
+    },
+    "2024": {
+      "bands": {
+        "0\u2013150": 7590,
+        "151\u2013200": 1490,
+        "201\u2013250": 1370,
+        "251\u2013500": 5484,
+        "500+": 2832
+      },
+      "total": 18766,
+      "est_avg_nm": 275.9
+    },
+    "2025": {
+      "bands": {
+        "0\u2013150": 8292,
+        "151\u2013200": 1478,
+        "201\u2013250": 1378,
+        "251\u2013500": 5417,
+        "500+": 3147
+      },
+      "total": 19712,
+      "est_avg_nm": 275.2
+    },
+    "2026": {
+      "bands": {
+        "0\u2013150": 6743,
+        "151\u2013200": 1197,
+        "201\u2013250": 1089,
+        "251\u2013500": 4202,
+        "500+": 2185
+      },
+      "total": 15416,
+      "est_avg_nm": 263.7
+    }
+  },
+  "hll_label": "Heart + liver + lung (Strata's core flying organs)",
   "raw_file": "2026-10-19_optn_national_centers_heart_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_heart_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_donors_dcd_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_state_all_thru-2026-09-30.csv",
   "snapshot_downloaded": "2026-10-19",
   "parser": "optn_national_data",

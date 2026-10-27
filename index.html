@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SRTA Transplant Tracker</title>
-  <link rel="stylesheet" href="style.css?v=2026-10-27a" />
+  <link rel="stylesheet" href="style.css?v=2026-10-27b" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -52,6 +52,16 @@
       <div class="health-banner" id="health-banner" hidden role="alert"></div>
 
       <h2 class="sec-title"><span class="num">1</span>Snapshot</h2>
+
+      <article class="panel" id="p-fly">
+        <header class="panel-head">
+          <h3>Flying demand: heart + liver + lung</h3>
+          <p class="why">Why it matters for SRTA: organ-miles (transplants × distance) is the closest public proxy for Strata's flight hours.</p>
+        </header>
+        <div class="stat-row" id="fly-tiles"></div>
+        <p class="note" id="fly-note"></p>
+        <footer class="src" id="src-fly"></footer>
+      </article>
 
       <article class="panel" id="p-signals">
         <header class="panel-head">
@@ -295,6 +305,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026-10-27a"></script>
+  <script src="app.js?v=2026-10-27b"></script>
 </body>
 </html>

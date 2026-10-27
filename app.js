@@ -133,6 +133,25 @@ function renderSignals(summary) {
     `<div class="sig-row"><div class="sig-head"><strong>${h}</strong><span class="muted">${basis}</span></div><div class="sig-chips">${chips}</div></div>`).join("");
 }
 
+// Flying demand KPI tiles (heart + liver + lung), computed in build_digest.py
+function renderFlying(summary) {
+  const f = summary.flying_demand;
+  if (!f) { $("fly-tiles").innerHTML = awaiting("Flying demand", "OPTN distance and weekly data"); return; }
+  const sgn = (v) => (v == null ? "n/a" : `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(1)}%`);
+  const om = f.organ_miles_change_pct;
+  const omCls = f.direction === "roughly flat" ? "flat" : om > 0 ? "up" : "down";
+  const by = Object.entries(f.distance_by_organ).map(([o, x]) => `${cap(o)} ${Math.round(x.current)} NM (${sgn(x.change_pct)})`).join(" · ");
+  $("fly-tiles").innerHTML = `
+    <div class="stat"><div class="kpi-label">Est. organ-miles, YTD vs. last year</div>
+      <div class="kpi"><span class="${omCls}">${sgn(om)}</span></div><div class="sub">${esc(f.direction)}: volume × distance</div></div>
+    <div class="stat"><div class="kpi-label">Transplants, YTD vs. same weeks last year</div>
+      <div class="kpi">${yoy(f.volume.change_pct)}</div><div class="sub">${fmtInt(f.volume.current)} vs. ${fmtInt(f.volume.prior)} transplants</div></div>
+    <div class="stat"><div class="kpi-label">Est. average distance, ${f.current_year} YTD vs. ${f.prior_year}</div>
+      <div class="kpi">${yoy(f.distance.change_pct)}</div><div class="sub">${f.distance.current.toFixed(1)} vs. ${f.distance.prior.toFixed(1)} NM · ${esc(by)}</div></div>`;
+  $("fly-note").textContent = `Est. organ-miles change = (1 + volume change) × (1 + distance change) − 1. Distance is an estimate from OPTN's distance bands (each transplant counted at its band's midpoint), and the ${f.prior_year} comparison is full-year ${f.prior_year}, because OPTN's distance data is annual and offers no month or quarter breakdown. Volume compares the same weeks (${f.weeks}). "Roughly flat" means within ±2%.`;
+  srcLine("src-fly", { name: "OPTN national data reports (distance) and OPTN metrics dashboard (volume)", cadence: "weekly / monthly", tag: "Live", through: fmtDate(f.period_end) });
+}
+
 // "This week": the same plain-English sentences and headlines as summary/latest.md (built in build_digest.py)
 function renderThisWeek(summary) {
   const items = (summary.this_week_items || []).filter((i) => i.page);
@@ -781,6 +800,7 @@ function trackActiveSection() {
   const run = (fn) => { try { fn(); } catch (e) { console.error(e); } }; // one broken panel never blanks the page
   run(() => renderHealth(F.health));
   run(() => renderHeader(summary, F.price));
+  run(() => renderFlying(summary));
   run(() => renderSignals(summary));
   run(() => renderThisWeek(summary));
   run(() => renderVolumes(summary, F.transplants_weekly));

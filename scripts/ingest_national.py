@@ -129,6 +129,14 @@ def build_distance(snap):
                 "bands_cover_total": known == total,
             }
         out["organs"][o] = per_year
+    # heart + liver + lung pooled: band counts summed across the three organs, then the same midpoint estimate
+    hll = {}
+    for y in map(str, years):
+        bands = {b: sum(out["organs"][o][y]["bands"][b] for o in HLL_ORGANS) for b in out["band_order"]}
+        hll[y] = {"bands": bands, "total": sum(out["organs"][o][y]["total"] for o in HLL_ORGANS),
+                  "est_avg_nm": est_avg_nm(bands)}
+    out["hll"] = hll
+    out["hll_label"] = "Heart + liver + lung (Strata's core flying organs)"
     return out
 
 
@@ -178,6 +186,7 @@ def build_location(snaps):
 
 
 CENTER_ORGANS = ["heart", "liver", "lung"]
+HLL_ORGANS = ("heart", "liver", "lung")
 TOP_N = 25
 
 

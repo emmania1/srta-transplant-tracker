@@ -272,13 +272,22 @@ def quarterly_block(series):
                      "Recent weeks may be revised up as centers finish reporting.")}
 
 
-def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, optn_ok, new_optn, now, through):
+def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, optn_ok, new_optn, now, through, fly=None):
     """Bullets shared by the page's "This week" box and the Slack digest.
     Each: {label, text, through (date str or None), page (shown on the page; Signals is digest-only
     because the page shows the signal chips)}."""
     out = []
     band = (signals or {}).get("thresholds", {}).get("volumes", {}).get("flat_within_pct", 2)
     lab = lambda v: "flat" if v is None else "up" if v > band else "down" if v < -band else "flat"  # noqa: E731
+    if fly:
+        v, d = fly["volume"]["change_pct"], fly["distance"]["change_pct"]
+        organs = sorted(fly["distance_by_organ"].items(), key=lambda ov: -abs(ov[1]["change_pct"] or 0))
+        by = ", ".join(f"{o} {minus_pct(x['change_pct'])}" for o, x in organs)
+        word = fly["direction"]
+        out.append({"label": "Flying demand",
+                    "text": f"est. organ-miles {word} ({minus_pct(fly['organ_miles_change_pct'])}) YTD: volume {minus_pct(v)}, "
+                            f"{'but' if (v > 0) != (d > 0) else 'and'} est. avg distance {minus_pct(d)} ({by}).",
+                    "through": fmt_date(fly["period_end"]), "page": True})
     if optn_ok and not new_optn:
         out.append({"label": "Data", "text": "No new OPTN weekly data arrived this week, so transplant figures are unchanged.",
                     "through": through.get("weekly"), "page": True})
@@ -304,19 +313,12 @@ def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, op
         if d and d.get("prior_year_discard_rate_pct") is not None:
             t += (f", and {d['discard_rate_pct']:.1f}% of recovered organs have been discarded so far this year "
                   f"({d['prior_year_discard_rate_pct']:.1f}% a year earlier)")
+        if mix:
+            d0 = mix["dcd_share_donors"]
+            prior = d0["current"] - d0["change_pts"]
+            t += (f". DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
+                  f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}")
         out.append({"label": "Donors", "text": t + ".", "through": through.get("donors"), "page": True})
-    if mix:
-        d0 = mix["dcd_share_donors"]
-        prior = d0["current"] - d0["change_pts"]
-        text = (f"DCD donors are {d0['current']:.1f}% of deceased donors so far this year, "
-                f"{'up' if d0['change_pts'] >= 0 else 'down'} from {prior:.1f}% in {mix['prior_label'].replace(' full year', '')}")
-        avg = [(o, v) for o, v in (mix.get("est_avg_nm") or {}).items() if v["current"] is not None]
-        avg.sort(key=lambda ov: -abs(ov[1]["change_pct"] or 0))
-        if avg:
-            parts = ", ".join(f"{o} {v['current']:.0f} NM ({minus_pct(v['change_pct'])})" for o, v in avg)
-            text += f"; est. avg distance ({mix['current_year']} YTD vs {mix['prior_year']}): {parts}"
-        out.append({"label": "Donor mix & distance", "text": text + ".",
-                    "through": fmt_date(mix["period_end"]), "page": True})
     if waitlist:
         core = ((waitlist.get(CORE) or {}).get("trailing_4wk") or {}).get("yoy_pct")
         items = [(o.title(), ((waitlist.get(o) or {}).get("trailing_4wk") or {}).get("yoy_pct"), None) for o in ORGANS]
@@ -361,6 +363,58 @@ def labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, op
             parts.append(f"discard rate {signals['discard_rate']['label']}")
         out.append({"label": "Signals", "text": " · ".join(cap_first(p) for p in parts) + ".", "through": None, "page": False})
     return out
+
+
+FLAT_BAND_PCT = 2.0  # |organ-miles change| below this reads "roughly flat"
+
+
+def organ_miles_change(volume_chg_pct, distance_chg_pct):
+    """Est. organ-miles change (%) = (1 + volume chg) x (1 + distance chg) - 1."""
+    if volume_chg_pct is None or distance_chg_pct is None:
+        return None
+    return round(100 * ((1 + volume_chg_pct / 100) * (1 + distance_chg_pct / 100) - 1), 1)
+
+
+def direction_word(chg_pct, band=FLAT_BAND_PCT):
+    if chg_pct is None:
+        return "n/a"
+    return "roughly flat" if abs(chg_pct) < band else "up" if chg_pct > 0 else "down"
+
+
+def flying_demand(dist_raw, tw):
+    """Heart + liver + lung: est. organ-miles change, YTD through distance.json's period_end.
+    Volume: hll weekly counts with week_end <= period_end vs the same OPTN weeks last year.
+    Distance: pooled band-midpoint estimate, current YTD vs prior full year (OPTN reports are annual)."""
+    if dist_raw.get("status") != "ok" or not dist_raw.get("hll") or tw.get("status") != "ok":
+        return None
+    end = dist_raw["period_end"]
+    cy, py = str(dist_raw["current_year"]), str(dist_raw["prior_year"])
+    rows = (tw.get("organs") or {}).get("hll") or []
+    cur = [r for r in rows if r["yr"] == int(cy) and r["week_end"] <= end]
+    weeks = {r["week"] for r in cur}
+    prior = [r for r in rows if r["yr"] == int(py) and r["week"] in weeks]
+    if not cur or len(prior) != len(cur):
+        return None
+    vol_c, vol_p = sum(r["count"] for r in cur), sum(r["count"] for r in prior)
+    d_c, d_p = dist_raw["hll"][cy]["est_avg_nm"], dist_raw["hll"][py]["est_avg_nm"]
+    vol_chg = round(100 * (vol_c / vol_p - 1), 1)
+    # keep the unrounded distance change for the organ-miles product, round only for display
+    d_chg_exact = 100 * (d_c / d_p - 1)
+    om = organ_miles_change(100 * (vol_c / vol_p - 1), d_chg_exact)
+    by_organ = {}
+    for o in ("heart", "liver", "lung"):
+        c, p = dist_raw["organs"][o][cy].get("est_avg_nm"), dist_raw["organs"][o][py].get("est_avg_nm")
+        by_organ[o] = {"current": c, "prior": p, "change_pct": round(100 * (c / p - 1), 1) if c and p else None}
+    return {"period_end": end, "current_year": int(cy), "prior_year": int(py),
+            "weeks": f"OPTN weeks {min(weeks)}–{max(weeks)}",
+            "volume": {"current": vol_c, "prior": vol_p, "change_pct": vol_chg},
+            "distance": {"current": d_c, "prior": d_p, "change_pct": round(d_chg_exact, 1),
+                         "basis": f"{cy} YTD vs full-year {py}"},
+            "organ_miles_change_pct": om, "direction": direction_word(om),
+            "distance_by_organ": by_organ,
+            "note": ("Est. organ-miles = transplants x estimated average distance. Distance is an estimate from OPTN "
+                     "distance bands (band midpoints), and compares the current year to date with the full prior year "
+                     "because OPTN's distance reports are annual; volume compares the same weeks.")}
 
 
 def minus_pct(v):
@@ -508,11 +562,13 @@ def main():
     }
     if regions is not None:
         regions["names"] = rw_raw.get("region_names", {})
+    fly = None
     if not optn_ok:
         items = [{"label": "Volumes", "text": "awaiting the first OPTN data file, so no transplant figures are loaded yet.",
                   "through": None, "page": True}]
     else:
-        items = labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, optn_ok, new_optn, now, through)
+        fly = flying_demand(load("distance"), tw)
+        items = labelled_bullets(signals, donors, mix, waitlist, sec, quarterly, regions, optn_ok, new_optn, now, through, fly)
     page_items = [i for i in items if i["page"]]
     bullets = [f"{i['label']}: {i['text']}" for i in page_items]
 
@@ -557,6 +613,7 @@ def main():
         "this_week": bullets,
         "this_week_items": items,
         "quarterly": quarterly,
+        "flying_demand": fly,
         "core_label": CORE_LABEL,
         "news_line": news_line,
         "markdown_lines": lines,
