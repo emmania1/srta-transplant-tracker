@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants by organ",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-10-27T21:49:09+00:00",
+  "ingested_at": "2026-11-02T02:12:55+00:00",
   "organs": {
     "all": [
       {
@@ -1383,6 +1383,13 @@
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
         "count": 838
+      },
+      {
+        "yr": 2026,
+        "week": 42,
+        "week_start": "2026-10-15",
+        "week_end": "2026-10-21",
+        "count": 710
       }
     ],
     "heart": [
@@ -2764,6 +2771,13 @@
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
         "count": 93
+      },
+      {
+        "yr": 2026,
+        "week": 42,
+        "week_start": "2026-10-15",
+        "week_end": "2026-10-21",
+        "count": 74
       }
     ],
     "kidney": [
@@ -4145,6 +4159,13 @@
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
         "count": 425
+      },
+      {
+        "yr": 2026,
+        "week": 42,
+        "week_start": "2026-10-15",
+        "week_end": "2026-10-21",
+        "count": 364
       }
     ],
     "liver": [
@@ -5526,6 +5547,13 @@
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
         "count": 248
+      },
+      {
+        "yr": 2026,
+        "week": 42,
+        "week_start": "2026-10-15",
+        "week_end": "2026-10-21",
+        "count": 219
       }
     ],
     "lung": [
@@ -6907,6 +6935,13 @@
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
         "count": 70
+      },
+      {
+        "yr": 2026,
+        "week": 42,
+        "week_start": "2026-10-15",
+        "week_end": "2026-10-21",
+        "count": 51
       }
     ],
     "hll": [
@@ -8288,28 +8323,35 @@
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
         "count": 411
+      },
+      {
+        "yr": 2026,
+        "week": 42,
+        "week_start": "2026-10-15",
+        "week_end": "2026-10-21",
+        "count": 344
       }
     ]
   },
   "excluded_incomplete_weeks": {
     "all": [
-      "2026-W42"
+      "2026-W43"
     ],
     "heart": [
-      "2026-W42"
+      "2026-W43"
     ],
     "kidney": [
-      "2026-W42"
+      "2026-W43"
     ],
     "liver": [
-      "2026-W42"
+      "2026-W43"
     ],
     "lung": [
-      "2026-W42"
+      "2026-W43"
     ]
   },
-  "raw_file": "2026-10-26_optn_metrics_tx_weekly_deceased_all.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_heart.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_liver.csv, 2026-10-26_optn_metrics_tx_weekly_deceased_lung.csv",
-  "data_as_of": "2026-10-26",
+  "raw_file": "2026-11-02_optn_metrics_tx_weekly_deceased_all.csv, 2026-11-02_optn_metrics_tx_weekly_deceased_heart.csv, 2026-11-02_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-11-02_optn_metrics_tx_weekly_deceased_liver.csv, 2026-11-02_optn_metrics_tx_weekly_deceased_lung.csv",
+  "data_as_of": "2026-11-02",
   "parser": "optn_metrics_tx_weekly",
   "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
   "donor_type": "Deceased Donors",

@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-10-27T20:51:58+00:00",
+  "fetched_at": "2026-11-02T02:10:45+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -40,6 +40,106 @@
   ],
   "errors": [],
   "items": [
+    {
+      "headline": "TMDX Investors Have Opportunity to Join TransMedics Group, Inc. Fraud Investigation with SBS Law",
+      "source": "The National Law Review",
+      "date": "2026-11-01T23:02:17+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOFh4QWhZYVA3NnR1LXV1QnU5TUE4a2ludksySlgzTlItU3B0cVZ1bl9FYlRsTzFKb0ZTUThYWTMtZmJVWEN2LUMzRnNOdGF4cVZRczFmZnFoMTVRMlBzVWxoQW5CUzdBbzRBc0t1NlhhTlFHakV3ZHpGYWEwUGpuSHRUdFl6ZDVEamEtbTM3N296S2l5U3FRR1RYUFRJU1JzNEFSRHBoQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://natlawreview.com/press-releases/tmdx-investors-have-opportunity-join-transmedics-group-inc-fraud"
+    },
+    {
+      "headline": "Vice-President Inaugurates National Organ Transplant Games 2026; Calls Organ Donation A \u2018Mahadaan\u2019.",
+      "source": "TRIPURA STAR NEWS",
+      "date": "2026-11-01T11:01:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdXR6aU1fVGJVU2E1NGtEd1E5X1pJT1o3RkM4blVOVnF5LW9YbUFfRDNKUlRBTHpOUWVXbTVhdmUxWUN2YzRGTUVwWlpaUms3b1MxTFVTUktGbG5GMnNyalhuMXRCbXd3d0lNWU0ycUVzSVlzNkV2S0dRM3FJWEZ5djFiLUxYZkhnVTNBby1HbXkwM05KVUY0azRVZm1QZWRKWG5TYi11bXMtdWpESlNvZlY2XzdrUzhLMkRoZVVGTWZxSmhRbXdr?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.tripurastarnews.com/vice-president-inaugurates-national-organ-transplant-games-2026-calls-organ-donation-a-mahadaan/"
+    },
+    {
+      "headline": "Gogo Galileo HDX chosen for 22 TransMedics organ transport aircraft",
+      "source": "Business Jet Interiors",
+      "date": "2026-10-30T21:53:02+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdTlvaEhJU1pSUU1ub2J4a3c2TG1Ga0NUMFhqb2F0NDFmNlQyVWJSMzRydl9sZFNVeVV6eFplWDhSNV9vNm1ENUEyZ0pUYTRicjk2Q2x1cDVtWnpTbXhsTHY1VlFncnQ0Z181SjEtLXMwcWF2UWxrX0w1Yjc5SEN6VExUM2t3ejd4Z0w0djg5bDlFdjgtNmdha1hEZkl3UjJmR1hJN0VuRWxsQVpWX1NvSS1UQk9KcS1PU25xeGo5cDUxTlVMVkVoUkVrSDVidm5tYlo3SDBEMA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.businessjetinteriorsinternational.com/news/ifec-and-cms/gogo-galileo-hdx-chosen-for-22-transmedics-organ-transport-aircraft.html"
+    },
+    {
+      "headline": "TransMedics Reports Inducement Grants Under NASDAQ Listing Rule 5635(c)(4)",
+      "source": "PR Newswire",
+      "date": "2026-10-30T21:05:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaFhqMGJ2QlNBcUJHVEw0M1ZLcG9DdFJCWTJxdWNwTHBXRjFYSnFfQXlNX0pWU3lFSWZPbkZpN0RTU0V4QlU4RnFIMkpHSGhtaDA5TzAyYThNUnF0WWRhQ3dmTS1nU3RobWFXak9zZmVXZjRvYnE2dEh6VGNxemF4b3oyU2xROGNqa3c5OVlGeTNwMURKaXRpR216b0VwbmhsMnBnVndiUGdsaktiTUZob3ZVY3NTVTVveWl2cE0xa0luSTlt?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.prnewswire.com/news-releases/transmedics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-302925310.html"
+    },
+    {
+      "headline": "TMDX Q3'26 Earnings: revenue estimate is 178.05M USD",
+      "source": "TradingView",
+      "date": "2026-10-29T11:00:41+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR0dXRHdxUktGcnJPM25HQUpUZUc1V0FGZGhqb2g5Y3d5WEFuLU04SVgyTko0bkUyVWl0UWJMYXJLZ0pURFBuNF8tM09wSmpvWmVBandpWTJkVkpEa3RQY1NJZnI5VVdmek5lZ1pwUGp5Sm03YndycjJ0TXp1NzhMVjZxQUdDbV9KeDNlVkZSY1FaeEJzQ2ZvanlMOWViUlZGR1Z1Rkg5M1AtY2YzOWVSTmtLVQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.tradingview.com/news/tradingview:14a26f625d9f8:0-tmdx-q3-26-earnings-revenue-estimate-is-178-05m-usd/"
+    },
+    {
+      "headline": "TransMedics Faces A Margin Test As PAD Aviation And Kidney Spending Hit Results",
+      "source": "Finviz",
+      "date": "2026-10-29T02:03:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUF9DRkhBbHIwZzJBdE90c2N2MWdMTVJuMU4tRk5EcDBlU0FQZHphalJkb0I3eGlmdTgtM2REUDl4d2dJZy04bUVucjUycUFVenJtWlBfZ0o0V2Y5dlhid0txd0pCMFg2RE1wV2l4VnA4b0ZZQVZPeVBhR1hHMDRhOVpJbTcwT2NlRnhNN0JVaks1blhScDlPSF9OYXljdEo0Y2NOakVvaGtmLTRoT2hB?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://finviz.com/news/411057/transmedics-faces-a-margin-test-as-pad-aviation-and-kidney-spending-hit-results"
+    },
+    {
+      "headline": "New Jersey family sues organ procurement organization",
+      "source": "CBS News",
+      "date": "2026-10-28T22:07:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQWFYZDZPUnhKUDJZTHVSR3owWXFsN2VIMUc5M0NDOEpkeDRCVFRQODhuMFcxYU1sUk90R3dNRkJidmxGWWxVWktHVk14YTdJWURCQ2Vod19oSDRuZWM0OEk4Z2VtUEpMRXJmdUlQcnd3QmFSU1pYSDg5OExiWmttbERUVnYteFFrVmJaYnhUbDVReS1EcjBF?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.cbsnews.com/newyork/video/new-jersey-family-sues-organ-procurement-organization/"
+    },
+    {
+      "headline": "RFK Jr. plan will stop KY organ donation from preying on us | Opinion",
+      "source": "The Courier-Journal",
+      "date": "2026-10-28T10:03:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMWlHbE5BaXB0eFBMdnJNNnJ0VG45TW84LTM4c1dTbnpGaVBVV1VBYUx4ek80dU41S3VxMzNtWkllRnRJeExzZEtUU3FrbXh1NDg5V0JUU293c2lrWGNMRUpBX2dNcFM4dUQ3NWh3LWlkVVlKRVlkS3hVb19yVnRSVWRRWTgwZ1FvOTNCbWotNEM3V1BYT0VhUVNiTWtaZGx6QVk5d1BZZkFRMkUxQTVIeDVDOFlWYU5lV1lvd0ZaMWVqM2psWXFaZzNjNTNCM3NGRjVZU0ZlMmJ4MnJMeTJPclpocVhSMWlyT3ZjNEYwbERqM09zcXNjX3pXNjlXQQ?oc=5",
+      "tags": [
+        "opinion",
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.courier-journal.com/story/opinion/contributors/2026/10/28/rfk-jr-ky-organ-donation-corruption-safety-task-force-network-for-hope-decertification/92380788007/"
+    },
+    {
+      "headline": "Madison County family raises awareness about safe organ procurement",
+      "source": "WKYT",
+      "date": "2026-10-28T02:49:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX0NrQnNERFh1T1VHeF9sZlF0Z3dNRUVST2hJQlp1SW5PZGFDaE1TUWhvdGVrSmo3OXRkV3U4MnJaZk5XYXU1S3MwVE44MEM2azdZbkhTaWFkUVFETW44dVVWNXhPbjhVd2F5ZzlnWjFCa2o4TEdRVUt5Tnd2VnYzS3RRMTU5anZFUHdZWjg3LUVFX1pzVExlRzBSZkVuYjJ2TnfSAbYBQVVfeXFMTTNsbkY5ZXlRbzZxUGpIVHVZVjRLWEZZODVHNlpraVFDN0pPbE1RLUpUQjlCSlg4R20wUzRBM0I1ajF4T29PQ2NmS3lkYjllQ2V2aVlnSEJDQTBkZWl5TExjNlRFZl92Q1RHc2JCY0kwRHhHa2Z3b0FEbWdyVVEzSnhUVFZZcXFZZlZjMWZaRnJBN3F5cDhIWFV2Mi1ubFB3SHVjVWpZZkFOSXhwOThoVlkwYlVuSGc?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.wkyt.com/2026/10/28/madison-county-family-raises-awareness-about-safe-organ-procurement/"
+    },
     {
       "headline": "Two New Organ Procurement Organization Performance Measures Earn National Endorsement",
       "source": "PR Newswire",
@@ -84,6 +184,28 @@
       ],
       "first_seen": "2026-10-27T20:50:57+00:00",
       "publisher_url": "https://www.miamiherald.com/news/health-care/article317745693.html"
+    },
+    {
+      "headline": "HHS's Kidney Care Plan Puts Hospitals in the Spotlight: A Policy Playbook for Transplant Centers and Donor Hospitals",
+      "source": "JD Supra",
+      "date": "2026-10-26T15:46:40+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWUVzT2ptd2owTGJXcUxER0lxUXVwZWN3ZnRnV2M3bmQwZWdtaUJTSmF1Um1CZjhMSGN5cUx5R015UEJNU19jalJ3cjcxV0JzNHpOX2E2cVFwakEyYjNVT2h1Z25oSjNqNTNfRTd3TmhLYWpvb2p5cEQzZlFRbldlRFFyMVBraFk?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.jdsupra.com/legalnews/hhs-s-kidney-care-plan-puts-hospitals-3685669/"
+    },
+    {
+      "headline": "Strata Critical Medical schedules Q3 2026 earni...",
+      "source": "Pluang",
+      "date": "2026-10-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSEh0bE10ajNDZWlEbVlJbDNPd2dETHA1VUlJTU5hZmxFQ2dtU3dlVHJGRUxHSF9DZ2VmS2tRQWRPQ1FsdEprb1VkUXFPd1BKUG1CQlBpR19YczZZZDhUOHFUcTk3MHNiX0d4ZzlvM21YRWM5OW9UY3VYdjVRTkI0OXBidm5IZ1pVanVmdmt4OWJNUjllUi02LUM4ci1sN09TY2V6THZYY083bkFn?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://pluang.com/en/news-feed/strata-critical-medical-jadwalkan-panggilan-konferensi-laba-kuartal-iii-2026"
     },
     {
       "headline": "Xvivo Perfusion AB (XVIPF) (Q3 2026) Earnings Call Highlights: 32% Organic Growth, Heart Launch ...",
@@ -539,6 +661,17 @@
       "publisher_url": "https://pulse2.com/transmedics-appoints-fernando-araujo-cfo-and-reiterates-737-million-to-757-million-2026-revenue-outlook/"
     },
     {
+      "headline": "TransMedics at 2026 Global Healthcare Conference: growth plan widens",
+      "source": "Investing.com",
+      "date": "2026-09-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeG5jWTk3RmZmQlREdmJnZzRLYmJySzRJM1ZmejFVVTJqNTFWV0pBV2lZUmpWRzNUMHRwUzB2dHhSbFEyMlFtcmhZVGczcVdkVEIwTjJSUDBsN3lhZHlra3d6a3lpMHUtQlJxU2JKZWdYNVBDbkZ4Q0FRb3FmeU8tZkplWkEwNkhDd0tHMGV5LW96QzQ5aU8zV25FZVA3NDV2aFFEMEZfMXhURzdZYTJOT3h0ZE14d0picndtSGwxR28?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.investing.com/news/transcripts/transmedics-at-2026-global-healthcare-conference-growth-plan-widens-93CH-4902075"
+    },
+    {
       "headline": "TransMedics expands logistics network: A look inside the command center managing 30% of transplants",
       "source": "The Business Journals",
       "date": "2026-09-14T07:00:00+00:00",
@@ -683,6 +816,17 @@
       ],
       "first_seen": "2026-10-26T01:02:39+00:00",
       "publisher_url": "https://www.marketscreener.com/news/tmdx-transmedics-expects-full-year-2026-revenue-range-737m-757m-vs-factset-est-of-743-1m-ce785bded08cf225"
+    },
+    {
+      "headline": "TransMedics appoints new finance chief",
+      "source": "TradingView",
+      "date": "2026-09-10T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVGFOd09FZUZuTDVQTW1HNGJaQ2ZPS01aRE0yRGRwSmJ6d1dtV3RBdkJsVjZjX2xRTHhIdDNtNVZCTElyR2p5b2t0NDhOb3dWTGl2akhqbGF5cjU2X05sbDEtRzFBSEVRbkhaOEpTbjRMYWNna1dfTWxQQVFRbE5YQWhhbDRNZHJTTGUzYlhneDVDTEVEc0daeFNrekZzZy1WMzkw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.tradingview.com/news/seekingalpha:e8d512068094b:0-transmedics-appoints-new-finance-chief/"
     },
     {
       "headline": "Eyewitness News Extra: Speaking with CEOs of Rebellion Group and XVIVO Scientific Animation",
@@ -863,6 +1007,17 @@
       "publisher_url": "https://wng.org/opinions/a-national-crisis-of-organ-donor-abuse-1787551358"
     },
     {
+      "headline": "Mark Johnson named CEO of UNOS",
+      "source": "UNOS | United Network for Organ Sharing",
+      "date": "2026-08-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05aTFaeWpCU3Y0bVhkWm5rdDFqUm85d3kzdHVSd1BINGQ5cTdsNGw0MG0xWm12S0hsRlQ4bkNhQWgtUzUza0tIaXFCdjVVbmdPMkx2VVV0VnVUWU83UmR6RVgyZW9QX3cxNlJJZWhqeFFDRW01N096b1kyZWdrZw?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://unos.org/media-resources/releases/mark-johnson-named-ceo-of-unos/"
+    },
+    {
       "headline": "Opinion: Why it is significant HHS decertified an organ procurement organization",
       "source": "Catholic World Report",
       "date": "2026-08-18T18:36:01+00:00",
@@ -885,6 +1040,17 @@
       ],
       "first_seen": "2026-10-07T20:33:41+00:00",
       "publisher_url": "https://www.mintz.com/insights-center/viewpoints/2146/2026-08-18-opo-rule-and-your-hospitals-business-model"
+    },
+    {
+      "headline": "UNOS Staffing Survey provides trusted data for staffing decisions",
+      "source": "UNOS | United Network for Organ Sharing",
+      "date": "2026-08-18T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM2dVVTM3RlA1RFk5b2ZVcTRpUzd5cWpJQ0ZLN0Voek41blpjZ1pYYkNtdFpHYXJPZTg0ZF9oOWJITDYyZFFhVHZBenc0aXZ1eUw5dG0xNGJQeGRWd2ZJMnFJdmNqSWZyNWJNUElCdmd2S084LUNmNG95UVRSQTdGaHZjc2kzRDZOb3YtcTdQUXR4UQ?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://unos.org/news/unos-staffing-survey-provides-trusted-data-for-staffing-decisions/"
     },
     {
       "headline": "TransMedics Group Investigation Initiated: Kahn Swick & Foti, LLC Investigates the Officers and Directors of TransMedics Group, Inc. - TMDX",
@@ -1089,6 +1255,17 @@
       "publisher_url": "https://nypost.com/2026/08/07/us-news/rfk-jr-moves-to-decertify-organ-procurement-company/"
     },
     {
+      "headline": "US\u2019 Network for Hope License Revoked for Attempted Organ Harvest From Living Donors",
+      "source": "The Eastern Herald",
+      "date": "2026-08-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN3QtRmNweDNqdG1SWXpYQkY4MXVMUzVQSm9CQ2djOGdLc1czSldBZTRZNUwteDBSQkxDY25pRlZTSzJlbmFteTlZLWdPMVRYN1VzZ0JURWdTaV9GVnhCT05kQjBuakI4RDRULWVOWXE4cGJ6ZTdsNTQwVTZtZVdhUF9rSnktVlo5NU5DeEZKcWtCNC05aFh2VzJNVEJaN1E?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://easternherald.com/2026/08/07/network-for-hope-license-revoked-organ-harvest-living-donors/"
+    },
+    {
       "headline": "HHS decertifies organ donation organization with office in Cincinnati",
       "source": "WLWT",
       "date": "2026-08-06T07:00:00+00:00",
@@ -1177,6 +1354,17 @@
       ],
       "first_seen": "2026-10-26T01:02:39+00:00",
       "publisher_url": "https://www.iheart.com/content/2026-08-06-rfk-jr-decertifies-kentucky-organ-donation-group/"
+    },
+    {
+      "headline": "US HHS Action Against Kentucky Organ Donation Group Raises Questions About Transplant Safety",
+      "source": "Health and Me",
+      "date": "2026-08-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQT09ueGRqNGRjUHZIZFJUeW9sajJaR0tsMmxXUXl2emVTek1sU1pxWUpZbUtiS1dyM0w5NUozVHE2azkxRHVOSWhvQWRJV2R1dGswZkVhdUdoNEhlWW85LU5La0xEaWdyNVEwX3VHMS1RU1I3OVZkcF9QTlFFMHVsZEtKd1FmaWxOeHphZ203cV9rYlhyNU9qNzZycl9YTzdweXpiSVBOR2NLMlNjZWZxQmpVNEZOYkRaT3Z2ek1FNldSQnhjTVYzSDdXSjl4Q2pwZ3lzbkVXVW1ncnFneEtfSGJmR1k?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.healthandme.com/health-news/us-hhs-action-against-kentucky-organ-donation-group-raises-questions-about-transplant-safety-article-155317054"
     },
     {
       "headline": "HHS Decertifies Kentucky Organ Procurement Organization to Protect Patients, Restore Trust",
@@ -1340,6 +1528,17 @@
       "publisher_url": "https://www.foxnews.com/video/6402884091112"
     },
     {
+      "headline": "TransMedics Stock Dips Post Q2 Earnings Miss, Margins Contract",
+      "source": "Yahoo Finance",
+      "date": "2026-08-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlo2RDl0aVh5QWtFQ3NLOGxDck04ZzM3TlpPelhoUGRCNDBrYTlYYlVUd1F6SXNocnB1TlRMTXdOT21JN3FybTlzbXJJVmM0Z2JHU1NRYzNpZVhLeXpGOFlBd1dENm9aSHJvZjhtcE9yNkZiZGFvbTR2S0JVSVc3eEFhQWttaTNZR2ZlUHdnZmxnN1ktaVE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-stock-dips-post-q2-174200564.html"
+    },
+    {
       "headline": "Strata Critical Medical Q2 Revenue Rises 60.7% to $72.5 Million",
       "source": "Quiver Quantitative",
       "date": "2026-08-04T07:00:00+00:00",
@@ -1495,38 +1694,15 @@
       "publisher_url": "https://247wallst.com/companies/tmdx/"
     },
     {
-      "headline": "TransMedics grants stock options and restricted units to 9 new employees as hiring incentive.",
-      "source": "Pluang",
-      "date": "2026-08-03T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlJPSXBvdUdHNzJxZEpwZFNWdFNNeGttWlVIdTZEakFENHQtRGpNb1ZvRUp0RG5RcC04cE1wajBOcjJxMEMtTFAtdHpVMUdUTHZFRFFwLS1MbG5kQ1pyYjEwZXI4TWNnLVBnVzltRnUxZk10bmhkOEF3SFdCOXBSRWhEUnI5bDh6UEhpWDlOQUF6STFzX0hB?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://pluang.com/en/news-feed/transmedics-laporkan-pemberian-insentif-saham-untuk-karyawan"
-    },
-    {
-      "headline": "Needham cuts TransMedics stock price target on revenue concerns",
+      "headline": "Earnings call transcript: Strata Critical Medical posts Q2 2026 revenue beat",
       "source": "Investing.com",
-      "date": "2026-08-03T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNUVrbXZZX2pucS11cl9OWC1tRkJLSDZNNDZsR1JJUGdiRmtGbU1aaDN6MjYxTjdjRUNVRE8ydkp2eXZyRTIwNkZhSk8zc2ZSR0pUYjZYTUZvUWRnNEcwRmJDNHdzOW03a25rWTd5WFgzNThxN0ppR2Q4ZHdpTW5VN1J5WFJzYUE3Ymx3a01haEwxQ2tKUmRBdGFnTUhrRlptbXV1NzNralY1RV9wczdXV2VLaUt1UUpFYnptWEEwNGI?oc=5",
-      "tags": [
-        "analyst",
-        "competitors"
-      ],
-      "first_seen": "2026-10-12T02:09:48+00:00",
-      "publisher_url": "https://www.investing.com/news/analyst-ratings/needham-cuts-transmedics-stock-price-target-on-revenue-concerns-93CH-4830887"
-    },
-    {
-      "headline": "Strata Critical Medical Inc (SRTA) Q2 2026 Earnings Report Preview: What To Look For",
-      "source": "Yahoo Finance",
-      "date": "2026-08-03T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWTRIVWh4M3loY3Jqb2wzcV8wV2VHQnV6bEEtYXlfWTBWM2p5T0hJdnU1dE02Zm12NmVpdGFiY2h5RDByNF8wOU9HNHdEUU9mZHA1QmVobGxad09IbVZDQTFyLUNHMWlZbThYakRhRTBaY2hZMThWNVpWSXBxREkxbEJEZ3hBem9JOE1XUzM3cHB5YmZkLU5OZUNwemdCQQ?oc=5",
+      "date": "2026-08-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZkFPVnZESkxYSWlMT1NGOEVZRWJTNTEtSWp3SEY5RXNhdHZHU0pTc2YtTXo1TlRrSjN0TDdvVlFLMmtoZEVfQ3A3MGdRTzhYUUlIME1faDJEMEpXSUpxWWVtSE5CcUxYV2FpY213UmRySDZpTUN1SncwaU1rQUVpLUVQN0tSOUlIekE3YmNTT0JDSHMzRUo1VzVKVk9nZkd3N1VYZ0VGQkc4U3U1Z1lEdjA5Y1F6Ny1MU0JOcVFiZWlYQ3JxUlVrc0lHMA?oc=5",
       "tags": [
         "strata"
       ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/strata-critical-medical-inc-srta-133120963.html"
+      "first_seen": "2026-11-02T02:10:45+00:00",
+      "publisher_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-strata-critical-medical-posts-q2-2026-revenue-beat-93CH-4834322"
     }
   ]
 }
