@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-11-02T02:10:45+00:00",
+  "fetched_at": "2026-11-09T02:28:04+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -40,6 +40,272 @@
   ],
   "errors": [],
   "items": [
+    {
+      "headline": "TransMedics Shares Post Biggest Intraday Gain Since November 2023",
+      "source": "www.tokenpost.com",
+      "date": "2026-11-08T17:05:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBFVHE3aUJfM1RfeG5lT3RQWXRCX0VnNksyT0JncDhpNzdFQmFmWll1c0pnU1JFRzhINm1SQjE3cUFkN0tMbXA3NlV5UnB4MGpDOEc0QV9md3o?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.tokenpost.com/news/business/51704"
+    },
+    {
+      "headline": "SRTR: Scientific Registry of Transplant Recipients",
+      "source": "CASRAI",
+      "date": "2026-11-08T13:46:42+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8tcndkNU5rSGpYeW9sZkx4NUtxS1hrTTFsb29oLUI2Ym5BMDFsWjd3ak5FQl8tM0xXblp3N1JUVVdzalZr?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://casrai.org/guides/srtr"
+    },
+    {
+      "headline": "TransMedics Sets 2026 Revenue Guidance at $764 Million to $774 Million Including PAD",
+      "source": "www.tokenpost.com",
+      "date": "2026-11-07T20:21:21+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBHNEwyM2RTZlhNQ2MwSlB0eFFCcWpTTlBLQ0xYRTZ5Uk9RY29fZEtNSlBhQlRrbWJHeWxfSXdNdm9WeElrRTNNejhSaDFUY043bDlxcEhFSXQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.tokenpost.com/news/business/51057"
+    },
+    {
+      "headline": "TransMedics revenue up 41% to USD 203M in Q3 2026",
+      "source": "Medical Buyer",
+      "date": "2026-11-07T17:27:15+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZFRQRjlvTVBxMnhLSGwxSUNNV0tCYkNfUEQwNkFsWjAzSXhqLThVMUNVbmVnUGYzd2NIYnNpM2dBVzZ5aW4xZ043YVFGeS1ha0pURFVSZzVSOWt2dmlMejVfRFRXNzlQS0t6QnlFSFhfclMwSHZoaHJOTG50dmxfWnNR?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://medicalbuyer.co.in/transmedics-revenue-up-41-to-usd-203m-in-q3-2026/"
+    },
+    {
+      "headline": "Some Experts Think TransMedics Group (TMDX) Has a Near-Monopoly on Keeping Donor Organs Alive",
+      "source": "Yahoo Finance",
+      "date": "2026-11-07T12:42:06+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaVBDMXZFUlN4VnBHWWpmR3FmOFFBcG9sa1lrckU4eDY2OGxQOHJvc2U3dzI5cWtWeXoyOW1uckY5RUJGZlIwNEJsQ3N0eTBKSS1MZlZYR2w4TVoyLVFQb0g3cU1vVXlLdGFuUXZqX255bEFGN2ZlaUVTemhMVUtRWThBZHN3eHRTTVVNVFcwZVM1eVpDVXdkbVpURm15QQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/experts-think-transmedics-group-tmdx-124206222.html"
+    },
+    {
+      "headline": "Big Q3 earnings beat from BIC pick TransMedics Group (TMDX)",
+      "source": "Barron's",
+      "date": "2026-11-06T14:59:12+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS3hwSjBIUzBxa2N4NHh0Znduc3UxaG1hZ3lTX2NoT1JOQTFWVE1FT2RRa2dQbzQtODRhS05yeGhXRTlfcHFseUpheXQ2UlFmVmhlU2I2SXhoUXRhcUoyVkphaGhnYURvbFNvanpFQzM0dHluYzN2SXFYdEtfMEtiazZiWTRTUEN6eVlSTDZLa2xLTFBXdkhhbkRyMUczQWpPWjRJellaU09kQlNzV1Fr?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.barrons.com/investor-circle/community/big-q3-earnings-beat-from-bic-pick-transmedics-group-tmdx-61"
+    },
+    {
+      "headline": "Why is TransMedics stock surging today?",
+      "source": "Investing.com",
+      "date": "2026-11-06T14:23:30+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaW9CUmVqVkxQUTV2VGVtclVKTk5Dc0c2ZEVLa0R2Z05TNGJLb3pEd25telhnVzZYMEF6c3NIQ2t4RjVFTXBlYnN4YjVkb2FtTnYzS21yajA1NXdCQ0cwdnlJYTdHYTBLRi15WUxHTV9Pdlhlc2RvaDVVVXRRcDNIX0h4cGd5c1VFMkUwWkhEeDJnZjQ4ZWpEck9OWndWaHRnSUE?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.investing.com/news/stock-market-news/why-is-transmedics-stock-surging-today-93CH-5008500"
+    },
+    {
+      "headline": "Canaccord raises TransMedics stock price target on strong Q3 results",
+      "source": "Investing.com",
+      "date": "2026-11-06T10:26:33+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa1pDbFU1d3hJMUxnaTBNd1dtN05WOGNuZndkNXpDX2pNQ3A3cUI2VzVaaER6aFlCQ0ZWdmJlSmNEUTEzOWNMZWJJdElWMlJHT2k4R3ozdTMzSU1lamdSOFpBN0NGU1V2N0twUWVEejNOVWZEQm9wQk11UDJfY1U4MDlqQ29qRWNDamtudWdfRHRYUDdBMTV4SGF5VnNTQW5FRTRiQW1UM3lXdFVsUjFGMDZuTjFIT0ZUeUdIVFhlelFYQ3BCdUJJ?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.investing.com/news/analyst-ratings/canaccord-raises-transmedics-stock-price-target-on-strong-q3-results-93CH-5007017"
+    },
+    {
+      "headline": "TransMedics Group Inc (TMDX) (Q3 2026) Earnings Call Highlights: Record $203 Million Revenue ...",
+      "source": "Yahoo Finance",
+      "date": "2026-11-06T09:17:55+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeV8xZTFOSVBxcl9mWjQ3SUhVU0VvZ3dqNGpnUWxzSUpFdlRmZnZCZDZUMlBWOGItck0tMUIyLWNHYjhIbkNZVGMwUVJyUFVCdklicEhpU2xYT0tCcmlILTA0NFdhaWRHYzFpazYzVFN1eUhFTDFacy1LTG5vbzh2bXRfbEd1TUZqVFVqNkNVOEFOWi1H?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-inc-tmdx-q3-091755833.html"
+    },
+    {
+      "headline": "TransMedics (TMDX) Q3 2026 Earnings Call Transcript",
+      "source": "The Globe and Mail",
+      "date": "2026-11-06T06:49:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSUp2UDJNNFRJZGY5TWdMeGlGVDdLTEo3dVpnOEhLTUpxdGFtVUMxQjduMWZ0cXRPY0pNbUZQS2xQeWVYYlhiSDFZVTBUTDBsSXFZQWZ1RXJYSmtBMC1MR2FBa3dzUDZVSW94WndHNkVaT283SDBlOUVHaHBwSFJBWF96Q3ZpWFVkNGJfc0hBU1FXMUFqUVJIcklQaTV4SHhoSFVXQm9Tb0lfYWJQQ2F6NXczQm9xVGxoa0t6N01BVTdqTUN2NXY4?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/8692126/transmedics-tmdx-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "headline": "TransMedics (TMDX) Q3 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "source": "Yahoo Finance",
+      "date": "2026-11-06T01:30:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORk5nYVFlM3MxTC1ZSGFfcXhWTHZPYmlFYzgzNlZrZnZjdWdnaW9IOU4yVER6Z1hmZFh2MkRnRzBSaTVibm1qTTlQbDRmV0VJVC00WEVxSjhrYzFfdXdiVzYxdEVsYzZmVjl2YzAtVGN1N19oY3Y3V3REdjNJMndaVUxFSUJick1acTBsSGFOMnZieWJPekd2MnJmQ0doQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-q3-earnings-key-013002032.html"
+    },
+    {
+      "headline": "TransMedics : Quarterly Report for Quarter Ending September 30, 2026 (Form 10-Q)",
+      "source": "www.marketscreener.com",
+      "date": "2026-11-06T00:58:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTFZfSlY3cjIxSmdtQzJralhLQzhRcENYVGo0UjEwa25aQ1dJOHFsZmJheXUxdi1wbXJYYlo5ZFVvTnBZR0treERLSHpBQnNzbDBDaGNjN3NteXhYRC1NMV9wZjUySXRoMFBaUEFmeUlrb1plZGlYT3hJNUd2WUF3aElkRVBFS2pmbDdXUTNTck1wSUhLV2hLQ2FoYjFPX3ZFMVhBc0VucVZNVnFNRmxJVldLVnlDenU1WldzZFNUNW1FeDdaWkRR?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.marketscreener.com/news/transmedics-quarterly-report-for-quarter-ending-september-30-2026-form-10-q-ce785fdddc8bf520"
+    },
+    {
+      "headline": "TransMedics Group (TMDX) Tops Q3 EPS by 21c; offers guidance",
+      "source": "StreetInsider",
+      "date": "2026-11-05T21:52:54+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQT3BjRk80WVd5VV9ZZXBXT2hhbDdPWEJ3VGRUTUdsRFZhSXNDV0dWUHAwRlFPVThvX2EtZFdodnhyOFhtSlJYZjFIVjBEbmdPN3NNcGo4SUZsTmtQQnhwNVZUSHZsV2tRdDBLZkhqZ19CendxVWxXbUo1R2ZzRjNhcWJUMWZENldxOHNWbmE4Wlp2b3BQUXJQTDFpb2Rna001SVNxaW1rVnNzN3l4QzF0SzF2SkIxVGROT1Fv?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.streetinsider.com/Earnings/TransMedics+Group+%28TMDX%29+Tops+Q3+EPS+by+21c%3B+offers+guidance/27301142.html"
+    },
+    {
+      "headline": "TransMedics (TMDX) Q3 Earnings and Revenues Surpass Estimates",
+      "source": "Yahoo Finance",
+      "date": "2026-11-05T21:20:03+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPaXFodkNQOFZmMHZxLWU2bWppSWt1U0dSYV9McUlnbTVDdWhBbzFVYlVDWDAxN3JXczItM0FfUDV6UzVEZmxTeHEtTmpOUjJUenQ5UUYyU2pubV9xWHAzMHhOM0xIemgtMXluY085d2JmRFNGNk1iQTJpSUtYRExFXzNsUXoxcTdvYUxiMFFSV3dDR3RJMHdSUm9nZmZBamh6SXg1Uw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-q3-earnings-revenues-212003041.html"
+    },
+    {
+      "headline": "TransMedics raises 2026 revenue guidance after ...",
+      "source": "Pluang",
+      "date": "2026-11-05T21:15:49+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcGtkbHo5YmpyT2l4MThSTHNsRGtNeHB4V3pZaHpkdURTWmFHNEFXbmY1eGZyVEpXTmFiQXlmM01DSl9RSDR2SnZGWGoyVWRWak1mdkhmRU5qbV9YYWdxSTRmQnliSkVJb3ZETjUxMnBTMFdXWlZrd1dtNkgxWU9vWGhFNGdQRkVVR0tUdDFTMXJzTjlZdHhoeF8wbkp2TDRDSGJtdjNCT2FBQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://pluang.com/en/news-feed/transmedics-laporan-keuangan-kuartal-tiga-2026-pertumbuhan-pendapatan-kuat"
+    },
+    {
+      "headline": "TransMedics: Q3 Earnings Snapshot",
+      "source": "Yahoo Finance",
+      "date": "2026-11-05T21:12:18+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ28tLWIyWTBiOVBidlB5NTY4cTBZM0diZmZYVVdmMEJjVHlrVk9XV3VyVmxRdVJMNWFQWGdNbElMaU10TkpQV056Q1diSDV1ZWhPRnB5Y3pSeW1CZ0ZxNlhMeFJRUFNEQ1IwWl9qdzJIQzZoUnJnTktrTWxHQXo4bTVrVFo4NVdZczEwcHV4RzhaUDl1MnZfNA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-q3-earnings-snapshot-211218700.html"
+    },
+    {
+      "headline": "Reasons to Retain TransMedics Stock in Your Portfolio for Now",
+      "source": "Yahoo Finance",
+      "date": "2026-11-04T17:52:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUHRIT2ctT2xmRTIzaEQ4Q0VmMGxrckZkYWRoa0FWRzVHSjZqRHhUWGtkOWs2RThRZUpKY29LTlZIUlJablBFeGIxNGRUWnI1SDNIWEFzR1pLV3ktal9wU0hIQzZjZjRVQ0dTSThGNm84VDNJcUktNUpXNDBycVdfWXNVVVJlM3pUXzBKa0dFc0FwVmlKN3R2c0xLXzNzQWtzdGlONkJn?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/reasons-retain-transmedics-stock-portfolio-175200507.html"
+    },
+    {
+      "headline": "What Analyst Projections for Key Metrics Reveal About TransMedics (TMDX) Q3 Earnings",
+      "source": "Yahoo Finance",
+      "date": "2026-11-04T13:15:04+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPektfYU9OSEh4VjloTFh1cXFCQUZwMGU0bzJfRTZsUy1mVnRjNGFQM2k0RFdTa0RielZrY0dMTmpFTTVlRkxKR3JUazlrVHFLNHl2SmdneV8wQ3Y4Q2Iwa2dqbEVKQU9jTC01eUR0elpPRnZzNlBSeXU1M2VtdWZGOXBFVVBzTGRkXzVkanUzcDJOa0d4OWhTVzJldHlvanJwRmNhRDRn?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/analyst-projections-key-metrics-reveal-131504068.html"
+    },
+    {
+      "headline": "Strata Critical Medical Inc (SRTA) (Q3 2026) Earnings Call Highlights: Revenue Surges 50% as ...",
+      "source": "Yahoo Finance",
+      "date": "2026-11-03T23:04:17+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaFN0TGQ1MzZjeUZvaUZLbTFrT09UbkFsNmItRFBWbkxPVWxQdWMzY2gzS2lmNG9fMnVPYVJoTlZsczNsSnA5ZUxDN3RzX3JwckJoX2ZqWUYyTTFpTVJ5dFVJamwya1dfU1A4NTFPdWZzTGZUMmZmWDM4Mmdpc2tITm9feWZ3VVFPbUlNM2E1UTk4SFVRd2theA?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/strata-critical-medical-inc-srta-230417808.html"
+    },
+    {
+      "headline": "Strata Critical Medical to Present at the UBS Global Healthcare Conference",
+      "source": "Yahoo Finance",
+      "date": "2026-11-03T21:05:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYXRSZm1WMy1fOTBCOVRhWGRrN2thUnZ4OVo2elV3LThsaWpsZ0RxdVp1LXJESzRHbnJIR2pzeXQ2bUxYNjZsblM0WTNzVEp0RElHa0VrV3cwU29lYVVaUzVaYXFCUHhkeUFjWGRubG16YldpM0pzVFNwVXFfOEdKQzU5X0g1amxfQVRadExrRmJuS2hwRGtiaXBWenU?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/strata-critical-medical-present-ubs-210500169.html"
+    },
+    {
+      "headline": "Strata Critical Medical, Inc. Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026",
+      "source": "marketscreener.com",
+      "date": "2026-11-03T15:37:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNWUxaSkhnNzd1ajJ3LW9SYm1BU3d1SlBGNUF1VGVNenk2bmhId0RSZVkwM25iUDl4QUZEZTZ2Y2ZSTmFLVWZLdEZyUy13MW1xa1Q4dVVEcEJNZkdYQU9mcFk3eE9UV3ZZejRjcXVib09qbUFaRDZsRGx2UDRNaDNRVlJKenZPREh0Ui1TM3VHYzZTTHhfN3Bqbl9JanlQTWNLUE1iSS0xV3ZDdWpWRXJkX01YY0ZmTHRWZmhiNjgxUzAyTEwxakR1eWgtTlBNOE5wUm1aLUE4OUVuSHN2Ql9tbWU3NXdfdw?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.marketscreener.com/news/strata-critical-medical-inc-reports-earnings-results-for-the-third-quarter-and-nine-months-ended-s-ce785fdedb8cff23"
+    },
+    {
+      "headline": "Strata Critical Medical Q3 Earnings Call Highlights",
+      "source": "TradingView",
+      "date": "2026-11-03T15:14:33+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeXVLVE5XaUx0c3pvald0Z3ZJS2h5R0tOU04taXljUUxiY0JmMGkwUjhjamdzUEVESllYcEVuRjJHcHIxTUhkY3VaWFE1QTZJUHc0YnI3ZDBTMzZlNTdhTnB6LWdkMjNvczJiTE5ZcGc5OG1aT210M21vMnB3TFVJYWNaNl9rbUUzbXBsTm0xNDIxQlpBSDdpT0RqcVFDNFg5alFLNFN3V2JXS05EYW1ocA?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://es.tradingview.com/news/marketbeat:c441d53f7094b:0-strata-critical-medical-q3-earnings-call-highlights/"
+    },
+    {
+      "headline": "Strata Critical Medical Q3 2026 Earnings Call Is Live",
+      "source": "TradingView",
+      "date": "2026-11-03T12:57:04+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdHVmQ1RlcGVMWW5yYVRXcWg3VUttYmotdV9fcU1IVmFHRUFDaXFCQUZjTEdUZ2FmMTV1dXUzY28yaE1kYVF4dDV1VmpIckluY2FBbDhqc1BUNzRxek1fOXA2YkI3cDg3S0FUT1RYMms1X2FYQUItMVIxbkpnRW52N214eU1iSDY0S1Z0YWRZbUhJeVVkaEx2VjFTVWZoMGlST3NCOGItZ0JWbG82RGh5OWptRF9JV0hVbU1VWGNkbw?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.tradingview.com/news/urn:live_audio:quartr.com:722783:0-strata-critical-medical-q3-2026-earnings-call-is-live/"
+    },
+    {
+      "headline": "Earnings To Watch: Strata Critical Medical Inc (SRTA) Q3 2026 -- GF Value Sees 30% Upside",
+      "source": "Yahoo Finance",
+      "date": "2026-11-02T12:39:26+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdjNjS19obWRNMUtoTkhEZjQtSWRMUXhTOUNxS1JRSldiR0VKTG5SckNsd1RLUkI2Qlh2Z1ZzT2JuaWpaellyVzJiZ1BTV0VSMmhuT20tLVhsZmJvSF9rM29rMnJKTTNRb3JiVUpRT3F4dEFTRDh5SmNnTTFhenVJbEZpZFdBRi16R0pxdUVzMEcwQzdsNjZTSEk0TTdHR0M5Z3QyeENR?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-strata-critical-medical-123926078.html"
+    },
     {
       "headline": "TMDX Investors Have Opportunity to Join TransMedics Group, Inc. Fraud Investigation with SBS Law",
       "source": "The National Law Review",
@@ -83,6 +349,17 @@
       ],
       "first_seen": "2026-11-02T02:10:45+00:00",
       "publisher_url": "https://www.prnewswire.com/news-releases/transmedics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-302925310.html"
+    },
+    {
+      "headline": "CMS Finalizes Rule to Help More Organs Reach Patients and Strengthen Accountability for Organ Procurement Organizations",
+      "source": "HHS.gov",
+      "date": "2026-10-30T20:56:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeUFzX3ZiOEpfRnZqNXBnaVRnSzYwOTF5VDFBVWNhUnF3bTNwZ2puMXNHS25NelozQllfV2ZRQzc1alpSY2M2czRXZEcxT0pnNG9GR3Zfb2NwZzJ6UWpLYS0wdG1zZTBnbnNJbkFWZmswRkY2bDRWdFAzYXM4LXR4LTM0TzZFX2FjWG8yN2xkblRDQ3QySFRXWUxudVotcHhaR3JTSk9JUUphSDRWSi1VZUxn?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.hhs.gov/press-room/cms-finalizes-rule-organ-procurement-organizations-transplant-accountability.html"
     },
     {
       "headline": "TMDX Q3'26 Earnings: revenue estimate is 178.05M USD",
@@ -135,7 +412,8 @@
       "date": "2026-10-28T02:49:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX0NrQnNERFh1T1VHeF9sZlF0Z3dNRUVST2hJQlp1SW5PZGFDaE1TUWhvdGVrSmo3OXRkV3U4MnJaZk5XYXU1S3MwVE44MEM2azdZbkhTaWFkUVFETW44dVVWNXhPbjhVd2F5ZzlnWjFCa2o4TEdRVUt5Tnd2VnYzS3RRMTU5anZFUHdZWjg3LUVFX1pzVExlRzBSZkVuYjJ2TnfSAbYBQVVfeXFMTTNsbkY5ZXlRbzZxUGpIVHVZVjRLWEZZODVHNlpraVFDN0pPbE1RLUpUQjlCSlg4R20wUzRBM0I1ajF4T29PQ2NmS3lkYjllQ2V2aVlnSEJDQTBkZWl5TExjNlRFZl92Q1RHc2JCY0kwRHhHa2Z3b0FEbWdyVVEzSnhUVFZZcXFZZlZjMWZaRnJBN3F5cDhIWFV2Mi1ubFB3SHVjVWpZZkFOSXhwOThoVlkwYlVuSGc?oc=5",
       "tags": [
-        "opo_regulation"
+        "opo_regulation",
+        "volumes"
       ],
       "first_seen": "2026-11-02T02:10:45+00:00",
       "publisher_url": "https://www.wkyt.com/2026/10/28/madison-county-family-raises-awareness-about-safe-organ-procurement/"
@@ -186,6 +464,17 @@
       "publisher_url": "https://www.miamiherald.com/news/health-care/article317745693.html"
     },
     {
+      "headline": "TransMedics equips 22 aircraft with Gogo Galile...",
+      "source": "Pluang",
+      "date": "2026-10-27T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRmNQcmVLX1hwUGVWY3habU5qOWNleWVpXzhaMHVYa2xSUWUzY2xjNFd6S0JSLWZFS3ZwT250OWxKZldZQTluaFVVWHBJV3RsRmU2cjdUUTZfbE1rWHRITnZiRWNpQjNBNVBmUTQ1M2p3TXJSLUcxZ2lTRWNWMEZCb3g1em9IbHU4d1VSNWtEenR5WWV4V0x1cVE5NWs1aUk?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://pluang.com/en/news-feed/transmedics-pilih-gogo-galileo-hdx-untuk-armada-transportasi-organ"
+    },
+    {
       "headline": "HHS's Kidney Care Plan Puts Hospitals in the Spotlight: A Policy Playbook for Transplant Centers and Donor Hospitals",
       "source": "JD Supra",
       "date": "2026-10-26T15:46:40+00:00",
@@ -206,6 +495,17 @@
       ],
       "first_seen": "2026-11-02T02:10:45+00:00",
       "publisher_url": "https://pluang.com/en/news-feed/strata-critical-medical-jadwalkan-panggilan-konferensi-laba-kuartal-iii-2026"
+    },
+    {
+      "headline": "Strata Critical Medical Schedules Third Quarter 2026 Earnings Conference Call",
+      "source": "GlobeNewswire",
+      "date": "2026-10-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYXdkODJiaWs0M1BaVm1JMHVzMUdfaUQ3THl6dlBfQjZRTE9qbzFxSnVrazlfelJyXzZxazFOWkFnSnJaOUg1Q212RHI3YVVqck12YlJJVks5UXhLLVlLd09hakRTRmItc1VGbWVNY1I3eUZyYTdicDZiZjVTV3JHc0tQYTNXUDN2RFpiNkFoWlY5TDZjTURmNndFeVVTVFhVRFQ1dHBoank0LTVDTUsxOU4tUWNTR0pyTVhLZVo3cHJuOG4wakhCeHdKaHZWUUFSVG1LZkF4RXA0dUx0UDFfVFpiRQ?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.globenewswire.com/news-release/2026/10/23/3387605/0/en/strata-critical-medical-schedules-third-quarter-2026-earnings-conference-call.html"
     },
     {
       "headline": "Xvivo Perfusion AB (XVIPF) (Q3 2026) Earnings Call Highlights: 32% Organic Growth, Heart Launch ...",
@@ -670,6 +970,17 @@
       ],
       "first_seen": "2026-11-02T02:10:45+00:00",
       "publisher_url": "https://www.investing.com/news/transcripts/transmedics-at-2026-global-healthcare-conference-growth-plan-widens-93CH-4902075"
+    },
+    {
+      "headline": "TMDX: Major growth ahead with new transplant tech, European expansion, and strong financial targets",
+      "source": "TradingView",
+      "date": "2026-09-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQeGJCc1h0WnNjajlVcl9QcURHS3J6QzhPRzJsYzZqeFA3R3o0VG9xNDVWbE1GYjluNm5WOHRQMTdLb3NTT3dYS3ZpN00wdG9YSHVRVVRDZTR1WHpaMTFCU1o4WUJvZEVqNmVQOXVDSVdUN2g4eVNHY1F5YVdPdEV5OXZCRlBEanV2Q2FQWEc2cHdINmFvZ3R2N1JjaGNiUUlkbjNHVllfN3NkaUJNS3FZTTN1QVVoaGZoQS1YT3VSUXRwMm5vaFlSbVdEX3FPQlRidG9ZLVF4NXVvT3NQWHNIaEVJVm5XX1Q3amFtdk42NFE3Y01HMjc3RWlFZkdyUnI2Y08tTExUTUpvZmtvbXo2bw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-09T02:28:04+00:00",
+      "publisher_url": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4171318:0-tmdx-major-growth-ahead-with-new-transplant-tech-european-expansion-and-strong-financial-targets/"
     },
     {
       "headline": "TransMedics expands logistics network: A look inside the command center managing 30% of transplants",
@@ -1183,526 +1494,6 @@
       ],
       "first_seen": "2026-10-26T01:02:39+00:00",
       "publisher_url": "https://www.washingtonexaminer.com/news/washington-secrets/4682493/rot-us-organ-transplant-system/"
-    },
-    {
-      "headline": "Donate Life Kentucky Trust director defends organ donation after feds decertify OPO",
-      "source": "Murray Ledger and Times",
-      "date": "2026-08-10T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZEJWejlqVnlmTkM1T3NIVHZLb18wYWV3V21JaklVZTREV0t1X3lydzQ5bnZuV3B1OTctZUtOX2pWNHVQUE44a3VSZHJTNUt2TTdESUVfMWpoX2R2VjFmMkxucHBRRmFYOU9IS0JRZFBJaF9kUUcxUmpGc1VqX1NwZGhHdldfaWpKZS1Sc2c0T2JlS1g3QXUyRHRTSzJmQU5rOVZ1M29DWFNIWkJWUHhHc1RYd1YzUThUWmtyNEpqNTUxb2tFU0xTQnRrRHBFSzdTQ2VEMEp1cHpQd2xsNlEzR2JfczQ5ekNFWTMzTlBJWmFMZmhFeEwtdU1BeXBZVlFtUHhR?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:57:05+00:00",
-      "publisher_url": "https://www.murrayledger.com/news/local/donate-life-kentucky-trust-director-defends-organ-donation-after-feds-decertify-opo/article_c621454f-1a87-43c2-aaef-2843bbf4e73f.html"
-    },
-    {
-      "headline": "HHS moves to decertify organ procurement group over patient safety failures",
-      "source": "Healthcare Dive",
-      "date": "2026-08-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX085REVRN2lTZW5Ud01rUFdJQ2phN1JyeGYzbHNIZTdLc2tsRzBHczJNaGVVdnVnOHdhc2hlWVRNS3JsTW84SW1tRnppWFRKVFFtbV9tTnZyWW12ZmZIQVpZeU5jUWtWdG4yODN0cHk4dUlZWGlRdHl6dGRxLW1ZMUNCb1VnODFoWWtwRG5RQk9kOXozSHAxR1A0ZzZRMTN0ZHZRekVuZmNPTjBZQ3NONWRhTHkwclVTUVFVT3JXRQ?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.healthcaredive.com/news/hhs-decertify-organ-procurement-group-patient-safety-failures-network-for-hope/827334/"
-    },
-    {
-      "headline": "HHS de-certifies nonprofit organ procurement organization over safety concerns",
-      "source": "CBS News",
-      "date": "2026-08-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUWgyU2NTVVVsSDFuclJxT1N5czZZQUJWcV9yV2Vkb3AxbWF3NUd1RjRFWGVSVm11cUhlSk5CbWxnaTJNZDllLXVYR1VBdkswS0dIOV93U193VzRwSkNVZkQtbndVY3NDWWZfZzFRc3pOYjJGV25xc3M2ZnVRaTdvRE9vMUUtaE1KOUpaMzBfOWFKZ1Z0UEZsZzg3RTBOdzk1cGVMa2FxeFhCdDJJcDhBT0VtOXNENGRzc2FHUFhCbw?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.cbsnews.com/philadelphia/video/hhs-de-certifies-nonprofit-organ-procurement-organization-over-safety-concerns/"
-    },
-    {
-      "headline": "HHS cuts ties with organ procurement organization",
-      "source": "Live Action",
-      "date": "2026-08-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTV9uNnpYazAzWVBzaWFlc3ZzWGs4U2RSZkQxM0ZrRVlKeXprTldzZ3pPbFg4ZVJyT1dxNGVaSU1wdVdXcjRJcEl1bjhVVGtHRWxWdlQ0bVlhdG1yd2N2OVJtR2xxbG41bjZuaUh4YlpyREppNXppZE5BSE9CaGtEOFhn?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.liveaction.org/news/hhs-cuts-ties-organ-procurement-organization"
-    },
-    {
-      "headline": "Organ donation when the donor isn't dead: what records show",
-      "source": "https://www.celinegounder.com/",
-      "date": "2026-08-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBPZEhBb0VGSFQ2UmhJSHFrc2NfSGtMYnJ5MmctaWh2ODUwUGo5WmJIS3ljY2ZCUXYwWnBNUTZZMGlPM2dVRWNXeDZyVXlheHhVMFRUckpuUGEyMU42M1BRN1d5YlhGQW8yY2ZpWjRlWFdSNElxNW9v?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": "https://www.celinegounder.com/p/organ-procurement-donors-still-alive"
-    },
-    {
-      "headline": "RFK Jr. to decertify organ harvesting organization for operating on patients who still showed \u2018active signs of life\u2019",
-      "source": "New York Post",
-      "date": "2026-08-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQjBrQnVVZWloc3dHYmpXSDJzcWRMcENoUzZuYWhvSHRFNkRkR1ZXZkt5SnhYWjYzckpXNXhBdzZlLURYeS1FVVpfYlppRi1XVGk5eTFZc0hTZnAxZlFVWklkT2lPOV80c1Zyb0wxVkR5dVI1dHZTa1RRZElXQ1N1R0lONU1xX3dPNlh5WHI0Mm5ld3lD?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://nypost.com/2026/08/07/us-news/rfk-jr-moves-to-decertify-organ-procurement-company/"
-    },
-    {
-      "headline": "US\u2019 Network for Hope License Revoked for Attempted Organ Harvest From Living Donors",
-      "source": "The Eastern Herald",
-      "date": "2026-08-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN3QtRmNweDNqdG1SWXpYQkY4MXVMUzVQSm9CQ2djOGdLc1czSldBZTRZNUwteDBSQkxDY25pRlZTSzJlbmFteTlZLWdPMVRYN1VzZ0JURWdTaV9GVnhCT05kQjBuakI4RDRULWVOWXE4cGJ6ZTdsNTQwVTZtZVdhUF9rSnktVlo5NU5DeEZKcWtCNC05aFh2VzJNVEJaN1E?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-11-02T02:10:45+00:00",
-      "publisher_url": "https://easternherald.com/2026/08/07/network-for-hope-license-revoked-organ-harvest-living-donors/"
-    },
-    {
-      "headline": "HHS decertifies organ donation organization with office in Cincinnati",
-      "source": "WLWT",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVDRDNWs3NXFLYlZOc0NJNm90UTFZSGdwMVI5TjFscXRJME9sRlhFbmxqR1ZkRkwyWkwzWEY1ekVYOFY5cXloaUEzRDExOUc3NmpHUFVNTnF1RElXSjdfbnlROW40WXZhemVoQWt6OUUxVEIzZGFGd0pnc2ZzRGhpY21CUTRwQU14WWFseFVrWjZJMmpjNmZZUXZHVQ?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.wlwt.com/article/hhs-network-for-hope-cincinnati-decertify-safety-failures/73364685"
-    },
-    {
-      "headline": "Organ transplant organization for Cincinnati, NKY loses license",
-      "source": "Cincinnati Enquirer",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQVNOaUxraVZZNW16a3I4d3JYMHFvcXFtNEo0N2FqamNIaGZ1S2lKclI0anBDNHJqX1hQY05kM1Y1bUdxdDNORURSbDNjTWhtcnhGZU5ZZmt4Mm9MOE1wMnZ2bXEtTGp3UmxIZVQzNjRWMjdMM3FBRm54bGtDcWZSYV9NSTJlTDA5bkRkZlctRzZHTnpGQ1Z0Tk5QX3lqYjVDaGhaZEpqbWNUX0VweWYydjR3TlZQVlk3cm5vZ2doUlo2NHpDQXR5aTlpMA?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.cincinnati.com/story/news/health/2026/08/06/organ-transplant-organization-for-cincinnati-nky-loses-license/91197498007/"
-    },
-    {
-      "headline": "RFK Jr. Decertifies Organ Procurement Organization for Safety Failures, Attempt to Take Organs of Living Patient",
-      "source": "Breitbart",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWE5GcEFabXFudWMwZVRKRUgzRlFrMTgyaTdRam5ic29VdmV0Z1pIbDJFM1NzVXJIX3hlUjdYbDM3NnBGNklOYmZqWDdfTGVabEt2VW1iZjVoYUtudE1WRC03SHVaYmNpNU50aVBuZEZ3T0xqYldIME9uUHZQMExGa0Vad0JNbGN3V2hsV1d0U3BrT29ZY2o4a09UNlkwR0xFMTF1aEJOajJpb1hLaFhnMTdwQXNVaVF2S3VKcjlJLVNaOE9Nbjg5aEl2cmk4WFdMU1YwVGhqb2o1bFEyQ1lXeTFR0gHnAUFVX3lxTE9DRjRMZkNxMENseU5ELWQ4VlRiN2F2UmZyVzFWb1VTYkp2ZmJWZ0xGZWNxS1Y1aFItck9zSWpEd1htREFwVy1aNjVkOThpTUVYY293T0M5MkNsTmRxc2J2ZS1UNXU1NG15a2JvczVHZjNfRzBHc3dpVW01cDVJSHFQYkFZQ2hxVkFHTmVLS3B1UF8wYmhLemI0TEt1N3RMd0dpbzViYlJkZUx4djhaejd2WHNQc0JJbmVuUVhYbExwSlRMV3oxMDJSSHRKcXpKbncwNXE5ZXNhWFlYYkhBYkRXb042ZVBNWQ?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.breitbart.com/politics/2026/08/06/rfk-jr-decertifies-organ-procurement-org-for-safety-failures-attempt-to-take-organs-of-living-patient/"
-    },
-    {
-      "headline": "Here's Why RFK Jr. Just Decertified a Kentucky Organ Donor Procurement Organization",
-      "source": "Townhall",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaFAwQ0dtRXo3QnZCVnk0alVEVzNUYkN4X2dod2dXVEV1YzRrYXVsR095eW5SYkFRVDh4ZTBFZkh6MWxvQjAzM0h0QlNvc01sX0hhQ0NHUGtKQ0FmdXR5aENrZkFxblpSVjZnWTNUaVl5OVlDeXdHZ3lUOEpPSmNxd2pRMEF5aGM3MUxRM0FJSHNXdGxyVnVGRWJYOGphQW1t?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://townhall.com/news/amy-curtis/2026/08/06/rfk-decertify-kentucky-organ-donor-program-n2680789"
-    },
-    {
-      "headline": "Trump administration seeks to end problematic organ procurement program, placing a premium on life",
-      "source": "Just The News",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQajQxbjBZQmZBWWQ2MFVfY1lZUTBVbTZETDVMczAwakFlNjVNRTg0N2UzZzNZTmxXTUJFSTlZa1NQYnFsWGc5QjVFV3V3emlmdzhDLTI0a2FQWEdwdm01WlBTcHRSMUhsTGRrekpjQ1RnS0FfZmRtbWJtNVAwMzZ0NDBJMXJnMmVvQWtPSmRUb004ZHN2TTZ1UWxVQkhmTmc?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": "https://justthenews.com/government/trump-administration-ends-nightmarish-organ-procurement-program"
-    },
-    {
-      "headline": "Still Alive? Organ Donor Group Faces Shutdown Over Patients Who May Not Have Been Dead",
-      "source": "Dallas Express",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOT0llT2lNdXJVUGlKdlpJZUpVbXdvQUc5YjFoczg0dng1eHhGYTI2OVRzVEFpa3BIYk53eGYyanlNLW9PV3RkZ2lfMUNQRW5GNVdYOWlLSHhzcF9hY05uVS1xS0xKamlsbGFWOG5RaXJ1aVlpUXNDTl9TUFpiRnJ1ckxfTm9PN2tNQmluZ2k5SXFnaXkyb2MwMUxwWlo4c0FZT0FhM3lHd2JKUGNJR3dEUGhoU2hVR1NMekRPa3Bka1l5ekpH?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-12T02:09:48+00:00",
-      "publisher_url": "https://dallasexpress.com/health/hhs-moves-to-decertify-kentucky-organ-procurement-organization-after-patient-safety-failures/"
-    },
-    {
-      "headline": "Why RFK Jr. just decertified Network for Hope, KY's organ donation nonprofit",
-      "source": "The Courier-Journal",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSk9rdTVyR2RJcVdid2JSLWc4OXdUX3ZFVXhEQ1RjbUllSG5aRHNsWUhKTFlpYU1DYUt5dFNldW1qLUgzQUV2ZVdYZXBFMFZPR3d2dWhpclE2MWZHLV91UHpOdVhpWXU4SVc3QVhHV3NreURrcUpTQm1Oa3VxZDBqRGZsNWlTMHRTRnowYXI0VkY5dkxxLU9UNzZxal8xNVIyNHF0R0hYYWdRRS0tN0hTdV90Wkowby0wU0ZCZnlUNU0wR2dFaDlPUGdB?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.courier-journal.com/story/news/local/kentucky/2026/08/06/network-for-hope-decertified-kentucky-rfk-jr-hhs/91196670007/"
-    },
-    {
-      "headline": "RFK Jr. Decertifies Kentucky Organ Donation Group",
-      "source": "iHeart",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObWxwQmRuNlowVUhPbVRZT0FpQnhEX1pZVGVlRVZfUUFoMHBacmRUeXpuaFVCbkdJR1lBVjZ1SHc5ZzhNZTZ6d0IxWkYyZE1SSHM0MEhyQmNCVWtWbjNmb0Nla3VTU1c4V2tSdHpPcE1yRUxLejNwVFg4VlY0bHByYVlyVk1KZVV5N0dSSVBNOHdlbEVqT0HSAZ4BQVVfeXFMTjNadHZRd1RVeGcwYTFBZnBlSUtSUFJZZnoyaF9FMkFQb1d4THdpZHhCSGFKcjR1WTE0VjRvYnhtTjBOcTQ3cGxCVmRDZFUtZFdTQlA5eDl1Q1g0SF9KczRqcFhtb3NjU0VBNVZsNENBNU50X2pfbXVnQTk5blV4dW9KM3FkYzVJaXlhRzZmOTlUdnliNUhWWWhNdVp6ZEE?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.iheart.com/content/2026-08-06-rfk-jr-decertifies-kentucky-organ-donation-group/"
-    },
-    {
-      "headline": "US HHS Action Against Kentucky Organ Donation Group Raises Questions About Transplant Safety",
-      "source": "Health and Me",
-      "date": "2026-08-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQT09ueGRqNGRjUHZIZFJUeW9sajJaR0tsMmxXUXl2emVTek1sU1pxWUpZbUtiS1dyM0w5NUozVHE2azkxRHVOSWhvQWRJV2R1dGswZkVhdUdoNEhlWW85LU5La0xEaWdyNVEwX3VHMS1RU1I3OVZkcF9QTlFFMHVsZEtKd1FmaWxOeHphZ203cV9rYlhyNU9qNzZycl9YTzdweXpiSVBOR2NLMlNjZWZxQmpVNEZOYkRaT3Z2ek1FNldSQnhjTVYzSDdXSjl4Q2pwZ3lzbkVXVW1ncnFneEtfSGJmR1k?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-11-02T02:10:45+00:00",
-      "publisher_url": "https://www.healthandme.com/health-news/us-hhs-action-against-kentucky-organ-donation-group-raises-questions-about-transplant-safety-article-155317054"
-    },
-    {
-      "headline": "HHS Decertifies Kentucky Organ Procurement Organization to Protect Patients, Restore Trust",
-      "source": "HHS.gov",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTU4yNjBYRW9OT0FaaDJleVNfbG1GN2VhMGRBOXM2WWZoQ3UyUXlmem1SMzlZME1RaXluN3FIelVDYjJZZWdMMlk3SDlZbFZGQWNPclJIa0VGbGhGOWNZTGFiWXdaVWVmckc2NjU3MHplVFBtTkdnVlNTei05U1dVUFJjLU9zcklwRDdCMGhKT1JQdElXLWc?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.hhs.gov/press-room/hhs-decertifies-kentucky-organ-procurement-organization.html"
-    },
-    {
-      "headline": "HHS announces decertification of Kentucky-based organ procurement organization Network for Hope",
-      "source": "Fierce Healthcare",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQb29ua1dkcXJycXpoalhiWVVLRmJlbTE1ajhDY2FQOTRfWDZHcl9TS0V6RkxHWk03S2tuOWdsQzVnd2YyM2JGRllRMTVMazdZY092a2Zhbk5NZmJlYmY0aGx0MW8tYldxUTIwc2NINUp2SnRRQldSYWh5M1RlSmo1ODZHOWZzX2pieExmLTNqTzdmN1JZeTRPeUlfbUdEZ3dpOGhFbEgwN0ZRM29MeHpSTU96SERrNzlYQjE2OTFZbk5XMHpZUGdKeE0ydk4?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.fiercehealthcare.com/regulatory/hhs-announces-decertification-kentucky-based-organ-procurement-organization-network-hope"
-    },
-    {
-      "headline": "HHS decertifies organ procurement organization serving Kentucky, RFK Jr. says",
-      "source": "FOX19 | Cincinnati",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXJBMTNsQWk5bVhNVHRER2V6b19WdTlrbmpybk5keHVVU0NNTDRZeWJSTVk5X1k3TTd2LVo0c0o5RkxTTUlOVWZvOFlrb2lBSnJwMERMSVNCOXNLTEFmcGwtY2EzQnY1QThPOUpaX2tCZnJfLUhnYXZkSGdZWnkyS1ZEWFVWajgxSlVxekNTM1BvNUJTZFFEZmJteTJEOWpjM05yWDNyRkZ6d9IBvgFBVV95cUxQUUhHeWlnRVVwUHI4YllnR1pJQ3RQbGtVY1pxRjJXY3BMTzlpcG0zVlZjRVBESFcwcGY1bWRERkZjZ2Z0a0x4aWtwWHZiRm82eE9pM1JsbnFQNERJdUVDZTh4UWZjRWtVc2FyT2QxSVQ0UTJUbjVuRkFVQ3l5dkJFMklxRkpwY2o3bXhzM3YtRnZPVE5GeVdNNElEZTNfVzBhV3hiWUlVTWt6RnJiNmhCT3hlMzRJM3Z5NTh3TjFn?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.fox19.com/2026/08/05/hhs-decertifies-organ-procurement-organization-serving-kentucky-rfk-says/"
-    },
-    {
-      "headline": "HHS decertifies KY organ procurement organization, citing safety concerns",
-      "source": "The Courier-Journal",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTE5GTU1sMWt0M3RNNEQyTTFlRjJkWTl1X3lncmNTWXNGb2xHMC1DQnFmaWNsUFZtSkdPNDFFc3h5MkVweDNWRlhxcDdhQlBUemJOaEktb0NpX3VJNDFNTEktcUlCT0RLTlRLVEJmYmtoN2FBTXlhZ1Z5aG8yRV9qel9qeWdHVENiMjNLLTRyUlBuUldPOWlZS1hKaVBTXzdsMElDa3VlYXNzam81aXNoVkxUaDBFZVZiazJsMnd4UnBtWUlCeTFz?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.courier-journal.com/story/news/local/2026/08/05/kentucky-organ-procurement-organization-decertified-hhs/91189515007/"
-    },
-    {
-      "headline": "Kentucky organ procurement organization will be decertified, RFK Jr. says",
-      "source": "WHAS11",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOSmpzam1Jd2hIeFU4TmFJS0ZtclM4WmV3LWQ5VnBZQXEzT2xJenhsQ05CVWNTdVB2ZU85ZWRVQk9uVU53N0xYNjhqVTNJOGdzWkhaLWlTWnBLQzBYbWU2Tm1TcHFvU1ZXdTY1cXhPU05IaFFYbmdyem1tQnBORTdkdE9zUl92X3ZoTTNWWnV2MU1SQUJsWVQ0NWppUEtVTXE1R0lDbmNMY3RfSFFoY00xdk1sSEFLaWctbHJFd0NqUU5lX2ltcDhWV3R6VVdwQ01ZX2p5czRqSXhDdDFJTUwyYVh1dWNXcXNudVNiYWxiYl9WZGNZWGRucQ?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.whas11.com/article/news/kentucky/kentucky-organ-procurement-organization-network-for-hope-decertification-rfk-jr/417-293d61c0-a869-4168-8058-a5a7f25df3da"
-    },
-    {
-      "headline": "RFK Jr. Decertifies Kentucky Organ Procurement Organization",
-      "source": "National Review",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeE00QzNuTkgtUWV4REtEcnA4am1uTllfNXRXMEtnNGV4Rld3aEViRVBlbTQzTjZacXhMUWtyNEZfZE5aVjJvVUJYaFh1Z25SemQwcnNldWxLcFlPRTlXOFMyZjJadG5HbXVVT1I5ZHhpd1MwN0doMXphZl9ldi04Q0lSN2RzYjFqdFUyV0hHNkkxcmttVVg5RUdRN2cyQdIBowFBVV95cUxNZWNzMWhpS1ZxcFFsYnFLeDJLWmkxUHZ3NHUyZjFGUVJ2a2RoQUJsSXI2VlJlbVJQeC05SkNkNlFqNUM0cnJjYlJBMk5zdnhCLTZLNlQweXMtRGJjYm1rbjdRSnVuM1hfYVBZZVY5NmFsd1pUeDR2dVBQbkNDQkNxRXU5ZzZPTnFCRHdOQlh5WDgyMklzcDdYU0E3OVp3c0ZmZVlZ?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.nationalreview.com/corner/rfk-jr-decertifies-kentucky-organ-procurement-organization/"
-    },
-    {
-      "headline": "Why TransMedics Stock Is Sinking Today",
-      "source": "The Motley Fool",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNnpaQVAzZUZaZ1FPVmdHdk5oY1FUYXJLVUpiNDBIZHd2dnN0eXFBMXhsSkJpLVlGRWxfV0JINkU1UlZwd0lSWG1WUTFqT0dLemkxMUU0S19Qc0dHZ1lUVDVyQkVDVW1MNzVlYlNfT1FfOTY0MmNUZVk1Y1ZRTWlTSHllVGZJZlM3?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.fool.com/investing/2026/08/05/why-transmedics-stock-is-sinking-today/"
-    },
-    {
-      "headline": "Why TransMedics Group (TMDX) Stock Is Down Today",
-      "source": "Quiver Quantitative",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQc2FuaXpBTnJjWUZWOGJ4dkNtUkFPWjQ0ZTE5b19RR3YtcDJiaVpoNkVWQjNsb29EWHFIR3d3Y2V3aWJ6bzE1RnZ0UXE5Y0ZzYWlwTGVObHJmMWFqdXNrTkdjMXJmb3JQVWlzZDI4VzNjS0FQS3Vucl9USTlKVXc3NXMxVkRGNFZLQnJiWGZ3?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.quiverquant.com/news/Why+TransMedics+Group+%28TMDX%29+Stock+Is+Down+Today"
-    },
-    {
-      "headline": "Investigation launched into TransMedics Group's directors for possible fiduciary breaches",
-      "source": "Pluang",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXA0akEzWUhVWW82OElKUmVyb1VIVFVBWl96bnRYRFJzSXBvVVYzdzZKeTlBcm43QlltNzdnc1RYN0JSM3EtT0d1b2FGemMxR0FzT0U1NUoya0czTS1udV9hT3V1NE02NDNna21pamdqNF8wVkxuaU9ENWk0OEhsN1k5dU9QRW42MXU4Z0NVeW9ITVNXZ1hPUUlCd2pCSnRaaDJ5YnhHeXQ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://pluang.com/en/news-feed/rosen-law-firm-investigasi-pelanggaran-tanggung-jawab-direksi-transmedics"
-    },
-    {
-      "headline": "HHS shutting down Kentucky organ procurement group over safety concerns",
-      "source": "CNN",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeUNsZ3FGVUZqcmJVMFVLTTNvUHJzeVVrY1BWb21wTFF4dGZFZ2dsX3o3WG9fV280YzFRNlRLblp5aDhKRWdTa3ZUbGVub2ZrQU51U2pVTEUzMG5xc0dVTjJqNDZMdkVCUmhzNkJ3WjFfVUlObjlpWW5lT1FzWkpKckJHT0RoaTlE?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-08T21:37:23+00:00",
-      "publisher_url": "https://www.cnn.com/2026/08/05/health/kentucky-organ-procurement-organization-hhs"
-    },
-    {
-      "headline": "U.S. moves to decertify group that tried to collect organs from living patients",
-      "source": "The Washington Post",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNmtXXzJkOVkxTUpGNVpUUGZlOWRTRUpIbjRGcGJ0QkVCa3Z3WmhiVnczaTJPNkNoVUtfTWlMQ0RxcHlqZlgwM0NSa3B6bmhtMXVzaVFOR0Y1bGtnWEdSMkFjQjNGYUdjWEp2dlM4QVZySjlWVzZOdWRHT2NPVG5GQnN4Rm9kd2VaM3htLTNiaGV6a0tsWnc1Vl9oSkNYVlFkb2RjcXI4VnpDc0p5TV9iS0RVOTkwYjhvU09jRnladDM?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.washingtonpost.com/health/2026/08/05/us-decertifies-transplant-group-that-tried-collect-organs-living-patients/"
-    },
-    {
-      "headline": "HHS decertifies organ donation organization after 'persistent patient safety failures'",
-      "source": "KABB",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNV0o4S1JnM1RzVnA3SDNlNG1HOVJfUTdFR2RoRjdud2R2ODRaUy1sWDcwZHpXTjBTSUtkVG00V0JNQVVBcGNya3pVNU9xY3hVNGdFTE5PSDdUZm9NS0RvaFJ6YndsMlYtM1pCc1c2cklTZFpoS2YzNDdXUnBCTERBaGx6b3ROUkdRN2I0dTRPZE9HVlFmeVY4dkZ0ckJZWFlqOUdzd2RaQWhxU05qSTVna2lRQW12MHJxbzdUM2JIeHREckpHVFFDamxQbHFPNklfcmVzbi1ZM21EdUp4N3ZBYjVn?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://foxsanantonio.com/news/nation-world/hhs-decertifies-organ-donation-organization-after-persistent-patient-safety-failures-robert-f-kennedy-jr"
-    },
-    {
-      "headline": "Federal government decertifies Louisville organ donation nonprofit due to 'safety failures'",
-      "source": "WLKY",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ241Rkd3bnNoY3JkQ1Z6MWNEU25zTGxadVE2Tjh0eHE0a1IweHNOYjFHaV9UM2wzdGZtMFlUYkdaU0lManRzTkRYTE9ycWQ5MUNSWGpQUktQQXJIR1NwUjlHb1FKMTZESHhMQmpnMlVGckhDNXIzTWVVdmkwZjY2dzFXeVg5VmVUN29hYkZ3?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.wlky.com/article/louisville-organ-donation-nonprofit-decertified/73359798"
-    },
-    {
-      "headline": "HHS decertifies organ donation network after safety concerns",
-      "source": "Fox News",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yUXVvaG9tVmR2SHV3dWdUc2hlSnJGSXp2eGE1N0xITDJVM01oN3ZONVhGM2JBY2toTzEtcWx4TUVkWEtIclNQOVlnYzR6bjE5QzhNaGNR?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.foxnews.com/video/6402884091112"
-    },
-    {
-      "headline": "TransMedics Stock Dips Post Q2 Earnings Miss, Margins Contract",
-      "source": "Yahoo Finance",
-      "date": "2026-08-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlo2RDl0aVh5QWtFQ3NLOGxDck04ZzM3TlpPelhoUGRCNDBrYTlYYlVUd1F6SXNocnB1TlRMTXdOT21JN3FybTlzbXJJVmM0Z2JHU1NRYzNpZVhLeXpGOFlBd1dENm9aSHJvZjhtcE9yNkZiZGFvbTR2S0JVSVc3eEFhQWttaTNZR2ZlUHdnZmxnN1ktaVE?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-11-02T02:10:45+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-stock-dips-post-q2-174200564.html"
-    },
-    {
-      "headline": "Strata Critical Medical Q2 Revenue Rises 60.7% to $72.5 Million",
-      "source": "Quiver Quantitative",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVHItLXo2T1d2ZWRKOGpuWEdTTlVqS2hCWE5POHN6YTFINHdfQ1BRRWZ3WTlwWG9xRnJmNGhJZmpJaFlTZ1IteWtaYUoyam9LaW0yNEZueUNla1kwM3NHd3VVelFpX19peHVxU2NKUFozUkNrQWJGYVowNXFic2ttQ29JTjBnWnVCeHIxcFY0M2RMSTBMU1FfeksxakhyOUE?oc=5",
-      "tags": [
-        "strata"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.quiverquant.com/news/Strata+Critical+Medical+Q2+Revenue+Rises+60.7%25+to+$72.5+Million"
-    },
-    {
-      "headline": "TransMedics Reports Second Quarter 2026 Financial Results",
-      "source": "PR Newswire",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTXNZQkJzOTlvTmJUSjRfU2lPakdNT094MFA0RGdmdkVPZjJVLVRNWE1RT2ViOGtEX2ZpVUFXbmFrbEZqTUNnSlA4ME9hbE9kMmNlOWNfV1FDTzN5Q19LM0JOWEtVYUhHc0J5X3UtUEdFcU1neUNyNUxuUjdQSHkxVTQ3TmlGamFNRm8xTlRNMnh1WjljRXpzeEpVbTRNREt2RFJQajU2eHRkZFpJbjdwMUZpbw?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.prnewswire.com/news-releases/transmedics-reports-second-quarter-2026-financial-results-302842882.html"
-    },
-    {
-      "headline": "TransMedics Group (TMDX) Stock Looks Cheap On Earnings But Full After 171% Gain",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcnNVTEhVSDYzVEJtcnFJYUdlcUpBa0FrYlZ1UGdhdkc1VDZiMWZlQjBncHE5YkVYY010RDM4ci1Zamhfd0FCNFZHV1hUUS0xVS12S2otaVdwamRDTXo1SFk4b1htLS1ZaWpmR1JudF9SZVdTWGVxZFFEbXlnMG1yRzdSRldaQ1F6TVBuNjllSUdjSGsyeDVKLUZLRDE4RE9W?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-group-tmdx-stock-looks-060941318.html"
-    },
-    {
-      "headline": "TransMedics Group Inc (TMDX) (Q2 2026) Earnings Call Highlights: Record Revenue and Strategic ...",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeDFETlgxalgyb1J4eXRETi1jVzI0RTZ3dWlQR25pTUdIZ0poTWNDeFdOUmNiek1CYlp4LWcwRG95dlVWX29OVi0xVkZQQTNWS1BYNHhkMUZXdzl0dUpuNklpOVoyd0lLUjd4Vm9Fa1hMcmRXdjdKTFJCOWg2Z0ZMYnFzVXhhUDI0ZjNURU4zNmNEa3No?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-inc-tmdx-q2-050711635.html"
-    },
-    {
-      "headline": "TransMedics Group Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRjRPNHZORFZhWEtvVFBpbWJzNnVwRU5BQ1E2blRON05WMTJqRFpBazJuUEZMMXQyM1FEY1dhenplQXBZa0VXSnk1cFdsdG5MS3Fqd2JEMG5oSnRWd0lPSnBzYnhhcUlEOFg3bTFJdUZISjlNV0pPRnJqSl9Cb1czSjVuOThJQ1B0bTljUHFrOVhyTXJFMk1MV1Jpaw?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-q2-earnings-call-030355999.html"
-    },
-    {
-      "headline": "TransMedics (TMDX) Reports Q2 Earnings: What Key Metrics Have to Say",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPODZLY2RfaW0zSk81b2pzTWNyV2FOa3VxLURFSVpfalhhZTJXbUp3R1N2d0I4ZkFfcW1NVlBIeU92THFmaF8xVjdVNUxERU5leERzRTBnampXelZDeHo3VjVGQ1E5ZC1UYUFNZFIzQWQtWGtpbTd1aTZCVjF3Qmo3ZFpLZGRiWVY1Q0Z2c01tQlFWWXlrMVE5YWVtX3hxZUtpdHhV?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-reports-q2-earnings-233004670.html"
-    },
-    {
-      "headline": "TransMedics Group (TMDX) Stock Rises on Q2 2026 Earnings",
-      "source": "Quiver Quantitative",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN0Y5N2JzSzRvbm9xZnVROGxFa0hRMW1mWnF6NF9VWGhMcW94RFl6WHcwMllfa2c4TzdNdW1XQ3RwZ2dPM2dnTEUxNjRVYVZPbzBvZGxrQkg2MWJhR1lmendaY2xoQnp5b21WVFRXajZWeGVmYmZRWWZsWWVIVHRzNVhzWDMtaUtodTE3RWUtTjB1aDd2M0dGZQ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.quiverquant.com/news/TransMedics+Group+%28TMDX%29+Stock+Rises+on+Q2+2026+Earnings"
-    },
-    {
-      "headline": "TransMedics (TMDX) Q2 Earnings Lag Estimates",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY0luYWtZU25QbHdYUmMzbEN3RE1JdDNWSFRPcnVYYzk1Y2pWSkhTTWZrS0oxZHdMVVFTV0IzbWZDUVFsNGIwbUZDelBsNjRfSGpsN0dWUnFfOGo5bkd5NjZSTlE0T1NETm50SG96SGtMM2QxUGlkdUhXRFMtUHhFZkpoOHhid0cxbGFlNERrcVdFOTJxMnpJNENMYUlaQQ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-q2-earnings-lag-214009353.html"
-    },
-    {
-      "headline": "TransMedics faces earnings test after bruising first quarter By Investing.com",
-      "source": "Investing.com Nigeria",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMXBUcXVfb0dxRGxDYTYwTk9YVUlrc095d19UejRKZmxxV1l0N3RyejNxTmx2c1B0UmFkMGZrTnktNllFLXoxalJ0UHBZbEZNcGNSMnZCRzgxOWZ5OGV2NDBwa3FmRFB5VEVEZ1lsMFpnX25yM1ZTSDYwSkZLX3BOREhyMFAxUVQtX3kwT3J0Rm9TNzFOR2NZcEMyRllBeTRvNnNnTzdTRjQtRlV5eE1tbmNB?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": "https://ng.investing.com/news/earnings/transmedics-faces-earnings-test-after-bruising-first-quarter-93CH-2637476"
-    },
-    {
-      "headline": "\u2018Death by organ donation\u2019 idea is nonviable, ethicist says",
-      "source": "UW Medicine | Newsroom",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQR0R5dHpWNFl4TkF5bDFxM0lQOFNiYVU5M216SFUxUjN1WWMzZE9KZjl3R0NidUVGV0RGZmc1THcyV2pScmk0OWEybUZoREd2UndTVUlaT3dXNGd4cWFOb1F4d3Y2aW9haUluZ2QzX0Q1Sl9lQnZtc2VJU1Y2WWhXdklzOFFmZ1VLRUE5dw?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-12T02:09:48+00:00",
-      "publisher_url": "https://newsroom.uw.edu/blog/death-by-organ-donation-idea-is-nonviable-ethicist-says"
-    },
-    {
-      "headline": "Wall Street Analysts Predict a 60% Upside in Strata Critical Medical, Inc. (SRTA): Here's What You Should Know",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVnIzZDI0ZmhuWHAwOWJFdC16VVgzc2dQckdod1ZBS05FQmVyOWYwdGhLZjRFLXpJU1ZnR3pXaVRXY09CMjZuYlFmNDlWV2JCaG5BbTQzV2JfNFZhMGVxSHU5M0FXVmk0aDFjRUoxMGdLRFFzT0R3ekRRN2RvZWxKU1E5OHlRT3JvYU5TMmVfVDNNVHltUDhRa0llbnA?oc=5",
-      "tags": [
-        "analyst",
-        "strata"
-      ],
-      "first_seen": "2026-10-19T00:55:57+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-predict-60-135501893.html"
-    },
-    {
-      "headline": "Strata Critical Medical, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNHZCbEpMQWc5RHNveWg4ZjlhbmtkMkZMMHVtNmFVeUhPTHVHTDRjbVdtMnRZU1JlODVXVzZxLUw2eC1yb250Ui1TUXBmSU1OYjJRTExMT1VfUUtaNTg5eUpKRGwwdXJRdjZlWFhZMmtWNWotWWlUTzZqaVhIMXhteDlmcGVCUzVlUUJ0dWZMX0swTUhZZEI1OXA5NA?oc=5",
-      "tags": [
-        "strata"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/strata-critical-medical-inc-q2-222900748.html"
-    },
-    {
-      "headline": "Strata Critical Medical Announces Second Quarter 2026 Results",
-      "source": "Yahoo Finance",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNnBvWncxZVRTNlZBRlR0SDNLYjhJWmwxOWIxcWRtb20zZzdvaEJuRjZiS1o1SjZnQmlFelU2REIxVWllM3FvR1ctaDZHWFJWMTNoeUFfVHZtTmxTTjE4V2FwNXp4OE4tREZIUy1QdG96MTBfVmRIMThPNnkxLUhJNjNTM0h1aWhVbjRmZTB6MmttcXRZa3MtWUtpYjF6Xy1QM18w?oc=5",
-      "tags": [
-        "strata"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/strata-critical-medical-announces-second-110000707.html"
-    },
-    {
-      "headline": "TransMedics Group (TMDX) Stock Price, News & Analysis",
-      "source": "24/7 Wall St.",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE90cjZtSlRvaGdpV3Q5cEotZmd2YWpYdW1Ba0RhWm93eURzbE9fUzEwdEE1b1M3MTYzaTNCcEV2cUxWZVRDVVNkYVV3Z2lnUQ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://247wallst.com/companies/tmdx/"
-    },
-    {
-      "headline": "Earnings call transcript: Strata Critical Medical posts Q2 2026 revenue beat",
-      "source": "Investing.com",
-      "date": "2026-08-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZkFPVnZESkxYSWlMT1NGOEVZRWJTNTEtSWp3SEY5RXNhdHZHU0pTc2YtTXo1TlRrSjN0TDdvVlFLMmtoZEVfQ3A3MGdRTzhYUUlIME1faDJEMEpXSUpxWWVtSE5CcUxYV2FpY213UmRySDZpTUN1SncwaU1rQUVpLUVQN0tSOUlIekE3YmNTT0JDSHMzRUo1VzVKVk9nZkd3N1VYZ0VGQkc4U3U1Z1lEdjA5Y1F6Ny1MU0JOcVFiZWlYQ3JxUlVrc0lHMA?oc=5",
-      "tags": [
-        "strata"
-      ],
-      "first_seen": "2026-11-02T02:10:45+00:00",
-      "publisher_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-strata-critical-medical-posts-q2-2026-revenue-beat-93CH-4834322"
     }
   ]
 }
