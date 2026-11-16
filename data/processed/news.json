@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-11-09T02:28:04+00:00",
+  "fetched_at": "2026-11-16T02:36:45+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -40,6 +40,150 @@
   ],
   "errors": [],
   "items": [
+    {
+      "headline": "HHS decertifies organ procurement organization serving Kentucky, RFK Jr. says",
+      "source": "Z93 Country",
+      "date": "2026-11-14T09:57:50+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1NLUZKTW1tWDE2d3FZbEw0RjZzTnlPb2wyVVpYSkk3bEFNdnVvb2FFWDVJRC1KU05vbUpPeENJeHhfSWREMU5jY3BnNWlSMHdtQ0xZV09vS3BULVlmclBv?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://z93country.com/archives/552490/state-news/"
+    },
+    {
+      "headline": "CMS Finalizes Changes to Organ Procurement Organization Conditions for Coverage",
+      "source": "AAMC",
+      "date": "2026-11-14T02:20:23+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSmRHM2RpWEZFMnh5b2pTMFplYmFIQTB1Vm0zR2c1VmRfclVCUkpQTGREeWJnci1ONTNsNVh0NXBqdk0yMzBkeGZPYlpWVUhmRGQ4blF6dUZvTno4VWFFREJkS3M3WWg0TWdXal92QUtudmxVRVowazBwLVVUUnFjSnFhb1Y4SlVVSms4QXgteFJKb2xzaENVQ04xNGNFcXlTekNPX0FDRXFxWC1WUmJHQUpOb3NFVElWQ0FtaVFhUFNxVVo3RjFtdC1Raw?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.aamc.org/advocacy-policy/washington-highlights/cms-finalizes-changes-organ-procurement-organization-conditions-coverage"
+    },
+    {
+      "headline": "TransMedics Selects Gogo Galileo HDX for Embraer Phenom 300E Fleet",
+      "source": "Aviation International News",
+      "date": "2026-11-12T19:58:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOelpSOUo4bkF0Z3FpMU1yc3RfUTRNZ2ZHLW5iUkhjZ25IallWR2ZIQ0xyem11SWZKVnRaZEg0RFZ5ZGw4U2ViaG9SRENnSG5naVNzLV9KLXJsS29Tbkc4cmhwUlR3V0hzSGM4UFJ1M3d6VDVLWlh0LVl3TTlVM3VBUnpIdTN2OUc4eGJoWUdCRHc5TEdPbTQ5OUxBNjBycm5BRnZBNS05ZmlmNDBTSXF2TGYtdDdNbXVuM3c?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.ainonline.com/aviation-news/business-aviation/2026-10-28/transmedics-selects-gogo-galileo-hdx-phenom-fleet"
+    },
+    {
+      "headline": "TMDX: OCS 2.0, European logistics and kidney expansion underpin the growth outlook",
+      "source": "TradingView",
+      "date": "2026-11-10T17:01:19+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMXY0dmkxN3FxR0lNVEJUTDlwRW5xZTctUHFoLUpxaDNyRnJ3LVBMc1dGcFl6UGxINFIzV0p2MS1MSTZmc010VllkVWt3eEIteFdKRnJVeUFINEFPNTBnd2VOZDdLaUZickFYclRHZW5ISWQ2MlJLSm9fVnprQXFqaktVY280ZnJfZDhucWx0VUdSa0ZnUDExWUE3TkFGTTJtQ1BIdkR4aGprME1YTXA5eFJmdmVCeDdhWlpJMjV6cGtZSXhZRDNMXzRDb254aFplR1FmbWd3Y2dJc2I1Q2Rzbk1XY0NRWndWVXNkYUR0NGdUOXFUWGNtM1lYVQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4557630:0-tmdx-ocs-2-0-european-logistics-and-kidney-expansion-underpin-the-growth-outlook/"
+    },
+    {
+      "headline": "TransMedics at Stifel 2026 Healthcare Conference 2026: growth push widens By Investing.com",
+      "source": "Investing.com Canada",
+      "date": "2026-11-10T16:33:40+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMUFmV3doUXhIcVFDM3JaMU0wRjVRVUNhdktRUGRlS3J1ZkVmd1FIUkEtUkEzcGxmY0FvUGdoRk1Bb1ZZYXVoVHpfUDg5Z0lLdElOMmtzcEtkVDM4bmFkU1NCZU5UdVdJc3JuTFlJdHBHSEdNWUN1OEUxeFA3MkxIRnJwR01wbTJDd0Niajktb1JESTBISzl3N1Y2ZmJsdnljcTVTZ29wMDRzbmczbm5DM0QzUlkwaWpIWDlLQlBoaXVwb0ZjMEpYVVFFUERLQQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://ca.investing.com/news/stock-market-news/transmedics-at-stifel-2026-healthcare-conference-2026-growth-push-widens-93CH-4947337"
+    },
+    {
+      "headline": "TransMedics raises revenue forecast on strong g...",
+      "source": "Pluang",
+      "date": "2026-11-10T10:58:38+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWmh0UGRYeWRPdk9wbklzbGxwUFYzWFJUOXVnel9ZQzJMUE1kZDY0T0w3MnBiZGpFNTNPdWhNMnhnZzVrUEsxUDRONE9JRHU5YnlSbklaci1BSlNQcTV5SENIS2hzYjZVUXVxSHh6enVYbzUyZTU2Tk95UHpvanF1bDFBRWRGMW1YcUdFV1NiT2taZw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://pluang.com/en/news-feed/saham-transmedics-pertumbuhan-meningkat-2027-menjanjikan"
+    },
+    {
+      "headline": "TransMedics Discloses Q3 Highlights and Raises Full-Year Revenue Guidance",
+      "source": "NAI500",
+      "date": "2026-11-10T06:08:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLUFIWmVVa2JScDE0eHZjVkh1azViYjlad09pUUkyYXVscmMzay1nc1Zob0VLUTZTNFRnSjB5MHBjWGl6bFNqdjRWTjl4cE9GaU40UGY3N0ZWNm9MbklKNUdVNWlqa2tkanhUandGc0lEeFQ2YWYxRzFEWFEwTUcwdnBsN18tbGxscmhYcWNKcGpKamN0dl8wdVNLY0RZR243X0MtQmwxMVZIZw?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://nai500.com/blog/2026/11/transmedics-discloses-q3-highlights-and-raises-full-year-revenue-guidance/"
+    },
+    {
+      "headline": "TransMedics: 3 Key Takeaways for Long-Term Investors",
+      "source": "Yahoo Finance",
+      "date": "2026-11-10T00:56:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVXc3bGFndW1yZFpmT1dzRWRyNzIzdjNLSVNobFVpam1taVVmMHVYQThrV2dZSUQ0akM1ckpsbWZQd3lHOVdITHlnSnRxcmlfMzdtRURYYk9NMHhDalZEdXVEV09BQjA0NFpSNUtnRGx1MTBTM0FDX2RRUWR4b1hCSFRMTmlHTG9qLTNxRW5kak02T1FuNEpOVA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-3-key-takeaways-long-005659697.html"
+    },
+    {
+      "headline": "CMS Finalizes Its 2026 Organ Procurement Organization Rule",
+      "source": "Crowell & Moring LLP",
+      "date": "2026-11-09T20:13:04+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMVFqeldEOWJSTHVLeWp2SWtWd012V0s4Z0lpYllIV01NbFVldWVrczNWYVl0VHEtQVVocE1BT0RtTWYxdUpLMkRjSWFuRmVHU0g1SDJUbkNoTmxNYjhoU2tZbjdrMVExX051YXdYMVJUd2RjTnBiMFdjSUQ1SURKWmRBbkF3OGtHWTBicWFHVVZDVThnNkVQQlliOU80aFpTWER0TjZuWHdranZM?oc=5",
+      "tags": [
+        "opo_regulation",
+        "volumes"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.crowell.com/en/insights/client-alerts/cms-finalizes-its-2026-organ-procurement-organization-rule"
+    },
+    {
+      "headline": "Organ Procurement Organizations Submit Three New Performance Measures for National Endorsement",
+      "source": "Morningstar",
+      "date": "2026-11-09T15:53:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQelpRUHotTjQxbEY0NEFiS25UYVBIQ3lXZFZvWmhHWVBQdkY4TjdoX0RCMGJ4SEQyM3ViLXVLdUVNejFyWEVDWlQ5VEJuTWdLcFF5N3dmelB4b1lUTThrUjk5eTFlSHctZVpoN1N2MEZZOHVHMDFZUndXVUtmS2JvV191eGVlNXpoNXRwcVlsODk1VW9MUUhyVXNjRF9Ob1hOSWVacVpZRDY2enV5aVltbVpwbm1rWm9jY1BXTHRRMHU3YzVGT0ZMaWJzQkZkUzBncjF1R2hqZ21yTTdEVTNJU2xKSjY1SkVDaWRj?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.morningstar.com/news/pr-newswire/20261109cl92618/organ-procurement-organizations-submit-three-new-performance-measures-for-national-endorsement"
+    },
+    {
+      "headline": "Strata critical medical director Andrew Lauck buys $9,998 in stock",
+      "source": "Investing.com",
+      "date": "2026-11-09T15:04:38+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUWp3T3VDM3JXZC1yUlQ1T2RGbjZBS0ZkcFhzQ0tGS2Nnd3JmVzJvbFdTcGw3VTZnYlEydHd2V1BLT1AzdG15blhQWTFKaXRKSFJtVlZGY2VMVXhxSzZWV2R0VXNodno2U1lYTm56MWJ1b1N0Y0w0NkVNbkJPUUxqcFZodUpzcFpVcnQ2VVRBOVpuNWNjSl9ndXA5WW9kNllmVWktZnI2OE1RVWVtQ0xvcjhieDlucnRmbEZtQnRNWF9ReDVydFpTTQ?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.investing.com/news/insider-trading-news/strata-critical-medical-director-andrew-lauck-buys-9998-in-stock-93CH-5012517"
+    },
+    {
+      "headline": "TransMedics (TMDX) Just Flashed Golden Cross Signal: Do You Buy?",
+      "source": "Yahoo Finance",
+      "date": "2026-11-09T13:35:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa1ktNll5ZzkxN1NrMHJMZ25lajZoUndiVHNta19qMVJnSmZ3N3RnbTZ4MXl5NzgtLUZDcmRzLVpOSWZtb0hSSFpHSC1veHM4M3dqNGpUTWhBOHBqQXZZNVRweHlzQ3JubGpNa3JUbUVFdW9xLTM3b0NNUHNMZnhENHlUVE5FYTZwb1RMeFo4bVFOZkNwZnhzWlEweGhzTW5sWGt3?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-just-flashed-golden-133501840.html"
+    },
+    {
+      "headline": "TransMedics (TMDX) Recently Broke Out Above the 50-Day Moving Average",
+      "source": "Yahoo Finance",
+      "date": "2026-11-09T13:30:02+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUW4tbmt5amxvRVhjeU5TcjFvWXl2cmFNdmhIaTZWVVFZUlhkLWlEU3JKS1N4eWp2cWdUODNmOFM4ampsNTctT3pESWxja1ZMdEdDVlJYN05ITkcwX0xFVlUzUXJadjhLNk5sVDl6QjZ4X0JsS1FldVNaRExsVlZudlZva00yR1FNeFl4cnZzQ2diRVRDZl9rOUpWUTNmYlowMnZPSA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-recently-broke-above-133002705.html"
+    },
     {
       "headline": "TransMedics Shares Post Biggest Intraday Gain Since November 2023",
       "source": "www.tokenpost.com",
@@ -263,6 +407,17 @@
       "publisher_url": "https://finance.yahoo.com/healthcare/articles/strata-critical-medical-present-ubs-210500169.html"
     },
     {
+      "headline": "Strata Critical Medical 2026: Revenue $74.08M, EPS ($0.09) \u2014 10-Q Summary",
+      "source": "TradingView",
+      "date": "2026-11-03T17:51:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRlpIUXNBckhxNS1BYUJWcHNmUXp2XzF4VFN1dVE5dThEdUhGZ2UzSTVndVkxZjI0NFp0ZTZybHJ4WlYxVjd3bDhUbVNpQkJtb0hGYnJRaEs2d0ZlVVdxQTRhcW5sZGJkdzdFaDZWVG9FU0dYbmU0U054VGNxZ1dzT2YydFdaeVg3elhaYjk2dlQ3UExsVkgyT1ZLZW50TTRXOEJhSmhFRTRSWnJocFBQMzlIM3d3WURnd3dYS2ZYemozeng2MWc?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.tradingview.com/news/tradingview:8512d5dbb3cd3:0-strata-critical-medical-2026-revenue-74-08m-eps-0-09-10-q-summary/"
+    },
+    {
       "headline": "Strata Critical Medical, Inc. Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026",
       "source": "marketscreener.com",
       "date": "2026-11-03T15:37:00+00:00",
@@ -285,6 +440,17 @@
       "publisher_url": "https://es.tradingview.com/news/marketbeat:c441d53f7094b:0-strata-critical-medical-q3-earnings-call-highlights/"
     },
     {
+      "headline": "Earnings call transcript: Strata Critical Medical tops revenue in Q3 2026",
+      "source": "Investing.com",
+      "date": "2026-11-03T13:51:19+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWENNSF8xTjVITVlTb1BOMXN2dHlTTGNPV3B4VTRKMVVJQklMZHNVTjVqa0xyUlNFZk5Cempoajd5alJiY0EzZ2ZGRG96aWgwTENLQWNHSUhiX2RsZUx1YWtyQ0JxVjhDc0N6N19Ebk1TVjJvNWtQZVZmeVd1OEYyWU1Yd1VZeWZXRFU0Sy10UHo3VlJnZ1FNRDVQMFEyaEJrb3pmN285ZzdTc2JjcGlrazdFM2NGQl9tWkk3WkZhWVhNSFlZVnpB?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-strata-critical-medical-tops-revenue-in-q3-2026-93CH-4995254"
+    },
+    {
       "headline": "Strata Critical Medical Q3 2026 Earnings Call Is Live",
       "source": "TradingView",
       "date": "2026-11-03T12:57:04+00:00",
@@ -294,6 +460,39 @@
       ],
       "first_seen": "2026-11-09T02:28:04+00:00",
       "publisher_url": "https://www.tradingview.com/news/urn:live_audio:quartr.com:722783:0-strata-critical-medical-q3-2026-earnings-call-is-live/"
+    },
+    {
+      "headline": "Strata Critical Medical Announces Third Quarter 2026 Results",
+      "source": "Yahoo Finance",
+      "date": "2026-11-03T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZUNrMU0zS2JxMHo4b0FEejBtZkN6ZnE4MWhiOGpGR0pNVVRZNVZVSTltb3NmTHpVeWFmTEp4LXc3YzdFVW00STNGS0hZU2FESThUVnNtZVdEbmJCZUlHOHItZFE4ci1iUG8xUFc4T1M2aDV1bEh2SU5PVlBaN1pjeEtoSm9MY25KZk5Uekd1OHNvX2U4QUVQMW43NmhHSnkwUkE?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/strata-critical-medical-announces-third-120000319.html"
+    },
+    {
+      "headline": "Strata Critical Medical Q3 Revenue Rises 50.3% to $74.1 Million",
+      "source": "TradingView",
+      "date": "2026-11-03T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYjloQmVvUTRLQzZycEw5eWRrbTJqeC1Cd1RpQXlxbkIwUlhZcElEa0xmTG5hTWxoWHU4czFoc2NIdWZtd09JNlZMdmhJWGxHSkFEN1Z5emNjdnF6dnY2dHZkeWdmVXBMUGw5T0wxQWpfMzR0eHJTZ3JYMUVReVhHZ20zaFNXSnRCbkd3cWY5eHpHUDVvWkFGYllBQjZmTmtTRHpMc2hjS0xRT2U2bkZrVHpqeFU3Um5URzEtUTU1TFQ?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.tradingview.com/news/tradingview:35a00ffefa733:0-strata-critical-medical-q3-revenue-rises-50-3-to-74-1-million/"
+    },
+    {
+      "headline": "Strata Critical Medical, Inc. Reiterates Earnings Guidance for the Year 2026",
+      "source": "www.marketscreener.com",
+      "date": "2026-11-03T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ3ZJWk90S3lqSS1wSlFzSlhncmt4VnpYc3haWjZ5U2ZrTWZ6bWh3TmdSWE55dlk3dkpUejlCWm9Gd0RqVGlpU3NaZ1Y0ZVEyVW8wUHFiYUVrSUtJU1NDN2JRTkhOYnZrZ3diUEFHeEx0cjBTWHhhLThQaEk1dHpITVJGRUpzMndvNEFJZDlUNEpnRGhtZ1FzalUxTzZPMmpFaGJnWnRfMnBKVVBYU3U3czBpRnJ3a29ocFlYek5sM0hOUkJoVnc?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-16T02:36:45+00:00",
+      "publisher_url": "https://www.marketscreener.com/news/strata-critical-medical-inc-reiterates-earnings-guidance-for-the-year-2026-ce785ed9dc89fe24"
     },
     {
       "headline": "Earnings To Watch: Strata Critical Medical Inc (SRTA) Q3 2026 -- GF Value Sees 30% Upside",
@@ -1362,138 +1561,6 @@
       ],
       "first_seen": "2026-11-02T02:10:45+00:00",
       "publisher_url": "https://unos.org/news/unos-staffing-survey-provides-trusted-data-for-staffing-decisions/"
-    },
-    {
-      "headline": "TransMedics Group Investigation Initiated: Kahn Swick & Foti, LLC Investigates the Officers and Directors of TransMedics Group, Inc. - TMDX",
-      "source": "Business Wire",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPRTczbFRrWVpjUFppMkxPVVd4M18yc2Vtb1FoVlV4ajFwRGlYdk4tRXF2UFUtbW1Kc2NFeWtheDdwMVVnVUNnOXdTOWczc2ItYkxKYXAyLXZlNkxLTTFQbXVmTDE3SWZkTEYxVWVvQ1hud3B1VGpsRVhXNGhVWUNnUVBiZlRfaWpVeVgxQjBmLVBFY3dvd3YxdVllV25ycTdWYkQydW5LbG1hX0FCNEhLTEhIb1F2OGZKbVQ2QmhpRVBpeEYyeUkyVHJ4UUtRRGwzWDhWUWF1MVBfcHhuWE1XRlhENGV5bG9haDNJcGdtUHVYc1hnc1VwTk1CY3Y0T0pZZE9vZWZQVjVYV0FmbGVZRjJiZk5OUTlNWjhZ?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.businesswire.com/news/home/20260817649788/en/TransMedics-Group-Investigation-Initiated-Kahn-Swick-Foti-LLC-Investigates-the-Officers-and-Directors-of-TransMedics-Group-Inc.---TMDX"
-    },
-    {
-      "headline": "TransMedics Targets $2B Opportunity With Kidney Push, European Expansion",
-      "source": "Yahoo Finance",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPR1NZSzRRSV9vQmQtR2JCVW0xV1JKOXRhSVdIVUpUTG5GVjBfTHlIaFFsYVE0eTc4TVhyNGdPb0dEX0drRkJwY1pJc29kbXBpNENzcDNvZWRwdURoN3hDYl90U0MzZzlMVU5vNXdCZU00S25TeDBQZ1hLY1BaWFhoQzduSGV5ZHBOTTc2VUgySlFTczl5ZEFHNm1MSEdBRlJacUMxZA?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-targets-2b-opportunity-kidney-050156696.html"
-    },
-    {
-      "headline": "Law firm investigates TransMedics officers for possible shareholder duty breaches",
-      "source": "Pluang",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTnFDZDl0TWQ2T3VfdHF4VFdrS3FmTUh2N21OTkRldEp2ZmJYQTIxelQtUGI4QzhUd3FsOS1KODJKSjNUcWxzU0pCTUxSVHNycXRXdV9mdm5qQ0o0ZHZoNmFqb2RXRkJjaG9uZmNTc29BR21ONzIxZ1pqa21TYlBBTzBfWnh6R09FYXBjSUxoTThieFlYZ3JZVWVkRUw?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://pluang.com/en/news-feed/apakah-petinggi-transmedics-langgar-tugas-fidusia-pemegang-saham"
-    },
-    {
-      "headline": "GERSON DELTARUNE LES ENSE\u00d1A A UNOS RETACOS UNDERTALE COMO DAR JEROMAS EN ROBLOX",
-      "source": "YouTube",
-      "date": "2026-08-16T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5FV2dRUUZtVFoxbXR4Ni0tZkh5bTJ5NlY1bDFkMzJyZUJmN0RvVnpYYnhXZDZnMDZuR0J1c1JDOEduc0pDNmtrZG5GUzZKX0NGTDd1b3RqVlF1dTlL?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-19T00:55:57+00:00",
-      "publisher_url": "https://youtu.be/F-iaH0ofjfE?si=alWEuVrLF0F0cHvV"
-    },
-    {
-      "headline": "Strata critical medical director Reginald Love disposes of $29,273 in stock",
-      "source": "Investing.com",
-      "date": "2026-08-13T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWl92RVJVMExMc0Q1bFU0VjhzTDFhSUROM2NRWUFjbXJ4WEtmYnA0bzZKYW43d0Mxc0Vyam1xNFdUQkhWd0NHZ25QY1FyTG8xZndPQUF1dEE4Q21KUzd5SUxseU9YWVU5WktnWHp6NFhJMHBLRUJQY216VnpVOXZLcUJwVE5Fc0JHT3IwX19FbURHeGM5R0podnFGWVVuME91dzhuZ2dnbW04M3JLLWwydllzYWNlNmZzRUQ4bXJNZ0ktVmdwT2NVOUIwS1ViOElRclg5bA?oc=5",
-      "tags": [
-        "strata"
-      ],
-      "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": "https://www.investing.com/news/insider-trading-news/strata-critical-medical-director-reginald-love-disposes-of-29273-in-stock-93CH-4859610"
-    },
-    {
-      "headline": "Immersion Investment Views Strata Critical Medical (SRTA) as a \u201cBabushka Doll\u201d",
-      "source": "Yahoo Finance",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcmM5b2NKZ3pjRzlHTmJTRzlNLTBaZDRta2J4dlFMa05zZGd5amlLcHVLdW1qaFFyTFpqbEc3VTZBTmNnMHQ2ZWNHSy04Z05nTUREdWJTRXBhZGtLaE4tUlRLUUhKZWlqQmhuQ001dmRFU0w3QTJuNE5kRUxMNWFGUFlhbi16eXliVjdJZlZyaHU1cHZSR0xibXZJSjBjdGFkcTItdDhNYlpFdzQ?oc=5",
-      "tags": [
-        "strata"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/immersion-investment-views-strata-critical-134404589.html"
-    },
-    {
-      "headline": "Landmark kidney transplants set benchmark for long-distance organ transport",
-      "source": "Med-Tech Insights",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeGFVSHdiM3duejVkN284d01MUmlNZ1NQSDhFSTJqZ2hYbnRPTV9OSGNEa2VGNzV1c24takVPdG5CcGtQWkFrMmJMdmpudGFaQ1hfWUl0RG94MjhyUGswN1hGVEFNNE1sOUgwZ195TEV3X25OVmFMQkZLYkVjRUhHd2F0Rk11Nk9wdDRQdW9rcHRKRFNja0NRQ0N2Zy14VEptN25rYWFRaVRtTGZVSU9wQzVzdzJuN1E?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://med-techinsights.com/2026/08/11/landmark-kidney-transplants-set-benchmark-for-long-distance-organ-transport/"
-    },
-    {
-      "headline": "TMDX: Strong growth, new kidney program, and global expansion set stage for multi-billion revenue",
-      "source": "TradingView",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNaHY1NVN0djN3eVVFXzEwMWlJY0N4ZnVuWnhCUGF2Y1dmM0dsWkV5MFNBWUswOEJkeDc4X0RnbTgwMDFLb1ZwWUlDRGNjOXotMmN2RzhwNXNaU3B1NGc3TFkzNmJZY1V4N3hpR09TaHRzY2tiVzBBUU5rOXFVTlBWTEV2Vlc1NjJwZW4xNFdaNC1ROS1Zck9jeWVpdEsyVFJjWm9LVlhYcDlUVUVMT09sR2QySmEzS3VmQ2ExdGNjeFp1a2x5WHljOXFmWTVFbEhaNWNzZ19GZWxOM0Zqa2xDeTVyWWFXYnY2NlViMVpuNFVHdEw1bTNZSk1MTUw1VXRwQkktNlRWYVNaRUh0TlE?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4004469:0-tmdx-strong-growth-new-kidney-program-and-global-expansion-set-stage-for-multi-billion-revenue/"
-    },
-    {
-      "headline": "TransMedics at canaccord growth conference: kidney push, margin trade-offs",
-      "source": "Investing.com",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaHE4SWxGOE9KRDVHcmJ2NUZsOVo5Rk55dW1TQzhNcndhSXpoT01WeGVYYUVMd3UzX3hWTldaMDVMdzdacHBwanZCT0V4X19qUzNMcmJfUVBqT0FBT2FYR3cyLXk3b2tZRnFjb05wWkhrU3VsUFN2LTBGYldsM2V3V2RLUGVyU1FsVDZzdGtwR2VpX1d4TXpwUkRUalFxZFFhbG9jUWNZT3B3TVp0dFd5UVpXWGh3WjM1eC1SYTJUMWpVRUl5aFE?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-08T20:20:46+00:00",
-      "publisher_url": "https://www.investing.com/news/transcripts/transmedics-at-canaccord-growth-conference-kidney-push-margin-tradeoffs-93CH-4852458"
-    },
-    {
-      "headline": "XVIVO Receives CE Certificates for Its Groundbreaking Heart Preservation Technology, Transforming Access to Life-Saving Transplants Across Europe",
-      "source": "Yahoo Finance",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZlRaOVdJejdaSWxmY1AyQXktQ01RNVU0TDFGRkdnOTlfdnRJNmd5SUF0ZTZpUkNTay1DNjhRZHppR1NlSVM4UHZ4QThwMGtDcDI2YVlvM1pjX1dhRFg0dTJyREFxSFRwNm5rYlBxWXVmcGhja0h3bG1jT3BSWDh3bVIyaG5NZ0lHVVQzeTVfdEVSaUhfVVJlRHFsRzJOOHlKRDl1UkkxUUF1dw?oc=5",
-      "tags": [
-        "competitors"
-      ],
-      "first_seen": "2026-10-19T00:55:57+00:00",
-      "publisher_url": "https://finance.yahoo.com/healthcare/articles/xvivo-receives-ce-certificates-groundbreaking-115000101.html"
-    },
-    {
-      "headline": "Federal Reviewers Found Problems in Nearly 30 Percent of Cases at a Four-State Organ Procurement Group",
-      "source": "Medical Daily",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNU2xNNURtSnB0OU0zaGRpM2tjbUEtV1JSSENPVnJrOHBiV0ZhaHVjbG10cmhnQWJ0Y2VWakJsQnFldXNRWVQtUVBvcXJ2bU9LSU5kbEdkMUJWbHgzOUh5X3lvRUtoRTFLeldhakRPTXljb0lYdjcwRlN0SWpJYmhkT19lOFZ0d3BEQkw2blRLY1NIYk9kZ0E?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.medicaldaily.com/network-hope-organ-procurement-decertification-cms-hrsa-477129"
-    },
-    {
-      "headline": "The rot in our organ transplant system goes way beyond donors waking up on operating tables",
-      "source": "Washington Examiner",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRDk0SmloVS10TElJbDVuRWhvVkNLbFJaTnEtVmxjVDBxOWFTLWhUY190MnhIOFJsWUFyN3psRkN0UmpPLU43NHJPZ0xrSjdLXzd1dW05R2xNNDhscUJISFA0ODdwU3RONnRPaFVUd05KaExWR2xzclNhaVUwS3ZhN2FBSUFUdEVMbkpnSm5TNHVQQUNxY0NEQWt6bHdhNVU?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://www.washingtonexaminer.com/news/washington-secrets/4682493/rot-us-organ-transplant-system/"
     }
   ]
 }

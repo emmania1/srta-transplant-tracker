@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants by organ",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-11-09T02:30:32+00:00",
+  "ingested_at": "2026-11-16T02:38:42+00:00",
   "organs": {
     "all": [
       {
@@ -8392,8 +8392,8 @@
       "2026-W44"
     ]
   },
-  "raw_file": "2026-11-09_optn_metrics_tx_weekly_deceased_all.csv, 2026-11-09_optn_metrics_tx_weekly_deceased_heart.csv, 2026-11-09_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-11-09_optn_metrics_tx_weekly_deceased_liver.csv, 2026-11-09_optn_metrics_tx_weekly_deceased_lung.csv",
-  "data_as_of": "2026-11-09",
+  "raw_file": "2026-11-16_optn_metrics_tx_weekly_deceased_all.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_heart.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_liver.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_lung.csv",
+  "data_as_of": "2026-11-16",
   "parser": "optn_metrics_tx_weekly",
   "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
   "donor_type": "Deceased Donors",

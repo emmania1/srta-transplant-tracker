@@ -1,7 +1,12 @@
 {
-  "checked_at": "2026-11-09T02:30:32+00:00",
-  "ok": true,
-  "issues": [],
+  "checked_at": "2026-11-16T02:38:42+00:00",
+  "ok": false,
+  "issues": [
+    "OPTN weekly transplants: latest complete week ended 2026-10-28 (19 days ago, limit 14).",
+    "OPTN weekly donors: latest complete week ended 2026-10-21 (26 days ago, limit 21).",
+    "OPTN weekly waitlist additions: latest complete week ended 2026-10-28 (19 days ago, limit 14).",
+    "OPTN weekly regions: latest complete week ended 2026-10-28 (19 days ago, limit 14)."
+  ],
   "notices": [],
   "thresholds": {
     "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
