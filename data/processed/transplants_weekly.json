@@ -2,7 +2,7 @@
   "title": "Weekly deceased-donor transplants by organ",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-11-16T02:38:42+00:00",
+  "ingested_at": "2026-11-25T00:53:49+00:00",
   "organs": {
     "all": [
       {
@@ -1396,7 +1396,28 @@
         "week": 43,
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
-        "count": 717
+        "count": 718
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 800
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 802
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 781
       }
     ],
     "heart": [
@@ -2792,6 +2813,27 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 74
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 79
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 87
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 81
       }
     ],
     "kidney": [
@@ -4186,7 +4228,28 @@
         "week": 43,
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
-        "count": 360
+        "count": 361
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 413
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 399
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 394
       }
     ],
     "liver": [
@@ -5582,6 +5645,27 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 221
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 227
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 235
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 230
       }
     ],
     "lung": [
@@ -6977,6 +7061,27 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 60
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 75
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 78
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 69
       }
     ],
     "hll": [
@@ -8372,28 +8477,49 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 355
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 381
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 400
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 380
       }
     ]
   },
   "excluded_incomplete_weeks": {
     "all": [
-      "2026-W44"
+      "2026-W47"
     ],
     "heart": [
-      "2026-W44"
+      "2026-W47"
     ],
     "kidney": [
-      "2026-W44"
+      "2026-W47"
     ],
     "liver": [
-      "2026-W44"
+      "2026-W47"
     ],
     "lung": [
-      "2026-W44"
+      "2026-W47"
     ]
   },
-  "raw_file": "2026-11-16_optn_metrics_tx_weekly_deceased_all.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_heart.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_liver.csv, 2026-11-16_optn_metrics_tx_weekly_deceased_lung.csv",
-  "data_as_of": "2026-11-16",
+  "raw_file": "2026-11-25_optn_metrics_tx_weekly_deceased_all.csv, 2026-11-25_optn_metrics_tx_weekly_deceased_heart.csv, 2026-11-25_optn_metrics_tx_weekly_deceased_kidney.csv, 2026-11-25_optn_metrics_tx_weekly_deceased_liver.csv, 2026-11-25_optn_metrics_tx_weekly_deceased_lung.csv",
+  "data_as_of": "2026-11-25",
   "parser": "optn_metrics_tx_weekly",
   "week_definition": "OPTN calendar-year week: week N starts Jan 1 + 7*(N-1); week 52 runs to Dec 31",
   "donor_type": "Deceased Donors",

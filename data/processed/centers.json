@@ -2,12 +2,12 @@
   "title": "Top transplant centers: deceased-donor heart + liver + lung",
   "source": "OPTN national data reports (hrsa.unos.org/data/view-data-reports/national-data), fetched monthly by scripts/fetch_optn_national.py",
   "tag": "Live",
-  "ingested_at": "2026-11-16T02:38:42+00:00",
-  "period_end": "2026-09-30",
-  "data_as_of": "2026-10-12",
+  "ingested_at": "2026-11-25T00:53:49+00:00",
+  "period_end": "2026-10-31",
+  "data_as_of": "2026-11-23",
   "current_year": 2026,
   "prior_year": 2025,
-  "current_label": "2026 YTD (Jan 1\u2013Sep 30)",
+  "current_label": "2026 YTD (Jan 1\u2013Oct 31)",
   "prior_label": "2025 full year",
   "comparison_note": "Mix comparison: shares of the current year to date vs. the prior full year. OPTN national reports are annual-only, so this is not a same-period volume comparison.",
   "full_year": 2025,
@@ -21,22 +21,22 @@
         "heart": {
           "2025": 210,
           "2024": 172,
-          "2026_ytd": 133
+          "2026_ytd": 148
         },
         "liver": {
           "2025": 200,
           "2024": 202,
-          "2026_ytd": 170
+          "2026_ytd": 191
         },
         "lung": {
           "2025": 149,
           "2024": 97,
-          "2026_ytd": 108
+          "2026_ytd": 118
         }
       },
       "total_2025": 559,
       "total_2024": 471,
-      "total_ytd": 411,
+      "total_ytd": 457,
       "yoy_pct": 18.7
     },
     {
@@ -46,22 +46,22 @@
         "heart": {
           "2025": 91,
           "2024": 71,
-          "2026_ytd": 57
+          "2026_ytd": 61
         },
         "liver": {
           "2025": 266,
           "2024": 248,
-          "2026_ytd": 215
+          "2026_ytd": 243
         },
         "lung": {
           "2025": 143,
           "2024": 139,
-          "2026_ytd": 105
+          "2026_ytd": 117
         }
       },
       "total_2025": 500,
       "total_2024": 458,
-      "total_ytd": 377,
+      "total_ytd": 421,
       "yoy_pct": 9.2
     },
     {
@@ -71,22 +71,22 @@
         "heart": {
           "2025": 73,
           "2024": 60,
-          "2026_ytd": 50
+          "2026_ytd": 58
         },
         "liver": {
           "2025": 323,
           "2024": 282,
-          "2026_ytd": 251
+          "2026_ytd": 275
         },
         "lung": {
           "2025": 83,
           "2024": 90,
-          "2026_ytd": 80
+          "2026_ytd": 90
         }
       },
       "total_2025": 479,
       "total_2024": 432,
-      "total_ytd": 381,
+      "total_ytd": 423,
       "yoy_pct": 10.9
     },
     {
@@ -96,22 +96,22 @@
         "heart": {
           "2025": 136,
           "2024": 127,
-          "2026_ytd": 110
+          "2026_ytd": 124
         },
         "liver": {
           "2025": 196,
           "2024": 166,
-          "2026_ytd": 174
+          "2026_ytd": 203
         },
         "lung": {
           "2025": 104,
           "2024": 94,
-          "2026_ytd": 61
+          "2026_ytd": 77
         }
       },
       "total_2025": 436,
       "total_2024": 387,
-      "total_ytd": 345,
+      "total_ytd": 404,
       "yoy_pct": 12.7
     },
     {
@@ -121,22 +121,22 @@
         "heart": {
           "2025": 31,
           "2024": 40,
-          "2026_ytd": 17
+          "2026_ytd": 18
         },
         "liver": {
           "2025": 322,
           "2024": 317,
-          "2026_ytd": 224
+          "2026_ytd": 243
         },
         "lung": {
           "2025": 6,
           "2024": 0,
-          "2026_ytd": 11
+          "2026_ytd": 12
         }
       },
       "total_2025": 359,
       "total_2024": 357,
-      "total_ytd": 252,
+      "total_ytd": 273,
       "yoy_pct": 0.6
     },
     {
@@ -146,22 +146,22 @@
         "heart": {
           "2025": 42,
           "2024": 51,
-          "2026_ytd": 37
+          "2026_ytd": 38
         },
         "liver": {
           "2025": 272,
           "2024": 274,
-          "2026_ytd": 197
+          "2026_ytd": 223
         },
         "lung": {
           "2025": 42,
           "2024": 42,
-          "2026_ytd": 60
+          "2026_ytd": 68
         }
       },
       "total_2025": 356,
       "total_2024": 367,
-      "total_ytd": 294,
+      "total_ytd": 329,
       "yoy_pct": -3.0
     },
     {
@@ -171,22 +171,22 @@
         "heart": {
           "2025": 114,
           "2024": 134,
-          "2026_ytd": 98
+          "2026_ytd": 105
         },
         "liver": {
           "2025": 145,
           "2024": 136,
-          "2026_ytd": 127
+          "2026_ytd": 146
         },
         "lung": {
           "2025": 93,
           "2024": 85,
-          "2026_ytd": 68
+          "2026_ytd": 75
         }
       },
       "total_2025": 352,
       "total_2024": 355,
-      "total_ytd": 293,
+      "total_ytd": 326,
       "yoy_pct": -0.8
     },
     {
@@ -196,22 +196,22 @@
         "heart": {
           "2025": 57,
           "2024": 52,
-          "2026_ytd": 35
+          "2026_ytd": 36
         },
         "liver": {
           "2025": 200,
           "2024": 78,
-          "2026_ytd": 130
+          "2026_ytd": 140
         },
         "lung": {
           "2025": 84,
           "2024": 67,
-          "2026_ytd": 41
+          "2026_ytd": 48
         }
       },
       "total_2025": 341,
       "total_2024": 197,
-      "total_ytd": 206,
+      "total_ytd": 224,
       "yoy_pct": 73.1
     },
     {
@@ -221,22 +221,22 @@
         "heart": {
           "2025": 87,
           "2024": 88,
-          "2026_ytd": 67
+          "2026_ytd": 71
         },
         "liver": {
           "2025": 144,
           "2024": 178,
-          "2026_ytd": 131
+          "2026_ytd": 145
         },
         "lung": {
           "2025": 83,
           "2024": 92,
-          "2026_ytd": 69
+          "2026_ytd": 76
         }
       },
       "total_2025": 314,
       "total_2024": 358,
-      "total_ytd": 267,
+      "total_ytd": 292,
       "yoy_pct": -12.3
     },
     {
@@ -246,22 +246,22 @@
         "heart": {
           "2025": 84,
           "2024": 67,
-          "2026_ytd": 40
+          "2026_ytd": 48
         },
         "liver": {
           "2025": 160,
           "2024": 169,
-          "2026_ytd": 125
+          "2026_ytd": 135
         },
         "lung": {
           "2025": 69,
           "2024": 79,
-          "2026_ytd": 42
+          "2026_ytd": 50
         }
       },
       "total_2025": 313,
       "total_2024": 315,
-      "total_ytd": 207,
+      "total_ytd": 233,
       "yoy_pct": -0.6
     },
     {
@@ -271,22 +271,22 @@
         "heart": {
           "2025": 28,
           "2024": 45,
-          "2026_ytd": 26
+          "2026_ytd": 28
         },
         "liver": {
           "2025": 155,
           "2024": 121,
-          "2026_ytd": 98
+          "2026_ytd": 105
         },
         "lung": {
           "2025": 129,
           "2024": 148,
-          "2026_ytd": 91
+          "2026_ytd": 102
         }
       },
       "total_2025": 312,
       "total_2024": 314,
-      "total_ytd": 215,
+      "total_ytd": 235,
       "yoy_pct": -0.6
     },
     {
@@ -296,22 +296,22 @@
         "heart": {
           "2025": 74,
           "2024": 64,
-          "2026_ytd": 106
+          "2026_ytd": 120
         },
         "liver": {
           "2025": 191,
           "2024": 167,
-          "2026_ytd": 163
+          "2026_ytd": 184
         },
         "lung": {
           "2025": 44,
           "2024": 29,
-          "2026_ytd": 52
+          "2026_ytd": 54
         }
       },
       "total_2025": 309,
       "total_2024": 260,
-      "total_ytd": 321,
+      "total_ytd": 358,
       "yoy_pct": 18.8
     },
     {
@@ -321,22 +321,22 @@
         "heart": {
           "2025": 74,
           "2024": 92,
-          "2026_ytd": 57
+          "2026_ytd": 67
         },
         "liver": {
           "2025": 175,
           "2024": 144,
-          "2026_ytd": 134
+          "2026_ytd": 147
         },
         "lung": {
           "2025": 54,
           "2024": 50,
-          "2026_ytd": 37
+          "2026_ytd": 42
         }
       },
       "total_2025": 303,
       "total_2024": 286,
-      "total_ytd": 228,
+      "total_ytd": 256,
       "yoy_pct": 5.9
     },
     {
@@ -346,17 +346,22 @@
         "heart": {
           "2025": 103,
           "2024": 103,
-          "2026_ytd": 70
+          "2026_ytd": 76
         },
         "liver": {
           "2025": 199,
           "2024": 175,
-          "2026_ytd": 150
+          "2026_ytd": 169
+        },
+        "lung": {
+          "2025": 0,
+          "2024": 0,
+          "2026_ytd": 1
         }
       },
       "total_2025": 302,
       "total_2024": 278,
-      "total_ytd": 220,
+      "total_ytd": 246,
       "yoy_pct": 8.6
     },
     {
@@ -366,22 +371,22 @@
         "heart": {
           "2025": 58,
           "2024": 74,
-          "2026_ytd": 73
+          "2026_ytd": 78
         },
         "liver": {
           "2025": 154,
           "2024": 157,
-          "2026_ytd": 125
+          "2026_ytd": 138
         },
         "lung": {
           "2025": 89,
           "2024": 101,
-          "2026_ytd": 74
+          "2026_ytd": 79
         }
       },
       "total_2025": 301,
       "total_2024": 332,
-      "total_ytd": 272,
+      "total_ytd": 295,
       "yoy_pct": -9.3
     },
     {
@@ -391,22 +396,22 @@
         "heart": {
           "2025": 71,
           "2024": 79,
-          "2026_ytd": 47
+          "2026_ytd": 48
         },
         "liver": {
           "2025": 155,
           "2024": 134,
-          "2026_ytd": 89
+          "2026_ytd": 99
         },
         "lung": {
           "2025": 70,
           "2024": 67,
-          "2026_ytd": 55
+          "2026_ytd": 59
         }
       },
       "total_2025": 296,
       "total_2024": 280,
-      "total_ytd": 191,
+      "total_ytd": 206,
       "yoy_pct": 5.7
     },
     {
@@ -416,22 +421,22 @@
         "heart": {
           "2025": 34,
           "2024": 36,
-          "2026_ytd": 35
+          "2026_ytd": 42
         },
         "liver": {
           "2025": 172,
           "2024": 193,
-          "2026_ytd": 128
+          "2026_ytd": 141
         },
         "lung": {
           "2025": 75,
           "2024": 70,
-          "2026_ytd": 55
+          "2026_ytd": 62
         }
       },
       "total_2025": 281,
       "total_2024": 299,
-      "total_ytd": 218,
+      "total_ytd": 245,
       "yoy_pct": -6.0
     },
     {
@@ -441,22 +446,22 @@
         "heart": {
           "2025": 83,
           "2024": 92,
-          "2026_ytd": 52
+          "2026_ytd": 59
         },
         "liver": {
           "2025": 93,
           "2024": 120,
-          "2026_ytd": 77
+          "2026_ytd": 83
         },
         "lung": {
           "2025": 101,
           "2024": 121,
-          "2026_ytd": 78
+          "2026_ytd": 87
         }
       },
       "total_2025": 277,
       "total_2024": 333,
-      "total_ytd": 207,
+      "total_ytd": 229,
       "yoy_pct": -16.8
     },
     {
@@ -466,12 +471,12 @@
         "heart": {
           "2025": 77,
           "2024": 60,
-          "2026_ytd": 48
+          "2026_ytd": 56
         },
         "liver": {
           "2025": 177,
           "2024": 143,
-          "2026_ytd": 127
+          "2026_ytd": 136
         },
         "lung": {
           "2025": 21,
@@ -481,7 +486,7 @@
       },
       "total_2025": 275,
       "total_2024": 223,
-      "total_ytd": 193,
+      "total_ytd": 210,
       "yoy_pct": 23.3
     },
     {
@@ -491,22 +496,22 @@
         "heart": {
           "2025": 57,
           "2024": 48,
-          "2026_ytd": 49
+          "2026_ytd": 55
         },
         "liver": {
           "2025": 146,
           "2024": 163,
-          "2026_ytd": 137
+          "2026_ytd": 148
         },
         "lung": {
           "2025": 67,
           "2024": 61,
-          "2026_ytd": 61
+          "2026_ytd": 64
         }
       },
       "total_2025": 270,
       "total_2024": 272,
-      "total_ytd": 247,
+      "total_ytd": 267,
       "yoy_pct": -0.7
     },
     {
@@ -516,22 +521,22 @@
         "heart": {
           "2025": 78,
           "2024": 51,
-          "2026_ytd": 41
+          "2026_ytd": 47
         },
         "liver": {
           "2025": 165,
           "2024": 171,
-          "2026_ytd": 119
+          "2026_ytd": 131
         },
         "lung": {
           "2025": 24,
           "2024": 25,
-          "2026_ytd": 22
+          "2026_ytd": 24
         }
       },
       "total_2025": 267,
       "total_2024": 247,
-      "total_ytd": 182,
+      "total_ytd": 202,
       "yoy_pct": 8.1
     },
     {
@@ -541,22 +546,22 @@
         "heart": {
           "2025": 72,
           "2024": 77,
-          "2026_ytd": 61
+          "2026_ytd": 67
         },
         "liver": {
           "2025": 116,
           "2024": 119,
-          "2026_ytd": 85
+          "2026_ytd": 99
         },
         "lung": {
           "2025": 74,
           "2024": 76,
-          "2026_ytd": 58
+          "2026_ytd": 63
         }
       },
       "total_2025": 262,
       "total_2024": 272,
-      "total_ytd": 204,
+      "total_ytd": 229,
       "yoy_pct": -3.7
     },
     {
@@ -566,22 +571,22 @@
         "heart": {
           "2025": 56,
           "2024": 76,
-          "2026_ytd": 45
+          "2026_ytd": 51
         },
         "liver": {
           "2025": 146,
           "2024": 129,
-          "2026_ytd": 109
+          "2026_ytd": 115
         },
         "lung": {
           "2025": 60,
           "2024": 78,
-          "2026_ytd": 42
+          "2026_ytd": 45
         }
       },
       "total_2025": 262,
       "total_2024": 283,
-      "total_ytd": 196,
+      "total_ytd": 211,
       "yoy_pct": -7.4
     },
     {
@@ -591,22 +596,22 @@
         "heart": {
           "2025": 57,
           "2024": 41,
-          "2026_ytd": 43
+          "2026_ytd": 49
         },
         "liver": {
           "2025": 149,
           "2024": 144,
-          "2026_ytd": 98
+          "2026_ytd": 112
         },
         "lung": {
           "2025": 55,
           "2024": 66,
-          "2026_ytd": 33
+          "2026_ytd": 36
         }
       },
       "total_2025": 261,
       "total_2024": 251,
-      "total_ytd": 174,
+      "total_ytd": 197,
       "yoy_pct": 4.0
     },
     {
@@ -616,22 +621,22 @@
         "heart": {
           "2025": 77,
           "2024": 77,
-          "2026_ytd": 69
+          "2026_ytd": 82
         },
         "liver": {
           "2025": 137,
           "2024": 134,
-          "2026_ytd": 100
+          "2026_ytd": 112
         },
         "lung": {
           "2025": 46,
           "2024": 45,
-          "2026_ytd": 32
+          "2026_ytd": 36
         }
       },
       "total_2025": 260,
       "total_2024": 256,
-      "total_ytd": 201,
+      "total_ytd": 230,
       "yoy_pct": 1.6
     }
   ],
@@ -640,24 +645,24 @@
     "heart": {
       "2025": 4587,
       "2024": 4572,
-      "2026_ytd": 3432
+      "2026_ytd": 3800
     },
     "liver": {
       "2025": 11635,
       "2024": 10854,
-      "2026_ytd": 9253
+      "2026_ytd": 10280
     },
     "lung": {
       "2025": 3490,
       "2024": 3340,
-      "2026_ytd": 2731
+      "2026_ytd": 3017
     }
   },
   "scope": "Deceased-donor heart + liver + lung transplants by transplant center (OPTN center code + name)",
-  "yoy_note": "YoY = 2025 vs 2024, both full years (like-for-like). 2026 YTD is through 2026-09-30 and has no YoY until a snapshot from a year earlier exists.",
+  "yoy_note": "YoY = 2025 vs 2024, both full years (like-for-like). 2026 YTD is through 2026-10-31 and has no YoY until a snapshot from a year earlier exists.",
   "source_detail": "OPTN national data, Build advanced report: rows Transplant Center, Deceased Donor filter",
-  "raw_file": "2026-10-19_optn_national_centers_heart_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_heart_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_liver_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_years_thru-2026-09-30.csv, 2026-10-19_optn_national_centers_lung_ytd_thru-2026-09-30.csv, 2026-10-19_optn_national_donors_dcd_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_dcd_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_heart_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_kidney_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_liver_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_distance_lung_thru-2026-09-30.csv, 2026-10-19_optn_national_tx_state_all_thru-2026-09-30.csv",
-  "snapshot_downloaded": "2026-10-19",
+  "raw_file": "2026-11-25_optn_national_centers_heart_years_thru-2026-10-31.csv, 2026-11-25_optn_national_centers_heart_ytd_thru-2026-10-31.csv, 2026-11-25_optn_national_centers_liver_years_thru-2026-10-31.csv, 2026-11-25_optn_national_centers_liver_ytd_thru-2026-10-31.csv, 2026-11-25_optn_national_centers_lung_years_thru-2026-10-31.csv, 2026-11-25_optn_national_centers_lung_ytd_thru-2026-10-31.csv, 2026-11-25_optn_national_donors_dcd_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_dcd_heart_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_dcd_kidney_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_dcd_liver_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_dcd_lung_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_distance_heart_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_distance_kidney_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_distance_liver_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_distance_lung_thru-2026-10-31.csv, 2026-11-25_optn_national_tx_state_all_thru-2026-10-31.csv",
+  "snapshot_downloaded": "2026-11-25",
   "parser": "optn_national_data",
   "status": "ok",
   "unrecognised_files": [],

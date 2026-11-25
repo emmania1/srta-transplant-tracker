@@ -2,7 +2,7 @@
   "title": "Weekly deceased donors recovered + YTD all-organs discard rate",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-11-16T02:38:42+00:00",
+  "ingested_at": "2026-11-25T00:53:49+00:00",
   "donors": [
     {
       "yr": 2023,
@@ -1360,21 +1360,21 @@
       "week": 38,
       "week_start": "2026-09-17",
       "week_end": "2026-09-23",
-      "count": 292
+      "count": 293
     },
     {
       "yr": 2026,
       "week": 39,
       "week_start": "2026-09-24",
       "week_end": "2026-09-30",
-      "count": 320
+      "count": 321
     },
     {
       "yr": 2026,
       "week": 40,
       "week_start": "2026-10-01",
       "week_end": "2026-10-07",
-      "count": 331
+      "count": 329
     },
     {
       "yr": 2026,
@@ -1388,64 +1388,85 @@
       "week": 42,
       "week_start": "2026-10-15",
       "week_end": "2026-10-21",
-      "count": 291
+      "count": 292
+    },
+    {
+      "yr": 2026,
+      "week": 43,
+      "week_start": "2026-10-22",
+      "week_end": "2026-10-28",
+      "count": 308
+    },
+    {
+      "yr": 2026,
+      "week": 44,
+      "week_start": "2026-10-29",
+      "week_end": "2026-11-04",
+      "count": 308
+    },
+    {
+      "yr": 2026,
+      "week": 45,
+      "week_start": "2026-11-05",
+      "week_end": "2026-11-11",
+      "count": 312
     }
   ],
   "excluded_incomplete_weeks": [
-    "2026-W43"
+    "2026-W46"
   ],
-  "raw_file": "2026-11-16_optn_metrics_don_weekly_deceased.csv",
-  "data_as_of": "2026-11-16",
+  "raw_file": "2026-11-25_optn_metrics_don_weekly_deceased.csv",
+  "data_as_of": "2026-11-25",
   "parser": "optn_metrics_don_weekly",
   "donor_type": "Deceased Donors",
   "region": "National",
   "ytd_table": [
     {
       "yr": 2021,
-      "ytd_deceased_donors": 11410,
-      "ytd_pct_chg": 11.58,
-      "discard_rate_pct": 17.23,
-      "utilization_rate_pct": 39.63
+      "ytd_deceased_donors": 12212,
+      "ytd_pct_chg": 11.06,
+      "discard_rate_pct": 17.33,
+      "utilization_rate_pct": 39.61
     },
     {
       "yr": 2022,
-      "ytd_deceased_donors": 11969,
-      "ytd_pct_chg": 4.9,
-      "discard_rate_pct": 18.54,
-      "utilization_rate_pct": 38.65
+      "ytd_deceased_donors": 12933,
+      "ytd_pct_chg": 5.9,
+      "discard_rate_pct": 18.73,
+      "utilization_rate_pct": 38.61
     },
     {
       "yr": 2023,
-      "ytd_deceased_donors": 13302,
-      "ytd_pct_chg": 11.14,
-      "discard_rate_pct": 19.14,
-      "utilization_rate_pct": 38.41
+      "ytd_deceased_donors": 14230,
+      "ytd_pct_chg": 10.03,
+      "discard_rate_pct": 19.12,
+      "utilization_rate_pct": 38.45
     },
     {
       "yr": 2024,
-      "ytd_deceased_donors": 14004,
-      "ytd_pct_chg": 5.28,
-      "discard_rate_pct": 20.65,
-      "utilization_rate_pct": 38.08
+      "ytd_deceased_donors": 14931,
+      "ytd_pct_chg": 4.93,
+      "discard_rate_pct": 20.7,
+      "utilization_rate_pct": 38.0
     },
     {
       "yr": 2025,
-      "ytd_deceased_donors": 13684,
-      "ytd_pct_chg": -2.29,
-      "discard_rate_pct": 19.64,
-      "utilization_rate_pct": 39.8
+      "ytd_deceased_donors": 14628,
+      "ytd_pct_chg": -2.03,
+      "discard_rate_pct": 19.71,
+      "utilization_rate_pct": 39.82
     },
     {
       "yr": 2026,
-      "ytd_deceased_donors": 13664,
+      "ytd_deceased_donors": 14606,
       "ytd_pct_chg": -0.15,
-      "discard_rate_pct": 20.48,
-      "utilization_rate_pct": 39.69
+      "discard_rate_pct": 20.51,
+      "utilization_rate_pct": 39.7
     }
   ],
-  "ytd_through": "October 26",
-  "ytd_table_file": "2026-11-16_optn_metrics_don_table_deceased.csv",
-  "ytd_table_as_of": "2026-11-16",
+  "ytd_through": "November 16",
+  "ytd_table_file": "2026-11-25_optn_metrics_don_table_deceased.csv",
+  "ytd_table_as_of": "2026-11-25",
   "discard_rate_definition": "OPTN metrics dashboard 'All Organs Discard Rate' for deceased donors recovered year to date",
   "status": "ok",
   "unrecognised_files": [],

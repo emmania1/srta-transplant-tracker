@@ -2,7 +2,7 @@
   "title": "Weekly waitlist additions by organ (national)",
   "source": "OPTN metrics dashboard, Transplant Details > Download Data (insights.unos.org/OPTN-metrics), fetched by scripts/fetch_optn.py",
   "tag": "Live",
-  "ingested_at": "2026-11-16T02:38:42+00:00",
+  "ingested_at": "2026-11-25T00:53:49+00:00",
   "organs": {
     "all": [
       {
@@ -899,7 +899,7 @@
         "week": 24,
         "week_start": "2025-06-11",
         "week_end": "2025-06-17",
-        "count": 1607
+        "count": 1608
       },
       {
         "yr": 2025,
@@ -1382,7 +1382,7 @@
         "week": 41,
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
-        "count": 1606
+        "count": 1605
       },
       {
         "yr": 2026,
@@ -1396,7 +1396,28 @@
         "week": 43,
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
-        "count": 1595
+        "count": 1594
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 1638
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 1671
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 1642
       }
     ],
     "heart": [
@@ -2792,6 +2813,27 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 117
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 107
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 113
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 128
       }
     ],
     "kidney": [
@@ -3689,7 +3731,7 @@
         "week": 24,
         "week_start": "2025-06-11",
         "week_end": "2025-06-17",
-        "count": 1090
+        "count": 1091
       },
       {
         "yr": 2025,
@@ -4186,7 +4228,28 @@
         "week": 43,
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
-        "count": 1080
+        "count": 1079
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 1138
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 1126
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 1089
       }
     ],
     "liver": [
@@ -5567,7 +5630,7 @@
         "week": 41,
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
-        "count": 316
+        "count": 315
       },
       {
         "yr": 2026,
@@ -5582,6 +5645,27 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 325
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 317
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 335
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 314
       }
     ],
     "lung": [
@@ -6977,6 +7061,27 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 63
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 65
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 85
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 98
       }
     ],
     "hll": [
@@ -8357,7 +8462,7 @@
         "week": 41,
         "week_start": "2026-10-08",
         "week_end": "2026-10-14",
-        "count": 524
+        "count": 523
       },
       {
         "yr": 2026,
@@ -8372,28 +8477,49 @@
         "week_start": "2026-10-22",
         "week_end": "2026-10-28",
         "count": 505
+      },
+      {
+        "yr": 2026,
+        "week": 44,
+        "week_start": "2026-10-29",
+        "week_end": "2026-11-04",
+        "count": 489
+      },
+      {
+        "yr": 2026,
+        "week": 45,
+        "week_start": "2026-11-05",
+        "week_end": "2026-11-11",
+        "count": 533
+      },
+      {
+        "yr": 2026,
+        "week": 46,
+        "week_start": "2026-11-12",
+        "week_end": "2026-11-18",
+        "count": 540
       }
     ]
   },
   "excluded_incomplete_weeks": {
     "all": [
-      "2026-W44"
+      "2026-W47"
     ],
     "heart": [
-      "2026-W44"
+      "2026-W47"
     ],
     "kidney": [
-      "2026-W44"
+      "2026-W47"
     ],
     "liver": [
-      "2026-W44"
+      "2026-W47"
     ],
     "lung": [
-      "2026-W44"
+      "2026-W47"
     ]
   },
-  "raw_file": "2026-11-16_optn_metrics_wl_weekly_lung.csv, 2026-11-16_optn_metrics_wl_weekly_liver.csv, 2026-11-16_optn_metrics_wl_weekly_kidney.csv, 2026-11-16_optn_metrics_wl_weekly_heart.csv, 2026-11-16_optn_metrics_wl_weekly_all.csv",
-  "data_as_of": "2026-11-16",
+  "raw_file": "2026-11-25_optn_metrics_wl_weekly_lung.csv, 2026-11-25_optn_metrics_wl_weekly_liver.csv, 2026-11-25_optn_metrics_wl_weekly_kidney.csv, 2026-11-25_optn_metrics_wl_weekly_heart.csv, 2026-11-25_optn_metrics_wl_weekly_all.csv",
+  "data_as_of": "2026-11-25",
   "parser": "optn_metrics_wl_weekly",
   "region": "National",
   "hll_label": "Heart + liver + lung (Strata's core flying organs)",

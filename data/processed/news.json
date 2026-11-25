@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-11-16T02:36:45+00:00",
+  "fetched_at": "2026-11-25T00:51:46+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -41,6 +41,75 @@
   "errors": [],
   "items": [
     {
+      "headline": "Organ-Procurement Organization Sues to Force Family to Donate Woman\u2019s Organs",
+      "source": "LifeNews.com",
+      "date": "2026-11-24T21:41:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTXA1cUVnN08xTWk1REs0V0VfTUdMZUZ3UF84WFhFS1Q0S3F5SnZaRG1fdlk2SjgwR29leHNESWhPUy1BSGRzRXRIV0YzejRZTTFtZ1NQWGVTZDAtTTZ4cUFsR1JpZlFzWGJ5ODMxT2l2WFdkaXFrdDdvS28xY3RObklfTFBreVlDOUZUQ1ZKZ0hBeF9jb1c2QkVEVl9hMVpWb3J3RWNoQkYtU2NxZGoxYTBB?oc=5",
+      "tags": [
+        "opo_regulation",
+        "volumes"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://www.lifenews.com/2026/11/24/organ-procurement-organization-sues-to-force-family-to-donate-womans-organs/"
+    },
+    {
+      "headline": "Janashakthi Life backs int\u2019l half marathon to promote organ donation awareness",
+      "source": "Hiru News",
+      "date": "2026-11-23T06:31:59+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNamR5OE5UUXhxNXVzSkRIbjRRcDYyVEhfRkdrZF9wYmhVSEpxMnRpdFVITXNTWmpHSG5ONFdOcXlRT1RwSVNiZUwxbkQ1NE1PcWIxb0xNTDdNVFRDdjhVNDU4MVJVZ1BCUEc4WDBUV24ySXFfYk40VE5fSXNHWGl0SUtkOEVEaS1wb1p1b3FGZlZoZVpEel94NWtsS3ZXY1VnN0tzYlh0MEVaYk0wc2hHR0tZR2NHUQ?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://hirunews.lk/goldfmnews/502401/janashakthi-life-backs-intl-half-marathon-to-promote-organ-donation-awareness"
+    },
+    {
+      "headline": "TransMedics, Inc. Recalls OCS Heart Instrumentation Tool Set Recall",
+      "source": "www.marketscreener.com",
+      "date": "2026-11-20T23:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYTRpYmdHd1pRQlpHOWg4MjZjbjl1M19DYXpFVVJ5Z1NNTEQyOTRBM2U2bi16Wmc1cTB3bTl5dFVid1RnUnJ5SHVHMGU4ODJEV1RpNHJzMExOTVd4RjlyX1c5akZCbEVDQ0tTSVEta1RHZWpybUhmUHBQcTdaTnVFVEVLY3VRSG5DNVRmbktqQW50cUVXdWJYTjZRcmtVZ1VBVVZqWEdVS3hvcDhCOG83T25YMzJjTnFaMXc?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://www.marketscreener.com/news/transmedics-inc-recalls-ocs-heart-instrumentation-tool-set-recall-ce7851dadb88f027"
+    },
+    {
+      "headline": "Stifel raises TransMedics stock price target on mixed results",
+      "source": "Investing.com",
+      "date": "2026-11-20T14:57:07+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUHdEekZ2SzRNbFQ2SnlwWTY2SFJMMk5RS1VkLTgwQ0hxNTgtLVZxS0lzZXk3ZFVwRlpEQmdYRVI3V1BzU0FFRVFwbE1ZMVBXMEJRTVpqeV9tSGlROGZxT1lrNmFEMmdZWmZHbXNhMXh3WVd5WWZPVmhUdTBENGtOZkFvWmJ1Sm9SdDNpcE1jRmRsWGI5cEw1d1BBWVhDYWc1WmFEV3dfRzI3UmQxZUNpUkxQVWQyUXlCbHNfZWd3?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://www.investing.com/news/analyst-ratings/stifel-raises-transmedics-stock-price-target-on-mixed-results-93CH-5041978"
+    },
+    {
+      "headline": "Stifel maintains TransMedics Group at Hold, raises price target to $80 from $70",
+      "source": "TradingView",
+      "date": "2026-11-20T13:32:13+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXZON2lhNXRvNjFKMmVfclFXT3BqMEh2cGRRMGdremJKZk9SS3FuZUdEMnFnQ3dVa1JFdGRMenBaR2psbGlQZGdzOVZxaXZmdU1tZ09OX3VCQUg1X0FpZXdlbFhBYjdncDNhM0J1MlNUODQ1ZkNGa1hmN2JDYVdPanFZSUlxUlJEWVAzcTk0R3d1WElQN3VyMTA1eUc0OW1oZ0JyYTJGUXA1UTVQcFNSZlgyVG5Nb3lOU0VTUHlQY3Q2S0h3RzA4RzBENkhiTWhjZ1VsQg?oc=5",
+      "tags": [
+        "analyst",
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://www.tradingview.com/news/tradingview:74eb7cf87411b:0-stifel-maintains-transmedics-group-at-hold-raises-price-target-to-80-from-70/"
+    },
+    {
+      "headline": "New US Organ Donor Rules Spark Dead Donor Rule Debate",
+      "source": "Hoodline",
+      "date": "2026-11-15T19:34:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY1JEOFN2ZWw1OVhKXy1LbXZNQXg4c2RDRXp5V255dVk3TlJ3d2tLNVRUcFVGcWsxYWVPcG1ub0h4Nmh5VWpQQ0Rrb184TTdQbENWSjg2YnRNbEZmX1NyOThUd3RfRmdGRmNCcnpKWDRHRmZWeFJQODhUX1k5bnRobUZQU0V3TmkwaDd5WDhxLUh4TUJSYWRSVzZ3?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://hoodline.com/2026/11/new-organ-donor-rules-spark-fight-over-when-death-really-happens/"
+    },
+    {
       "headline": "HHS decertifies organ procurement organization serving Kentucky, RFK Jr. says",
       "source": "Z93 Country",
       "date": "2026-11-14T09:57:50+00:00",
@@ -61,6 +130,17 @@
       ],
       "first_seen": "2026-11-16T02:36:45+00:00",
       "publisher_url": "https://www.aamc.org/advocacy-policy/washington-highlights/cms-finalizes-changes-organ-procurement-organization-conditions-coverage"
+    },
+    {
+      "headline": "TransMedics Selects Gogo Galileo HDX Connectivity for Its 22-Aircraft Organ Transport Fleet",
+      "source": "Avi-Go",
+      "date": "2026-11-14T00:56:24+00:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1CZFdlOHp4LWlOSllESmNrN0Z6aWRYU2VkOTVNWmJ3MW5DVGhFdTgyLVlMV2E4LTJPSmI0ZFNHSVM2QV9qUWExS3NwSm9xZXJMZkk1VUIwTUF3aG9pX2VZYURPd04wQWJQekRqaHV6TFBlMUU?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://avi-go.com/news/articles/0b554a5bd2b5ef0ace64de090cf4a8e9"
     },
     {
       "headline": "TransMedics Selects Gogo Galileo HDX for Embraer Phenom 300E Fleet",
@@ -839,6 +919,17 @@
       "publisher_url": "https://www.tradingview.com/news/tradingview:bf286bad4f686:0-xvivo-perfusion-ab-xvivo-q3-sales-up-34-ebitda-margin-21/"
     },
     {
+      "headline": "Strata (SRTA) Stuck at $4.70 \u2014 Which Way Will It Break? 2026-10-21 - Volume Gap",
+      "source": "https://www.siam.in/",
+      "date": "2026-10-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWnhVZXdtbVFDNHNWcjN4V1JybmJQbXdzRU5nZVVTMm5XaXBGZTJHMl8ycVlvQ2ZnVjBXbmtYWXZGUXdVYnVqbkhKNG1JOGYwRGFkWlpHOVhOaE1LZ0hHVFgyQXU5VDg2SmJhOWYyQ2diQkRiOWxmelhkbjZ4SzZoZENEVFlkODF1TVZQTjJkbnc1RTdNOE9jc0hXa2pwNWdjOE1ER1Vjaw?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://www.siam.in/%7D/aticles-market/Strata-SRTA-Stuck-at-470-Which-Way-Will-It-Break-20261021-65-9228"
+    },
+    {
       "headline": "Practical policies needed to support organ donors and streamline coordination",
       "source": "SGGP English Edition",
       "date": "2026-10-20T02:04:27+00:00",
@@ -1238,6 +1329,17 @@
       "publisher_url": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4167981:0-tmdx-plans-for-rapid-transplant-volume-growth-global-expansion-and-new-organ-launches-drive-outlook/"
     },
     {
+      "headline": "TransMedics Group Investigation Initiated: Kahn Swick & Foti, LLC Investigates the Officers and Directors of TransMedics Group, Inc. - TMDX",
+      "source": "Business Wire",
+      "date": "2026-09-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPNU1RcHBXSDNQMVFZeU9RS3ltdnQ0SmM4UTdoRDhYNVhPMGJ1dHRrbnJyVnluRXZ2NVV6ZV83M3kyN3Z0UmxJY29OUWxWM3NvV3Zzb0JEN0xrbDBMOXdZZzJFZU5vdHFkM2NvWURBSUF4SzFGVVlFTlQwaU5kNENPbWRzZG1sS1BmZENaQmhVMTRtYjdsbVpkai1CbDhoTXhNWkRHcU5UVmhaMnpyYl9UakQ0TldGb0ZTRmZwYS1KcmRpdWd1ZGJIUkd0X0IwTTZjRWVhYkwxSmJ4NVRfWHItWkVBcVhhNm0tU0xlUXk5dE92RUg5blV1T0ZrY1FpLS1JbGFnQTZYX3NtZUkxOE92dDRfbDFtbGZOaUpJ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T00:51:46+00:00",
+      "publisher_url": "https://www.businesswire.com/news/home/20260914420394/en/TransMedics-Group-Investigation-Initiated-Kahn-Swick-Foti-LLC-Investigates-the-Officers-and-Directors-of-TransMedics-Group-Inc.---TMDX"
+    },
+    {
       "headline": "TransMedics Slides After CFO Transition News Despite Reaffirmed 2026 Outlook",
       "source": "Quiver Quantitative",
       "date": "2026-09-11T07:00:00+00:00",
@@ -1492,75 +1594,6 @@
       ],
       "first_seen": "2026-10-07T19:16:34+00:00",
       "publisher_url": "https://www.hospitalnews.com/game-changing-transplant-technology/"
-    },
-    {
-      "headline": "Does Strata Critical Medical, Inc. (SRTA) Have the Potential to Rally 47.28% as Wall Street Analysts Expect?",
-      "source": "Yahoo Finance",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdkVKM20wVGU4QVJVbXh4R1pxR3ExVG1LWGtOdDdPYkY1MjYtYTYzM2M4b0NxV3A5Vm1pbWU2T25vVEpMTnRHc1lsbXgwdkpaYTBkZjFtcDNlQUplT25FT1dCU0xtNmpXZ2EtN0I1Tk5BcGd0VFgwVU9MN3dodklBcHBGZ3k3LWdJUm1DMVc0TW9uUFE1ZnlKMGlwbFhpUQ?oc=5",
-      "tags": [
-        "analyst",
-        "strata"
-      ],
-      "first_seen": "2026-10-19T00:55:57+00:00",
-      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/does-strata-critical-medical-inc-135503597.html"
-    },
-    {
-      "headline": "A national crisis of organ donor abuse",
-      "source": "WORLD News Group",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9famN5Wm9XczJ1bHRaRkpZc0dKNDk5d2UxMTZTdUZRRzR2VEgxbWhnenJ4SUVoWmN0M0huNTdCNkwwN1Z0UThucDlad1RacnFITGNYMzllYnJ3UDlOZDVTemdfenJXb0ZSZGdsUzFUc05hbTl6aGdDVTVrdUt0bmc?oc=5",
-      "tags": [
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-26T01:02:39+00:00",
-      "publisher_url": "https://wng.org/opinions/a-national-crisis-of-organ-donor-abuse-1787551358"
-    },
-    {
-      "headline": "Mark Johnson named CEO of UNOS",
-      "source": "UNOS | United Network for Organ Sharing",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05aTFaeWpCU3Y0bVhkWm5rdDFqUm85d3kzdHVSd1BINGQ5cTdsNGw0MG0xWm12S0hsRlQ4bkNhQWgtUzUza0tIaXFCdjVVbmdPMkx2VVV0VnVUWU83UmR6RVgyZW9QX3cxNlJJZWhqeFFDRW01N096b1kyZWdrZw?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-11-02T02:10:45+00:00",
-      "publisher_url": "https://unos.org/media-resources/releases/mark-johnson-named-ceo-of-unos/"
-    },
-    {
-      "headline": "Opinion: Why it is significant HHS decertified an organ procurement organization",
-      "source": "Catholic World Report",
-      "date": "2026-08-18T18:36:01+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZDdvX3g1ZzF3YkxWVndBUnZPVnAtQWlkU1dzX2hTc29CanFwNU96WDZ2bXdVUzY4dXNjekNtN2kyRTVsTHBkZFhoa1FEUjJMRUg2cWxnUEFtVmQ2MVBHM3ZtVzdWVmFneG5WVUR4M1BkVXV6SWVwYVJwVlgzUE0wamNUQm5xX3doS1dKeS1oRHlpZkZ4NG53ckFCZHdZbW43UHlvQkVGci1zbVhDR2pYNTJUUnRHN04yeHhneURwcDUxenVpN1FkR0gzeFo?oc=5",
-      "tags": [
-        "opinion",
-        "opo_regulation"
-      ],
-      "first_seen": "2026-10-07T19:16:34+00:00",
-      "publisher_url": "https://www.catholicworldreport.com/2026/08/18/opinion-why-it-is-significant-that-hhs-decertified-an-organ-procurement-organization/"
-    },
-    {
-      "headline": "The OPO Rule and Your Hospital's Business Model",
-      "source": "Mintz",
-      "date": "2026-08-18T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeXF6Q25xT0ZMM0NWUXA2Y3AwMUFOZHVjc2xybTNGcFgzTzQwYl9DUjZORW9pVGhjcE1Qd2pOT3FKSFJnNDk3elhuMUM4MFZycEtpQnl1RlNRTmp6cWZJQzVvSXg3OUJKRlhMQ016UVRHRXZES01sdzg0MVpEamdZN05EUDgtTTFHWTR3a3BMWEN6X0diTW9nOHY2R29CRDg5ZFBuNnJWUWxsOEE?oc=5",
-      "tags": [
-        "opo_regulation",
-        "volumes"
-      ],
-      "first_seen": "2026-10-07T20:33:41+00:00",
-      "publisher_url": "https://www.mintz.com/insights-center/viewpoints/2146/2026-08-18-opo-rule-and-your-hospitals-business-model"
-    },
-    {
-      "headline": "UNOS Staffing Survey provides trusted data for staffing decisions",
-      "source": "UNOS | United Network for Organ Sharing",
-      "date": "2026-08-18T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM2dVVTM3RlA1RFk5b2ZVcTRpUzd5cWpJQ0ZLN0Voek41blpjZ1pYYkNtdFpHYXJPZTg0ZF9oOWJITDYyZFFhVHZBenc0aXZ1eUw5dG0xNGJQeGRWd2ZJMnFJdmNqSWZyNWJNUElCdmd2S084LUNmNG95UVRSQTdGaHZjc2kzRDZOb3YtcTdQUXR4UQ?oc=5",
-      "tags": [
-        "volumes"
-      ],
-      "first_seen": "2026-11-02T02:10:45+00:00",
-      "publisher_url": "https://unos.org/news/unos-staffing-survey-provides-trusted-data-for-staffing-decisions/"
     }
   ]
 }
