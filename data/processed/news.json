@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-11-25T00:51:46+00:00",
+  "fetched_at": "2026-11-25T01:25:38+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -97,6 +97,16 @@
       ],
       "first_seen": "2026-11-25T00:51:46+00:00",
       "publisher_url": "https://www.tradingview.com/news/tradingview:74eb7cf87411b:0-stifel-maintains-transmedics-group-at-hold-raises-price-target-to-80-from-70/"
+    },
+    {
+      "headline": "Selma Links Lead National Donor Sabbath Message on Kidney Health and Organ Donation in Local Churches",
+      "source": "Black Belt News Network",
+      "date": "2026-11-16T17:28:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOcDQzTHlBMmJoN1M3WFM2MVU2azBISGRqQ0V0MWxXUzFCLVUxa0dlbkJGY29ET1pVanNuRzhJTG01QW4tZWpUVXVyNXlmNWR0aXlFYzNFb2pTdno3LVNoUGU1elczR085cTBMTml4UWEzSzlweDlkTmNfblFBM0xzaW9SUmFnNXFSZjVRWC1XRlhxQVF4MEtYVlFsVUdxd2ZJWXpGTW8yWTlpMXJ0a2k4dGZIcmNPTzRMNFNxZ1c3YmNrbUZ4MVpOSzlkb2xnRnMzb3Jxa3RGTmdERjZRM1JZNzBraUExRXdkdmhYcS1aSGVmc2h3TktJS29IYmdkUkptYURNRGp4THRxR3pJNllZeS1n?oc=5",
+      "tags": [
+        "volumes"
+      ],
+      "first_seen": "2026-11-25T01:25:38+00:00"
     },
     {
       "headline": "New US Organ Donor Rules Spark Dead Donor Rule Debate",
@@ -573,6 +583,18 @@
       ],
       "first_seen": "2026-11-16T02:36:45+00:00",
       "publisher_url": "https://www.marketscreener.com/news/strata-critical-medical-inc-reiterates-earnings-guidance-for-the-year-2026-ce785ed9dc89fe24"
+    },
+    {
+      "headline": "Strata Critical Medical earnings missed by $0.08, revenue topped estimates",
+      "source": "Investing.com",
+      "date": "2026-11-03T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLUt1TzIzMTVMOHlGVlBxaEZfWTdaS1UxbDVnV1BuNzFjNHlmSWMtdC1tN2s1OFdpWkF4QjFKUzE5dS04ZEg2VUY5Wlg0X3J0cDBTX1NobUV2bGJNZVZlbG5xY0hSSlpVVHE0WEJiMnlvUm51WDIwT2JwXzBGN204bDJSQkJZRU01T2RoX19RNHg4WW95eVlZblhuVVNxekdfT0MxbTliZ0pRUEEwUFJvR01sZWUxUDYwaUk0?oc=5",
+      "tags": [
+        "strata"
+      ],
+      "first_seen": "2026-11-25T01:25:38+00:00",
+      "publisher_url": null,
+      "resolve_error": "HTTP Error 429: Too Many Requests"
     },
     {
       "headline": "Earnings To Watch: Strata Critical Medical Inc (SRTA) Q3 2026 -- GF Value Sees 30% Upside",

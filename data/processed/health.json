@@ -1,7 +1,9 @@
 {
-  "checked_at": "2026-11-25T00:53:49+00:00",
-  "ok": true,
-  "issues": [],
+  "checked_at": "2026-11-25T01:26:00+00:00",
+  "ok": false,
+  "issues": [
+    "Playwright (the headless browser the OPTN weekly fetch needs) failed to install, so the OPTN weekly fetch was skipped; showing the last good OPTN weekly data."
+  ],
   "notices": [],
   "thresholds": {
     "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
@@ -13,10 +15,13 @@
     "_donors_note": "OPTN's donor series runs ~1 week behind the transplant series (e.g. donors through Sep 28 vs transplants through Oct 2), so its limit is 14 + 7 days."
   },
   "step_outcomes": {
+    "Tests": "success",
     "Prices": "success",
     "News": "success",
-    "OPTN weekly": "success",
+    "Playwright install": "failure",
+    "OPTN weekly": "skipped",
     "OPTN national": "success",
-    "CDC": "success"
+    "CDC": "success",
+    "Ingest": "success"
   }
 }
