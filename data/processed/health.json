@@ -1,9 +1,7 @@
 {
-  "checked_at": "2026-11-25T01:41:11+00:00",
-  "ok": false,
-  "issues": [
-    "News: 5 keyword query(ies) failed (strata, volumes, opo_regulation, competitors, tech_logistics)."
-  ],
+  "checked_at": "2026-11-25T01:45:14+00:00",
+  "ok": true,
+  "issues": [],
   "notices": [],
   "thresholds": {
     "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",

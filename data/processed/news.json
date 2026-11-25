@@ -1,7 +1,7 @@
 {
   "source": "Google News RSS search (news.google.com/rss/search)",
   "tag": "Live",
-  "fetched_at": "2026-11-25T01:25:38+00:00",
+  "fetched_at": "2026-11-25T01:42:57+00:00",
   "lookback_days": 90,
   "groups": [
     {
@@ -38,13 +38,7 @@
       "label": "Opinion"
     }
   ],
-  "errors": [
-    "strata: HTTP Error 503: Service Unavailable",
-    "volumes: HTTP Error 503: Service Unavailable",
-    "opo_regulation: HTTP Error 503: Service Unavailable",
-    "competitors: HTTP Error 503: Service Unavailable",
-    "tech_logistics: HTTP Error 503: Service Unavailable"
-  ],
+  "errors": [],
   "items": [
     {
       "headline": "Organ-Procurement Organization Sues to Force Family to Donate Woman\u2019s Organs",
@@ -57,6 +51,17 @@
       ],
       "first_seen": "2026-11-25T00:51:46+00:00",
       "publisher_url": "https://www.lifenews.com/2026/11/24/organ-procurement-organization-sues-to-force-family-to-donate-womans-organs/"
+    },
+    {
+      "headline": "Recognized for Saving Lives Through Organ Donation: The Gift of Life Alliance (GOLA), a Texas-based organ procurement organization, recently recognized several South Texas Health System facilities and team members for their commitment to advancing or",
+      "source": "Instagram",
+      "date": "2026-11-24T21:00:37+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBMFlYRkFYZFJ1RFpybXVIR3ZGV3lCWU14TElFUWU0S0Jod3pmQ3UySEVlMVlqclJ3NDRVREttYy1HLS15V1JaM2YzR3ByZV9RUkE?oc=5",
+      "tags": [
+        "opo_regulation"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://www.instagram.com/p/DgI3xFgl3WX/"
     },
     {
       "headline": "Janashakthi Life backs int\u2019l half marathon to promote organ donation awareness",
@@ -103,6 +108,28 @@
       ],
       "first_seen": "2026-11-25T00:51:46+00:00",
       "publisher_url": "https://www.tradingview.com/news/tradingview:74eb7cf87411b:0-stifel-maintains-transmedics-group-at-hold-raises-price-target-to-80-from-70/"
+    },
+    {
+      "headline": "Spouse of Xvivo Perfusion board member buys shares for SEK0.25m",
+      "source": "www.marketscreener.com",
+      "date": "2026-11-20T10:42:19+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNG0yb2ZpRlZKanBDUDh2Y3pPQ1JybzdyVXlyMWpvTWxKczhpc3ZhU2dHSFMyUWlVUWp1M2EwV3BtbUZLWjJVUnNCSDROczBpaklPRzVWaVdtZS1udnBLemVBZlIzVVhnNjQwS1BvTzUxZzg0bUVid3dyb20wVW12SHMyR1hrNTkxNWk2dE1WY1JmYmh0ZUkybkpzUXJGaDloSmZQTnZXdzN6b3NSTmRYUmtOb3VJZzg?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://www.marketscreener.com/news/spouse-of-xvivo-perfusion-board-member-buys-shares-for-sek0-25m-ce785ed3d98cff23"
+    },
+    {
+      "headline": "TransMedics at Jefferies healthcare conference: growth runway expands",
+      "source": "Investing.com",
+      "date": "2026-11-17T13:03:08+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUE5hNHRINnY5ZERuRlFiTFUwcExhN2dnZnpacWRTY1hlOGVoc2FWa1FRb1BqZXRDY3FtQUNkbkRIbmZ6Qjl2eTNnMV9Qblo3ZnR3WUZLd1V1N1VSa1dfMWp1ZG51eU45MmcxUkdSMWIxSXNXRmZvWkJ5YV90SmNWbllkVjdfaVZVT1lmU1doT3J5VEFlUnlEUWtrQ2NwVmFEMFdVejY3UTZaMjNiYm95UXJkUk5nYlBoTER4VW9fbUk2QQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://www.investing.com/news/transcripts/transmedics-at-jefferies-healthcare-conference-growth-runway-expands-93CH-5032721"
     },
     {
       "headline": "Selma Links Lead National Donor Sabbath Message on Kidney Health and Organ Donation in Local Churches",
@@ -382,6 +409,39 @@
       "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-inc-tmdx-q3-091755833.html"
     },
     {
+      "headline": "TransMedics Stock Gains Attention After Revenue Guidance Raise",
+      "source": "Yahoo Finance",
+      "date": "2026-11-06T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ3RUd2drLWFEeUFnZUg5c1pIT2FyUmVES2E3dDAwOVUtSUc2cm5saXc0X0Rfd0pWdzVpZTFZaEdjS0Q5U2djS0VEcjVqc1haUEd3NnZwZ3l6ejZxeW9uS2djanJSbE1tSjRtdHJjNVh1enhPelJldUJIc293alFLZ2oxeE1EeUNVOHJ1UjRzQUxvOXpoY29yTlNreGswN3lsMTRHUDA0bmE2UQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-stock-gains-attention-revenue-151842482.html"
+    },
+    {
+      "headline": "TransMedics Group, Inc. Q3 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "date": "2026-11-06T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMjJMS08zOWVDZTYzck5ZY3J2OE1uYURWLXdXSF9mX29wQmRUTlBpXzBybENyaWVyVnd1TE9idzM5cTBEdmpUREh6LTE2U1h3R2dwTVJrLXUyTXI4UmdiSDl1bXJlZ251d1BhXzJfZUYtUlRRQWdRYkREbGNaWnFjWEJtU0x6MVZ1OHFibUh4c1E5cTZH?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-group-inc-q3-2026-133000133.html"
+    },
+    {
+      "headline": "Moderna, JFrog, TransMedics, Ubiquiti And Other Big Stocks Moving Higher On Friday - Moderna (NASDAQ:MRNA",
+      "source": "Benzinga",
+      "date": "2026-11-06T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMFVZSUtPUHRYM1BxZEFjMnQtWWx5UEo5UFJBSHA0Wk5iUDVWLXFuNFh1cHpNOXhtc3M3NU54ZHpURE9lSHYydjFnWnV3d194UWJhX0tnUG9EYTVjOWlSdlV2czgyWDI0S09fN0x5Ym5fbE8tTkUyS3hrcGJhaklOd0p3eGtOMkp4RENOZ0tBR0o3Q0FPMnZDcl9WUUI0ZWI5R3VRN3lWckJORFFPM0hEemN0T2s5QmpCUFM4bUtGbDhodnRzdjRmOGFIVlR5S3g5Q3ZGSjJMRQ?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://www.benzinga.com/trading-ideas/movers/26/11/62988477/moderna-jfrog-transmedics-ubiquiti-and-other-big-stocks-moving-higher-on-friday"
+    },
+    {
       "headline": "TransMedics (TMDX) Q3 2026 Earnings Call Transcript",
       "source": "The Globe and Mail",
       "date": "2026-11-06T06:49:10+00:00",
@@ -457,6 +517,28 @@
       ],
       "first_seen": "2026-11-09T02:28:04+00:00",
       "publisher_url": "https://finance.yahoo.com/healthcare/articles/transmedics-q3-earnings-snapshot-211218700.html"
+    },
+    {
+      "headline": "TransMedics Q3 Revenue Rises 41% to $203 Million; Raises 2026 Guidance",
+      "source": "TradingView",
+      "date": "2026-11-05T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcHVBYW9ZbzNlTFczY2tkaDVOSnBCOTNWd2UxV1RUbW43VF9HYW4tVUZwbTktd3ViTzlSX3o0Y0xBak9IWGFNM2RxMWVSZDFTQldHTmxkSGtGV0ZJeFFnNFRaNDAxcVpfN3NRSE5SdDBUemVDMFRBQmxaWFVBNC1Zb3BPbFpGUk41THVnOWVXc1lSUGlsNEFwZFpRZmpsLUVsRDhXcC1FaVl0UmVOY2tQeVBORTdpeXBkTjJzNExvYVNFTlgwRWZfOA?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://www.tradingview.com/news/tradingview:865b0c8749c9a:0-transmedics-q3-revenue-rises-41-to-203-million-raises-2026-guidance/"
+    },
+    {
+      "headline": "TransMedics Reports Third Quarter 2026 Financial Results",
+      "source": "PR Newswire",
+      "date": "2026-11-05T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSUMxNFZ2RlYtR010ejRWUUxJY1M0dFJJYjI4cERlMHR5cFhkZ3V4dEt0bFB4QnVRclIxNTZZa3hVejFFSEgtdktyd3VfUjZ4dzBORmtlTWNoQnpNb1g4ZFlvWjJCOVVyNUh1b0JrVlNScGpTZUZ6MXdLSHZzeE1yQ0M0b2VmUlpHUS1hRzVfMGZlWXNHMXI3Nmh1dkpNYldjMGEyb3pqTDZQZG9kbzJrMmRn?oc=5",
+      "tags": [
+        "competitors"
+      ],
+      "first_seen": "2026-11-25T01:42:57+00:00",
+      "publisher_url": "https://www.prnewswire.com/news-releases/transmedics-reports-third-quarter-2026-financial-results-302931330.html"
     },
     {
       "headline": "Reasons to Retain TransMedics Stock in Your Portfolio for Now",

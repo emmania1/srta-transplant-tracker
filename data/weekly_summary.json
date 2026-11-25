@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T01:41:11+00:00",
+  "generated_at": "2026-11-25T01:45:14+00:00",
   "price": {
     "close": 4.96,
     "date": "2026-11-23",
@@ -257,11 +257,9 @@
     "source": "Yahoo Finance chart API (query1.finance.yahoo.com/v8/finance/chart)"
   },
   "health": {
-    "checked_at": "2026-11-25T01:41:11+00:00",
-    "ok": false,
-    "issues": [
-      "News: 5 keyword query(ies) failed (strata, volumes, opo_regulation, competitors, tech_logistics)."
-    ],
+    "checked_at": "2026-11-25T01:45:14+00:00",
+    "ok": true,
+    "issues": [],
     "notices": [],
     "thresholds": {
       "_note": "Fetcher health thresholds. A breach shows a warning banner on the page and a 'Data issue:' line at the top of summary/latest.md. The page keeps showing the last good data.",
@@ -1239,12 +1237,12 @@
     "yoy_note": "True YoY appears once a snapshot through 2025-10-31 exists; snapshots are saved monthly from 2026-08-31."
   },
   "news": {
-    "new_items_7d": 5,
+    "new_items_7d": 7,
     "by_category": {
       "strata": 0,
       "volumes": 2,
-      "opo_regulation": 1,
-      "competitors": 3,
+      "opo_regulation": 2,
+      "competitors": 4,
       "tech_logistics": 0,
       "analyst": 2,
       "opinion": 0
@@ -1294,9 +1292,9 @@
       }
     ],
     "none_text": null,
-    "fetched_at": "2026-11-25T01:25:38+00:00"
+    "fetched_at": "2026-11-25T01:42:57+00:00"
   },
-  "issue_line": "Data issue: News: 5 keyword query(ies) failed (strata, volumes, opo_regulation, competitors, tech_logistics).",
+  "issue_line": null,
   "bullets": [
     "Flying demand: est. organ-miles roughly flat (\u22120.8%) YTD: volume +3.8%, but est. avg distance \u22124.5% (lung \u22127.0%, liver \u22123.5%, heart \u22121.3%).",
     "Volumes: Heart + liver + lung (Strata's core flying organs) fell 0.3% over the last 4 weeks vs. last year; by organ, heart and kidney fell 6.4% and 4.7%; liver and lung were roughly flat (+1.4%, +1.4%).",
@@ -1631,9 +1629,8 @@
     "note": "Est. organ-miles = transplants x estimated average distance. Distance is an estimate from OPTN distance bands (band midpoints), and compares the current year to date with the full prior year because OPTN's distance reports are annual; volume compares the same weeks."
   },
   "core_label": "Heart + liver + lung (Strata's core flying organs)",
-  "news_line": "5 new news items this week \u2014 Transplant volumes / donation 2, OPO & regulation 1, Competitors & industry 3, Analyst actions (SRTA / TMDX) 2.",
+  "news_line": "7 new news items this week \u2014 Transplant volumes / donation 2, OPO & regulation 2, Competitors & industry 4, Analyst actions (SRTA / TMDX) 2.",
   "markdown_lines": [
-    "\u26a0\ufe0f Data issue: News: 5 keyword query(ies) failed (strata, volumes, opo_regulation, competitors, tech_logistics).",
     "*SRTA Transplant Tracker \u2014 week of Nov 25, 2026* \u00b7 SRTA $4.96 (\u25bc 8.5% 1-wk) \u00b7 TMDX $92.73 (\u25b2 0.6% 1-wk)",
     "\u2022 *Flying demand:* est. organ-miles roughly flat (\u22120.8%) YTD: volume +3.8%, but est. avg distance \u22124.5% (lung \u22127.0%, liver \u22123.5%, heart \u22121.3%). (data through Oct 31, 2026)",
     "\u2022 *Volumes:* Heart + liver + lung (Strata's core flying organs) fell 0.3% over the last 4 weeks vs. last year; by organ, heart and kidney fell 6.4% and 4.7%; liver and lung were roughly flat (+1.4%, +1.4%). (data through Nov 18, 2026)",
@@ -1645,6 +1642,7 @@
     "*Top headlines:*",
     "  \u2013 <https://www.investing.com/news/analyst-ratings/stifel-raises-transmedics-stock-price-target-on-mixed-results-93CH-5041978|Stifel raises TransMedics stock price target on mixed results> (Investing.com, Nov 20, 2026)",
     "  \u2013 <https://www.tradingview.com/news/tradingview:74eb7cf87411b:0-stifel-maintains-transmedics-group-at-hold-raises-price-target-to-80-from-70/|Stifel maintains TransMedics Group at Hold, raises price target to $80 from $70> (TradingView, Nov 20, 2026)",
+    "  \u2013 <https://www.lifenews.com/2026/11/24/organ-procurement-organization-sues-to-force-family-to-donate-womans-organs/|Organ-Procurement Organization Sues to Force Family to Donate Woman\u2019s Organs> (LifeNews.com, Nov 24, 2026)",
     "Dashboard: https://emmania1.github.io/srta-transplant-tracker/"
   ]
 }
