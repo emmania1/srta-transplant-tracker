@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-25T01:26:00+00:00",
+  "checked_at": "2026-11-25T01:41:11+00:00",
   "ok": false,
   "issues": [
-    "Playwright (the headless browser the OPTN weekly fetch needs) failed to install, so the OPTN weekly fetch was skipped; showing the last good OPTN weekly data."
+    "News: 5 keyword query(ies) failed (strata, volumes, opo_regulation, competitors, tech_logistics)."
   ],
   "notices": [],
   "thresholds": {
@@ -18,8 +18,8 @@
     "Tests": "success",
     "Prices": "success",
     "News": "success",
-    "Playwright install": "failure",
-    "OPTN weekly": "skipped",
+    "Playwright install": "success",
+    "OPTN weekly": "success",
     "OPTN national": "success",
     "CDC": "success",
     "Ingest": "success"

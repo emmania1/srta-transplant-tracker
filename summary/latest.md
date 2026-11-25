@@ -1,4 +1,4 @@
-⚠️ Data issue: Playwright (the headless browser the OPTN weekly fetch needs) failed to install, so the OPTN weekly fetch was skipped; showing the last good OPTN weekly data.
+⚠️ Data issue: News: 5 keyword query(ies) failed (strata, volumes, opo_regulation, competitors, tech_logistics).
 *SRTA Transplant Tracker — week of Nov 25, 2026* · SRTA $4.96 (▼ 8.5% 1-wk) · TMDX $92.73 (▲ 0.6% 1-wk)
 • *Flying demand:* est. organ-miles roughly flat (−0.8%) YTD: volume +3.8%, but est. avg distance −4.5% (lung −7.0%, liver −3.5%, heart −1.3%). (data through Oct 31, 2026)
 • *Volumes:* Heart + liver + lung (Strata's core flying organs) fell 0.3% over the last 4 weeks vs. last year; by organ, heart and kidney fell 6.4% and 4.7%; liver and lung were roughly flat (+1.4%, +1.4%). (data through Nov 18, 2026)
