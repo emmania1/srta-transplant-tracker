@@ -28,13 +28,40 @@ def age(d, today):
     return (today - date.fromisoformat(d[:10])).days if d else None
 
 
+RAW = ROOT / "data" / "raw" / "optn"
+
+
+def step_issues(steps):
+    """Plain-English issues from this run's step outcomes (STEP_OUTCOMES)."""
+    out = []
+    pw_failed = steps.get("Playwright install") == "failure"
+    for step, outcome in steps.items():
+        if step == "Playwright install" and outcome == "failure":
+            out.append("Playwright (the headless browser the OPTN weekly fetch needs) failed to install, so the "
+                       "OPTN weekly fetch was skipped; showing the last good OPTN weekly data.")
+        elif step == "OPTN weekly" and outcome == "skipped" and pw_failed:
+            continue  # already explained by the Playwright line
+        elif outcome == "failure":
+            out.append(f"{step} step failed in the latest run; showing the last good data.")
+    return out
+
+
+def identical_latest_downloads(pattern="*_optn_metrics_tx_weekly_deceased_all.csv"):
+    """(older, newer) dates if the two newest OPTN weekly downloads are byte-identical, else None.
+    Identical files mean OPTN's dashboard served the same data twice (the delay is on OPTN's side)."""
+    files = sorted(RAW.glob(pattern))
+    if len(files) < 2:
+        return None
+    a, b = files[-2], files[-1]
+    return (a.name[:10], b.name[:10]) if a.read_bytes() == b.read_bytes() else None
+
+
 def main():
     today = date.today()
     issues, notices = [], []
     steps = json.loads(os.environ.get("STEP_OUTCOMES") or "{}")
-    for step, outcome in steps.items():
-        if outcome == "failure":
-            issues.append(f"{step} fetch failed in the latest run; showing the last good data.")
+    issues += step_issues(steps)
+    same = identical_latest_downloads()
 
     max_w = CFG["weekly_optn_max_age_days"]
     for name, key, label in [("transplants_weekly", "organs", "transplants"), ("donors_weekly", None, "donors"),
@@ -48,7 +75,11 @@ def main():
         a = age(last, today)
         limit = CFG.get("weekly_optn_donors_max_age_days", max_w) if label == "donors" else max_w
         if a is None or a > limit:
-            issues.append(f"OPTN weekly {label}: latest complete week ended {last} ({a} days ago, limit {limit}).")
+            msg = f"OPTN weekly {label}: latest complete week ended {last} ({a} days ago, limit {limit})."
+            if same and label == "transplants":
+                msg += (f" OPTN's dashboard returned identical data on {same[0]} and {same[1]}, "
+                        "so OPTN has not published newer weeks.")
+            issues.append(msg)
 
     for name, label in [("donor_mix", "monthly donor mix / distance / state"), ("centers", "monthly centers")]:
         d = load(name)

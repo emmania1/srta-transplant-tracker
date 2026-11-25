@@ -9,7 +9,12 @@ on:
     paths:
       - "data/raw/optn/**"
       - "data/manual/**"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      simulate_playwright_failure:
+        description: "Test only: make the Playwright install fail, to check the run still commits and flags it"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,11 +33,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      # From here on nothing may stop the run before "Commit results": every step either has
+      # continue-on-error or runs with !cancelled(). health.py turns failures into a page banner +
+      # a "Data issue:" digest line, and the last step marks the run red after the commit.
       - name: Test YoY / week logic
+        id: tests
+        continue-on-error: true
         run: python3 -m unittest discover -s tests
 
-      # Every fetch is allowed to fail: the page keeps the last good data and
-      # scripts/health.py turns failures into a banner + a "Data issue:" digest line.
+      # Every fetch is allowed to fail: the page keeps the last good data.
       - name: Fetch prices (SRTA, TMDX, JOBY)
         id: price
         continue-on-error: true
@@ -44,12 +53,18 @@ jobs:
         run: python3 scripts/fetch_news.py
 
       - name: Install Playwright (headless Chromium for the OPTN Shiny dashboard)
+        id: playwright
+        continue-on-error: true
         run: |
+          if [ "${{ inputs.simulate_playwright_failure }}" = "true" ]; then
+            echo "::warning::Simulated Playwright install failure (workflow_dispatch test input)"; exit 1
+          fi
           pip install playwright==1.59.0
           python3 -m playwright install --with-deps chromium
 
       - name: Fetch OPTN weekly (transplants, donors, waitlist, regions)
         id: optn
+        if: steps.playwright.outcome == 'success'
         continue-on-error: true
         run: python3 scripts/fetch_optn.py
 
@@ -64,20 +79,28 @@ jobs:
         run: python3 scripts/fetch_cdc.py
 
       - name: Ingest OPTN files
+        id: ingest
+        continue-on-error: true
         run: python3 scripts/ingest_optn.py
 
       - name: Health check
+        id: health
+        continue-on-error: true
         env:
           STEP_OUTCOMES: >-
-            {"Prices": "${{ steps.price.outcome }}", "News": "${{ steps.news.outcome }}",
+            {"Tests": "${{ steps.tests.outcome }}", "Prices": "${{ steps.price.outcome }}",
+             "News": "${{ steps.news.outcome }}", "Playwright install": "${{ steps.playwright.outcome }}",
              "OPTN weekly": "${{ steps.optn.outcome }}", "OPTN national": "${{ steps.optn_national.outcome }}",
-             "CDC": "${{ steps.cdc.outcome }}"}
+             "CDC": "${{ steps.cdc.outcome }}", "Ingest": "${{ steps.ingest.outcome }}"}
         run: python3 scripts/health.py
 
       - name: Build weekly digest
+        id: digest
+        continue-on-error: true
         run: python3 scripts/build_digest.py
 
       - name: Commit results
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "srta-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -91,10 +114,13 @@ jobs:
             git push
           fi
 
-      - name: Mark the run red if any fetch failed (data was still committed)
+      - name: Mark the run red if any step failed (data was still committed)
         if: >-
-          steps.price.outcome == 'failure' || steps.news.outcome == 'failure' || steps.optn.outcome == 'failure' ||
-          steps.optn_national.outcome == 'failure' || steps.cdc.outcome == 'failure'
+          !cancelled() && (
+          steps.tests.outcome == 'failure' || steps.price.outcome == 'failure' || steps.news.outcome == 'failure' ||
+          steps.playwright.outcome == 'failure' || steps.optn.outcome == 'failure' ||
+          steps.optn_national.outcome == 'failure' || steps.cdc.outcome == 'failure' ||
+          steps.ingest.outcome == 'failure' || steps.health.outcome == 'failure' || steps.digest.outcome == 'failure')
         run: |
-          echo "::error::A fetch failed; see data/processed/health.json. The page kept the previous data."
+          echo "::error::A step failed; see data/processed/health.json. The page kept the previous data."
           exit 1
