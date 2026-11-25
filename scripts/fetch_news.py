@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -143,13 +144,28 @@ def fetch_group(group, days):
     return out
 
 
+RETRY_WAITS = (5, 20, 60)  # seconds between attempts on 429 / 5xx (Google News throttles shared CI IPs)
+
+
+def get_with_retry(req, waits=RETRY_WAITS, sleep=time.sleep):
+    """GET with back-off on HTTP 429 and 5xx; other errors (and the last attempt's) are raised."""
+    for i in range(len(waits) + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if i == len(waits) or not (e.code == 429 or 500 <= e.code < 600):
+                raise
+            print(f"  HTTP {e.code}; retrying in {waits[i]}s", file=sys.stderr)
+            sleep(waits[i])
+
+
 def fetch_query(group, terms, days):
     q = f"({build_query(terms)}) when:{days}d"
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
         {"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (srta-tracker)"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        root = ET.fromstring(r.read())
+    root = ET.fromstring(get_with_retry(req))
     items = []
     require = [s.lower() for s in group.get("require_any", [])]
     for it in root.iter("item"):

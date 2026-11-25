@@ -77,5 +77,35 @@ class TestDigestHeadlines(unittest.TestCase):
         self.assertEqual(heads, ["TransMedics expands transplant logistics", "Paragonix wins FDA clearance for perfusion device"])
 
 
+
+class TestNewsRetry(unittest.TestCase):
+    def _err(self, code):
+        import urllib.error
+        return urllib.error.HTTPError("https://news.google.com/rss", code, "x", {}, None)
+
+    def test_retries_503_then_succeeds(self):
+        import io
+        from unittest import mock
+        calls, slept = [], []
+
+        def fake_open(req, timeout):
+            calls.append(1)
+            if len(calls) < 3:
+                raise self._err(503)
+            return io.BytesIO(b"<rss/>")
+        with mock.patch("urllib.request.urlopen", fake_open):
+            self.assertEqual(fetch_news.get_with_retry("req", waits=(1, 2, 3), sleep=slept.append), b"<rss/>")
+        self.assertEqual((len(calls), slept), (3, [1, 2]))
+
+    def test_404_not_retried(self):
+        from unittest import mock
+
+        def fake_open(req, timeout):
+            raise self._err(404)
+        with mock.patch("urllib.request.urlopen", fake_open):
+            with self.assertRaises(Exception):
+                fetch_news.get_with_retry("req", waits=(1,), sleep=lambda s: None)
+
+
 if __name__ == "__main__":
     unittest.main()
